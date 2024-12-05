@@ -14,7 +14,8 @@ RECORDS = \
 	ExternalDataProcessingConfiguration \
 	InternalDataProcessingConfiguration \
 	StaticDeployment \
-	TimeSeriesDataset
+	TimeSeriesDataset \
+	GriddedDataset
 
 SAMPLES = \
 	build/SITES.ttl \

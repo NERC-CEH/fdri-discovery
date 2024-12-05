@@ -51,6 +51,7 @@ mixins:
         propertyUri: fdri:hasAnnotation
         kind: object
         repeatable: true
+        nested: true
         constraints:
           - record: Annotation
 
@@ -315,6 +316,32 @@ mixins:
         constraints:
           - record: Geometry
 
+  WithNotation:
+    label:
+      - value: With Notation
+        lang: en
+    description:
+      - value: |
+          A mixin class that adds a repeatable skos:notation property for recording the unique identifiers 
+          for a resource.
+    properties:
+      notation:
+        label:
+          - value: notation
+            lang: en
+        description:
+          - value: |
+              A 'short' code for distinguishing some thing amongst its peers.
+              
+              A notation is not globally unique, but is expected to be locally
+              unique (ie. designate at most one thing) within a collection, concept
+              scheme or other form of group.
+            lang: en
+        propertyUri: skos:notation
+        kind: literal
+        repeatable: true
+        constraints:
+          - datatype: xsd:string        
 
 records:
 
@@ -438,6 +465,7 @@ records:
             lang: en
         propertyUri: fdri:hasValue
         kind: object
+        nested: true
         constraints:
           - record: PropertyValue
       hasValueSeries:
@@ -451,6 +479,7 @@ records:
             lang: en
         propertyUri: fdri:hasValueSeries
         kind: object
+        nested: true
         constraints:
           - record: PropertyValueSeries
 
@@ -686,6 +715,30 @@ records:
         constraints:
           - record: Concept
 
+  ConceptRange:
+    label:
+      - value: Concept Range
+        lang: en
+    description:
+      - value: |
+          A value range which consists of a specified set of SKOS conepts.
+        lang: en
+    classUri: fdri:ConceptRange
+    shortCode: ConceptRange
+    properties:
+      allOf:
+        label:
+          - value: all of
+            lang: en
+        description:
+          - value: The concept(s) which form the value range.
+            lang: en
+        propertyUri: fdri:allOf
+        kind: object
+        repeatable: true
+        constraints:
+          - record: Concept
+
   ConceptScheme:
     label:
       - value: Concept Scheme
@@ -712,6 +765,29 @@ records:
         repeatable: true
         constraints:
           - record: Concept
+
+  ConceptSchemeRange:
+    label:
+      - value: Concept Scheme Range
+        lang: en
+    description:
+      - value: |
+          A value range where the set of values included in the range are all concepts defined in the specified concept scheme(s).
+    classUri: fdri:ConceptSchemeRange
+    shortCode: ConceptSchemeRange
+    properties:
+      allFrom:
+        label:
+          - value: all concepts from
+            lang: en
+        description:
+          - value: The concept scheme(s) whose concepts define the value range.
+            lang: en
+        propertyUri: fdri:allFrom
+        kind: object
+        repeatable: true
+        constraints:
+          - record: ConceptScheme
 
   ConfigurationArgument:
     label:
@@ -1412,7 +1488,73 @@ records:
         repeatable: true
         constraints:
           - record: Concept
-      
+  
+  Dimension:
+    label:
+      - value: Dimension
+        lang: en
+    description:
+      - value: Defines a dimension of a dataset as an observable property with an optional range.
+    classUri: fdri:Dimension
+    shortCode: Dimension
+    mixins:
+      - WithLabelAndComment
+      - WithNotation
+    properties:
+      key:
+        label:
+          - value: dimension key
+            lang: en
+        description:
+          - value: The identifier which can be used to address this dimension in the data.
+            lang: en
+        propertyUri: fdri:dimensionKey
+        kind: literal
+        constraints:
+          - datatype: xsd:string
+      length:
+        label:
+          - value: dimesion length
+            lang: en
+        description:
+          - value: |
+              The number of distinct values present on this dimension.
+            lang: en
+        propertyUri: fdri:dimensionLength
+        kind: literal
+        constraints:
+          - datatype: xsd:integer
+      property:
+        label:
+          - value: dimension property
+            lang: en
+        description:
+          - value: The property whose values are recorded in this dimension range.
+        propertyUri: fdri:dimensionProperty
+        required: true
+        kind: object
+        constraints:
+          - record: ComplexObservableProperty
+      range:
+        label:
+          - value: dimension range
+            lang: en
+        description:
+          - value: |
+              The range of values encoded in this dimension.
+              If the dimension property defines a unit of measure, the upper and lower bound of the dimension range 
+              MUST use the same unit of measure.
+              When a dimension is a category dimension, such as a set of classification values, the value range
+              SHOULD be either ConceptSchemeRange when all concepts from the specified Concept Scheme appear in the 
+              dimension, or else a ConceptRange to explicitly enumerate the set of concepts appearing in the dimension.
+            lang: en
+        propertyUri: fdri:dimensionRange
+        kind: object
+        nested: true
+        constraints:
+          - record: ValueRange
+          - record: ConceptSchemeRange
+          - record: ConceptRange
 
   Distribution:
     label:
@@ -2161,7 +2303,31 @@ records:
     shortCode: GeospatialFeatureOfInterest
     mixins:
       - WithIndexedGeometry
-  
+
+  GriddedDataset:
+    label:
+      - value: Gridded Time-series Dataset
+        lang: en
+    description:
+      - value: |
+          A dataset which represents a collection of multi-dimensional values.
+    classUri: fdri:GriddedDataset
+    shortCode: GriddedDataset
+    extends: ObservationDataset
+    properties:
+      hasDimension:
+        label:
+          - value: has dimension
+            lang: en
+        description:
+          - value: A dimension of the gridded dataset with its value bounds specified if known.
+        propertyUri: fdri:hasDimension
+        kind: object
+        repeatable: true
+        nested: true
+        constraints:
+          - record: Dimension
+
   InternalDataProcessingConfiguration:
     label:
       - value: Internal Data Processing Configuration
@@ -3181,6 +3347,35 @@ records:
         repeatable: true
         constraints:
           - record: Unit
+
+  ValueRange:
+    label:
+      - value: Value Range
+        lang: en
+    description:
+      - value: A range which consists of a lower bound and an upper bound.
+        lang: en
+    classUri: fdri:ValueRange
+    shortCode: ValueRange
+    properties:
+      minValue:
+        label:
+          - value: minimum value
+            lang: en
+        description:
+          - value: The (inclusive) lower bound of the value range.
+            lang: en
+        propertyUri: schema:minValue
+        kind: literal
+      maxValue:
+        label:
+          - value: maximum value
+            lang: en
+        description:
+          - value: The (inclusive) upper bound of the value range.
+            lang: en
+        propertyUri: schema:maxValue
+        kind: literal
 
   ValueStatistic:
     label:
