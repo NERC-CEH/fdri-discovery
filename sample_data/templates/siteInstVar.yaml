@@ -58,6 +58,7 @@ resources:
       "@type": <fdri:TimeSeriesDataset>
       "<dct:title>": "Raw Time Series for {VARIABLE_NAME} at site {SITE_ID}@en"
       "<dct:spatial>": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}>"
+      "<dcat:temporalResolution>": "{INTERVAL}^^<xsd:duration>"
       "<dcat:inSeries>": 
         - "<http://fdri.ceh.ac.uk/id/dataset/cosmos-{SITE_ID|slug}-{VARIABLE_NAME|slug}>"
         - "<http://fdri.ceh.ac.uk/id/dataset/cosmos-{VARIABLE_NAME|slug}-raw>"
@@ -81,6 +82,7 @@ resources:
       "@type": <fdri:TimeSeriesDataset>
       "<dct:title>": "In-filled Time Series for {VARIABLE_NAME} at site {SITE_ID}@en"
       "<dct:spatial>": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}>"
+      "<dcat:temporalResolution>": "{INTERVAL}^^<xsd:duration>"
       "<dcat:inSeries>":
         - "<http://fdri.ceh.ac.uk/id/dataset/cosmos-{SITE_ID|slug}-{VARIABLE_NAME|slug}>"
         - "<http://fdri.ceh.ac.uk/id/dataset/cosmos-{VARIABLE_NAME|slug}-infill>"
