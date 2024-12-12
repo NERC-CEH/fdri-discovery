@@ -1,5 +1,7 @@
 base: http://fdri.ceh.ac.uk/records/metadata/
 prefixes:
+  - prefix: bald
+    uri: https://www.opengis.net/def/binary-array-ld/
   - prefix: dcat
     uri: http://www.w3.org/ns/dcat#
   - prefix: dct
@@ -482,6 +484,116 @@ records:
         nested: true
         constraints:
           - record: PropertyValueSeries
+
+  BaldArray:
+    extends: BaldResource
+    label:
+      - value: Array
+        lang: en
+    description:
+      - value: A multi-dimensional array of literals.
+        lang: en
+    classUri: bald:Array
+    shortCode: baldArray
+    properties:
+      shape:
+        propertyUri: bald:shape
+        nested: true
+        kind: object
+        constraints:
+          - record: IntegerList
+      references:
+        propertyUri: bald:references
+        kind: object
+        constraints:
+          - record: BaldReference
+
+  IntegerList:
+    classUri: fdri:IntegerList
+    shortCode: integerList
+    properties:
+      first:
+        propertyUri: rdf:first
+        kind: literal
+        constraints:
+          - datatype: xsd:integer
+      rest:
+        propertyUri: rdf:rest
+        kind: object
+        nested: true
+        required: true
+        constraints:
+          - record: IntegerList
+          - record: ListNil
+
+  ListNil:
+    classUri: fdri:ListNil
+    shortCode: listNil
+
+  BaldContainer:
+    extends: Dataset
+    label:
+      - value: Container (BALD)
+        lang: en
+    description:
+      - value: A Resource which may contain other Resources.
+        lang: en
+    classUri: bald:Container
+    shortCode: baldContainer
+    properties:
+      contains:
+        label:
+          - value: contains
+            lang: en
+        description:
+          - value: The Container contains the Resource. 
+            lang: en
+        propertyUri: bald:contains
+        kind: object
+        repeatable: true
+        nested: true
+        constraints:
+          - record: BaldResource
+  
+  BaldReference:
+    extends: BaldResource
+    classUri: bald:Reference
+    shortCode: baldReference
+    properties:
+      target:
+        propertyUri: bald:target
+        kind: object
+        required: true
+        constraints:
+          - record: BaldArray
+      sourceRefShape:
+        propertyUri: bald:sourceRefShape
+        kind: object
+        nested: true
+        constraints:
+          - record: IntegerList
+      targetRefShape:
+        propertyUri: bald:targetRefShape
+        kind: object
+        nested: true
+        constraints:
+          - record: IntegerList
+      arrayFirstValue:
+        propertyUri: bald:arrayFirstValue
+        kind: literal
+      arrayLastValue:
+        propertyUri: bald:arrayLastValue
+        kind: literal
+
+  BaldResource:
+    label:
+      - value: Resource (BALD)
+        lang: en
+    description:
+      - value: A resource being described by BALD metadata.
+        lang: en
+    classUri: bald:Resource
+    shortCode: baldResource
 
   Catchment:
     label:
@@ -2315,6 +2427,19 @@ records:
     shortCode: GriddedDataset
     extends: ObservationDataset
     properties:
+      contains:
+        label:
+          - value: contains
+            lang: en
+        description:
+          - value: Relates a Gridded Time-series dataset to the Arrays and References which define the container shapes.
+            lang: en
+        propertyUri: bald:contains
+        kind: object
+        repeatable: true
+        nested: true
+        constraints:
+          - record: BaldResource
       hasDimension:
         label:
           - value: has dimension
@@ -2411,7 +2536,7 @@ records:
         lang: en
     classUri: fdri:ObservationDataset
     shortCode: ObservationDataset
-    extends: Dataset
+    extends: BaldContainer
     mixins:
       - WithProvenance
       - WithAnnotations
