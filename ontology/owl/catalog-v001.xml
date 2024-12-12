@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://www.opengis.net/def/binary-array-ld" uri="https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/incubation/binary-array-ld/binary-array-ld.ttl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/dc/terms/" uri="dublin_core_terms.ttl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/iadopt/ont/1.0.3" uri="https://i-adopt.github.io/ontology/ontology.ttl"/>
     <uri id="Imports Wizard Entry" name="http://www.opengis.net/ont/geosparql/1.1" uri="https://opengeospatial.github.io/ogc-geosparql/geosparql11/geo.ttl"/>

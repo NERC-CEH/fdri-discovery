@@ -11,7 +11,8 @@
                                                     <http://www.w3.org/2006/time#2016> ,
                                                     <http://www.w3.org/ns/dcat3> ,
                                                     <http://www.w3.org/ns/ssn/ext> ,
-                                                    <https://w3id.org/iadopt/ont/1.0.3> ;
+                                                    <https://w3id.org/iadopt/ont/1.0.3> ,
+                                                    <https://www.opengis.net/def/binary-array-ld> ;
                                         rdfs:comment "An onotology for the recording of dataset metadata, provenance information and related reference data for use in the fine-grained metadata store element of the FDRI project."@en ;
                                         rdfs:label "FDRI Fine-grained Metadata Store Ontology"@en ;
                                         owl:versionInfo "0.3 DRAFT (In Progress)" .
@@ -959,6 +960,12 @@
                                              ] ;
                              rdfs:comment "A Feature of Interest with a geospatial location."@en ;
                              rdfs:label "Geo-spatial Feature Of Interest"@en .
+
+
+###  http://fdri.ceh.ac.uk/vocab/metadata/GriddedDataset
+:GriddedDataset rdf:type owl:Class ;
+                rdfs:subClassOf :ObservationDataset ,
+                                <https://www.opengis.net/def/binary-array-ld/Container> .
 
 
 ###  http://fdri.ceh.ac.uk/vocab/metadata/InternalDataProcessingConfiguration
