@@ -1,0 +1,26 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Unit
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/unit/{UNIT_ID|slug}>"
+      "@type": "<fdri:Unit>"
+      "<skos:inScheme>": "<::UnitScheme>"
+      "^<skos:hasTopConcept>": "<::UnitScheme>"
+
+  - name: UnitLabel
+    requires:
+      UNIT_NAME:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/unit/{UNIT_ID|slug}>"
+      "@type": "<fdri:Unit>"
+      "<skos:prefLabel>": "{UNIT_NAME}@en" 
+      "<rdfs:label>": "{UNIT_NAME}@en"
+

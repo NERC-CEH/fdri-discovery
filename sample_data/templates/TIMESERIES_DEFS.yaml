@@ -1,0 +1,46 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+  - name: TimeSeriesScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series>"
+      "@type": "<skos:ConceptScheme>"
+
+resources:
+  - name: Aggregation
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{STATISTIC_ID|slug}-{RESOLUTION|slug}-{PERIODICITY|slug}>"
+      "@type": "<fdri:Aggregation>"
+      "<fdri:valueStatistic>": "<http://fdri.ceh.ac.uk/ref/common/statistic/{STATISTIC_ID|slug}>"
+      "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
+      "<fdri:periodicity>": "{PERIODICITY}^^<xsd:duration>"
+      "<skos:inScheme>": "<::AggregationScheme>"
+      "^<skos:hasTopConcept>": "<::AggregationScheme>"
+
+  - name: Measure
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{PARAMETER_ID|slug}-{UNIT_ID|slug}-{STATISTIC_ID|slug}-{RESOLUTION|slug}-{PERIODICITY|slug}>"
+      "@type": "<fdri:Measure>"
+      "<skos:inScheme>": "<::MeasureScheme>"
+      "^<skos:hasTopConcept>": "<::MeasureScheme>"
+      "<fdri:variable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/{UNIT_ID|slug}>"
+      "<fdri:aggregation>": "<::Aggregation>"
+
+  - name: TimeSeriesDefinition
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{TIMESERIES_DEF|slug}>"
+      "@type": "<fdri:TimeSeriesDefinition>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"
+      "<skos:inScheme>": "<::TimeSeriesScheme>"
+      "^<skos:hasTopConcept>": "<::TimeSeriesScheme>"
+      "<skos:prefLabel>": "{TIMESERIES_NAME}@en"
+      "<rdfs:label>": "{TIMESERIES_NAME}@en"
+      "<fdri:measure>": <::Measure>

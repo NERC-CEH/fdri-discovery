@@ -4,23 +4,27 @@ globals:
 
 imports:
     - namespaces.yaml
+    - concept_schemes.yaml
     - extensions.py
 
 one_offs:
   - name: CorrectionFactorParameter
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-parameter/correction-factor>"
-      "@type": <skos:Concept>
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/correction-factor>"
+      "@type": <fdri:ConfigurationParameter>
       "<rdfs:label>": "Correction Factor@en"
       "<skos:prefLabel>": "Correction Factor@en"
+      "<skos:inScheme>": "<::ConfigurationParameterScheme>"
+      "^<skos:inScheme>": "<::ConfigurationParameterScheme>"
 
   - name: SensorCalibrationConfiguration
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/data-processing-configuration-type/sensor-calibration-correction>"
-      "@type": <skos:Concept>
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/sensor-calibration-correction>"
+      "@type": <fdri:DataProcessingConfigurationType>
       "<rdfs:label>": "Sensor Calibration Correction@en"
       "<skos:prefLabel>": "Sensor Calibration Correction@en"
-
+      "<skos:inScheme>": "<::ConfigurationTypeScheme>"
+      "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
 
 resources:
 
@@ -37,7 +41,10 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/method/correction-{CORRECTION_ID|slug}>"
       "@type": <fdri:DataProcessingMethod>
       "<rdfs:label>": "{CORRECTION_ID}@en"
+      "<skos:prefLabel>": "{CORRECTION_ID}@en"
       "<fdri:parameter>": "<::CorrectionFactorParameter>"
+      "<skos:inScheme>": "<::DataProcessingMethodScheme>"
+      "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
 
   - name: CalibrationActivity
     properties:
@@ -52,7 +59,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/cosmos-calibration-configuration-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{TIMESERIES_ID|slug}>"
       "@type": "<fdri:InternalDataProcessingConfiguration>"
       "<fdri:appliesToFacility>": <::Sensor>
-      "<fdri:appliesToTimeSeries>": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{TIMESERIES_ID|slug}>"
+      "<fdri:appliesToTimeSeries>": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "<dct:type>": <::SensorCalibrationConfiguration>
 
   
@@ -62,12 +69,12 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{TIMESERIES_ID|slug}-{START_TIMESTAMP|slug}>"
       "@type": "<fdri:ConfigurationItem>"
-      "^<fdri:hasConfigurationItem>": <::CalibrationConfiguration>
+      "^<fdri:hadConfiguration>": <::CalibrationConfiguration>
       "<prov:wasGeneratedBy>": <::CalibrationActivity>
       "<fdri:observationInterval>":
         - name: CalibrationConfigurationInterval
           properties:
-            "@id": "<_>"
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{TIMESERIES_ID|slug}-{START_TIMESTAMP|slug}#interval>"
             "@type": "<dct:PeriodOfTime>"
             "<dcat:startDate>": "{START_TIMESTAMP}^^<xsd:dateTime>"
             "<dcat:endDate>": "{END_TIMESTAMP}^^<xsd:dateTime>"
@@ -81,7 +88,7 @@ resources:
       "<fdri:hasValue>":
         - name: CalibrationConfigurationItemValue
           properties:
-            "@id": "<_>"
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-argument/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{TIMESERIES_ID|slug}-{START_TIMESTAMP|slug}#value>"
             "@type": "<schema:PropertyValue>"
             "<schema:value>": "{CORRECTION_FACTOR}^^<xsd:decimal>"
       "^<fdri:argument>": <::CalibrationConfigurationItem>

@@ -20,6 +20,22 @@ jobs:
         run: |
           git fetch --prune --unshallow --tags
 
+      - name: Checkout rdf-mapper
+        uses: actions/checkout@v4
+        with:
+          repository: epimorphics/rdf-mapper
+          path: rdf-mapper
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install rdf-mapper
+        working-directory: rdf-mapper
+        run: |
+          pip install .
+
       - name: Configure AWS Credentials for Epimorphics
         uses: aws-actions/configure-aws-credentials@v4
         with:

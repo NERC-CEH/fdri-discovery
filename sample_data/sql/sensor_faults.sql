@@ -1,23 +1,22 @@
-create table IF NOT EXISTS PARAMETERS as from read_csv('./sample_data/src/PARAMETERS.csv', AUTO_DETECT=true) ;
 create table if not exists SENSOR_FAULTS as from read_csv('./sample_data/src/SENSOR_FAULTS.csv', AUTO_DETECT=true) ;
 create table if not exists SENSOR_DEPLOYMENTS as from read_csv('./build/sensor_deployments.csv', AUTO_DETECT=true) ;
-
+create table if not exists TS_DEFS as from read_csv('./sample_data/src/TIMESERIES_DEFS.csv', AUTO_DETECT=true) ;
 CREATE TABLE if not exists faultsSplit AS
 SELECT 
     SITE_ID, START_DATETIME, END_DATETIME, str_split(VARIABLES_AFFECTED, ';').UNNEST() AS VARIABLE, REMOVE_DATA, DESCRIPTION_OF_ISSUE FROM SENSOR_FAULTS ;
 
+CREATE TABLE if not exists TS_VARS AS SELECT DISTINCT PARAMETER_ID from TS_DEFS;
+
 COPY(
 SELECT faultsSplit.*, SENSOR_DEPLOYMENTS.INSTRUMENT_ID, SENSOR_DEPLOYMENTS.SERIAL_NUMBER, SENSOR_DEPLOYMENTS.INSTANCE from faultsSplit
+    INNER JOIN TS_VARS on TS_VARS.PARAMETER_ID == faultsSplit.VARIABLE
     LEFT JOIN SENSOR_DEPLOYMENTS ON         
         faultsSplit.SITE_ID == SENSOR_DEPLOYMENTS.SITE_ID AND
-        faultsSplit.VARIABLE == SENSOR_DEPLOYMENTS.VARIABLE_NAME AND
+        faultsSplit.VARIABLE == SENSOR_DEPLOYMENTS.PARAMETER_ID AND
         faultsSplit.START_DATETIME >= SENSOR_DEPLOYMENTS.START_DATETIME AND
         (SENSOR_DEPLOYMENTS.END_DATETIME IS NULL OR 
             (faultsSplit.END_DATETIME <= SENSOR_DEPLOYMENTS.END_DATETIME) OR 
             (faultsSplit.END_DATETIME IS NULL AND SENSOR_DEPLOYMENTS.END_DATETIME IS NULL)
         )
-
-    LEFT JOIN  PARAMETERS on faultsSplit.VARIABLE == PARAMETERS.PARAMETER_ID
-    WHERE PARAMETER_ID IS NOT NULL
 ) TO './build/sensor_faults.csv'
 

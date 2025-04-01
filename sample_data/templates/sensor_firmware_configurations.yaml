@@ -14,23 +14,25 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
+
   - name: SensorFirmwareConfigurationSeries
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-value-series/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-firmware>"
       "@type": "<fdri:ConfigurationValueSeries>"
       "^<fdri:configuration>": <::Sensor>
+
   - name: HistoricalValue
     requires:
       FIRMWARE:
       START_DATETIME:
       END_DATETIME:
     properties:
-      "@id": "<_>"
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-value-series/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-firmware#item-{START_DATETIME|slug}>"
       "@type": "<fdri:TimeBoundPropertyValue>"
       "<fdri:interval>":
         name: HistoricalValueInterval
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/configuration-value-series/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-firmware#item-{START_DATETIME|slug}.value>"
           "@type": "<dct:PeriodOfTime>"
           "<dcat:startDate>": "{START_DATETIME | asDateTime}"
           "<dcat:endDate>": "{END_DATETIME | asDateTime}"
@@ -42,12 +44,12 @@ resources:
       START_DATETIME:
       END_DATETIME: ''
     properties:
-      "@id": "<_>"
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-value-series/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-firmware#item-{START_DATETIME|slug}>"
       "@type": "<fdri:TimeBoundPropertyValue>"
       "<fdri:interval>":
         name: HistoricalValueInterval
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/configuration-value-series/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-firmware#item-{START_DATETIME|slug}.value>"
           "@type": "<dct:PeriodOfTime>"
           "<dcat:startDate>": "{START_DATETIME | asDateTime}"
       "<schema:value>": "{FIRMWARE}"

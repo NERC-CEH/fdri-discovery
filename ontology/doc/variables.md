@@ -4,28 +4,20 @@ A `Variable` is a "description of something observed or derived, minimally consi
 
 The purpose of the `Variable` is to provide a structured way to capture information about what observations are recorded in environmental datasetes and to attempt to provide some commonality in descriptions across multiple projects. By describing datasets in terms of the `Variables` that they provide measurements for, we can improve discoverability and help users more quickly locate related datasets within the FDRI catalog.
 
-The description of a Variable consists of multiple facets. Only the facets marked with an asterisk(*) are required. Those shown in groups are co-dependent and when one is present the other is recommended to provide context.
+The description of a Variable consists of multiple facets. The property, object of interest, context, matrix and constraints. Only the property and object of interest facets are required.
 
 ```mermaid
-block-beta
-columns 1
-    Variable
-    block
-        Property*
-        ObjectOfInterest*
-        EnvironmentalDomain
-        Context
-        block
-            columns 1
-            Unit
-            UnitName
-        end
-        block
-            columns 1
-            ValueStatistic
-            AggregationPeriod
-        end
-    end
+classDiagram
+class Variable
+class Entity
+class Constraint
+class Property
+Variable --> "1..1" Property : hasProperty
+Variable --> "1..1" Entity: hasObjectOfInterest
+Variable --> "0..n" Entity: hasContextObject
+Variable --> "0..1" Entity: hasMatrix
+Variable --> "0..n" Constraint: hasConstraint
+Constraint --> "1..n" Entity: constrains
 ```
 
 ## Property
@@ -46,10 +38,12 @@ The ObjectOfInterest facet represents the class of thing whose property is measu
 * Soil
 * Longwave Radiation
 * Wind
+* Water
 
 With just Property and ObjectOfInterest we can construct simple Variables which share the same property facet, but differ in the object of interest:
 
 ```mermaid
+
 block-beta
     columns 1
     TA["Air Temperature"]
@@ -85,30 +79,55 @@ block-beta
 ```
 Through this reuse of vocabulary terms it is possibel to create networks of related variables and to construct more complex shared vocabularies (of variables), from more simple building blocks (properties and objects of interest).
 
-## EnvironmentalDomain
-
-The EnvironmentalDomain facet can be optionally used to relate a Variable to the broad domain(s) of environmental study to which the variable belongs. Examples of environmental domain include:
-
-* Atmosphere
-* Lithosphere
-* Hydrosphere
-
 ## Context
 
-The Context facet relates a Variable to concepts which provide additional background information regarding the object of interest. Examples of context include:
+The Context facet relates a Variable to concepts which provide additional background information regarding the object of interest.
 
-* in CNRS tube (contextualising an air temperature reading)
-* at 20cm depth (contextualising a soil temperature reading)
-  
-> [!NOTE]
-> In the current iteration of the sample data, there are no longer distinct Variables for soil properties measured at different depths.
+> [!TODO]
+> Find an example of context from the COSMOS data
 
-> [!NOTE]
-> [I-Adopt](https://i-adopt.github.io/ontology/) also provides a more specific `hasMatrix` property for contextualising the container of the object of interest which might be more properly used for the CNRS tube example above. It also provides a separate `hasConstraint` property for specifying constraints on the thing being measured which might be more properly used for the soil depth example above. Some further discussion and investigation into the current practice within NERC and the wider community is required.
+## Matrix
 
-## Unit and Unit Name
+Tne Matrix facet describes the thing within which the object of interest is contained. For example if a variable measures "Dissolved nitrate molar concentration in precipitation water", the object of interest is "nitrate" and the matrix is "precipitation".
 
-The Unit property relates a Variable to a concept that describes the units in which the measurement is expressed. Examples include:
+## Constraint
+
+Constraints provide additional contextual information for the object of interest, matrix and/or context object facets. A constraint may apply to any one of these facets or to multiple facets.
+
+Constraints are often used to specify more detail about the context in which a measurement is taken e.g. "20cm depth" (which may contextualise the object of interest of a variable)
+
+# Measures
+
+The iAdopt framework provides a means of describing what is being observed by a dataset. However, this does not provide information about how the observations are recorded and treated in the dataset. The Measure class combines the observed property with information about the unit and statistical aggregation of the measures taken of the observed property.
+
+```mermaid
+---
+config:
+    class:
+        hideEmptyMembersBox: true
+---
+classDiagram
+class Measure
+class Variable
+class Aggregation {
+    periodicity: xsd:duration
+    resolution: xsd:duration
+}
+class Unit
+class Concept
+Measure --> "1..1" Variable: variable
+Measure --> "1..1" Unit: hasUnit
+Measure --> "0..1" Aggregation: aggregation
+Aggregation --> "1..1" Concept: valueStatistic
+Concept <|-- Unit
+```
+
+## Variable
+The `hasVariable` property relats a Measure to the Variable for which values are provided.
+
+## Unit
+
+The `hasUnit` property relates a Measure to a concept that describes the units in which the measurement is expressed. Examples include:
 
 * hecto-Pascal
 * metres per second
@@ -119,25 +138,24 @@ Where a unit is specified, the unit name property SHOULD also be specified provi
 
 It is strongly recommended to use a common vocabulary for expressing units. The [QUDT unit vocabulary](https://www.qudt.org/doc/DOC_VOCAB-UNITS.html) provides a wide range of units as a controlled vocabulary.
 
-## Value Statistic and Aggregation Period
+## Aggregation
 
-Where a recorded observation is the result of the aggregation of multiple values over some time period, the Value Statistic facet can be used to relate the Variable to a concept representing how the input values are aggregated to produce the recorded measurement. Examples include:
+Where a measure is the result of the aggregation of multiple values over some time period, the `aggregation` property can be used to relate the Measure to an Aggregation which represents both how the input values are aggregated (using the `valueStatistic` property) to produce the recorded measurement, and the time period over which that aggregation is applied. Examples of value statistic concepts include:
 
-* Minimum
-* Maximum
-* Mean
-* Standard Deviation
+* minimum
+* maximum
+* mean
+* standard deviation
 
-When a Variable has a Value Statistic facet, it should also provide a value for the Aggregation Period facet which defines the period over which values are aggregated to provide each recorded measurement of the variable. This implies that a Variable capturing an hourly mean is distinct from a Variable capturing a daily mean of the same property.
-
-> [!NOTE]
-> In the current iteration of the sample data, the decision was taken to move the recording of statistic and aggregation period from the Variable definition to the dataset definition.
+The `periodicity` property specifies the time period between aggregate values being reported.
+The `resolution` property specifies the time period between the measurements that are aggregated over the period.
+e.g. if `periodicity` is `PT5M` and `resolution` is `PT30S` then values are read every 30 seconds, and aggregated to produce a single aggregate value every 5 minutes.
 
 ## Specialisation and Variable Hierarchies
 
 A Variable can have broader/narrower relations to other Variables which define more generic or more specialised variants of the Variable.
 
-For example a generic "Air Temperature" variable might only have its Property and ObjectOfInterest facets defined, and have a specialisation of "Sonic Air Temperature" with a Context facet indicating the method by which the observation is made, which may itself have a specialisation "Sonic Air Temperature at 2m above sea level" with an additional Context facet indicating the height at which the reading is taken. Further specialisations might be used to capture the unit of measurement, and any aggregation applied. By arranging all of these related variables in a hierarchy we can enable searches using a broad variable definition to easily discover all of the more specialised variants that might be present in the recorded data.
+For example a generic "Air Temperature" variable might only have its Property and ObjectOfInterest facets defined, and have a specialisation of "Sonic Air Temperature" with a Context facet indicating the method by which the observation is made, which may itself have a specialisation "Sonic Air Temperature at 2m above sea level" with an additional Context facet indicating the height at which the reading is taken. 
 
 > [!NOTE]
-> It should be noted that even without the structure of a hierarchy, the faceted nature of Variables makes it relatively easy to discover specialisations and generalisations simply by comparing the facet values (e.g. all Temperature variables, all Air Temperature variables, all Sonic Air Temperature variables etc.), as well as to search in more unusual cross-cutting ways (e.g. all variables that provide a daily mean for properties in the hydrosphere environmental domain).
+> It should be noted that even without the structure of a hierarchy, the faceted nature of Variables makes it relatively easy to discover specialisations and generalisations simply by comparing the facet values (e.g. all Temperature variables, all Air Temperature variables, all Sonic Air Temperature variables etc.).

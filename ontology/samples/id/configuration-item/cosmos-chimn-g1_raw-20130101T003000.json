@@ -1,0 +1,17 @@
+{
+    "$schema": "../../../../build/schema/ConfigurationItem.schema.json",
+    "@context": "../../../../build/context/ConfigurationItem.context.jsonld",
+    "@id": "http://fdri.ceh.ac.uk/id/configuration-item/cosmos-chimn-g1_raw-20130101T003000",
+    "@type": "http://fdri.ceh.ac.uk/vocab/metadata/ConfigurationItem",
+    "method": {"@id": "http://fdri.ceh.ac.uk/ref/common/method/linear_interp"},
+    "argument": [
+        {
+            "parameter": {"@id": "http://fdri.ceh.ac.uk/ref/common/parameter/window"},
+            "hasValue": {"value": {"@value": "1", "@type": "http://www.w3.org/2001/XMLSchema#integer"}}
+        },
+        {
+            "parameter": {"@id": "http://fdri.ceh.ac.uk/ref/common/max_gap_size"},
+            "hasValue": {"value": {"@value": "6", "@type": "http://www.w3.org/2001/XMLSchema#integer"}}
+        }
+    ]
+}

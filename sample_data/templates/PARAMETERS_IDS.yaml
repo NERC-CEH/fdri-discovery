@@ -1,0 +1,52 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: COP
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "@type": "<fdri:Variable>"
+      "<skos:inScheme>": "<::CommonCopScheme>"
+      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
+      "<skos:prefLabel>": "{PARAMETER_NAME}@en"
+      "<rdfs:label>": "{PARAMETER_NAME}@en"
+
+  - name: Property
+    requires:
+      PROPERTY:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/{PROPERTY|slug}>"
+      "@type": "<iop:Property>"
+      "<skos:prefLabel>": "{PROPERTY}@en"
+      "<rdfs:label>": "{PROPERTY}@en"
+      "^<iop:hasProperty>": "<::COP>"
+      "<skos:inScheme>": "<::PropertyScheme>"
+      "^<skos:hasTopConcept>": "<::PropertyScheme>"
+
+  - name: ObjectOfInterest
+    requires:
+      OBJECT_OF_INTEREST:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/{OBJECT_OF_INTEREST|slug}>"
+      "@type": "<iop:Entity>"
+      "<skos:inScheme>": <::ObjectOfInterestScheme>
+      "^<skos:hasTopConcept>": "<::ObjectOfInterestScheme>"
+      "<skos:prefLabel>": "{OBJECT_OF_INTEREST}@en"
+      "^<iop:hasObjectOfInterest>": "<::COP>"
+
+  - name: Context
+    requires:
+      CONTEXT_OBJECT:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/context/{CONTEXT_OBJECT|slug}>"
+      "@type": <iop:Entity>
+      "<skos:inScheme>": <::ContextObjectScheme>
+      "^<skos:hasTopConcept>": <::ContextObjectScheme>
+      "<skos:prefLabel>": "{CONTEXT_OBJECT}@en"
+      "^<iop:hasContextObject>": "<::COP>"

@@ -1,0 +1,11 @@
+{
+    "$schema": "../../../../build/schema/InternalDataProcessingConfiguration.schema.json",
+    "@context": "../../../../build/context/InternalDataProcessingConfiguration.context.jsonld",
+    "@id": "http://fdri.ceh.ac.uk/id/data-processing-configuration/cosmos-alt_data-chimn-cts_mod_raw",
+    "appliesToFacility": [{ "@id": "http://fdri.ceh.ac.uk/id/site/cosmos-chimn" }],
+    "appliesToTimeSeries": [{ "@id": "http://fdri.ceh.ac.uk/id/dataset/cosmos-chimn-cts_mod_raw" }],
+    "hasCurrentConfiguration": [{
+        "@id": "http://fdri.ceh.ac.uk/id/configuration-item/cosmos-chimn-cts_mod_raw-20191217T120000"
+    }],
+    "hasAnnotation": [{"@id": "http://fdri.ceh.ac.uk/id/annotation/cosmos-infill-chimn-cst_mod_raw-priority"}]
+}

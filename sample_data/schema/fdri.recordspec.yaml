@@ -485,6 +485,55 @@ records:
       - WithLabelAndComment
       - WithAnnotations
 
+  Aggregation:
+    label:
+      - value: Aggregation
+        lang: en
+    description:
+      - value: |
+          An Aggregation is a Concept which combines an aggregation method (fdri:valueStatistic) with a period of time over which
+          the aggregation is applied (fdri:periodicity). The optional `fdri:resolution` property can be used to express the 
+          frequency with which the aggregated values are measured.
+    classUri: fdri:Aggregation
+    shortCode: aggregation
+    extends: Concept
+    properties:
+      periodicity:
+        label:
+          - value: periodicity
+            lang: en
+        description:
+          - value: |
+              The time period over which a set of observed values are aggregated to derive a single aggregate value.
+            lang: en
+        propertyUri: fdri:periodicity
+        kind: literal
+        constraints:
+          - datatype: xsd:duration
+      resolution:
+        label:
+          - value: resolution
+            lang: en
+        description:
+          - value: The period between the observations of the aggregated values.
+            lang: en
+        propertyUri: fdri:resolution
+        kind: literal
+        constraints:
+          - datatype: xsd:duration
+      valueStatistic:
+        label:
+          - value: value statistic
+            lang: en
+        description:
+          - value: |
+              The way in which multiple values are processed to derive a single reported value of the property for some 
+              time period. Examples include mean value over period, total value over period or a single instantaneous value.
+        propertyUri: fdri:valueStatistic
+        kind: object
+        constraints:
+          - record: ValueStatistic
+
   Annotation:
     label:
       - value: Annotation
@@ -858,42 +907,29 @@ records:
         kind: object
         constraints:
           - record: ConfigurationProperty
-  
-  ContextObject:
+
+  Constraint:
     label:
-      - value: Context Object
+      - value: Constraint
         lang: en
     description:
-      - value: |
-          A concept which provides additional contextual information about the object of interest of a Complex
-          Observable Property or the context in which observations of the Complex Observable Property are made.
+      - value: A Constraint limits the scope of the observation and confines the context to a particular state. It describes properties of the involved entities that are relevant to the particular observation.
         lang: en
     extends: Concept
-    classUri: fdri:ContextObject
-    shortCode: ContextObject
+    classUri: fdri:Constraint
+    shortCode: Constraint
     properties:
-      inScheme:
+      constrains:
         label:
-          - value: is in scheme
+          - value: constrains
             lang: en
         description:
-          - value: The concept scheme under which the Context Object resource is managed.
+          - value: A Constraint constrains an Entity having a role in the Variable description.
             lang: en
-        propertyUri: skos:inScheme
+        propertyUri: iop:constrains
         kind: object
         constraints:
-          - record: ContextObjectScheme
-  
-  ContextObjectScheme:
-    label:
-      - value: Context Object Concept Scheme
-        lang: en
-    description:
-      - value: A concept scheme that manages a collection of concepts that define the Context Objects for Complex Observable Properties.
-        lang: en
-    extends: ConceptScheme
-    classUri: fdri:ContextObjectScheme
-    shortCode: ContextObjectScheme
+          - record: Entity
 
   DataProcessingConfiguration:
     label:
@@ -926,7 +962,7 @@ records:
              applies to all faciltiies of that type.
         propertyUri: fdri:appliesToFacility
         kind: object
-        required: true
+        required: false
         repeatable: true
         constraints:
           - record: EnvironmentalMonitoringFacilityType
@@ -945,6 +981,7 @@ records:
         repeatable: true
         constraints:
           - record: TimeSeriesDefinition
+          - record: TimeSeriesDataset
       type:
         label:
           - value: configuration type
@@ -1360,6 +1397,19 @@ records:
         constraints:
           - record: EnvironmentalDomainScheme
   
+  Entity:
+    label:
+      - value: Entity
+        lang: en
+    description:
+      - value: |
+          An object or process that has a role in an observation. An Entity may play one of the following roles: ObjectOfInterest, ContextObject, Matrix.
+          Whether the involvement of a particular entity is meaningful enough to include in the variable description depends on the specific context.
+        lang: en
+    classUri: iop:Entity
+    extends: Concept
+    shortCode: Entity
+
   EnvironmentalDomainScheme:
     label:
       - value: Environmental Domain Concept Scheme
@@ -1633,19 +1683,6 @@ records:
         kind: literal
         constraints:
           - datatype: xsd:decimal
-      landCover:
-        label:
-          - value: land cover
-            lang: en
-        description:
-          - value: A record of the land cover/land usage at the site over time.
-            lang: en
-        propertyUri: fdri:landCover
-        kind: object
-        nested: true
-        repeatable: true
-        constraints:
-          - record: PropertyValueSeries
       siteVariance:
         label:
           - value: site variance
@@ -1659,18 +1696,6 @@ records:
         repeatable: true
         constraints:
           - datatype: rdf:langString
-      soilType:
-        label:
-          - value: soil type
-            lang: en
-        description:
-          - value: |
-              The clasification of the type of soil found at this site.
-            lang: en
-        propertyUri: fdri:soilType
-        kind: object
-        constraints:
-          - record: SoilType
   
   EnvironmentalMonitoringSystem:
     label:
@@ -2164,41 +2189,46 @@ records:
         constraints:
           - record: ConfigurationItem
   
-  ObjectOfInterest:
+  Measure:
     label:
-      - value: Object Of Interest
-        lang: en
-    description:
-      - value: A class of entity with one or more characterstics that may be measured or described by a Complex Observable Property.
-        lang: en
-    extends: Concept
-    classUri: fdri:ObjectOfInterest
-    shortCode: ObjectOfInterest
-    properties:
-      inScheme:
-        label:
-          - value: is in scheme
-            lang: en
-        description:
-          - value: The controlled vocabulary that this concept is part of.
-            lang: en
-        propertyUri: skos:inScheme
-        kind: object
-        constraints:
-          - record: ObjectOfInterestScheme
-  
-  ObjectOfInterestScheme:
-    label:
-      - value: Object Of Interest Concept Scheme
+      - value: Measure
         lang: en
     description:
       - value: |
-          A controlled vocabulary of (classes of) entity with characteristics that may be measured or described by
-          a Complex Observable Property.
+          A combination of a variable that is measured with the unit of measurement and an optional aggregation.
+        lang: en
+    classUri: fdri:Measure
+    extends: Concept
+    shortCode: Measure
+    properties:
+      inScheme:
+        propertyUri: skos:inScheme
+        kind: object
+        constraints:
+          - record: MeasureScheme
+      aggregation:
+        propertyUri: fdri:aggregation
+        kind: object
+        constraints:
+          - record: Aggregation
+      hasUnit:
+        propertyUri: fdri:hasUnit
+        kind: object
+        constraints:
+          - record: Unit
+      variable:
+        propertyUri: fdri:variable
+        kind: object
+        constraints:
+          - record: Variable
+  
+  MeasureScheme:
+    label:
+      - value: Measure Scheme
         lang: en
     extends: ConceptScheme
-    classUri: fdri:ObjectOfInterestScheme
-    shortCode: ObjectOfInterestScheme
+    classUri: fdri:MeasureScheme
+    shortCode: MeasureScheme
 
   ObservationDataset:
     label:
@@ -2227,6 +2257,18 @@ records:
         repeatable: true
         constraints:
           - record: GeospatialFeatureOfInterest
+      measure:
+        label:
+          - value: measure
+            lang: en
+        description:
+          - value: The measure(s) recorded by the dataset. A measure consists of a variable, a unit of measurement, and an optional aggregation.
+            lang: en
+        propertyUri: fdri:measure
+        kind: object
+        repeatable: true
+        constraints:
+          - record: Measure
       observedProperty:
         label:
           - value: observed property
@@ -2250,6 +2292,18 @@ records:
         repeatable: true
         constraints:
           - record: EnvironmentalMonitoringFacility
+      originatingSite:
+        label:
+          - value: originating site
+            lang: en
+        description:
+          - value: The environmental monitoring site whic provided some portion of the content of this dataset.
+            lang: en
+        propertyUri: fdri:originatingSite
+        kind: object
+        repeatable: true
+        constraints:
+          - record: EnvironmentalMonitoringSite
       originatingProgramme:
         label:
           - value: originating programme
@@ -2564,6 +2618,17 @@ records:
         constraints:
           - record: EnvironmentalMonitoringFacilityTypeScheme
 
+  Property:
+    label:
+      - value: Property
+        lang: en
+    description:
+      - value: A type of a characteristic of the ObjectOfInterest.
+        lang: en
+    classUri: iop:Property
+    extends: Concept
+    shortCode: Property
+
   PropertyValue:
     label:
       - value: Property Value
@@ -2714,17 +2779,6 @@ records:
         kind: object
         constraints:
           - record: Concept
-
-  QuantityKind:
-    label:
-      - value: Quantity Kind
-        lang: en
-    description:
-      - value: A characteristic of an object of interest that is described or measured by a Complex Observable Property.
-        lang: en
-    classUri: qudt:QuantityKind
-    shortCode: QuantityKind
-    # TODO: Subset of properties of QuantityKind from QUDT?
 
   Region:
     label:
@@ -3075,49 +3129,18 @@ records:
         repeatable: false
         constraints:
           - record: EnvironmentalMonitoringFacility
-
-
-  TimeSeriesDefinition:
-    label:
-      - value: Time Series Definition
-        lang: en
-    description:
-      - value: A representation of a time series of some observed or derived measurement of a variable.
-        lang: en
-    classUri: fdri:TimeSeriesDefinition
-    extends: Concept
-    shortCode: TimeSeriesDefinition
-    properties:
-      periodicity:
-        propertyUri: fdri:periodicity
-        kind: literal
-        constraints:
-          - datatype: xsd:duration
-      resolution:
-        propertyUri: fdri:resolution
-        kind: literal
-        constraints:
-          - datatype: xsd:duration
-      observedProperty:
-        propertyUri: sosa:observedProperty
+      originatingSite:
+        label:
+          - value: originating site
+            lang: en
+        description:
+          - value: The environmental monitoring site whic provided some portion of the content of this dataset.
+            lang: en
+        propertyUri: fdri:originatingSite
         kind: object
+        repeatable: false
         constraints:
-          - record: Variable
-      valueStatistic:
-        propertyUri: fdri:valueStatistic
-        kind: object
-        constraints:
-          - record: ValueStatistic
-      processingLevel:
-        propertyUri: fdri:processingLevel
-        kind: object
-        constraints:
-          - record: ProcessingLevel
-      methodology:
-        propertyUri: fdri:methodology
-        kind: object
-        constraints:
-          - record: TimeSeriesPlan
+          - record: EnvironmentalMonitoringSite
       sourceBucket:
         label:
           - value: source bucket
@@ -3128,18 +3151,6 @@ records:
               time series datasets using this definition.
             language: en
         propertyUri: fdri:sourceBucket
-        kind: literal
-        constraints:
-          - datatype: xsd:string
-      sourceDataset:
-        label:
-          - value: source dataset
-            language: en
-        description:
-          - value: |
-              Provides the identifier of the partition within the source bucket which contains the source data to be
-              processed to create or update time series datasets using this definition.
-        propertyUri: fdri:sourceDataset
         kind: literal
         constraints:
           - datatype: xsd:string
@@ -3156,6 +3167,56 @@ records:
         kind: literal
         constraints:
           - datatype: xsd:string
+      sourceDataset:
+        label:
+          - value: source dataset
+            language: en
+        description:
+          - value: |
+              Provides the identifier of the partition within the source bucket which contains the source data to be
+              processed to create or update time series datasets using this definition.
+        propertyUri: fdri:sourceDataset
+        kind: literal
+        constraints:
+          - datatype: xsd:string
+
+  TimeSeriesDefinition:
+    label:
+      - value: Time Series Definition
+        lang: en
+    description:
+      - value: A representation of a time series of some observed or derived measurement of a variable.
+        lang: en
+    classUri: fdri:TimeSeriesDefinition
+    extends: Concept
+    shortCode: TimeSeriesDefinition
+    properties:
+      measure:
+        label:
+          - value: measure
+            lang: en
+        description:
+          - value: The measure(s) recorded by the dataset. A measure consists of a variable, a unit of measurement, and an optional aggregation.
+            lang: en
+        propertyUri: fdri:measure
+        kind: object
+        constraints:
+          - record: Measure
+      methodology:
+        propertyUri: fdri:methodology
+        kind: object
+        constraints:
+          - record: TimeSeriesPlan
+      observedProperty:
+        propertyUri: sosa:observedProperty
+        kind: object
+        constraints:
+          - record: Variable
+      processingLevel:
+        propertyUri: fdri:processingLevel
+        kind: object
+        constraints:
+          - record: ProcessingLevel
 
   TimeSeriesPlan:
     classUri: fdri:TimeSeriesPlan
@@ -3168,6 +3229,12 @@ records:
         repeatable: true
         constraints:
           - record: TimeSeriesDefinition
+      configuration:
+        propertyUri: fdri:configuration
+        kind: object
+        repeatable: false
+        constraints:
+          - record: DataProcessingConfiguration
   Unit:
     label:
       - value: Unit Of Measure
@@ -3175,7 +3242,7 @@ records:
     description:
       - value: A unit of measure of an observable property.
         lang: en
-    classUri: qudt:Unit
+    classUri: fdri:Unit
     shortCode: Unit
     extends: Concept
     properties:
@@ -3262,7 +3329,7 @@ records:
         kind: object
         required: true
         constraints:
-          - record: QuantityKind
+          - record: Property
       hasObjectOfInterest:
         label:
           - value: has object of interest
@@ -3274,18 +3341,7 @@ records:
         kind: object
         required: true
         constraints:
-          - record: ObjectOfInterest
-      environmentalDomain:
-        label:
-          - value: environmental domain
-            lang: en
-        description:
-          - value: The broad environmental area of concern that this Complex Observable Property relates to.
-            lang: en
-        propertyUri: fdri:environmentalDomain
-        kind: object
-        constraints:
-          - record: EnvironmentalDomain
+          - record: Entity
       hasContextObject:
         label:
           - value: has context
@@ -3299,7 +3355,7 @@ records:
         kind: object
         repeatable: true
         constraints:
-          - record: ContextObject
+          - record: Entity
       hasMatrix:
         label:
           - value: has matrix
@@ -3310,19 +3366,18 @@ records:
         propertyUri: iop:hasMatrix
         kind: object
         constraints:
-          - record: ContextObject
-      hasUnit:
+          - record: Entity
+      hasConstraint:
         label:
-          - value: has unit
+          - value: has constraint
             lang: en
         description:
-          - value: |
-              The unit of measure used when recording values for this Complex Observable Property.
-            lang: en 
-        propertyUri: fdri:hasUnit
+          - value: A Variable has a Constraint, that confines an Entity involved in the observation.
+            lang: en
+        propertyUri: iop:hasConstraint
         kind: object
         constraints:
-          - record: Unit
+          - record: Constraint
       inScheme:
         label:
           - value: is in scheme
@@ -3335,44 +3390,6 @@ records:
         kind: object
         constraints:
           - record: VariableScheme
-      unitName:
-        label:
-          - value: unit name
-            lang: en
-        description:
-          - value: |
-              Provides a user-friendly label for the unit of measure used when recording values of this 
-              Complex Observable Property.
-            lang: en
-        propertyUri: fdri:unitName
-        kind: literal
-        repeatable: true
-        constraints:
-          - datatype: rdf:langString
-      aggregationPeriod:
-        label:
-          - value: periodicity
-            lang: en
-        description:
-          - value: The period between recorded observations of the Complex Observable Property.
-            lang: en
-        propertyUri: fdri:aggregationPeriod
-        kind: literal
-        constraints:
-          - datatype: xsd:duration
-      valueStatistic:
-        label:
-          - value: value statistic
-            lang: en
-        description:
-          - value: |
-              The way in which any values gathered in a single observation period (as defined by the
-              `fdri:aggregationPeriod` property) are processed to derive the reported value of the property for the 
-              period. Examples include mean value over period, total value over period or a single instantaneous value.
-        propertyUri: fdri:valueStatistic
-        kind: object
-        constraints:
-          - record: ValueStatistic
 
   VariableScheme:
     label:

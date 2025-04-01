@@ -1,0 +1,1 @@
+to_entries | .[] | if .value and .value.args then setpath(["value","args"]; .value.args|to_entries) else . end | {"id": .key} + .value

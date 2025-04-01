@@ -1,0 +1,15 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - extensions.py
+
+resources:
+  - name: TimeSeriesDataset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
+      "@type": "<fdri:TimeSeriesDataset>"
+      "<fdri:measure>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"

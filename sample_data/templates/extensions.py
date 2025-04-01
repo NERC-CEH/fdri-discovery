@@ -1,5 +1,5 @@
-from lib.template_state import TemplateState
-from lib.template_support import register_fn, uri_expand
+from rdf_mapper.lib.template_state import TemplateState
+from rdf_mapper.lib.template_support import register_fn, uri_expand
 from rdflib import Literal
 
 def slug(text: str, state: TemplateState):

@@ -1,55 +1,39 @@
-INSTRUMENT_ID,INSTRUMENT_NAME,INSTRUMENT_COMMENT,MANUAL,MODEL,DATA
-CHAIN,Stainless steel chain,Chain added to pluvio raingauges to improve wind interference problem,,Chain,
-AWS_ANEM_SONIC,3D Sonic Anemometer with sonic temperature upgrade,New transducers installed on WindMaster,,,Y
-TBR,Tipping bucket raingauge,,,SBS,Y
-TBR2,Tipping bucket raingauge,,,,Y
-PHENOCAM,Phenocam,For the recording the IP,,Mobotix,N
-PHENOCAM_LENS1,Phenocam lens 1,,,Mobotix,N
-PHENOCAM_LENS2,Phenocam lens 2,,,Mobotix,N
-RH_INT,Logger enclosure internal relative humidity,UKCEH built internal relative humidity sensor,,,
-MODEM_PRO,ProRoute modem,,,H820E-W,N
-AWS,Automatic Weather Station,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\GillMetPak,Gill MetPak Weather Station,Y
-AWS_ANEM,3D Sonic Anemometer,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\GillMetPak,Gill WindMaster3D,Y
-RG,Weighing Raingauge,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\OttPluvio\pluvio2_manual.pdf,Ott Pluvio 2,Y
-4CR,Four-component radiometer,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\NR01\nr01.pdf,Hukseflux NR01,Y
-PYRANO_UP,Upward-facing pyranometer,,,,Y
-PYRANO_DOWN,Downward-facing pyranometer,,,,Y
-PYRGEO_UP,Upward-facing pyrgeometer,,,,Y
-PYRGEO_DOWN,Downward-facing pyrgeometer,,,,Y
-HF1,Heat flux plate 1,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\HFP01SC,Hukseflux HFP01SC,Y
-HF2,Heat flux plate 2,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\HFP01SC,Hukseflux HFP01SC,Y
-STP,Soil Temperature profile,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\STP01,Hukseflux STP01,Y
-TDT1,TDT sensor 1,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT2,TDT sensor 2,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-PROFILE1,Soil moisture profile sensor 1,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\IMKO,IMKO Digital TDT Soil moisture sensor,Y
-PROFILE2,Soil moisture profile sensor 2,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\IMKO,IMKO Digital TDT Soil moisture sensor,Y
-PROFILE3,Soil moisture profile sensor 3,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\IMKO,IMKO Digital TDT Soil moisture sensor,Y
-COSMOS_MOD,Cosmic-ray soil moisure sensor (Moderated),,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\HydroInnova,Hydroinnova CRS-2000 or CRS1000/B (Moderated),Y
-COSMOS_MOD2,Cosmic-ray soil moisure sensor 2 (Moderated),,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\HydroInnova,Hydroinnova CRS-2000 or CRS1000/B (Moderated),Y
-COSMOS_BARE,Cosmic-ray soil moisure sensor (Bare),,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\HydroInnova,Hydroinnova CRS-2000 or CRS1000/B (Bare),Y
-GPRS,GPRS,,,,N
-SNOW_DEPTH,Snow depth sensor,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\SR50A,Campbell SR05A,Y
-COSMOS_SNOW,Snowfox COSMOS tube,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\HydroInnova,Hydroinnova Snowfox,Y
-TEMP,Air temperature,,,,Y
-MODEM_BGAN,BGAN modem,,,,N
-TDT3,TDT sensor 3,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT4,TDT sensor 4,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT5,TDT sensor 5,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT6,TDT sensor 6,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT7,TDT sensor 7,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT8,TDT sensor 8,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT9,TDT sensor 9,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-TDT10,TDT sensor 10,,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Acclima,Acclima Digital TDT Soil moisture sensor,Y
-PA,Barometric Pressure Sensor,First installed in Phase 3,P:\NEC04961_COSMOSUK\Technical Documentation\Manuals\Campbell\,CS106 Pressure sensor,Y
-RH,Relative humidity sensor,,,Vaisala HUMICAP Humidity and temperature probe HMP155,Y
-MODEM,Modem,,,COM1-10(A),N
-AWS_SDM,SDMSI01(A),Component of Phase 3 logger comms,,SDMSI01,N
-LOGGER,DataLogger,,,CR3000,Y
-BATTERY,Battery,,,,N
-DERIVED,Derived data,,,,Y
-MODEM_LX60,Sierra Wireless LX60 Modem,Replacement for MODEM_PRO (ProRoute Modem),P:\NEC04961_COSMOSUK\Instrumentation\Sierra_Wireless\Manuals\Airlink-LX60-User-Guide.pdf,Sierra Wireless LX60 Modem,N
-ETHERNET_115,Ethernet interface,,,NL115,N
-ETHERNET_116,Ethernet interface,,,NL116,N
-HYGROCLIP,Hygroclip (relative humidity component of MetPak),,,Rotronic hygroclip HC2-S(3),N
-RG_R,Tipping weighing raingauge,Lambrecht Rain[e] initially deployed in addition to OTT Pluvio2,P:\NEC04961_COSMOSUK\Instrumentation\Lambrecht,Lambrecht Rain[e],
-HYGROCLIP_A,Hygroclip (relative humidity component of MetPak). Improved model.,New model of hygroclip deployed on advice from Rotronic due to poor performance of previous model.,,Rotronic hygroclip HC2A-S(3),
+INSTRUMENT_ID,INSTRUMENT_NAME,INSTRUMENT_COMMENT,MODEL
+4CR,Four-component radiometer,Hukseflux NR01,
+AWS,Automatic Weather Station,Gill MetPak Weather Station,
+AWS_ANEM,3D Sonic Anemometer,Gill WindMaster3D,
+AWS_ANEM_SONIC,3D Sonic Anemometer with sonic temperature upgrade,New transducers installed on WindMaster,
+AWS_SDM,SDMSI01(A),Component of Phase 3 logger comms,SDMSI01
+BATTERY,Battery,,
+CHAIN,Stainless steel chain,Chain added to pluvio raingauges to improve wind interference problem,Chain
+CRNS,Cosmic-ray soil moisure sensor (Moderated),Hydroinnova CRS-2000 or CRS1000/B (Moderated),
+CRNS_BARE,Cosmic-ray soil moisure sensor (Bare),Hydroinnova CRS-2000 or CRS1000/B (Bare),
+CRNS_SNOW,Snowfox COSMOS tube,Hydroinnova Snowfox,
+ETHERNET_115,Ethernet interface,NL115,
+ETHERNET_116,Ethernet interface,NL116,
+GPRS,GPRS,,
+HFP,Heat flux plate 1,Hukseflux HFP01SC,
+HYGROCLIP,Hygroclip (relative humidity component of MetPak),Rotronic hygroclip HC2-S(3),
+HYGROCLIP_A,Hygroclip (relative humidity component of MetPak). Improved model.,New model of hygroclip deployed on advice from Rotronic due to poor performance of previous model.,Rotronic hygroclip HC2A-S(3)
+IMKO,Soil moisture profile sensor,IMKO Digital TDT Soil moisture sensor,
+LOGGER,DataLogger,CR3000,
+MODEM,Modem,COM1-10(A),
+MODEM_BGAN,BGAN modem,,
+MODEM_LX60,Sierra Wireless LX60 Modem,Replacement for MODEM_PRO (ProRoute Modem),Sierra Wireless LX60 Modem
+MODEM_PRO,ProRoute modem,H820E-W,
+CS106,Barometric Pressure Sensor,First installed in Phase 3,CS106 Pressure sensor
+PHENOCAM,Phenocam,For the recording the IP,Mobotix
+PHENOCAM_LENS1,Phenocam lens 1,Mobotix,
+PHENOCAM_LENS2,Phenocam lens 2,Mobotix,
+PLUVIO,Weighing Raingauge,Ott Pluvio 2,
+PYRANO_DOWN,Downward-facing pyranometer,,
+PYRANO_UP,Upward-facing pyranometer,,
+PYRGEO_DOWN,Downward-facing pyrgeometer,,
+PYRGEO_UP,Upward-facing pyrgeometer,,
+RAINE,Tipping weighing raingauge,Lambrecht Rain[e] initially deployed in addition to OTT Pluvio2,Lambrecht Rain[e]
+HMP,Relative humidity sensor,Vaisala HUMICAP Humidity and temperature probe HMP155,
+RH_INT,Logger enclosure internal relative humidity,UKCEH built internal relative humidity sensor,
+SR05A,Snow depth sensor,Campbell SR05A,
+STP,Soil Temperature profile,Hukseflux STP01,
+TBR,Tipping bucket raingauge,SBS,
+TDT,TDT sensor,Acclima Digital TDT Soil moisture sensor,

@@ -4,18 +4,23 @@ globals:
 
 imports:
   - namespaces.yaml
+  - concept_schemes.yaml
   - extensions.py
 
 one_offs:
   - name: Classification
     properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/common/parameter/classification>
-      "@type": <qudt:QuantityKind>
+      "@id": <http://fdri.ceh.ac.uk/ref/common/property/classification>
+      "@type": <iop:Property>
+      "<skos:inScheme>": "<::PropertyScheme>"
+      "^<skos:hasTopConcept>": "<::PropertyScheme>"
+
   - name: LandCover
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/land_cover>"
       "@type": <fdri:ObjectOfInterest>
       "<skos:prefLabel>": "Land cover@en"
+
   - name: LCMScheme
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/cosmos/lcm-2015>
@@ -24,46 +29,56 @@ one_offs:
 
   - name: ObservedLandCover
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/cop/observed-land-cover>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/observed-land-cover>"
       "@type": <fdri:Variable>
       "<skos:prefLabel>": "Observed Land Cover@en"
       "<iop:hasProperty>": <::Classification>
       "<iop:hasObjectOfInterest>": <::LandCover>
       "<fdri:valueScheme>": <::LCMScheme>
+      "<skos:inScheme>": "<::CommonCopScheme>"
+      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
   
   - name: Source
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/source>"
-      "@type": <qudt:QuantityKind>
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/source>"
+      "@type": <iop:Property>
       "<skos:prefLabel>": "Source@en"
+      "<skos:inScheme>": "<::PropertyScheme>"
+      "^<skos:hasTopConcept>": "<::PropertyScheme>"
 
   - name: Comment
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/comment>"
-      "@type": <qudt:QuantityKind>
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/comment>"
+      "@type": <iop:Property>
       "<skos:prefLabel>": "Commentary@en"
+      "<skos:inScheme>": "<::PropertyScheme>"
+      "^<skos:hasTopConcept>": "<::PropertyScheme>"
 
   - name: Observation
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/observation>"
-      "@type": <fdri:ObjectOfInterest>
+      "@type": <iop:Entity>
       "<skos:prefLabel>": "Observation@en"
 
   - name: ObservationSource
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/cop/observation-source>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/observation-source>"
       "@type": <fdri:Variable>
       "<skos:prefLabel>": "Observation Source@en"
       "<iop:hasProperty>": <::Source>
       "<iop:hasObjectOfInterest>": <::Observation>
+      "<skos:inScheme>": "<::CommonCopScheme>"
+      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
 
   - name: ObservationComment
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/cop/observation-comment>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/observation-comment>"
       "@type": <fdri:Variable>
       "<skos:prefLabel>": "Observation Comment@en"
       "<iop:hasProperty>": <::Comment>
       "<iop:hasObjectOfInterest>": <::Observation>
+      "<skos:inScheme>": "<::CommonCopScheme>"
+      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
 
 resources:
   - name: Annotation
@@ -97,7 +112,7 @@ resources:
       "<fdri:interval>":
         name: CurrentValuePeriod
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.interval>"
           "@type": <dct:PeriodOfTime>
           "<dcat:startDate>": "{START_DATE}^^<xsd:date>"
       "<schema:valueReference>": <::LandCoverClass>
@@ -111,7 +126,7 @@ resources:
       "<fdri:interval>":
         name: PreviousValuePeriod
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.interval>"
           "@type": <dct:PeriodOfTime>
           "<dcat:startDate>": "{START_DATE}^^<xsd:date>"
           "<dcat:endDate>": "{END_DATE}^^<xsd:date>"
@@ -120,27 +135,27 @@ resources:
     requires:
       SOURCE:
     properties:
-      "@id": "<_>"
+      "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.source>"
       "@type": <fdri:Annotation>
       "^<fdri:qualifier>": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}>"
       "<fdri:property>": <::ObservationSource>
       "<fdri:hasValue>":
         name: SourceAnnotationValue
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.source.value>"
           "@type": <schema:PropertyValue>
           "<schema:value>": "{SOURCE}"
   - name: CommentAnnotation
     requires:
       COMMENTS:
     properties:
-      "@id": "<_>"
+      "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.comment>"
       "@type": <fdri:Annotation>
       "^<fdri:qualifier>": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}>"
       "<fdri:property>": <::ObservationComment>
       "<fdri:hasValue>":
         name: CommentAnnotationValue
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.comment.value>"
           "@type": <schema:PropertyValue>
           "<schema:value>": "{COMMENTS}"

@@ -164,3 +164,6 @@ cython_debug/
 # VSCode
 .vscode/
 DuckDB.session.sql
+
+# LibreOffice
+.~lock.*

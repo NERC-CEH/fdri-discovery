@@ -1,5 +1,7 @@
 STATISTIC_ID,STATISTIC_NAME,DESCRIPTION
 INST,Instantaneous,
+MAX_PREC, Maximum over preceding period,
+MIN_PREC, Minimum over preceding period,
 MEAN_PREC,Mean over preceding period,
 STDDEV_PREC,Standard deviation over preceding period,
 TOTAL_PREC,Total over preceding period,

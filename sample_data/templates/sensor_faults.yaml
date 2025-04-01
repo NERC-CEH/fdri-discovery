@@ -16,11 +16,11 @@ resources:
       "@type": "<fdri:Fault>"
       "<dct:description>": "{DESCRIPTION_OF_ISSUE}@en"
       "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
-      "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/cosmos/cop/{VARIABLE|slug}>"
+      "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
       "<fdri:interval>":
         name: Interval
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}#interval>"
           "@type": "<dct:PeriodOfTime>"
           "<dcat:startDate>": "{START_DATETIME|asDateTime}"
           "<dcat:endDate>": "{END_DATETIME|asDateTime}"
@@ -34,11 +34,11 @@ resources:
       "@type": "<fdri:Fault>"
       "<dct:description>": "{DESCRIPTION_OF_ISSUE}@en"
       "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
-      "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/cosmos/cop/{VARIABLE|slug}>"
+      "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
       "<fdri:interval>":
         name: Interval
         properties:
-          "@id": "<_>"
+          "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}#interval>"
           "@type": "<dct:PeriodOfTime>"
           "<dcat:startDate>": "{START_DATETIME|asDateTime}"
           "<dcat:endDate>": "{END_DATETIME|asDateTime}"

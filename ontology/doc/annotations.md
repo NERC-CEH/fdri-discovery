@@ -18,7 +18,7 @@ An `fdri:Annotation` can also be used as the value of an `fdri:qualifier` proper
 classDiagram
 class Resource["dcat:Resource"]
 class Annotation["fdri:Annotation"]
-class COP["fdri:Variable"]
+class COP["iop:Variable"]
 class PropertyValue["fdri:PropertyValue"] {
     value: rdfs:Literal
     minValue: rdfs:Literal

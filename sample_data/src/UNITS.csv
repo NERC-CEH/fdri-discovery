@@ -1,0 +1,22 @@
+UNIT_ID,UNIT_NAME
+CM,cm
+PCT,%
+M,metres
+CTS,Counts
+DEG,Degrees
+DEGC,Deg Celsius
+SAMPLES,Samples
+V,V
+WM-2,Wm-2
+GM-3,gm-3
+HPA,hPa
+KPA,kPa
+KGM-1S-2,kgm-1s-2
+KGM-3,kgm-3
+MV,mV
+MM,mm
+MS-1,ms-1
+MJM-2-D,MJ m-2 day-1
+MJD,MJday-1
+UNITLESS,Unitless
+SEC,Seconds

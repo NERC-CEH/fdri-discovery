@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS TS AS FROM read_csv('./sample_data/src/TIMESERIES_IDS.csv', AUTO_DETECT=true);
+CREATE TABLE IF NOT EXISTS SS AS FROM read_csv('./sample_data/src/SENSOR_SLOT_IDS.csv', AUTO_DETECT=true);
+COPY (
+    SELECT DISTINCT TS.PARAMETER_ID, SS.INSTRUMENT_ID
+    FROM TS JOIN SS on TS.SENSOR_SLOT_ID == SS.SENSOR_SLOT_ID
+)TO './build/instrumentation_parameters.csv' (HEADER, DELIMITER ',') ;

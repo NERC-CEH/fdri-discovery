@@ -1,0 +1,1444 @@
+{
+    "ALBEDO_1DAY_PROCESSED": {
+        "depends_on": [
+            "ALBEDO_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_daily_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "ALBEDO_30MIN_PROCESSED": {
+        "depends_on": [
+            "SWIN_30MIN_PROCESSED",
+            "SWOUT_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "ALBEDO_SD_1DAY_PROCESSED": {
+        "depends_on": [
+            "ALBEDO_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_albedo_sd",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS_VWC_1DAY_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_1DAY_PROCESSED",
+            "CTS_EST_CRNS_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_VWC_with_snow",
+        "args": {
+            "round": 1
+        }
+    },
+    "COSMOS_VWC_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_VWC",
+        "args": {
+            "round": 1
+        }
+    },
+    "COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_VWC",
+        "args": {
+            "round": 1
+        }
+    },
+    "COSMOSFACTOR_INTEN_1HOUR_PROCESSED": {
+        "depends_on": [
+            "NMDB_COUNTS_1HOUR_RAW"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_factor_inten",
+        "args": {
+            "round": 5
+        }
+    },
+    "COSMOSFACTOR_PA_1HOUR_PROCESSED": {
+        "depends_on": [
+            "PA_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_factor_PA",
+        "args": {
+            "round": 5
+        }
+    },
+    "COSMOSFACTOR_Q_1HOUR_PROCESSED": {
+        "depends_on": [
+            "Q_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_factor_Q",
+        "args": {
+            "round": 5
+        }
+    },
+    "COV_TS_UX_30MIN_PROCESSED": {
+        "depends_on": [
+            "COV_TS_UX_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "COV_TS_UY_30MIN_PROCESSED": {
+        "depends_on": [
+            "COV_TS_UY_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "COV_TS_UZ_30MIN_PROCESSED": {
+        "depends_on": [
+            "COV_TS_UZ_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "COV_UX_UY_30MIN_PROCESSED": {
+        "depends_on": [
+            "COV_UX_UY_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "COV_UX_UZ_30MIN_PROCESSED": {
+        "depends_on": [
+            "COV_UX_UZ_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "COV_UY_UZ_30MIN_PROCESSED": {
+        "depends_on": [
+            "COV_UY_UZ_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_BARE_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_BARE_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_EST_CRNS_1DAY_PROCESSED": {
+        "depends_on": [
+            "CTS_EST_CRNS_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "hourly_value_as_daily",
+        "args": {
+            "hour": 12
+        }
+    },
+    "CTS_EST_CRNS_1HOUR_PROCESSED": {
+        "depends_on": [
+            "SNOW_1DAY_PROCESSED",
+            "CTS_SMO_CRNS_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "get_snow_estimated_counts",
+        "args": {
+            "round": 5
+        }
+    },
+    "CTS_EST_SNOWFOX_1DAY_PROCESSED": {
+        "depends_on": [
+            "CTS_EST_SNOWFOX_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "hourly_value_as_daily",
+        "args": {
+            "hour": 12
+        }
+    },
+    "CTS_EST_SNOWFOX_1HOUR_PROCESSED": {
+        "depends_on": [
+            "SNOW_1DAY_PROCESSED",
+            "CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "get_snow_estimated_counts",
+        "args": {
+            "round": 5
+        }
+    },
+    "CTS_MOD_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "sum",
+        "args": {
+            "threshold": 2
+        }
+    },
+    "CTS_MOD_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_MOD_CORR_1DAY_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_CORR_1HOUR_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 20,
+            "round": 5
+        }
+    },
+    "CTS_MOD_CORR_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_1HOUR_PROCESSED",
+            "COSMOSFACTOR_INTEN_1HOUR_PROCESSED",
+            "COSMOSFACTOR_PA_1HOUR_PROCESSED",
+            "COSMOSFACTOR_Q_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "correct_counts",
+        "args": {
+            "round": 5
+        }
+    },
+    "CTS_MOD_PERIOD_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_PERIOD_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_MOD_RH_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_RH_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_MOD_TEMP_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD_TEMP_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_MOD2_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD2_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_MOD2_PERIOD_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD2_PERIOD_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_MOD2_RH_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD2_RH_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_MOD2_TEMP_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_MOD2_TEMP_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_SMO_CRNS_1HOUR_PROCESSED": {
+        "depends_on": [
+            "SNOW_1DAY_PROCESSED",
+            "CTS_MOD_CORR_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "rolling_mean_for_snow"
+    },
+    "CTS_SMO_SNOWFOX_1HOUR_PROCESSED": {
+        "depends_on": [
+            "SNOW_1DAY_PROCESSED",
+            "CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "rolling_mean_for_snow"
+    },
+    "CTS_SNOW_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_SNOW_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_SNOW_PERIOD_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_SNOW_PERIOD_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_SNOW_RH_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_SNOW_RH_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_SNOW_TEMP_30MIN_PROCESSED": {
+        "depends_on": [
+            "CTS_SNOW_TEMP_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "CTS_SNOWFOX_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_SNOW_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "sum",
+        "args": {
+            "threshold": 2
+        }
+    },
+    "CTS_SNOWFOX_CORR_1DAY_PROCESSED": {
+        "depends_on": [
+            "CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 20,
+            "round": 5
+        }
+    },
+    "CTS_SNOWFOX_CORR_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_SNOWFOX_1HOUR_PROCESSED",
+            "COSMOSFACTOR_INTEN_1HOUR_PROCESSED",
+            "COSMOSFACTOR_PA_1HOUR_PROCESSED",
+            "COSMOSFACTOR_Q_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "correct_counts",
+        "args": {
+            "round": 5
+        }
+    },
+    "D86_150M_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 150,
+            "round": 5
+        }
+    },
+    "D86_150M_1HOUR_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 150,
+            "round": 5
+        }
+    },
+    "D86_1M_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 1,
+            "round": 5
+        }
+    },
+    "D86_1M_1HOUR_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 1,
+            "round": 5
+        }
+    },
+    "D86_200M_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 200,
+            "round": 5
+        }
+    },
+    "D86_200M_1HOUR_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 200,
+            "round": 5
+        }
+    },
+    "D86_25M_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 25,
+            "round": 5
+        }
+    },
+    "D86_25M_1HOUR_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 25,
+            "round": 5
+        }
+    },
+    "D86_5M_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 5,
+            "round": 5
+        }
+    },
+    "D86_5M_1HOUR_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 5,
+            "round": 5
+        }
+    },
+    "D86_75M_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 75,
+            "round": 5
+        }
+    },
+    "D86_75M_1HOUR_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_D86",
+        "args": {
+            "distance": 75,
+            "round": 5
+        }
+    },
+    "E_SAT_MEAN_30MIN_PROCESSED": {
+        "depends_on": [
+            "E_SAT_MEAN_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "EFF_DEPTH_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_eff_depth",
+        "args": {
+            "round": 5
+        }
+    },
+    "EFF_DEPTH_1HOUR_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_eff_depth",
+        "args": {
+            "round": 5
+        }
+    },
+    "G1_1DAY_PROCESSED": {
+        "depends_on": [
+            "G1_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "G1_30MIN_PROCESSED": {
+        "depends_on": [
+            "G1_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "G2_1DAY_PROCESSED": {
+        "depends_on": [
+            "G2_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "G2_30MIN_PROCESSED": {
+        "depends_on": [
+            "G2_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "HS_30MIN_PROCESSED": {
+        "depends_on": [
+            "HS_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "LWIN_1DAY_PROCESSED": {
+        "depends_on": [
+            "LWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_radiation",
+        "args": {
+            "round": 1
+        }
+    },
+    "LWIN_30MIN_PROCESSED": {
+        "depends_on": [
+            "LWIN_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "LWIN_MULT_30MIN_PROCESSED": {
+        "depends_on": [
+            "LWIN_MULT_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "LWOUT_1DAY_PROCESSED": {
+        "depends_on": [
+            "LWOUT_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_radiation",
+        "args": {
+            "round": 1
+        }
+    },
+    "LWOUT_30MIN_PROCESSED": {
+        "depends_on": [
+            "LWOUT_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "LWOUT_MULT_30MIN_PROCESSED": {
+        "depends_on": [
+            "LWOUT_MULT_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "MSLP_1DAY_PROCESSED": {
+        "depends_on": [
+            "MSLP_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "MSLP_30MIN_PROCESSED": {
+        "depends_on": [
+            "PA_30MIN_PROCESSED",
+            "TA_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_MSLP",
+        "args": {
+            "round": 3
+        }
+    },
+    "PA_1DAY_PROCESSED": {
+        "depends_on": [
+            "PA_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "PA_1HOUR_PROCESSED": {
+        "depends_on": [
+            "PA_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 2,
+            "round": 5
+        }
+    },
+    "PA_30MIN_PROCESSED": {
+        "depends_on": [
+            "PA_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PE_1DAY_PROCESSED": {
+        "depends_on": [
+            "PE_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_PE",
+        "args": {
+            "round": 1
+        }
+    },
+    "PE_30MIN_PROCESSED": {
+        "depends_on": [
+            "RN_30MIN_PROCESSED",
+            "G1_30MIN_PROCESSED",
+            "G2_30MIN_PROCESSED",
+            "TA_30MIN_PROCESSED",
+            "RH_30MIN_PROCESSED",
+            "WS_30MIN_PROCESSED",
+            "PA_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_PE",
+        "args": {
+            "round": 5
+        }
+    },
+    "PRECIP_1DAY_PROCESSED": {
+        "depends_on": [
+            "PRECIP_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "sum",
+        "args": {
+            "threshold": 43,
+            "round": 1
+        }
+    },
+    "PRECIP_30MIN_PROCESSED": {
+        "depends_on": [
+            "PRECIP_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PRECIP_30MIN_RAW": {
+        "depends_on": [
+            "PRECIP_1MIN_RAW"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "sum",
+        "args": {
+            "threshold": 27,
+            "round": 3
+        }
+    },
+    "PRECIP_RAINE_1DAY_PROCESSED": {
+        "depends_on": [
+            "PRECIP_RAINE_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "sum",
+        "args": {
+            "threshold": 43,
+            "round": 1
+        }
+    },
+    "PRECIP_RAINE_1MIN_RAW": {
+        "derivation": "PROCESS"
+    },
+    "PRECIP_RAINE_30MIN_PROCESSED": {
+        "depends_on": [
+            "PRECIP_RAINE_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PRECIP_RAINE_30MIN_RAW": {
+        "depends_on": [
+            "PRECIP_RAINE_1MIN_RAW"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "sum",
+        "args": {
+            "threshold": 27,
+            "round": 3
+        }
+    },
+    "PRECIP_TIPPING_1DAY_PROCESSED": {
+        "depends_on": [
+            "PRECIP_TIPPING_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "sum",
+        "args": {
+            "threshold": 43,
+            "round": 1
+        }
+    },
+    "PRECIP_TIPPING_30MIN_PROCESSED": {
+        "depends_on": [
+            "PRECIP_TIPPING_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PRECIP_TIPPING_30MIN_RAW": {
+        "depends_on": [
+            "PRECIP_TIPPING_A_1MIN_RAW",
+            "PRECIP_TIPPING_B_1MIN_RAW"
+        ],
+        "derivation": "CALCULATE",
+        "method": "get_precip_tipping",
+        "args": {
+            "round": 3
+        }
+    },
+    "PRECIP_TIPPING2_30MIN_PROCESSED": {
+        "depends_on": [
+            "PRECIP_TIPPING2_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PROFILE_SOILEC_15_30MIN_PROCESSED": {
+        "depends_on": [
+            "PROFILE_SOILEC_15_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PROFILE_SOILEC_40_30MIN_PROCESSED": {
+        "depends_on": [
+            "PROFILE_SOILEC_40_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PROFILE_SOILEC_65_30MIN_PROCESSED": {
+        "depends_on": [
+            "PROFILE_SOILEC_65_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PROFILE_VWC_15_30MIN_PROCESSED": {
+        "depends_on": [
+            "PROFILE_VWC_15_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PROFILE_VWC_40_30MIN_PROCESSED": {
+        "depends_on": [
+            "PROFILE_VWC_40_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "PROFILE_VWC_65_30MIN_PROCESSED": {
+        "depends_on": [
+            "PROFILE_VWC_65_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "Q_1DAY_PROCESSED": {
+        "depends_on": [
+            "Q_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39
+        }
+    },
+    "Q_1HOUR_PROCESSED": {
+        "depends_on": [
+            "Q_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 2
+        }
+    },
+    "Q_30MIN_PROCESSED": {
+        "depends_on": [
+            "Q_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "RH_1DAY_PROCESSED": {
+        "depends_on": [
+            "RH_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39
+        }
+    },
+    "RH_30MIN_PROCESSED": {
+        "depends_on": [
+            "RH_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "RHO_A_MEAN_30MIN_PROCESSED": {
+        "depends_on": [
+            "RHO_A_MEAN_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "RN_1DAY_PROCESSED": {
+        "depends_on": [
+            "RN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_radiation",
+        "args": {
+            "round": 1
+        }
+    },
+    "RN_30MIN_PROCESSED": {
+        "depends_on": [
+            "SWIN_30MIN_PROCESSED",
+            "SWOUT_30MIN_PROCESSED",
+            "LWIN_30MIN_PROCESSED",
+            "LWOUT_30MIN_PROCESSED",
+            ""
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_RN",
+        "args": {
+            "round": 3
+        }
+    },
+    "SIGMA_SWE_CRNS_1DAY_PROCESSED": {
+        "depends_on": [
+            "SIGMA_SWE_CRNS_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "hourly_value_as_daily",
+        "args": {
+            "hour": 12
+        }
+    },
+    "SIGMA_SWE_CRNS_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_EST_CRNS_1HOUR_PROCESSED",
+            "CTS_SMO_CRNS_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_crns_SIGMA_SWE",
+        "args": {
+            "round": 5
+        }
+    },
+    "SIGMA_SWE_SNOWFOX_1DAY_PROCESSED": {
+        "depends_on": [
+            "SIGMA_SWE_SNOWFOX_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "hourly_value_as_daily",
+        "args": {
+            "hour": 12
+        }
+    },
+    "SIGMA_SWE_SNOWFOX_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+            "CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_snowfox_SIGMA_SWE",
+        "args": {
+            "round": 5
+        }
+    },
+    "SMI_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_SMI",
+        "args": {
+            "round": 3
+        }
+    },
+    "SNOW_1DAY_PROCESSED": {
+        "depends_on": [
+            "ALBEDO_1DAY_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "is_snow_day"
+    },
+    "SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
+        "depends_on": [
+            "SNOWD_DISTANCE_COR_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "SNOWD_DISTANCE_COR_30MIN_PROCESSED": {
+        "depends_on": [
+            "SNOWD_DISTANCE_COR_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "SNOWD_DISTANCE_UNC_30MIN_PROCESSED": {
+        "depends_on": [
+            "SNOWD_SIGNALQUALITY_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "STP_TSOIL_10_1DAY_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_10_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "STP_TSOIL_10_30MIN_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_10_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "STP_TSOIL_2_1DAY_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_2_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "STP_TSOIL_2_30MIN_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_2_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "STP_TSOIL_20_1DAY_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_20_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "STP_TSOIL_20_30MIN_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_20_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "STP_TSOIL_5_1DAY_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_5_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "STP_TSOIL_5_30MIN_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_5_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "STP_TSOIL_50_1DAY_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_50_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "STP_TSOIL_50_30MIN_PROCESSED": {
+        "depends_on": [
+            "STP_TSOIL_50_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "SWE_CRNS_1DAY_PROCESSED": {
+        "depends_on": [
+            "SWE_CRNS_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "hourly_value_as_daily",
+        "args": {
+            "hour": 12
+        }
+    },
+    "SWE_CRNS_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_EST_CRNS_1HOUR_PROCESSED",
+            "CTS_SMO_CRNS_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_crns_SWE",
+        "args": {
+            "round": 5
+        }
+    },
+    "SWE_SNOWFOX_1DAY_PROCESSED": {
+        "depends_on": [
+            "SWE_SNOWFOX_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "hourly_value_as_daily",
+        "args": {
+            "hour": 12
+        }
+    },
+    "SWE_SNOWFOX_1HOUR_PROCESSED": {
+        "depends_on": [
+            "CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+            "CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calculate_snowfox_SWE",
+        "args": {
+            "round": 5
+        }
+    },
+    "SWIN_1DAY_PROCESSED": {
+        "depends_on": [
+            "SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_radiation",
+        "args": {
+            "round": 1
+        }
+    },
+    "SWIN_30MIN_PROCESSED": {
+        "depends_on": [
+            "SWIN_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "SWOUT_1DAY_PROCESSED": {
+        "depends_on": [
+            "SWOUT_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_radiation",
+        "args": {
+            "round": 1
+        }
+    },
+    "SWOUT_30MIN_PROCESSED": {
+        "depends_on": [
+            "SWOUT_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TA_1DAY_PROCESSED": {
+        "depends_on": [
+            "TA_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TA_30MIN_PROCESSED": {
+        "depends_on": [
+            "TA_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TA_MAX_1DAY_PROCESSED": {
+        "depends_on": [
+            "TA_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "max",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TA_MIN_1DAY_PROCESSED": {
+        "depends_on": [
+            "TA_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "min",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TAU_30MIN_PROCESSED": {
+        "depends_on": [
+            "TAU_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILEC_10_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILEC_10_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILEC_15_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILEC_15_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILEC_25_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILEC_25_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILEC_5_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILEC_5_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILEC_50_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILEC_50_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILPERM_10_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILPERM_10_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILPERM_15_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILPERM_15_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILPERM_25_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILPERM_25_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILPERM_5_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILPERM_5_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_SOILPERM_50_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_SOILPERM_50_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_TSOIL_10_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_10_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_TSOIL_10_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_10_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_TSOIL_15_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_15_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_TSOIL_15_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_15_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_TSOIL_25_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_25_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_TSOIL_25_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_25_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_TSOIL_5_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_5_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_TSOIL_5_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_5_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_TSOIL_50_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_50_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_TSOIL_50_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_TSOIL_50_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_VWC_10_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_10_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_VWC_10_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_10_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_VWC_15_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_15_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_VWC_15_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_15_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_VWC_25_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_25_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_VWC_25_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_25_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_VWC_5_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_5_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_VWC_5_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_5_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TDT_VWC_50_1DAY_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_50_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "TDT_VWC_50_30MIN_PROCESSED": {
+        "depends_on": [
+            "TDT_VWC_50_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TNR01C_30MIN_PROCESSED": {
+        "depends_on": [
+            "TNR01C_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TS_30MIN_PROCESSED": {
+        "depends_on": [
+            "TS_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "U_STAR_30MIN_PROCESSED": {
+        "depends_on": [
+            "U_STAR_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "UX_30MIN_PROCESSED": {
+        "depends_on": [
+            "UX_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "UY_30MIN_PROCESSED": {
+        "depends_on": [
+            "UY_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "UZ_30MIN_PROCESSED": {
+        "depends_on": [
+            "UZ_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "WD_1DAY_PROCESSED": {
+        "depends_on": [
+            "WD_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_daily_WD",
+        "args": {
+            "round": 1
+        }
+    },
+    "WD_30MIN_PROCESSED": {
+        "depends_on": [
+            "WD_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "WS_1DAY_PROCESSED": {
+        "depends_on": [
+            "WS_30MIN_PROCESSED"
+        ],
+        "derivation": "AGGREGATE",
+        "method": "mean",
+        "args": {
+            "threshold": 39,
+            "round": 1
+        }
+    },
+    "WS_30MIN_PROCESSED": {
+        "depends_on": [
+            "WS_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "WS_RES_30MIN_PROCESSED": {
+        "depends_on": [
+            "WS_RES_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    }
+}

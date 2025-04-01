@@ -32,7 +32,7 @@ The `fdri:InteralDataProcessingConfiguration` class provides a structure for kee
 classDiagram
   class Plan["fdri:DataProcessingConfiguration"]
   class DPConfig["fdri:InternalDataProcessingConfiguration"]
-  class COP["fdri:Variable"]
+  class COP["iop:Variable"]
   class EMFType["fdri:EnvironmentalMonitoringFacilityType"]
   class EMF["fdri:EnvironmentalMonitoringFacility"]
   class ConfigurationItem["fdri:ConfigurationItem"]

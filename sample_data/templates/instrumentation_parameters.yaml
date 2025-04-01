@@ -1,0 +1,25 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: cosmos
+
+imports:
+  - namespaces.yaml
+  - extensions.py
+
+one_offs:
+  - name: SystemTypeScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type>"
+      "@type": "<fdri:EnvironmentalMonitoringSystemTypeScheme>"
+      "<dct:title>": "COSMOS Monitoring System Types@en"
+
+resources:
+
+  - name: IntrumentType
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSystemType>"
+      "<skos:prefLabel>": "{INSTRUMENT_ID}@en"
+      "<skos:inScheme>": "<::SystemTypeScheme>"
+      "^<skos:hasTopConcept>": "<::SystemTypeScheme>"
+      "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"

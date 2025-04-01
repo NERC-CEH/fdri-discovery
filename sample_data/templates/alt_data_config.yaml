@@ -1,0 +1,168 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: cosmos
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+one_offs:
+  - name: DataProcessingConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/data-processing-configuration>"
+      "@type": "<iop:Entity>"
+      "<skos:inScheme>": "<::ObjectOfInterestScheme>"
+      "^<skos:hasTopConcept>": "<::ObjectOfInterestScheme>"
+      "<skos:prefLabel>": "FDRI Data Processing Configuration@en"
+      "<rdfs:label>": "FDRI Data Processing Configuration@en"
+
+  - name: PriorityAnnotationProperty
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/data-processing-configuration-priority>"
+      "@type": "<fdri:Variable>"
+      "<iop:hasObjectOfInterest>": <::DataProcessingConfiguration>
+      "<iop:hasProperty>": "<http://fdri.ceh.ac.uk/ref/common/property/priority>"
+      "<skos:inScheme>": <::CommonCopScheme>
+      "^<skos:hasTopConcept>": <::CommonCopScheme>
+
+  - name: InfillConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/infill-configuration>"
+      "@type": "<fdri:DataProcessingConfigurationType>"
+      "<skos:prefLabel>": "Infill Processing Configuration@en"
+      "<rdfs:label>": "Infill Processing Configuration@en"
+      "<skos:inScheme>": "<::ConfigurationTypeScheme>"
+      "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
+  
+  - name: CorrectionFactorParameter
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/parameter/correction_factor>
+      "@type": "<fdri:ConfigurationParameter>"
+      "<skos:prefLabel>": "Correction Factor@en"
+      "<rdfs:label>": "Correction Factor@en"
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+
+  - name: AltDataMethod
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/method/alt_data>"
+      "@type": "<fdri:DataProcessingMethod>"
+      "<skos:prefLabel>": "Alternate Data@en"
+      "<rdfs:label>": "Alternate Data@en"
+      "<skos:inScheme>": <::DataProcessingMethodScheme>
+      "^<skos:hasTopConcept>": <::DataProcessingMethodScheme>
+
+  - name: AltDataTimeseriesParameter
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/alt_data-timeseries>"
+      "@type": "<fdri:ConfigurationParameter>"
+      "<skos:prefLabel>": "Alternate Data Timeseries@en"
+      "<rdfs:label>": "Alternate Data Timeseries@en"
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+
+  - name: AltDataConfigurationParameter
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/alt_data-configuration>"
+      "@type": <fdri:ConfigurationParameter>
+      "<skos:prefLabel>": "Alternate Data Processing Configuration@en"
+      "<rdfs:label>": "Alternate Data Processing Configuration@en"
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+
+resources:
+  - name: DataProcessingConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/cosmos-infill-{TIMESERIES_ID|slug}>"
+      "@type": "<fdri:InternalDataProcessingConfiguration>"
+      "<dct:type>": <::InfillConfiguration>
+      "<fdri:appliesToTimeSeries>": <http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>
+
+  - name: PriorityAnnotation
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}>"
+      "@type": "<fdri:Annotation>"
+      "^<fdri:hasAnnotation>": <::DataProcessingConfiguration>
+      "<fdri:property>": "<::PriorityAnnotationProperty>"
+      "<fdri:hasValue>":
+        - name: PriorityAnnotationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}#value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{PRIORITY}^^<xsd:integer>"
+
+  - name: InfillMethod
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/method/infill-{METHOD|slug}>
+      "@type": "<fdri:DataProcessingMethod>"
+      "<skos:prefLabel>": "{METHOD}@en"
+      "<rdfs:label>": "{METHOD}@en"
+      "<skos:inScheme>": "<::DataProcessingMethodScheme>"
+      "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
+
+  - name: AltDataProcessingConfigurationItem
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}>"
+      "@type": <fdri:ConfigurationItem>
+      "<fdri:method>": <::InfillMethod>
+      "<fdri:argument>":
+        - name: CorrectionFactor
+          requires:
+            CORRECTION_FACTOR:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor>"
+            "@type": <fdri:Argument>
+            "<fdri:parameter>": <::CorrectionFactorParameter>
+            "<fdri:hasValue>":
+              name: CorrectionFactorValue
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor.value>"
+                "@type": <schema:PropertyValue>
+                "<schema:value>": "{CORRECTION_FACTOR}^^<xsd:decimal>"
+
+  - name: CurrentConfigurationItem
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}>"
+      "@type": <fdri:ConfigurationItem>
+      "^<fdri:hasCurrentConfiguration>": <::DataProcessingConfiguration>
+      "<fdri:method>": <::AltDataMethod>
+      "<fdri:observationInterval>":
+        - name: ClosedConfigurationInterval
+          requires:
+            END_DATETIME:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#interval>"
+            "@type": <dct:PeriodOfTime>
+            "<dcat:startDate>": "{START_DATETIME}^^<xsd:dateTime>"
+            "<dcat:endDate>": "{END_DATETIME}^^<xsd:dateTime>"
+        - name: OpenConfigurationInterval
+          requires:
+            END_DATETIME: ""
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#interval>"
+            "@type": <dct:PeriodOfTime>
+            "<dcat:startDate>": "{START_DATETIME}^^<xsd:dateTime>"
+      "<fdri:argument>":
+        - name: AltData
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data>"
+            "@type": "<fdri:Argument>"
+            "<fdri:parameter>": "<::AltDataTimeseriesParameter>"
+            "<fdri:hasValue>":
+              - name: AltDataValue
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data.value>"
+                  "@type": <schema:PropertyValue>
+                  "<schema:valueReference>": <http://fdri.ceh.ac.uk/id/time-series/{ALT_TIMESERIES_ID|slug}>
+        - name: AltDataConfig
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data-config>"
+            "@type": "<fdri:Argument>"
+            "<fdri:parameter>": "<::AltDataConfigurationParameter>"
+            "<fdri:hasValue>":
+                name: AltDataConfigValue
+                properties:
+                  "@id": <http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data-config.value>
+                  "@type": <schema:PropertyValue>
+                  "<schema:valueReference>": "<::AltDataProcessingConfigurationItem>"

@@ -15,7 +15,7 @@
 * [Annotations on Catalogued Resources](annotations.md)
 * [Time-Series Dataset Model](time-series-dataset.md)
 * [Provenance and Activity Model](provenance-and-activity.md)
-* [Variables](variables.md)
+* [Variables and Measures](variables.md)
 * [Environmental Monitoring Facility Model](emf.md)
 * [Deployment Model](deployments.md)
 * [Sensor/System Model](sensor-system.md)

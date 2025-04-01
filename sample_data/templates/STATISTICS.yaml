@@ -4,20 +4,15 @@ globals:
 
 imports:
     - namespaces.yaml
+    - concept_schemes.yaml
     - extensions.py
 
 one_offs:
-  - name: StatisticsConceptScheme
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistics>"
-      "@type": "<skos:ConceptScheme>"
-      "<rdfs:label>": "Value Statistics@en"
-      "<dct:title>": "Value Statistics@en"
 
 resources:
   - name: StatisticsConcept
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistics/{STATISTIC_ID|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistic/{STATISTIC_ID|slug}>"
       "@type": "<fdri:ValueStatistic>"
       "<skos:inScheme>": "<::StatisticsConceptScheme>"
       "^<skos:hasTopConcept>": "<::StatisticsConceptScheme>"
@@ -28,7 +23,7 @@ resources:
     requires:
       DESCRIPTION:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistics/{STATISTIC_ID|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistic/{STATISTIC_ID|slug}>"
       "@type": "<fdri:ValueStatistic>"
       "<skos:scopeNote>": "{DESCRIPTION}@en"
 

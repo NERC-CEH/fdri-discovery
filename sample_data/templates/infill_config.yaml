@@ -1,0 +1,130 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: cosmos
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+one_offs:
+  - name: PriorityProperty
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/priority>"
+      "@type": "<iop:Property>"
+      "<skos:inScheme>": "<::PropertyScheme>"
+      "^<skos:hasTopConcept>": "<::PropertyScheme>"
+      "<skos:prefLabel>": "Priority Order Number@en"
+      "<rdfs:label>": "Priority Order Number@en"
+
+  - name: DataProcessingConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/data-processing-configuration>"
+      "@type": "<iop:Entity>"
+      "<skos:inScheme>": "<::ObjectOfInterestScheme>"
+      "^<skos:hasTopConcept>": "<::ObjectOfInterestScheme>"
+      "<skos:prefLabel>": "FDRI Data Processing Configuration@en"
+      "<rdfs:label>": "FDRI Data Processing Configuration@en"
+      
+  - name: PriorityAnnotationProperty
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/data-processing-configuration-priority>"
+      "@type": "<fdri:Variable>"
+      "<iop:hasObjectOfInterest>": <::DataProcessingConfiguration>
+      "<iop:hasProperty>": "<http://fdri.ceh.ac.uk/ref/common/property/priority>"
+      "<skos:inScheme>": "<::CommonCopScheme>"
+      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
+  - name: WindowParameter
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/window>"
+      "@type": "<fdri:ConfigurationParameter>"
+      "<skos:prefLabel>": "Window@en"
+      "<rdfs:label>": "Window@en"
+      "<skos:inScheme>": "<::ConfigurationParameterScheme>"
+      "^<skos:hasTopConcept>": "<::ConfigurationParameterScheme>"
+  - name: MaxGapSizeParameter
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/max-gap-size>"
+      "@type": "<fdri:ConfigurationParameter>"
+      "<skos:prefLabel>": "Maximum Gap Size@en"
+      "<rdfs:label>": "Maximum Gap Size@en"
+      "<skos:inScheme>": "<::ConfigurationParameterScheme>"
+      "^<skos:hasTopConcept>": "<::ConfigurationParameterScheme>"
+resources:
+  - name: DataProcessingConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/cosmos-infill-{TIMESERIES_ID|slug}>"
+      "@type": "<fdri:InternalDataProcessingConfiguration>"
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/infill-configuration>"
+      "<fdri:appliesToTimeSeries>": <http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>
+  
+  - name: PriorityAnnotation
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}>"
+      "@type": "<fdri:Annotation>"
+      "^<fdri:hasAnnotation>": <::DataProcessingConfiguration>
+      "<fdri:property>": "<::PriorityAnnotationProperty>"
+      "<fdri:hasValue>":
+        - name: PriorityAnnotationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}#value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{PRIORITY}^^<xsd:integer>"
+
+  - name: InfillMethod
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{METHOD}>"
+      "@type": "<fdri:DataProcessingMethod>"
+      "<skos:inScheme>": "<http://fdri.ceh.ac.uk/ref/common/method>"
+      "^<skos:hasTopConcept>": "<http://fdri.ceh.ac.uk/ref/common/method>"
+
+  - name: CurrentConfigurationItem
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}>"
+      "@type": "<fdri:ConfigurationItem>"
+      "^<fdri:hasCurrentConfiguration>": "<::DataProcessingConfiguration>"
+      "<fdri:observationInterval>":
+        - name: ClosedConfigurationInterval
+          requires:
+            END_DATETIME:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#value>"
+            "@type": <dct:PeriodOfTime>
+            "<dct:startDate>": "{START_DATETIME}^^<xsd:dateTime>"
+            "<dcat:endDate>": "{END_DATETIME}^^<xsd:dateTime>"
+        - name: OpenConfigurationInterval
+          requires:
+            END_DATETIME: ""
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#value>"
+            "@type": <dct:PeriodOfTime>
+            "<dcat:startDate>": "{START_DATETIME}^^<xsd:dateTime>"
+      "<fdri:method>": "<http://fdri.ceh.ac.uk/ref/common/method/{METHOD}>"
+      "<fdri:argument>":
+        - name: Window
+          requires:
+            WINDOW:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#window>"
+            "@type": <fdri:Argument>
+            "<fdri:parameter>": <::WindowParameter>
+            "<fdri:hasValue>":
+              name: WindowValue
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#window.value>"
+                "@type": <schema:PropertyValue>
+                "<schema:value>": "{WINDOW}^^<xsd:integer>"
+        - name: MaxGapSize
+          requires:
+            MAX_GAP_SIZE:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#gap>"
+            "@type": <fdri:Argument>
+            "<fdri:parameter>": <::MaxGapSizeParameter>
+            "<fdri:hasValue>":
+              name: MaxGapSizeValue
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#gap.value>"
+                "@type": <schema:PropertyValue>
+                "<schema:value>": "{MAX_GAP_SIZE}^^<xsd:integer>"
+

@@ -1,0 +1,78 @@
+one_offs:
+  - name: AggregationScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/aggregation>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "FDRI Common Value Aggregations@en"
+      "<rdfs:label>": "FDRI Common Value Aggregations@en"
+
+  - name: CommonCopScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop>"
+      "@type": "<fdri:VariableScheme>"
+      "<dct:title>": "FDRI Common Variables@en"
+      "<rdfs:label>": "FDRI Common Variables@en"
+
+  - name: ConfigurationTypeScheme
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/configuration-type>
+      "@type": "<fdri:DataProcessingConfigurationTypeScheme>"
+      "<dct:title>": "Common Configuration Types@en"
+      "<rdfs:label>": "Common Configuration Types@en"
+  
+  - name: ConfigurationParameterScheme
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/parameter>
+      "@type": "<fdri:ConfigurationParameterScheme>"
+      "<dct:title>": "Data Processing Configuration Parameters@en"
+      "<rdfs:label>": "Data Processing Configuration Parameters@en"
+
+  - name: ContextObjectScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/context>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "FDRI Common context objects@en"
+      "<rdfs:label>": "FDRI Common context objects@en"
+
+  - name: DataProcessingMethodScheme
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/method>
+      "@type": <skos:ConceptScheme>
+      "<dct:title>": "Data Processing Methods@en"
+      "<rdfs:label>": "Data Processing Methods@en"
+  
+  - name: MeasureScheme
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/measure>
+      "@type": "<fdri:MeasureScheme>"
+      "<dct:title>": "FDRI Commmon Measures@en"
+      "<rdfs:label>": "FDRI Commmon Measures@en"
+
+  - name: ObjectOfInterestScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "FDRI Common Objects Of Interest@en"
+      "<rdfs:label>": "FDRI Common Objects Of Interest@en"
+
+  - name: PropertyScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/property>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "FDRI Common Properties@en"
+      "<rdfs:label>": "FDRI Common Properties@en"
+
+  - name: ValueStatisticScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistic>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "Value Statistics@en"
+      "<rdfs:label>": "Value Statistics@en"
+  
+  - name: UnitScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/unit>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "FDRI Common Units@en"
+      "<rdfs:label>": "FDRI Common Units@en"
+  

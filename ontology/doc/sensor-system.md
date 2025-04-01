@@ -67,7 +67,7 @@ The `removeData` flag is set to true to indicate that affected observations shou
 ```mermaid
 classDiagram
   class EMF["fdri:EnvironmentalMonitoringFacility"]
-  class COP["fdri:Variable"]
+  class COP["iop:Variable"]
   class Fault["fdri:Fault"]
   class Fault {
     fdri:removeData: xsd:boolean
@@ -245,7 +245,7 @@ An initial calibration performed by the manufacturer can also be recorded as an 
 flowchart
 sensor["`fdri:EMSensor
 Sensor #1234`"]
-variable["`fdri:Variable
+variable["`iop:Variable
 SWIN`"]
 type["`skos:Concept
 Calibration Configuration`"]

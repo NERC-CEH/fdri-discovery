@@ -1,0 +1,96 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: cosmos
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+one_offs:
+  - name: PhenocamMaskConfigurationType
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/configuration-type/phenocam-mask>
+      "@type": "<fdri:DataProcessingConfigurationType>"
+      "<skos:prefLabel>": "PhenoCam Mask@en"
+      "<rdfs:label>": "PhenoCam Mask@en"
+      "^<skos:hasTopConcept>": <::ConfigurationTypeScheme>
+      "<skos:inScheme>": <::ConfigurationTypeScheme>
+
+  - name: MaskFilenameParameter
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/parameter/mask_filename>
+      "@type": <fdri:ConfigurationParameter>
+      "<skos:prefLabel>": "Mask Filename@en"
+      "<rdfs:label>": "Mask filename@en"
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+
+  - name: ImageMaskMethod
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/method/image_mask>
+      "@type": "<fdri:DataProcessingMethod>"
+      "<skos:prefLabel>": "Image masking@en"
+      "<rdfs:label>": "Image masking@en"
+      "<fdri:parameter>": <::MaskFilenameParameter>
+      "^<skos:hasTopConcept>": <::DataProcessingMethodScheme>
+      "<skos:inScheme>": <::DataProcessingMethodScheme>
+
+resources:
+  - name: MaskConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{SITE_ID|slug}-{FEATURE_ID|slug}-mask-{RESOLUTION|slug}-configuration>"
+      "@type": "<fdri:InternalDataProcessingConfiguration>"
+      "<dct:type>": <::PhenocamMaskConfigurationType>
+      "<fdri:appliesToFacility>": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>
+      "<fdri:appliesToTimeSeries>":
+        - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_red_{FEATURE_ID|slug}>
+        - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_green_{FEATURE_ID|slug}>
+        - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_blue_{FEATURE_ID|slug}>
+        - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_red_{FEATURE_ID|slug}_daily>
+        - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_green_{FEATURE_ID|slug}_daily>
+        - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_blue_{FEATURE_ID|slug}_daily>
+  - name: ConfigurationItem
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}>"
+      "@type": <fdri:ConfigurationItem>
+      "<fdri:method>": <::ImageMaskMethod>
+      "<fdri:argument>":
+        - name: MaskFilenameArgument
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}#mask-filename>"
+            "@type": <fdri:ConfigurationArgument>
+            "<fdri:parameter>": <::MaskFilenameParameter>
+            "<fdri:hasValue>":
+              - name: MaskFilenameArgumentValue
+                properties:
+                  "@id": <http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}#mask-filename.value>
+                  "@type": <schema:PropertyValue>
+                  "<schema:value>": "{MASK_FILENAME}"
+  - name: HistoricalConfigurationItem
+    requires:
+      END:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}>"
+      "@type": <fdri:ConfigurationItem>
+      "^<fdri:hadConfiguration>": <::MaskConfiguration>
+      "<fdri:observationInterval>":
+        - name: ClosedDateRange
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}.interval>"
+            "@type": <dct:PeriodOfTime>
+            "<dcat:startDate>": "{START}^^<xsd:dateTime>"
+            "<dcat:endDate>": "{END}^^<xsd:dateTime>"
+  - name: CurrentConfigurationItem
+    requires:
+      END: ''
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}>"
+      "@type": <fdri:ConfigurationItem>
+      "^<fdri:hasCurrentConfiguration>": <::MaskConfiguration>
+      "<fdri:observationInterval>":
+        - name: OpenDateRange
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}.interval>"
+            "@type": <dct:PeriodOfTime>
+            "<dcat:startDate>": "{START}^^<xsd:dateTime>"

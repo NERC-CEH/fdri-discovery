@@ -15,6 +15,7 @@ resources:
 
   - name: Sensor
     requires:
+      INSTRUMENT_ID:
       SERIAL_NUMBER:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
@@ -25,24 +26,29 @@ resources:
 
   - name: SensorDeployment
     requires:
+      INSTRUMENT_ID:
       SERIAL_NUMBER:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-deployment-{SITE_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
       "@type": "<fdri:Deployment>"
-      "<dct:title>": "Deployment of {INSTRUMENT_ID} {SERIAL_NUMBER} at {SITE_ID}@en"
+      "<dct:title>": "Deployment of {INSTRUMENT_ID} {SERIAL_NUMBER} to {SENSOR_SLOT_ID} at {SITE_ID}@en"
       "<ssn:deployedSystem>": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
-      "<ssn:deployedOnPlatform>": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"
+      "<ssn:deployedOnPlatform>": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}>"
       "<prov:startedAtTime>": "{START_DATETIME|asDateTime}"
+
   - name: SensorDeploymentEnd
     requires:
+      INSTRUMENT_ID:
       SERIAL_NUMBER:
       END_DATETIME:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-deployment-{SITE_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
       "@type": "<fdri:Deployment>"
       "<prov:endedAtTime>": "{END_DATETIME|asDateTime}"
+
   - name: SensorDeploymentComments
     requires:
+      INSTRUMENT_ID:
       SERIAL_NUMBER:
       COMMENTS:
     properties:

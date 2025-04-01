@@ -117,7 +117,8 @@ The property `fdri:originatingProgramme` can be used to reference the `Environme
   class CatalogResource["dcat:CatalogResource"]
   class Concept["skos:Concept"]
   class ConceptScheme["skos:ConceptScheme"]
-  class ObservedProperty["fdri:Variable"]
+  class ObservedProperty["iop:Variable"]
+  class Measure["fdri:Measure"]
   class Program["fdri:EnvironmentalMonitoringProgramme"]
   class Facility["fdri:EnvironmentalMonitoringFacility"]
   class Agent["fdri:Agent"]
@@ -159,6 +160,7 @@ The property `fdri:originatingProgramme` can be used to reference the `Environme
   ObservationDataset <|-- ObservationDatasetSeries
   CatalogResource --> Concept: dct_theme
   ObservationDataset --> ObservedProperty: sosa_observedProperty
+  ObesrvationDataset --> Measure: fdri_measure
   ObservationDataset --> Facility: fdri_originatingFacility
   ObservationDataset --> Program: fdri_originatingProgramme
   CatalogResource --> Agent: dct_creator

@@ -1,0 +1,22 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Dependency
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{DEPENDS_ON|slug}>"
+      "@type": "<fdri:TimeSeriesDefinition>"
+
+  - name: TSPlan
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/plan/{TIMESERIES_DEF|slug}-derivation>"
+      "@type": "<fdri:TimeSeriesPlan>"
+      "<rdfs:label>": "Derivation Plan for Time Series Definition {TIMESERIES_DEF}@en"
+      "<fdri:uses>": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{DEPENDS_ON|slug}>"
+      "^<fdri:methodology>": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{TIMESERIES_DEF|slug}>"

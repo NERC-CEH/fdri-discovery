@@ -20,6 +20,7 @@ resources:
       "<skos:prefLabel>": "{INSTRUMENT_NAME}@en"
       "<skos:inScheme>": "<::SystemTypeScheme>"
       "^<skos:hasTopConcept>": "<::SystemTypeScheme>"
+
   - name: InstrumentDescription
     requires:
       INSTRUMENT_COMMENT:
