@@ -15,6 +15,8 @@ This note reviews the access use cases identified at the start of the project ag
 | 2f(ii). retrieve details of measurement and _processing_ | ?? | `/id/data-processing-configuration?appliesToTimeSeries={id}` | To expose in STA would need inverse of `appliesToTimeseries` so can include all configuration information in `properties` field of Datastream. Use case may be aimed at higher level summary description of processing rather than detailed config. |
 | 2g. retrieve actual data for a site/set of sites for a time period | `/Datastreams(id-for-selected-stream)/Observations?$filter=phenomenonTime gt 2021-04-01T00:00:00+00:00 and phenomenonTime  lt2021-04-30T00:00:00+00:00` | `/id/dataset/id-for-series/readings?min-timestamp=2021-04-01T00:00:00&max-timestamp-2021-04-30T00:00` | Handling multiple sites would be possible in both though in STA may be easier to loop over individual calls. |
 
+## Detailed commentary 
+
 **1. As a hydrologist looking for data I would like FDRI monitoring data to appear within google searches, e.g. for “evaporation”, “rainfall data”, “river flow data”, etc.**
 
 This would be handled by including json-ld (using dcat or schema.org terms) in the HTML pages for the overall FDRI dataset and individual site pages. That could be done for any API format and pattern.
