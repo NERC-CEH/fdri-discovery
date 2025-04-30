@@ -4,9 +4,9 @@
 
 After various investigations of API options we propose that FDRI adopt a dual approach to a combined API.
 
-1. A simple REST API in the style of the existing metadata API and data APIs, with a unified set of query routes, and the ability combine data and metadata queries (use metadata query results to define the data sets to access).
+1. A simple REST API in the style of the existing metadata API and data APIs, with a unified set of query routes, and the ability to combine data and metadata queries (use metadata query results to define the data sets to access).
 
-2. A SensorThing API (STA) shim based on the STA [model mapping](../../ontology/doc/ogc-sensor-things.md) and [profiling](./api-profiling.md) already sketched.
+2. A SensorThing API (STA) shim based on the STA [model mapping](../../ontology/doc/ogc-sensor-things.md) and [profiling](./api-profiling.md) already sketched. Implemented using the [HydroServer2 STA implementation](https://github.com/hydroserver2/hydroserver-sensorthings).
 
 Each implementation would act as a broker for the metadata API. In the case of the simple REST API it would largely just proxy a subset of the metadata API calls. Whereas the STA implementation would act as a shim, translating STA calls (within the supported profile) to metadata API calls and mapping the returned json format back to STA format. 
 
@@ -42,7 +42,7 @@ The latter would allow data from multiple datasets to be fetched at once:
 /data?dataset={id1}&dataset={id2}&{filters}
 ```
 
-Simplifying to focus on list endpoints and key filters. Including filters (text and geo search not yet enabled on the metadata API but supported by the tech stack).
+A summary of possible endpoint patterns, a little simplified (focus just on list endpoints and key filter options) shown below. Includes some filters (text and geo search) not yet enabled on the metadata API but supported by the tech stack.
 
 | What | REST endpoint | REST Filters | Approximate STA endpoint |
 |---|---|---|---|
@@ -51,12 +51,12 @@ Simplifying to focus on list endpoints and key filters. Including filters (text 
 | Monitoring sites | `/id/site` | `search={text}` `lat=&lon=&dist` `within={polygon}` | `/Things` |
 | Monitoring platforms | `/id/platform` | `isPartOf={site\|platform}` `observes={op}` | - |
 | Sensors | `/id/sensor` | | `/Sensors` though "virtual" sensors |
-| Deployments | `/id/site/{id}/_deployments` `/id/site/{id}/_currentDeployments` `/id/platform/{platform}/_deployments` `/id/platform/{platform}/_currentDeployments` | `startedAtTime={t}` `endedAtTime={t}` | - |
-| Datasets | `/id/dataset` | `processingLevel=` `observedProperty={op}` `originatingSite={site}` `measure.aggregation.resolution={d}` `measure.aggregation.valueStatistic` `type={tsd}` | `/Datastreams` |
-| Time series definition (includes methodology) | `/ref/time-series-definition` | `observedProperty={op}` `measure.aggregation.resolution={d}` `measure.aggregation.valueStatistic` | - |
-| Time series data for a dataset | `/id/dataset/{id}/observation` | `start_date` `end_date` `aggregate` | `/Datastreams/Observations` |
+| Deployments | `/id/site/{id}/_deployments` `/id/site/{id}/_currentDeployments` `/id/platform/{platform}/_deployments` `/id/platform/{platform}/_currentDeployments` | `min-startedAtTime={t}` `max-startedAtTime={t}` `min-endedAtTime={t}` etc | - |
+| Datasets | `/id/dataset` | `processingLevel={l}` `observedProperty={op}` `originatingSite={site}` `measure.aggregation.resolution={d}` `measure.aggregation.valueStatistic={s}` `type={tsd}` | `/Datastreams` |
+| Time series definition (includes methodology) | `/ref/time-series-definition` | `observedProperty={op}` `measure.aggregation.resolution={d}` `measure.aggregation.valueStatistic={s}` | - |
+| Time series data for a dataset | `/id/dataset/{id}/observation`? | `start_date` `end_date` `aggregate` | `/Datastreams/Observations` |
 | Individual observation for a dataset (e.g. image) | `/id/dataset/{id}/observation/{id}` | | `/Datastreams/Observations` |
-| Time series data across datasets | `/data/timeseries` | `dataset={id}` `observedProperty={op}` `originatingSite={site}` `measure.aggregation.resolution={d}` `measure.aggregation.valueStatistic`  `start_date` `end_date` `aggregate` | `/Observations(id)` |
+| Time series data across datasets | `/data/observation` | `dataset={id}` `observedProperty={op}` `originatingSite={site}` `measure.aggregation.resolution={d}` `measure.aggregation.valueStatistic`  `start_date` `end_date` `aggregate` | `/Observations(id)` |
 | Reference concept schemes| `/ref/scheme` | | - |
 | Concepts in reference scheme | `/ref/{group}/{scheme}/_concepts` etc | | - |
 
@@ -69,3 +69,4 @@ Simplifying to focus on list endpoints and key filters. Including filters (text 
 3. Can we unify the filtering patterns for data streams and metadata lists, particular min/max/min-eq/max-eq patterns for time stamps?
 
 4. How to handle other datatypes such as phenocam images? Above patterns suggest treating these as a time series with observations comprising minimal metadata with onward links to actual image files. Does that work?
+
