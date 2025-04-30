@@ -131,7 +131,7 @@ Natural extensions to metadata API:
 
     /id/dataset/id-for-series/readings?min-timestamp=2021-04-01T00:00:00&max-timestamp-2021-04-30T00:00:00
 
-Retrieving data for a set if sites in STA would seem to require repeated calls. Some cascaded filters may work along the lines below but haven't yet got a working example:
+Retrieving data for a set of sites in STA would seem to require repeated calls. Some cascaded filters may work along the lines below but haven't yet got a working example:
 
     /Datastreams?$filter=id eq id1 or id eq id2&$expand(Datastreams/Observations($filter=phonomenonTime..))
    
