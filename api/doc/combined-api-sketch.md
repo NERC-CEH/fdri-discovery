@@ -6,7 +6,7 @@ After various investigations of API options we propose that FDRI adopt a dual ap
 
 1. A simple REST API in the style of the existing metadata API and data APIs, with a unified set of query routes, and the ability to combine data and metadata queries (use metadata query results to define the data sets to access).
 
-2. A SensorThing API (STA) shim based on the STA [model mapping](../../ontology/doc/ogc-sensor-things.md) and [profiling](./api-profiling.md) already sketched. Implemented using the [HydroServer2 STA implementation](https://github.com/hydroserver2/hydroserver-sensorthings).
+2. A SensorThing API (STA) shim based on the STA [model mapping](../../ontology/doc/ogc-sensor-things.md) and [profiling](./api-profiling.md) already sketched. Implemented using the [HydroServer2 STA implementation](https://github.com/hydroserver2/hydroserver-sensorthings) (see [paper](https://www.sciencedirect.com/science/article/pii/S1364815224003025) for background details).
 
 Each implementation would act as a broker for the metadata API. In the case of the simple REST API it would largely just proxy a subset of the metadata API calls. Whereas the STA implementation would act as a shim, translating STA calls (within the supported profile) to metadata API calls and mapping the returned json format back to STA format. 
 
