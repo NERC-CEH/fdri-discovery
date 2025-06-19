@@ -8,7 +8,7 @@ VAL = build/validation
 TPL = sample_data/templates
 TTL_BASE = build/data
 SHACL_BASE = build/shacl
-SCHEMA_FILE = sample_data/schema/fdri.recordspec.yaml
+SCHEMA_FILE = ontology/schema/fdri.recordspec.yaml
 MAPPER = mapper
 
 RECORDS = \
