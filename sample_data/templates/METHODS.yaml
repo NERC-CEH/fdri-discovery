@@ -23,7 +23,7 @@ resources:
   - name: Method
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{METHOD_ID|slug}>"
-      "@type": "<skos:DataProcessingMethod>"
+      "@type": "<fdri:DataProcessingMethod>"
       "<skos:inScheme>": <::DataProcessingMethodScheme>
       "<skos:broader>": <::MethodCategory>
       "^<skos:narrower>": <::MethodCategory>
