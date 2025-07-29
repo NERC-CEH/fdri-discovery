@@ -1,0 +1,5 @@
+PARAM_ID,PARAM_NAME,PARAM_TYPE,PARAM_DESCRIPTION
+CORRECT_TS,Corrected Timeseries,STRING,The time-series that is corrected by a correction method
+DEP_TS,Dependency Timeseries,STRING,The time-series that a processing method depends on
+CORRECTION_FACTOR,Correction Factor,NUMERIC,The factor used to correct a timeseries
+SITE_ATTRIBUTE,Site Attribute,STRING,An attribute of the site where the timeseries is located

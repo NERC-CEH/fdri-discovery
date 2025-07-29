@@ -1,0 +1,19 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: cosmos
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+resources:
+  - name: Parameter
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/{PARAM_ID|slug}>"
+      "@type": <fdri:ConfigurationParameter>
+      "<skos:inScheme>": <::ConfigurationParamterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParamterScheme>
+      "<skos:prefLabel>": "{PARAM_NAME}@en"
+      "<rdfs:label>": "{PARAM_NAME}@en"
+      "<skos:scopeNote>": "{PARAM_DESCRIPTION}@en"
