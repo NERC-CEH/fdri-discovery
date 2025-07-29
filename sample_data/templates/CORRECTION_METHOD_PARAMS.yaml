@@ -1,0 +1,15 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: cosmos
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+resources:
+  - name: Method
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{METHOD_ID|slug}>"
+      "@type": "<skos:DataProcessingMethod>"
+      "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{PARAM_ID|slug}>" 

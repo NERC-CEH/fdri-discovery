@@ -26,8 +26,10 @@ RECORDS = \
 	TimeSeriesDefinition
 
 SAMPLES += $(TTL_BASE)/alt_data_config.ttl
-SAMPLES += $(TTL_BASE)/CORRECTION_FACTORS.ttl
+SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
+SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
+SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/infill_config.ttl
 SAMPLES += $(TTL_BASE)/INSTRUMENTATION.ttl
 SAMPLES += $(TTL_BASE)/instrumentation_parameters.ttl
@@ -150,6 +152,9 @@ build/tsdef_methods.csv: build/TIMESERIES_DEF_DEPENDENCIES_LINES.json $(SQL)/tsd
 build/TIMESERIES_DEF_DEPENDENCIES_LINES.json: $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json $(SQL)/TIMESERIES_DEF_DEPENDENCIES_LINES.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/TIMESERIES_DEF_DEPENDENCIES_LINES.jq < $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json > $@"
 
+build/CORRECTION_CONFIGS_LINES.json: $(SRC)/CORRECTION_CONFIGS.json $(SQL)/CORRECTION_CONFIGS_LINES.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/CORRECTION_CONFIGS_LINES.jq < $(SRC)/CORRECTION_CONFIGS.json > $@"
+
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
 
@@ -158,6 +163,9 @@ $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.json | build/da
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml build/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml build/$*.csv $@
+
+$(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml build/%.json | build/data
+	$(MAPPER) $(TPL)/$*.yaml build/$*.json $@
 
 $(VAL)/%.ttl: $(TTL_BASE)/%.ttl $(SHACL_BASE)/fdri_shacl.ttl  | build/validation
 	$(RUN) /bin/bash -c "shacl v -d $(TTL_BASE)/$*.ttl -s $(SHACL_BASE)/fdri_shacl.ttl > $@"
