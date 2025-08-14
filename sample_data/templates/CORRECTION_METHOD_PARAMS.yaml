@@ -11,5 +11,5 @@ resources:
   - name: Method
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{METHOD_ID|slug}>"
-      "@type": "<skos:DataProcessingMethod>"
+      "@type": "<fdri:DataProcessingMethod>"
       "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{PARAM_ID|slug}>" 
