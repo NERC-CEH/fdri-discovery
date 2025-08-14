@@ -304,6 +304,7 @@ resources:
         "@type": <fdri:EnvironmentalMonitoringSite>
         "<rdfs:label>": "{SITE_NAME}@en"
         "<rdfs:comment>": "{SITE_DESC}@en"
+        "<dct:identifier>": "{SITE_ID}"
         "^<fdri:contains>": <::Cosmos>
         "^<fdri:utilises>": <::CosmosProgramme>
         "<geos:hasGeometry>": 
