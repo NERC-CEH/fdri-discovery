@@ -57,6 +57,9 @@ SAMPLES += $(TTL_BASE)/tsdef_dependencies.ttl
 SAMPLES += $(TTL_BASE)/tsdef_methods.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
 
+# NRFA
+SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
+
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
