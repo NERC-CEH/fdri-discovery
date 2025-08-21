@@ -1,0 +1,221 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+  - name: Nrfa
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/network/nrfa>"
+      "@type": "<fdri:EnvironmentalMonitoringNetwork>"
+      "<rdfs:label>": "NRFA Network@en"
+  - name: NrfaProgramme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/programme/nrfa>"
+      "@type": "<fdri:EnvironmentalMonitoringProgramme>"
+      "<rdfs:label>": "NRFA Programme@en"
+
+  - name: NrfaFacilityGroupTypeScheme
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type>
+      "@type": <fdri:FacilityGroupTypeScheme>
+      "<dct:title>": "NRFA Monitoring Facility Group Types@en"
+  - name: RiverGroupType
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/river>
+      "@type": <fdri:FacilityGroupType>
+      "<dct:title>": "NRFA River Group@en"
+      "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
+      "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
+  - name: LocationGroupType
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/location>
+      "@type": <fdri:FacilityGroupType>
+      "<dct:title>": "NRFA Location Group@en"
+      "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
+      "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
+  - name: CountryGroupType
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/country>
+      "@type": <fdri:FacilityGroupType>
+      "<dct:title>": "NRFA Country Group@en"
+      "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
+      "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
+
+  - name: AreaProperty
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/area>"
+      "@type": "<iop:Property>"
+      "<skos:prefLabel>": "Area@en"
+      "<rdfs:label>": "Area@en"
+      "^<iop:hasProperty>": "<::COP>"
+      "<skos:inScheme>": "<::PropertyScheme>"
+      "^<skos:hasTopConcept>": "<::PropertyScheme>"
+
+  - name: Catchment
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/monitored-catchment>"
+      "@type": "<iop:Entity>"
+      "<skos:inScheme>": <::ObjectOfInterestScheme>
+      "^<skos:hasTopConcept>": "<::ObjectOfInterestScheme>"
+      "<skos:prefLabel>": "Monitored Catchment@en"
+      "^<iop:hasObjectOfInterest>": "<::COP>"
+
+  - name: CatchmentAreaProperty
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/cop/catchment-area>
+      "@type": <fdri:Variable>
+      "<dct:title>": "Catchment Area@en"
+      "<dct:description>": "The area of the monitored catchment@en"
+      "<skos:inScheme>": <::CommonCopScheme>
+      "^<skos:hasTopConcept>": <::CommonCopScheme>
+      "<iop:hasObjectOfInterest>": <::Catchment>
+      "<iop:hasProperty>": <::AreaProperty>
+
+  - name: OperatorRole
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/related-party-role/operator>
+      "@type": <fdri:RelatedPartyRole>
+      "<dct:title>": "Operator@en"
+      "<dct:description>": "The organisation or person that operates the monitoring site@en"
+      "<skos:inScheme>": <::CommonRelatedPartyRoleScheme>
+      "^<skos:hasTopConcept>": <::CommonRelatedPartyRoleScheme>
+
+  - name: OperatorOrganisationRole
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/related-party-role/operator-organisation>
+      "@type": <fdri:RelatedPartyRole>
+      "<dct:title>": "Operator Organisation@en"
+      "<dct:description>": "The parent organisation of the organisation or person that operates the monitoring site@en"
+      "<skos:inScheme>": <::CommonRelatedPartyRoleScheme>
+      "^<skos:hasTopConcept>": <::CommonRelatedPartyRoleScheme>
+
+
+resources:
+
+  - name: MonitoredFeature
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/feature/nrfa-{NRFA_ID|slug}>
+      "@type": <fdri:GeospatialFeatureOfInterest>
+      "<rdfs:label>": "{NAME}@en"
+      "<geos:hasGeometry>":
+        - name: EastingsNorthingsPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/feature/nrfa-{NRFA_ID|slug}#geo-eastings>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING}, {NORTHING})^^<geos:wktLiteral>"
+        - name: LatLongPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/feature/nrfa-{NRFA_ID|slug}#geo-latlong>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+      "<fdri:hasRepresentativePoint>": <::LatLongPoint>
+      "<geo:lat>": "{LATITUDE}"
+      "<geo:long>": "{LONGITUDE}"
+      "<spatialrelations:easting>": "{EASTING}"
+      "<spatialrelations:northing>": "{NORTHING}"
+
+  - name: OperatorAgent
+    requires:
+      OPERATOR_ID:
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/agent/nrfa-operator-{OPERATOR_ID|slug}>
+      "@type": <fdri:Agent>
+      "<rdfs:label>": "{OPERATOR}@en"
+  - name: OperatorOrganisationAgent
+    requires:
+      OPERATOR_ORGANISATION_ID:
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/agent/nrfa-operator-organisation-{OPERATOR_ORGANISATION_ID|slug}>
+      "@type": <fdri:Agent>
+      "<rdfs:label>": "{OPERATOR_ORGANISATION}@en"
+
+  - name: MonitoringSite
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}>
+      "@type": <fdri:EnvironmentalMonitoringSite>
+      "<rdfs:label>": "{NAME}@en"
+      "<rdfs:comment>": "{TEXT_GENERAL}@en"
+      "<dct:identifier>":
+        - "{NRFA_ID}"
+        - "{MA_STATION_ID}"
+      "^<fdri:contains>": <::Nrfa>
+      "^<fdri:utilises>": <::NrfaProgramme>
+      "<sosa:hasFeatureOfInterest>": <::MonitoredFeature>
+      "<geos:hasGeometry>":
+        - name: EastingsNorthingsPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#geo-eastings>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING}, {NORTHING})^^<geos:wktLiteral>"
+        - name: LatLongPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#geo-latlong>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+      "<fdri:hasRepresentativePoint>": <::LatLongPoint>
+      "<geo:lat>": "{LATITUDE}"
+      "<geo:long>": "{LONGITUDE}"
+      "<spatialrelations:easting>": "{EASTING}"
+      "<spatialrelations:northing>": "{NORTHING}"
+      "<fdri:altitude>": "{ALTITUDE|asDecimal}"
+      "<fdri:hasAnnotation>":
+        - name: CatchmentArea
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#catchment-area>"
+            "@type": "<fdri:Annotation>"
+            "<fdri:property>": <::CatchmentAreaProperty>
+            "<fdri:hasValue>":
+              - name: CatchmentAreaValue
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#catchment-area.value>"
+                  "@type": "<schema:PropertyValue>"
+                  "<schema:value>": "{CATCHMENT_AREA | asDecimal}"
+      "<prov:qualifiedAttribution>":
+        - name: OperatorAttribution
+          requires:
+            OPERATOR_ID:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#operator-attribution>"
+            "@type": "<fdri:RelatedPartyAttribution>"
+            "<prov:agent>": <::OperatorAgent>
+            "<dcat:hasRole>": <::OperatorRole>
+        - name: OperatorOrgAttribution
+          requires:
+            OPERATOR_ORGANISATION_ID:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#operator-org-attribution>"
+            "@type": "<fdri:RelatedPartyAttribution>"
+            "<prov:agent>": <::OperatorOrganisationAgent>
+            "<dcat:hasRole>": <::OperatorOrganisationRole>
+
+  - name: RiverGroup
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-river-{RIVER|slug}>
+      "@type": <fdri:FacilityGroup>
+      "<dct:title>": "{RIVER}@en"
+      "<dct:type>": <::RiverGroupType>
+      "<fdri:hasMember>": <::MonitoringSite>
+
+  - name: LocationGroup
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-location-{LOCATION|slug}>
+      "@type": <fdri:FacilityGroup>
+      "<dct:title>": "{LOCATION}@en"
+      "<dct:type>": <::LocationGroupType>
+      "<fdri:hasMember>": <::MonitoringSite>
+
+  - name: CountryGroup
+    requires:
+      COUNTRY_CODE:
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-country-{COUNTRY_CODE|slug}>
+      "@type": <fdri:FacilityGroup>
+      "<dct:title>": "{COUNTRY_CODE}@en"
+      "<dct:type>": <::CountryGroupType>
+      "<fdri:hasMember>": <::MonitoringSite>
+
