@@ -43,6 +43,6 @@ resources:
   - name: SensorDeployment
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/deployment/fdri-{Site|slug}-{Platform|slug}-{ID|slug}>"
-      "@type": "<fdri:SensorDeployment>"
+      "@type": "<fdri:StaticDeployment>"
       "<ssn:deployedSystem>": <::Sensor>
       "<ssn:deployedOnPlatform>": <::Platform>
