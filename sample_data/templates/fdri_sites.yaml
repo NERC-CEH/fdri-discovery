@@ -34,6 +34,7 @@ resources:
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
+      "^<fdri:hasMember>": <::Catchment>
 
   - name: Platform
     properties:
