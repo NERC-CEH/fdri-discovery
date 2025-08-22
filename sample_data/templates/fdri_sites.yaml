@@ -42,12 +42,6 @@ resources:
       "<rdfs:label>": "{Platform}@en"
       "<dct:identifier>": "{Site}-{Platform}"
       "^<sosa:hosts>": "<::Site>"
+      "^<dct:hasPart>": <::Site>
 
-  - name: PlatformDeployment
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/deployment/fdri-{Site|slug}-{Platform|slug}>"
-      "@type": "<fdri:StaticDeployment>"
-      "<ssn:deployedSystem>": <::Platform>
-      "<ssn:deployedOnPlatform>": <::Site>
-      "<prov:startedAtTime>": "{Date installed | asDateOrDatetime}"
 

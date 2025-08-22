@@ -11,7 +11,7 @@ one_offs:
   - name: FdriSystemTypeScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/fdri/monitoring-system-type>"
-      "@type": "<fdri:EnvironmentalMonitoringSystemTypeScheme>"
+      "@type": "<fdri:EnvironmentalMonitoringFacilityTypeScheme>"
       "<rdfs:label>": "FDRI Monitoring System Type Scheme@en"
       "<dct:title>": "FDRI Monitoring System Type Scheme@en"
 
