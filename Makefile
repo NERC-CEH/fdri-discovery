@@ -60,6 +60,11 @@ SAMPLES += $(TTL_BASE)/UNITS.ttl
 # NRFA
 SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
 
+# FDRI SAMPLES
+SAMPLES += $(TTL_BASE)/fdri_sites.ttl
+SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
+SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
+
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
@@ -157,6 +162,12 @@ build/TIMESERIES_DEF_DEPENDENCIES_LINES.json: $(SRC)/TIMESERIES_DEF_DEPENDENCIES
 
 build/CORRECTION_CONFIGS_LINES.json: $(SRC)/CORRECTION_CONFIGS.json $(SQL)/CORRECTION_CONFIGS_LINES.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/CORRECTION_CONFIGS_LINES.jq < $(SRC)/CORRECTION_CONFIGS.json > $@"
+
+build/fdri_site_assets.csv: $(SRC)/fdri_sites.csv $(SRC)/fdri_asset.csv $(SQL)/fdri_site_assets.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_site_assets.sql"
+
+build/fdri_measure_ext.csv: $(SRC)/fdri_measure.csv $(SRC)/intervalDuration.csv $(SQL)/fdri_measure_ext.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_measure_ext.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

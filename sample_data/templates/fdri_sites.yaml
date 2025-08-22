@@ -1,0 +1,53 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Network
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/network/{Network|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringNetwork>"
+      "<rdfs:label>": "{Network}@en"
+
+  - name: Catchment
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/facility-group/fdri-catchment-{Catchment|slug}>"
+      "@type": "<fdri:FacilityGroup>"
+      "<rdfs:label>": "{Catchment}@en"
+
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/fdri-{Site|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSite>"
+      "<rdfs:label>": "{Site name}@en"
+      "^<fdri:contains>": <::Network>
+      "<dct:identifier>": "{Site}"
+      "<geos:hasGeometry>":
+        - name: LatLongPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/fdri-{Site|slug}#geo-latlong>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
+      "<fdri:hasRepresentativePoint>": <::LatLongPoint>
+
+  - name: Platform
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/fdri-{Site|slug}-{Platform|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringPlatform>"
+      "<rdfs:label>": "{Platform}@en"
+      "<dct:identifier>": "{Site}-{Platform}"
+      "^<sosa:hosts>": "<::Site>"
+
+  - name: PlatformDeployment
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/deployment/fdri-{Site|slug}-{Platform|slug}>"
+      "@type": "<fdri:StaticDeployment>"
+      "<ssn:deployedSystem>": <::Platform>
+      "<ssn:deployedOnPlatform>": <::Site>
+      "<prov:startedAtTime>": "{Date installed | asDateOrDatetime}"
+

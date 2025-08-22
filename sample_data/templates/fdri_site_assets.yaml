@@ -1,0 +1,48 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+  - name: FdriSystemTypeScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/fdri/monitoring-system-type>"
+      "@type": "<fdri:EnvironmentalMonitoringSystemTypeScheme>"
+      "<rdfs:label>": "FDRI Monitoring System Type Scheme@en"
+      "<dct:title>": "FDRI Monitoring System Type Scheme@en"
+
+resources:
+  - name: Platform
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/fdri-{Site|slug}-{Platform|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringPlatform>"
+
+  - name: SensorModel
+    requires:
+      asset_Make:
+      asset_Model:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/fdri/monitoring-system-type/{asset_Make|slug}-{asset_Model|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSystemType>"
+      "<rdfs:label>": "{asset_Make} {asset_Model}@en"
+      "<skos:inScheme>": <::FdriSystemTypeScheme>
+      "^<skos:hasTopConcept>": <::FdriSystemTypeScheme>
+
+  - name: Sensor
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/sensor/fdri-{ID|slug}>"
+      "@type": "<sosa:Sensor>"
+      "<dct:type>": <::SensorModel>
+      "<rdfs:label>": "{asset_Name}@en"
+      "<fdri:assetNumber>": "{asset_CEHAssetNumber}"
+  
+  - name: SensorDeployment
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/deployment/fdri-{Site|slug}-{Platform|slug}-{ID|slug}>"
+      "@type": "<fdri:SensorDeployment>"
+      "<ssn:deployedSystem>": <::Sensor>
+      "<ssn:deployedOnPlatform>": <::Platform>

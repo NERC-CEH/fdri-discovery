@@ -1,0 +1,73 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Sensor
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/sensor/fdri-{measure_AssetID|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSensor>"
+
+  - name: Variable
+    requires:
+      measure_Sensor_Measurement_Variable:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{measure_Sensor_Measurement_Variable|slug}>"
+      "@type": "<fdri:Variable>"
+      "<skos:inScheme>": <::CommonCopScheme>
+      "^<sosa:observes>": <::Sensor>
+
+  - name: Unit
+    requires:
+      measure_Unit:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/unit/{measure_Unit|slug}>"
+      "@type": "<fdri:Unit>"
+      "<skos:inScheme>": <::CommonUnitScheme>
+      "^<skos:hasTopConcept>": <::CommonUnitScheme>
+
+  - name: Measure
+    requires:
+      measure_Sensor_Measurement_Variable:
+      measure_Unit:
+      measure_Data_Periodicity_Duration:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{measure_Sensor_Measurement_Variable|slug}-{measure_Unit|slug}-{measure_Data_Periodicity_Duration|slug}>"
+      "@type": "<fdri:Measure>"
+      "<fdri:variable>": <::Variable>
+      "<fdri:hasUnit>": <http://fdri.ceh.ac.uk/ref/common/unit/{measure_Unit|slug}>
+      "<fdri:aggregation>":
+        - name: Aggregation
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/aggregation/inst-{measure_Data_Periodicity_Duration|slug}-{measure_Data_Periodicity_Duration|slug}>"
+            "@type": "<fdri:Aggregation>"
+            "<rdfs:label>": "{measure_Data_Periodicity_Duration}@en"
+            "<skos:inScheme>": <::CommonAggregationScheme>
+            "^<skos:hasTopConcept>": <::CommonAggregationScheme>
+            "<fdri:valueStatistic>": <http://fdri.ceh.ac.uk/ref/common/statistic/inst>
+            "<fdri:resolution>": "{measure_Data_Periodicity_Duration}^^<xsd:duration>"
+            "<fdri:periodicity>": "{measure_Data_Periodicity_Duration}^^<xsd:duration>"
+      "<rdfs:label>": "{measure_Sensor_Measurement_Variable} ({measure_Unit})@en"
+      "<skos:prefLabel>": "{measure_Measurement_Description}@en"
+      "^<fdri:measures>": <::Sensor>
+
+  - name: MeasureNoResolution
+    requires:
+      measure_Sensor_Measurement_Variable:
+      measure_Unit:
+    unless:
+      measure_Data_Periodicity_Duration:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{measure_Sensor_Measurement_Variable|slug}-{measure_Unit|slug}>"
+      "@type": "<fdri:Measure>"
+      "<fdri:variable>": <::Variable>
+      "<fdri:hasUnit>": <http://fdri.ceh.ac.uk/ref/common/unit/{measure_Unit|slug}>
+      "<rdfs:label>": "{measure_Sensor_Measurement_Variable} ({measure_Unit})@en"
+      "<skos:prefLabel>": "{measure_Measurement_Description}@en"
+      "^<fdri:measures>": <::Sensor>
+
