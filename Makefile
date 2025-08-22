@@ -64,6 +64,7 @@ SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
 SAMPLES += $(TTL_BASE)/fdri_sites.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
+SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -168,6 +169,9 @@ build/fdri_site_assets.csv: $(SRC)/fdri_sites.csv $(SRC)/fdri_asset.csv $(SQL)/f
 
 build/fdri_measure_ext.csv: $(SRC)/fdri_measure.csv $(SRC)/intervalDuration.csv $(SQL)/fdri_measure_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_measure_ext.sql"
+
+build/fdri_asset_loc_history.csv: $(SRC)/fdri_sites.csv $(SRC)/fdri_loc_history.csv $(SQL)/fdri_asset_loc_history.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_asset_loc_history.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

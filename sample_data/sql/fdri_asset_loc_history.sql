@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS SITES AS FROM read_csv('./sample_data/src/fdri_sites.csv', AUTO_DETECT=true);
+CREATE TABLE IF NOT EXISTS HISTORY AS FROM read_csv('./sample_data/src/fdri_loc_history.csv', AUTO_DETECT=true);
+COPY (
+    SELECT SITES.Site, SITES.Platform, HISTORY.* 
+    FROM SITES 
+    JOIN HISTORY ON (
+        CONCAT(SITES.Site, '-', SITES.Platform) == HISTORY.locHistory_SiteCode
+         OR SITES.Site == HISTORY.locHistory_SiteCode
+    ) 
+) TO './build/fdri_asset_loc_history.csv';

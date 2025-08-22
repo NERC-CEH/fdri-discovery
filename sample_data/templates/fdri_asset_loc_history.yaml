@@ -1,0 +1,19 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: StationDeployment
+    requires:
+      Platform:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/deployment/fdri-{Site|slug}-{Platform|slug}-{locHistory_AssetID|slug}>"
+      "@type": "<fdri:StaticDeployment>"
+      "<ssn:deployedSystem>": "<http://fdri.ceh.ac.uk/id/sensor/fdri-{locHistory_AssetID|slug}>"
+      "<ssn:deployedOnPlatform>": "<http://fdri.ceh.ac.uk/id/platform/fdri-{Site|slug}-{Platform|slug}>"
+      "<prov:startedAtTime>": "{locHistory_Date|asDateTime}"
