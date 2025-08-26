@@ -126,13 +126,15 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/agent/nrfa-operator-{OPERATOR_ID|slug}>
       "@type": <fdri:Agent>
       "<rdfs:label>": "{OPERATOR}@en"
+
   - name: OperatorOrganisationAgent
     requires:
       OPERATOR_ORGANISATION_ID:
     properties:
       "@id": <http://fdri.ceh.ac.uk/id/agent/nrfa-operator-organisation-{OPERATOR_ORGANISATION_ID|slug}>
-      "@type": <fdri:Agent>
+      "@type": <fdri:Organisation>
       "<rdfs:label>": "{OPERATOR_ORGANISATION}@en"
+      "<foaf:member>": <::OperatorAgent>
 
   - name: MonitoringSite
     properties:
@@ -184,14 +186,6 @@ resources:
             "@type": "<fdri:RelatedPartyAttribution>"
             "<prov:agent>": <::OperatorAgent>
             "<dcat:hasRole>": <::OperatorRole>
-        - name: OperatorOrgAttribution
-          requires:
-            OPERATOR_ORGANISATION_ID:
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#operator-org-attribution>"
-            "@type": "<fdri:RelatedPartyAttribution>"
-            "<prov:agent>": <::OperatorOrganisationAgent>
-            "<dcat:hasRole>": <::OperatorOrganisationRole>
 
   - name: RiverGroup
     properties:
