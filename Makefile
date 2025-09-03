@@ -66,6 +66,10 @@ SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 
+# Gauging Data Samples
+SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
+SAMPLES += $(TTL_BASE)/ea_manual_metadata.ttl
+
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
