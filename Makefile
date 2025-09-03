@@ -69,6 +69,7 @@ SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
 SAMPLES += $(TTL_BASE)/ea_manual_metadata.ttl
+SAMPLES += $(TTL_BASE)/flowstick_surveys.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -176,6 +177,9 @@ build/fdri_measure_ext.csv: $(SRC)/fdri_measure.csv $(SRC)/intervalDuration.csv 
 
 build/fdri_asset_loc_history.csv: $(SRC)/fdri_sites.csv $(SRC)/fdri_loc_history.csv $(SQL)/fdri_asset_loc_history.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_asset_loc_history.sql"
+
+build/flowstick_surveys.csv: $(SRC)/nivu_flowstick/metadata.parquet $(SQL)/flowstick_surveys.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/flowstick_surveys.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

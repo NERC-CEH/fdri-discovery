@@ -87,7 +87,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/time-series-definition/ea-{Parameter-name|map_by('parameters')|slug}>"
       "@type": "<skos:Concept>"
-      "<skos:prefLabel>": "EA {Parameter-name} time series@en"
+      "<skos:prefLabel>": "EA {Parameter-name} guaging time series@en"
       "<skos:inScheme>": "<::CommonTimeSeriesDefinitionScheme>"
       "^<skos:hasTopConcept>": "<::CommonTimeSeriesDefinitionScheme>"
 

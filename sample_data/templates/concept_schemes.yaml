@@ -76,3 +76,10 @@ one_offs:
       "<dct:title>": "FDRI Common Units@en"
       "<rdfs:label>": "FDRI Common Units@en"
   
+  - name: ActivityTypeScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-type>"
+      "@type": "<fdri:ActivityTypeScheme>"
+      "<dct:title>": "FDRI Common Activity Types@en"
+      "<rdfs:label>": "FDRI Common Activity Types@en"
+  
