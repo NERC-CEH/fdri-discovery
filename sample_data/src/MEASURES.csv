@@ -1,0 +1,6 @@
+ID,PARENT_ID,PARAMETER_ID,UNIT_ID,STATISTIC_ID,PERIODICITY,RESOLUTION,DESCRIPTION
+DISCHARGE-INST-M3S-1,,DISCHARGE,M3S-1,INST,,,Instantaneous discharge in cubic metres per second
+WATER_VELOCITY-INST-MS-1,,WATER_VELOCITY,MS-1,INST,,,Instantaneous water velocity in metres per second
+REV-COUNT,,REV,COUNT,
+REV-TOTAL-COUNT,,TOTAL_REV_COUNT,COUNT,TOTAL,,,Total number of revolutions counted in measurement Period
+ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,,,Mean angular velocity in revolutions per second

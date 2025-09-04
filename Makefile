@@ -36,6 +36,7 @@ SAMPLES += $(TTL_BASE)/instrumentation_parameters.ttl
 SAMPLES += $(TTL_BASE)/LAND_COVER_LCM_CLASSES.ttl
 SAMPLES += $(TTL_BASE)/landCoverLcm.ttl
 SAMPLES += $(TTL_BASE)/landCoverObservations.ttl
+SAMPLES += $(TTL_BASE)/MEASURES.ttl
 SAMPLES += $(TTL_BASE)/METHODS.ttl
 SAMPLES += $(TTL_BASE)/METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/PARAMS.ttl
