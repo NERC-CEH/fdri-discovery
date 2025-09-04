@@ -88,3 +88,6 @@ VWC_SOIL_50,Soil volumetric water content at 50 cm depth,SOIL,VWC,
 VWC_SOIL_65,Soil volumetric water content at 65 cm depth,SOIL,VWC,
 WD,Wind direction,AIR,WS,
 WS,Wind speed,AIR,WD,
+REV_COUNT,Number of revolutions,SENSOR,COUNT,IMPELLER
+WATER_VELOCITY,Water velocity,WATER,VELOCITY,
+DISCHARGE,Water discharge,WATER,VOLUME-FLOW-RATE,
