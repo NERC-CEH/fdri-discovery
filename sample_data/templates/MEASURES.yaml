@@ -15,7 +15,7 @@ resources:
       "<rdfs:label>": "{DESCRIPTION}@en"
       "<skos:prefLabel>": "{DESCRIPTION}@en"
       "<skos:inScheme>": <::MeasureScheme>
-      "<fdri:variable>": "<http://fdri.ceh.ac.uk/ref/common/variable/{PARAMETER_ID|slug}>"
+      "<fdri:variable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/{UNIT_ID|slug}>"
       "<fdri:aggregation>":
         - name: Aggregation

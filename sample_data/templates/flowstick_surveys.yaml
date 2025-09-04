@@ -11,55 +11,11 @@ one_offs:
   - name: FlowstickSurveyType
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/survey-type/flowstick>"
-      "@type": "<skos:Concept>"
+      "@type": "<fdri:ActivityType>"
       "<skos:prefLabel>": "Flowstick survey@en"
       "<skos:inScheme>": "<::ActivityTypeScheme>"
       "^<skos:hasTopConcept>": "<::ActivityTypeScheme>"
-
-  - name: VelocityVariable
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/variable/flow-velocity>"
-      "@type": "<fdri:Variable>"
-      "<skos:prefLabel>": "Flow Velocity@en"
-      "<iop:hasObjectOfInterest>": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/river-flow>"
-      "<iop:hasProperty>": "<http://fdri.ceh.ac.uk/ref/common/property/velocity>"
-
-  - name: Velocity
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/flow-velocity-ms-1>"
-      "@type": "<fdri:Measure>"
-      "<skos:prefLabel>": "Flow Velocity@en"
-      "<skos:inScheme>": "<::MeasureScheme>"
-      "^<skos:narrower>": "<::MeasureScheme>"
-      "<fdri:variable>": "<::VelocityVariable>"
-      "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/ms-1>"
   
-  - name: TemperatureVariable
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/variable/water-temperature>"
-      "@type": "<fdri:Variable>"
-      "<skos:prefLabel>": "Water Temperature@en"
-      "<iop:hasObjectOfInterest>": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/water>"
-      "<iop:hasProperty>": "<http://fdri.ceh.ac.uk/ref/common/property/temperature>"
-
-  - name: Temperature
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/water-temperature-celsius>"
-      "@type": "<fdri:Measure>"
-      "<skos:prefLabel>": "Water Temperature@en"
-      "<skos:inScheme>": "<::MeasureScheme>"
-      "^<skos:narrower>": "<::MeasureScheme>"
-      "<fdri:variable>": "<::TemperatureVariable>"
-      "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/degc>"
-
-  - name: SensorRole
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/role/sensor>"
-      "@type": "<skos:Concept>"
-      "<skos:prefLabel>": "Sensor@en"
-      "<skos:inScheme>": "<::FacilityUsageRoleScheme>"
-      "^<skos:hasTopConcept>": "<::FacilityUsageRoleScheme>"
-
 resources:
   - name: FeatureOfInterest
     properties:
@@ -75,11 +31,11 @@ resources:
       "<skos:inScheme>": "<::SensorTypeScheme>"
       "^<skos:hasTopConcept>": "<::SensorTypeScheme>"
       "<fdri:measures>":
-        - <::Velocity>
-        - <::Temperature>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_temp-inst-degc>
       "<sosa:observes>":
-        - <::VelocityVariable>
-        - <::TemperatureVariable>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_temp>
 
   - name: SensorFirmwareConfiguration
     properties:
@@ -122,8 +78,8 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/activity/flowstick-{Site_Name|slug}-{Date|slug}#sensor-{system_type|slug}-{serial_number|slug}>"
             "@type": "<fdri:FacilityUsage>"
-            "<prov:entity>": "<http://fdri.ceh.ac.uk/id/sensor/{system_type|slug}-{serial_number|slug}>"
-            "<prov:hadRole>": "<::SensorRole>"
+            "<prov:entity>": "<::Sensor>"
+            "<prov:hadRole>": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/sensor>"
       "<prov:startedAtTime>": "{stime}^^<xsd:dateTime>"
       "<prov:endedAtTime>": "{datetime}^^<xsd:dateTime>"
   
@@ -142,13 +98,12 @@ resources:
             "@type": "<dct:PeriodOfTime>"
             "<dcat:startDate>": "{stime}^^<xsd:dateTime>"
             "<dcat:endDate>": "{datetime}^^<xsd:dateTime>"
-      "<dct:type>": "<http://fdri.ceh.ac.uk/id/time-series-definition/flowstick-survey>"
       "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
       "<fdri:originatingActivity>": "<::Survey>"
-      "<fdri:measure>":
-        - <::Velocity>
-        - <::Temperature>
-      "<sosa:observedProperty>":
-        - <::VelocityVariable>
-        - <::TemperatureVariable>
+      "<fdri:measures>":
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_temp-inst-degc>
+      "<sosa:observes>":
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_temp>
       "<fdri:processingLevel>": <http://fdri.ceh.ac.uk/ref/common/processing-level/processed>
