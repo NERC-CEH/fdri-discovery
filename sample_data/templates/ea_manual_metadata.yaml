@@ -9,7 +9,7 @@ imports:
 
 mappings:
   parameters:
-    FQ [Flow]: FQ
+    FQ [Flow]: flow
   units:
     m³/s: m3s-1
 
@@ -51,12 +51,6 @@ resources:
   - name: Variable
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{Parameter-name|map_by('parameters')|slug}>"
-      "@type": "<fdri:Variable>"
-      "<skos:prefLabel>": "{Parameter-name}@en"
-      "<skos:inScheme>": "<::CommonCopScheme>"
-      "^<skos:narrower>": "<::VariableGroup>"
-      "<iop:hasObjectOfInterest>": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/river>"
-      "<iop:hasProperty>": "<http://fdri.ceh.ac.uk/ref/common/property/volume-flow-rate>"
 
   - name: Unit
     properties:
@@ -68,25 +62,12 @@ resources:
 
   - name: Measure
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{Parameter-name|map_by('parameters')|slug}-{Time series unit|map_by('units')|slug}>"
-      "@type": "<fdri:Measure>"
-      "<rdfs:label>": "{Parameter-name} ({Time series unit})@en"
-      "<skos:prefLabel>": "{Parameter-name} ({Time series unit})@en"
-      "<fdri:variable>": "<::Variable>"
-      "<fdri:hasUnit>": "<::Unit>"
-
-  - name: ProcessingLevel
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/processing-level/ea-{Time series quality|slug}>"
-      "@type": "<skos:Concept>"
-      "<skos:prefLabel>": "EA {Time series quality}@en"
-      "<skos:inScheme>": "<::CommonProcessingLevelScheme>"
-      "^<skos:hasTopConcept>": "<::CommonProcessingLevelScheme>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{Parameter-name|map_by('parameters')|slug}-inst-{Time series unit|map_by('units')|slug}>"
 
   - name: TimeSeriesDefinition
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/time-series-definition/ea-{Parameter-name|map_by('parameters')|slug}>"
-      "@type": "<skos:Concept>"
+      "@type": "<fdri:TimeSeriesDefinition>"
       "<skos:prefLabel>": "EA {Parameter-name} guaging time series@en"
       "<skos:inScheme>": "<::CommonTimeSeriesDefinitionScheme>"
       "^<skos:hasTopConcept>": "<::CommonTimeSeriesDefinitionScheme>"
@@ -102,4 +83,4 @@ resources:
       "<sosa:hasFeatureOfInterest>": <::FOI>
       "<sosa:observes>": <::Variable>
       "<fdri:measures>": <::Measure>
-      "<fdri:processingLevel>": "<::ProcessingLevel>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/processed>"
