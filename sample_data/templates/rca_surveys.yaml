@@ -73,6 +73,8 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/facility/rca-impeller-{Impeller no.|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
       "<dct:type>": <::ImpellerType>
+      "<sosa:observes>": <http://fdri.ceh.ac.uk/ref/common/cop/rev>
+      "<fdri:measures>": <http://fdri.ceh.ac.uk/ref/common/measure/rev-total-count>
 
   - name: Team
     properties:
@@ -118,7 +120,7 @@ resources:
             "<prov:hadRole>": "<::Surveyor>"
       "<fdri:hasAnnotation>": <::WeatherAnnotation>
       "<sosa:observes>":
-        - <http://fdri.ceh.ac.uk/ref/common/cop/rev_count>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/rev>
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
         - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
 
@@ -135,6 +137,11 @@ resources:
         - <http://fdri.ceh.ac.uk/ref/common/cop/rev_count>
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
         - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
+      "<fdri:measures>":
+        - <http://fdri.ceh.ac.uk/ref/common/measure/rev-total-count>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/angular_velocity-revs-1>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/discharge-inst-m3s-1>
       "<dct:spatial>": "<::FeatureOfInterest>"
       "<dct:temporal>":
         - name: SurveyPeriod
