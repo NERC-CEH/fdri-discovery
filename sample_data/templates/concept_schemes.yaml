@@ -83,3 +83,9 @@ one_offs:
       "<dct:title>": "FDRI Common Activity Types@en"
       "<rdfs:label>": "FDRI Common Activity Types@en"
   
+  - name: FacilityUsageRoleScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role>"
+      "@type": "<fdri:FacilityUsageRoleScheme>"
+      "<dct:title>": "Facility Usage Roles@en"
+      "<rdfs:label>": "Facility Usage Roles@en"
