@@ -1,0 +1,146 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+  - name: RcaSurveyType
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/survey-type/rca-impeller>"
+      "@type": "<fdri:ActivityType>"
+      "<skos:prefLabel>": "RCA impeller survey@en"
+      "<skos:inScheme>": "<::ActivityTypeScheme>"
+      "^<skos:hasTopConcept>": "<::ActivityTypeScheme>"
+
+  - name: Network
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/network/rca>"
+      "@type": "<fdri:EnvironmentalMonitoringNetwork>"
+      "<rdfs:label>": "River Chess Association@en"
+
+  - name: WeatherConditions
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/weather-conditions>"
+      "@type": "<fdri:Variable>"
+      "<skos:prefLabel>": "Weather Conditions@en"
+      "<skos:inScheme>": "<::CommonCopScheme>"
+      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
+      "<iop:hasObjectOfInterest>": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/weather>"
+      "<iop:hasProperty>": "<http://fdri.ceh.ac.uk/ref/common/property/description>"
+
+  - name: Surveyor
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role/surveyor>"
+      "@type": "<skos:Concept>"
+      "<skos:prefLabel>": "Surveyor@en"
+      "<skos:inScheme>": "<::ActivityRoleScheme>"
+      "^<skos:hasTopConcept>": "<::ActivityRoleScheme>"
+
+  - name: SensorRole
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/sensor>"
+      "@type": "<fdri:FacilityUsageRole>"
+      "<skos:prefLabel>": "Sensor@en"
+      "<skos:inScheme>": "<::FacilityUsageRoleScheme>"
+      "^<skos:hasTopConcept>": "<::FacilityUsageRoleScheme>"
+  
+  - name: ImpellerType
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/impeller>"
+      "@type": "<fdri:EnvironmentalMonitoringSystemType>"
+      "<skos:prefLabel>": "Impeller@en"
+      "<skos:inScheme>": "<::CommonSystemTypeScheme>"
+      "^<skos:hasTopConcept>": "<::CommonSystemTypeScheme>"
+
+resources:
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site Name|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSite>"
+
+  - name: FeatureOfInterest
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/feature-of-interest/rca-{Site Name|slug}>"
+      "@type": "<fdri:GeospatialFeatureOfInterest>"
+      "<rdfs:label>": "River Chess at {Site Name}@en"
+
+  - name: Impeller
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/facility/rca-impeller-{Impeller no.|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSensor>"
+      "<dct:type>": <::ImpellerType>
+
+  - name: Team
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/agent/rca-team-{Team|slug}>"
+      "@type": "<fdri:Agent>"
+      "<rdfs:label>": "RCA Team: {Team}@en"
+
+  - name: WeatherAnnotation
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}#weather>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": <::WeatherConditions>
+      "<fdri:hasValue>":
+        - name: WeatherAnnotationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}#weather.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{Weather}@en"
+
+  - name: Survey
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringActivity>"
+      "<dct:type>": "<::RcaSurveyType>"
+      "<rdfs:label>": "RCA Survey at {Site Name} on {Date}@en"
+      "<rdfs:comment>": "{Comments}@en"
+      "<prov:startedAtTime>": "{START_TS}^^<xsd:dateTime>"
+      "<prov:endedAtTime>": "{END_TS}^^<xsd:dateTime>"
+      "<fdri:facilityUsage>":
+        - name: ImpellerUsage
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/facility-usage/rca-{Site Name|slug}-{Date|slug}#impeller>"
+            "@type": "<fdri:FacilityUsage>"
+            "<prov:entity>": "<::Impeller>"
+            "<prov:hadRole>": "<::SensorRole>"
+      "<sosa:hasFeatureOfInterest>": <::FeatureOfInterest>
+      "<prov:qualifiedAssociation>":
+        - name: SurveyTeamAssociation
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}#team-association>"
+            "@type": "<prov:Association>"
+            "<prov:agent>": "<::Team>"
+            "<prov:hadRole>": "<::Surveyor>"
+      "<fdri:hasAnnotation>": <::WeatherAnnotation>
+      "<sosa:observes>":
+        - <http://fdri.ceh.ac.uk/ref/common/cop/rev_count>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
+
+  - name: SurveyDataset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/rca-{Site Name|slug}-{Date|slug}>"
+      "@type": "<fdri:ObservationDataset>"
+      "<dct:title>": "RCA impeller survey data at {Site Name} on {Date}@en"
+      "<rdfs:label>": "RCA impeller survey data at {Site Name} on {Date}@en"
+      "<dct:description>": "Data collected during an RCA impeller survey at {Site Name} on {Date}, including measurements of number of revolutions, water velocity, and discharge.@en"
+      "<fdri:originatingActivity>": "<::Survey>"
+      "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
+      "<sosa:observes>":
+        - <http://fdri.ceh.ac.uk/ref/common/cop/rev_count>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
+      "<dct:spatial>": "<::FeatureOfInterest>"
+      "<dct:temporal>":
+        - name: SurveyPeriod
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/dataset/rca-{Site Name|slug}-{Date|slug}.interval>"
+            "@type": "<dct:PeriodOfTime>"
+            "<dcat:startDate>": "{START_TS}^^<xsd:dateTime>"
+            "<dcat:endDate>": "{END_TS}^^<xsd:dateTime>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/processed>"

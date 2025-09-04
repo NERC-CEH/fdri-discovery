@@ -83,9 +83,23 @@ one_offs:
       "<dct:title>": "FDRI Common Activity Types@en"
       "<rdfs:label>": "FDRI Common Activity Types@en"
   
+  - name: ActivityRoleScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "FDRI Common Activity Roles@en"
+      "<rdfs:label>": "FDRI Common Activity Roles@en"
+
   - name: FacilityUsageRoleScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role>"
       "@type": "<fdri:FacilityUsageRoleScheme>"
       "<dct:title>": "Facility Usage Roles@en"
       "<rdfs:label>": "Facility Usage Roles@en"
+
+  - name: CommonSystemTypeScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type>"
+      "@type": "<fdri:EnvironmentalMonitoringFacilityTypeScheme>"
+      "<dct:title>": "Common Monitoring System Types@en"
+      "<rdfs:label>": "Common Monitoring System Types@en"
