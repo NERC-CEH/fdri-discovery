@@ -1,0 +1,140 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+embedded:
+  - name: OperatorRelation
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}#team-association>"
+      "@type": "<prov:Association>"
+      "<prov:agent>":
+        - name: Agent
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/agent/sontek-{Operator|slug}>"
+            "@type": "<fdri:Agent>"
+            "<foaf:name>": "{Operator}@en"
+      "<prov:hadRole>": "<http://fdri.ceh.ac.uk/ref/common/activity-role/operator>"
+
+resources:
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/{Site_Number|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSite>
+      "<rdfs:label>": "{Site_Number}: {Site_Name}@en"
+      "<dct:title>": "{Site_Number}: {Site_Name}@en"
+
+  - name: FeatureOfInterest
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/feature/{Site_Number|slug}>"
+      "@type": "<fdri:GeospatialFeatureOfInterest>"
+      "<rdfs:label>": "Environment at {Site_Name}@en"
+      "<dct:title>": "Environment at {Site_Name}@en"
+
+  - name: SurveyInterval
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/period/{Start_Time|slug}-{End_Time|slug}>"
+      "@type": "<dct:PeriodOfTime>"
+      "<dcat:startDate>": "{Start_Time}^^<xsd:dateTime>"
+      "<dcat:endDate>": "{End_Time}^^<xsd:dateTime>"
+
+  - name: HandheldDeviceConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-handheld-{Handheld_Serial_Number|slug}#firmware-configuration>"
+      "@type": "<fdri:ConfigurationValueSeries>"
+      "<rdfs:label>": "Firmware Version Configuration for Sontek Handheld Device {Handheld_Serial_Number}@en"
+      "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>
+      "<fdri:hadConfiguration>":
+        - name: ConfigurationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-handheld-{Handheld_Serial_Number|slug}#firmware-configuration.value-{Date|slug}>"
+            "@type": "<fdri:TimeBoundPropertyValue>"
+            "<fdri:interval>": <::SurveyInterval>
+            "<schema:value>": "{Handheld_Firmware_Version}"
+
+  - name: HandheldDevice
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-handheld-{Handheld_Serial_Number|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSystem>"
+      "<rdfs:label>": "Sontek Handheld Device {Handheld_Serial_Number}@en"
+      "<dct:type>": <::SontekHandheldDeviceType>
+      "<fdri:hasSerialNumber>": "{Handheld_Serial_Number}@en"
+
+  - name: ADVConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#firmware-configuration>"
+      "@type": "<fdri:ConfigurationValueSeries>"
+      "<rdfs:label>": "Firmware Version Configuration for Sontek ADV {ADV_Serial_Number}@en"
+      "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>
+      "<fdri:hadConfiguration>":
+        - name: ConfigurationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#firmware-configuration.value-{Date|slug}>"
+            "@type": "<fdri:TimeBoundPropertyValue>"
+            "<fdri:interval>": <::SurveyInterval>
+            "<schema:value>": "{ADV_Firmware_Version}"
+
+  - name: ADVBeamsConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#beams-configuration>"
+      "@type": "<fdri:ConfigurationValueSeries>"
+      "<rdfs:label>": "Number of Beams Configuration for Sontek ADV {ADV_Serial_Number}@en"
+      "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/number-of-beams>
+      "<fdri:hadConfiguration>":
+        - name: ConfigurationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#beams-configuration.value-{Date|slug}>"
+            "@type": "<fdri:TimeBoundPropertyValue>"
+            "<fdri:interval>": <::SurveyInterval>
+            "<schema:value>": "{ADV_NumberOfBeams}"
+
+  - name: ADVDevice
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSensor>"
+      "<rdfs:label>": "Sontek ADV Device {ADV_Serial_Number}@en"
+      "<dct:type>": <::SontekADVDeviceType>
+      "<fdri:hasSerialNumber>": "{ADV_Serial_Number}@en"
+      "<fdri:configuration>": <::ADVConfiguration>
+
+  - name: Survey
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/activity/sontek-survey-{Survey_ID|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringActivity>"
+      "<dct:type>": <::SontekSurveyType>
+      "<dct:title>": "Sontek survey at {Site_Name} starting {Start_Time}@en"
+      "<rdfs:label>": "Sontek survey at {Site_Name} starting {Start_Time}@en"
+      "<sosa:hasFeatureOfInterest>": <::FeatureOfInterest>
+      "<prov:startedAtTime>": "{Start_Time}^^<xsd:dateTime>"
+      "<prov:endedAtTime>": "{End_Time}^^<xsd:dateTime>"
+      "<prov:qualifiedUsage>":
+        - name: HandheldUsage
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/activity/sontek-survey-{Survey_ID|slug}#handheld>"
+            "@type": "<fdri:FacilityUsage>"
+            "<prov:entity>": "<::HandheldDevice>"
+            "<prov:hadRole>": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/sensor>"
+
+  - name: SurveyDataset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/sontek-survey-{Survey_ID|slug}>"
+      "@type": "<fdri:ObservationDataset>"
+      "<dct:title>": "Sontek survey dataset: {Site_Name} at {Date}@en"
+      "<rdfs:label>": "Sontek survey dataset {Site_Name} at {Date}@en"
+      "<dct:description>": "{Comments}@en"
+      "<fdri:originatingActivity>": "<::Survey>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/processed>"
+      "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
+      "<sosa:observedProperty>":
+        - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/water_temp>
+      "<fdri:measure>":
+        - <http://fdri.ceh.ac.uk/ref/common/measure/discharge-inst-m3s-1>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-mean-ms-1>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-max-ms-1>
+        - <http://fdri.ceh.ac.uk/ref/common/measure/water_temp-mean-degc>

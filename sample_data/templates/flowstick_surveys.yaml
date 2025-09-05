@@ -42,7 +42,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/sensor/{system_type|slug}-{serial_number|slug}#firmware>"
       "@type": "<fdri:ConfigurationValueSeries>"
       "<rdfs:label>": "Firmware configuration for {system_type} {serial_number}@en"
-      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/property/firmware-version>"
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>"
       "<fdri:hadValue>":
         - name: FirmwareVersion
           properties:
@@ -100,10 +100,10 @@ resources:
             "<dcat:endDate>": "{datetime}^^<xsd:dateTime>"
       "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
       "<fdri:originatingActivity>": "<::Survey>"
-      "<fdri:measures>":
+      "<fdri:measure>":
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_temp-inst-degc>
-      "<sosa:observes>":
+      "<sosa:observedProperty>":
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_temp>
       "<fdri:processingLevel>": <http://fdri.ceh.ac.uk/ref/common/processing-level/processed>

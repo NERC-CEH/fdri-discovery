@@ -81,6 +81,6 @@ resources:
       "<rdfs:label>": "{Station name} - {Parameter-name}@en"
       "<fdri:originatingSite>": <::Site>
       "<sosa:hasFeatureOfInterest>": <::FOI>
-      "<sosa:observes>": <::Variable>
-      "<fdri:measures>": <::Measure>
+      "<sosa:observedProperty>": <::Variable>
+      "<fdri:measure>": <::Measure>
       "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/processed>"

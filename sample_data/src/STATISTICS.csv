@@ -6,3 +6,8 @@ MEAN_PREC,Mean over preceding period,
 STDDEV_PREC,Standard deviation over preceding period,
 TOTAL_PREC,Total over preceding period,
 MEAN_MID_24HOUR,Mean over surrounding 24 hours,The data timestamp is the midpoint of a meaned 24 hour window
+MEAN,Mean over measurement period,
+MAX,Maximum over measurement period,
+MIN,Minimum over measurement period,
+STDDEV,Standard deviation over measurement period,
+TOTAL,Total over measurement period,

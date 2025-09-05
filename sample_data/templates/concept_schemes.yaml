@@ -27,6 +27,13 @@ one_offs:
       "<dct:title>": "Data Processing Configuration Parameters@en"
       "<rdfs:label>": "Data Processing Configuration Parameters@en"
 
+  - name: ConfigurationPropertyScheme
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/configuration-property>
+      "@type": "<fdri:ConfigurationPropertyScheme>"
+      "<dct:title>": "System Configuration Properties@en"
+      "<rdfs:label>": "System Configuration Properties@en"
+
   - name: ContextObjectScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/context>"

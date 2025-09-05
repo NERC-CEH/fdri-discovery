@@ -1,0 +1,3 @@
+ID,PARENT_ID,Label,Description
+firmware-version,,Firmware Version,Firmware version of the device
+number-of-beams,,Number of Beams,Number of beams used in the measurement
