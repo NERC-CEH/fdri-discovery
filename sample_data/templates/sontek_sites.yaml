@@ -10,13 +10,13 @@ imports:
 resources:
   - name: LatLongPoint
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/{Site Number|slug}#geo-latlong>"
+      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site Number|slug}#geo-latlong>"
       "@type": "<geos:Geometry>"
       "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
 
   - name: Site
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/{Site Number|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site Number|slug}>"
       "@type": <fdri:EnvironmentalMonitoringSite>
       "<rdfs:label>": "{Site Number}: {Site Name}@en"
       "<dct:title>": "{Site Number}: {Site Name}@en"
@@ -25,7 +25,7 @@ resources:
   
   - name: FeatureOfInterest
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/feature/{Site Number|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/feature/rca-{Site Number|slug}>"
       "@type": "<fdri:GeospatialFeatureOfInterest>"
       "<rdfs:label>": "Environment at {Site Name}@en"
       "<dct:title>": "Environment at {Site Name}@en"

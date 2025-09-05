@@ -17,14 +17,14 @@ one_offs:
 resources:
   - name: Site
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site Name|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSite>"
       "<rdfs:label>": "{Site Name}@en"
       "^<fdri:contains>": <::Network>
       "<geos:hasGeometry>":
         - name: LatLongPoint
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Site Name|slug}#geo-latlong>"
+            "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site_ID|slug}#geo-latlong>"
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POINT({lon}, {lat})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>

@@ -59,14 +59,14 @@ one_offs:
 resources:
   - name: Site
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site Name|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSite>"
 
   - name: FeatureOfInterest
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/feature-of-interest/rca-{Site Name|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/feature/rca-{Site_ID|slug}>"
       "@type": "<fdri:GeospatialFeatureOfInterest>"
-      "<rdfs:label>": "River Chess at {Site Name}@en"
+      "<rdfs:label>": "Environment at {Site Name}@en"
 
   - name: Impeller
     properties:
@@ -90,13 +90,13 @@ resources:
       "<fdri:hasValue>":
         - name: WeatherAnnotationValue
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}#weather.value>"
+            "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site_ID|slug}-{Date|slug}#weather.value>"
             "@type": "<schema:PropertyValue>"
             "<schema:value>": "{Weather}@en"
 
   - name: Survey
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site_ID|slug}-{Date|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringActivity>"
       "<dct:type>": "<::RcaSurveyType>"
       "<rdfs:label>": "RCA Survey at {Site Name} on {Date}@en"
@@ -106,7 +106,7 @@ resources:
       "<fdri:facilityUsage>":
         - name: ImpellerUsage
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/facility-usage/rca-{Site Name|slug}-{Date|slug}#impeller>"
+            "@id": "<http://fdri.ceh.ac.uk/id/facility-usage/rca-{Site_ID|slug}-{Date|slug}#impeller>"
             "@type": "<fdri:FacilityUsage>"
             "<prov:entity>": "<::Impeller>"
             "<prov:hadRole>": "<::SensorRole>"
@@ -114,7 +114,7 @@ resources:
       "<prov:qualifiedAssociation>":
         - name: SurveyTeamAssociation
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}#team-association>"
+            "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site_ID|slug}-{Date|slug}#team-association>"
             "@type": "<prov:Association>"
             "<prov:agent>": "<::Team>"
             "<prov:hadRole>": "<::Surveyor>"
@@ -124,14 +124,22 @@ resources:
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
         - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
 
+  - name: SurveyInterval
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site_ID|slug}-{Date|slug}.interval>"
+      "@type": "<dct:PeriodOfTime>"
+      "<dcat:startDate>": "{START_TS}^^<xsd:dateTime>"
+      "<dcat:endDate>": "{END_TS}^^<xsd:dateTime>"
+
   - name: SurveyDataset
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/dataset/rca-{Site Name|slug}-{Date|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/rca-{Site_ID|slug}-{Date|slug}>"
       "@type": "<fdri:ObservationDataset>"
       "<dct:title>": "RCA impeller survey data at {Site Name} on {Date}@en"
       "<rdfs:label>": "RCA impeller survey data at {Site Name} on {Date}@en"
       "<dct:description>": "Data collected during an RCA impeller survey at {Site Name} on {Date}, including measurements of number of revolutions, water velocity, and discharge.@en"
       "<fdri:originatingActivity>": "<::Survey>"
+      "<fdri:originatingSite>": "<::Site>"
       "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
       "<sosa:observes>":
         - <http://fdri.ceh.ac.uk/ref/common/cop/rev_count>
@@ -143,11 +151,5 @@ resources:
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
         - <http://fdri.ceh.ac.uk/ref/common/measure/discharge-inst-m3s-1>
       "<dct:spatial>": "<::FeatureOfInterest>"
-      "<dct:temporal>":
-        - name: SurveyPeriod
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/dataset/rca-{Site Name|slug}-{Date|slug}.interval>"
-            "@type": "<dct:PeriodOfTime>"
-            "<dcat:startDate>": "{START_TS}^^<xsd:dateTime>"
-            "<dcat:endDate>": "{END_TS}^^<xsd:dateTime>"
+      "<dct:temporal>": <::SurveyInterval>
       "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/processed>"

@@ -23,14 +23,14 @@ embedded:
 resources:
   - name: Site
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/{Site_Number|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site_Number|slug}>"
       "@type": <fdri:EnvironmentalMonitoringSite>
       "<rdfs:label>": "{Site_Number}: {Site_Name}@en"
       "<dct:title>": "{Site_Number}: {Site_Name}@en"
 
   - name: FeatureOfInterest
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/feature/{Site_Number|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/feature/rca-{Site_Number|slug}>"
       "@type": "<fdri:GeospatialFeatureOfInterest>"
       "<rdfs:label>": "Environment at {Site_Name}@en"
       "<dct:title>": "Environment at {Site_Name}@en"
@@ -127,6 +127,7 @@ resources:
       "<rdfs:label>": "Sontek survey dataset {Site_Name} at {Date}@en"
       "<dct:description>": "{Comments}@en"
       "<fdri:originatingActivity>": "<::Survey>"
+      "<fdri:originatingSite>": "<::Site>"
       "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/processed>"
       "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
       "<sosa:observedProperty>":
