@@ -1,0 +1,31 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Role
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/{ID|slug}>"
+      "@type": <fdri:FacilityUsageRole>
+      "<rdfs:label>": "{LABEL}@en"
+      "<skos:prefLabel>": "{LABEL}@en"
+      "<skos:inScheme>": <::FacilityUsageRoleScheme>
+
+  - name: RoleParent
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/{PARENT_ID|slug}>"
+      "^<skos:broader>": <::Role>
+
+  - name: NoRoleParent
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/{ID|slug}>"
+      "^<skos:hasTopConcept>": <::FacilityUsageRoleScheme>

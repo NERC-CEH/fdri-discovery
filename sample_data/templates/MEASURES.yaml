@@ -1,0 +1,43 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Measure
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{ID|slug}>"
+      "@type": <fdri:Measure>
+      "<rdfs:label>": "{DESCRIPTION}@en"
+      "<skos:prefLabel>": "{DESCRIPTION}@en"
+      "<skos:inScheme>": <::MeasureScheme>
+      "<fdri:variable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/{UNIT_ID|slug}>"
+      "<fdri:aggregation>":
+        - name: Aggregation
+          requires:
+            STATISTIC_ID:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{ID|slug}#aggregation>"
+            "@type": <fdri:Aggregation>
+            "<fdri:periodicity>": "{PERIODICITY}^^<xsd:duration>"
+            "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
+            "<fdri:valueStatistic>": <http://fdri.ceh.ac.uk/ref/common/staistic/{STAISTIC_ID}>
+
+  - name: MeasureParent
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{PARENT_ID|slug}>"
+      "^<skos:broader>": <::Measure>
+
+  - name: NoMeasureParent
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{ID|slug}>"
+      "^<skos:hasTopConcept>": <::MeasureScheme>

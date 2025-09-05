@@ -1,0 +1,31 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Concept
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-property/{ID|slug}>"
+      "@type": <fdri:ConfigurationProperty>
+      "<rdfs:label>": "{LABEL}@en"
+      "<skos:prefLabel>": "{LABEL}@en"
+      "<skos:inScheme>": <::ConfigurationPropertyScheme>
+
+  - name: Parent
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-property/{PARENT_ID|slug}>"
+      "^<skos:broader>": <::Concept>
+
+  - name: NoParent
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": "<::Concept>"
+      "^<skos:hasTopConcept>": <::ConfigurationPropertyScheme>

@@ -1,0 +1,86 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+mappings:
+  parameters:
+    FQ [Flow]: flow
+  units:
+    m³/s: m3s-1
+
+resources:
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Station name|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSite>"
+      "<dct:identifier>": "{Station number}"
+      "<rdfs:label>": "{Station name}@en"
+      "^<fdri:contains>": "<http://fdri.ceh.ac.uk/id/network/ea-manual-sites>"
+      "<geos:hasGeometry>":
+        - name: EastingNorthingPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Station name|slug}#geo-easting-northing>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({Easting}, {Northing})^^<geos:wktLiteral>"
+
+  - name: FOI
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/feature/ea-manual-{Station name|slug}>"
+      "@type": "<fdri:GeospatialFeatureOfInterest>"
+      "<geos:hasGeometry>":
+        - name: EastingNorthingPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Station name|slug}#geo-easting-northing>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({Easting}, {Northing})^^<geos:wktLiteral>"
+      "<fdri:hasRepresentativePoint>": <::EastingNorthingPoint>
+
+  - name: VariableGroup
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{Parameter Type|slug}>"
+      "@type": "<skos:Concept>"
+      "<skos:prefLabel>": "{Parameter Type}@en"
+      "<skos:inScheme>": "<::CommonCopScheme>"
+      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
+
+  - name: Variable
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{Parameter-name|map_by('parameters')|slug}>"
+
+  - name: Unit
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/unit/{Time series unit|map_by('units')|slug}>"
+      "@type": "<fdri:Unit>"
+      "<skos:prefLabel>": "{Time series unit}@en"
+      "<skos:inScheme>": "<::CommonUnitScheme>"
+      "^<skos:hasTopConcept>": "<::CommonUnitScheme>"
+
+  - name: Measure
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{Parameter-name|map_by('parameters')|slug}-inst-{Time series unit|map_by('units')|slug}>"
+
+  - name: TimeSeriesDefinition
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/time-series-definition/ea-{Parameter-name|map_by('parameters')|slug}>"
+      "@type": "<fdri:TimeSeriesDefinition>"
+      "<skos:prefLabel>": "EA {Parameter-name} guaging time series@en"
+      "<skos:inScheme>": "<::CommonTimeSeriesDefinitionScheme>"
+      "^<skos:hasTopConcept>": "<::CommonTimeSeriesDefinitionScheme>"
+
+  - name: TimeSeries
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{Station number|slug}-{Parameter-name|map_by('parameters')|slug}>"
+      "@type": "<fdri:TimeSeriesDataset>"
+      "<dct:type>": <::TimeSeriesDefinition>
+      "<dct:title>": "{Station name} - {Parameter-name}@en"
+      "<rdfs:label>": "{Station name} - {Parameter-name}@en"
+      "<fdri:originatingSite>": <::Site>
+      "<sosa:hasFeatureOfInterest>": <::FOI>
+      "<sosa:observedProperty>": <::Variable>
+      "<fdri:measure>": <::Measure>
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/processed>"

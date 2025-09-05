@@ -26,16 +26,19 @@ RECORDS = \
 	TimeSeriesDefinition
 
 SAMPLES += $(TTL_BASE)/alt_data_config.ttl
+SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
+SAMPLES += $(TTL_BASE)/FACILITY_USAGE_ROLES.ttl
 SAMPLES += $(TTL_BASE)/infill_config.ttl
 SAMPLES += $(TTL_BASE)/INSTRUMENTATION.ttl
 SAMPLES += $(TTL_BASE)/instrumentation_parameters.ttl
 SAMPLES += $(TTL_BASE)/LAND_COVER_LCM_CLASSES.ttl
 SAMPLES += $(TTL_BASE)/landCoverLcm.ttl
 SAMPLES += $(TTL_BASE)/landCoverObservations.ttl
+SAMPLES += $(TTL_BASE)/MEASURES.ttl
 SAMPLES += $(TTL_BASE)/METHODS.ttl
 SAMPLES += $(TTL_BASE)/METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/PARAMS.ttl
@@ -65,6 +68,15 @@ SAMPLES += $(TTL_BASE)/fdri_sites.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
+
+# Gauging Data Samples
+SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
+SAMPLES += $(TTL_BASE)/ea_manual_metadata.ttl
+SAMPLES += $(TTL_BASE)/flowstick_surveys.ttl
+SAMPLES += $(TTL_BASE)/rca_sites.ttl
+SAMPLES += $(TTL_BASE)/rca_surveys.ttl
+SAMPLES += $(TTL_BASE)/sontek_sites.ttl
+SAMPLES += $(TTL_BASE)/sontek_surveys.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -172,6 +184,21 @@ build/fdri_measure_ext.csv: $(SRC)/fdri_measure.csv $(SRC)/intervalDuration.csv 
 
 build/fdri_asset_loc_history.csv: $(SRC)/fdri_sites.csv $(SRC)/fdri_loc_history.csv $(SQL)/fdri_asset_loc_history.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_asset_loc_history.sql"
+
+build/flowstick_surveys.csv: $(SRC)/nivu_flowstick/metadata.parquet $(SQL)/flowstick_surveys.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/flowstick_surveys.sql"
+
+build/rca_sites.csv: $(SRC)/rca_excel/sites.parquet $(SQL)/rca_sites.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/rca_sites.sql"
+
+build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/rca_surveys.sql"
+
+build/sontek_sites.csv: $(SRC)/sontek/sites.parquet $(SQL)/sontek_sites.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_sites.sql"
+
+build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

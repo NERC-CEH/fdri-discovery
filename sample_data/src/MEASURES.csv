@@ -1,0 +1,14 @@
+ID,PARENT_ID,PARAMETER_ID,UNIT_ID,STATISTIC_ID,PERIODICITY,RESOLUTION,DESCRIPTION
+DISCHARGE-INST-M3S-1,,DISCHARGE,M3S-1,INST,,,Instantaneous discharge in cubic metres per second
+FLOW-INST-M3S-1,,FLOW,M3S-1,INST,,,Instantaneous flow in cubic metres per second
+FLOW-INST-LS-1,,FLOW,LS-1,INST,,,Instantaneous flow in litres per second
+WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,Water velocity in metres per second
+WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,INST,,,Instantaneous water velocity in metres per second
+WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,,,Mean water velocity in metres per second
+WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,,,Maximum water velocity in metres per second
+REV-COUNT,,REV,UNITLESS,Number of revolutions
+REV-TOTAL-COUNT,,REV,UNITLESS,TOTAL,,,Total number of revolutions counted in measurement Period
+ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,,,Mean angular velocity in revolutions per second
+WATER_TEMP-DEGC,,WATER_TEMP,DEGC,,,,Water temperature in degrees Celsius
+WATER_TEMP-INST-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,INST,,,Instantaneous water temperature in degrees Celsius
+WATER_TEMP-MEAN-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,MEAN,,,Mean water temperature in degrees Celsius
