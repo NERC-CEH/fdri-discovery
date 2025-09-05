@@ -89,7 +89,7 @@ one_offs:
       "<skos:inScheme>": "<::PropertyScheme>"
       "^<skos:hasTopConcept>": "<::PropertyScheme>"
 
-  - name: Catchment
+  - name: MonitoringFacility
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/monitoring-facility>"
       "@type": "<iop:Entity>"
