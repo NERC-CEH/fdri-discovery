@@ -48,7 +48,7 @@ resources:
       "@type": "<fdri:ConfigurationValueSeries>"
       "<rdfs:label>": "Firmware Version Configuration for Sontek Handheld Device {Handheld_Serial_Number}@en"
       "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>
-      "<fdri:hadConfiguration>":
+      "<fdri:hadValue>":
         - name: ConfigurationValue
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-handheld-{Handheld_Serial_Number|slug}#firmware-configuration.value-{Date|slug}>"
@@ -63,6 +63,8 @@ resources:
       "<rdfs:label>": "Sontek Handheld Device {Handheld_Serial_Number}@en"
       "<dct:type>": <::SontekHandheldDeviceType>
       "<fdri:hasSerialNumber>": "{Handheld_Serial_Number}@en"
+      "<fdri:configuration>":
+        - <::HandheldDeviceConfiguration>
 
   - name: ADVConfiguration
     properties:
@@ -70,7 +72,7 @@ resources:
       "@type": "<fdri:ConfigurationValueSeries>"
       "<rdfs:label>": "Firmware Version Configuration for Sontek ADV {ADV_Serial_Number}@en"
       "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>
-      "<fdri:hadConfiguration>":
+      "<fdri:hadValue>":
         - name: ConfigurationValue
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#firmware-configuration.value-{Date|slug}>"
@@ -84,7 +86,7 @@ resources:
       "@type": "<fdri:ConfigurationValueSeries>"
       "<rdfs:label>": "Number of Beams Configuration for Sontek ADV {ADV_Serial_Number}@en"
       "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/number-of-beams>
-      "<fdri:hadConfiguration>":
+      "<fdri:hadValue>":
         - name: ConfigurationValue
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#beams-configuration.value-{Date|slug}>"
@@ -99,7 +101,9 @@ resources:
       "<rdfs:label>": "Sontek ADV Device {ADV_Serial_Number}@en"
       "<dct:type>": <::SontekADVDeviceType>
       "<fdri:hasSerialNumber>": "{ADV_Serial_Number}@en"
-      "<fdri:configuration>": <::ADVConfiguration>
+      "<fdri:configuration>":
+        - <::ADVConfiguration>
+        - <::ADVBeamsConfiguration>
 
   - name: Survey
     properties:
