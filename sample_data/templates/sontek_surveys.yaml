@@ -118,6 +118,12 @@ resources:
             "@type": "<fdri:FacilityUsage>"
             "<prov:entity>": "<::HandheldDevice>"
             "<prov:hadRole>": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/sensor>"
+        - name: AdvUsage
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/activity/sontek-survey-{Survey_ID|slug}#adv>"
+            "@type": "<fdri:FacilityUsage>"
+            "<prov:entity>": "<::ADVDevice>"
+            "<prov:hadRole>": "<http://fdri.ceh.ac.uk/ref/common/facility-usage-role/sensor>"
 
   - name: SurveyDataset
     properties:
