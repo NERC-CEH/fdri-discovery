@@ -229,6 +229,14 @@ resources:
             "@type": "<fdri:RelatedPartyAttribution>"
             "<prov:agent>": <::OperatorAgent>
             "<dcat:hasRole>": <::OperatorRole>
+        - name: OperatorOrganisationAttribution
+          requires:
+            ORGANISATION_ID:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#organisation-attribution>"
+            "@type": "<fdri:RelatedPartyAttribution>"
+            "<prov:agent>": <::OperatorOrganisationAgent>
+            "<dcat:hasRole>": <::OperatorOrganisationRole>
 
   - name: RiverGroup
     properties:
