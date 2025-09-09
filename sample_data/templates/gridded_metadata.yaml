@@ -1,0 +1,20 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Dataset
+    requires:
+      $type: Dataset
+    properties:
+      "@id": "<{$resource}>"
+      "@type": "<fdri:GriddedDataset>"
+      "<dct:title>": "{title}@en"
+      "<dct:description>":
+        - "{summary}@en"
+        - "{description}@en"
