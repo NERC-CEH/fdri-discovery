@@ -1,0 +1,279 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "Conventions": "CF-1.6",
+            "comment": "In line with standard UK convention, the rainfall on a given day refers to the rainfall amount precipitated in 24 hours between 09:00 UTC on that day and 09:00 UTC on the following day.",
+            "creator_email": "malngu@ceh.ac.uk, vke@ceh.ac.uk",
+            "creator_name": "Maliko Tanguy, Virginie Keller",
+            "creator_url": "",
+            "date_issued": "2014-01-06",
+            "description": "Daily rainfall 1km-gridded dataset created as part of CEH Gridded Estimates of Areal Rainfall (CEH - GEAR). Great Britain.",
+            "geospatial_lat_max": 61.026796,
+            "geospatial_lat_min": 49.766807,
+            "geospatial_lon_max": 3.554013,
+            "geospatial_lon_min": -7.55716,
+            "grid_mapping": "crs",
+            "institution": "CEH Wallingford - NERC",
+            "keywords": "rainfall, raingauge, gridded, Natural Neighbour interpolation",
+            "licence": "Licensing conditions apply (datalicensing@ceh.ac.uk)",
+            "publisher_email": "enquiries@ceh.ac.uk",
+            "publisher_name": "Centre for Ecology and Hydrology",
+            "publisher_url": "http://www.ceh.ac.uk",
+            "reference": "Tanguy, M., Prosdocimi, I., Keller, V.D.J., Terry, J., Cole, S.J., Morris, D.G., Dixon, H. (2014). Consolidation of a CEH reference rainfall dataset for hydrological purposes for the UK. CEH-Wallingford, Oxfordshire, UK.",
+            "source": "CEH - GEAR: dataset created using Natural Neighbour method interpolation on UK raingauge data",
+            "version_comment": "The version number of each data file corresponds to the dataset version for which the file was originally created. The dataset is updated periodically (normally annually) when new quality controlled raingauge data becomes available. At each update the whole dataset will be given a new version number (v1.1.,v1.2.,v1.3., ...) but some individual data files which comprise that dataset may have an earlier version number. This is because, for a given year, unless the data has changed for that year, the grids will remain unchanged and, as a result, the data file version number for that year will also remain the same. For unchanged years, the same file (with the same original version number) will belong to different dataset versions. The file version for a given year will change if the corresponding grids are updated with new data."
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "crs/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<i2",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "crs/.zattrs": {
+            "EPSG_code": "EPSG:27700",
+            "_ARRAY_DIMENSIONS": [],
+            "false_easting": 400000.0,
+            "false_northing": -100000.0,
+            "grid_mapping_name": "transverse_mercator",
+            "inverse_flattening": 299.3249646,
+            "latitude_of_projection_origin": 49.0,
+            "long_name": "coordinate_reference_system",
+            "longitude_of_projection_origin": -2.0,
+            "scale_factor_at_projection_origin": 0.9996012717,
+            "semi_major_axis": 6377563.396,
+            "semi_minor_axis": 6356256.91
+        },
+        "lat/.zarray": {
+            "chunks": [
+                100,
+                100
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1251,
+                701
+            ],
+            "zarr_format": 2
+        },
+        "lat/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "y",
+                "x"
+            ],
+            "long_name": "latitude",
+            "standard_name": "latitude",
+            "units": "degrees_north"
+        },
+        "lon/.zarray": {
+            "chunks": [
+                100,
+                100
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1251,
+                701
+            ],
+            "zarr_format": 2
+        },
+        "lon/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "y",
+                "x"
+            ],
+            "long_name": "longitude",
+            "standard_name": "longitude",
+            "units": "degrees_east"
+        },
+        "min_dist/.zarray": {
+            "chunks": [
+                365,
+                100,
+                100
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": -999.0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                47481,
+                1251,
+                701
+            ],
+            "zarr_format": 2
+        },
+        "min_dist/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "y",
+                "x"
+            ],
+            "comment": "The minimum distance corresponds to the distance to the closest raingauge used in the natural neighbour method to estimate the rainfall amount in a grid cell. This distance provides an indicator of accuracy/confidence in the estimated rainfall amount. As the minimum distance increases so does uncertainty in the rainfall estimates. Users should be cautious when using the rainfall data in areas where the minimum distance is large, as the estimates are most likely less reliable. Where min_dist > 100km, rainfall estimates are not produced.",
+            "coordinates": "crs lat lon",
+            "long_name": "Minimum distance",
+            "scale_factor": 0.1,
+            "units": "m",
+            "valid_max": 2000000.0,
+            "valid_min": 0.0
+        },
+        "rainfall_amount/.zarray": {
+            "chunks": [
+                365,
+                100,
+                100
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": -999.0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                47481,
+                1251,
+                701
+            ],
+            "zarr_format": 2
+        },
+        "rainfall_amount/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "y",
+                "x"
+            ],
+            "comment": "The estimated rainfall amount (kg m-2) is equivalent to the rainfall depth (mm). It is estimated where the closest raingauge is within 100km, otherwise not estimated and value set to -2. According to the British Standards Institution (BS 7843-4:2012), UK convention is for calculations of areal rainfall to be based on total measured precipitation, where measured precipitation includes both rainfall and the water equivalent of new snow. ",
+            "coordinates": "crs lat lon",
+            "long_name": "CEH Gridded Estimates of Areal Rainfall",
+            "scale_factor": 0.1,
+            "standard_name": "rainfall_amount",
+            "units": "kg m-2",
+            "valid_max": 10000.0,
+            "valid_min": -20.0
+        },
+        "time/.zarray": {
+            "chunks": [
+                47481
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                47481
+            ],
+            "zarr_format": 2
+        },
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "calendar": "gregorian",
+            "units": "days since 1800-01-01"
+        },
+        "x/.zarray": {
+            "chunks": [
+                701
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                701
+            ],
+            "zarr_format": 2
+        },
+        "x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "x"
+            ],
+            "long_name": "easting - OSGB36 grid reference",
+            "point_spacing": "even",
+            "standard_name": "projection_x_coordinate",
+            "units": "m"
+        },
+        "y/.zarray": {
+            "chunks": [
+                1251
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1251
+            ],
+            "zarr_format": 2
+        },
+        "y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "y"
+            ],
+            "long_name": "northing - OSGB36 grid reference",
+            "point_spacing": "even",
+            "standard_name": "projection_y_coordinate",
+            "units": "m"
+        }
+    },
+    "zarr_consolidated_format": 1
+}
