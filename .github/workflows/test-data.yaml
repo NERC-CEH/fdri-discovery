@@ -22,19 +22,19 @@ jobs:
         run: |
           git fetch --prune --unshallow --tags
       
-      - name: Checkout rdf-mapper
+      - name: Checkout gridded-mapper
         uses: actions/checkout@v4
         with:
-          repository: epimorphics/rdf-mapper
-          path: rdf-mapper
-      
+          repository: NERC-CEH/dri-gridded-mapper
+          path: gridded-mapper
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
 
-      - name: Install rdf-mapper
-        working-directory: rdf-mapper
+      - name: Install gridded-mapper
+        working-directory: gridded-mapper
         run: |
           pip install .
 
