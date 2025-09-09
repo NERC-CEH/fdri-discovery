@@ -10,6 +10,7 @@ TTL_BASE = build/data
 SHACL_BASE = build/shacl
 SCHEMA_FILE = ontology/schema/fdri.recordspec.yaml
 MAPPER = mapper
+GRIDMAP = gridded-mapper
 
 RECORDS = \
 	Variable \
@@ -77,6 +78,11 @@ SAMPLES += $(TTL_BASE)/rca_sites.ttl
 SAMPLES += $(TTL_BASE)/rca_surveys.ttl
 SAMPLES += $(TTL_BASE)/sontek_sites.ttl
 SAMPLES += $(TTL_BASE)/sontek_surveys.ttl
+
+# Gridded Data Samples
+SAMPLES += $(TTL_BASE)/chess-met.ttl
+SAMPLES += $(TTL_BASE)/GEAR-daily.ttl
+SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -211,6 +217,12 @@ $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml build/%.csv | build/data
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml build/%.json | build/data
 	$(MAPPER) $(TPL)/$*.yaml build/$*.json $@
+
+$(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gridded/%.cdl | build/data
+	$(GRIDMAP) --type cdl --base-url http://fdri.ceh.ac.uk/id/dataset/$* --output $@ $(TPL)/gridded_metadata.yaml $(SRC)/gridded/$*.cdl
+
+$(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gridded/%.zarr.json | build/data
+	$(GRIDMAP) --type zarr-meta --base-url http://fdri.ceh.ac.uk/id/dataset/$* --output $@ $(TPL)/gridded_metadata.yaml $(SRC)/gridded/$*.zarr.json
 
 $(VAL)/%.ttl: $(TTL_BASE)/%.ttl $(SHACL_BASE)/fdri_shacl.ttl  | build/validation
 	$(RUN) /bin/bash -c "shacl v -d $(TTL_BASE)/$*.ttl -s $(SHACL_BASE)/fdri_shacl.ttl > $@"
