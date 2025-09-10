@@ -10,5 +10,12 @@ def with_datatype(text: str, state: TemplateState, dt: str):
     if dt_uri is not None:
         return Literal(text, datatype=dt_uri)
 
+def append_fragment(text: str, state: TemplateState, fragment: str, fragment_sep: str = '.'):
+    if text is not None:
+        if '#' in text:
+            return text + fragment_sep + fragment
+        return text + '#' + fragment
+
 register_fn('slug', slug)
 register_fn('withDatatype', with_datatype)
+register_fn('append_fragment', append_fragment)
