@@ -60,6 +60,15 @@ jobs:
 
       - name: Build sample data
         run: make samples
+      
+      - name: Upload mapper log
+        uses: actions/upload-artifact@v4
+        with:
+          name: gridded-mapper-log
+          path: mapper.log
+
+      - name: Validate generated data
+        run: make full_validation
 
       - name: Upload validation results
         uses: actions/upload-artifact@v4
