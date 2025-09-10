@@ -37,7 +37,7 @@ jobs:
       - name: Install gridded-mapper
         working-directory: gridded-mapper
         run: |
-          pip install .
+          pip install -e .
 
       - name: Configure AWS Credentials for Epimorphics
         uses: aws-actions/configure-aws-credentials@v4
