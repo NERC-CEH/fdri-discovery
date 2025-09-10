@@ -29,6 +29,11 @@ jobs:
           repository: NERC-CEH/dri-gridded-mapper
           path: gridded-mapper
       
+      - name: Install netCDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y netcdf-bin
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
