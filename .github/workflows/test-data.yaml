@@ -22,19 +22,24 @@ jobs:
         run: |
           git fetch --prune --unshallow --tags
       
-      - name: Checkout rdf-mapper
+      - name: Checkout gridded-mapper
         uses: actions/checkout@v4
         with:
-          repository: epimorphics/rdf-mapper
-          path: rdf-mapper
-      
+          repository: NERC-CEH/dri-gridded-mapper
+          path: gridded-mapper
+
+      - name: Install netCDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y netcdf-bin
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
 
-      - name: Install rdf-mapper
-        working-directory: rdf-mapper
+      - name: Install gridded-mapper
+        working-directory: gridded-mapper
         run: |
           pip install .
 
@@ -55,6 +60,15 @@ jobs:
 
       - name: Build sample data
         run: make samples
+      
+      - name: Upload mapper log
+        uses: actions/upload-artifact@v4
+        with:
+          name: gridded-mapper-log
+          path: mapper.log
+
+      - name: Validate generated data
+        run: make full_validation
 
       - name: Upload validation results
         uses: actions/upload-artifact@v4

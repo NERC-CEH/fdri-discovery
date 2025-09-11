@@ -1,0 +1,486 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Dataset
+    requires:
+      $type: Dataset
+    properties:
+      "@id": "<{$resource}>"
+      "@type": "<fdri:GriddedDataset>"
+      "<dct:title>": "{title}@en"
+      "<dct:description>":
+        - "{summary}@en"
+        - "{description}@en"
+        - "{source}@en"
+      "<dcat:temporalResolution>": "{temporal_resolution}^^<xsd:duration>"
+      "<dct:keyword>": "{keywords|split(',')|trim()}"
+      "<dct:created>": "{date_created|asDateTime}"
+      "<dct:license>": "<{license}>"
+      "<dct:identifier>": "{id}"
+
+  - name: Array
+    requires:
+      $type: Array
+    properties:
+      "@id": "<{$resource}>"
+      "@type": "<fdri:Array>"
+      "<rdfs:label>": "{long_name}@en"
+      "<rdfs:comment>": "{comment}@en"
+      "<dct:identifier>": "{standard_name}"
+
+  - name: ObservedProperty
+    requires:
+      standard_name:
+    properties:
+      "@id": "<http://vocab.nerc.ac.uk/standard_name/{standard_name}/>"
+      "@type": "<fdri:Variable>"
+      "^<sosa:observedProperty>": "<{$base}>"
+  
+  - name: MeasuredProperty
+    requires:
+      standard_name:
+      units:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{standard_name|slug}-{units|slug}>"
+      "@type": "<fdri:Measure>"
+      "<fdri:hasUnit>":
+        - name: Unit
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/unit/{units|slug}>"
+            "@type": "<fdri:Unit>"
+            "<rdfs:label>": "{units}"
+      "^<fdri:measure>": "<{$base}>"
+
+  - name: TemporalCoverage
+    requires:
+      temporal_coverage_start:
+      temporal_coverage_end:
+    properties:
+      "@id": "<{$resource|append_fragment('temporalCoverage')}>"
+      "@type": "<dct:PeriodOfTime>"
+      "<dcat:startDate>": "{time_coverage_start|asDateTime}"
+      "<dcat:endDate>": "{time_coverage_end|asDateTime}"
+      "^<dct:temporal>": "<{$resource}>"
+
+  - name: CreatorAgent
+    requires:
+      creator_name:
+    properties:
+      "@id": "<{$resource|append_fragment('creator')}>"
+      "@type": "<fdri:Agent>"
+      "<rdfs:label>": "{creator_name}"
+      "<foaf:mbox>": "{creator_email|split(',')|trim()}"
+      "^<dct:creator>": "<{$resource}>"
+
+  - name: PublisherAgent
+    requires:
+      publisher_name:
+    properties:
+      "@id": "<{$resource|append_fragment('publisher')}>"
+      "@type": "<fdri:Agent>"
+      "<rdfs:label>": "{publisher_name}"
+      "<foaf:mbox>": "{publisher_email|split(',')|trim()}"
+      "<foaf:homepage>": "{publisher_url|split(',')|trim()}"
+      "^<dct:publisher>": "<{$resource}>"
+
+  - name: CdmDataTypeAnnotation
+    requires:
+      cdm_data_type:
+    properties:
+      "@id": "<{$resource|append_fragment('cdmDataType')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/cdm-data-type>"
+      "<fdri:hasValue>":
+        - name: CdmDataTypeAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('cdmDataType.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{cdm_data_type}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: PointSpacingAnnotation
+    requires:
+      point_spacing:
+    properties:
+      "@id": "<{$resource|append_fragment('pointSpacing')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/point-spacing>"
+      "<fdri:hasValue>":
+        - name: PointSpacingAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('pointSpacing.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{point_spacing}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"  
+
+  - name: SpatialResolutionAnnotation
+    requires:
+      spatial_resolution:
+    properties:
+      "@id": "<{$resource|append_fragment('spatialResolution')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/spatial-resolution>"
+      "<fdri:hasValue>":
+        - name: SpatialResolutionAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('spatialResolution.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{spatial_resolution}"
+            "<schema:unit>": "<{spatial_resolution_unit}>"
+  
+  - name: StandardNameVocabularyAnnotation
+    requires:
+      standard_name_vocabulary:
+    properties:
+      "@id": "<{$resource|append_fragment('standardNameVocabulary')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/standard-name-vocabulary>"
+      "<fdri:hasValue>":
+        - name: StandardNameVocabularyAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('standardNameVocabulary.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{standard_name_vocabulary}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: StandardNameUrlVocabularyAnnotation
+    requires:
+      standard_name_url_vocabulary:
+    properties:
+      "@id": "<{$resource|append_fragment('standardNameUrlVocabulary')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/standard-name-url-vocabulary>"
+      "<fdri:hasValue>":
+        - name: StandardNameUrlVocabularyAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('standardNameUrlVocabulary.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{standard_name_url_vocabulary}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: GeospatialFeature
+    requires:
+      geospatial_lat_min:
+      geospatial_lat_max:
+      geospatial_lon_min:
+      geospatial_lon_max:
+    properties:
+      "@id": "<{$resource|append_fragment('geospatialFeature')}>"
+      "@type": "<fdri:GeospatialFeatureOfInterest>"
+      "<geos:hasBoundingBox>":
+        - name: BoundingBox
+          properties:
+            "@id": "<{$resource|append_fragment('geospatialFeature.boundingBox')}>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "POLYGON(({geospatial_lon_min} {geospatial_lat_min}, {geospatial_lon_min} {geospatial_lat_max}, {geospatial_lon_max} {geospatial_lat_max}, {geospatial_lon_max} {geospatial_lat_min}, {geospatial_lon_min} {geospatial_lat_min}))^^<http://www.opengis.net/ont/geosparql#wktLiteral>"
+      "^<sosa:hasFeatureOfInterest>": "<{$resource}>"
+  
+  # Annotation properties that map to the NERC Climate and Forcast Attribute Names Vocabulary (P31)
+  # see http://vocab.nerc.ac.uk/collection/P31/current/
+
+  - name: ConventionsAnnotation
+    requires:
+      Conventions:
+    properties:
+      "@id": "<{$resource|append_fragment('conventions')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/conventions/>"
+      "<fdri:hasValue>":
+        - name: ConventionsAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('conventions.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{Conventions}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: _FillValueAnnotation
+    requires:
+      _FillValue:
+    properties:
+      "@id": "<{$resource|append_fragment('_FillValue')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/_FillValue/>"
+      "<fdri:hasValue>":
+        - name: _FillValueAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('_FillValue.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{_FillValue}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: ActualRangeAnnotation
+    requires:
+      actual_range:
+    properties:
+      "@id": "<{$resource|append_fragment('actualRange')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/actual_range/>"
+      "<fdri:hasValue>":
+        - name: ActualRangeAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('actualRange.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{actual_range}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: AxisAnnotation
+    requires:
+      axis:
+    properties:
+      "@id": "<{$resource|append_fragment('axis')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/axis/>"
+      "<fdri:hasValue>":
+        - name: AxisAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('axis.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{axis}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: BoundsAnnotation
+    requires:
+      bounds:
+    properties:
+      "@id": "<{$resource|append_fragment('bounds')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/bounds/>"
+      "<fdri:hasValue>":
+        - name: BoundsAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('bounds.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{bounds}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: CalendarAnnotation
+    requires:
+      calendar:
+    properties:
+      "@id": "<{$resource|append_fragment('calendar')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/calendar/>"
+      "<fdri:hasValue>":
+        - name: CalendarAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('calendar.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{calendar}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: CellMethodsAnnotation
+    requires:
+      cell_methods:
+    properties:
+      "@id": "<{$resource|append_fragment('cellMethods')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/cell_methods/>"
+      "<fdri:hasValue>":
+        - name: CellMethodsAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('cellMethods.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{cell_methods}@en"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: CoordinatesAnnotation
+    requires:
+      coordinates:
+    properties:
+      "@id": "<{$resource|append_fragment('coordinates')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/coordinates/>"
+      "<fdri:hasValue>":
+        - name: CoordinatesAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('coordinates.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{coordinates}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: FlagMeaningsAnnotation
+    requires:
+      flag_meanings:
+    properties:
+      "@id": "<{$resource|append_fragment('flagMeanings')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/flag_meanings/>"
+      "<fdri:hasValue>":
+        - name: FlagMeaningsAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('flagMeanings.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{flag_meanings}@en"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+  
+  - name: FlagValuesAnnotation
+    requires:
+      flag_values:
+    properties:
+      "@id": "<{$resource|append_fragment('flagValues')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/flag_values/>"
+      "<fdri:hasValue>":
+        - name: FlagValuesAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('flagValues.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{flag_values}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: GridMappingAnnotation
+    requires:
+      grid_mapping:
+    properties:
+      "@id": "<{$resource|append_fragment('gridMapping')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/grid_mapping/>"
+      "<fdri:hasValue>":
+        - name: GridMappingAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('gridMapping.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{grid_mapping}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: HistoryAnnotation
+    requires:
+      history:
+    properties:
+      "@id": "<{$resource|append_fragment('history')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/history/>"
+      "<fdri:hasValue>":
+        - name: HistoryAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('history.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{history}@en"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: LongNameAnnotation
+    requires:
+      long_name:
+    properties:
+      "@id": "<{$resource|append_fragment('long_name')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/long_name/>"
+      "<fdri:hasValue>":
+        - name: LongNameAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('long_name.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{long_name}@en"
+      "^<fdri:hasAnnotation>": "<{$resource}>"  
+  
+  - name: ReferencesAnnotation
+    requires:
+      references:
+    properties:
+      "@id": "<{$resource|append_fragment('references')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/references/>"
+      "<fdri:hasValue>":
+        - name: ReferencesAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('references.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{references}@en"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: SourceAnnotation
+    requires:
+      source:
+    properties:
+      "@id": "<{$resource|append_fragment('source')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/source/>"
+      "<fdri:hasValue>":
+        - name: SourceAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('source.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{source}@en"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: ScaleFactorAnnotation
+    requires:
+      scale_factor:
+    properties:
+      "@id": "<{$resource|append_fragment('scaleFactor')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/scale_factor/>"
+      "<fdri:hasValue>":
+        - name: ScaleFactorAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('scaleFactor.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{scale_factor}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: StandardNameAnnotation
+    requires:
+      standard_name:
+    properties:
+      "@id": "<{$resource|append_fragment('standardName')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/standard_name/>"
+      "<fdri:hasValue>":
+        - name: StandardNameAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('standardName.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{standard_name}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+
+  - name: UnitsAnnotation
+    requires:
+      units:
+    properties:
+      "@id": "<{$resource|append_fragment('units')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/units/>"
+      "<fdri:hasValue>":
+        - name: UnitsAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('units.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{units}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+  
+  - name: ValidMaxAnnotation
+    requires:
+      valid_max:
+    properties:
+      "@id": "<{$resource|append_fragment('validMax')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/valid_max/>"
+      "<fdri:hasValue>":
+        - name: ValidMaxAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('validMax.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{valid_max}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
+  
+  - name: ValidMinAnnotation
+    requires:
+      valid_min:
+    properties:
+      "@id": "<{$resource|append_fragment('validMin')}>"
+      "@type": "<fdri:Annotation>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/valid_min/>"
+      "<fdri:hasValue>":
+        - name: ValidMinAnnotationValue
+          properties:
+            "@id": "<{$resource|append_fragment('validMin.value')}>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{valid_min}"
+      "^<fdri:hasAnnotation>": "<{$resource}>"
