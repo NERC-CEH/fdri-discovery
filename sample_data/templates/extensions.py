@@ -3,7 +3,7 @@ from rdf_mapper.lib.template_support import register_fn, uri_expand
 from rdflib import Literal
 
 def slug(text: str, state: TemplateState):
-    return '-'.join(text.lower().split()).replace('%', '_').replace('/', '_')
+    return '-'.join(text.lower().split()).replace('%', '_').replace('/', '_').replace('[', '_').replace(']', '_')
 
 def with_datatype(text: str, state: TemplateState, dt: str):
     dt_uri = uri_expand(dt, state.spec.namespaces, state)

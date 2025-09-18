@@ -13,7 +13,7 @@ one_offs:
       "@type": "<fdri:EnvironmentalMonitoringFacilityTypeScheme>"
 
 resources:
-  - name: IntrumentType
+  - name: InstrumentType
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSystemType>"
@@ -28,3 +28,14 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSystemType>"
       "<skos:scopeNote>": "{INSTRUMENT_COMMENT}@en"
+  
+  - name: InstrumentModel
+    requires:
+      MODEL:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{MODEL|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSystemType>"
+      "<skos:prefLabel>": "{MODEL}@en"
+      "<skos:inScheme>": "<::SystemTypeScheme>"
+      "<skos:broader>": "<::InstrumentType>"
+      "^<skos:narrower>": "<::InstrumentType>"
