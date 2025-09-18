@@ -55,10 +55,10 @@ one_offs:
 
   - name: AltDataTimeseriesParameter
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/alt_data-timeseries>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts>"
       "@type": "<fdri:ConfigurationParameter>"
-      "<skos:prefLabel>": "Alternate Data Timeseries@en"
-      "<rdfs:label>": "Alternate Data Timeseries@en"
+      "<skos:prefLabel>": "Dependency Timeseries@en"
+      "<rdfs:label>": "Dependency Timeseries@en"
       "<skos:inScheme>": <::ConfigurationParameterScheme>
       "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
 
@@ -154,7 +154,7 @@ resources:
                 properties:
                   "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data.value>"
                   "@type": <schema:PropertyValue>
-                  "<schema:valueReference>": <http://fdri.ceh.ac.uk/id/time-series/{ALT_TIMESERIES_ID|slug}>
+                  "<schema:valueReference>": <http://fdri.ceh.ac.uk/id/dataset/{ALT_TIMESERIES_ID|slug}>
         - name: AltDataConfig
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data-config>"
