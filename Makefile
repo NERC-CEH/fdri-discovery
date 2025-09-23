@@ -45,6 +45,7 @@ SAMPLES += $(TTL_BASE)/METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/PARAMS.ttl
 SAMPLES += $(TTL_BASE)/PARAMETERS_IDS.ttl
 # SAMPLES += $(TTL_BASE)/phenocam_mask_config.ttl
+SAMPLES += $(TTL_BASE)/PROCEDURE_TYPES.ttl
 SAMPLES += $(TTL_BASE)/processingLevels.ttl
 SAMPLES += $(TTL_BASE)/QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/sensor_calibrations.ttl
