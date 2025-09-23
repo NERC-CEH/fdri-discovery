@@ -19,6 +19,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-value-series/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-firmware>"
       "@type": "<fdri:ConfigurationValueSeries>"
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>"
       "^<fdri:configuration>": <::Sensor>
 
   - name: HistoricalValue
