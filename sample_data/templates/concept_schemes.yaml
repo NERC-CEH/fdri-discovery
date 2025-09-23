@@ -62,6 +62,13 @@ one_offs:
       "<dct:title>": "FDRI Common Objects Of Interest@en"
       "<rdfs:label>": "FDRI Common Objects Of Interest@en"
 
+  - name: Procedure Type Scheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/procedure-type>"
+      "@type": "<skos:ConceptScheme>"
+      "<dct:title>": "FDRI Common Procedure Types@en"
+      "<rdfs:label>": "FDRI Common Procedure Types@en"
+
   - name: PropertyScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/property>"
