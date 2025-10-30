@@ -24,10 +24,17 @@ embedded:
       "@type": <fdri:ConfigurationArgument>
       "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{PARAM_ID|slug}>"
       "<fdri:hasValue>":
-        - name: StringParamValue
+        - name: TSParamValue
           requires:
             PARAM_ID:
              - DEP_TS
+          properties:
+            "@id": <http://fdri.ceh.ac.uk/id/argument/{|hash(PARAM_ID, PARAM_VALUE)|slug}#value>
+            "@type": <schema:PropertyValue>
+            "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{PARAM_VALUE|slug}>"
+        - name: StringParamValue
+          requires:
+            PARAM_ID:
              - SITE_ATTRIBUTE
           properties:
             "@id": <http://fdri.ceh.ac.uk/id/argument/{|hash(PARAM_ID, PARAM_VALUE)|slug}#value>
