@@ -15,7 +15,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}>"
       "@type": "<fdri:Fault>"
       "<dct:description>": "{DESCRIPTION_OF_ISSUE}@en"
-      "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
+      "<fdri:removeData>": "{REMOVE_DATA|equalIgnoreCase('y')}"
       "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
       "<fdri:interval>":
         name: Interval
@@ -33,7 +33,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}>"
       "@type": "<fdri:Fault>"
       "<dct:description>": "{DESCRIPTION_OF_ISSUE}@en"
-      "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
+      "<fdri:removeData>": "{REMOVE_DATA|equalIgnoreCase('y')}"
       "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
       "<fdri:interval>":
         name: Interval

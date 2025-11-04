@@ -361,7 +361,7 @@ resources:
                 properties:
                   "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#public.value>
                   "@type": "<schema:PropertyValue>"
-                  "<schema:value>": "{IS_PUBLIC | asBoolean('y')}"
+                  "<schema:value>": "{IS_PUBLIC | equalIgnoreCase('y')}"
           - name: Snow
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#snow>"
@@ -372,7 +372,7 @@ resources:
                 properties:
                   "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#snow.value>
                   "@type": "<schema:PropertyValue>"
-                  "<schema:value>": "{SNOW | asBoolean('y')}"
+                  "<schema:value>": "{SNOW | equalIgnoreCase('y')}"
           - name: LocationSource
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#location-source>"
@@ -504,7 +504,7 @@ resources:
                 properties:
                   "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#calibrated.value>
                   "@type": "<schema:PropertyValue>"
-                  "<schema:value>": "{CALIBRATED | asBoolean('y')}"
+                  "<schema:value>": "{CALIBRATED | equalIgnoreCase('y')}"
           - name: Flux
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#flux>"
@@ -515,7 +515,7 @@ resources:
                 properties:
                   "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#flux.value>
                   "@type": "<schema:PropertyValue>"
-                  "<schema:value>": "{FLUX | asBoolean('y')}"
+                  "<schema:value>": "{FLUX | equalIgnoreCase('y')}"
           - name: Crs2IsMod
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#crs2-mod>"
@@ -526,7 +526,7 @@ resources:
                 properties:
                   "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#crs2-mod.value>
                   "@type": "<schema:PropertyValue>"
-                  "<schema:value>": "{CRS2_IS_MOD | asBoolean('y')}"
+                  "<schema:value>": "{CRS2_IS_MOD | equalIgnoreCase('y')}"
           - name: FullTdtArray
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#full-tdt-array>"
@@ -537,7 +537,7 @@ resources:
                 properties:
                   "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#full-tdt-array.value>
                   "@type": "<schema:PropertyValue>"
-                  "<schema:value>": "{FULL_TDT_ARRAY | asBoolean('y')}"
+                  "<schema:value>": "{FULL_TDT_ARRAY | equalIgnoreCase('y')}"
 
     - name: RegionMembership
       requires:
