@@ -1,0 +1,82 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+  - name: AnnotationPropertyScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property>"
+      "@type": <skos:ConceptScheme>
+      "<skos:prefLabel>": "Annotation Property Scheme@en"
+      "<rdfs:label>": "Annotation Property Scheme@en"
+
+resources:
+  - name: IopProperty
+    requires:
+      PROPERTY:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/{PROPERTY|slug}>"
+      "@type": "<iop:Property>"
+      "<skos:prefLabel>": "{PROPERTY}@en"
+      "<rdfs:label>": "{PROPERTY}@en"
+      "<skos:inScheme>": "<::PropertyScheme>"
+      "^<skos:hasTopConcept>": "<::PropertyScheme>"
+
+  - name: ObjectOfInterest
+    requires:
+      OBJECT_OF_INTEREST:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/{OBJECT_OF_INTEREST|slug}>"
+      "@type": <iop:Entity>
+      "<skos:inScheme>": <::ObjectOfInterestScheme>
+      "^<skos:hasTopConcept>": "<::ObjectOfInterestScheme>"
+      "<skos:prefLabel>": "{OBJECT_OF_INTEREST}@en"
+
+  - name: ContextObject
+    requires:
+      CONTEXT_OBJECT:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/context/{CONTEXT_OBJECT|slug}>"
+      "@type": <iop:Entity>
+      "<skos:inScheme>": <::ContextObjectScheme>
+      "^<skos:hasTopConcept>": <::ContextObjectScheme>
+      "<skos:prefLabel>": "{CONTEXT_OBJECT}@en"
+
+  - name: AnnotationPropertyVariable
+    requires:
+      OBJECT_OF_INTEREST:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/{ID|slug}>"
+      "@type": <fdri:Variable>
+      "<iop:hasProperty>": "<::IopProperty>"
+      "<iop:hasObjectOfInterest>": "<::ObjectOfInterest>"
+      "<iop:hasContextObject>": "<::ContextObject>"
+
+  - name: AnnotationPropertyConcept
+    unless:
+      OBJECT_OF_INTEREST:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/{ID|slug}>"
+      "@type": <skos:Concept>
+
+  - name: ParentRef
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/{ID|slug}>"
+      "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/{PARENT_ID|slug}>"
+      "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/{PARENT_ID|slug}>"
+      "<skos:inScheme>": <::AnnotationPropertyScheme>
+
+  - name: NoParentRef
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/{ID|slug}>"
+      "^<skos:hasTopConcept>": <::AnnotationPropertyScheme>
+      "<skos:inScheme>": <::AnnotationPropertyScheme>

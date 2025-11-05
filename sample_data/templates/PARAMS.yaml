@@ -12,8 +12,8 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/{PARAM_ID|slug}>"
       "@type": <fdri:ConfigurationParameter>
-      "<skos:inScheme>": <::ConfigurationParamterScheme>
-      "^<skos:hasTopConcept>": <::ConfigurationParamterScheme>
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
       "<skos:prefLabel>": "{PARAM_NAME}@en"
       "<rdfs:label>": "{PARAM_NAME}@en"
       "<skos:scopeNote>": "{PARAM_DESCRIPTION}@en"
