@@ -19,3 +19,4 @@ REF_SOIL_MOISTURE,,Ref Soil Moisture,Reference soil moisture from lab analysis o
 SOIL_COMMENT,,Ref Soil Comment,Comment on soil properties from lab analysis of field samples
 SAMPLING_START_DATETIME,,Sampling Start Datetime,Start datetime of soil sampling for lab analysis
 SAMPLING_END_DATETIME,,Sampling End Datetime,End datetime of soil sampling for lab analysis
+PRIORITY,,Priority,A relative proiority number for the annotated object.
