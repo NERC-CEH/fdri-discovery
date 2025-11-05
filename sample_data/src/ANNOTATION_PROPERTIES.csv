@@ -1,4 +1,4 @@
-ID,PARENT_ID,NAME,DESCRIPTION,OBJECT_OF_INTEREST,PROPERTY,CONTEXT_OBJECT,UNIT_ID,STATISTIC_ID
+ID,PARENT_ID,NAME,DESCRIPTION,OBJECT_OF_INTEREST,PROPERTY,CONTEXT_OBJECT
 CALIBRATION_COMMENT,,Calibration Comment,Comments about calibration values
 L,,Barometric Attenuation Length,Barometric attenuation length for pressure correction
 N0_MOD,,N0 Mod,Count rate over dry soil under reference conditions
@@ -17,5 +17,5 @@ REF_SOC,,Ref SOC,Estimated mean Soil Organic Carbon (from lab analysis of soil s
 REF_SOC_STD,,Ref SOC STD,Estimated Standard deviation of Soil Organic Carbon (from lab analysis of soil samples)
 REF_SOIL_MOISTURE,,Ref Soil Moisture,Reference soil moisture from lab analysis on day of calibration
 SOIL_COMMENT,,Ref Soil Comment,Comment on soil properties from lab analysis of field samples
-TEST_VARIABLE,,Test Variable,Test variable property,WATER,DEPTH,TEST-CONTEXT
-TEST_MEASURE,TEST_VARIABLE,Test Measure,Test measure property,WATER,DEPTH,TEST-CONTEXT,CM,MEAN
+SAMPLING_START_DATETIME,,Sampling Start Datetime,Start datetime of soil sampling for lab analysis
+SAMPLING_END_DATETIME,,Sampling End Datetime,End datetime of soil sampling for lab analysis

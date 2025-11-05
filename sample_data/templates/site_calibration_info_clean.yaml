@@ -1,0 +1,313 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: cosmos
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"
+
+  - name: SoilMoistureAnnotation
+    requires:
+      REF_SOIL_MOISTURE:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soil-moisture>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_soil_moisture>"
+      "<fdri:hasValue>":
+        - name: SoilMoistureValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soil-moisture.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_SOIL_MOISTURE|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+  
+  - name: REF_BULKDENSITY
+    requires:
+      REF_BULKDENSITY:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-bulk-density>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_bulkdensity>"
+      "<fdri:hasValue>":
+        - name: BulkDensityValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-bulk-density.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_BULKDENSITY|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: REF_LATTICEWATER
+    requires:
+      REF_LATTICEWATER:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-lattice-water>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_latticewater>"
+      "<fdri:hasValue>":
+        - name: LatticeWaterValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-lattice-water.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_LATTICEWATER|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: REF_Q0
+    requires:
+      REF_Q0:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-q0>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_q0>"
+      "<fdri:hasValue>":
+        - name: Q0Value
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-q0.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_Q0|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: REF_C0
+    requires:
+      REF_C0:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-c0>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_c0>"
+      "<fdri:hasValue>":
+        - name: C0Value
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-c0.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_C0|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: REF_CTS_MOD_CORR
+    requires:
+      REF_CTS_MOD_CORR:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-cts-mod-corr>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_cts_mod_corr>"
+      "<fdri:hasValue>":
+        - name: CTSModCorrValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-cts-mod-corr.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_CTS_MOD_CORR|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: N0_MOD
+    requires:
+      N0_MOD:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#n0-mod>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/n0_mod>"
+      "<fdri:hasValue>":
+        - name: N0ModValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#n0-mod.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{N0_MOD|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: REF_SOC
+    requires:
+      REF_SOC:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soc>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_soc>"
+      "<fdri:hasValue>":
+        - name: SOCValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soc.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_SOC|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: CALIBRATION_COMMENT
+    requires:
+      CALIBRATION_COMMENT:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#calibration-comment>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/calibration_comment>"
+      "<fdri:hasValue>":
+        - name: CalibrationCommentValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#calibration-comment.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{CALIBRATION_COMMENT}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: PROBE_EFFDEPTH_1M
+    requires:
+      PROBE_EFFDEPTH_1M:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-1m>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/probe_effdepth_1m>"
+      "<fdri:hasValue>":
+        - name: ProbeEffDepth1MValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-1m.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{PROBE_EFFDEPTH_1M|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: PROBE_EFFDEPTH_200M
+    requires:
+      PROBE_EFFDEPTH_200M:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-200m>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/probe_effdepth_200m>"
+      "<fdri:hasValue>":
+        - name: ProbeEffDepth200MValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-200m.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{PROBE_EFFDEPTH_200M|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: N_MIN
+    requires:
+      N_MIN:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#n-min>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/n_min>"
+      "<fdri:hasValue>":
+        - name: NMinValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#n-min.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{N_MIN|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: SOIL_COMMENT
+    requires:
+      SOIL_COMMENT:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#soil-comment>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/soil_comment>"
+      "<fdri:hasValue>":
+        - name: SoilCommentValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#soil-comment.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{SOIL_COMMENT}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: N_MAX
+    requires:
+      N_MAX:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#n-max>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/n_max>"
+      "<fdri:hasValue>":
+        - name: NMaxValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#n-max.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{N_MAX|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: L
+    requires:
+      L:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#barometric-attenuation-length>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/l>"
+      "<fdri:hasValue>":
+        - name: LValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#barometric-attenuation-length.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{L|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: REF_BULKDENSITY_STD
+    requires:
+      REF_BULKDENSITY_STD:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-bulk-density-std>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_bulkdensity_std>"
+      "<fdri:hasValue>":
+        - name: BulkDensityStdValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-bulk-density-std.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_BULKDENSITY_STD|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+ 
+  - name: REF_LATTICEWATER_STD
+    requires:
+      REF_LATTICEWATER_STD:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-lattice-water-std>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_latticewater_std>"
+      "<fdri:hasValue>":
+        - name: LatticeWaterStdValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-lattice-water-std.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_LATTICEWATER_STD|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+  
+  - name: REF_SOC_STD
+    requires:
+      REF_SOC_STD:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soc-std>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_soc_std>"
+      "<fdri:hasValue>":
+        - name: SOCStdValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soc-std.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{REF_SOC_STD|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: SamplingStartDatetime
+    requires:
+      SAMPLING_START_TIMESTAMP:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-start-datetime>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/sampling_start_datetime>"
+      "<fdri:hasValue>":
+        - name: SamplingStartDatetimeValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-start-datetime.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{SAMPLING_START_TIMESTAMP|asDateTime}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+  
+  - name: SamplingEndDatetime
+    requires:
+      SAMPLING_END_TIMESTAMP:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-end-datetime>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/sampling_end_datetime>"
+      "<fdri:hasValue>":
+        - name: SamplingEndDatetimeValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-end-datetime.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{SAMPLING_END_TIMESTAMP|asDateTime}"
+      "^<fdri:hasAnnotation>": "<::Site>"
