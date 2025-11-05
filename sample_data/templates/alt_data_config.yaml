@@ -61,15 +61,17 @@ one_offs:
       "<rdfs:label>": "Dependency Timeseries@en"
       "<skos:inScheme>": <::ConfigurationParameterScheme>
       "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+      "^<fdri:parameter>": <::AltDataMethod>
 
-  - name: AltDataConfigurationParameter
+  - name: ConfigurationParameter
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/alt_data-configuration>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/configuration>"
       "@type": <fdri:ConfigurationParameter>
-      "<skos:prefLabel>": "Alternate Data Processing Configuration@en"
-      "<rdfs:label>": "Alternate Data Processing Configuration@en"
+      "<skos:prefLabel>": "Data Processing Configuration@en"
+      "<rdfs:label>": "Data Processing Configuration@en"
       "<skos:inScheme>": <::ConfigurationParameterScheme>
       "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+      "^<fdri:parameter>": <::AltDataMethod>
 
 resources:
   - name: DataProcessingConfiguration
@@ -159,7 +161,7 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data-config>"
             "@type": "<fdri:Argument>"
-            "<fdri:parameter>": "<::AltDataConfigurationParameter>"
+            "<fdri:parameter>": "<::ConfigurationParameter>"
             "<fdri:hasValue>":
                 name: AltDataConfigValue
                 properties:
