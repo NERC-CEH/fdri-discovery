@@ -22,3 +22,8 @@ SAMPLING_END_DATETIME,,Sampling End Datetime,End datetime of soil sampling for l
 PRIORITY,,Priority,A relative priority number for the annotated object.
 CATCHMENT_AREA_SIZE,,Catchment Area Size,The size of the catchment area in square kilometres,REGION,AREA
 OPERATOR_FACILITY_ID,,Operator Facility ID,The operator-assigned identifier of the annotated facility
+CDM-DATA-TYPE,,CDM Data Type,The Climate and Forecast (CF) metadata convention data type of the annotated gridded dataset
+POINT-SPACING,,Point Spacing,The spacing between points in the annotated gridded dataset
+SPATIAL-RESOLUTION,,Spatial Resolution,The spatial resolution of the annotated gridded dataset
+STANDARD-NAME-VOCABULARY,,Standard Name Vocabulary,The vocabulary used for standard names in the annotated gridded dataset
+STANDARD-NAME-URL-VOCABULARY,,Standard Name URL Vocabulary,The URL vocabulary used for standard names in the annotated gridded dataset
