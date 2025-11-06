@@ -27,3 +27,5 @@ POINT-SPACING,,Point Spacing,The spacing between points in the annotated gridded
 SPATIAL-RESOLUTION,,Spatial Resolution,The spatial resolution of the annotated gridded dataset
 STANDARD-NAME-VOCABULARY,,Standard Name Vocabulary,The vocabulary used for standard names in the annotated gridded dataset
 STANDARD-NAME-URL-VOCABULARY,,Standard Name URL Vocabulary,The URL vocabulary used for standard names in the annotated gridded dataset
+LAND-COVER-MEASUREMENT,,Land Cover,The dominant land cover type within the annotated catchment area
+LAND-COVER-RATIO,,Land Cover Ratio,The ratio of land cover types within the annotated catchment area,LAND_COVER,RATIO
