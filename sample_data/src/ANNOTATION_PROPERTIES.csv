@@ -48,3 +48,4 @@ STATION-CRS2-MOD,,Station CRS2 Mod,Indicates if the station at the annotated sit
 STATION-FULL-TDT-ARRAY,,Station Full TDT Array,Indicates if the station at the annotated site uses a full TDT array,COSMOS-SITE,FULL-TDT-ARRAY
 SITE-WEB-IMAGE-COUNT,,Site Web Image Count,Number of published images of the annotated site,COSMOS-SITE-IMAGES,COUNT
 SITE-HOST-CLASS,,Site Host Classification,The classification of the host organisation for the annotated site,COSMOS-SITE-HOST,CLASSIFICATION
+WINDMASTER_HEIGHT,,WindMaster Height,The height from ground (in meters) that the WindMaster is installed,SENSOR,DISTANCE
