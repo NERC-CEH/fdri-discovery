@@ -7,86 +7,13 @@ imports:
   - concept_schemes.yaml
   - extensions.py
 
-one_offs:
-  - name: Classification
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/common/property/classification>
-      "@type": <iop:Property>
-      "<skos:inScheme>": "<::PropertyScheme>"
-      "^<skos:hasTopConcept>": "<::PropertyScheme>"
-
-  - name: LandCover
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/land_cover>"
-      "@type": <fdri:ObjectOfInterest>
-      "<skos:prefLabel>": "Land cover@en"
-
-  - name: LCMScheme
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/cosmos/lcm-2015>
-      "@type": <skos:ConceptScheme>
-      "<dct:title>": "LCM 2015 Classes@en"
-
-  - name: ObservedLandCover
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/observed-land-cover>"
-      "@type": <fdri:Variable>
-      "<skos:prefLabel>": "Observed Land Cover@en"
-      "<iop:hasProperty>": <::Classification>
-      "<iop:hasObjectOfInterest>": <::LandCover>
-      "<fdri:valueScheme>": <::LCMScheme>
-      "<skos:inScheme>": "<::CommonCopScheme>"
-      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
-  
-  - name: Source
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/source>"
-      "@type": <iop:Property>
-      "<skos:prefLabel>": "Source@en"
-      "<skos:inScheme>": "<::PropertyScheme>"
-      "^<skos:hasTopConcept>": "<::PropertyScheme>"
-
-  - name: Comment
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/comment>"
-      "@type": <iop:Property>
-      "<skos:prefLabel>": "Commentary@en"
-      "<skos:inScheme>": "<::PropertyScheme>"
-      "^<skos:hasTopConcept>": "<::PropertyScheme>"
-
-  - name: Observation
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/observation>"
-      "@type": <iop:Entity>
-      "<skos:prefLabel>": "Observation@en"
-
-  - name: ObservationSource
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/observation-source>"
-      "@type": <fdri:Variable>
-      "<skos:prefLabel>": "Observation Source@en"
-      "<iop:hasProperty>": <::Source>
-      "<iop:hasObjectOfInterest>": <::Observation>
-      "<skos:inScheme>": "<::CommonCopScheme>"
-      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
-
-  - name: ObservationComment
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/observation-comment>"
-      "@type": <fdri:Variable>
-      "<skos:prefLabel>": "Observation Comment@en"
-      "<iop:hasProperty>": <::Comment>
-      "<iop:hasObjectOfInterest>": <::Observation>
-      "<skos:inScheme>": "<::CommonCopScheme>"
-      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
-
 resources:
   - name: Annotation
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover>"
       "@type": <fdri:Annotation>
       "^<fdri:hasAnnotation>": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>
-      "<fdri:property>": <::ObservedLandCover>
+      "<fdri:property>": <http://fdri.ceh.ac.uk/ref/common/annotation-property/observed-land-cover>
   - name: ValueSeries
     properties:
       "@id": <http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-series>
@@ -138,7 +65,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.source>"
       "@type": <fdri:Annotation>
       "^<fdri:qualifier>": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}>"
-      "<fdri:property>": <::ObservationSource>
+      "<fdri:property>": <http://fdri.ceh.ac.uk/ref/common/annotation-property/observation-source>
       "<fdri:hasValue>":
         name: SourceAnnotationValue
         properties:
@@ -152,7 +79,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}.comment>"
       "@type": <fdri:Annotation>
       "^<fdri:qualifier>": "<http://fdri.ceh.ac.uk/id/annotation/cosmos-{SITE_ID|slug}-observed-land-cover#value-{START_DATE|slug}>"
-      "<fdri:property>": <::ObservationComment>
+      "<fdri:property>": <http://fdri.ceh.ac.uk/ref/common/annotation-property/observation-comment>
       "<fdri:hasValue>":
         name: CommentAnnotationValue
         properties:

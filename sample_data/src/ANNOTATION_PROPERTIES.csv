@@ -1,4 +1,4 @@
-ID,PARENT_ID,NAME,DESCRIPTION,OBJECT_OF_INTEREST,PROPERTY,CONTEXT_OBJECT
+ID,PARENT_ID,NAME,DESCRIPTION,OBJECT_OF_INTEREST,PROPERTY,CONTEXT_OBJECT,VALUE_SCHEME_URI
 CALIBRATION_COMMENT,,Calibration Comment,Comments about calibration values
 L,,Barometric Attenuation Length,Barometric attenuation length for pressure correction
 N0_MOD,,N0 Mod,Count rate over dry soil under reference conditions
@@ -29,3 +29,6 @@ STANDARD-NAME-VOCABULARY,,Standard Name Vocabulary,The vocabulary used for stand
 STANDARD-NAME-URL-VOCABULARY,,Standard Name URL Vocabulary,The URL vocabulary used for standard names in the annotated gridded dataset
 LAND-COVER-MEASUREMENT,,Land Cover,The dominant land cover type within the annotated catchment area
 LAND-COVER-RATIO,,Land Cover Ratio,The ratio of land cover types within the annotated catchment area,LAND_COVER,RATIO
+OBSERVED-LAND-COVER,,Observed Land Cover,The observed land cover type within the annotated catchment area,LAND_COVER,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/lcm-2015
+OBSERVATION-SOURCE,,Observation Source,The source of the annotated observation,OBSERVATION,SOURCE
+OBSERVATION-COMMENT,,Observation Comment,Comments regarding the annotated observation,OBSERVATION,COMMENT

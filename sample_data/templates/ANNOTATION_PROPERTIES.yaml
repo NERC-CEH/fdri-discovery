@@ -56,6 +56,7 @@ resources:
       "<iop:hasProperty>": "<::IopProperty>"
       "<iop:hasObjectOfInterest>": "<::ObjectOfInterest>"
       "<iop:hasContextObject>": "<::ContextObject>"
+      "<fdri:valueScheme>": "<{VALUE_SCHEME_URI}>"
       "<skos:prefLabel>": "{NAME}@en"
       "<rdfs:label>": "{NAME}@en"
       "<dct:description>": "{DESCRIPTION}@en"
