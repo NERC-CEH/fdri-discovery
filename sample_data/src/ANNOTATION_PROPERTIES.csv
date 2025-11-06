@@ -33,3 +33,18 @@ OBSERVED-LAND-COVER,,Observed Land Cover,The observed land cover type within the
 OBSERVATION-SOURCE,,Observation Source,The source of the annotated observation,OBSERVATION,SOURCE
 OBSERVATION-COMMENT,,Observation Comment,Comments regarding the annotated observation,OBSERVATION,COMMENT
 WEATHER-CONDITIONS,,Weather Conditions,Description of weather conditions at time of annotated activity,WEATHER,DESCRIPTION
+SITE-SOIL-TYPE,,Site Soil Type,The soil type at the annotated site,SOIL,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/soil-type
+SITE-PUBLIC,,Site Public,Indicates if the annotated site is publicly accessible,COSMOS-SITE,PUBLIC-ACCESS
+SITE-SNOW,,Site Monitors Snow,Indicates if the annotated site monitors snow,COSMOS-SITE,MONITORS-SNOW
+SITE-LOCATION-SOURCE,,Site Location Source,The source of the annotated site location,COSMOS-SITE,LOCATION-SOURCE
+SITE-BEDROCK-CLASS,,Site Bedrock Classification,The bedrock classification at the annotated site,BEDROCK,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class
+SITE-BEDROCK-SUPERCLASS,,Site Bedrock Classification (superclass),The broader bedrock classification at the annotated site,BEDROCK,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class
+SITE-BEDROCK-SUPERSERIES,,Site Bedrock Classification (superseries),The most general bedrock classification at the annotated site,BEDROCK,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class
+SITE-SAAR-1961-1990,,Site SAAR 1961-1990,The Standard Average Annual Rainfall (SAAR) at the annotated site for the period 1961-1990,COSMOS-SITE,SAAR
+SITE-CLASS,,Site Classification,The classification of the annotated site,COSMOS-SITE,CLASSIFICATION
+STATION-CALIBRATED,,Station Calibrated,Indicates if the station at the annotated has been calibrated,COSMOS-SITE,CALIBRATED
+STATION-FLUX,,Monitors Flux,Indicates if the station at the annotated site monitors neutron flux,COSMOS-SITE,MONITORS-FLUX
+STATION-CRS2-MOD,,Station CRS2 Mod,Indicates if the station at the annotated site uses a CRS2 moderated probe,COSMOS-SITE,CRS2-MOD
+STATION-FULL-TDT-ARRAY,,Station Full TDT Array,Indicates if the station at the annotated site uses a full TDT array,COSMOS-SITE,FULL-TDT-ARRAY
+SITE-WEB-IMAGE-COUNT,,Site Web Image Count,Number of published images of the annotated site,COSMOS-SITE-IMAGES,COUNT
+SITE-HOST-CLASS,,Site Host Classification,The classification of the host organisation for the annotated site,COSMOS-SITE-HOST,CLASSIFICATION
