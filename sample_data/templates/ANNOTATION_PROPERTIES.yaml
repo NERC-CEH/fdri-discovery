@@ -56,6 +56,11 @@ resources:
       "<iop:hasProperty>": "<::IopProperty>"
       "<iop:hasObjectOfInterest>": "<::ObjectOfInterest>"
       "<iop:hasContextObject>": "<::ContextObject>"
+      "<fdri:valueScheme>": "<{VALUE_SCHEME_URI}>"
+      "<skos:prefLabel>": "{NAME}@en"
+      "<rdfs:label>": "{NAME}@en"
+      "<dct:description>": "{DESCRIPTION}@en"
+      "<skos:scopeNote>": "{DESCRIPTION}@en"
 
   - name: AnnotationPropertyConcept
     unless:
@@ -63,6 +68,10 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/{ID|slug}>"
       "@type": <skos:Concept>
+      "<skos:prefLabel>": "{NAME}@en"
+      "<rdfs:label>": "{NAME}@en"
+      "<dct:description>": "{DESCRIPTION}@en"
+      "<skos:scopeNote>": "{DESCRIPTION}@en"
 
   - name: ParentRef
     requires:

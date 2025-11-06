@@ -22,16 +22,6 @@ one_offs:
       "@type": "<fdri:EnvironmentalMonitoringNetwork>"
       "<rdfs:label>": "River Chess Association@en"
 
-  - name: WeatherConditions
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/weather-conditions>"
-      "@type": "<fdri:Variable>"
-      "<skos:prefLabel>": "Weather Conditions@en"
-      "<skos:inScheme>": "<::CommonCopScheme>"
-      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
-      "<iop:hasObjectOfInterest>": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/weather>"
-      "<iop:hasProperty>": "<http://fdri.ceh.ac.uk/ref/common/property/description>"
-
   - name: Surveyor
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role/surveyor>"
@@ -86,7 +76,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/activity/rca-{Site Name|slug}-{Date|slug}#weather>"
       "@type": "<fdri:Annotation>"
-      "<fdri:property>": <::WeatherConditions>
+      "<fdri:property>": <http://fdri.ceh.ac.uk/ref/common/annotation-property/weather-conditions>
       "<fdri:hasValue>":
         - name: WeatherAnnotationValue
           properties:

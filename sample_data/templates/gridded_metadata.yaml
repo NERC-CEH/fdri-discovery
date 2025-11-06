@@ -96,7 +96,7 @@ resources:
     properties:
       "@id": "<{$resource|append_fragment('cdmDataType')}>"
       "@type": "<fdri:Annotation>"
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/cdm-data-type>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/cdm-data-type>"
       "<fdri:hasValue>":
         - name: CdmDataTypeAnnotationValue
           properties:
@@ -111,7 +111,7 @@ resources:
     properties:
       "@id": "<{$resource|append_fragment('pointSpacing')}>"
       "@type": "<fdri:Annotation>"
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/point-spacing>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/point-spacing>"
       "<fdri:hasValue>":
         - name: PointSpacingAnnotationValue
           properties:
@@ -126,7 +126,7 @@ resources:
     properties:
       "@id": "<{$resource|append_fragment('spatialResolution')}>"
       "@type": "<fdri:Annotation>"
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/spatial-resolution>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/spatial-resolution>"
       "<fdri:hasValue>":
         - name: SpatialResolutionAnnotationValue
           properties:
@@ -141,7 +141,7 @@ resources:
     properties:
       "@id": "<{$resource|append_fragment('standardNameVocabulary')}>"
       "@type": "<fdri:Annotation>"
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/standard-name-vocabulary>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/standard-name-vocabulary>"
       "<fdri:hasValue>":
         - name: StandardNameVocabularyAnnotationValue
           properties:
@@ -156,7 +156,7 @@ resources:
     properties:
       "@id": "<{$resource|append_fragment('standardNameUrlVocabulary')}>"
       "@type": "<fdri:Annotation>"
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/cop/standard-name-url-vocabulary>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/standard-name-url-vocabulary>"
       "<fdri:hasValue>":
         - name: StandardNameUrlVocabularyAnnotationValue
           properties:

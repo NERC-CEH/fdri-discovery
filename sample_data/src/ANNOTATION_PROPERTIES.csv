@@ -1,4 +1,4 @@
-ID,PARENT_ID,NAME,DESCRIPTION,OBJECT_OF_INTEREST,PROPERTY,CONTEXT_OBJECT
+ID,PARENT_ID,NAME,DESCRIPTION,OBJECT_OF_INTEREST,PROPERTY,CONTEXT_OBJECT,VALUE_SCHEME_URI
 CALIBRATION_COMMENT,,Calibration Comment,Comments about calibration values
 L,,Barometric Attenuation Length,Barometric attenuation length for pressure correction
 N0_MOD,,N0 Mod,Count rate over dry soil under reference conditions
@@ -19,3 +19,32 @@ REF_SOIL_MOISTURE,,Ref Soil Moisture,Reference soil moisture from lab analysis o
 SOIL_COMMENT,,Ref Soil Comment,Comment on soil properties from lab analysis of field samples
 SAMPLING_START_DATETIME,,Sampling Start Datetime,Start datetime of soil sampling for lab analysis
 SAMPLING_END_DATETIME,,Sampling End Datetime,End datetime of soil sampling for lab analysis
+PRIORITY,,Priority,A relative priority number for the annotated object.
+CATCHMENT_AREA_SIZE,,Catchment Area Size,The size of the catchment area in square kilometres,REGION,AREA
+OPERATOR_FACILITY_ID,,Operator Facility ID,The operator-assigned identifier of the annotated facility
+CDM-DATA-TYPE,,CDM Data Type,The Climate and Forecast (CF) metadata convention data type of the annotated gridded dataset
+POINT-SPACING,,Point Spacing,The spacing between points in the annotated gridded dataset
+SPATIAL-RESOLUTION,,Spatial Resolution,The spatial resolution of the annotated gridded dataset
+STANDARD-NAME-VOCABULARY,,Standard Name Vocabulary,The vocabulary used for standard names in the annotated gridded dataset
+STANDARD-NAME-URL-VOCABULARY,,Standard Name URL Vocabulary,The URL vocabulary used for standard names in the annotated gridded dataset
+LAND-COVER-MEASUREMENT,,Land Cover,The dominant land cover type within the annotated catchment area
+LAND-COVER-RATIO,,Land Cover Ratio,The ratio of land cover types within the annotated catchment area,LAND_COVER,RATIO
+OBSERVED-LAND-COVER,,Observed Land Cover,The observed land cover type within the annotated catchment area,LAND_COVER,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/lcm-2015
+OBSERVATION-SOURCE,,Observation Source,The source of the annotated observation,OBSERVATION,SOURCE
+OBSERVATION-COMMENT,,Observation Comment,Comments regarding the annotated observation,OBSERVATION,COMMENT
+WEATHER-CONDITIONS,,Weather Conditions,Description of weather conditions at time of annotated activity,WEATHER,DESCRIPTION
+SITE-SOIL-TYPE,,Site Soil Type,The soil type at the annotated site,SOIL,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/soil-type
+SITE-PUBLIC,,Site Public,Indicates if the annotated site is publicly accessible,COSMOS-SITE,PUBLIC-ACCESS
+SITE-SNOW,,Site Monitors Snow,Indicates if the annotated site monitors snow,COSMOS-SITE,MONITORS-SNOW
+SITE-LOCATION-SOURCE,,Site Location Source,The source of the annotated site location,COSMOS-SITE,LOCATION-SOURCE
+SITE-BEDROCK-CLASS,,Site Bedrock Classification,The bedrock classification at the annotated site,BEDROCK,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class
+SITE-BEDROCK-SUPERCLASS,,Site Bedrock Classification (superclass),The broader bedrock classification at the annotated site,BEDROCK,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class
+SITE-BEDROCK-SUPERSERIES,,Site Bedrock Classification (superseries),The most general bedrock classification at the annotated site,BEDROCK,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class
+SITE-SAAR-1961-1990,,Site SAAR 1961-1990,The Standard Average Annual Rainfall (SAAR) at the annotated site for the period 1961-1990,COSMOS-SITE,SAAR
+SITE-CLASS,,Site Classification,The classification of the annotated site,COSMOS-SITE,CLASSIFICATION
+STATION-CALIBRATED,,Station Calibrated,Indicates if the station at the annotated has been calibrated,COSMOS-SITE,CALIBRATED
+STATION-FLUX,,Monitors Flux,Indicates if the station at the annotated site monitors neutron flux,COSMOS-SITE,MONITORS-FLUX
+STATION-CRS2-MOD,,Station CRS2 Mod,Indicates if the station at the annotated site uses a CRS2 moderated probe,COSMOS-SITE,CRS2-MOD
+STATION-FULL-TDT-ARRAY,,Station Full TDT Array,Indicates if the station at the annotated site uses a full TDT array,COSMOS-SITE,FULL-TDT-ARRAY
+SITE-WEB-IMAGE-COUNT,,Site Web Image Count,Number of published images of the annotated site,COSMOS-SITE-IMAGES,COUNT
+SITE-HOST-CLASS,,Site Host Classification,The classification of the host organisation for the annotated site,COSMOS-SITE-HOST,CLASSIFICATION

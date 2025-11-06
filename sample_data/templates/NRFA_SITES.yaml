@@ -50,64 +50,6 @@ one_offs:
       "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
       "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
 
-  - name: AreaProperty
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/area>"
-      "@type": "<iop:Property>"
-      "<skos:prefLabel>": "Area@en"
-      "<rdfs:label>": "Area@en"
-      "^<iop:hasProperty>": "<::COP>"
-      "<skos:inScheme>": "<::PropertyScheme>"
-      "^<skos:hasTopConcept>": "<::PropertyScheme>"
-
-  - name: Catchment
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/monitored-catchment>"
-      "@type": "<iop:Entity>"
-      "<skos:inScheme>": <::ObjectOfInterestScheme>
-      "^<skos:hasTopConcept>": "<::ObjectOfInterestScheme>"
-      "<skos:prefLabel>": "Monitored Catchment@en"
-
-  - name: CatchmentAreaProperty
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/common/cop/catchment-area>
-      "@type": <fdri:Variable>
-      "<dct:title>": "Catchment Area@en"
-      "<dct:description>": "The area of the monitored catchment@en"
-      "<skos:inScheme>": <::CommonCopScheme>
-      "^<skos:hasTopConcept>": <::CommonCopScheme>
-      "<iop:hasObjectOfInterest>": <::Catchment>
-      "<iop:hasProperty>": <::AreaProperty>
-
-  - name: IdentifierProperty
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/property/identifier>"
-      "@type": "<iop:Property>"
-      "<skos:prefLabel>": "Identifier@en"
-      "<rdfs:label>": "Identifier@en"
-      "^<iop:hasProperty>": "<::COP>"
-      "<skos:inScheme>": "<::PropertyScheme>"
-      "^<skos:hasTopConcept>": "<::PropertyScheme>"
-
-  - name: MonitoringFacility
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest/monitoring-facility>"
-      "@type": "<iop:Entity>"
-      "<skos:inScheme>": <::ObjectOfInterestScheme>
-      "^<skos:hasTopConcept>": "<::ObjectOfInterestScheme>"
-      "<skos:prefLabel>": "Environmental Monitoring Facility@en"
-
-  - name: OperatorStationIdProperty
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/common/cop/operator-facility-id>
-      "@type": <fdri:Variable>
-      "<dct:title>": "Operator Station ID@en"
-      "<dct:description>": "The identifier assigned to a monitoring facility by the facility operator@en"
-      "<skos:inScheme>": <::CommonCopScheme>
-      "^<skos:hasTopConcept>": <::CommonCopScheme>
-      "<iop:hasProperty>": <::IdentifierProperty>
-      "<iop:hasObjectOfInterest>": <::MonitoringFacility>
-
   - name: OperatorRole
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/common/related-party-role/operator>
@@ -200,7 +142,7 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#catchment-area>"
             "@type": "<fdri:Annotation>"
-            "<fdri:property>": <::CatchmentAreaProperty>
+            "<fdri:property>": <http://fdri.ceh.ac.uk/ref/common/annotation-property/catchment_area_size>
             "<fdri:hasValue>":
               - name: CatchmentAreaValue
                 properties:
@@ -213,7 +155,7 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#operator-identifier>"
             "@type": "<fdri:Annotation>"
-            "<fdri:property>": "<::OperatorStationIdProperty>"
+            "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/operator_facility_id>"
             "<fdri:hasValue>":
               - name: OperatorIdentifierValue
                 properties:
