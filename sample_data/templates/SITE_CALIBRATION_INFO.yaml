@@ -284,7 +284,7 @@ resources:
 
   - name: SamplingStartDatetime
     requires:
-      SAMPLING_START_TIMESTAMP:
+      SAMPLING_START_DATETIME:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-start-datetime>"
       "@type": <fdri:Annotation>
@@ -294,12 +294,12 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-start-datetime.value>"
             "@type": <schema:PropertyValue>
-            "<schema:value>": "{SAMPLING_START_TIMESTAMP|asDateTime}"
+            "<schema:value>": "{SAMPLING_START_DATETIME|asDateTime}"
       "^<fdri:hasAnnotation>": "<::Site>"
   
   - name: SamplingEndDatetime
     requires:
-      SAMPLING_END_TIMESTAMP:
+      SAMPLING_END_DATETIME:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-end-datetime>"
       "@type": <fdri:Annotation>
@@ -309,5 +309,5 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#sampling-end-datetime.value>"
             "@type": <schema:PropertyValue>
-            "<schema:value>": "{SAMPLING_END_TIMESTAMP|asDateTime}"
+            "<schema:value>": "{SAMPLING_END_DATETIME|asDateTime}"
       "^<fdri:hasAnnotation>": "<::Site>"

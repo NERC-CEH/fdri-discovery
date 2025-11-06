@@ -53,7 +53,7 @@ SAMPLES += $(TTL_BASE)/sensor_calibrations.ttl
 SAMPLES += $(TTL_BASE)/sensor_deployments.ttl
 SAMPLES += $(TTL_BASE)/sensor_faults.ttl
 SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
-SAMPLES += $(TTL_BASE)/site_calibration_info_clean.ttl
+SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
 SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
@@ -202,9 +202,6 @@ build/rca_sites.csv: $(SRC)/rca_excel/sites.parquet $(SQL)/rca_sites.sql | build
 
 build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/rca_surveys.sql"
-
-build/site_calibration_info_clean.csv: $(SRC)/SITE_CALIBRATION_INFO.csv $(SQL)/site_calibration_info_clean.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/site_calibration_info_clean.sql"
 
 build/sontek_sites.csv: $(SRC)/sontek/sites.parquet $(SQL)/sontek_sites.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_sites.sql"
