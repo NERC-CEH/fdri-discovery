@@ -27,5 +27,5 @@ resources:
     unless:
       PARENT_ID:
     properties:
-      "@id": "<::Concept>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-property/{ID|slug}>"
       "^<skos:hasTopConcept>": <::ConfigurationPropertyScheme>
