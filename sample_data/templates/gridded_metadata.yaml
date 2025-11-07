@@ -131,6 +131,7 @@ resources:
       "<dct:created>": "{date_created|asDateTime}"
       "<dct:license>": "<{license}>"
       "<dct:identifier>": "{id}"
+      "<fdri:processingLevel>": <http://fdri.ceh.ac.uk/ref/common/processing-level/processed>
 
   - name: Array
     requires:
