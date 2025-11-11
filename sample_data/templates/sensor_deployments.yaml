@@ -24,6 +24,17 @@ resources:
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
       "<fdri:serialNumber>": "{SERIAL_NUMBER}"
 
+  - name: SensorHeight
+    requires:
+      INSTRUMENT_ID:
+      SERIAL_NUMBER:
+      INSTALLATION_HEIGHT:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}-{INSTALLATION_HEIGHT|slug}>"
+      "@type": "<fdri:Deployment>"
+      "<schema:value>": "{INSTALLATION_HEIGHT|asDecimal}"
+      "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/m>"
+
   - name: SensorDeployment
     requires:
       INSTRUMENT_ID:
@@ -34,6 +45,7 @@ resources:
       "<dct:title>": "Deployment of {INSTRUMENT_ID} {SERIAL_NUMBER} to {SENSOR_SLOT_ID} at {SITE_ID}@en"
       "<ssn:deployedSystem>": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
       "<ssn:deployedOnPlatform>": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}>"
+      "<schema:height>": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}-{INSTALLATION_HEIGHT|slug}>"
       "<prov:startedAtTime>": "{START_DATETIME|asDateTime}"
 
   - name: SensorDeploymentEnd
