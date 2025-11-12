@@ -35,7 +35,7 @@ resources:
   - name: Sensor
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/sensor/fdri-{ID|slug}>"
-      "@type": "<sosa:Sensor>"
+      "@type": "<fdri:EnvironmentalMonitoringSystem>"
       "<dct:type>": <::SensorModel>
       "<rdfs:label>": "{asset_Name}@en"
       "<fdri:assetNumber>": "{asset_CEHAssetNumber}"

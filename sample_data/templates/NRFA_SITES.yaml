@@ -105,7 +105,7 @@ resources:
       ORGANISATION_ID:
     properties:
       "@id": <http://fdri.ceh.ac.uk/id/agent/nrfa-operator-organisation-{ORGANISATION_ID|slug}>
-      "@type": <fdri:Organisation>
+      "@type": <fdri:Organization>
       "<rdfs:label>": "{ORGANISATION_ID}@en"
       "<foaf:member>": <::OperatorAgent>
 
