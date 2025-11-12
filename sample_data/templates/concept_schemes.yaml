@@ -86,7 +86,7 @@ one_offs:
   - name: UnitScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/unit>"
-      "@type": "<skos:ConceptScheme>"
+      "@type": "<fdri:UnitScheme>"
       "<dct:title>": "FDRI Common Units@en"
       "<rdfs:label>": "FDRI Common Units@en"
   
