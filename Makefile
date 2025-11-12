@@ -230,7 +230,10 @@ $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gr
 $(VAL)/%.ttl: $(TTL_BASE)/%.ttl $(SHACL_BASE)/fdri_shacl.ttl  | build/validation
 	$(RUN) /bin/bash -c "shacl v -d $(TTL_BASE)/$*.ttl -s $(SHACL_BASE)/fdri_shacl.ttl > $@"
 
-$(VAL)/data.nt: $(SAMPLES) ontology/owl/fdri-metadata.ttl | build/validation 
+ontology/build/fdri-metadata.rdfs.ttl:
+	make -C ontology build/fdri-metadata.rdfs.ttl
+
+$(VAL)/data.nt: $(SAMPLES) ontology/owl/fdri-metadata.ttl ontology/build/fdri-metadata.rdfs.ttl | build/validation
 	$(RUN) riot --output=nt $^ > $@
 
 $(VAL)/full_report.ttl: $(VAL)/data.nt $(SHACL_BASE)/fdri_shacl_with_refs.ttl | build/validation

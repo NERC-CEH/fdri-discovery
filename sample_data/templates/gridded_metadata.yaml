@@ -7,6 +7,113 @@ imports:
     - concept_schemes.yaml
     - extensions.py
 
+one_offs:
+  - name: CFNames
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/>
+      "@type": <skos:ConceptScheme>
+
+  - name: Conventions
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/Conventions/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: _FillValue
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/_FillValue/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: actual_range
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/actual_range/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: axis
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/axis/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: bounds
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/bounds/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: calendar
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/calendar/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: cell_methods
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/cell_methods/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: coordinates
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/coordinates/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: flag_meanings
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/flag_meanings/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: flag_values
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/flag_values/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: grid_mapping
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/grid_mapping/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: history
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/history/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: long_name
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/long_name/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: references
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/references/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: source
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/source/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: scale_factor
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/scale_factor/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: standard_name
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/standard_name/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: units
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/units/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: valid_max
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/valid_max/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+  - name: valid_min
+    properties:
+      "@id": <http://vocab.nerc.ac.uk/collection/P31/current/valid_min/>
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::CFNames>
+
 resources:
   - name: Dataset
     requires:
@@ -24,6 +131,7 @@ resources:
       "<dct:created>": "{date_created|asDateTime}"
       "<dct:license>": "<{license}>"
       "<dct:identifier>": "{id}"
+      "<fdri:processingLevel>": <http://fdri.ceh.ac.uk/ref/common/processing-level/processed>
 
   - name: Array
     requires:
@@ -191,7 +299,7 @@ resources:
     properties:
       "@id": "<{$resource|append_fragment('conventions')}>"
       "@type": "<fdri:Annotation>"
-      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/conventions/>"
+      "<fdri:property>": "<http://vocab.nerc.ac.uk/collection/P31/current/Conventions/>"
       "<fdri:hasValue>":
         - name: ConventionsAnnotationValue
           properties:

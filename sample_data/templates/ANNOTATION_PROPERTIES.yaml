@@ -11,7 +11,7 @@ one_offs:
   - name: AnnotationPropertyScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property>"
-      "@type": <skos:ConceptScheme>
+      "@type": <fdri:VariableScheme>
       "<skos:prefLabel>": "Annotation Property Scheme@en"
       "<rdfs:label>": "Annotation Property Scheme@en"
 
