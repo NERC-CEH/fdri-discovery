@@ -30,11 +30,12 @@ resources:
       SERIAL_NUMBER:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
-      "@type": "<fdri:Deployment>"
+      "@type": "<fdri:StaticDeployment>"
       "<dct:title>": "Deployment of {INSTRUMENT_ID} {SERIAL_NUMBER} to {SENSOR_SLOT_ID} at {SITE_ID}@en"
       "<ssn:deployedSystem>": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
       "<ssn:deployedOnPlatform>": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}>"
       "<prov:startedAtTime>": "{START_DATETIME|asDateTime}"
+      "<fdri:deployedHeight>": "{INSTALLATION_HEIGHT|asDecimal}"
 
   - name: SensorDeploymentEnd
     requires:
