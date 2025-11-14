@@ -16,9 +16,12 @@ KGM-3,kgm-3
 MV,mV
 MM,mm
 MS-1,ms-1
+M3S-1,m3 s-1
 MJM-2-D,MJ m-2 day-1
 MJD,MJday-1
 UNITLESS,Unitless
 SEC,Seconds
 REVS-1,Revolutions s-1
 LS-1,litres s-1
+SM-1,Sm-1
+RPM,rpm
