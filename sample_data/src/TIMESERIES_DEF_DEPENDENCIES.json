@@ -753,12 +753,6 @@
             "threshold": 27
         }
     },
-    "PRECIP_TIPPING2_30MIN_PROCESSED": {
-        "depends_on": [
-            "PRECIP_TIPPING2_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
     "PROFILE_SOILEC_15_30MIN_PROCESSED": {
         "depends_on": [
             "PROFILE_SOILEC_15_30MIN_RAW"
