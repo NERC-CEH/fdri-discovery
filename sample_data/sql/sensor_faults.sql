@@ -1,6 +1,6 @@
 create table if not exists SENSOR_FAULTS as from read_csv('./sample_data/src/SENSOR_FAULTS.csv', AUTO_DETECT=true) ;
 create table if not exists SENSOR_DEPLOYMENTS as from read_csv('./build/sensor_deployments.csv', AUTO_DETECT=true) ;
-create table if not exists TS_DEFS as from read_csv('./sample_data/src/TIMESERIES_DEFS.csv', AUTO_DETECT=true) ;
+create table if not exists TS_DEFS as from read_csv('./sample_data/src/TIMESERIES_DEFS_COSMOS.csv', AUTO_DETECT=true) ;
 CREATE TABLE if not exists faultsSplit AS
 SELECT 
     SITE_ID, START_DATETIME, END_DATETIME, str_split(VARIABLES_AFFECTED, ';').UNNEST() AS VARIABLE, REMOVE_DATA, DESCRIPTION_OF_ISSUE FROM SENSOR_FAULTS ;
