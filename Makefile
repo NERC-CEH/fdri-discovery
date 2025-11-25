@@ -57,9 +57,12 @@ SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
 SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
-SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS.ttl
-SAMPLES += $(TTL_BASE)/TIMESERIES_IDS.ttl
-SAMPLES += $(TTL_BASE)/time_series_measures.ttl
+SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_COSMOS.ttl
+SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
+SAMPLES += $(TTL_BASE)/timeseries_measures_cosmos.ttl
+SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
+SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
+SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/tsdef_dependencies.ttl
 SAMPLES += $(TTL_BASE)/tsdef_methods.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
@@ -143,7 +146,7 @@ build/shacl:
 build/data:
 	mkdir -p build/data
 
-build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/instrumentation_parameters.sql | build
+build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/instrumentation_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/instrumentation_parameters.sql"
 
 build/landCoverLcm.csv: $(SRC)/LAND_COVER_LCM.csv $(SQL)/landCoverLcm.sql | build
@@ -155,13 +158,13 @@ build/landCoverObservations.csv: $(SRC)/LAND_COVER_OBSERVED.csv $(SQL)/landCover
 build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_config.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/phenocam_mask_config.sql"
 
-build/sensor_calibrations.csv: $(SRC)/calib_factors_nr01_anem.csv $(SRC)/SENSOR_SLOT_IDS.csv  $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_DEFS.csv $(SRC)/TIMESERIES_IDS.csv $(SQL)/sensor_calibrations.sql | build
+build/sensor_calibrations.csv: $(SRC)/calib_factors_nr01_anem.csv $(SRC)/SENSOR_SLOT_IDS.csv  $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_calibrations.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_calibrations.sql"
 
-build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SRC)/TIMESERIES_IDS.csv $(SQL)/sensor_deployments.sql | build
+build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
 
-build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_DEFS.csv build/sensor_deployments.csv $(SQL)/sensor_faults.sql | build
+build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv build/sensor_deployments.csv $(SQL)/sensor_faults.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_faults.sql"
 
 build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sensor_firmware_configurations.sql | build
@@ -170,8 +173,11 @@ build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sen
 build/siteVariance.csv: $(SRC)/SITES.csv $(SQL)/siteLayout.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/siteLayout.sql"
 
-build/time_series_measures.csv: $(SRC)/TIMESERIES_DEFS.csv $(SRC)/TIMESERIES_IDS.csv $(SQL)/time_series_measures.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/time_series_measures.sql"
+build/timeseries_measures_cosmos.csv: $(SRC)/TIMESERIES_DEFS_COSMOS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/timeseries_measures_cosmos.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_cosmos.sql"
+
+build/timeseries_measures_fdri.csv: $(SRC)/TIMESERIES_DEFS_FDRI.csv $(SRC)/TIMESERIES_IDS_FDRI.csv $(SQL)/timeseries_measures_fdri.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_fdri.sql"
 
 build/tsdef_dependencies.csv: build/TIMESERIES_DEF_DEPENDENCIES_LINES.json $(SQL)/tsdef_dependencies.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/tsdef_dependencies.sql"
