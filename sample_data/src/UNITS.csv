@@ -1,6 +1,7 @@
 UNIT_ID,UNIT_NAME
 CM,cm
 CTS,Counts
+CTS_MIN-1,Counts min-1
 DEG,Degrees
 DEGC,Deg Celsius
 DEGF,Deg Fahrenheit
