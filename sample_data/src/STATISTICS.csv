@@ -3,6 +3,7 @@ INST,Instantaneous,
 MAX_PREC, Maximum over preceding period,
 MIN_PREC, Minimum over preceding period,
 MEAN_PREC,Mean over preceding period,
+MEAN_PROC,Mean over proceeding period,
 STDDEV_PREC,Standard deviation over preceding period,
 TOTAL_PREC,Total over preceding period,
 MEAN_MID_24HOUR,Mean over surrounding 24 hours,The data timestamp is the midpoint of a meaned 24 hour window
