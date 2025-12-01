@@ -90,6 +90,12 @@ SAMPLES += $(TTL_BASE)/chess-met.ttl
 SAMPLES += $(TTL_BASE)/GEAR-daily.ttl
 SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 
+# NMDB Samples
+SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
+SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_NMDB.ttl
+SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
+SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
+
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
@@ -178,6 +184,9 @@ build/timeseries_measures_cosmos.csv: $(SRC)/TIMESERIES_DEFS_COSMOS.csv $(SRC)/T
 
 build/timeseries_measures_fdri.csv: $(SRC)/TIMESERIES_DEFS_FDRI.csv $(SRC)/TIMESERIES_IDS_FDRI.csv $(SQL)/timeseries_measures_fdri.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_fdri.sql"
+
+build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMESERIES_IDS_NMDB.csv $(SQL)/timeseries_measures_nmdb.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_nmdb.sql"
 
 build/tsdef_dependencies.csv: build/TIMESERIES_DEF_DEPENDENCIES_LINES.json $(SQL)/tsdef_dependencies.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/tsdef_dependencies.sql"
