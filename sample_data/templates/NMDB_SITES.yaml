@@ -13,14 +13,14 @@ one_offs:
       "@id": "<http://fdri.ceh.ac.uk/id/network/nmdb>"
       "@type": "<fdri:EnvironmentalMonitoringNetwork>"
       "<rdfs:label>": "NMDB Network@en"
-      "website": "https://www.nmdb.eu/station/"
+      "<foaf:homepage>": "https://www.nmdb.eu/station/"
 
   - name: Programme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/programme/nmdb>"
       "@type": "<fdri:EnvironmentalMonitoringProgramme>"
       "<rdfs:label>": "NMDB: The Neutron Monitor Database@en"
-      "website": "https://www.nmdb.eu/"
+      "<foaf:homepage>": "https://www.nmdb.eu/"
 
 resources:
   - name: Site
