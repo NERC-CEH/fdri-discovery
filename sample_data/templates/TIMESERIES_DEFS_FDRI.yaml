@@ -1,6 +1,6 @@
 globals:
     $baseURI: http://fdri.ceh.ac.uk/
-    $datasetID: fdri
+    $datasetID: default
 
 imports:
     - namespaces.yaml
