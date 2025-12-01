@@ -1,0 +1,50 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+  - name: Network
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/network/nmdb>"
+      "@type": "<fdri:EnvironmentalMonitoringNetwork>"
+      "<rdfs:label>": "NMDB Network@en"
+      "website": "https://www.nmdb.eu/station/"
+
+  - name: Programme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/programme/nmdb>"
+      "@type": "<fdri:EnvironmentalMonitoringProgramme>"
+      "<rdfs:label>": "NMDB: The Neutron Monitor Database@en"
+      "website": "https://www.nmdb.eu/"
+
+resources:
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringSite>"
+      "<rdfs:label>": "{SITE_NAME}@en"
+      "^<fdri:contains>": <::Network>
+      "^<fdri:utilises>": <::Programme>
+      "<dct:identifier>": "{SITE_ID}"
+      "<geos:hasGeometry>":
+        - name: LatLongPoint
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}#geo-latlong>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+      "<fdri:hasRepresentativePoint>": <::LatLongPoint>
+      "<geo:lat>": "{LATITUDE}"
+      "<geo:long>": "{LONGITUDE}"
+      "<fdri:altitude>": "{ALTITUDE | asDecimal}"
+      "<fdri:operatingPeriod>":
+        - name: OperatingPeriod
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}#operating-period>"
+            "@type": "<dct:PeriodOfTime>"
+            "<dcat:startDate>": "{DATE_INSTALLED | asDateOrDatetime}"
+
