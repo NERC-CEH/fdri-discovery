@@ -44,9 +44,6 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{Parameter Type|slug}>"
       "@type": "<skos:Concept>"
-      "<skos:prefLabel>": "{Parameter Type}@en"
-      "<skos:inScheme>": "<::CommonCopScheme>"
-      "^<skos:hasTopConcept>": "<::CommonCopScheme>"
 
   - name: Variable
     properties:
