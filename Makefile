@@ -82,7 +82,6 @@ SAMPLES += $(TTL_BASE)/ea_manual_metadata.ttl
 SAMPLES += $(TTL_BASE)/flowstick_surveys.ttl
 SAMPLES += $(TTL_BASE)/rca_sites.ttl
 SAMPLES += $(TTL_BASE)/rca_surveys.ttl
-SAMPLES += $(TTL_BASE)/sontek_sites.ttl
 SAMPLES += $(TTL_BASE)/sontek_surveys.ttl
 
 # Gridded Data Samples
@@ -217,9 +216,6 @@ build/rca_sites.csv: $(SRC)/rca_excel/sites.parquet $(SQL)/rca_sites.sql | build
 
 build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/rca_surveys.sql"
-
-build/sontek_sites.csv: $(SRC)/sontek/sites.parquet $(SQL)/sontek_sites.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_sites.sql"
 
 build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
