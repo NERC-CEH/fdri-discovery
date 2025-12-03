@@ -51,16 +51,14 @@ Breaking changes are changes that either result in some existing data becoming i
 
 ## Model Update Roll-out
 
-A model update that contains only non-breaking changes should be safe to roll-out to the staging environment for verification before being rolled out to the production environment. However it is possible (or perhaps even likely) that the non-breaking changes have been made to allow for new features in downstream systems or to support new types of data, in which case the model roll-out could be initially made to the development environment and remain in that environment until the updates to the downstream systems are completed.
+A model update that contains only non-breaking changes should be safe to roll-out to the staging environment for verification before being rolled out to the production environment. However it is possible (or perhaps even likely) that the non-breaking changes have been made to allow for new features in downstream systems or to support new types of data, in which case the model roll-out could be initially made to the staging-dev environment and remain in that environment until the updates to the downstream systems are completed.
 
-A model update that contains breaking changes should be first rolled out to the development environment so that the downstream impact of the changes can be addressed before then rolling out the model update and the updated downstream dependencies to the staging environment for verification.
+A model update that contains breaking changes should be first rolled out to the staging-dev environment so that the downstream impact of the changes can be addressed before then rolling out the model update and the updated downstream dependencies to the staging environment for verification.
 
 
 ## Proposal
 
-The following pre-requisite steps should be completed:
-
-1. Update the processes for release of a model version
-   1. Ensure a changelog of model updates is maintained. The changelong should note both breaking and non-breaking changes. Where applicable the changelog entry should refer to any GitHub ticket(s) related to the change so that downstream users can better understand the context of and motivation for the change.
-   2. Generate a release package in GitHub when the repository is tagged with a release version tag. The release package should contain the source OWL and recordspec files as well as the generated SHACL, JSON Schemas, JSON-LD contexts, and modelspec files.
-   3. Update processes in downstream repositories to make use of a release artefact or to include the model repository as a git submodule (at the discretion of the repository owner). Submodules should be pinned to a commit that has been tagged as a release in the model repository.
+1. Ensure a changelog of model updates is maintained. The changelong should note both breaking and non-breaking changes. Where applicable the changelog entry should refer to any GitHub ticket(s) related to the change so that downstream users can better understand the context of and motivation for the change.
+2. Generate a release package in GitHub when the repository is tagged with a release version tag. The release package should contain the source OWL and recordspec files as well as the generated SHACL, JSON Schemas, JSON-LD contexts, and modelspec files.
+3. Update processes in downstream repositories to make use of a release artefact or to include the model repository as a git submodule (at the discretion of the repository owner). Submodules should be pinned to a commit that has been tagged as a release in the model repository.
+4. Extend the staging-dev environment to host the other downstream services that depend on the model. Breaking model changes may cause failures in downstream services, and it should be possible to address those failures and update the services in the staging-dev environment
