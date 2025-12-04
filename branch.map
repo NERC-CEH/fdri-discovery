@@ -1,3 +1,5 @@
-branch      sqs_queue_url                                                                                    s3_destination
-main        https://sqs.eu-west-2.amazonaws.com/654654490827/ukceh_fdri_staging_metadata_update_queue.fifo   s3://ukceh-fdri-staging-metadata-state/data
-expt        https://sqs.eu-west-1.amazonaws.com/293385631482/ceh-dev-fuseki.fifo                             s3://expt-eks-cluster/data/ceh/dev
+branch      sqs_queue_url                                                                                       s3_destination
+dev         https://sqs.eu-west-2.amazonaws.com/654654490827/ukceh_fdri_staging_dev_metadata_update_queue.fifo  s3://ukceh-fdri-staging-dev-metadata-state/data
+main        https://sqs.eu-west-2.amazonaws.com/654654490827/ukceh_fdri_staging_dev_metadata_update_queue.fifo  s3://ukceh-fdri-staging-dev-metadata-state/data2
+staging     https://sqs.eu-west-2.amazonaws.com/654654490827/ukceh_fdri_staging_metadata_update_queue.fifo      s3://ukceh-fdri-staging-metadata-state/data
+expt        https://sqs.eu-west-1.amazonaws.com/293385631482/ceh-dev-fuseki.fifo                                s3://expt-eks-cluster/data/ceh/dev

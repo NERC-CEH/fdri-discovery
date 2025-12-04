@@ -2,7 +2,10 @@ name: publish sample data
 on:
   workflow_dispatch: {}
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - dev
+      - staging
 
 permissions:
   contents: read
@@ -62,10 +65,19 @@ jobs:
       - name: Build sample data
         run: make samples
 
-      - name: Configure AWS Credentials for UKCEH
+      - name: Configure AWS Credentials for UKCEH Staging
+        if: ${{ github.ref == 'refs/heads/staging' }}
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Configure AWS Credentials for UKCEH Dev
+        if: ${{ github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main' }}
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ secrets.AWS_REGION }}
 
