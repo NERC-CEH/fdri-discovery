@@ -2,7 +2,10 @@ name: publish sample data
 on:
   workflow_dispatch: {}
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - dev
+      - staging
 
 permissions:
   contents: read
