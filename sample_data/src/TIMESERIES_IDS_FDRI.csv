@@ -22,8 +22,8 @@ FDRI-SE-CARWE-01-DEWPOINT_1MIN_RAW,DEWPOINT_1MIN_RAW,DEW_POINT,NA,SE-CARWE-01,uk
 FDRI-SE-CARWE-01-TS100_FAN_RPM_1MIN_RAW,TS100_FAN_RPM_1MIN_RAW,REVOLUTIONS,NA,SE-CARWE-01,ukceh-fdri-staging-timeseries-level-0,one_minute,TS100SS_Fan_RPM
 FDRI-SE-HAFRF-07-BATTV_1MIN_RAW,BATTV_1MIN_RAW,VOLTAGE_BATT,LOGGER,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,BattV
 FDRI-SE-HAFRF-07-LOGGER_TEMP_1MIN_RAW,LOGGER_TEMP_1MIN_RAW,TEMP_LOGGER,LOGGER,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,PTemp_C
-FDRI-SE-HAFRF-07-WL_PT_1MIN_RAW,WL_PT_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Lvl_cm_Avg
+FDRI-SE-HAFRF-07-WATER_LEV_PT_1MIN_RAW,WATER_LEV_PT_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Lvl_cm_Avg
+FDRI-SE-HAFRF-07-WATER_LEV_RADAR_1MIN_RAW,WATER_LEV_RADAR_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Stage_Avg
 FDRI-SE-HAFRF-07-WATER_TEMP_1MIN_RAW,WATER_TEMP_1MIN_RAW,WATER_TEMP,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Temp_C_Avg
-FDRI-SE-HAFRF-07-WL_RADAR_1MIN_RAW,WL_RADAR_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Stage_Avg
-FDRI-SE-HAFRF-07-DISTANCE_TO_WATER_1MIN_RAW,DISTANCE_TO_WATER_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Distance_m_Avg
-FDRI-SE-HAFRF-07-WELL_TEMP_1MIN_RAW,WELL_TEMP_1MIN_RAW,WATER_TEMP,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Inst_Temp
+FDRI-SE-HAFRF-07-DIST_TO_WATER_RADAR_1MIN_RAW,DIST_TO_WATER_RADAR_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Distance_m_Avg
+FDRI-SE-HAFRF-07-RADAR_TEMP_1MIN_RAW,RADAR_TEMP_1MIN_RAW,TEMP_RADAR,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Inst_Temp

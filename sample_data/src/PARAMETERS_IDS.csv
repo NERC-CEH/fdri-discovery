@@ -76,6 +76,7 @@ TEMP_CRNS,Temperature in CRNS tube,SENSOR,TEMPERATURE,CRNS
 TEMP_LOADCELL,Temperature of Pluvio load cell,SENSOR,TEMPERATURE,PLUVIO
 TEMP_LOGGER,Temperature in the logger,SENSOR,TEMPERATURE,LOGGER
 TEMP_RADIOMETER,Radiometer body temperature,SENSOR,TEMPERATURE,TNR01C
+TEMP_RADAR,Radar temperature,SENSOR,TEMPERATURE,
 TEMP_SOIL,Soil temperature,SOIL,TEMPERATURE,
 TEMP_SOIL_2,Soil temperature at 2 cm depth,SOIL,TEMPERATURE,
 TEMP_SOIL_5,Soil temperature at 5 cm depth,SOIL,TEMPERATURE,
