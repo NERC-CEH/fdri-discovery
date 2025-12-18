@@ -25,6 +25,7 @@ resources:
       "<fdri:sourceBucket>": "{S3_BUCKET}"
       "<fdri:sourceDataset>": "{S3_DATASET}"
       "<fdri:sourceColumnName>": "{COLUMN_NAME}"
+      "<fdri:sourceTimeColumnName>": "{TIME_COLUMN_NAME}"
 
   - name: SensorSlot
     requires:
