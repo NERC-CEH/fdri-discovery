@@ -1,0 +1,18 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - extensions.py
+
+embedded:
+  - name: UpstreamDataset
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/dataset/{id|slug}>
+
+resources:
+  - name: DirectDependency
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/id/dataset/{ds|slug}>
+      "<fdri:directDependsOn>": "{deps|map_to('UpstreamDataset')}"
