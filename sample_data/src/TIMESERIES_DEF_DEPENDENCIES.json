@@ -647,7 +647,10 @@
         "method": "calculate_PE",
         "args": {
             "round": 5,
-            "deployment_attribute": "AWS_ANEM_HEIGHT"
+            "deployment_attribute": {
+                "sensor": "aws_anem",
+                "attribute": "deployedHeight"
+            }
         }
     },
     "PRECIP_1DAY_PROCESSED": {
