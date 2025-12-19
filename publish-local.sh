@@ -16,3 +16,7 @@ curl -X PUT "http://localhost:3030/ds/data" \
     --data-binary @ontology/owl/fdri-metadata.ttl \
     --header "Content-Type: application/turtle" \
     --url-query "graph=http://fdri.ceh.ac.uk/graph/ontology"
+
+curl -X POST "http://localhost:3030/ds/update" \
+    --data-binary @sample_data/dependencies.su \
+    --header "Content-Type: application/sparql-update"

@@ -33,6 +33,7 @@ SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
+SAMPLES += $(TTL_BASE)/direct_deps_cosmos.ttl
 SAMPLES += $(TTL_BASE)/FACILITY_USAGE_ROLES.ttl
 SAMPLES += $(TTL_BASE)/infill_config.ttl
 SAMPLES += $(TTL_BASE)/INSTRUMENTATION.ttl
@@ -219,6 +220,9 @@ build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql 
 
 build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
+
+build/direct_deps_cosmos.json: ${SRC}/DIRECT_DEPENDS_COSMOS.json ${SQL}/DIRECT_DEPENDS.jq | build
+	$(RUN) /bin/bash -c "jq -c -f ${SQL}/DIRECT_DEPENDS.jq < ${SRC}/DIRECT_DEPENDS_COSMOS.json > $@"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
