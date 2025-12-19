@@ -646,7 +646,8 @@
         "derivation": "CALCULATE",
         "method": "calculate_PE",
         "args": {
-            "round": 5
+            "round": 5,
+            "deployment_attribute": "AWS_ANEM_HEIGHT"
         }
     },
     "PRECIP_1DAY_PROCESSED": {
