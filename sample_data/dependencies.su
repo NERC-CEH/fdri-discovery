@@ -1,0 +1,24 @@
+prefix dct: <http://purl.org/dc/terms/>
+prefix fdri: <http://fdri.ceh.ac.uk/vocab/metadata/>
+
+DROP SILENT GRAPH <http://fdri.ceh.ac.uk/id/dataset/dependency-graph> ;
+INSERT {
+    GRAPH <http://fdri.ceh.ac.uk/id/dataset/dependency-graph> {
+        ?ds fdri:directDependsOn ?dep .
+    }
+} WHERE {
+    ?ds dct:type/fdri:methodology/fdri:uses ?depDef .
+    ?ds fdri:originatingSite ?site .
+    ?dep fdri:originatingSite ?site ;
+        dct:type ?depDef .
+    FILTER NOT EXISTS {
+        ?ds fdri:directDependsOn ?x
+    }
+};
+INSERT {
+    GRAPH <http://fdri.ceh.ac.uk/id/dataset/dependency-graph> {
+        ?ds fdri:dependsOn ?dep .
+    }
+} WHERE {
+    ?ds fdri:directDependsOn+ ?dep
+}

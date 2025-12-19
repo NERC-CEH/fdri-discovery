@@ -1,0 +1,1 @@
+to_entries | map({ds: .key, deps: .value.depends_on | map({id: .})}) | .[]

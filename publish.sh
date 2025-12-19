@@ -35,3 +35,10 @@ aws s3 cp ontology/owl/fdri-metadata.ttl $S3_DESTINATION
 BODY=$(printf '{"payload":"%s","action":"replace-graph","context":"http://fdri.ceh.ac.uk/graph/%s","content-type":"text/turtle"}' $S3_DESTINATION fdri-metadata.ttl)
 echo "Sending $BODY to $QUEUE_URL"
 aws sqs send-message --message-deduplication-id=$S3_DESTINATION --message-group-id=data --queue-url=$QUEUE_URL --message-body="$BODY"
+
+S3_DESTINATION=$S3_DESTINATION_PREFIX/dependencies.su
+echo Uploading sample_data/dependencies.su to $S3_DESTINATION
+aws s3 cp sample_data/dependencies.su $S3_DESTINATION
+BODY=$(printf '{"payload":"%s","action":"sparql-update","content-type":"application/sparql-update"}' $S3_DESTINATION)
+echo "Sending $BODY to $QUEUE_URL"
+aws sqs send-message --message-deduplication-id=$S3_DESTINATION --message-group-id=data --queue-url=$QUEUE_URL --message-body="$BODY"
