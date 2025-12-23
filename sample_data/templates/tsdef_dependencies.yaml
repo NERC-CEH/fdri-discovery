@@ -7,16 +7,103 @@ imports:
     - concept_schemes.yaml
     - extensions.py
 
-resources:
-  - name: Dependency
+embedded:
+  - name: DependencyDef
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{DEPENDS_ON|slug}>"
-      "@type": "<fdri:TimeSeriesDefinition>"
+      "@id": <http://fdri.ceh.ac.uk/ref/cosmos/time-series/{id|slug}>
+      "@type": <fdri:TimeSeriesDefinition>
+  
+  - name: NestedMethodArgument
+    properties:
+      "@id": "<{$parentID}.{child_key|slug}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:hasValue>":
+        - name: NestedArgumentValueValue
+          properties:
+            "@id": "<{$parentID}.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{value}"
+      "<fdri:parameter>":
+        name: NestedArgumentParameter
+        properties:
+          "@id": <http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}.{child_key|slug}>
+          "@type": "<fdri:ConfigurationParameter>"
+          "<skos:inScheme>": "<::ConfigurationParameterScheme>"
+          "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
+          "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
 
-  - name: TSPlan
+  - name: MethodArgument
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/plan/cosmos-{TIMESERIES_DEF|slug}-derivation>"
-      "@type": "<fdri:TimeSeriesPlan>"
-      "<rdfs:label>": "Derivation Plan for Time Series Definition {TIMESERIES_DEF}@en"
-      "<fdri:uses>": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{DEPENDS_ON|slug}>"
-      "^<fdri:methodology>": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{TIMESERIES_DEF|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:hasValue>":
+        - name: NestedArgumentValue
+          requires:
+            key:
+              - deployment_attribute
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:valueReference>": "{value|map_to('NestedMethodArgument')}"
+        - name: ArgumentValue
+          unless:
+            key:
+              - deployment_attribute
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{value}^^<xsd:integer>"
+      "<fdri:parameter>":
+        - name: ArgumentParameter
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
+            "@type": "<fdri:ConfigurationParameter>"
+            "<skos:inScheme>": "<::ConfigurationParameterScheme>"
+            "^<skos:hasTopConcept>": "<::ConfigurationParameterScheme>"
+
+resources:
+  - name: Dataset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{id|slug}>"
+      "@type": "<fdri:TimeSeriesDefinition>"
+      "<fdri:methodology>":
+        - name: TSPlan
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/plan/cosmos-{id|slug}-derivation>"
+            "@type": "<fdri:TimeSeriesPlan>"
+            "<rdfs:label>": "Derivation Plan for Time Series Definition {id}@en"
+            "<fdri:uses>": "{depends_on|map_to('DependencyDef')}"
+            "<fdri:configuration>":
+              - name: ProcessingConfig
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{id|slug}>"
+                  "@type": "<fdri:InternalDataProcessingConfiguration>"
+                  "<dct:type>":
+                    - name: ProcessingConfigType
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/{derivation|slug}>"
+                        "@type": "<fdri:DataProcessingConfigurationType>"
+                        "<skos:inScheme>": "<::ConfigurationTypeScheme>"
+                        "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
+                  "<fdri:appliesToTimeSeries>": <::Dataset>
+                  "<fdri:hasCurrentConfiguration>": 
+                    - name: ProcessingConfigItem
+                      requires:
+                        method:
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current>"
+                        "@type": "<fdri:ConfigurationItem>"
+                        "<fdri:method>":
+                          - name: ProcessingMethod
+                            properties:
+                              "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
+                              "@type": "<fdri:DataProcessingMethod>"
+                              "<skos:inScheme>": "<::DataProcessingMethodScheme>"
+                              "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
+                        "<fdri:argument>": "{args|map_to('MethodArgument')}"
+                        "<fdri:interval>":
+                          - name: ProcessingConfigurationItemInterval
+                            properties:
+                              "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current.interval>"
+                              "@type": "<dct:PeriodOfTime>"
+                              "<dcat:startDate>": "2025-03-28T12:00:00Z^^<xsd:dateTime>"

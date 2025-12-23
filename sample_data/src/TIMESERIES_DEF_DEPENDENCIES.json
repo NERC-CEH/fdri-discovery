@@ -646,7 +646,11 @@
         "derivation": "CALCULATE",
         "method": "calculate_PE",
         "args": {
-            "round": 5
+            "round": 5,
+            "deployment_attribute": {
+                "sensor": "aws_anem",
+                "attribute": "deployedHeight"
+            }
         }
     },
     "PRECIP_1DAY_PROCESSED": {
