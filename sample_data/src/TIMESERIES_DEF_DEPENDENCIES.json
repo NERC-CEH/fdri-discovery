@@ -30,7 +30,7 @@
             "round": 3
         }
     },
-    "COSMOS_VWC_1DAY_PROCESSED": {
+    "COSMOS_VWC_1DAY_RAW": {
         "depends_on": [
             "CTS_MOD_CORR_1DAY_PROCESSED",
             "CTS_EST_CRNS_1DAY_PROCESSED"
@@ -40,6 +40,12 @@
         "args": {
             "round": 1
         }
+    },
+    "COSMOS_VWC_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_RAW"
+        ],
+        "derivation": "PROCESS"
     },
     "COSMOS_VWC_1HOUR_PROCESSED": {
         "depends_on": [
@@ -51,7 +57,7 @@
             "round": 1
         }
     },
-    "COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
+    "COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "depends_on": [
             "CTS_MOD_CORR_1DAY_PROCESSED"
         ],
@@ -60,6 +66,12 @@
         "args": {
             "round": 1
         }
+    },
+    "COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_NO_SNOW_1DAY_RAW"
+        ],
+        "derivation": "PROCESS"
     },
     "COSMOSFACTOR_INTEN_1HOUR_PROCESSED": {
         "depends_on": [
