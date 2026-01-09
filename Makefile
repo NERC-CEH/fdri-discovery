@@ -65,7 +65,6 @@ SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/tsdef_dependencies.ttl
-SAMPLES += $(TTL_BASE)/tsdef_methods.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
 
 # NRFA
@@ -188,14 +187,8 @@ build/timeseries_measures_fdri.csv: $(SRC)/TIMESERIES_DEFS_FDRI.csv $(SRC)/TIMES
 build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMESERIES_IDS_NMDB.csv $(SQL)/timeseries_measures_nmdb.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_nmdb.sql"
 
-build/tsdef_dependencies.csv: build/TIMESERIES_DEF_DEPENDENCIES_LINES.json $(SQL)/tsdef_dependencies.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/tsdef_dependencies.sql"
-
-build/tsdef_methods.csv: build/TIMESERIES_DEF_DEPENDENCIES_LINES.json $(SQL)/tsdef_methods.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/tsdef_methods.sql"
-
-build/TIMESERIES_DEF_DEPENDENCIES_LINES.json: $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json $(SQL)/TIMESERIES_DEF_DEPENDENCIES_LINES.jq | build
-	$(RUN) /bin/bash -c "jq -c -f $(SQL)/TIMESERIES_DEF_DEPENDENCIES_LINES.jq < $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json > $@"
+build/tsdef_dependencies.json: $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json $(SQL)/tsdef_dependencies.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/tsdef_dependencies.jq < $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json > $@"
 
 build/CORRECTION_CONFIGS_LINES.json: $(SRC)/CORRECTION_CONFIGS.json $(SQL)/CORRECTION_CONFIGS_LINES.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/CORRECTION_CONFIGS_LINES.jq < $(SRC)/CORRECTION_CONFIGS.json > $@"
