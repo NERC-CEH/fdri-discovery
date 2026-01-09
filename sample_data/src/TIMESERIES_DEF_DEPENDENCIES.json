@@ -30,7 +30,7 @@
             "round": 3
         }
     },
-    "COSMOS_VWC_1DAY_PROCESSED": {
+    "COSMOS_VWC_1DAY_RAW": {
         "depends_on": [
             "CTS_MOD_CORR_1DAY_PROCESSED",
             "CTS_EST_CRNS_1DAY_PROCESSED"
@@ -40,6 +40,12 @@
         "args": {
             "round": 1
         }
+    },
+    "COSMOS_VWC_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_1DAY_RAW"
+        ],
+        "derivation": "PROCESS"
     },
     "COSMOS_VWC_1HOUR_PROCESSED": {
         "depends_on": [
@@ -51,7 +57,7 @@
             "round": 1
         }
     },
-    "COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
+    "COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "depends_on": [
             "CTS_MOD_CORR_1DAY_PROCESSED"
         ],
@@ -60,6 +66,12 @@
         "args": {
             "round": 1
         }
+    },
+    "COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
+        "depends_on": [
+            "COSMOS_VWC_NO_SNOW_1DAY_RAW"
+        ],
+        "derivation": "PROCESS"
     },
     "COSMOSFACTOR_INTEN_1HOUR_PROCESSED": {
         "depends_on": [
@@ -523,6 +535,17 @@
         ],
         "derivation": "PROCESS"
     },
+    "G_30MIN_PROCESSED": {
+        "depends_on": [
+            "G1_30MIN_PROCESSED",
+            "G2_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_mean_g",
+        "args": {
+            "round": 3
+        }
+    },
     "HS_30MIN_PROCESSED": {
         "depends_on": [
             "HS_30MIN_RAW"
@@ -636,8 +659,7 @@
     "PE_30MIN_PROCESSED": {
         "depends_on": [
             "RN_30MIN_PROCESSED",
-            "G1_30MIN_PROCESSED",
-            "G2_30MIN_PROCESSED",
+            "G_30MIN_PROCESSED",
             "TA_30MIN_PROCESSED",
             "RH_30MIN_PROCESSED",
             "WS_30MIN_PROCESSED",
@@ -646,7 +668,11 @@
         "derivation": "CALCULATE",
         "method": "calculate_PE",
         "args": {
-            "round": 5
+            "round": 5,
+            "deployment_attribute": {
+                "sensor": "aws_anem",
+                "attribute": "deployedHeight"
+            }
         }
     },
     "PRECIP_1DAY_PROCESSED": {

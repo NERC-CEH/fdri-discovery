@@ -76,35 +76,6 @@ resources:
             "@type": "<schema:PropertyValue>"
             "<schema:value>": "{PRIORITY}^^<xsd:integer>"
 
-  - name: InfillMethod
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/common/method/infill-{METHOD|slug}>
-      "@type": "<fdri:DataProcessingMethod>"
-      "<skos:prefLabel>": "{METHOD}@en"
-      "<rdfs:label>": "{METHOD}@en"
-      "<skos:inScheme>": "<::DataProcessingMethodScheme>"
-      "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
-
-  - name: AltDataProcessingConfigurationItem
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}>"
-      "@type": <fdri:ConfigurationItem>
-      "<fdri:method>": <::InfillMethod>
-      "<fdri:argument>":
-        - name: CorrectionFactor
-          requires:
-            CORRECTION_FACTOR:
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor>"
-            "@type": <fdri:Argument>
-            "<fdri:parameter>": <::CorrectionFactorParameter>
-            "<fdri:hasValue>":
-              name: CorrectionFactorValue
-              properties:
-                "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor.value>"
-                "@type": <schema:PropertyValue>
-                "<schema:value>": "{CORRECTION_FACTOR}^^<xsd:decimal>"
-
   - name: CurrentConfigurationItem
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}>"
@@ -139,14 +110,16 @@ resources:
                   "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data.value>"
                   "@type": <schema:PropertyValue>
                   "<schema:valueReference>": <http://fdri.ceh.ac.uk/id/dataset/{ALT_TIMESERIES_ID|slug}>
-        - name: AltDataConfig
+        - name: CorrectionFactor
+          requires:
+            CORRECTION_FACTOR:
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data-config>"
-            "@type": "<fdri:Argument>"
-            "<fdri:parameter>": "<::ConfigurationParameter>"
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor>"
+            "@type": <fdri:Argument>
+            "<fdri:parameter>": <::CorrectionFactorParameter>
             "<fdri:hasValue>":
-                name: AltDataConfigValue
-                properties:
-                  "@id": <http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data-config.value>
-                  "@type": <schema:PropertyValue>
-                  "<schema:valueReference>": "<::AltDataProcessingConfigurationItem>"
+              name: CorrectionFactorValue
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor.value>"
+                "@type": <schema:PropertyValue>
+                "<schema:value>": "{CORRECTION_FACTOR}^^<xsd:decimal>"
