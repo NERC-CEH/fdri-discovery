@@ -535,6 +535,17 @@
         ],
         "derivation": "PROCESS"
     },
+    "G_30MIN_PROCESSED": {
+        "depends_on": [
+            "G1_30MIN_PROCESSED",
+            "G2_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_mean_g",
+        "args": {
+            "round": 3
+        }
+    },
     "HS_30MIN_PROCESSED": {
         "depends_on": [
             "HS_30MIN_RAW"
@@ -648,8 +659,7 @@
     "PE_30MIN_PROCESSED": {
         "depends_on": [
             "RN_30MIN_PROCESSED",
-            "G1_30MIN_PROCESSED",
-            "G2_30MIN_PROCESSED",
+            "G_30MIN_PROCESSED",
             "TA_30MIN_PROCESSED",
             "RH_30MIN_PROCESSED",
             "WS_30MIN_PROCESSED",
