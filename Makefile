@@ -44,6 +44,7 @@ SAMPLES += $(TTL_BASE)/landCoverObservations.ttl
 SAMPLES += $(TTL_BASE)/MEASURES.ttl
 SAMPLES += $(TTL_BASE)/METHODS.ttl
 SAMPLES += $(TTL_BASE)/METHOD_PARAMS.ttl
+SAMPLES += $(TTL_BASE)/observatory_gauging_sites.ttl
 SAMPLES += $(TTL_BASE)/PARAMS.ttl
 SAMPLES += $(TTL_BASE)/PARAMETERS_IDS.ttl
 # SAMPLES += $(TTL_BASE)/phenocam_mask_config.ttl
