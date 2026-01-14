@@ -119,6 +119,7 @@ resources:
         - "{NRFA_ID}"
       "^<fdri:contains>": <::Nrfa>
       "^<fdri:utilises>": <::NrfaProgramme>
+      "<fdri:utilisedBy>": <::NrfaProgramme>
       "<sosa:hasFeatureOfInterest>": <::MonitoredFeature>
       "<geos:hasGeometry>":
         - name: EastingsNorthingsPoint
