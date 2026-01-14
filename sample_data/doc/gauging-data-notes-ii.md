@@ -14,7 +14,7 @@ Finally I propose next steps for moving forward with implementing this approach.
 ## EA manual guaging
 
 ### Site flow data.
-  * Colums are:
+  * Columns are:
     * DateTime (YYYY-MM-DD HH:mm:ss)
     * Q
 
@@ -37,7 +37,7 @@ Columns are:
   * Type
 
 **NOTE**
-Type appears to be instrument type, example has the same value for every cell. Ignore?
+Type appears to be instrument type, example has the same value for every cell. This value is primarily used for labelling plots in the Observatory application and could probably be ignored.
 
 ### Survey Metadata
 
@@ -60,13 +60,15 @@ Columns are:
   * P (decimal)
   * NumberOfPoints (decimal)
   * NumberOfSections (decimal)
-  * SystemType (string) - appears to be the model of flowstick used?
+  * SystemType (string) - the version of physical flowstick used (as opposed to the system software version)
 
 **NOTES**
 
 The example file has multiple rows, possibly indicating two sub-activities as part of the survey with different timestamps. This may explain the difference between the time recorded in the `Time` column and the `DateTime` column.
 
 All of the result values for the two rows are exactly the same - not sure if that is a data issue or there really was that much consistency in readings on the day.
+
+These issues may be related to the source data or to the processing of the different timestamps in the source data (which contains activity start time, end time and the time that the data was submitted as separate values).
 
 ##  OTT MFPro
 
@@ -100,6 +102,8 @@ Columns are:
   
 There appears to be two surveys on the same day, each with one resulting Q value in the site time-series, and they have been combined into a single file.
 
+Ideally for metadata ingestion each survey should be separately identified, even if they are submitted together. This would involve generating a survey identifier (e.g. by combining site identifier and survey date/time to give a survey-specific identifier string).
+
 ### Survey Data
 
 Columns are:
@@ -124,7 +128,7 @@ Columns are:
 
 **NOTES**
   
-There is no indication of which of the two entries in the site time series each of the rows in this data file contributed to. (e.g. no `DateTime` column that would link the rows in this dataset to the site timeseries dataset)
+There is no indication of which of the two entries in the site time series each of the rows in this data file contributed to. (e.g. no `DateTime` column that would link the rows in this dataset to the site timeseries dataset). This is a known issue with the current data transformation and will be fixed.
 
 ## RCA
 
@@ -250,6 +254,9 @@ Survey Metadata should include
   * Responsible party (OPTIONAL)
   * Sensor Type (OPTIONAL)
   * Sensor Model (OPTIONAL)
+  * Sensor Serial Number (OPTIONAL)
+
+NOTE: None of the sample data here includes serial number information for the instruments used. When a sensor make/model is specified without any sensor serial number it may be necessary to generate a "fake" sensor in the metadata to represent this unidentified sensor. 
 
 Survey Dataset Metadata should include
 
@@ -295,12 +302,18 @@ Rather than having a separate mapping for every variation of input file, it make
 
 ```mermaid
 flowchart LR
-rcv[Receive Source Files]
-store[Data Files Store/Updated in S3]
+rcv["Receive
+Source Files"]
+store["Data Files 
+Stored/Updated
+ in S3"]
 rcv --> store
-transform[Transform Source Files to Ingest Files]
+transform["Transform
+ Source Files
+ to Ingest Files"]
 rcv --> transform
-ingest[Process Ingest Files]
+ingest["Process
+ Ingest Files"]
 transform --> ingest
 ```
 
