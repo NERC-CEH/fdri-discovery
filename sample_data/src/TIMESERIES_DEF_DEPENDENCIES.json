@@ -779,24 +779,6 @@
             "threshold": 27
         }
     },
-    "PROFILE_SOILEC_15_30MIN_PROCESSED": {
-        "depends_on": [
-            "PROFILE_SOILEC_15_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "PROFILE_SOILEC_40_30MIN_PROCESSED": {
-        "depends_on": [
-            "PROFILE_SOILEC_40_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "PROFILE_SOILEC_65_30MIN_PROCESSED": {
-        "depends_on": [
-            "PROFILE_SOILEC_65_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
     "PROFILE_VWC_15_30MIN_PROCESSED": {
         "depends_on": [
             "PROFILE_VWC_15_30MIN_RAW"

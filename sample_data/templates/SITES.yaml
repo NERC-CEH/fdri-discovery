@@ -87,6 +87,7 @@ resources:
         "<dct:identifier>": "{SITE_ID}"
         "^<fdri:contains>": <::Cosmos>
         "^<fdri:utilises>": <::CosmosProgramme>
+        "<fdri:utilisedBy>": <::CosmosProgramme>
         "<geos:hasGeometry>": 
             - name: EastingsNorthingsPoint
               properties:
