@@ -1459,5 +1459,11 @@
             "WS_RES_30MIN_RAW"
         ],
         "derivation": "PROCESS"
+    },
+    "TA_1MIN_PROCESSED": {
+        "depends_on": [
+            "TA_1MIN_RAW"
+        ],
+        "derivation": "PROCESS"
     }
 }
