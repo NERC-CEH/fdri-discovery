@@ -280,7 +280,7 @@ resources:
       geospatial_lon_min:
       geospatial_lon_max:
     properties:
-      "@id": "<{$resource|append_fragment('geospatialFeature')}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/feature/{|hash(geospatial_lat_min,geospatial_lat_max,geospatial_lon_min,geospatial_lon_max)}>"
       "@type": "<fdri:GeospatialFeatureOfInterest>"
       "<geos:hasBoundingBox>":
         - name: BoundingBox
