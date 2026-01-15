@@ -85,7 +85,27 @@ SAMPLES += $(TTL_BASE)/rca_surveys.ttl
 SAMPLES += $(TTL_BASE)/sontek_surveys.ttl
 
 # Gridded Data Samples
-SAMPLES += $(TTL_BASE)/chess-met.ttl
+SAMPLES += $(TTL_BASE)/chess-met_dtr.ttl
+SAMPLES += $(TTL_BASE)/chess-met_huss.ttl
+SAMPLES += $(TTL_BASE)/chess-met_precip.ttl
+SAMPLES += $(TTL_BASE)/chess-met_psurf.ttl
+SAMPLES += $(TTL_BASE)/chess-met_rlds.ttl
+SAMPLES += $(TTL_BASE)/chess-met_rsds.ttl
+SAMPLES += $(TTL_BASE)/chess-met_sfcWind.ttl
+SAMPLES += $(TTL_BASE)/chess-met_tas.ttl
+SAMPLES += $(TTL_BASE)/chess-pe_pet.ttl
+SAMPLES += $(TTL_BASE)/chess-pe_peti.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_dtr.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_pr.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_rsds.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_tasmax.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_hurs.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_psurf.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_sfcWind.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_tasmin.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_huss.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_rlds.ttl
+SAMPLES += $(TTL_BASE)/chess-scape_rcp85_15_tas.ttl
 SAMPLES += $(TTL_BASE)/GEAR-daily.ttl
 SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 
