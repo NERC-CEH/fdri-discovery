@@ -285,7 +285,7 @@ resources:
       "<geos:hasBoundingBox>":
         - name: BoundingBox
           properties:
-            "@id": "<{$resource|append_fragment('geospatialFeature.boundingBox')}>"
+            "@id": "<{$parentID|append_fragment('geospatialFeature.boundingBox')}>"
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POLYGON(({geospatial_lon_min} {geospatial_lat_min}, {geospatial_lon_min} {geospatial_lat_max}, {geospatial_lon_max} {geospatial_lat_max}, {geospatial_lon_max} {geospatial_lat_min}, {geospatial_lon_min} {geospatial_lat_min}))^^<http://www.opengis.net/ont/geosparql#wktLiteral>"
       "^<sosa:hasFeatureOfInterest>": "<{$resource}>"
