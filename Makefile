@@ -29,6 +29,7 @@ RECORDS = \
 SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
+SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
@@ -58,7 +59,7 @@ SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
 SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
-SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_COSMOS.ttl
+# SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
@@ -189,6 +190,9 @@ build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMES
 
 build/tsdef_dependencies.json: $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json $(SQL)/tsdef_dependencies.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/tsdef_dependencies.jq < $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json > $@"
+
+build/COSMOS_TS_ID_DEPENDENCIES_LINES.json: $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json $(SQL)/ts_id_dependencies.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/ts_id_dependencies.jq < $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json > $@"
 
 build/CORRECTION_CONFIGS_LINES.json: $(SRC)/CORRECTION_CONFIGS.json $(SQL)/CORRECTION_CONFIGS_LINES.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/CORRECTION_CONFIGS_LINES.jq < $(SRC)/CORRECTION_CONFIGS.json > $@"
