@@ -856,8 +856,7 @@
             "SWIN_30MIN_PROCESSED",
             "SWOUT_30MIN_PROCESSED",
             "LWIN_30MIN_PROCESSED",
-            "LWOUT_30MIN_PROCESSED",
-            ""
+            "LWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_RN",

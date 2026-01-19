@@ -30,7 +30,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/site/fdri-{Site|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSite>"
-      "<rdfs:label>": "{Site name}@en"
+      "<rdfs:label>": "{Site_name}@en"
       "^<fdri:contains>": <::Network>
       "^<fdri:utilises>": <::Programme>
       "<fdri:utilisedBy>": <::Programme>
@@ -43,6 +43,12 @@ resources:
             "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
       "^<fdri:hasMember>": <::Catchment>
+      "<fdri:operatingPeriod>":
+          - name: OperatingPeriod
+            properties:
+              "@id": "<http://fdri.ceh.ac.uk/id/site/fdri-{Site|slug}#operating-period>"
+              "@type": "<dct:PeriodOfTime>"
+              "<dcat:startDate>": "{Date_installed | asDateOrDatetime}"
 
   - name: Platform
     properties:
