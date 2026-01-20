@@ -668,11 +668,7 @@
         "derivation": "CALCULATE",
         "method": "calculate_PE",
         "args": {
-            "round": 5,
-            "deployment_attribute": {
-                "sensor": "aws_anem",
-                "attribute": "deployedHeight"
-            }
+            "round": 5
         }
     },
     "PRECIP_1DAY_PROCESSED": {
@@ -779,24 +775,6 @@
             "threshold": 27
         }
     },
-    "PROFILE_SOILEC_15_30MIN_PROCESSED": {
-        "depends_on": [
-            "PROFILE_SOILEC_15_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "PROFILE_SOILEC_40_30MIN_PROCESSED": {
-        "depends_on": [
-            "PROFILE_SOILEC_40_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "PROFILE_SOILEC_65_30MIN_PROCESSED": {
-        "depends_on": [
-            "PROFILE_SOILEC_65_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
     "PROFILE_VWC_15_30MIN_PROCESSED": {
         "depends_on": [
             "PROFILE_VWC_15_30MIN_RAW"
@@ -878,8 +856,7 @@
             "SWIN_30MIN_PROCESSED",
             "SWOUT_30MIN_PROCESSED",
             "LWIN_30MIN_PROCESSED",
-            "LWOUT_30MIN_PROCESSED",
-            ""
+            "LWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_RN",
@@ -1475,6 +1452,12 @@
     "WS_RES_30MIN_PROCESSED": {
         "depends_on": [
             "WS_RES_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "TA_1MIN_PROCESSED": {
+        "depends_on": [
+            "TA_1MIN_RAW"
         ],
         "derivation": "PROCESS"
     }
