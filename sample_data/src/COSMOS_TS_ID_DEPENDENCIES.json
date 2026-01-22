@@ -580,17 +580,6 @@
       "round": 3
     }
   },
-  "COSMOS-ALIC1-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-ALIC1-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-ALIC1-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-ALIC1-PROFILE_VWC_15_30MIN_RAW"
@@ -1618,17 +1607,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-BALRD-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-BALRD-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-BALRD-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -2724,17 +2702,6 @@
       "round": 3
     }
   },
-  "COSMOS-BICKL-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-BICKL-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-BICKL-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-BICKL-PROFILE_VWC_15_30MIN_RAW"
@@ -3828,17 +3795,6 @@
       "round": 3
     }
   },
-  "COSMOS-BUNNY-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-BUNNY-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-BUNNY-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-BUNNY-PROFILE_VWC_15_30MIN_RAW"
@@ -4930,17 +4886,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-CARDT-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-CARDT-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-CARDT-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -6093,17 +6038,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-CGARW-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-CGARW-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-CGARW-Q_1DAY_PROCESSED": {
@@ -9150,17 +9084,6 @@
       "round": 3
     }
   },
-  "COSMOS-CHOBH-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-CHOBH-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-CHOBH-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-CHOBH-PROFILE_VWC_15_30MIN_RAW"
@@ -10311,17 +10234,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-COCHN-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-COCHN-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-COCHN-Q_1DAY_PROCESSED": {
@@ -11828,17 +11740,6 @@
       "round": 3
     }
   },
-  "COSMOS-COCLP-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-COCLP-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-COCLP-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-COCLP-PROFILE_VWC_15_30MIN_RAW"
@@ -12902,51 +12803,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-CRICH-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-CRICH-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
-  "COSMOS-CRICH-PRECIP_TIPPING_30MIN_PROCESSED": {
-    "depends_on": [
-      "COSMOS-CRICH-PRECIP_TIPPING_30MIN_RAW"
-    ],
-    "derivation": "PROCESS"
-  },
-  "COSMOS-CRICH-PRECIP_TIPPING_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-CRICH-PRECIP_TIPPING_A_30MIN_RAW",
-      "COSMOS-CRICH-PRECIP_TIPPING_B_30MIN_RAW"
-    ],
-    "derivation": "CALCULATE",
-    "method": "get_precip_tipping"
-  },
-  "COSMOS-CRICH-PRECIP_TIPPING_A_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-CRICH-PRECIP_TIPPING_A_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
-  "COSMOS-CRICH-PRECIP_TIPPING_B_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-CRICH-PRECIP_TIPPING_B_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
     }
   },
   "COSMOS-CRICH-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -14101,17 +13957,6 @@
       "round": 3
     }
   },
-  "COSMOS-EASTB-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-EASTB-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-EASTB-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-EASTB-PROFILE_VWC_15_30MIN_RAW"
@@ -15240,17 +15085,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-ELMST-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-ELMST-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-ELMST-Q_1DAY_PROCESSED": {
@@ -16666,17 +16500,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-EUSTN-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-EUSTN-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-EUSTN-Q_1DAY_PROCESSED": {
@@ -18122,17 +17945,6 @@
       "round": 3
     }
   },
-  "COSMOS-FINCH-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-FINCH-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-FINCH-Q_1DAY_PROCESSED": {
     "depends_on": [
       "COSMOS-FINCH-Q_30MIN_PROCESSED"
@@ -19546,17 +19358,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-FIVET-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-FIVET-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-FIVET-Q_1DAY_PROCESSED": {
@@ -21085,17 +20886,6 @@
       "round": 3
     }
   },
-  "COSMOS-GISBN-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-GISBN-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-GISBN-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-GISBN-PROFILE_VWC_15_30MIN_RAW"
@@ -22313,17 +22103,6 @@
       "round": 3
     }
   },
-  "COSMOS-GLENS-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-GLENS-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-GLENS-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-GLENS-PROFILE_VWC_15_30MIN_RAW"
@@ -23452,17 +23231,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-GLENW-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-GLENW-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-GLENW-Q_1DAY_PROCESSED": {
@@ -24880,17 +24648,6 @@
       "round": 3
     }
   },
-  "COSMOS-HADLW-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HADLW-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-HADLW-Q_1DAY_PROCESSED": {
     "depends_on": [
       "COSMOS-HADLW-Q_30MIN_PROCESSED"
@@ -26306,17 +26063,6 @@
       "round": 3
     }
   },
-  "COSMOS-HARTW-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HARTW-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-HARTW-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-HARTW-PROFILE_VWC_15_30MIN_RAW"
@@ -27376,17 +27122,6 @@
       "round": 3
     }
   },
-  "COSMOS-HARWD-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HARWD-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-HARWD-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-HARWD-PROFILE_VWC_15_30MIN_RAW"
@@ -28438,17 +28173,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-HENFS-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HENFS-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-HENFS-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -29514,17 +29238,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-HILLB-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HILLB-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-HILLB-Q_1DAY_PROCESSED": {
@@ -30968,17 +30681,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-HLACY-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HLACY-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-HLACY-Q_1DAY_PROCESSED": {
@@ -32448,17 +32150,6 @@
       "round": 3
     }
   },
-  "COSMOS-HOLLN-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HOLLN-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-HOLLN-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-HOLLN-PROFILE_VWC_15_30MIN_RAW"
@@ -33522,17 +33213,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-HYBRY-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-HYBRY-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-HYBRY-Q_1DAY_PROCESSED": {
@@ -34950,17 +34630,6 @@
       "round": 3
     }
   },
-  "COSMOS-LIZRD-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-LIZRD-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-LIZRD-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-LIZRD-PROFILE_VWC_15_30MIN_RAW"
@@ -36076,17 +35745,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-LODTN-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-LODTN-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-LODTN-Q_1DAY_PROCESSED": {
@@ -37532,17 +37190,6 @@
       "round": 3
     }
   },
-  "COSMOS-LULLN-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-LULLN-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-LULLN-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-LULLN-PROFILE_VWC_15_30MIN_RAW"
@@ -38693,17 +38340,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-MOORH-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-MOORH-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-MOORH-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -39862,17 +39498,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-MOREM-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-MOREM-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-MOREM-Q_1DAY_PROCESSED": {
@@ -41290,17 +40915,6 @@
       "round": 3
     }
   },
-  "COSMOS-MORLY-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-MORLY-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-MORLY-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-MORLY-PROFILE_VWC_15_30MIN_RAW"
@@ -42364,17 +41978,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-NWYKE-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-NWYKE-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-NWYKE-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -43529,17 +43132,6 @@
       "round": 3
     }
   },
-  "COSMOS-PLYNL-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-PLYNL-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-PLYNL-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-PLYNL-PROFILE_VWC_15_30MIN_RAW"
@@ -44670,17 +44262,6 @@
       "round": 3
     }
   },
-  "COSMOS-PORTN-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-PORTN-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-PORTN-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-PORTN-PROFILE_VWC_15_30MIN_RAW"
@@ -45744,17 +45325,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-RDMER-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-RDMER-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-RDMER-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -46850,51 +46420,6 @@
       "round": 3
     }
   },
-  "COSMOS-REDHL-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-REDHL-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
-  "COSMOS-REDHL-PRECIP_TIPPING_30MIN_PROCESSED": {
-    "depends_on": [
-      "COSMOS-REDHL-PRECIP_TIPPING_30MIN_RAW"
-    ],
-    "derivation": "PROCESS"
-  },
-  "COSMOS-REDHL-PRECIP_TIPPING_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-REDHL-PRECIP_TIPPING_A_30MIN_RAW",
-      "COSMOS-REDHL-PRECIP_TIPPING_B_30MIN_RAW"
-    ],
-    "derivation": "CALCULATE",
-    "method": "get_precip_tipping"
-  },
-  "COSMOS-REDHL-PRECIP_TIPPING_A_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-REDHL-PRECIP_TIPPING_A_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
-  "COSMOS-REDHL-PRECIP_TIPPING_B_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-REDHL-PRECIP_TIPPING_B_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
   "COSMOS-REDHL-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-REDHL-PROFILE_VWC_15_30MIN_RAW"
@@ -47958,17 +47483,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-RISEH-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-RISEH-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-RISEH-Q_1DAY_PROCESSED": {
@@ -49412,17 +48926,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-ROTHD-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-ROTHD-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-ROTHD-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -52113,17 +51616,6 @@
       "round": 3
     }
   },
-  "COSMOS-SOURH-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-SOURH-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-SOURH-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-SOURH-PROFILE_VWC_15_30MIN_RAW"
@@ -53252,51 +52744,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-SPENF-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-SPENF-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
-  "COSMOS-SPENF-PRECIP_TIPPING_30MIN_PROCESSED": {
-    "depends_on": [
-      "COSMOS-SPENF-PRECIP_TIPPING_30MIN_RAW"
-    ],
-    "derivation": "PROCESS"
-  },
-  "COSMOS-SPENF-PRECIP_TIPPING_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-SPENF-PRECIP_TIPPING_A_30MIN_RAW",
-      "COSMOS-SPENF-PRECIP_TIPPING_B_30MIN_RAW"
-    ],
-    "derivation": "CALCULATE",
-    "method": "get_precip_tipping"
-  },
-  "COSMOS-SPENF-PRECIP_TIPPING_A_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-SPENF-PRECIP_TIPPING_A_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
-  "COSMOS-SPENF-PRECIP_TIPPING_B_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-SPENF-PRECIP_TIPPING_B_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
     }
   },
   "COSMOS-SPENF-Q_1DAY_PROCESSED": {
@@ -54766,51 +54213,6 @@
       "round": 3
     }
   },
-  "COSMOS-STGHT-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-STGHT-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
-  "COSMOS-STGHT-PRECIP_TIPPING_30MIN_PROCESSED": {
-    "depends_on": [
-      "COSMOS-STGHT-PRECIP_TIPPING_30MIN_RAW"
-    ],
-    "derivation": "PROCESS"
-  },
-  "COSMOS-STGHT-PRECIP_TIPPING_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-STGHT-PRECIP_TIPPING_A_30MIN_RAW",
-      "COSMOS-STGHT-PRECIP_TIPPING_B_30MIN_RAW"
-    ],
-    "derivation": "CALCULATE",
-    "method": "get_precip_tipping"
-  },
-  "COSMOS-STGHT-PRECIP_TIPPING_A_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-STGHT-PRECIP_TIPPING_A_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
-  "COSMOS-STGHT-PRECIP_TIPPING_B_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-STGHT-PRECIP_TIPPING_B_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
   "COSMOS-STGHT-PROFILE_VWC_15_30MIN_PROCESSED": {
     "depends_on": [
       "COSMOS-STGHT-PROFILE_VWC_15_30MIN_RAW"
@@ -55898,17 +55300,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-STIPS-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-STIPS-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-STIPS-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -57002,51 +56393,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-SYDLG-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-SYDLG-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
-  "COSMOS-SYDLG-PRECIP_TIPPING_30MIN_PROCESSED": {
-    "depends_on": [
-      "COSMOS-SYDLG-PRECIP_TIPPING_30MIN_RAW"
-    ],
-    "derivation": "PROCESS"
-  },
-  "COSMOS-SYDLG-PRECIP_TIPPING_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-SYDLG-PRECIP_TIPPING_A_30MIN_RAW",
-      "COSMOS-SYDLG-PRECIP_TIPPING_B_30MIN_RAW"
-    ],
-    "derivation": "CALCULATE",
-    "method": "get_precip_tipping"
-  },
-  "COSMOS-SYDLG-PRECIP_TIPPING_A_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-SYDLG-PRECIP_TIPPING_A_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
-  "COSMOS-SYDLG-PRECIP_TIPPING_B_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-SYDLG-PRECIP_TIPPING_B_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
     }
   },
   "COSMOS-SYDLG-Q_1DAY_PROCESSED": {
@@ -58462,17 +57808,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-TADHM-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-TADHM-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-TADHM-PROFILE_VWC_15_30MIN_PROCESSED": {
@@ -61070,17 +60405,6 @@
       "round": 3
     }
   },
-  "COSMOS-WIMPL-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-WIMPL-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
   "COSMOS-WIMPL-Q_1DAY_PROCESSED": {
     "depends_on": [
       "COSMOS-WIMPL-Q_30MIN_PROCESSED"
@@ -62524,51 +61848,6 @@
       "round": 3
     }
   },
-  "COSMOS-WRTTL-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-WRTTL-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
-    }
-  },
-  "COSMOS-WRTTL-PRECIP_TIPPING_30MIN_PROCESSED": {
-    "depends_on": [
-      "COSMOS-WRTTL-PRECIP_TIPPING_30MIN_RAW"
-    ],
-    "derivation": "PROCESS"
-  },
-  "COSMOS-WRTTL-PRECIP_TIPPING_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-WRTTL-PRECIP_TIPPING_A_30MIN_RAW",
-      "COSMOS-WRTTL-PRECIP_TIPPING_B_30MIN_RAW"
-    ],
-    "derivation": "CALCULATE",
-    "method": "get_precip_tipping"
-  },
-  "COSMOS-WRTTL-PRECIP_TIPPING_A_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-WRTTL-PRECIP_TIPPING_A_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
-  "COSMOS-WRTTL-PRECIP_TIPPING_B_30MIN_RAW": {
-    "depends_on": [
-      "COSMOS-WRTTL-PRECIP_TIPPING_B_1MIN_RAW"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 27
-    }
-  },
   "COSMOS-WRTTL-Q_1DAY_PROCESSED": {
     "depends_on": [
       "COSMOS-WRTTL-Q_30MIN_PROCESSED"
@@ -63976,17 +63255,6 @@
     "args": {
       "threshold": 27,
       "round": 3
-    }
-  },
-  "COSMOS-WYTH1-PRECIP_TIPPING_1DAY_PROCESSED": {
-    "depends_on": [
-      "COSMOS-WYTH1-PRECIP_TIPPING_30MIN_PROCESSED"
-    ],
-    "derivation": "AGGREGATE",
-    "method": "sum",
-    "args": {
-      "threshold": 43,
-      "round": 1
     }
   },
   "COSMOS-WYTH1-PROFILE_VWC_15_30MIN_PROCESSED": {
