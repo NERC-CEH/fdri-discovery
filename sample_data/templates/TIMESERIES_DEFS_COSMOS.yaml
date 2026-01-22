@@ -7,11 +7,11 @@ imports:
     - concept_schemes.yaml
     - extensions.py
 
-one_offs:
-  - name: TimeSeriesScheme
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series>"
-      "@type": "<skos:ConceptScheme>"
+# one_offs:
+#   - name: TimeSeriesScheme
+#     properties:
+#       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series>"
+#       "@type": "<skos:ConceptScheme>"
 
 resources:
   - name: Aggregation
@@ -34,13 +34,13 @@ resources:
       "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/{UNIT_ID|slug}>"
       "<fdri:aggregation>": "<::Aggregation>"
 
-  - name: TimeSeriesDefinition
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{TIMESERIES_DEF|slug}>"
-      "@type": "<fdri:TimeSeriesDefinition>"
-      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"
-      "<skos:inScheme>": "<::TimeSeriesScheme>"
-      "^<skos:hasTopConcept>": "<::TimeSeriesScheme>"
-      "<skos:prefLabel>": "{TIMESERIES_NAME}@en"
-      "<rdfs:label>": "{TIMESERIES_NAME}@en"
-      "<fdri:measure>": <::Measure>
+  # - name: TimeSeriesDefinition
+  #   properties:
+  #     "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{TIMESERIES_DEF|slug}>"
+  #     "@type": "<fdri:TimeSeriesDefinition>"
+  #     "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"
+  #     "<skos:inScheme>": "<::TimeSeriesScheme>"
+  #     "^<skos:hasTopConcept>": "<::TimeSeriesScheme>"
+  #     "<skos:prefLabel>": "{TIMESERIES_NAME}@en"
+  #     "<rdfs:label>": "{TIMESERIES_NAME}@en"
+  #     "<fdri:measure>": <::Measure>
