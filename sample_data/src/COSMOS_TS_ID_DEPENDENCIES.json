@@ -719,9 +719,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-ALIC1-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-ALIC1-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -730,15 +730,15 @@
       "round": 1
     }
   },
-  "COSMOS-ALIC1-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-ALIC1-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ALIC1-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-ALIC1-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -747,15 +747,15 @@
       "round": 1
     }
   },
-  "COSMOS-ALIC1-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-ALIC1-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ALIC1-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-ALIC1-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -764,15 +764,15 @@
       "round": 1
     }
   },
-  "COSMOS-ALIC1-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-ALIC1-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ALIC1-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-ALIC1-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -781,15 +781,15 @@
       "round": 1
     }
   },
-  "COSMOS-ALIC1-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-ALIC1-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ALIC1-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-ALIC1-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -798,9 +798,9 @@
       "round": 1
     }
   },
-  "COSMOS-ALIC1-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-ALIC1-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ALIC1-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-ALIC1-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -1759,9 +1759,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-BALRD-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-BALRD-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -1770,15 +1770,15 @@
       "round": 1
     }
   },
-  "COSMOS-BALRD-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-BALRD-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BALRD-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-BALRD-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -1787,15 +1787,15 @@
       "round": 1
     }
   },
-  "COSMOS-BALRD-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-BALRD-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BALRD-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-BALRD-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -1804,15 +1804,15 @@
       "round": 1
     }
   },
-  "COSMOS-BALRD-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-BALRD-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BALRD-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-BALRD-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -1821,15 +1821,15 @@
       "round": 1
     }
   },
-  "COSMOS-BALRD-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-BALRD-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BALRD-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-BALRD-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -1838,9 +1838,9 @@
       "round": 1
     }
   },
-  "COSMOS-BALRD-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-BALRD-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BALRD-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-BALRD-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -2863,9 +2863,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-BICKL-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-BICKL-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -2874,15 +2874,15 @@
       "round": 1
     }
   },
-  "COSMOS-BICKL-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-BICKL-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BICKL-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-BICKL-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -2891,15 +2891,15 @@
       "round": 1
     }
   },
-  "COSMOS-BICKL-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-BICKL-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BICKL-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-BICKL-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -2908,15 +2908,15 @@
       "round": 1
     }
   },
-  "COSMOS-BICKL-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-BICKL-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BICKL-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-BICKL-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -2925,15 +2925,15 @@
       "round": 1
     }
   },
-  "COSMOS-BICKL-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-BICKL-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BICKL-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-BICKL-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -2942,9 +2942,9 @@
       "round": 1
     }
   },
-  "COSMOS-BICKL-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-BICKL-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BICKL-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-BICKL-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -3967,9 +3967,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-BUNNY-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-BUNNY-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -3978,15 +3978,15 @@
       "round": 1
     }
   },
-  "COSMOS-BUNNY-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-BUNNY-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BUNNY-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-BUNNY-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -3995,15 +3995,15 @@
       "round": 1
     }
   },
-  "COSMOS-BUNNY-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-BUNNY-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BUNNY-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-BUNNY-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -4012,15 +4012,15 @@
       "round": 1
     }
   },
-  "COSMOS-BUNNY-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-BUNNY-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BUNNY-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-BUNNY-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -4029,15 +4029,15 @@
       "round": 1
     }
   },
-  "COSMOS-BUNNY-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-BUNNY-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-BUNNY-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-BUNNY-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -4046,9 +4046,9 @@
       "round": 1
     }
   },
-  "COSMOS-BUNNY-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-BUNNY-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-BUNNY-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-BUNNY-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -5071,9 +5071,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-CARDT-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-CARDT-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -5082,15 +5082,15 @@
       "round": 1
     }
   },
-  "COSMOS-CARDT-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-CARDT-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CARDT-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-CARDT-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -5099,15 +5099,15 @@
       "round": 1
     }
   },
-  "COSMOS-CARDT-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-CARDT-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CARDT-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-CARDT-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -5116,15 +5116,15 @@
       "round": 1
     }
   },
-  "COSMOS-CARDT-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-CARDT-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CARDT-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-CARDT-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -5133,15 +5133,15 @@
       "round": 1
     }
   },
-  "COSMOS-CARDT-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-CARDT-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CARDT-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-CARDT-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -5150,9 +5150,9 @@
       "round": 1
     }
   },
-  "COSMOS-CARDT-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-CARDT-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CARDT-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-CARDT-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -6260,9 +6260,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CGARW-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-CGARW-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -6271,15 +6271,15 @@
       "round": 1
     }
   },
-  "COSMOS-CGARW-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-CGARW-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CGARW-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-CGARW-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -6288,15 +6288,15 @@
       "round": 1
     }
   },
-  "COSMOS-CGARW-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-CGARW-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CGARW-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-CGARW-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -6305,15 +6305,15 @@
       "round": 1
     }
   },
-  "COSMOS-CGARW-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-CGARW-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CGARW-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-CGARW-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -6322,15 +6322,15 @@
       "round": 1
     }
   },
-  "COSMOS-CGARW-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-CGARW-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CGARW-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-CGARW-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -6339,9 +6339,9 @@
       "round": 1
     }
   },
-  "COSMOS-CGARW-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-CGARW-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CGARW-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-CGARW-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -7817,9 +7817,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-CHIMN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-CHIMN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -7828,15 +7828,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHIMN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-CHIMN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHIMN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-CHIMN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -7845,15 +7845,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHIMN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-CHIMN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHIMN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-CHIMN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -7862,15 +7862,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHIMN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-CHIMN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHIMN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-CHIMN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -7879,15 +7879,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHIMN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-CHIMN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHIMN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-CHIMN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -7896,9 +7896,9 @@
       "round": 1
     }
   },
-  "COSMOS-CHIMN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-CHIMN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHIMN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-CHIMN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -9289,9 +9289,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-CHOBH-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-CHOBH-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -9300,15 +9300,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHOBH-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-CHOBH-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHOBH-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-CHOBH-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -9317,15 +9317,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHOBH-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-CHOBH-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHOBH-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-CHOBH-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -9334,15 +9334,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHOBH-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-CHOBH-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHOBH-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-CHOBH-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -9351,15 +9351,15 @@
       "round": 1
     }
   },
-  "COSMOS-CHOBH-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-CHOBH-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CHOBH-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-CHOBH-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -9368,9 +9368,9 @@
       "round": 1
     }
   },
-  "COSMOS-CHOBH-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-CHOBH-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CHOBH-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-CHOBH-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -10478,9 +10478,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCHN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-COCHN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -10489,15 +10489,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCHN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-COCHN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCHN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-COCHN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -10506,15 +10506,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCHN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-COCHN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCHN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-COCHN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -10523,15 +10523,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCHN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-COCHN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCHN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-COCHN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -10540,15 +10540,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCHN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-COCHN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCHN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-COCHN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -10557,9 +10557,9 @@
       "round": 1
     }
   },
-  "COSMOS-COCHN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-COCHN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCHN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-COCHN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -11967,9 +11967,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-COCLP-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-COCLP-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -11978,15 +11978,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCLP-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-COCLP-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCLP-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-COCLP-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -11995,15 +11995,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCLP-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-COCLP-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCLP-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-COCLP-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -12012,15 +12012,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCLP-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-COCLP-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCLP-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-COCLP-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -12029,15 +12029,15 @@
       "round": 1
     }
   },
-  "COSMOS-COCLP-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-COCLP-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-COCLP-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-COCLP-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -12046,9 +12046,9 @@
       "round": 1
     }
   },
-  "COSMOS-COCLP-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-COCLP-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-COCLP-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-COCLP-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -13077,9 +13077,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-CRICH-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-CRICH-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -13088,15 +13088,15 @@
       "round": 1
     }
   },
-  "COSMOS-CRICH-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-CRICH-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CRICH-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-CRICH-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -13105,15 +13105,15 @@
       "round": 1
     }
   },
-  "COSMOS-CRICH-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-CRICH-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CRICH-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-CRICH-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -13122,15 +13122,15 @@
       "round": 1
     }
   },
-  "COSMOS-CRICH-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-CRICH-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CRICH-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-CRICH-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -13139,15 +13139,15 @@
       "round": 1
     }
   },
-  "COSMOS-CRICH-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-CRICH-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-CRICH-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-CRICH-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -13156,9 +13156,9 @@
       "round": 1
     }
   },
-  "COSMOS-CRICH-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-CRICH-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-CRICH-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-CRICH-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -14284,9 +14284,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EASTB-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-EASTB-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -14295,15 +14295,15 @@
       "round": 1
     }
   },
-  "COSMOS-EASTB-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-EASTB-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EASTB-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-EASTB-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -14312,15 +14312,15 @@
       "round": 1
     }
   },
-  "COSMOS-EASTB-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-EASTB-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EASTB-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-EASTB-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -14329,15 +14329,15 @@
       "round": 1
     }
   },
-  "COSMOS-EASTB-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-EASTB-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EASTB-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-EASTB-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -14346,15 +14346,15 @@
       "round": 1
     }
   },
-  "COSMOS-EASTB-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-EASTB-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EASTB-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-EASTB-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -14363,9 +14363,9 @@
       "round": 1
     }
   },
-  "COSMOS-EASTB-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-EASTB-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EASTB-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-EASTB-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -15363,9 +15363,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-ELMST-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-ELMST-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -15374,15 +15374,15 @@
       "round": 1
     }
   },
-  "COSMOS-ELMST-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-ELMST-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ELMST-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-ELMST-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -15391,15 +15391,15 @@
       "round": 1
     }
   },
-  "COSMOS-ELMST-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-ELMST-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ELMST-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-ELMST-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -15408,15 +15408,15 @@
       "round": 1
     }
   },
-  "COSMOS-ELMST-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-ELMST-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ELMST-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-ELMST-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -15425,15 +15425,15 @@
       "round": 1
     }
   },
-  "COSMOS-ELMST-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-ELMST-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ELMST-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-ELMST-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -15442,9 +15442,9 @@
       "round": 1
     }
   },
-  "COSMOS-ELMST-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-ELMST-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ELMST-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-ELMST-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -16789,9 +16789,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-EUSTN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-EUSTN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -16800,15 +16800,15 @@
       "round": 1
     }
   },
-  "COSMOS-EUSTN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-EUSTN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EUSTN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-EUSTN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -16817,15 +16817,15 @@
       "round": 1
     }
   },
-  "COSMOS-EUSTN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-EUSTN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EUSTN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-EUSTN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -16834,15 +16834,15 @@
       "round": 1
     }
   },
-  "COSMOS-EUSTN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-EUSTN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EUSTN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-EUSTN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -16851,15 +16851,15 @@
       "round": 1
     }
   },
-  "COSMOS-EUSTN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-EUSTN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-EUSTN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-EUSTN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -16868,9 +16868,9 @@
       "round": 1
     }
   },
-  "COSMOS-EUSTN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-EUSTN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-EUSTN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-EUSTN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -18243,9 +18243,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-FINCH-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-FINCH-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -18254,15 +18254,15 @@
       "round": 1
     }
   },
-  "COSMOS-FINCH-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-FINCH-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FINCH-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-FINCH-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -18271,15 +18271,15 @@
       "round": 1
     }
   },
-  "COSMOS-FINCH-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-FINCH-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FINCH-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-FINCH-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -18288,15 +18288,15 @@
       "round": 1
     }
   },
-  "COSMOS-FINCH-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-FINCH-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FINCH-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-FINCH-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -18305,15 +18305,15 @@
       "round": 1
     }
   },
-  "COSMOS-FINCH-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-FINCH-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FINCH-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-FINCH-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -18322,9 +18322,9 @@
       "round": 1
     }
   },
-  "COSMOS-FINCH-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-FINCH-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FINCH-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-FINCH-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -19669,9 +19669,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-FIVET-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-FIVET-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -19680,15 +19680,15 @@
       "round": 1
     }
   },
-  "COSMOS-FIVET-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-FIVET-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FIVET-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-FIVET-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -19697,15 +19697,15 @@
       "round": 1
     }
   },
-  "COSMOS-FIVET-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-FIVET-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FIVET-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-FIVET-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -19714,15 +19714,15 @@
       "round": 1
     }
   },
-  "COSMOS-FIVET-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-FIVET-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FIVET-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-FIVET-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -19731,15 +19731,15 @@
       "round": 1
     }
   },
-  "COSMOS-FIVET-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-FIVET-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-FIVET-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-FIVET-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -19748,9 +19748,9 @@
       "round": 1
     }
   },
-  "COSMOS-FIVET-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-FIVET-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-FIVET-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-FIVET-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -21268,9 +21268,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GISBN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-GISBN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -21279,15 +21279,15 @@
       "round": 1
     }
   },
-  "COSMOS-GISBN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-GISBN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GISBN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-GISBN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -21296,15 +21296,15 @@
       "round": 1
     }
   },
-  "COSMOS-GISBN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-GISBN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GISBN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-GISBN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -21313,15 +21313,15 @@
       "round": 1
     }
   },
-  "COSMOS-GISBN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-GISBN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GISBN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-GISBN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -21330,15 +21330,15 @@
       "round": 1
     }
   },
-  "COSMOS-GISBN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-GISBN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GISBN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-GISBN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -21347,9 +21347,9 @@
       "round": 1
     }
   },
-  "COSMOS-GISBN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-GISBN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GISBN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-GISBN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -22496,9 +22496,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENS-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-GLENS-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -22507,15 +22507,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENS-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-GLENS-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENS-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-GLENS-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -22524,15 +22524,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENS-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-GLENS-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENS-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-GLENS-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -22541,15 +22541,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENS-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-GLENS-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENS-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-GLENS-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -22558,15 +22558,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENS-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-GLENS-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENS-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-GLENS-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -22575,9 +22575,9 @@
       "round": 1
     }
   },
-  "COSMOS-GLENS-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-GLENS-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENS-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-GLENS-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -23575,9 +23575,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-GLENW-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-GLENW-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -23586,15 +23586,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENW-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-GLENW-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENW-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-GLENW-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -23603,15 +23603,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENW-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-GLENW-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENW-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-GLENW-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -23620,15 +23620,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENW-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-GLENW-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENW-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-GLENW-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -23637,15 +23637,15 @@
       "round": 1
     }
   },
-  "COSMOS-GLENW-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-GLENW-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-GLENW-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-GLENW-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -23654,9 +23654,9 @@
       "round": 1
     }
   },
-  "COSMOS-GLENW-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-GLENW-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-GLENW-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-GLENW-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -25001,9 +25001,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HADLW-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HADLW-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -25012,15 +25012,15 @@
       "round": 1
     }
   },
-  "COSMOS-HADLW-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HADLW-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HADLW-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HADLW-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -25029,15 +25029,15 @@
       "round": 1
     }
   },
-  "COSMOS-HADLW-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HADLW-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HADLW-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HADLW-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -25046,15 +25046,15 @@
       "round": 1
     }
   },
-  "COSMOS-HADLW-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HADLW-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HADLW-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HADLW-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -25063,15 +25063,15 @@
       "round": 1
     }
   },
-  "COSMOS-HADLW-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HADLW-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HADLW-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HADLW-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -25080,9 +25080,9 @@
       "round": 1
     }
   },
-  "COSMOS-HADLW-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HADLW-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HADLW-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HADLW-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -26445,9 +26445,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HARTW-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HARTW-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -26456,15 +26456,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARTW-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HARTW-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARTW-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HARTW-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -26473,15 +26473,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARTW-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HARTW-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARTW-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HARTW-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -26490,15 +26490,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARTW-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HARTW-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARTW-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HARTW-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -26507,15 +26507,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARTW-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HARTW-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARTW-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HARTW-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -26524,9 +26524,9 @@
       "round": 1
     }
   },
-  "COSMOS-HARTW-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HARTW-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARTW-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HARTW-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -27515,9 +27515,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HARWD-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HARWD-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -27526,15 +27526,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARWD-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HARWD-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARWD-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HARWD-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -27543,15 +27543,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARWD-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HARWD-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARWD-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HARWD-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -27560,15 +27560,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARWD-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HARWD-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARWD-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HARWD-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -27577,15 +27577,15 @@
       "round": 1
     }
   },
-  "COSMOS-HARWD-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HARWD-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HARWD-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HARWD-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -27594,9 +27594,9 @@
       "round": 1
     }
   },
-  "COSMOS-HARWD-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HARWD-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HARWD-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HARWD-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -28579,9 +28579,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HENFS-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HENFS-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -28590,15 +28590,15 @@
       "round": 1
     }
   },
-  "COSMOS-HENFS-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HENFS-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HENFS-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HENFS-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -28607,15 +28607,15 @@
       "round": 1
     }
   },
-  "COSMOS-HENFS-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HENFS-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HENFS-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HENFS-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -28624,15 +28624,15 @@
       "round": 1
     }
   },
-  "COSMOS-HENFS-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HENFS-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HENFS-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HENFS-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -28641,15 +28641,15 @@
       "round": 1
     }
   },
-  "COSMOS-HENFS-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HENFS-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HENFS-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HENFS-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -28658,9 +28658,9 @@
       "round": 1
     }
   },
-  "COSMOS-HENFS-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HENFS-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HENFS-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HENFS-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -29637,9 +29637,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HILLB-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HILLB-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -29648,15 +29648,15 @@
       "round": 1
     }
   },
-  "COSMOS-HILLB-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HILLB-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HILLB-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HILLB-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -29665,15 +29665,15 @@
       "round": 1
     }
   },
-  "COSMOS-HILLB-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HILLB-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HILLB-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HILLB-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -29682,15 +29682,15 @@
       "round": 1
     }
   },
-  "COSMOS-HILLB-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HILLB-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HILLB-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HILLB-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -29699,15 +29699,15 @@
       "round": 1
     }
   },
-  "COSMOS-HILLB-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HILLB-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HILLB-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HILLB-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -29716,9 +29716,9 @@
       "round": 1
     }
   },
-  "COSMOS-HILLB-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HILLB-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HILLB-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HILLB-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -31091,9 +31091,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HLACY-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HLACY-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -31102,15 +31102,15 @@
       "round": 1
     }
   },
-  "COSMOS-HLACY-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HLACY-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HLACY-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HLACY-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -31119,15 +31119,15 @@
       "round": 1
     }
   },
-  "COSMOS-HLACY-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HLACY-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HLACY-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HLACY-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -31136,15 +31136,15 @@
       "round": 1
     }
   },
-  "COSMOS-HLACY-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HLACY-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HLACY-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HLACY-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -31153,15 +31153,15 @@
       "round": 1
     }
   },
-  "COSMOS-HLACY-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HLACY-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HLACY-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HLACY-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -31170,9 +31170,9 @@
       "round": 1
     }
   },
-  "COSMOS-HLACY-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HLACY-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HLACY-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HLACY-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -32587,9 +32587,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HOLLN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HOLLN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -32598,15 +32598,15 @@
       "round": 1
     }
   },
-  "COSMOS-HOLLN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HOLLN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HOLLN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HOLLN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -32615,15 +32615,15 @@
       "round": 1
     }
   },
-  "COSMOS-HOLLN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HOLLN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HOLLN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HOLLN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -32632,15 +32632,15 @@
       "round": 1
     }
   },
-  "COSMOS-HOLLN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HOLLN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HOLLN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HOLLN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -32649,15 +32649,15 @@
       "round": 1
     }
   },
-  "COSMOS-HOLLN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HOLLN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HOLLN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HOLLN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -32666,9 +32666,9 @@
       "round": 1
     }
   },
-  "COSMOS-HOLLN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HOLLN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HOLLN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HOLLN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -33645,9 +33645,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-HYBRY-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-HYBRY-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -33656,15 +33656,15 @@
       "round": 1
     }
   },
-  "COSMOS-HYBRY-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-HYBRY-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HYBRY-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-HYBRY-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -33673,15 +33673,15 @@
       "round": 1
     }
   },
-  "COSMOS-HYBRY-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-HYBRY-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HYBRY-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-HYBRY-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -33690,15 +33690,15 @@
       "round": 1
     }
   },
-  "COSMOS-HYBRY-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-HYBRY-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HYBRY-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-HYBRY-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -33707,15 +33707,15 @@
       "round": 1
     }
   },
-  "COSMOS-HYBRY-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-HYBRY-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-HYBRY-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-HYBRY-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -33724,9 +33724,9 @@
       "round": 1
     }
   },
-  "COSMOS-HYBRY-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-HYBRY-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-HYBRY-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-HYBRY-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -35089,9 +35089,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-LIZRD-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-LIZRD-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -35100,15 +35100,15 @@
       "round": 1
     }
   },
-  "COSMOS-LIZRD-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-LIZRD-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LIZRD-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-LIZRD-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -35117,15 +35117,15 @@
       "round": 1
     }
   },
-  "COSMOS-LIZRD-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-LIZRD-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LIZRD-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-LIZRD-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -35134,15 +35134,15 @@
       "round": 1
     }
   },
-  "COSMOS-LIZRD-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-LIZRD-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LIZRD-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-LIZRD-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -35151,15 +35151,15 @@
       "round": 1
     }
   },
-  "COSMOS-LIZRD-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-LIZRD-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LIZRD-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-LIZRD-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -35168,9 +35168,9 @@
       "round": 1
     }
   },
-  "COSMOS-LIZRD-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-LIZRD-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LIZRD-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-LIZRD-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -36199,9 +36199,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-LODTN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-LODTN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -36210,15 +36210,15 @@
       "round": 1
     }
   },
-  "COSMOS-LODTN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-LODTN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LODTN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-LODTN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -36227,15 +36227,15 @@
       "round": 1
     }
   },
-  "COSMOS-LODTN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-LODTN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LODTN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-LODTN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -36244,15 +36244,15 @@
       "round": 1
     }
   },
-  "COSMOS-LODTN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-LODTN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LODTN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-LODTN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -36261,15 +36261,15 @@
       "round": 1
     }
   },
-  "COSMOS-LODTN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-LODTN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LODTN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-LODTN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -36278,9 +36278,9 @@
       "round": 1
     }
   },
-  "COSMOS-LODTN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-LODTN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LODTN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-LODTN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -37671,9 +37671,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-LULLN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-LULLN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -37682,15 +37682,15 @@
       "round": 1
     }
   },
-  "COSMOS-LULLN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-LULLN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LULLN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-LULLN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -37699,15 +37699,15 @@
       "round": 1
     }
   },
-  "COSMOS-LULLN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-LULLN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LULLN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-LULLN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -37716,15 +37716,15 @@
       "round": 1
     }
   },
-  "COSMOS-LULLN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-LULLN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LULLN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-LULLN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -37733,15 +37733,15 @@
       "round": 1
     }
   },
-  "COSMOS-LULLN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-LULLN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-LULLN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-LULLN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -37750,9 +37750,9 @@
       "round": 1
     }
   },
-  "COSMOS-LULLN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-LULLN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-LULLN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-LULLN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -38878,9 +38878,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOORH-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-MOORH-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -38889,15 +38889,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOORH-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-MOORH-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOORH-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-MOORH-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -38906,15 +38906,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOORH-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-MOORH-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOORH-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-MOORH-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -38923,15 +38923,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOORH-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-MOORH-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOORH-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-MOORH-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -38940,15 +38940,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOORH-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-MOORH-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOORH-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-MOORH-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -38957,9 +38957,9 @@
       "round": 1
     }
   },
-  "COSMOS-MOORH-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-MOORH-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOORH-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-MOORH-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -39985,9 +39985,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-MOREM-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-MOREM-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -39996,15 +39996,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOREM-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-MOREM-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOREM-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-MOREM-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -40013,15 +40013,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOREM-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-MOREM-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOREM-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-MOREM-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -40030,15 +40030,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOREM-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-MOREM-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOREM-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-MOREM-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -40047,15 +40047,15 @@
       "round": 1
     }
   },
-  "COSMOS-MOREM-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-MOREM-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MOREM-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-MOREM-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -40064,9 +40064,9 @@
       "round": 1
     }
   },
-  "COSMOS-MOREM-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-MOREM-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MOREM-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-MOREM-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -41429,9 +41429,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-MORLY-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-MORLY-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -41440,15 +41440,15 @@
       "round": 1
     }
   },
-  "COSMOS-MORLY-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-MORLY-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MORLY-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-MORLY-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -41457,15 +41457,15 @@
       "round": 1
     }
   },
-  "COSMOS-MORLY-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-MORLY-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MORLY-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-MORLY-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -41474,15 +41474,15 @@
       "round": 1
     }
   },
-  "COSMOS-MORLY-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-MORLY-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MORLY-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-MORLY-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -41491,15 +41491,15 @@
       "round": 1
     }
   },
-  "COSMOS-MORLY-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-MORLY-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-MORLY-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-MORLY-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -41508,9 +41508,9 @@
       "round": 1
     }
   },
-  "COSMOS-MORLY-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-MORLY-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-MORLY-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-MORLY-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -42505,9 +42505,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-NWYKE-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-NWYKE-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -42516,15 +42516,15 @@
       "round": 1
     }
   },
-  "COSMOS-NWYKE-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-NWYKE-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-NWYKE-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-NWYKE-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -42533,15 +42533,15 @@
       "round": 1
     }
   },
-  "COSMOS-NWYKE-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-NWYKE-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-NWYKE-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-NWYKE-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -42550,15 +42550,15 @@
       "round": 1
     }
   },
-  "COSMOS-NWYKE-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-NWYKE-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-NWYKE-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-NWYKE-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -42567,15 +42567,15 @@
       "round": 1
     }
   },
-  "COSMOS-NWYKE-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-NWYKE-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-NWYKE-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-NWYKE-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -42584,9 +42584,9 @@
       "round": 1
     }
   },
-  "COSMOS-NWYKE-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-NWYKE-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-NWYKE-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-NWYKE-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -43712,9 +43712,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PLYNL-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-PLYNL-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -43723,15 +43723,15 @@
       "round": 1
     }
   },
-  "COSMOS-PLYNL-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-PLYNL-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PLYNL-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-PLYNL-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -43740,15 +43740,15 @@
       "round": 1
     }
   },
-  "COSMOS-PLYNL-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-PLYNL-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PLYNL-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-PLYNL-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -43757,15 +43757,15 @@
       "round": 1
     }
   },
-  "COSMOS-PLYNL-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-PLYNL-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PLYNL-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-PLYNL-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -43774,15 +43774,15 @@
       "round": 1
     }
   },
-  "COSMOS-PLYNL-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-PLYNL-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PLYNL-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-PLYNL-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -43791,9 +43791,9 @@
       "round": 1
     }
   },
-  "COSMOS-PLYNL-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-PLYNL-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PLYNL-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-PLYNL-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -44809,9 +44809,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-PORTN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-PORTN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -44820,15 +44820,15 @@
       "round": 1
     }
   },
-  "COSMOS-PORTN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-PORTN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PORTN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-PORTN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -44837,15 +44837,15 @@
       "round": 1
     }
   },
-  "COSMOS-PORTN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-PORTN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PORTN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-PORTN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -44854,15 +44854,15 @@
       "round": 1
     }
   },
-  "COSMOS-PORTN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-PORTN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PORTN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-PORTN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -44871,15 +44871,15 @@
       "round": 1
     }
   },
-  "COSMOS-PORTN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-PORTN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-PORTN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-PORTN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -44888,9 +44888,9 @@
       "round": 1
     }
   },
-  "COSMOS-PORTN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-PORTN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-PORTN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-PORTN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -45885,9 +45885,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-RDMER-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-RDMER-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -45896,15 +45896,15 @@
       "round": 1
     }
   },
-  "COSMOS-RDMER-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-RDMER-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RDMER-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-RDMER-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -45913,15 +45913,15 @@
       "round": 1
     }
   },
-  "COSMOS-RDMER-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-RDMER-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RDMER-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-RDMER-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -45930,15 +45930,15 @@
       "round": 1
     }
   },
-  "COSMOS-RDMER-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-RDMER-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RDMER-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-RDMER-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -45947,15 +45947,15 @@
       "round": 1
     }
   },
-  "COSMOS-RDMER-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-RDMER-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RDMER-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-RDMER-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -45964,9 +45964,9 @@
       "round": 1
     }
   },
-  "COSMOS-RDMER-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-RDMER-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RDMER-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-RDMER-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -47023,9 +47023,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-REDHL-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-REDHL-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -47034,15 +47034,15 @@
       "round": 1
     }
   },
-  "COSMOS-REDHL-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-REDHL-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-REDHL-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-REDHL-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -47051,15 +47051,15 @@
       "round": 1
     }
   },
-  "COSMOS-REDHL-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-REDHL-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-REDHL-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-REDHL-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -47068,15 +47068,15 @@
       "round": 1
     }
   },
-  "COSMOS-REDHL-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-REDHL-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-REDHL-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-REDHL-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -47085,15 +47085,15 @@
       "round": 1
     }
   },
-  "COSMOS-REDHL-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-REDHL-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-REDHL-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-REDHL-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -47102,9 +47102,9 @@
       "round": 1
     }
   },
-  "COSMOS-REDHL-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-REDHL-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-REDHL-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-REDHL-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -48081,9 +48081,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-RISEH-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-RISEH-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -48092,15 +48092,15 @@
       "round": 1
     }
   },
-  "COSMOS-RISEH-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-RISEH-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RISEH-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-RISEH-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -48109,15 +48109,15 @@
       "round": 1
     }
   },
-  "COSMOS-RISEH-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-RISEH-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RISEH-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-RISEH-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -48126,15 +48126,15 @@
       "round": 1
     }
   },
-  "COSMOS-RISEH-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-RISEH-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RISEH-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-RISEH-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -48143,15 +48143,15 @@
       "round": 1
     }
   },
-  "COSMOS-RISEH-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-RISEH-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-RISEH-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-RISEH-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -48160,9 +48160,9 @@
       "round": 1
     }
   },
-  "COSMOS-RISEH-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-RISEH-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-RISEH-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-RISEH-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -49553,9 +49553,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-ROTHD-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-ROTHD-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -49564,15 +49564,15 @@
       "round": 1
     }
   },
-  "COSMOS-ROTHD-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-ROTHD-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ROTHD-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-ROTHD-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -49581,15 +49581,15 @@
       "round": 1
     }
   },
-  "COSMOS-ROTHD-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-ROTHD-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ROTHD-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-ROTHD-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -49598,15 +49598,15 @@
       "round": 1
     }
   },
-  "COSMOS-ROTHD-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-ROTHD-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ROTHD-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-ROTHD-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -49615,15 +49615,15 @@
       "round": 1
     }
   },
-  "COSMOS-ROTHD-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-ROTHD-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-ROTHD-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-ROTHD-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -49632,9 +49632,9 @@
       "round": 1
     }
   },
-  "COSMOS-ROTHD-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-ROTHD-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-ROTHD-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-ROTHD-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -50721,9 +50721,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-SHEEP-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-SHEEP-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -50732,15 +50732,15 @@
       "round": 1
     }
   },
-  "COSMOS-SHEEP-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-SHEEP-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SHEEP-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-SHEEP-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -50749,15 +50749,15 @@
       "round": 1
     }
   },
-  "COSMOS-SHEEP-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-SHEEP-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SHEEP-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-SHEEP-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -50766,15 +50766,15 @@
       "round": 1
     }
   },
-  "COSMOS-SHEEP-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-SHEEP-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SHEEP-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-SHEEP-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -50783,15 +50783,15 @@
       "round": 1
     }
   },
-  "COSMOS-SHEEP-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-SHEEP-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SHEEP-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-SHEEP-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -50800,9 +50800,9 @@
       "round": 1
     }
   },
-  "COSMOS-SHEEP-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-SHEEP-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SHEEP-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-SHEEP-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -52296,9 +52296,9 @@
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SOURH-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-SOURH-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -52307,15 +52307,15 @@
       "round": 1
     }
   },
-  "COSMOS-SOURH-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-SOURH-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SOURH-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-SOURH-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -52324,15 +52324,15 @@
       "round": 1
     }
   },
-  "COSMOS-SOURH-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-SOURH-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SOURH-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-SOURH-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -52341,15 +52341,15 @@
       "round": 1
     }
   },
-  "COSMOS-SOURH-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-SOURH-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SOURH-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-SOURH-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -52358,15 +52358,15 @@
       "round": 1
     }
   },
-  "COSMOS-SOURH-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-SOURH-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SOURH-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-SOURH-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -52375,9 +52375,9 @@
       "round": 1
     }
   },
-  "COSMOS-SOURH-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-SOURH-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SOURH-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-SOURH-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -53409,9 +53409,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-SPENF-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-SPENF-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -53420,15 +53420,15 @@
       "round": 1
     }
   },
-  "COSMOS-SPENF-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-SPENF-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SPENF-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-SPENF-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -53437,15 +53437,15 @@
       "round": 1
     }
   },
-  "COSMOS-SPENF-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-SPENF-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SPENF-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-SPENF-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -53454,15 +53454,15 @@
       "round": 1
     }
   },
-  "COSMOS-SPENF-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-SPENF-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SPENF-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-SPENF-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -53471,15 +53471,15 @@
       "round": 1
     }
   },
-  "COSMOS-SPENF-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-SPENF-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SPENF-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-SPENF-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -53488,9 +53488,9 @@
       "round": 1
     }
   },
-  "COSMOS-SPENF-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-SPENF-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SPENF-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-SPENF-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -54939,9 +54939,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-STGHT-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-STGHT-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -54950,15 +54950,15 @@
       "round": 1
     }
   },
-  "COSMOS-STGHT-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-STGHT-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STGHT-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-STGHT-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -54967,15 +54967,15 @@
       "round": 1
     }
   },
-  "COSMOS-STGHT-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-STGHT-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STGHT-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-STGHT-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -54984,15 +54984,15 @@
       "round": 1
     }
   },
-  "COSMOS-STGHT-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-STGHT-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STGHT-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-STGHT-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -55001,15 +55001,15 @@
       "round": 1
     }
   },
-  "COSMOS-STGHT-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-STGHT-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STGHT-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-STGHT-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -55018,9 +55018,9 @@
       "round": 1
     }
   },
-  "COSMOS-STGHT-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-STGHT-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STGHT-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-STGHT-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -56039,9 +56039,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-STIPS-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-STIPS-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -56050,15 +56050,15 @@
       "round": 1
     }
   },
-  "COSMOS-STIPS-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-STIPS-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STIPS-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-STIPS-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -56067,15 +56067,15 @@
       "round": 1
     }
   },
-  "COSMOS-STIPS-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-STIPS-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STIPS-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-STIPS-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -56084,15 +56084,15 @@
       "round": 1
     }
   },
-  "COSMOS-STIPS-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-STIPS-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STIPS-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-STIPS-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -56101,15 +56101,15 @@
       "round": 1
     }
   },
-  "COSMOS-STIPS-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-STIPS-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-STIPS-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-STIPS-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -56118,9 +56118,9 @@
       "round": 1
     }
   },
-  "COSMOS-STIPS-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-STIPS-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-STIPS-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-STIPS-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -57159,9 +57159,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-SYDLG-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-SYDLG-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -57170,15 +57170,15 @@
       "round": 1
     }
   },
-  "COSMOS-SYDLG-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-SYDLG-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SYDLG-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-SYDLG-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -57187,15 +57187,15 @@
       "round": 1
     }
   },
-  "COSMOS-SYDLG-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-SYDLG-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SYDLG-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-SYDLG-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -57204,15 +57204,15 @@
       "round": 1
     }
   },
-  "COSMOS-SYDLG-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-SYDLG-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SYDLG-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-SYDLG-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -57221,15 +57221,15 @@
       "round": 1
     }
   },
-  "COSMOS-SYDLG-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-SYDLG-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-SYDLG-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-SYDLG-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -57238,9 +57238,9 @@
       "round": 1
     }
   },
-  "COSMOS-SYDLG-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-SYDLG-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-SYDLG-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-SYDLG-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -58603,9 +58603,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-TADHM-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-TADHM-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -58614,15 +58614,15 @@
       "round": 1
     }
   },
-  "COSMOS-TADHM-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-TADHM-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-TADHM-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-TADHM-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -58631,15 +58631,15 @@
       "round": 1
     }
   },
-  "COSMOS-TADHM-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-TADHM-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-TADHM-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-TADHM-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -58648,15 +58648,15 @@
       "round": 1
     }
   },
-  "COSMOS-TADHM-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-TADHM-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-TADHM-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-TADHM-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -58665,15 +58665,15 @@
       "round": 1
     }
   },
-  "COSMOS-TADHM-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-TADHM-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-TADHM-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-TADHM-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -58682,9 +58682,9 @@
       "round": 1
     }
   },
-  "COSMOS-TADHM-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-TADHM-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-TADHM-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-TADHM-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -59765,9 +59765,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-WADDN-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-WADDN-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -59776,15 +59776,15 @@
       "round": 1
     }
   },
-  "COSMOS-WADDN-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-WADDN-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WADDN-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-WADDN-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -59793,15 +59793,15 @@
       "round": 1
     }
   },
-  "COSMOS-WADDN-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-WADDN-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WADDN-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-WADDN-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -59810,15 +59810,15 @@
       "round": 1
     }
   },
-  "COSMOS-WADDN-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-WADDN-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WADDN-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-WADDN-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -59827,15 +59827,15 @@
       "round": 1
     }
   },
-  "COSMOS-WADDN-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-WADDN-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WADDN-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-WADDN-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -59844,9 +59844,9 @@
       "round": 1
     }
   },
-  "COSMOS-WADDN-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-WADDN-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WADDN-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-WADDN-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -61191,9 +61191,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-WIMPL-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-WIMPL-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -61202,15 +61202,15 @@
       "round": 1
     }
   },
-  "COSMOS-WIMPL-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-WIMPL-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WIMPL-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-WIMPL-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -61219,15 +61219,15 @@
       "round": 1
     }
   },
-  "COSMOS-WIMPL-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-WIMPL-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WIMPL-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-WIMPL-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -61236,15 +61236,15 @@
       "round": 1
     }
   },
-  "COSMOS-WIMPL-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-WIMPL-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WIMPL-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-WIMPL-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -61253,15 +61253,15 @@
       "round": 1
     }
   },
-  "COSMOS-WIMPL-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-WIMPL-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WIMPL-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-WIMPL-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -61270,9 +61270,9 @@
       "round": 1
     }
   },
-  "COSMOS-WIMPL-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-WIMPL-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WIMPL-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-WIMPL-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -62679,9 +62679,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-WRTTL-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-WRTTL-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -62690,15 +62690,15 @@
       "round": 1
     }
   },
-  "COSMOS-WRTTL-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-WRTTL-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WRTTL-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-WRTTL-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -62707,15 +62707,15 @@
       "round": 1
     }
   },
-  "COSMOS-WRTTL-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-WRTTL-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WRTTL-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-WRTTL-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -62724,15 +62724,15 @@
       "round": 1
     }
   },
-  "COSMOS-WRTTL-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-WRTTL-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WRTTL-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-WRTTL-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -62741,15 +62741,15 @@
       "round": 1
     }
   },
-  "COSMOS-WRTTL-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-WRTTL-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WRTTL-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-WRTTL-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -62758,9 +62758,9 @@
       "round": 1
     }
   },
-  "COSMOS-WRTTL-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-WRTTL-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WRTTL-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-WRTTL-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
@@ -64111,9 +64111,9 @@
     "derivation": "CALCULATE",
     "method": "is_snow_day"
   },
-  "COSMOS-WYTH1-STP_TSOIL_10_1DAY_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL10_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_10_30MIN_PROCESSED"
+      "COSMOS-WYTH1-STP_TSOIL10_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -64122,15 +64122,15 @@
       "round": 1
     }
   },
-  "COSMOS-WYTH1-STP_TSOIL_10_30MIN_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL10_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_10_30MIN_RAW"
+      "COSMOS-WYTH1-STP_TSOIL10_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WYTH1-STP_TSOIL_2_1DAY_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL2_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_2_30MIN_PROCESSED"
+      "COSMOS-WYTH1-STP_TSOIL2_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -64139,15 +64139,15 @@
       "round": 1
     }
   },
-  "COSMOS-WYTH1-STP_TSOIL_2_30MIN_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL2_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_2_30MIN_RAW"
+      "COSMOS-WYTH1-STP_TSOIL2_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WYTH1-STP_TSOIL_20_1DAY_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL20_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_20_30MIN_PROCESSED"
+      "COSMOS-WYTH1-STP_TSOIL20_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -64156,15 +64156,15 @@
       "round": 1
     }
   },
-  "COSMOS-WYTH1-STP_TSOIL_20_30MIN_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL20_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_20_30MIN_RAW"
+      "COSMOS-WYTH1-STP_TSOIL20_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WYTH1-STP_TSOIL_5_1DAY_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL5_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_5_30MIN_PROCESSED"
+      "COSMOS-WYTH1-STP_TSOIL5_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -64173,15 +64173,15 @@
       "round": 1
     }
   },
-  "COSMOS-WYTH1-STP_TSOIL_5_30MIN_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL5_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_5_30MIN_RAW"
+      "COSMOS-WYTH1-STP_TSOIL5_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
-  "COSMOS-WYTH1-STP_TSOIL_50_1DAY_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL50_1DAY_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_50_30MIN_PROCESSED"
+      "COSMOS-WYTH1-STP_TSOIL50_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
     "method": "mean",
@@ -64190,9 +64190,9 @@
       "round": 1
     }
   },
-  "COSMOS-WYTH1-STP_TSOIL_50_30MIN_PROCESSED": {
+  "COSMOS-WYTH1-STP_TSOIL50_30MIN_PROCESSED": {
     "depends_on": [
-      "COSMOS-WYTH1-STP_TSOIL_50_30MIN_RAW"
+      "COSMOS-WYTH1-STP_TSOIL50_30MIN_RAW"
     ],
     "derivation": "PROCESS"
   },
