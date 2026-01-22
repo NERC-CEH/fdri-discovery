@@ -64,10 +64,10 @@ resources:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#point-latlong>"
                 "@type": "<geos:Geometry>"
                 "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
-        "<geo:lat>": "{LATITUDE}"
-        "<geo:long>": "{LONGITUDE}"
-        "<spatialrelations:easting>": "{EASTING}"
-        "<spatialrelations:northing>": "{NORTHING}"
+        "<geo:lat>": "{LATITUDE|asDecimal}"
+        "<geo:long>": "{LONGITUDE|asDecimal}"
+        "<spatialrelations:easting>": "{EASTING|asDecimal}"
+        "<spatialrelations:northing>": "{NORTHING|asDecimal}"
 
     - name: RegionGroup
       requires:
@@ -99,10 +99,10 @@ resources:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
                 "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
-        "<geo:lat>": "{LATITUDE}"
-        "<geo:long>": "{LONGITUDE}"
-        "<spatialrelations:easting>": "{EASTING}"
-        "<spatialrelations:northing>": "{NORTHING}"
+        "<geo:lat>": "{LATITUDE|asDecimal}"
+        "<geo:long>": "{LONGITUDE|asDecimal}"
+        "<spatialrelations:easting>": "{EASTING|asDecimal}"
+        "<spatialrelations:northing>": "{NORTHING|asDecimal}"
         "<fdri:altitude>": "{ALTITUDE | asDecimal}"
         "<fdri:operatingPeriod>":
           - name: OperatingPeriod

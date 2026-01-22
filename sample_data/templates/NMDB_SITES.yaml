@@ -38,8 +38,8 @@ resources:
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
-      "<geo:lat>": "{LATITUDE}"
-      "<geo:long>": "{LONGITUDE}"
+      "<geo:lat>": "{LATITUDE | asDecimal}"
+      "<geo:long>": "{LONGITUDE | asDecimal}"
       "<fdri:altitude>": "{ALTITUDE | asDecimal}"
       "<fdri:operatingPeriod>":
         - name: OperatingPeriod
