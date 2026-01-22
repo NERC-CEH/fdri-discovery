@@ -87,10 +87,10 @@ resources:
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
-      "<geo:lat>": "{LATITUDE}"
-      "<geo:long>": "{LONGITUDE}"
-      "<spatialrelations:easting>": "{EASTING}"
-      "<spatialrelations:northing>": "{NORTHING}"
+      "<geo:lat>": "{LATITUDE|asDecimal}"
+      "<geo:long>": "{LONGITUDE|asDecimal}"
+      "<spatialrelations:easting>": "{EASTING|asDecimal}"
+      "<spatialrelations:northing>": "{NORTHING|asDecimal}"
 
   - name: OperatorAgent
     requires:
@@ -119,6 +119,7 @@ resources:
         - "{NRFA_ID}"
       "^<fdri:contains>": <::Nrfa>
       "^<fdri:utilises>": <::NrfaProgramme>
+      "<fdri:utilisedBy>": <::NrfaProgramme>
       "<sosa:hasFeatureOfInterest>": <::MonitoredFeature>
       "<geos:hasGeometry>":
         - name: EastingsNorthingsPoint
@@ -132,10 +133,10 @@ resources:
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
-      "<geo:lat>": "{LATITUDE}"
-      "<geo:long>": "{LONGITUDE}"
-      "<spatialrelations:easting>": "{EASTING}"
-      "<spatialrelations:northing>": "{NORTHING}"
+      "<geo:lat>": "{LATITUDE|asDecimal}"
+      "<geo:long>": "{LONGITUDE|asDecimal}"
+      "<spatialrelations:easting>": "{EASTING|asDecimal}"
+      "<spatialrelations:northing>": "{NORTHING|asDecimal}"
       "<fdri:altitude>": "{ALTITUDE|asDecimal}"
       "<fdri:hasAnnotation>":
         - name: CatchmentArea

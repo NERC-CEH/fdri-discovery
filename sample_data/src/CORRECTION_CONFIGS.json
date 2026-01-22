@@ -17,7 +17,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-ALIC1-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-ALIC1-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -39,7 +39,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-ALIC1-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-ALIC1-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -61,7 +61,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SHEEP-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SHEEP-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -83,7 +83,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SHEEP-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SHEEP-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -105,7 +105,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BUNNY-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BUNNY-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -127,7 +127,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BUNNY-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BUNNY-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -149,7 +149,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-PLYNL-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-PLYNL-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -171,7 +171,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-PLYNL-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-PLYNL-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -193,7 +193,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-ELMST-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-ELMST-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -215,7 +215,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SPENF-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SPENF-TA_30MIN_PROCESSED"
             }
         ]
     },
@@ -233,7 +233,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -255,7 +255,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -277,7 +277,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -299,7 +299,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -321,7 +321,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -343,7 +343,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -365,7 +365,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -387,7 +387,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -409,7 +409,7 @@
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-TA_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "SITE_ATTRIBUTE",
@@ -1653,11 +1653,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BALRD-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BALRD-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BALRD-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BALRD-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1670,11 +1670,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BICKL-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BICKL-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BICKL-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BICKL-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1687,11 +1687,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BUNNY-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BUNNY-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-BUNNY-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-BUNNY-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1704,11 +1704,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CARDT-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CARDT-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CARDT-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CARDT-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1721,11 +1721,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CGARW-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CGARW-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CGARW-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CGARW-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1738,11 +1738,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CHOBH-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CHOBH-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CHOBH-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CHOBH-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1755,11 +1755,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-COCLP-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-COCLP-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-COCLP-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-COCLP-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1772,11 +1772,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CRICH-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CRICH-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CRICH-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CRICH-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1789,11 +1789,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-EASTB-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-EASTB-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-EASTB-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-EASTB-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1806,11 +1806,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-ELMST-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-ELMST-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-ELMST-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-ELMST-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1823,11 +1823,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-EUSTN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-EUSTN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-EUSTN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-EUSTN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1840,11 +1840,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-GISBN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-GISBN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-GISBN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-GISBN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1857,11 +1857,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-GLENS-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-GLENS-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-GLENS-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-GLENS-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1874,11 +1874,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-GLENW-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-GLENW-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-GLENW-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-GLENW-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1891,11 +1891,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HADLW-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HADLW-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HADLW-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HADLW-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1908,11 +1908,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HARTW-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HARTW-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HARTW-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HARTW-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1925,11 +1925,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HENFS-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HENFS-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HENFS-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HENFS-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1942,11 +1942,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HILLB-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HILLB-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HILLB-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HILLB-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1959,11 +1959,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1976,11 +1976,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-LIZRD-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-LIZRD-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-LIZRD-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-LIZRD-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -1993,11 +1993,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-LODTN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-LODTN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-LODTN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-LODTN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2010,11 +2010,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-LULLN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-LULLN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-LULLN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-LULLN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2027,11 +2027,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-MOORH-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-MOORH-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-MOORH-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-MOORH-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2044,11 +2044,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-MORLY-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-MORLY-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-MORLY-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-MORLY-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2061,11 +2061,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-NWYKE-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-NWYKE-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-NWYKE-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-NWYKE-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2078,11 +2078,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-PLYNL-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-PLYNL-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-PLYNL-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-PLYNL-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2095,11 +2095,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-PORTN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-PORTN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-PORTN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-PORTN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2112,11 +2112,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-RDMER-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-RDMER-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-RDMER-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-RDMER-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2129,11 +2129,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-REDHL-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-REDHL-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-REDHL-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-REDHL-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2146,11 +2146,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-RISEH-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-RISEH-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-RISEH-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-RISEH-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2163,11 +2163,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-ROTHD-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-ROTHD-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-ROTHD-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-ROTHD-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2180,11 +2180,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SOURH-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SOURH-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SOURH-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SOURH-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2197,11 +2197,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SPENF-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SPENF-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SPENF-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SPENF-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2214,11 +2214,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-STGHT-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-STGHT-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-STGHT-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-STGHT-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2231,11 +2231,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-STIPS-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-STIPS-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-STIPS-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-STIPS-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2248,11 +2248,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-TADHM-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-TADHM-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-TADHM-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-TADHM-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2265,11 +2265,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-WRTTL-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-WRTTL-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-WRTTL-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-WRTTL-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2282,11 +2282,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CHIMN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CHIMN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-CHIMN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-CHIMN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2299,11 +2299,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-COCHN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-COCHN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-COCHN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-COCHN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2316,11 +2316,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-FIVET-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-FIVET-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-FIVET-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-FIVET-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2333,11 +2333,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HLACY-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HLACY-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HLACY-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HLACY-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2350,11 +2350,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HYBRY-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HYBRY-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HYBRY-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HYBRY-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2367,11 +2367,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-MOREM-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-MOREM-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-MOREM-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-MOREM-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2384,11 +2384,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SHEEP-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SHEEP-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SHEEP-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SHEEP-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2401,11 +2401,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SYDLG-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SYDLG-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-SYDLG-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-SYDLG-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2418,11 +2418,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-WADDN-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-WADDN-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-WADDN-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-WADDN-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2435,11 +2435,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-WIMPL-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-WIMPL-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-WIMPL-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-WIMPL-UY_30MIN_PROCESSED"
             }
         ]
     },
@@ -2452,11 +2452,11 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-FINCH-UX_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-FINCH-UX_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-FINCH-UY_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-FINCH-UY_30MIN_PROCESSED"
             }
         ]
     }
