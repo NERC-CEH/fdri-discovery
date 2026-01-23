@@ -18,7 +18,6 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "@type": "<fdri:TimeSeriesDataset>"
-      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{TIMESERIES_DEF|slug}>"
       "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:originatingSite>": "<::Site>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/cosmos>"
