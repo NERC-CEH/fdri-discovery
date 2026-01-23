@@ -35,15 +35,16 @@ embedded:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}>"
       "@type": "<fdri:ConfigurationArgument>"
-      "<fdri:hasValue>":
-        - name: NestedArgumentValue
+      "<fdri:hasStructuredValue>":
+        - name: StructuredValue
           requires:
             key:
               - deployment_attribute
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.value>"
-            "@type": "<schema:PropertyValue>"
-            "<schema:valueReference>": "{value|map_to('NestedMethodArgument')}"
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.structuredValue>"
+            "@type": "<fdri:ConfigurationArgumentList>"
+            "<fdri:hasArgument>": "{value|map_to('NestedMethodArgument')}"
+      "<fdri:hasValue>":
         - name: ArgumentValue
           unless:
             key:
