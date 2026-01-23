@@ -43,7 +43,7 @@ embedded:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.structuredValue>"
             "@type": "<fdri:ConfigurationArgumentList>"
-            "<fdri:hasArgument>": "{value|map_to('NestedMethodArgument')}"
+            "<fdri:argument>": "{value|map_to('NestedMethodArgument')}"
       "<fdri:hasValue>":
         - name: ArgumentValue
           unless:
