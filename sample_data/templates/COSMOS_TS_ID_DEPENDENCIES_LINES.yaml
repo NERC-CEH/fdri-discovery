@@ -10,7 +10,7 @@ imports:
 embedded:
   - name: Dependency
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{id|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{dep_id|slug}>"
 
   - name: NestedMethodArgument
     properties:
@@ -30,6 +30,18 @@ embedded:
           "<skos:inScheme>": "<::ConfigurationParameterScheme>"
           "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
           "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
+
+  - name: DependencyArgument
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#dep_ts>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": <http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts>
+      "<fdri:hasValue>":
+        - name: DependencyArgumentValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#dep_ts.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{dep_id|slug}>"
 
   - name: MethodArgument
     properties:
@@ -87,19 +99,29 @@ resources:
                   "<fdri:appliesToTimeSeries>": "<::Dataset>"
                   "<fdri:hasCurrentConfiguration>":
                     - name: ProcessingConfigItem
-                      requires:
-                        method:
                       properties:
                         "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current>"
                         "@type": "<fdri:ConfigurationItem>"
                         "<fdri:method>":
                           - name: ProcessingMethod
+                            requires:
+                              method:
                             properties:
                               "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
                               "@type": "<fdri:DataProcessingMethod>"
                               "<skos:inScheme>": "<::DataProcessingMethodScheme>"
                               "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
-                        "<fdri:argument>": "{args|map_to('MethodArgument')}"
+                          - name: DerivationMethod
+                            unless:
+                              method:
+                            properties:
+                              "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{derivation|slug}>"
+                              "@type": "<fdri:DataProcessingMethod>"
+                              "<skos:inScheme>": "<::DataProcessingMethodScheme>"
+                              "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
+                        "<fdri:argument>":
+                          - "{depends_on|map_to('DependencyArgument')}"
+                          - "{args|map_to('MethodArgument')}"
                         "<fdri:interval>":
                           - name: ProcessingConfigurationItemInterval
                             properties:
