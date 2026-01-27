@@ -43,6 +43,18 @@ embedded:
             "@type": "<schema:PropertyValue>"
             "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{dep_id|slug}>"
 
+  - name: LoadDependencyArgument
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#load_dep_ts>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": <http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts>
+      "<fdri:hasValue>":
+        - name: DependencyArgumentValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#load_dep_ts.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{dep_id|slug}>"
+
   - name: MethodArgument
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}>"
@@ -122,6 +134,7 @@ resources:
                         "<fdri:argument>":
                           - "{depends_on|map_to('DependencyArgument')}"
                           - "{args|map_to('MethodArgument')}"
+                          - "{load_depends_on|map_to('LoadDependencyArgument')}"
                         "<fdri:interval>":
                           - name: ProcessingConfigurationItemInterval
                             properties:
