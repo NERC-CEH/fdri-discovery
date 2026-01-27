@@ -73,7 +73,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}>"
       "@type": <fdri:ConfigurationItem>
-      "^<fdri:hadConfiguration>": <::MaskConfiguration>
+      "^<fdri:hadValue>": <::MaskConfiguration>
       "<fdri:observationInterval>":
         - name: ClosedDateRange
           properties:
@@ -87,7 +87,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{SITE_ID|slug}-{FEATURE_ID|slug}-{RESOLUTION|slug}-{SEQ|slug}>"
       "@type": <fdri:ConfigurationItem>
-      "^<fdri:hasCurrentConfiguration>": <::MaskConfiguration>
+      "^<fdri:hasCurrentValue>": <::MaskConfiguration>
       "<fdri:observationInterval>":
         - name: OpenDateRange
           properties:

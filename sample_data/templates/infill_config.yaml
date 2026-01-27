@@ -56,7 +56,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}>"
       "@type": "<fdri:ConfigurationItem>"
-      "^<fdri:hasCurrentConfiguration>": "<::DataProcessingConfiguration>"
+      "^<fdri:hasCurrentValue>": "<::DataProcessingConfiguration>"
       "<fdri:observationInterval>":
         - name: ClosedConfigurationInterval
           requires:
