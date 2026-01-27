@@ -87,7 +87,7 @@ resources:
                         "<skos:inScheme>": "<::ConfigurationTypeScheme>"
                         "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
                   "<fdri:appliesToTimeSeries>": <::Dataset>
-                  "<fdri:hasCurrentConfiguration>": 
+                  "<fdri:hasCurrentValue>": 
                     - name: ProcessingConfigItem
                       requires:
                         method:

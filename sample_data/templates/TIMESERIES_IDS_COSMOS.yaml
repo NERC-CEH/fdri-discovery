@@ -18,6 +18,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "@type": "<fdri:TimeSeriesDataset>"
+      "<dct:identifier>": "{TIMESERIES_ID}"
       "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:originatingSite>": "<::Site>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/cosmos>"
@@ -25,6 +26,8 @@ resources:
       "<fdri:sourceDataset>": "{S3_DATASET}"
       "<fdri:sourceColumnName>": "{COLUMN_NAME}"
       "<fdri:sourceTimeColumnName>": "{TIME_COLUMN_NAME}"
+      "<fdri:measure>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"
 
   - name: SensorSlot
     requires:

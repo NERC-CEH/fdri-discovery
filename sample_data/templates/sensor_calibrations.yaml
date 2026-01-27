@@ -69,7 +69,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{TIMESERIES_ID|slug}-{START_TIMESTAMP|slug}>"
       "@type": "<fdri:ConfigurationItem>"
-      "^<fdri:hadConfiguration>": <::CalibrationConfiguration>
+      "^<fdri:hadValue>": <::CalibrationConfiguration>
       "<prov:wasGeneratedBy>": <::CalibrationActivity>
       "<fdri:observationInterval>":
         - name: CalibrationConfigurationInterval

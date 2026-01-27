@@ -97,7 +97,7 @@ resources:
                         "<skos:inScheme>": "<::ConfigurationTypeScheme>"
                         "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
                   "<fdri:appliesToTimeSeries>": "<::Dataset>"
-                  "<fdri:hasCurrentConfiguration>":
+                  "<fdri:hasCurrentValue>":
                     - name: ProcessingConfigItem
                       properties:
                         "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current>"

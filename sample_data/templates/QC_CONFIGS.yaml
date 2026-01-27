@@ -34,7 +34,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{FLAG_TS|slug}-{METHOD_ID|slug}-current>"
       "@type": <fdri:ConfigurationItem>
-      "^<fdri:hasCurrentConfiguration>": <::ProcessingConfiguration>
+      "^<fdri:hasCurrentValue>": <::ProcessingConfiguration>
       "<fdri:method>": <::Method>
 
   - name: ConfigurationArgument
