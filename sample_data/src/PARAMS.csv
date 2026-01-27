@@ -1,6 +1,7 @@
 PARAM_ID,PARAM_NAME,PARAM_DESCRIPTION
 FLAG_TS,Flag Timeseries,The time-series that is flagged by a QC processing method
 DEP_TS,Dependency Timeseries,The time-series that a processing method depends on
+LOAD_DEP_TS,Load Dependency Timeseries,The time-series that a processing method depends on that should be directly loaded
 GT,Greater than,Value greater than
 LT,Less than,Value less than
 GE,Equal or greater than,Value equal or greater than
