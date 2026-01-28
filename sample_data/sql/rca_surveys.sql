@@ -1,5 +1,7 @@
 CREATE TABLE IF NOT EXISTS metadata AS FROM './sample_data/src/rca_excel/metadata.parquet';
 UPDATE metadata SET Date = substr(Date, 0, 11);
+UPDATE metadata SET "Start Time" = lpad("Start Time", 4, '0') WHERE length("Start Time") < 4;
+UPDATE metadata SET "End Time" = lpad("End Time", 4, '0') WHERE length("End Time") < 4;
 COPY (
     SELECT
         str_split("Site Name", ' ')[1] as Site_ID, 
