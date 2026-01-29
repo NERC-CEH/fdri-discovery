@@ -12,7 +12,7 @@ one_offs:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/annotation-property>"
       "@type": <fdri:VariableScheme>
-      "<skos:prefLabel>": "Annotation Property Scheme@en"
+      "<dct:title>": "Annotation Property Scheme@en"
       "<rdfs:label>": "Annotation Property Scheme@en"
 
 resources:
@@ -59,7 +59,7 @@ resources:
       "<fdri:valueScheme>": "<{VALUE_SCHEME_URI}>"
       "<skos:prefLabel>": "{NAME}@en"
       "<rdfs:label>": "{NAME}@en"
-      "<dct:description>": "{DESCRIPTION}@en"
+      "<rdfs:comment>": "{DESCRIPTION}@en"
       "<skos:scopeNote>": "{DESCRIPTION}@en"
 
   - name: AnnotationPropertyConcept
@@ -70,7 +70,7 @@ resources:
       "@type": <skos:Concept>
       "<skos:prefLabel>": "{NAME}@en"
       "<rdfs:label>": "{NAME}@en"
-      "<dct:description>": "{DESCRIPTION}@en"
+      "<rdfs:comment>": "{DESCRIPTION}@en"
       "<skos:scopeNote>": "{DESCRIPTION}@en"
 
   - name: ParentRef

@@ -131,11 +131,11 @@ resources:
       "<fdri:originatingActivity>": "<::Survey>"
       "<fdri:originatingSite>": "<::Site>"
       "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
-      "<sosa:observes>":
-        - <http://fdri.ceh.ac.uk/ref/common/cop/rev_count>
+      "<sosa:observedProperty>":
+        - <http://fdri.ceh.ac.uk/ref/common/cop/rev>
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
         - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
-      "<fdri:measures>":
+      "<fdri:measure>":
         - <http://fdri.ceh.ac.uk/ref/common/measure/rev-total-count>
         - <http://fdri.ceh.ac.uk/ref/common/measure/angular_velocity-revs-1>
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>

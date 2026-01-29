@@ -127,7 +127,7 @@ resources:
         - "{description}@en"
         - "{source}@en"
       "<dcat:temporalResolution>": "{temporal_resolution}^^<xsd:duration>"
-      "<dct:keyword>": "{keywords|split(',')|trim()}"
+      "<dcat:keyword>": "{keywords|split(',')|trim()}"
       "<dct:created>": "{date_created|asDateTime}"
       "<dct:license>": "<{license}>"
       "<dct:identifier>": "{id}"
