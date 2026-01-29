@@ -14,7 +14,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}>"
       "@type": "<fdri:Fault>"
-      "<dct:description>": "{DESCRIPTION_OF_ISSUE}@en"
+      "<rdfs:comment>": "{DESCRIPTION_OF_ISSUE}@en"
       "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
       "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
       "<fdri:interval>":
@@ -25,6 +25,7 @@ resources:
           "<dcat:startDate>": "{START_DATETIME|asDateTime}"
           "<dcat:endDate>": "{END_DATETIME|asDateTime}"
       "<fdri:affectedFacility>": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
+
   - name: StationFault
     requires:
       VARIABLE:
@@ -32,7 +33,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}>"
       "@type": "<fdri:Fault>"
-      "<dct:description>": "{DESCRIPTION_OF_ISSUE}@en"
+      "<rdfs:comment>": "{DESCRIPTION_OF_ISSUE}@en"
       "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
       "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
       "<fdri:interval>":

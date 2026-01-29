@@ -140,7 +140,7 @@ build/context/%.context.jsonld: $(SCHEMA_FILE) | build/context
 	$(RUN) record-spec-cmd json-ld -r $(*F) -o $@ $^
 
 $(SHACL_BASE)/fdri_shacl.ttl: $(SCHEMA_FILE) | $(SHACL_BASE)
-	$(RUN) record-spec-cmd shacl -o $@ $^
+	$(RUN) record-spec-cmd shacl --closed -o $@ $^
 
 $(SHACL_BASE)/fdri_shacl_with_refs.ttl: $(SCHEMA_FILE) | $(SHACL_BASE)
 	$(RUN) record-spec-cmd shacl --with-reference-type-validation -o $@ $^
