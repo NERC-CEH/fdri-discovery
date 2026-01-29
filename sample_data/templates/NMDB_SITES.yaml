@@ -40,7 +40,7 @@ resources:
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
       "<geo:lat>": "{LATITUDE | asDecimal}"
       "<geo:long>": "{LONGITUDE | asDecimal}"
-      "<fdri:altitude>": "{ALTITUDE | asDecimal}"
+      "<geo:alt>": "{ALTITUDE | asDecimal}"
       "<fdri:operatingPeriod>":
         - name: OperatingPeriod
           properties:

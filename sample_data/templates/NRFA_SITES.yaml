@@ -137,7 +137,7 @@ resources:
       "<geo:long>": "{LONGITUDE|asDecimal}"
       "<spatialrelations:easting>": "{EASTING|asDecimal}"
       "<spatialrelations:northing>": "{NORTHING|asDecimal}"
-      "<fdri:altitude>": "{ALTITUDE|asDecimal}"
+      "<geo:alt>": "{ALTITUDE|asDecimal}"
       "<fdri:hasAnnotation>":
         - name: CatchmentArea
           properties:
