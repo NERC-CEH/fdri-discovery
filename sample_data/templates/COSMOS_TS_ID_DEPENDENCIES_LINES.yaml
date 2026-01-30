@@ -8,11 +8,10 @@ imports:
     - extensions.py
 
 embedded:
-  - name: DependencyDef
+  - name: Dependency
     properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/cosmos/time-series/{id|slug}>
-      "@type": <fdri:TimeSeriesDefinition>
-  
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{dep_id|slug}>"
+
   - name: NestedMethodArgument
     properties:
       "@id": "<{$parentID}.{child_key|slug}>"
@@ -32,6 +31,30 @@ embedded:
           "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
           "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
 
+  - name: DependencyArgument
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#dep_ts>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": <http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts>
+      "<fdri:hasValue>":
+        - name: DependencyArgumentValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#dep_ts.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{dep_id|slug}>"
+
+  - name: LoadDependencyArgument
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#load_dep_ts>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": <http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts>
+      "<fdri:hasValue>":
+        - name: DependencyArgumentValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#load_dep_ts.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{dep_id|slug}>"
+
   - name: MethodArgument
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}>"
@@ -44,7 +67,7 @@ embedded:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.structuredValue>"
             "@type": "<fdri:ConfigurationArgumentList>"
-            "<fdri:hasArgument>": "{value|map_to('NestedMethodArgument')}"
+            "<fdri:argument>": "{value|map_to('NestedMethodArgument')}"
       "<fdri:hasValue>":
         - name: ArgumentValue
           unless:
@@ -65,20 +88,19 @@ embedded:
 resources:
   - name: Dataset
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/time-series/{id|slug}>"
-      "@type": "<fdri:TimeSeriesDefinition>"
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{id|slug}>"
       "<fdri:methodology>":
-        - name: TSPlan
+        - name: Dependency
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/plan/cosmos-{id|slug}-derivation>"
-            "@type": "<fdri:TimeSeriesPlan>"
-            "<rdfs:label>": "Derivation Plan for Time Series Definition {id}@en"
-            "<fdri:uses>": "{depends_on|map_to('DependencyDef')}"
+            "@id": "<http://fdri.ceh.ac.uk/id/plan/{id|slug}>"
+            "@type": <fdri:TimeSeriesPlan>
+            "<fdri:uses>": "{depends_on|map_to('Dependency')}"
+            "<fdri:rawConfiguration>": "{raw}"
             "<fdri:configuration>":
               - name: ProcessingConfig
                 properties:
                   "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{id|slug}>"
-                  "@type": "<fdri:InternalDataProcessingConfiguration>"
+                  "@type": <fdri:InternalDataProcessingConfiguration>
                   "<dct:type>":
                     - name: ProcessingConfigType
                       properties:
@@ -86,25 +108,37 @@ resources:
                         "@type": "<fdri:DataProcessingConfigurationType>"
                         "<skos:inScheme>": "<::ConfigurationTypeScheme>"
                         "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
-                  "<fdri:appliesToTimeSeries>": <::Dataset>
-                  "<fdri:hasCurrentValue>": 
+                  "<fdri:appliesToTimeSeries>": "<::Dataset>"
+                  "<fdri:hasCurrentValue>":
                     - name: ProcessingConfigItem
-                      requires:
-                        method:
                       properties:
                         "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current>"
                         "@type": "<fdri:ConfigurationItem>"
                         "<fdri:method>":
                           - name: ProcessingMethod
+                            requires:
+                              method:
                             properties:
                               "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
                               "@type": "<fdri:DataProcessingMethod>"
                               "<skos:inScheme>": "<::DataProcessingMethodScheme>"
                               "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
-                        "<fdri:argument>": "{args|map_to('MethodArgument')}"
+                          - name: DerivationMethod
+                            unless:
+                              method:
+                            properties:
+                              "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{derivation|slug}>"
+                              "@type": "<fdri:DataProcessingMethod>"
+                              "<skos:inScheme>": "<::DataProcessingMethodScheme>"
+                              "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
+                        "<fdri:argument>":
+                          - "{depends_on|map_to('DependencyArgument')}"
+                          - "{args|map_to('MethodArgument')}"
+                          - "{load_depends_on|map_to('LoadDependencyArgument')}"
                         "<fdri:interval>":
                           - name: ProcessingConfigurationItemInterval
                             properties:
                               "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current.interval>"
                               "@type": "<dct:PeriodOfTime>"
                               "<dcat:startDate>": "2025-03-28T12:00:00Z^^<xsd:dateTime>"
+

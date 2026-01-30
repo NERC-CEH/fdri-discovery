@@ -25,12 +25,14 @@ one_offs:
       "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type>
       "@type": <fdri:FacilityGroupTypeScheme>
       "<dct:title>": "NRFA Monitoring Facility Group Types@en"
+      "<rdfs:label>": "NRFA Monitoring Facility Group Types@en"
 
   - name: RiverGroupType
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/river>
       "@type": <fdri:FacilityGroupType>
-      "<dct:title>": "NRFA River Group@en"
+      "<rdfs:label>": "NRFA River Group@en"
+      "<skos:prefLabel>": "NRFA River Group@en"
       "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
       "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
 
@@ -38,7 +40,8 @@ one_offs:
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/location>
       "@type": <fdri:FacilityGroupType>
-      "<dct:title>": "NRFA Location Group@en"
+      "<rdfs:label>": "NRFA Location Group@en"
+      "<skos:prefLabel>": "NRFA Location Group@en"
       "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
       "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
 
@@ -46,7 +49,8 @@ one_offs:
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/country>
       "@type": <fdri:FacilityGroupType>
-      "<dct:title>": "NRFA Country Group@en"
+      "<rdfs:label>": "NRFA Country Group@en"
+      "<skos:prefLabel>": "NRFA Country Group@en"
       "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
       "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
 
@@ -54,8 +58,10 @@ one_offs:
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/common/related-party-role/operator>
       "@type": <fdri:RelatedPartyRole>
-      "<dct:title>": "Operator@en"
-      "<dct:description>": "The organisation or person that operates the monitoring site@en"
+      "<skos:prefLabel>": "Operator@en"
+      "<skos:scopeNote>": "The organisation or person that operates the monitoring site@en"
+      "<rdfs:label>": "Operator@en"
+      "<rdfs:comment>": "The organisation or person that operates the monitoring site@en"
       "<skos:inScheme>": <::CommonRelatedPartyRoleScheme>
       "^<skos:hasTopConcept>": <::CommonRelatedPartyRoleScheme>
 
@@ -63,8 +69,10 @@ one_offs:
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/common/related-party-role/operator-organisation>
       "@type": <fdri:RelatedPartyRole>
-      "<dct:title>": "Operator Organisation@en"
-      "<dct:description>": "The parent organisation of the organisation or person that operates the monitoring site@en"
+      "<rdfs:label>": "Operator Organisation@en"
+      "<skos:prefLabel>": "Operator Organisation@en"
+      "<rdfs:comment>": "The parent organisation of the organisation or person that operates the monitoring site@en"
+      "<skos:scopeNote>": "The parent organisation of the organisation or person that operates the monitoring site@en"
       "<skos:inScheme>": <::CommonRelatedPartyRoleScheme>
       "^<skos:hasTopConcept>": <::CommonRelatedPartyRoleScheme>
 
@@ -87,10 +95,10 @@ resources:
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
-      "<geo:lat>": "{LATITUDE}"
-      "<geo:long>": "{LONGITUDE}"
-      "<spatialrelations:easting>": "{EASTING}"
-      "<spatialrelations:northing>": "{NORTHING}"
+      "<geo:lat>": "{LATITUDE|asDecimal}"
+      "<geo:long>": "{LONGITUDE|asDecimal}"
+      "<spatialrelations:easting>": "{EASTING|asDecimal}"
+      "<spatialrelations:northing>": "{NORTHING|asDecimal}"
 
   - name: OperatorAgent
     requires:
@@ -133,11 +141,11 @@ resources:
             "@type": "<geos:Geometry>"
             "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
-      "<geo:lat>": "{LATITUDE}"
-      "<geo:long>": "{LONGITUDE}"
-      "<spatialrelations:easting>": "{EASTING}"
-      "<spatialrelations:northing>": "{NORTHING}"
-      "<fdri:altitude>": "{ALTITUDE|asDecimal}"
+      "<geo:lat>": "{LATITUDE|asDecimal}"
+      "<geo:long>": "{LONGITUDE|asDecimal}"
+      "<spatialrelations:easting>": "{EASTING|asDecimal}"
+      "<spatialrelations:northing>": "{NORTHING|asDecimal}"
+      "<geo:alt>": "{ALTITUDE|asDecimal}"
       "<fdri:hasAnnotation>":
         - name: CatchmentArea
           properties:
@@ -185,7 +193,7 @@ resources:
     properties:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-river-{RIVER|slug}>
       "@type": <fdri:FacilityGroup>
-      "<dct:title>": "{RIVER}@en"
+      "<rdfs:label>": "{RIVER}@en"
       "<dct:type>": <::RiverGroupType>
       "<fdri:hasMember>": <::MonitoringSite>
 
@@ -193,7 +201,7 @@ resources:
     properties:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-location-{LOCATION|slug}>
       "@type": <fdri:FacilityGroup>
-      "<dct:title>": "{LOCATION}@en"
+      "<rdfs:label>": "{LOCATION}@en"
       "<dct:type>": <::LocationGroupType>
       "<fdri:hasMember>": <::MonitoringSite>
 
@@ -203,7 +211,7 @@ resources:
     properties:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-country-{COUNTRY_CODE|slug}>
       "@type": <fdri:FacilityGroup>
-      "<dct:title>": "{COUNTRY_CODE}@en"
+      "<rdfs:label>": "{COUNTRY_CODE}@en"
       "<dct:type>": <::CountryGroupType>
       "<fdri:hasMember>": <::MonitoringSite>
 

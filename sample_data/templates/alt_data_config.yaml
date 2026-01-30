@@ -80,7 +80,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/cosmos-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}>"
       "@type": <fdri:ConfigurationItem>
-      "^<fdri:hasCurrentConfiguration>": <::DataProcessingConfiguration>
+      "^<fdri:hasCurrentValue>": <::DataProcessingConfiguration>
       "<fdri:method>": <::AltDataMethod>
       "<fdri:observationInterval>":
         - name: ClosedConfigurationInterval

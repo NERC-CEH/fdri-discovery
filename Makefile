@@ -29,11 +29,11 @@ RECORDS = \
 SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
+SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
-SAMPLES += $(TTL_BASE)/direct_deps_cosmos.ttl
 SAMPLES += $(TTL_BASE)/FACILITY_USAGE_ROLES.ttl
 SAMPLES += $(TTL_BASE)/infill_config.ttl
 SAMPLES += $(TTL_BASE)/INSTRUMENTATION.ttl
@@ -58,13 +58,10 @@ SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
 SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
-SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
-SAMPLES += $(TTL_BASE)/timeseries_measures_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
-SAMPLES += $(TTL_BASE)/tsdef_dependencies.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
 
 # NRFA
@@ -143,7 +140,7 @@ build/context/%.context.jsonld: $(SCHEMA_FILE) | build/context
 	$(RUN) record-spec-cmd json-ld -r $(*F) -o $@ $^
 
 $(SHACL_BASE)/fdri_shacl.ttl: $(SCHEMA_FILE) | $(SHACL_BASE)
-	$(RUN) record-spec-cmd shacl -o $@ $^
+	$(RUN) record-spec-cmd shacl --closed -o $@ $^
 
 $(SHACL_BASE)/fdri_shacl_with_refs.ttl: $(SCHEMA_FILE) | $(SHACL_BASE)
 	$(RUN) record-spec-cmd shacl --with-reference-type-validation -o $@ $^
@@ -207,8 +204,8 @@ build/timeseries_measures_fdri.csv: $(SRC)/TIMESERIES_DEFS_FDRI.csv $(SRC)/TIMES
 build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMESERIES_IDS_NMDB.csv $(SQL)/timeseries_measures_nmdb.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_nmdb.sql"
 
-build/tsdef_dependencies.json: $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json $(SQL)/tsdef_dependencies.jq | build
-	$(RUN) /bin/bash -c "jq -c -f $(SQL)/tsdef_dependencies.jq < $(SRC)/TIMESERIES_DEF_DEPENDENCIES.json > $@"
+build/COSMOS_TS_ID_DEPENDENCIES_LINES.json: $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json $(SQL)/ts_id_dependencies.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/ts_id_dependencies.jq < $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json > $@"
 
 build/CORRECTION_CONFIGS_LINES.json: $(SRC)/CORRECTION_CONFIGS.json $(SQL)/CORRECTION_CONFIGS_LINES.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/CORRECTION_CONFIGS_LINES.jq < $(SRC)/CORRECTION_CONFIGS.json > $@"
@@ -233,9 +230,6 @@ build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql 
 
 build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
-
-build/direct_deps_cosmos.json: ${SRC}/DIRECT_DEPENDS_COSMOS.json ${SQL}/DIRECT_DEPENDS.jq | build
-	$(RUN) /bin/bash -c "jq -c -f ${SQL}/DIRECT_DEPENDS.jq < ${SRC}/DIRECT_DEPENDS_COSMOS.json > $@"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

@@ -62,7 +62,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{|hash(CORRECT_TS, METHOD_ID, OBS_START_DATETIME, USE_START_DATETIME)|slug}>"
       "@type": <fdri:ConfigurationItem>
       "<rdfs:label>": "{DESCRIPTION}: {CORRECT_TS}@en"
-      "^<fdri:hasCurrentConfiguration>": "<::Configuration>"
+      "^<fdri:hasCurrentValue>": "<::Configuration>"
       "<fdri:method>": "<http://fdri.ceh.ac.uk/ref/common/method/{METHOD_ID|slug}>"
       "<fdri:observationInterval>":
         - name: ClosedObservationInterval

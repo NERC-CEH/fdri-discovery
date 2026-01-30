@@ -17,7 +17,7 @@ one_offs:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/group-type/region>"
       "@type": "<fdri:FacilityGroupType>"
-      "<dct:title>": "COSMOS Region Group@en"
+      "<skos:prefLabel>": "COSMOS Region Group@en"
       "<skos:inScheme>": <::CosmosFacilityGroupTypeScheme>
       "^<skos:hasTopConcept>": <::CosmosFacilityGroupTypeScheme>
   - name: SoilTypeScheme
@@ -64,10 +64,10 @@ resources:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#point-latlong>"
                 "@type": "<geos:Geometry>"
                 "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
-        "<geo:lat>": "{LATITUDE}"
-        "<geo:long>": "{LONGITUDE}"
-        "<spatialrelations:easting>": "{EASTING}"
-        "<spatialrelations:northing>": "{NORTHING}"
+        "<geo:lat>": "{LATITUDE|asDecimal}"
+        "<geo:long>": "{LONGITUDE|asDecimal}"
+        "<spatialrelations:easting>": "{EASTING|asDecimal}"
+        "<spatialrelations:northing>": "{NORTHING|asDecimal}"
 
     - name: RegionGroup
       requires:
@@ -75,7 +75,7 @@ resources:
       properties:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/cosmos-region-{REGION|slug}>"
         "@type": <fdri:FacilityGroup>
-        "<dct:title>": "{REGION} Region Group"
+        "<rdfs:label>": "{REGION} Region Group"
         "<dct:type>": <::RegionGroupType>
     
     - name: MonitoringSite
@@ -99,11 +99,11 @@ resources:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
                 "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
-        "<geo:lat>": "{LATITUDE}"
-        "<geo:long>": "{LONGITUDE}"
-        "<spatialrelations:easting>": "{EASTING}"
-        "<spatialrelations:northing>": "{NORTHING}"
-        "<fdri:altitude>": "{ALTITUDE | asDecimal}"
+        "<geo:lat>": "{LATITUDE|asDecimal}"
+        "<geo:long>": "{LONGITUDE|asDecimal}"
+        "<spatialrelations:easting>": "{EASTING|asDecimal}"
+        "<spatialrelations:northing>": "{NORTHING|asDecimal}"
+        "<geo:alt>": "{ALTITUDE | asDecimal}"
         "<fdri:operatingPeriod>":
           - name: OperatingPeriod
             properties:

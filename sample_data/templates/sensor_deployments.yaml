@@ -20,7 +20,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
-      "<dct:title>": "{INSTRUMENT_ID} {SERIAL_NUMBER}@en"
+      "<rdfs:label>": "{INSTRUMENT_ID} {SERIAL_NUMBER}@en"
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
       "<fdri:serialNumber>": "{SERIAL_NUMBER}"
 
@@ -31,7 +31,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
       "@type": "<fdri:StaticDeployment>"
-      "<dct:title>": "Deployment of {INSTRUMENT_ID} {SERIAL_NUMBER} to {SENSOR_SLOT_ID} at {SITE_ID}@en"
+      "<rdfs:label>": "Deployment of {INSTRUMENT_ID} {SERIAL_NUMBER} to {SENSOR_SLOT_ID} at {SITE_ID}@en"
       "<ssn:deployedSystem>": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
       "<ssn:deployedOnPlatform>": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}>"
       "<prov:startedAtTime>": "{START_DATETIME|asDateTime}"
@@ -44,7 +44,6 @@ resources:
       END_DATETIME:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
-      "@type": "<fdri:Deployment>"
       "<prov:endedAtTime>": "{END_DATETIME|asDateTime}"
 
   - name: SensorDeploymentComments
@@ -54,5 +53,4 @@ resources:
       COMMENTS:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/deployment/cosmos-deployment-{SITE_ID|slug}-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{INSTANCE|asInt}>"
-      "@type": "<fdri:Deployment>"
-      "<dct:description>": "{COMMENTS}@en"
+      "<rdfs:comment>": "{COMMENTS}@en"
