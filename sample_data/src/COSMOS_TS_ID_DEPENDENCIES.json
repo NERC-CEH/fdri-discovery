@@ -433,10 +433,11 @@
     "depends_on": [
       "COSMOS-ALIC1-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ALIC1-LWIN_30MIN_PROCESSED": {
@@ -455,10 +456,11 @@
     "depends_on": [
       "COSMOS-ALIC1-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ALIC1-LWOUT_30MIN_PROCESSED": {
@@ -651,10 +653,11 @@
     "depends_on": [
       "COSMOS-ALIC1-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ALIC1-RN_30MIN_PROCESSED": {
@@ -818,10 +821,11 @@
     "depends_on": [
       "COSMOS-ALIC1-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ALIC1-SWIN_30MIN_PROCESSED": {
@@ -834,10 +838,11 @@
     "depends_on": [
       "COSMOS-ALIC1-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ALIC1-SWOUT_30MIN_PROCESSED": {
@@ -987,8 +992,8 @@
     "depends_on": [
       "COSMOS-ALIC1-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -1462,10 +1467,11 @@
     "depends_on": [
       "COSMOS-BALRD-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BALRD-LWIN_30MIN_PROCESSED": {
@@ -1484,10 +1490,11 @@
     "depends_on": [
       "COSMOS-BALRD-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BALRD-LWOUT_30MIN_PROCESSED": {
@@ -1680,10 +1687,11 @@
     "depends_on": [
       "COSMOS-BALRD-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BALRD-RN_30MIN_PROCESSED": {
@@ -1847,10 +1855,11 @@
     "depends_on": [
       "COSMOS-BALRD-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BALRD-SWIN_30MIN_PROCESSED": {
@@ -1863,10 +1872,11 @@
     "depends_on": [
       "COSMOS-BALRD-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BALRD-SWOUT_30MIN_PROCESSED": {
@@ -2052,8 +2062,8 @@
     "depends_on": [
       "COSMOS-BALRD-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -2527,10 +2537,11 @@
     "depends_on": [
       "COSMOS-BICKL-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BICKL-LWIN_30MIN_PROCESSED": {
@@ -2549,10 +2560,11 @@
     "depends_on": [
       "COSMOS-BICKL-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BICKL-LWOUT_30MIN_PROCESSED": {
@@ -2773,10 +2785,11 @@
     "depends_on": [
       "COSMOS-BICKL-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BICKL-RN_30MIN_PROCESSED": {
@@ -2940,10 +2953,11 @@
     "depends_on": [
       "COSMOS-BICKL-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BICKL-SWIN_30MIN_PROCESSED": {
@@ -2956,10 +2970,11 @@
     "depends_on": [
       "COSMOS-BICKL-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BICKL-SWOUT_30MIN_PROCESSED": {
@@ -3145,8 +3160,8 @@
     "depends_on": [
       "COSMOS-BICKL-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -3620,10 +3635,11 @@
     "depends_on": [
       "COSMOS-BUNNY-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BUNNY-LWIN_30MIN_PROCESSED": {
@@ -3642,10 +3658,11 @@
     "depends_on": [
       "COSMOS-BUNNY-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BUNNY-LWOUT_30MIN_PROCESSED": {
@@ -3866,10 +3883,11 @@
     "depends_on": [
       "COSMOS-BUNNY-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BUNNY-RN_30MIN_PROCESSED": {
@@ -4033,10 +4051,11 @@
     "depends_on": [
       "COSMOS-BUNNY-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BUNNY-SWIN_30MIN_PROCESSED": {
@@ -4049,10 +4068,11 @@
     "depends_on": [
       "COSMOS-BUNNY-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-BUNNY-SWOUT_30MIN_PROCESSED": {
@@ -4238,8 +4258,8 @@
     "depends_on": [
       "COSMOS-BUNNY-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -4713,10 +4733,11 @@
     "depends_on": [
       "COSMOS-CARDT-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CARDT-LWIN_30MIN_PROCESSED": {
@@ -4735,10 +4756,11 @@
     "depends_on": [
       "COSMOS-CARDT-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CARDT-LWOUT_30MIN_PROCESSED": {
@@ -4959,10 +4981,11 @@
     "depends_on": [
       "COSMOS-CARDT-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CARDT-RN_30MIN_PROCESSED": {
@@ -5126,10 +5149,11 @@
     "depends_on": [
       "COSMOS-CARDT-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CARDT-SWIN_30MIN_PROCESSED": {
@@ -5142,10 +5166,11 @@
     "depends_on": [
       "COSMOS-CARDT-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CARDT-SWOUT_30MIN_PROCESSED": {
@@ -5331,8 +5356,8 @@
     "depends_on": [
       "COSMOS-CARDT-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -5893,10 +5918,11 @@
     "depends_on": [
       "COSMOS-CGARW-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CGARW-LWIN_30MIN_PROCESSED": {
@@ -5915,10 +5941,11 @@
     "depends_on": [
       "COSMOS-CGARW-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CGARW-LWOUT_30MIN_PROCESSED": {
@@ -6093,10 +6120,11 @@
     "depends_on": [
       "COSMOS-CGARW-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CGARW-RN_30MIN_PROCESSED": {
@@ -6325,10 +6353,11 @@
     "depends_on": [
       "COSMOS-CGARW-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CGARW-SWIN_30MIN_PROCESSED": {
@@ -6341,10 +6370,11 @@
     "depends_on": [
       "COSMOS-CGARW-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CGARW-SWOUT_30MIN_PROCESSED": {
@@ -6898,8 +6928,8 @@
     "depends_on": [
       "COSMOS-CGARW-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -7403,10 +7433,11 @@
     "depends_on": [
       "COSMOS-CHIMN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHIMN-LWIN_30MIN_PROCESSED": {
@@ -7425,10 +7456,11 @@
     "depends_on": [
       "COSMOS-CHIMN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHIMN-LWOUT_30MIN_PROCESSED": {
@@ -7694,10 +7726,11 @@
     "depends_on": [
       "COSMOS-CHIMN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHIMN-RN_30MIN_PROCESSED": {
@@ -7861,10 +7894,11 @@
     "depends_on": [
       "COSMOS-CHIMN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHIMN-SWIN_30MIN_PROCESSED": {
@@ -7877,10 +7911,11 @@
     "depends_on": [
       "COSMOS-CHIMN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHIMN-SWOUT_30MIN_PROCESSED": {
@@ -8434,8 +8469,8 @@
     "depends_on": [
       "COSMOS-CHIMN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -8909,10 +8944,11 @@
     "depends_on": [
       "COSMOS-CHOBH-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHOBH-LWIN_30MIN_PROCESSED": {
@@ -8931,10 +8967,11 @@
     "depends_on": [
       "COSMOS-CHOBH-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHOBH-LWOUT_30MIN_PROCESSED": {
@@ -9155,10 +9192,11 @@
     "depends_on": [
       "COSMOS-CHOBH-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHOBH-RN_30MIN_PROCESSED": {
@@ -9322,10 +9360,11 @@
     "depends_on": [
       "COSMOS-CHOBH-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHOBH-SWIN_30MIN_PROCESSED": {
@@ -9338,10 +9377,11 @@
     "depends_on": [
       "COSMOS-CHOBH-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CHOBH-SWOUT_30MIN_PROCESSED": {
@@ -9527,8 +9567,8 @@
     "depends_on": [
       "COSMOS-CHOBH-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -10089,10 +10129,11 @@
     "depends_on": [
       "COSMOS-COCHN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCHN-LWIN_30MIN_PROCESSED": {
@@ -10111,10 +10152,11 @@
     "depends_on": [
       "COSMOS-COCHN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCHN-LWOUT_30MIN_PROCESSED": {
@@ -10289,10 +10331,11 @@
     "depends_on": [
       "COSMOS-COCHN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCHN-RN_30MIN_PROCESSED": {
@@ -10521,10 +10564,11 @@
     "depends_on": [
       "COSMOS-COCHN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCHN-SWIN_30MIN_PROCESSED": {
@@ -10537,10 +10581,11 @@
     "depends_on": [
       "COSMOS-COCHN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCHN-SWOUT_30MIN_PROCESSED": {
@@ -11094,8 +11139,8 @@
     "depends_on": [
       "COSMOS-COCHN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -11593,10 +11638,11 @@
     "depends_on": [
       "COSMOS-COCLP-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCLP-LWIN_30MIN_PROCESSED": {
@@ -11615,10 +11661,11 @@
     "depends_on": [
       "COSMOS-COCLP-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCLP-LWOUT_30MIN_PROCESSED": {
@@ -11811,10 +11858,11 @@
     "depends_on": [
       "COSMOS-COCLP-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCLP-RN_30MIN_PROCESSED": {
@@ -11978,10 +12026,11 @@
     "depends_on": [
       "COSMOS-COCLP-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCLP-SWIN_30MIN_PROCESSED": {
@@ -11994,10 +12043,11 @@
     "depends_on": [
       "COSMOS-COCLP-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-COCLP-SWOUT_30MIN_PROCESSED": {
@@ -12183,8 +12233,8 @@
     "depends_on": [
       "COSMOS-COCLP-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -12658,10 +12708,11 @@
     "depends_on": [
       "COSMOS-CRICH-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CRICH-LWIN_30MIN_PROCESSED": {
@@ -12680,10 +12731,11 @@
     "depends_on": [
       "COSMOS-CRICH-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CRICH-LWOUT_30MIN_PROCESSED": {
@@ -12876,10 +12928,11 @@
     "depends_on": [
       "COSMOS-CRICH-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CRICH-RN_30MIN_PROCESSED": {
@@ -13043,10 +13096,11 @@
     "depends_on": [
       "COSMOS-CRICH-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CRICH-SWIN_30MIN_PROCESSED": {
@@ -13059,10 +13113,11 @@
     "depends_on": [
       "COSMOS-CRICH-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-CRICH-SWOUT_30MIN_PROCESSED": {
@@ -13248,8 +13303,8 @@
     "depends_on": [
       "COSMOS-CRICH-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -13810,10 +13865,11 @@
     "depends_on": [
       "COSMOS-EASTB-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EASTB-LWIN_30MIN_PROCESSED": {
@@ -13832,10 +13888,11 @@
     "depends_on": [
       "COSMOS-EASTB-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EASTB-LWOUT_30MIN_PROCESSED": {
@@ -14028,10 +14085,11 @@
     "depends_on": [
       "COSMOS-EASTB-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EASTB-RN_30MIN_PROCESSED": {
@@ -14260,10 +14318,11 @@
     "depends_on": [
       "COSMOS-EASTB-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EASTB-SWIN_30MIN_PROCESSED": {
@@ -14276,10 +14335,11 @@
     "depends_on": [
       "COSMOS-EASTB-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EASTB-SWOUT_30MIN_PROCESSED": {
@@ -14465,8 +14525,8 @@
     "depends_on": [
       "COSMOS-EASTB-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -14940,10 +15000,11 @@
     "depends_on": [
       "COSMOS-ELMST-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ELMST-LWIN_30MIN_PROCESSED": {
@@ -14962,10 +15023,11 @@
     "depends_on": [
       "COSMOS-ELMST-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ELMST-LWOUT_30MIN_PROCESSED": {
@@ -15140,10 +15202,11 @@
     "depends_on": [
       "COSMOS-ELMST-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ELMST-RN_30MIN_PROCESSED": {
@@ -15307,10 +15370,11 @@
     "depends_on": [
       "COSMOS-ELMST-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ELMST-SWIN_30MIN_PROCESSED": {
@@ -15323,10 +15387,11 @@
     "depends_on": [
       "COSMOS-ELMST-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ELMST-SWOUT_30MIN_PROCESSED": {
@@ -15880,8 +15945,8 @@
     "depends_on": [
       "COSMOS-ELMST-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -16355,10 +16420,11 @@
     "depends_on": [
       "COSMOS-EUSTN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EUSTN-LWIN_30MIN_PROCESSED": {
@@ -16377,10 +16443,11 @@
     "depends_on": [
       "COSMOS-EUSTN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EUSTN-LWOUT_30MIN_PROCESSED": {
@@ -16555,10 +16622,11 @@
     "depends_on": [
       "COSMOS-EUSTN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EUSTN-RN_30MIN_PROCESSED": {
@@ -16722,10 +16790,11 @@
     "depends_on": [
       "COSMOS-EUSTN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EUSTN-SWIN_30MIN_PROCESSED": {
@@ -16738,10 +16807,11 @@
     "depends_on": [
       "COSMOS-EUSTN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-EUSTN-SWOUT_30MIN_PROCESSED": {
@@ -17295,8 +17365,8 @@
     "depends_on": [
       "COSMOS-EUSTN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -17770,10 +17840,11 @@
     "depends_on": [
       "COSMOS-FINCH-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FINCH-LWIN_30MIN_PROCESSED": {
@@ -17792,10 +17863,11 @@
     "depends_on": [
       "COSMOS-FINCH-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FINCH-LWOUT_30MIN_PROCESSED": {
@@ -17998,10 +18070,11 @@
     "depends_on": [
       "COSMOS-FINCH-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FINCH-RN_30MIN_PROCESSED": {
@@ -18165,10 +18238,11 @@
     "depends_on": [
       "COSMOS-FINCH-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FINCH-SWIN_30MIN_PROCESSED": {
@@ -18181,10 +18255,11 @@
     "depends_on": [
       "COSMOS-FINCH-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FINCH-SWOUT_30MIN_PROCESSED": {
@@ -18738,8 +18813,8 @@
     "depends_on": [
       "COSMOS-FINCH-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -19213,10 +19288,11 @@
     "depends_on": [
       "COSMOS-FIVET-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FIVET-LWIN_30MIN_PROCESSED": {
@@ -19235,10 +19311,11 @@
     "depends_on": [
       "COSMOS-FIVET-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FIVET-LWOUT_30MIN_PROCESSED": {
@@ -19413,10 +19490,11 @@
     "depends_on": [
       "COSMOS-FIVET-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FIVET-RN_30MIN_PROCESSED": {
@@ -19580,10 +19658,11 @@
     "depends_on": [
       "COSMOS-FIVET-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FIVET-SWIN_30MIN_PROCESSED": {
@@ -19596,10 +19675,11 @@
     "depends_on": [
       "COSMOS-FIVET-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-FIVET-SWOUT_30MIN_PROCESSED": {
@@ -20153,8 +20233,8 @@
     "depends_on": [
       "COSMOS-FIVET-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -20739,10 +20819,11 @@
     "depends_on": [
       "COSMOS-GISBN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GISBN-LWIN_30MIN_PROCESSED": {
@@ -20761,10 +20842,11 @@
     "depends_on": [
       "COSMOS-GISBN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GISBN-LWOUT_30MIN_PROCESSED": {
@@ -20957,10 +21039,11 @@
     "depends_on": [
       "COSMOS-GISBN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GISBN-RN_30MIN_PROCESSED": {
@@ -21189,10 +21272,11 @@
     "depends_on": [
       "COSMOS-GISBN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GISBN-SWIN_30MIN_PROCESSED": {
@@ -21205,10 +21289,11 @@
     "depends_on": [
       "COSMOS-GISBN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GISBN-SWOUT_30MIN_PROCESSED": {
@@ -21394,8 +21479,8 @@
     "depends_on": [
       "COSMOS-GISBN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -21956,10 +22041,11 @@
     "depends_on": [
       "COSMOS-GLENS-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENS-LWIN_30MIN_PROCESSED": {
@@ -21978,10 +22064,11 @@
     "depends_on": [
       "COSMOS-GLENS-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENS-LWOUT_30MIN_PROCESSED": {
@@ -22174,10 +22261,11 @@
     "depends_on": [
       "COSMOS-GLENS-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENS-RN_30MIN_PROCESSED": {
@@ -22406,10 +22494,11 @@
     "depends_on": [
       "COSMOS-GLENS-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENS-SWIN_30MIN_PROCESSED": {
@@ -22422,10 +22511,11 @@
     "depends_on": [
       "COSMOS-GLENS-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENS-SWOUT_30MIN_PROCESSED": {
@@ -22611,8 +22701,8 @@
     "depends_on": [
       "COSMOS-GLENS-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -23086,10 +23176,11 @@
     "depends_on": [
       "COSMOS-GLENW-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENW-LWIN_30MIN_PROCESSED": {
@@ -23108,10 +23199,11 @@
     "depends_on": [
       "COSMOS-GLENW-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENW-LWOUT_30MIN_PROCESSED": {
@@ -23286,10 +23378,11 @@
     "depends_on": [
       "COSMOS-GLENW-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENW-RN_30MIN_PROCESSED": {
@@ -23453,10 +23546,11 @@
     "depends_on": [
       "COSMOS-GLENW-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENW-SWIN_30MIN_PROCESSED": {
@@ -23469,10 +23563,11 @@
     "depends_on": [
       "COSMOS-GLENW-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-GLENW-SWOUT_30MIN_PROCESSED": {
@@ -24026,8 +24121,8 @@
     "depends_on": [
       "COSMOS-GLENW-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -24501,10 +24596,11 @@
     "depends_on": [
       "COSMOS-HADLW-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HADLW-LWIN_30MIN_PROCESSED": {
@@ -24523,10 +24619,11 @@
     "depends_on": [
       "COSMOS-HADLW-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HADLW-LWOUT_30MIN_PROCESSED": {
@@ -24701,10 +24798,11 @@
     "depends_on": [
       "COSMOS-HADLW-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HADLW-RN_30MIN_PROCESSED": {
@@ -24868,10 +24966,11 @@
     "depends_on": [
       "COSMOS-HADLW-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HADLW-SWIN_30MIN_PROCESSED": {
@@ -24884,10 +24983,11 @@
     "depends_on": [
       "COSMOS-HADLW-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HADLW-SWOUT_30MIN_PROCESSED": {
@@ -25441,8 +25541,8 @@
     "depends_on": [
       "COSMOS-HADLW-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -25916,10 +26016,11 @@
     "depends_on": [
       "COSMOS-HARTW-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARTW-LWIN_30MIN_PROCESSED": {
@@ -25938,10 +26039,11 @@
     "depends_on": [
       "COSMOS-HARTW-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARTW-LWOUT_30MIN_PROCESSED": {
@@ -26134,10 +26236,11 @@
     "depends_on": [
       "COSMOS-HARTW-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARTW-RN_30MIN_PROCESSED": {
@@ -26301,10 +26404,11 @@
     "depends_on": [
       "COSMOS-HARTW-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARTW-SWIN_30MIN_PROCESSED": {
@@ -26317,10 +26421,11 @@
     "depends_on": [
       "COSMOS-HARTW-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARTW-SWOUT_30MIN_PROCESSED": {
@@ -26506,8 +26611,8 @@
     "depends_on": [
       "COSMOS-HARTW-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -26975,10 +27080,11 @@
     "depends_on": [
       "COSMOS-HARWD-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARWD-LWIN_30MIN_PROCESSED": {
@@ -26997,10 +27103,11 @@
     "depends_on": [
       "COSMOS-HARWD-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARWD-LWOUT_30MIN_PROCESSED": {
@@ -27193,10 +27300,11 @@
     "depends_on": [
       "COSMOS-HARWD-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARWD-RN_30MIN_PROCESSED": {
@@ -27360,10 +27468,11 @@
     "depends_on": [
       "COSMOS-HARWD-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARWD-SWIN_30MIN_PROCESSED": {
@@ -27376,10 +27485,11 @@
     "depends_on": [
       "COSMOS-HARWD-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HARWD-SWOUT_30MIN_PROCESSED": {
@@ -27529,8 +27639,8 @@
     "depends_on": [
       "COSMOS-HARWD-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -28028,10 +28138,11 @@
     "depends_on": [
       "COSMOS-HENFS-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HENFS-LWIN_30MIN_PROCESSED": {
@@ -28050,10 +28161,11 @@
     "depends_on": [
       "COSMOS-HENFS-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HENFS-LWOUT_30MIN_PROCESSED": {
@@ -28246,10 +28358,11 @@
     "depends_on": [
       "COSMOS-HENFS-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HENFS-RN_30MIN_PROCESSED": {
@@ -28413,10 +28526,11 @@
     "depends_on": [
       "COSMOS-HENFS-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HENFS-SWIN_30MIN_PROCESSED": {
@@ -28429,10 +28543,11 @@
     "depends_on": [
       "COSMOS-HENFS-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HENFS-SWOUT_30MIN_PROCESSED": {
@@ -28618,8 +28733,8 @@
     "depends_on": [
       "COSMOS-HENFS-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -29093,10 +29208,11 @@
     "depends_on": [
       "COSMOS-HILLB-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HILLB-LWIN_30MIN_PROCESSED": {
@@ -29115,10 +29231,11 @@
     "depends_on": [
       "COSMOS-HILLB-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HILLB-LWOUT_30MIN_PROCESSED": {
@@ -29293,10 +29410,11 @@
     "depends_on": [
       "COSMOS-HILLB-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HILLB-RN_30MIN_PROCESSED": {
@@ -29460,10 +29578,11 @@
     "depends_on": [
       "COSMOS-HILLB-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HILLB-SWIN_30MIN_PROCESSED": {
@@ -29476,10 +29595,11 @@
     "depends_on": [
       "COSMOS-HILLB-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HILLB-SWOUT_30MIN_PROCESSED": {
@@ -30033,8 +30153,8 @@
     "depends_on": [
       "COSMOS-HILLB-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -30508,10 +30628,11 @@
     "depends_on": [
       "COSMOS-HLACY-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HLACY-LWIN_30MIN_PROCESSED": {
@@ -30530,10 +30651,11 @@
     "depends_on": [
       "COSMOS-HLACY-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HLACY-LWOUT_30MIN_PROCESSED": {
@@ -30736,10 +30858,11 @@
     "depends_on": [
       "COSMOS-HLACY-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HLACY-RN_30MIN_PROCESSED": {
@@ -30903,10 +31026,11 @@
     "depends_on": [
       "COSMOS-HLACY-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HLACY-SWIN_30MIN_PROCESSED": {
@@ -30919,10 +31043,11 @@
     "depends_on": [
       "COSMOS-HLACY-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HLACY-SWOUT_30MIN_PROCESSED": {
@@ -31476,8 +31601,8 @@
     "depends_on": [
       "COSMOS-HLACY-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -31975,10 +32100,11 @@
     "depends_on": [
       "COSMOS-HOLLN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HOLLN-LWIN_30MIN_PROCESSED": {
@@ -31997,10 +32123,11 @@
     "depends_on": [
       "COSMOS-HOLLN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HOLLN-LWOUT_30MIN_PROCESSED": {
@@ -32221,10 +32348,11 @@
     "depends_on": [
       "COSMOS-HOLLN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HOLLN-RN_30MIN_PROCESSED": {
@@ -32388,10 +32516,11 @@
     "depends_on": [
       "COSMOS-HOLLN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HOLLN-SWIN_30MIN_PROCESSED": {
@@ -32404,10 +32533,11 @@
     "depends_on": [
       "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED": {
@@ -32593,8 +32723,8 @@
     "depends_on": [
       "COSMOS-HOLLN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -33068,10 +33198,11 @@
     "depends_on": [
       "COSMOS-HYBRY-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HYBRY-LWIN_30MIN_PROCESSED": {
@@ -33090,10 +33221,11 @@
     "depends_on": [
       "COSMOS-HYBRY-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HYBRY-LWOUT_30MIN_PROCESSED": {
@@ -33268,10 +33400,11 @@
     "depends_on": [
       "COSMOS-HYBRY-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HYBRY-RN_30MIN_PROCESSED": {
@@ -33435,10 +33568,11 @@
     "depends_on": [
       "COSMOS-HYBRY-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HYBRY-SWIN_30MIN_PROCESSED": {
@@ -33451,10 +33585,11 @@
     "depends_on": [
       "COSMOS-HYBRY-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-HYBRY-SWOUT_30MIN_PROCESSED": {
@@ -34008,8 +34143,8 @@
     "depends_on": [
       "COSMOS-HYBRY-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -34483,10 +34618,11 @@
     "depends_on": [
       "COSMOS-LIZRD-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LIZRD-LWIN_30MIN_PROCESSED": {
@@ -34505,10 +34641,11 @@
     "depends_on": [
       "COSMOS-LIZRD-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LIZRD-LWOUT_30MIN_PROCESSED": {
@@ -34701,10 +34838,11 @@
     "depends_on": [
       "COSMOS-LIZRD-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LIZRD-RN_30MIN_PROCESSED": {
@@ -34868,10 +35006,11 @@
     "depends_on": [
       "COSMOS-LIZRD-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LIZRD-SWIN_30MIN_PROCESSED": {
@@ -34884,10 +35023,11 @@
     "depends_on": [
       "COSMOS-LIZRD-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LIZRD-SWOUT_30MIN_PROCESSED": {
@@ -35073,8 +35213,8 @@
     "depends_on": [
       "COSMOS-LIZRD-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -35572,10 +35712,11 @@
     "depends_on": [
       "COSMOS-LODTN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LODTN-LWIN_30MIN_PROCESSED": {
@@ -35594,10 +35735,11 @@
     "depends_on": [
       "COSMOS-LODTN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LODTN-LWOUT_30MIN_PROCESSED": {
@@ -35800,10 +35942,11 @@
     "depends_on": [
       "COSMOS-LODTN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LODTN-RN_30MIN_PROCESSED": {
@@ -35967,10 +36110,11 @@
     "depends_on": [
       "COSMOS-LODTN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LODTN-SWIN_30MIN_PROCESSED": {
@@ -35983,10 +36127,11 @@
     "depends_on": [
       "COSMOS-LODTN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LODTN-SWOUT_30MIN_PROCESSED": {
@@ -36540,8 +36685,8 @@
     "depends_on": [
       "COSMOS-LODTN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -37015,10 +37160,11 @@
     "depends_on": [
       "COSMOS-LULLN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LULLN-LWIN_30MIN_PROCESSED": {
@@ -37037,10 +37183,11 @@
     "depends_on": [
       "COSMOS-LULLN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LULLN-LWOUT_30MIN_PROCESSED": {
@@ -37261,10 +37408,11 @@
     "depends_on": [
       "COSMOS-LULLN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LULLN-RN_30MIN_PROCESSED": {
@@ -37428,10 +37576,11 @@
     "depends_on": [
       "COSMOS-LULLN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LULLN-SWIN_30MIN_PROCESSED": {
@@ -37444,10 +37593,11 @@
     "depends_on": [
       "COSMOS-LULLN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-LULLN-SWOUT_30MIN_PROCESSED": {
@@ -37633,8 +37783,8 @@
     "depends_on": [
       "COSMOS-LULLN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -38195,10 +38345,11 @@
     "depends_on": [
       "COSMOS-MOORH-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOORH-LWIN_30MIN_PROCESSED": {
@@ -38217,10 +38368,11 @@
     "depends_on": [
       "COSMOS-MOORH-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOORH-LWOUT_30MIN_PROCESSED": {
@@ -38413,10 +38565,11 @@
     "depends_on": [
       "COSMOS-MOORH-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOORH-RN_30MIN_PROCESSED": {
@@ -38645,10 +38798,11 @@
     "depends_on": [
       "COSMOS-MOORH-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOORH-SWIN_30MIN_PROCESSED": {
@@ -38661,10 +38815,11 @@
     "depends_on": [
       "COSMOS-MOORH-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOORH-SWOUT_30MIN_PROCESSED": {
@@ -38850,8 +39005,8 @@
     "depends_on": [
       "COSMOS-MOORH-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -39325,10 +39480,11 @@
     "depends_on": [
       "COSMOS-MOREM-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOREM-LWIN_30MIN_PROCESSED": {
@@ -39347,10 +39503,11 @@
     "depends_on": [
       "COSMOS-MOREM-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOREM-LWOUT_30MIN_PROCESSED": {
@@ -39553,10 +39710,11 @@
     "depends_on": [
       "COSMOS-MOREM-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOREM-RN_30MIN_PROCESSED": {
@@ -39720,10 +39878,11 @@
     "depends_on": [
       "COSMOS-MOREM-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOREM-SWIN_30MIN_PROCESSED": {
@@ -39736,10 +39895,11 @@
     "depends_on": [
       "COSMOS-MOREM-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MOREM-SWOUT_30MIN_PROCESSED": {
@@ -40293,8 +40453,8 @@
     "depends_on": [
       "COSMOS-MOREM-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -40768,10 +40928,11 @@
     "depends_on": [
       "COSMOS-MORLY-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MORLY-LWIN_30MIN_PROCESSED": {
@@ -40790,10 +40951,11 @@
     "depends_on": [
       "COSMOS-MORLY-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MORLY-LWOUT_30MIN_PROCESSED": {
@@ -40986,10 +41148,11 @@
     "depends_on": [
       "COSMOS-MORLY-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MORLY-RN_30MIN_PROCESSED": {
@@ -41153,10 +41316,11 @@
     "depends_on": [
       "COSMOS-MORLY-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MORLY-SWIN_30MIN_PROCESSED": {
@@ -41169,10 +41333,11 @@
     "depends_on": [
       "COSMOS-MORLY-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-MORLY-SWOUT_30MIN_PROCESSED": {
@@ -41358,8 +41523,8 @@
     "depends_on": [
       "COSMOS-MORLY-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -41833,10 +41998,11 @@
     "depends_on": [
       "COSMOS-NWYKE-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-NWYKE-LWIN_30MIN_PROCESSED": {
@@ -41855,10 +42021,11 @@
     "depends_on": [
       "COSMOS-NWYKE-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-NWYKE-LWOUT_30MIN_PROCESSED": {
@@ -42051,10 +42218,11 @@
     "depends_on": [
       "COSMOS-NWYKE-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-NWYKE-RN_30MIN_PROCESSED": {
@@ -42218,10 +42386,11 @@
     "depends_on": [
       "COSMOS-NWYKE-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-NWYKE-SWIN_30MIN_PROCESSED": {
@@ -42234,10 +42403,11 @@
     "depends_on": [
       "COSMOS-NWYKE-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-NWYKE-SWOUT_30MIN_PROCESSED": {
@@ -42423,8 +42593,8 @@
     "depends_on": [
       "COSMOS-NWYKE-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -42985,10 +43155,11 @@
     "depends_on": [
       "COSMOS-PLYNL-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PLYNL-LWIN_30MIN_PROCESSED": {
@@ -43007,10 +43178,11 @@
     "depends_on": [
       "COSMOS-PLYNL-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PLYNL-LWOUT_30MIN_PROCESSED": {
@@ -43203,10 +43375,11 @@
     "depends_on": [
       "COSMOS-PLYNL-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PLYNL-RN_30MIN_PROCESSED": {
@@ -43435,10 +43608,11 @@
     "depends_on": [
       "COSMOS-PLYNL-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PLYNL-SWIN_30MIN_PROCESSED": {
@@ -43451,10 +43625,11 @@
     "depends_on": [
       "COSMOS-PLYNL-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PLYNL-SWOUT_30MIN_PROCESSED": {
@@ -43640,8 +43815,8 @@
     "depends_on": [
       "COSMOS-PLYNL-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -44115,10 +44290,11 @@
     "depends_on": [
       "COSMOS-PORTN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PORTN-LWIN_30MIN_PROCESSED": {
@@ -44137,10 +44313,11 @@
     "depends_on": [
       "COSMOS-PORTN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PORTN-LWOUT_30MIN_PROCESSED": {
@@ -44333,10 +44510,11 @@
     "depends_on": [
       "COSMOS-PORTN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PORTN-RN_30MIN_PROCESSED": {
@@ -44500,10 +44678,11 @@
     "depends_on": [
       "COSMOS-PORTN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PORTN-SWIN_30MIN_PROCESSED": {
@@ -44516,10 +44695,11 @@
     "depends_on": [
       "COSMOS-PORTN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-PORTN-SWOUT_30MIN_PROCESSED": {
@@ -44705,8 +44885,8 @@
     "depends_on": [
       "COSMOS-PORTN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -45180,10 +45360,11 @@
     "depends_on": [
       "COSMOS-RDMER-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RDMER-LWIN_30MIN_PROCESSED": {
@@ -45202,10 +45383,11 @@
     "depends_on": [
       "COSMOS-RDMER-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RDMER-LWOUT_30MIN_PROCESSED": {
@@ -45398,10 +45580,11 @@
     "depends_on": [
       "COSMOS-RDMER-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RDMER-RN_30MIN_PROCESSED": {
@@ -45565,10 +45748,11 @@
     "depends_on": [
       "COSMOS-RDMER-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RDMER-SWIN_30MIN_PROCESSED": {
@@ -45581,10 +45765,11 @@
     "depends_on": [
       "COSMOS-RDMER-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RDMER-SWOUT_30MIN_PROCESSED": {
@@ -45770,8 +45955,8 @@
     "depends_on": [
       "COSMOS-RDMER-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -46245,10 +46430,11 @@
     "depends_on": [
       "COSMOS-REDHL-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-REDHL-LWIN_30MIN_PROCESSED": {
@@ -46267,10 +46453,11 @@
     "depends_on": [
       "COSMOS-REDHL-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-REDHL-LWOUT_30MIN_PROCESSED": {
@@ -46491,10 +46678,11 @@
     "depends_on": [
       "COSMOS-REDHL-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-REDHL-RN_30MIN_PROCESSED": {
@@ -46658,10 +46846,11 @@
     "depends_on": [
       "COSMOS-REDHL-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-REDHL-SWIN_30MIN_PROCESSED": {
@@ -46674,10 +46863,11 @@
     "depends_on": [
       "COSMOS-REDHL-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-REDHL-SWOUT_30MIN_PROCESSED": {
@@ -46863,8 +47053,8 @@
     "depends_on": [
       "COSMOS-REDHL-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -47338,10 +47528,11 @@
     "depends_on": [
       "COSMOS-RISEH-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RISEH-LWIN_30MIN_PROCESSED": {
@@ -47360,10 +47551,11 @@
     "depends_on": [
       "COSMOS-RISEH-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RISEH-LWOUT_30MIN_PROCESSED": {
@@ -47538,10 +47730,11 @@
     "depends_on": [
       "COSMOS-RISEH-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RISEH-RN_30MIN_PROCESSED": {
@@ -47705,10 +47898,11 @@
     "depends_on": [
       "COSMOS-RISEH-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RISEH-SWIN_30MIN_PROCESSED": {
@@ -47721,10 +47915,11 @@
     "depends_on": [
       "COSMOS-RISEH-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-RISEH-SWOUT_30MIN_PROCESSED": {
@@ -48278,8 +48473,8 @@
     "depends_on": [
       "COSMOS-RISEH-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -48753,10 +48948,11 @@
     "depends_on": [
       "COSMOS-ROTHD-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ROTHD-LWIN_30MIN_PROCESSED": {
@@ -48775,10 +48971,11 @@
     "depends_on": [
       "COSMOS-ROTHD-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ROTHD-LWOUT_30MIN_PROCESSED": {
@@ -48999,10 +49196,11 @@
     "depends_on": [
       "COSMOS-ROTHD-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ROTHD-RN_30MIN_PROCESSED": {
@@ -49166,10 +49364,11 @@
     "depends_on": [
       "COSMOS-ROTHD-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ROTHD-SWIN_30MIN_PROCESSED": {
@@ -49182,10 +49381,11 @@
     "depends_on": [
       "COSMOS-ROTHD-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-ROTHD-SWOUT_30MIN_PROCESSED": {
@@ -49371,8 +49571,8 @@
     "depends_on": [
       "COSMOS-ROTHD-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -49876,10 +50076,11 @@
     "depends_on": [
       "COSMOS-SHEEP-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SHEEP-LWIN_30MIN_PROCESSED": {
@@ -49898,10 +50099,11 @@
     "depends_on": [
       "COSMOS-SHEEP-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SHEEP-LWOUT_30MIN_PROCESSED": {
@@ -50167,10 +50369,11 @@
     "depends_on": [
       "COSMOS-SHEEP-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SHEEP-RN_30MIN_PROCESSED": {
@@ -50334,10 +50537,11 @@
     "depends_on": [
       "COSMOS-SHEEP-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SHEEP-SWIN_30MIN_PROCESSED": {
@@ -50350,10 +50554,11 @@
     "depends_on": [
       "COSMOS-SHEEP-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SHEEP-SWOUT_30MIN_PROCESSED": {
@@ -50907,8 +51112,8 @@
     "depends_on": [
       "COSMOS-SHEEP-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -51469,10 +51674,11 @@
     "depends_on": [
       "COSMOS-SOURH-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SOURH-LWIN_30MIN_PROCESSED": {
@@ -51491,10 +51697,11 @@
     "depends_on": [
       "COSMOS-SOURH-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SOURH-LWOUT_30MIN_PROCESSED": {
@@ -51687,10 +51894,11 @@
     "depends_on": [
       "COSMOS-SOURH-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SOURH-RN_30MIN_PROCESSED": {
@@ -51919,10 +52127,11 @@
     "depends_on": [
       "COSMOS-SOURH-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SOURH-SWIN_30MIN_PROCESSED": {
@@ -51935,10 +52144,11 @@
     "depends_on": [
       "COSMOS-SOURH-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SOURH-SWOUT_30MIN_PROCESSED": {
@@ -52124,8 +52334,8 @@
     "depends_on": [
       "COSMOS-SOURH-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -52599,10 +52809,11 @@
     "depends_on": [
       "COSMOS-SPENF-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SPENF-LWIN_30MIN_PROCESSED": {
@@ -52621,10 +52832,11 @@
     "depends_on": [
       "COSMOS-SPENF-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SPENF-LWOUT_30MIN_PROCESSED": {
@@ -52799,10 +53011,11 @@
     "depends_on": [
       "COSMOS-SPENF-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SPENF-RN_30MIN_PROCESSED": {
@@ -52966,10 +53179,11 @@
     "depends_on": [
       "COSMOS-SPENF-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SPENF-SWIN_30MIN_PROCESSED": {
@@ -52982,10 +53196,11 @@
     "depends_on": [
       "COSMOS-SPENF-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SPENF-SWOUT_30MIN_PROCESSED": {
@@ -53539,8 +53754,8 @@
     "depends_on": [
       "COSMOS-SPENF-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -54038,10 +54253,11 @@
     "depends_on": [
       "COSMOS-STGHT-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STGHT-LWIN_30MIN_PROCESSED": {
@@ -54060,10 +54276,11 @@
     "depends_on": [
       "COSMOS-STGHT-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STGHT-LWOUT_30MIN_PROCESSED": {
@@ -54284,10 +54501,11 @@
     "depends_on": [
       "COSMOS-STGHT-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STGHT-RN_30MIN_PROCESSED": {
@@ -54451,10 +54669,11 @@
     "depends_on": [
       "COSMOS-STGHT-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STGHT-SWIN_30MIN_PROCESSED": {
@@ -54467,10 +54686,11 @@
     "depends_on": [
       "COSMOS-STGHT-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STGHT-SWOUT_30MIN_PROCESSED": {
@@ -54656,8 +54876,8 @@
     "depends_on": [
       "COSMOS-STGHT-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -55155,10 +55375,11 @@
     "depends_on": [
       "COSMOS-STIPS-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STIPS-LWIN_30MIN_PROCESSED": {
@@ -55177,10 +55398,11 @@
     "depends_on": [
       "COSMOS-STIPS-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STIPS-LWOUT_30MIN_PROCESSED": {
@@ -55373,10 +55595,11 @@
     "depends_on": [
       "COSMOS-STIPS-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STIPS-RN_30MIN_PROCESSED": {
@@ -55540,10 +55763,11 @@
     "depends_on": [
       "COSMOS-STIPS-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STIPS-SWIN_30MIN_PROCESSED": {
@@ -55556,10 +55780,11 @@
     "depends_on": [
       "COSMOS-STIPS-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-STIPS-SWOUT_30MIN_PROCESSED": {
@@ -55745,8 +55970,8 @@
     "depends_on": [
       "COSMOS-STIPS-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -56220,10 +56445,11 @@
     "depends_on": [
       "COSMOS-SYDLG-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SYDLG-LWIN_30MIN_PROCESSED": {
@@ -56242,10 +56468,11 @@
     "depends_on": [
       "COSMOS-SYDLG-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SYDLG-LWOUT_30MIN_PROCESSED": {
@@ -56448,10 +56675,11 @@
     "depends_on": [
       "COSMOS-SYDLG-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SYDLG-RN_30MIN_PROCESSED": {
@@ -56615,10 +56843,11 @@
     "depends_on": [
       "COSMOS-SYDLG-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SYDLG-SWIN_30MIN_PROCESSED": {
@@ -56631,10 +56860,11 @@
     "depends_on": [
       "COSMOS-SYDLG-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-SYDLG-SWOUT_30MIN_PROCESSED": {
@@ -57188,8 +57418,8 @@
     "depends_on": [
       "COSMOS-SYDLG-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -57663,10 +57893,11 @@
     "depends_on": [
       "COSMOS-TADHM-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-TADHM-LWIN_30MIN_PROCESSED": {
@@ -57685,10 +57916,11 @@
     "depends_on": [
       "COSMOS-TADHM-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-TADHM-LWOUT_30MIN_PROCESSED": {
@@ -57881,10 +58113,11 @@
     "depends_on": [
       "COSMOS-TADHM-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-TADHM-RN_30MIN_PROCESSED": {
@@ -58048,10 +58281,11 @@
     "depends_on": [
       "COSMOS-TADHM-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-TADHM-SWIN_30MIN_PROCESSED": {
@@ -58064,10 +58298,11 @@
     "depends_on": [
       "COSMOS-TADHM-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-TADHM-SWOUT_30MIN_PROCESSED": {
@@ -58253,8 +58488,8 @@
     "depends_on": [
       "COSMOS-TADHM-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -58752,10 +58987,11 @@
     "depends_on": [
       "COSMOS-WADDN-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WADDN-LWIN_30MIN_PROCESSED": {
@@ -58774,10 +59010,11 @@
     "depends_on": [
       "COSMOS-WADDN-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WADDN-LWOUT_30MIN_PROCESSED": {
@@ -59043,10 +59280,11 @@
     "depends_on": [
       "COSMOS-WADDN-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WADDN-RN_30MIN_PROCESSED": {
@@ -59210,10 +59448,11 @@
     "depends_on": [
       "COSMOS-WADDN-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WADDN-SWIN_30MIN_PROCESSED": {
@@ -59226,10 +59465,11 @@
     "depends_on": [
       "COSMOS-WADDN-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WADDN-SWOUT_30MIN_PROCESSED": {
@@ -59783,8 +60023,8 @@
     "depends_on": [
       "COSMOS-WADDN-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -60258,10 +60498,11 @@
     "depends_on": [
       "COSMOS-WIMPL-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WIMPL-LWIN_30MIN_PROCESSED": {
@@ -60280,10 +60521,11 @@
     "depends_on": [
       "COSMOS-WIMPL-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WIMPL-LWOUT_30MIN_PROCESSED": {
@@ -60458,10 +60700,11 @@
     "depends_on": [
       "COSMOS-WIMPL-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WIMPL-RN_30MIN_PROCESSED": {
@@ -60625,10 +60868,11 @@
     "depends_on": [
       "COSMOS-WIMPL-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WIMPL-SWIN_30MIN_PROCESSED": {
@@ -60641,10 +60885,11 @@
     "depends_on": [
       "COSMOS-WIMPL-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WIMPL-SWOUT_30MIN_PROCESSED": {
@@ -61198,8 +61443,8 @@
     "depends_on": [
       "COSMOS-WIMPL-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -61673,10 +61918,11 @@
     "depends_on": [
       "COSMOS-WRTTL-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WRTTL-LWIN_30MIN_PROCESSED": {
@@ -61695,10 +61941,11 @@
     "depends_on": [
       "COSMOS-WRTTL-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WRTTL-LWOUT_30MIN_PROCESSED": {
@@ -61901,10 +62148,11 @@
     "depends_on": [
       "COSMOS-WRTTL-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WRTTL-RN_30MIN_PROCESSED": {
@@ -62068,10 +62316,11 @@
     "depends_on": [
       "COSMOS-WRTTL-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WRTTL-SWIN_30MIN_PROCESSED": {
@@ -62084,10 +62333,11 @@
     "depends_on": [
       "COSMOS-WRTTL-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WRTTL-SWOUT_30MIN_PROCESSED": {
@@ -62641,8 +62891,8 @@
     "depends_on": [
       "COSMOS-WRTTL-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
@@ -63110,10 +63360,11 @@
     "depends_on": [
       "COSMOS-WYTH1-LWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WYTH1-LWIN_30MIN_PROCESSED": {
@@ -63132,10 +63383,11 @@
     "depends_on": [
       "COSMOS-WYTH1-LWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WYTH1-LWOUT_30MIN_PROCESSED": {
@@ -63322,10 +63574,11 @@
     "depends_on": [
       "COSMOS-WYTH1-RN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WYTH1-RN_30MIN_PROCESSED": {
@@ -63489,10 +63742,11 @@
     "depends_on": [
       "COSMOS-WYTH1-SWIN_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WYTH1-SWIN_30MIN_PROCESSED": {
@@ -63505,10 +63759,11 @@
     "depends_on": [
       "COSMOS-WYTH1-SWOUT_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_radiation",
+    "derivation": "AGGREGATE",
+    "method": "mean_rad",
     "args": {
-      "round": 1
+      "round": 1,
+      "threshold": 43
     }
   },
   "COSMOS-WYTH1-SWOUT_30MIN_PROCESSED": {
@@ -63658,8 +63913,8 @@
     "depends_on": [
       "COSMOS-WYTH1-WD_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_WD",
+    "derivation": "AGGREGATE",
+    "method": "mean_wd",
     "args": {
       "round": 1
     }
