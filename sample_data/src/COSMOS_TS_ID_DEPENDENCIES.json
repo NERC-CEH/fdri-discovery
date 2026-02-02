@@ -547,7 +547,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-alic-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -1576,7 +1576,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-balrd-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -2641,7 +2641,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-bickl-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -3734,7 +3734,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-bunny-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -4827,7 +4827,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-cardt-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -6007,7 +6007,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-cgarw-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -7517,7 +7517,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-chimn-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -9023,7 +9023,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-chobh-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -10203,7 +10203,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-cochn-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -11707,7 +11707,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-coclp-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -12772,7 +12772,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-crich-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -13924,7 +13924,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-eastb-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -15054,7 +15054,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-elmst-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -16469,7 +16469,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-eustn-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -17884,7 +17884,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-finch-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -19327,7 +19327,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-fivet-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -20853,7 +20853,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-gisbn-ws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -22070,7 +22070,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-glens-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -23200,7 +23200,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-glenw-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -24615,7 +24615,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-hadlw-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -26030,7 +26030,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-hartw-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -27089,7 +27089,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-harwd-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -28142,7 +28142,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-henfs-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -29207,7 +29207,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-hillb-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -30622,7 +30622,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-hlacy-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -32089,7 +32089,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-holln-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -33182,7 +33182,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-hybry-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -34597,7 +34597,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-lizrd-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -35686,7 +35686,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-lodtn-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -37129,7 +37129,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-lulln-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -38309,7 +38309,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-moorh-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -39439,7 +39439,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-morem-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -40882,7 +40882,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-morly-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -41947,7 +41947,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-nwyke-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -43099,7 +43099,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-plynl-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -44229,7 +44229,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-portn-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -45294,7 +45294,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-rdmer-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -46359,7 +46359,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-redhl-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -47452,7 +47452,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-riseh-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -48867,7 +48867,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-rothd-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -49990,7 +49990,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-sheep-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -51583,7 +51583,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-sourh-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -52713,7 +52713,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-spenf-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -54152,7 +54152,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-stght-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -55269,7 +55269,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-stips-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -56334,7 +56334,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-sydlg-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -57777,7 +57777,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-tadhm-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -58866,7 +58866,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-waddn-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -60372,7 +60372,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-wimpl-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -61787,7 +61787,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-wrttl-aws_anem",
         "attribute": "deployedHeight"
       }
     }
@@ -63224,7 +63224,7 @@
     "args": {
       "round": 5,
       "deployment_attribute": {
-        "sensor": "aws_anem",
+        "sensor": "cosmos-wyth1-aws_anem",
         "attribute": "deployedHeight"
       }
     }
