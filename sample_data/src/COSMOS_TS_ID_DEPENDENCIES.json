@@ -993,7 +993,7 @@
       "COSMOS-ALIC1-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -2063,7 +2063,7 @@
       "COSMOS-BALRD-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -3161,7 +3161,7 @@
       "COSMOS-BICKL-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -4259,7 +4259,7 @@
       "COSMOS-BUNNY-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -5357,7 +5357,7 @@
       "COSMOS-CARDT-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -6929,7 +6929,7 @@
       "COSMOS-CGARW-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -8470,7 +8470,7 @@
       "COSMOS-CHIMN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -9568,7 +9568,7 @@
       "COSMOS-CHOBH-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -11140,7 +11140,7 @@
       "COSMOS-COCHN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -12234,7 +12234,7 @@
       "COSMOS-COCLP-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -13304,7 +13304,7 @@
       "COSMOS-CRICH-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -14526,7 +14526,7 @@
       "COSMOS-EASTB-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -15946,7 +15946,7 @@
       "COSMOS-ELMST-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -17366,7 +17366,7 @@
       "COSMOS-EUSTN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -18814,7 +18814,7 @@
       "COSMOS-FINCH-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -20234,7 +20234,7 @@
       "COSMOS-FIVET-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -21480,7 +21480,7 @@
       "COSMOS-GISBN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -22702,7 +22702,7 @@
       "COSMOS-GLENS-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -24122,7 +24122,7 @@
       "COSMOS-GLENW-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -25542,7 +25542,7 @@
       "COSMOS-HADLW-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -26612,7 +26612,7 @@
       "COSMOS-HARTW-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -27640,7 +27640,7 @@
       "COSMOS-HARWD-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -28734,7 +28734,7 @@
       "COSMOS-HENFS-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -30154,7 +30154,7 @@
       "COSMOS-HILLB-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -31602,7 +31602,7 @@
       "COSMOS-HLACY-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -32724,7 +32724,7 @@
       "COSMOS-HOLLN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -34144,7 +34144,7 @@
       "COSMOS-HYBRY-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -35214,7 +35214,7 @@
       "COSMOS-LIZRD-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -36686,7 +36686,7 @@
       "COSMOS-LODTN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -37784,7 +37784,7 @@
       "COSMOS-LULLN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -39006,7 +39006,7 @@
       "COSMOS-MOORH-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -40454,7 +40454,7 @@
       "COSMOS-MOREM-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -41524,7 +41524,7 @@
       "COSMOS-MORLY-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -42594,7 +42594,7 @@
       "COSMOS-NWYKE-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -43816,7 +43816,7 @@
       "COSMOS-PLYNL-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -44886,7 +44886,7 @@
       "COSMOS-PORTN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -45956,7 +45956,7 @@
       "COSMOS-RDMER-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -47054,7 +47054,7 @@
       "COSMOS-REDHL-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -48474,7 +48474,7 @@
       "COSMOS-RISEH-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -49572,7 +49572,7 @@
       "COSMOS-ROTHD-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -51113,7 +51113,7 @@
       "COSMOS-SHEEP-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -52335,7 +52335,7 @@
       "COSMOS-SOURH-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -53755,7 +53755,7 @@
       "COSMOS-SPENF-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -54877,7 +54877,7 @@
       "COSMOS-STGHT-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -55971,7 +55971,7 @@
       "COSMOS-STIPS-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -57419,7 +57419,7 @@
       "COSMOS-SYDLG-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -58489,7 +58489,7 @@
       "COSMOS-TADHM-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -60024,7 +60024,7 @@
       "COSMOS-WADDN-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -61444,7 +61444,7 @@
       "COSMOS-WIMPL-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -62892,7 +62892,7 @@
       "COSMOS-WRTTL-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
@@ -63914,7 +63914,7 @@
       "COSMOS-WYTH1-WD_30MIN_PROCESSED"
     ],
     "derivation": "AGGREGATE",
-    "method": "mean_wd",
+    "method": "angular_mean",
     "args": {
       "round": 1
     }
