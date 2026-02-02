@@ -17,7 +17,7 @@ one_offs:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/group-type/region>"
       "@type": "<fdri:FacilityGroupType>"
-      "<dct:title>": "COSMOS Region Group@en"
+      "<skos:prefLabel>": "COSMOS Region Group@en"
       "<skos:inScheme>": <::CosmosFacilityGroupTypeScheme>
       "^<skos:hasTopConcept>": <::CosmosFacilityGroupTypeScheme>
   - name: SoilTypeScheme
@@ -75,7 +75,7 @@ resources:
       properties:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/cosmos-region-{REGION|slug}>"
         "@type": <fdri:FacilityGroup>
-        "<dct:title>": "{REGION} Region Group"
+        "<rdfs:label>": "{REGION} Region Group"
         "<dct:type>": <::RegionGroupType>
     
     - name: MonitoringSite

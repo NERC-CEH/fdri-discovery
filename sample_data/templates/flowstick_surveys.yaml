@@ -33,9 +33,6 @@ resources:
       "<fdri:measures>":
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_temp-inst-degc>
-      "<sosa:observes>":
-        - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
-        - <http://fdri.ceh.ac.uk/ref/common/cop/water_temp>
 
   - name: SensorFirmwareConfiguration
     properties:
@@ -70,7 +67,6 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/activity/flowstick-{Site_Name|slug}-{Date|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringActivity>"
       "<dct:type>": <::FlowstickSurveyType>
-      "<dct:title>": "Flowstick survey at {Site_Name} on {Date}@en"
       "<rdfs:label>": "Flowstick survey at {Site_Name} on {Date}@en"
       "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
       "<fdri:facilityUsage>":

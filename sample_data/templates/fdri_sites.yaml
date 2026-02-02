@@ -56,7 +56,6 @@ resources:
       "@type": "<fdri:EnvironmentalMonitoringPlatform>"
       "<rdfs:label>": "{Platform}@en"
       "<dct:identifier>": "{Site}-{Platform}"
-      "^<sosa:hosts>": "<::Site>"
       "^<dct:hasPart>": <::Site>
 
 
