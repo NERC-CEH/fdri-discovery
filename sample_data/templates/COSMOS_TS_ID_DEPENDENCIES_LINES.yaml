@@ -62,17 +62,15 @@ embedded:
       "<fdri:hasStructuredValue>":
         - name: StructuredValue
           requires:
-            key:
-              - wind_height
+            structured_value:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.structuredValue>"
             "@type": "<fdri:ConfigurationArgumentList>"
-            "<fdri:argument>": "{value|map_to('NestedMethodArgument')}"
+            "<fdri:argument>": "{structured_value|map_to('NestedMethodArgument')}"
       "<fdri:hasValue>":
         - name: ArgumentValue
           unless:
-            key:
-              - wind_height
+            structured_value:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.value>"
             "@type": "<schema:PropertyValue>"
