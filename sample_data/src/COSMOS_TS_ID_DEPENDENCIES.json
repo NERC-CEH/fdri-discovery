@@ -548,9 +548,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-alic-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-alic-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -1582,9 +1583,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-balrd-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-balrd-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -2652,9 +2654,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-bickl-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-bickl-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -3750,9 +3753,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-bunny-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-bunny-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -4848,9 +4852,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-cardt-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-cardt-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -6033,9 +6038,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-cgarw-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-cgarw-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -7548,9 +7554,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-chimn-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-chimn-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -9059,9 +9066,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-chobh-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-chobh-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -10244,9 +10252,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-cochn-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-cochn-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -11753,9 +11762,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-coclp-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-coclp-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -12823,9 +12833,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-crich-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-crich-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -13980,9 +13991,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-eastb-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-eastb-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -15115,9 +15127,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-elmst-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-elmst-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -16535,9 +16548,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-eustn-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-eustn-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -17955,9 +17969,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-finch-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-finch-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -19403,9 +19418,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-fivet-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-fivet-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -20934,9 +20950,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-gisbn-ws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-gisbn-ws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -22156,9 +22173,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-glens-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-glens-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -23291,9 +23309,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-glenw-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-glenw-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -24711,9 +24730,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-hadlw-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-hadlw-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -26131,9 +26151,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-hartw-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-hartw-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -27195,9 +27216,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-harwd-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-harwd-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -28253,9 +28275,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-henfs-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-henfs-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -29323,9 +29346,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-hillb-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-hillb-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -30743,9 +30767,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-hlacy-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-hlacy-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -32215,9 +32240,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-holln-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-holln-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -33313,9 +33339,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-hybry-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-hybry-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -34733,9 +34760,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-lizrd-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-lizrd-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -35827,9 +35855,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-lodtn-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-lodtn-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -37275,9 +37304,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-lulln-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-lulln-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -38460,9 +38490,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-moorh-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-moorh-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -39595,9 +39626,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-morem-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-morem-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -41043,9 +41075,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-morly-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-morly-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -42113,9 +42146,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-nwyke-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-nwyke-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -43270,9 +43304,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-plynl-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-plynl-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -44405,9 +44440,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-portn-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-portn-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -45475,9 +45511,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-rdmer-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-rdmer-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -46545,9 +46582,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-redhl-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-redhl-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -47643,9 +47681,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-riseh-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-riseh-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -49063,9 +49102,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-rothd-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-rothd-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -50191,9 +50231,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-sheep-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-sheep-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -51789,9 +51830,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-sourh-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-sourh-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -52924,9 +52966,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-spenf-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-spenf-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -54368,9 +54411,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-stght-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-stght-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -55490,9 +55534,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-stips-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-stips-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -56560,9 +56605,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-sydlg-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-sydlg-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -58008,9 +58054,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-tadhm-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-tadhm-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -59102,9 +59149,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-waddn-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-waddn-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -60613,9 +60661,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-wimpl-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-wimpl-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -62033,9 +62082,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-wrttl-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-wrttl-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },
@@ -63475,9 +63525,10 @@
     "method": "calculate_PE",
     "args": {
       "round": 5,
-      "deployment_attribute": {
-        "platform": "cosmos-wyth1-aws_anem",
-        "attribute": "deployedHeight"
+      "wind_height": {
+          "platform": "cosmos-wyth1-aws_anem",
+          "attribute": "deployedHeight",
+          "source": "deployment"
       }
     }
   },

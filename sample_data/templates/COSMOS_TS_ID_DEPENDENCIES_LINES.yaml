@@ -63,7 +63,7 @@ embedded:
         - name: StructuredValue
           requires:
             key:
-              - deployment_attribute
+              - wind_height
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.structuredValue>"
             "@type": "<fdri:ConfigurationArgumentList>"
@@ -72,7 +72,7 @@ embedded:
         - name: ArgumentValue
           unless:
             key:
-              - deployment_attribute
+              - wind_height
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.value>"
             "@type": "<schema:PropertyValue>"
