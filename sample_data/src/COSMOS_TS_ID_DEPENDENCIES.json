@@ -4825,17 +4825,23 @@
     ],
     "derivation": "PROCESS"
   },
+  "COSMOS-CARDT-PE_30MIN_PROCESSED": {
+    "depends_on": [
+      "COSMOS-CARDT-PE_30MIN_RAW"
+    ],
+    "derivation": "PROCESS"
+  },
   "COSMOS-CARDT-PE_1DAY_PROCESSED": {
     "depends_on": [
       "COSMOS-CARDT-PE_30MIN_PROCESSED"
     ],
-    "derivation": "CALCULATE",
-    "method": "calc_daily_PE",
+    "derivation": "AGGREGATE",
+    "method": "mean_sum",
     "args": {
       "round": 1
     }
   },
-  "COSMOS-CARDT-PE_30MIN_PROCESSED": {
+  "COSMOS-CARDT-PE_30MIN_RAW": {
     "depends_on": [
       "COSMOS-CARDT-RN_30MIN_PROCESSED",
       "COSMOS-CARDT-G_30MIN_PROCESSED",

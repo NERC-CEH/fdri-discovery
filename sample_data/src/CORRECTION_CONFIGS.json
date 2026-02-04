@@ -2459,5 +2459,18 @@
                 "PARAM_VALUE": "COSMOS-FINCH-UY_30MIN_PROCESSED"
             }
         ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-ALIC1-PE_30MIN_RAW",
+        "DESCIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {   
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
     }
 ]
