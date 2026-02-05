@@ -14,9 +14,15 @@ To support the publication of data from FDRI to the EIDC, the metadata store nee
 
 An "FDRI dataset" in this context may be a single variable time-series dataset such as the time-series of air temperature at a specific FDRI site. An "EIDC dataset" will typically comprise many such individual time-series (e.g. a dataset of all meteorological observations across all FDRI sites).
 
+### Option 1 - Mastered in FDRI Metadata Store
 It is assumed that the content of EIDC datasets published by FDRI are *only* published/updated by FDRI. It is also assumed that the FDRI system is the "master" for all metadata that appears on an EIDC dataset published by FDRI and that changes to the metadata shall not be made directly through the EIDC catalog editing functionality. 
 
 The FDRI ontology already has a class (`fdri:ObservationDatasetSeries`) that represents a collection of observation datasets (such as time-series datasets). This class can be extended to support recording information about the EIDC publication status of the series and hold the EIDC catalog record identifier once a record is created. The metadata to be provided to the EIDC catalog can be recorded as properties of the `fdri:ObservationDatasetSeries`. This includes all of the core DCAT metadata that the EIDC catalog requires. The service that packages data for release to EIDC can then make use of the metadata stored against the `fdri:ObservationDatasetSeries` as well as any detailed metadata stored against each series member in order to construct the metadata package for the EIDC catalog.
+
+### Option 2 - Mastered in EIDC Catalog
+
+In this option, the initial creating of dataset record is managed through the EIDC catalog interface. Once this record has been created, a `fdri:ObservationDatasetSeries` can be created in the Metadata Store that includes a link to the associated EIDC catalog record. The `fdri:ObservationDatasetSeries` would be used to group together all of the individual datasets that make up the content of the dataset published to the EIDC catalog.
+
 
 ### Open Questions / To Discuss
 
