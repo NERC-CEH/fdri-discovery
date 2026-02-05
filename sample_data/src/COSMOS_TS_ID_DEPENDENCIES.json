@@ -494,7 +494,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-ALIC1-PA_1DAY_PROCESSED": {
