@@ -74,7 +74,7 @@ embedded:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.value>"
             "@type": "<schema:PropertyValue>"
-            "<schema:value>": "{value}^^<xsd:integer>"
+            "<schema:value>": "{value}"
       "<fdri:parameter>":
         - name: ArgumentParameter
           properties:
