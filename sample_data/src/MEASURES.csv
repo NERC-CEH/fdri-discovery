@@ -71,7 +71,22 @@ PERM_50-INST-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,INST,PT30M,PT30M,Instantaneo
 PRECIPITATION-TOTAL_PREC-MM-P1D-P1D,,PRECIPITATION,MM,TOTAL_PREC,P1D,P1D,Total precipitation over the preceding day in millimetres
 PRECIPITATION-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation over the preceding minute in millimetres
 PRECIPITATION-TOTAL_PREC-MM-PT30M-PT30M,,PRECIPITATION,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation over the preceding 30 minutes in millimetres
-PRECIPITATION_INTEN-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION_INTEN,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation intensity over the preceding minute in millimetres per minute
+PRECIPITATION_INTEN-MEAN_PREC-MM-PT1M-PT1M,,PRECIPITATION_INTEN,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per minute
+PRECIPITATION_PLUVIO-TOTAL_PREC-MM-P1D-P1D,,PRECIPITATION_PLUVIO,MM,TOTAL_PREC,P1D,P1D,Total precipitation from Pluvio rain gauge over the preceding day in millimetres
+PRECIPITATION_PLUVIO-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION_PLUVIO,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from Pluvio rain gauge over the preceding minute in millimetres
+PRECIPITATION_PLUVIO-TOTAL_PREC-MM-PT30M-PT30M,,PRECIPITATION_PLUVIO,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from Pluvio rain gauge over the preceding 30 minutes in millimetres
+PRECIPITATION_INTEN_PLUVIO-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIPITATION_INTEN_PLUVIO,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from Pluvio rain gauge over the preceding minute in millimetres per minute
+PRECIPITATION_RAINE-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION_RAINE,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from RainE rain gauge over the preceding minute in millimetres
+PRECIPITATION_RAINE_ACC-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION_RAINE_ACC,MM,TOTAL_PREC,PT1M,PT1M,Accumulated precipitation from RainE rain gauge in millimetres
+PRECIPITATION_RAINE-TOTAL_PREC-MM-PT30M-PT30M,,PRECIPITATION_RAINE,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from RainE rain gauge over the preceding 30 minutes in millimetres
+PRECIPITATION_RAINE-TOTAL_PREC-MM-P1D-P1D,,PRECIPITATION_RAINE,MM,TOTAL_PREC,P1D,P1D,Total precipitation from RainE rain gauge over the preceding day in millimetres
+PRECIPITATION_INTEN_RAINE-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIPITATION_INTEN_RAINE,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from RainE rain gauge over the preceding minute in millimetres per minute
+PRECIPITATION_INTEN_RAINE-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIPITATION_INTEN_RAINE,MM_HR-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from RainE rain gauge over the preceding minute in millimetres per hour
+PRECIPITATION_INTEN_RAINE_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIPITATION_INTEN_RAINE,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from RainE rain gauge since last request in millimetres per minute
+PRECIPITATION_INTEN_RAINE_LR-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIPITATION_INTEN_RAINE,MM_HR-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from RainE rain gauge since last request in millimetres per hour
+PRECIPITATION_TIPPING-TOTAL_PREC-MM-P1D-P1D,,PRECIPITATION_TIPPING,MM,TOTAL_PREC,P1D,P1D,Total precipitation from tipping bucket rain gauge over the preceding day in millimetres
+PRECIPITATION_TIPPING-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION_TIPPING,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from tipping bucket rain gauge over the preceding minute in millimetres
+PRECIPITATION_TIPPING-TOTAL_PREC-MM-PT30M-PT30M,,PRECIPITATION_TIPPING,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from tipping bucket rain gauge over the preceding 30 minutes in millimetres
 Q-MEAN_PREC-GM-3-P1D-P1D,,Q,GM-3,MEAN_PREC,P1D,P1D,Mean absolute humidity over the preceding day in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN_PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN_PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
