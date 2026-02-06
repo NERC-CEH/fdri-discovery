@@ -90,7 +90,7 @@ PRECIPITATION_TIPPING-TOTAL_PREC-MM-PT30M-PT30M,,PRECIPITATION_TIPPING,MM,TOTAL_
 Q-MEAN_PREC-GM-3-P1D-P1D,,Q,GM-3,MEAN_PREC,P1D,P1D,Mean absolute humidity over the preceding day in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN_PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN_PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
-Q-STDDEV_PREC-GM-3-PT30M-PT30M,,Q,GM-3,STDDEV_PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
+Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV_PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
 RH-INST-PCT-PT30M-PT30M,,RH,PCT,INST,PT30M,PT30M,Instantaneous relative humidity at 30 minutes in percent
 RH-MEAN_PREC-PCT-P1D-P1D,,RH,PCT,MEAN_PREC,P1D,P1D,Mean relative humidity over the preceding day in percent
 RH-MEAN_PREC-PCT-PT30M-PT30M,,RH,PCT,MEAN_PREC,PT30M,PT30M,Mean relative humidity over the preceding 30 minutes in percent

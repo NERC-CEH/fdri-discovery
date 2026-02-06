@@ -63,6 +63,7 @@ PRECIPITATION_RAINE_ACC,Accumulated precipitation from RainE rain gauge,AIR,PREC
 PRECIPITATION_INTEN_RAINE,Precipitation intensity from RainE rain gauge,AIR,PRECIPITATION,
 PRECIPITATION_TIPPING,Precipitation from tipping bucket rain gauge,AIR,PRECIPITATION,
 Q,Absolute humidity,AIR,Q,
+Q_STD,Absolute humidity standard deviation,AIR,Q,
 REAL_DIEL_PERM,Soil real dielectric permittivity,SOIL,ELECTRICAL-PERMITTIVITY,
 REV,Number of revolutions of sensor,SENSOR,COUNT,
 REVOLUTIONS,Rotations,SENSOR,DIAGNOSTIC,
