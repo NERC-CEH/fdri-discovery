@@ -12,14 +12,15 @@ resources:
     properties:
       "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>
       "@type": "<fdri:EnvironmentalMonitoringSite>"
-      "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      # "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      <fdri:measures>: "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
 
   - name: TimeSeriesDataset
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "@type": "<fdri:TimeSeriesDataset>"
       "<dct:identifier>": "{TIMESERIES_ID}"
-      "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      # "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:originatingSite>": "<::Site>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/cosmos>"
       "<fdri:sourceBucket>": "{S3_BUCKET}"
@@ -37,6 +38,7 @@ resources:
       "@type": "<fdri:EnvironmentalMonitoringPlatform>"
       "<dct:isPartOf>": "<::Site>"
       "^<dct:hasPart>": "<::Site>"
-      "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      # "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "<fdri:measures>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
       "^<fdri:originatingFacility>": "<::TimeSeriesDataset>"
 
