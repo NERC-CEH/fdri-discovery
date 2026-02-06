@@ -494,7 +494,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-ALIC1-PA_1DAY_PROCESSED": {
@@ -1533,7 +1534,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-BALRD-PA_1DAY_PROCESSED": {
@@ -2608,7 +2610,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-BICKL-PA_1DAY_PROCESSED": {
@@ -3711,7 +3714,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-BUNNY-PA_1DAY_PROCESSED": {
@@ -4814,7 +4818,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-CARDT-PA_1DAY_PROCESSED": {
@@ -6004,7 +6009,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-CGARW-PA_1DAY_PROCESSED": {
@@ -7524,7 +7530,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-CHIMN-PA_1DAY_PROCESSED": {
@@ -9040,7 +9047,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-CHOBH-PA_1DAY_PROCESSED": {
@@ -10230,7 +10238,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-COCHN-PA_1DAY_PROCESSED": {
@@ -11744,7 +11753,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-COCLP-PA_1DAY_PROCESSED": {
@@ -12819,7 +12829,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-CRICH-PA_1DAY_PROCESSED": {
@@ -13981,7 +13992,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-EASTB-PA_1DAY_PROCESSED": {
@@ -15121,7 +15133,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-ELMST-PA_1DAY_PROCESSED": {
@@ -16546,7 +16559,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-EUSTN-PA_1DAY_PROCESSED": {
@@ -17971,7 +17985,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-FINCH-PA_1DAY_PROCESSED": {
@@ -19424,7 +19439,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-FIVET-PA_1DAY_PROCESSED": {
@@ -20960,7 +20976,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-GISBN-PA_1DAY_PROCESSED": {
@@ -22187,7 +22204,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-GLENS-PA_1DAY_PROCESSED": {
@@ -23327,7 +23345,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-GLENW-PA_1DAY_PROCESSED": {
@@ -24752,7 +24771,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HADLW-PA_1DAY_PROCESSED": {
@@ -26177,7 +26197,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HARTW-PA_1DAY_PROCESSED": {
@@ -27246,7 +27267,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HARWD-PA_1DAY_PROCESSED": {
@@ -28309,7 +28331,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HENFS-PA_1DAY_PROCESSED": {
@@ -29384,7 +29407,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HILLB-PA_1DAY_PROCESSED": {
@@ -30809,7 +30833,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HLACY-PA_1DAY_PROCESSED": {
@@ -32286,7 +32311,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HOLLN-PA_1DAY_PROCESSED": {
@@ -33389,7 +33415,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-HYBRY-PA_1DAY_PROCESSED": {
@@ -34814,7 +34841,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-LIZRD-PA_1DAY_PROCESSED": {
@@ -35913,7 +35941,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-LODTN-PA_1DAY_PROCESSED": {
@@ -37366,7 +37395,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-LULLN-PA_1DAY_PROCESSED": {
@@ -38556,7 +38586,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-MOORH-PA_1DAY_PROCESSED": {
@@ -39696,7 +39727,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-MOREM-PA_1DAY_PROCESSED": {
@@ -41149,7 +41181,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-MORLY-PA_1DAY_PROCESSED": {
@@ -42224,7 +42257,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-NWYKE-PA_1DAY_PROCESSED": {
@@ -43386,7 +43420,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-PLYNL-PA_1DAY_PROCESSED": {
@@ -44526,7 +44561,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-PORTN-PA_1DAY_PROCESSED": {
@@ -45601,7 +45637,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-RDMER-PA_1DAY_PROCESSED": {
@@ -46676,7 +46713,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-REDHL-PA_1DAY_PROCESSED": {
@@ -47779,7 +47817,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-RISEH-PA_1DAY_PROCESSED": {
@@ -49204,7 +49243,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-ROTHD-PA_1DAY_PROCESSED": {
@@ -50337,7 +50377,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-SHEEP-PA_1DAY_PROCESSED": {
@@ -51940,7 +51981,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-SOURH-PA_1DAY_PROCESSED": {
@@ -53080,7 +53122,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-SPENF-PA_1DAY_PROCESSED": {
@@ -54529,7 +54572,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-STGHT-PA_1DAY_PROCESSED": {
@@ -55656,7 +55700,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-STIPS-PA_1DAY_PROCESSED": {
@@ -56731,7 +56776,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-SYDLG-PA_1DAY_PROCESSED": {
@@ -58184,7 +58230,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-TADHM-PA_1DAY_PROCESSED": {
@@ -59283,7 +59330,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-WADDN-PA_1DAY_PROCESSED": {
@@ -60799,7 +60847,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-WIMPL-PA_1DAY_PROCESSED": {
@@ -62224,7 +62273,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-WRTTL-PA_1DAY_PROCESSED": {
@@ -63671,7 +63721,8 @@
     "derivation": "CALCULATE",
     "method": "calculate_MSLP",
     "args": {
-      "round": 3
+      "round": 3,
+      "site_attribute": "ALTITUDE"
     }
   },
   "COSMOS-WYTH1-PA_1DAY_PROCESSED": {
