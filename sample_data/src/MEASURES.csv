@@ -119,7 +119,7 @@ TEMP_AIR-MAX_PREC-DEGC-PT30M-P1D,,TEMP_AIR,DEGC,MAX_PREC,P1D,PT30M,Maximum air t
 TEMP_AIR-MEAN_PREC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MEAN_PREC,P1D,P1D,Mean air temperature over the preceding day in degrees Celsius
 TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,MEAN_PREC,PT30M,PT30M,Mean air temperature over the preceding 30 minutes in degrees Celsius
 TEMP_AIR-MIN_PREC-DEGC-PT30M-P1D,,TEMP_AIR,DEGC,MIN_PREC,P1D,PT30M,Minimum air temperature over the preceding day in degrees Celsius
-TEMP_AIR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,STDDEV_PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
+TEMP_AIR_STD-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR_STD,DEGC,STDDEV_PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
 TEMP_CRNS-INST-DEGC-PT30M-PT30M,,TEMP_CRNS,DEGC,INST,PT30M,PT30M,Instantaneous temperature in CRNS tube in degrees Celsius
 TEMP_CRNS-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_CRNS,DEGC,MEAN_PREC,PT30M,PT30M,Mean temperature in CRNS tube over the preceding 30 minutes in degrees Celsius
 TEMP_LOADCELL-INST-MM-PT1M-PT1M,,TEMP_LOADCELL,MM,INST,PT1M,PT1M,Instantaneous internal temperature of load cell in millimetres
