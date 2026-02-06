@@ -2461,333 +2461,8 @@
         ]
     },
     {
-        "CORRECT_TS": "COSMOS-ALIC1-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-BALRD-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-BICKL-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-BUNNY-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-CARDT-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-CGARW-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-CHIMN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-CHOBH-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-COCHN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-COCLP-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-CRICH-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-EASTB-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-ELMST-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-EUSTN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-FINCH-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
         "CORRECT_TS": "COSMOS-FIVET-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-GISBN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-GLENS-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-GLENW-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-HADLW-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-HARTW-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-HARWD-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-HENFS-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-HILLB-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-HLACY-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-HOLLN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
         "OBS_START_DATETIME": "2013-01-01 00:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
         "METHOD_ID": "CLIP",
@@ -2800,280 +2475,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-HYBRY-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-LIZRD-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-LODTN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-LULLN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-MOORH-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-MOREM-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-MORLY-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-NWYKE-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-PLYNL-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-PORTN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-RDMER-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-REDHL-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-RISEH-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-ROTHD-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-SHEEP-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-SOURH-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-SPENF-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-STGHT-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-STIPS-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-SYDLG-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-TADHM-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
-        "METHOD_ID": "CLIP",
-        "parameters": [
-            {
-                "PARAM_ID": "MIN",
-                "PARAM_VALUE": 0
-            }
-        ]
-    },
-    {
-        "CORRECT_TS": "COSMOS-WADDN-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
         "OBS_START_DATETIME": "2013-01-01 00:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
         "METHOD_ID": "CLIP",
@@ -3086,7 +2488,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-WIMPL-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
         "OBS_START_DATETIME": "2013-01-01 00:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
         "METHOD_ID": "CLIP",
@@ -3098,8 +2500,86 @@
         ]
     },
     {
-        "CORRECT_TS": "COSMOS-WRTTL-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
+        "CORRECT_TS": "COSMOS-RDMER-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-RISEH-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-ROTHD-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-SHEEP-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-STGHT-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-STIPS-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-TADHM-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
         "OBS_START_DATETIME": "2013-01-01 00:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
         "METHOD_ID": "CLIP",
@@ -3112,7 +2592,527 @@
     },
     {
         "CORRECT_TS": "COSMOS-WYTH1-PE_30MIN_RAW",
-        "DESCIPTION": "Clipped PE data: negative values set to zero",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-SPENF-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-MOREM-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-WRTTL-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-ALIC1-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-BALRD-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-BUNNY-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-CHOBH-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-EASTB-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-GLENW-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HENFS-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-MOORH-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-NWYKE-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-REDHL-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-SOURH-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-WADDN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-FINCH-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-SYDLG-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-COCHN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-BICKL-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-CARDT-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-CGARW-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-CHIMN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-COCLP-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-CRICH-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-ELMST-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-EUSTN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-GISBN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-GLENS-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HADLW-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HLACY-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HARTW-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HARWD-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HILLB-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HOLLN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-LIZRD-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-LODTN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-LULLN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-MORLY-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-PLYNL-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "CLIP",
+        "parameters": [
+            {
+                "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            }
+        ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-PORTN-PE_30MIN_RAW",
+        "DESCRIPTION": "Clipped PE data: negative values set to zero",
         "OBS_START_DATETIME": "2013-01-01 00:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
         "METHOD_ID": "CLIP",
