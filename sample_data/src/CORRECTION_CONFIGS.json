@@ -3029,6 +3029,10 @@
             {
                 "PARAM_ID": "MIN",
                 "PARAM_VALUE": 0
+            },
+            {
+                "PARAM_ID": "MAX",
+                "PARAM_VALUE": null
             }
         ]
     },
@@ -3041,6 +3045,10 @@
         "parameters": [
             {
                 "PARAM_ID": "MIN",
+                "PARAM_VALUE": 0
+            },
+            {
+                "PARAM_ID": "MAX",
                 "PARAM_VALUE": 0
             }
         ]
