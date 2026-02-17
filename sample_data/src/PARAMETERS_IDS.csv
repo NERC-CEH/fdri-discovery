@@ -16,7 +16,16 @@ COND_50,Electrical conductivity at 50 cm depth,SOIL,CONDUCTIVITY,
 COND_50_TDT,Electrical conductivity from TDT at 50 cm depth,SOIL,CONDUCTIVITY,
 COUNT,Number of counts,SAMPLES,COUNT,
 DEW_POINT,Dew point temperature,AIR,TEMPERATURE,
-DIAG_CRNS,Diagnostic flag for CRNS tube,SENSOR,DIAGNOSTIC,CRNS
+DIAG_CRNS_1,Diagnostic flag 1 for CRNS tube,SENSOR,DIAGNOSTIC,CRNS
+DIAG_CRNS_2,Diagnostic flag 2 for CRNS tube,SENSOR,DIAGNOSTIC,CRNS
+DIAG_CRNS_3,Diagnostic flag 3 for CRNS tube,SENSOR,DIAGNOSTIC,CRNS
+DIAG_CRNS_4,Diagnostic flag 4 for CRNS tube,SENSOR,DIAGNOSTIC,CRNS
+DIAG_CRNS_5,Diagnostic flag 5 for CRNS tube,SENSOR,DIAGNOSTIC,CRNS
+DIAG_SNOWFOX_1,Diagnostic flag 1 for SnowFox tube,SENSOR,DIAGNOSTIC,SNOWFOX
+DIAG_SNOWFOX_2,Diagnostic flag 2 for SnowFox tube,SENSOR,DIAGNOSTIC,SNOWFOX
+DIAG_SNOWFOX_3,Diagnostic flag 3 for SnowFox tube,SENSOR,DIAGNOSTIC,SNOWFOX
+DIAG_SNOWFOX_4,Diagnostic flag 4 for SnowFox tube,SENSOR,DIAGNOSTIC,SNOWFOX
+DIAG_SNOWFOX_5,Diagnostic flag 5 for SnowFox tube,SENSOR,DIAGNOSTIC,SNOWFOX
 DIAG_PRECIP,Diagnostic flag for precipitation gauge,SENSOR,DIAGNOSTIC,
 DISCHARGE,Water discharge,WATER,VOLUME-FLOW-RATE,
 DLOSS,Soil dielectric loss tangent,SOIL,DLOSS,
