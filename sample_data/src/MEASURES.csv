@@ -98,12 +98,14 @@ PERM_15_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_15_TDT,UNITLESS,INST,PT30M,PT30M,Ins
 PERM_25_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_25_TDT,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity from TDT at 25 cm depth
 PERM_5_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_5_TDT,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity from TDT at 5 cm depth
 PERM_50_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_50_TDT,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity from TDT at 50 cm depth
-PRECIP_PLUVIO-TOTAL_PREC-MM-P1D-P1D,,PRECIP_PLUVIO,MM,TOTAL_PREC,P1D,P1D,Total precipitation from Pluvio rain gauge over the preceding day in millimetres
-PRECIP_PLUVIO-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_PLUVIO,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from Pluvio rain gauge over the preceding minute in millimetres
-PRECIP_PLUVIO-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_PLUVIO,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from Pluvio rain gauge over the preceding 30 minutes in millimetres
-PRECIP_INTEN_PLUVIO-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_PLUVIO,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from Pluvio rain gauge over the preceding minute in millimetres per minute
+PRECIP_PLUVIO-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_PLUVIO_NRT,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation (non-real-time) from Pluvio rain gauge over the preceding minute in millimetres
+PRECIP_PLUVIO_RT_NRT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_PLUVIO_RT_NRT,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation (real-time and non-real-time) from Pluvio rain gauge over the preceding minute in millimetres
+PRECIP_PLUVIO_NRT_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_PLUVIO_NRT_TOT,MM,TOTAL_PREC,PT1M,PT1M,Accumulated total precipitation (non-real-time) from Pluvio rain gauge over the preceding minute in millimetres
+PRECIP_PLUVIO-TOTAL_PREC-MM-P1D-P1D,,PRECIP_PLUVIO_NRT,MM,TOTAL_PREC,P1D,P1D,Total precipitation from Pluvio rain gauge over the preceding day in millimetres
+PRECIP_PLUVIO-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_PLUVIO_NRT,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from Pluvio rain gauge over the preceding 30 minutes in millimetres
+PRECIP_INTEN_PLUVIO-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_PLUVIO_RT,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from Pluvio rain gauge over the preceding minute in millimetres per minute
 PRECIP_RAINE-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_RAINE,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from RainE rain gauge over the preceding minute in millimetres
-PRECIP_RAINE_ACC-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_RAINE_ACC,MM,TOTAL_PREC,PT1M,PT1M,Accumulated precipitation from RainE rain gauge in millimetres
+PRECIP_RAINE_ACC-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_RAINE_ACC,MM,TOTAL_PREC,PT1M,PT1M,Accumulated total precipitation from RainE rain gauge in millimetres
 PRECIP_RAINE-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_RAINE,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from RainE rain gauge over the preceding 30 minutes in millimetres
 PRECIP_RAINE-TOTAL_PREC-MM-P1D-P1D,,PRECIP_RAINE,MM,TOTAL_PREC,P1D,P1D,Total precipitation from RainE rain gauge over the preceding day in millimetres
 PRECIP_INTEN_RAINE-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_RAINE,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity from RainE rain gauge over the preceding minute in millimetres per minute
