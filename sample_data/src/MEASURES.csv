@@ -15,7 +15,8 @@ WATER_TEMP-MEAN-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,MEAN,,,Mean water temperatu
 AIR_DENSITY-INST-KGM-3-PT30M-PT30M,,AIR_DENSITY,KGM-3,INST,PT30M,PT30M,
 ALBEDO-MEAN_PREC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN_PREC,P1D,P1D,Mean albedo over the preceding day
 ALBEDO-MEAN_PREC-UNITLESS-PT30M-PT30M,,ALBEDO,UNITLESS,MEAN_PREC,PT30M,PT30M,Mean albedo over the preceding 30 minutes
-BUCKET_LEVEL-INST-MM-PT1M-PT1M,,BUCKET_LEVEL,MM,INST,PT1M,PT1M,Instantaneous bucket level in millimetres
+BUCKET_LEVEL_RT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_RT,MM,INST,PT1M,PT1M,Instantaneous bucket level (real-time) in millimetres
+BUCKET_LEVEL_NRT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_NRT,MM,INST,PT1M,PT1M,Instantaneous bucket level (non-real-time) in millimetres
 COND_10_TDT-INST-DSM-1-PT30M-PT30M,,COND_10_TDT,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity from TDT at 10 cm depth
 COND_15_TDT-INST-DSM-1-PT30M-PT30M,,COND_15_TDT,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity from TDT at 15 cm depth
 COND_25_TDT-INST-DSM-1-PT30M-PT30M,,COND_25_TDT,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity from TDT at 25 cm depth
@@ -97,10 +98,6 @@ PERM_15_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_15_TDT,UNITLESS,INST,PT30M,PT30M,Ins
 PERM_25_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_25_TDT,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity from TDT at 25 cm depth
 PERM_5_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_5_TDT,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity from TDT at 5 cm depth
 PERM_50_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_50_TDT,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity from TDT at 50 cm depth
-PRECIPITATION-TOTAL_PREC-MM-P1D-P1D,,PRECIPITATION,MM,TOTAL_PREC,P1D,P1D,Total precipitation over the preceding day in millimetres
-PRECIPITATION-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation over the preceding minute in millimetres
-PRECIPITATION-TOTAL_PREC-MM-PT30M-PT30M,,PRECIPITATION,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation over the preceding 30 minutes in millimetres
-PRECIPITATION_INTEN-MEAN_PREC-MM-PT1M-PT1M,,PRECIPITATION_INTEN,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per minute
 PRECIPITATION_PLUVIO-TOTAL_PREC-MM-P1D-P1D,,PRECIPITATION_PLUVIO,MM,TOTAL_PREC,P1D,P1D,Total precipitation from Pluvio rain gauge over the preceding day in millimetres
 PRECIPITATION_PLUVIO-TOTAL_PREC-MM-PT1M-PT1M,,PRECIPITATION_PLUVIO,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from Pluvio rain gauge over the preceding minute in millimetres
 PRECIPITATION_PLUVIO-TOTAL_PREC-MM-PT30M-PT30M,,PRECIPITATION_PLUVIO,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from Pluvio rain gauge over the preceding 30 minutes in millimetres
