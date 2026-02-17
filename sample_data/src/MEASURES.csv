@@ -80,7 +80,7 @@ NEUTRON_CTS-TOTAL_PREC-CTS-PT30M-PT30M,,NEUTRON_CTS,CTS,TOTAL_PREC,PT30M,PT30M,T
 PA-MEAN_PREC-HPA-P1D-P1D,,PA,HPA,MEAN_PREC,P1D,P1D,Mean atmospheric pressure over the preceding day in hectopascals
 PA-MEAN_PREC-HPA-PT1H-PT1H,,PA,HPA,MEAN_PREC,PT1H,PT1H,Mean atmospheric pressure over the preceding hour in hectopascals
 PA-MEAN_PREC-HPA-PT30M-PT30M,,PA,HPA,MEAN_PREC,PT30M,PT30M,Mean atmospheric pressure over the preceding 30 minutes in hectopascals
-PA-STDDEV_PREC-HPA-PT30M-PT30M,,PA,HPA,STDDEV_PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in hectopascals
+PA-STDDEV_PREC-HPA-PT30M-PT30M,,PA_STD,HPA,STDDEV_PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in hectopascals
 PE-TOTAL_PREC-MM-P1D-P1D,,PE,MM,TOTAL_PREC,P1D,P1D,Total potential evaporation over the preceding day in millimetres
 PE-TOTAL_PREC-MM-PT30M-PT30M,,PE,MM,TOTAL_PREC,PT30M,PT30M,Total potential evaporation over the preceding 30 minutes in millimetres
 PERM_10_TDT-INST-UNITLESS-PT30M-PT30M,,PERM_10_TDT,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity from TDT at 10 cm depth
