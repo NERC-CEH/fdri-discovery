@@ -26,8 +26,6 @@ DIAG_CRNS-INST-UNITLESS-PT30M-PT30M,,DIAG_CRNS,UNITLESS,INST,PT30M,PT30M,Instant
 DIAG_PRECIP-INST-UNITLESS-PT30M-PT30M,,DIAG_PRECIP,UNITLESS,INST,PT30M,PT30M,Instantaneous Precipitation diagnostic flag
 EFF_DEPTH-MEAN_PREC-CM-P1D-P1D,,EFF_DEPTH,CM,MEAN_PREC,P1D,P1D,D86 effective depth in cm over preceding day
 EFF_DEPTH-MEAN_PREC-CM-PT1H-PT1H,,EFF_DEPTH,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth in cm over preceding hour
-FACTOR_CALIB-INST-MM-PT30M-PT30M,,FACTOR_CALIB,MM,INST,PT30M,PT30M,Instantaneous calibration factor in millimetres
-FACTOR_CALIB-INST-UNITLESS-PT30M-PT30M,,FACTOR_CALIB,UNITLESS,INST,PT30M,PT30M,Instantaneous calibration factor (unitless)
 FACTOR_INTEN-INST-UNITLESS-PT1H-PT1H,,FACTOR_INTEN,UNITLESS,INST,PT1H,PT1H,Instantaneous intensity factor (unitless)
 FACTOR_PA-INST-UNITLESS-PT1H-PT1H,,FACTOR_PA,UNITLESS,INST,PT1H,PT1H,Instantaneous pressure facctor (unitless)
 FACTOR_Q-INST-UNITLESS-PT1H-PT1H,,FACTOR_Q,UNITLESS,INST,PT1H,PT1H,Instantaneous water vapour factor (unitless)
@@ -68,11 +66,13 @@ LWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,STDDEV_PREC,PT30M,PT30M,Standard de
 LWIN-TOTAL_PREC-MJM-2-D-P1D-P1D,,LWIN,MJM-2-D,TOTAL_PREC,P1D,P1D,Total incoming longwave radiation over preceding day in megajoules per metre squared
 LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN_PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous incoming longwave radiation calibration factor (unitless)
 LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN_PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
 LWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation over preceding 30 minutes in watts per metre squared
 LWOUT-TOTAL_PREC-MJM-2-D-P1D-P1D,,LWOUT,MJM-2-D,TOTAL_PREC,P1D,P1D,Total outgoing longwave radiation over preceding day in megajoules per metre squared
 LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN_PREC,PT30M,PT30M,Mean outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
 MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL_PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
 NEUTRON_CTS-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_CTS,CTS,TOTAL_PREC,P1D,P1D,Total neutron counts over the preceding day
 NEUTRON_CTS-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_CTS,CTS,TOTAL_PREC,PT1H,PT1H,Total neutron counts over the preceding hour
@@ -132,9 +132,12 @@ SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN_PREC,PT1H,PT1H,Mean snow water equivalen
 SWIN-MEAN_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,MEAN_PREC,PT30M,PT30M,Mean incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-TOTAL_PREC-MJM-2-D-P1D-P1D,,SWIN,MJM-2-D,TOTAL_PREC,P1D,P1D,Total incoming shortwave radiation over preceding day in megajoules per metre squared
+SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
 SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,MEAN_PREC,PT30M,PT30M,Mean outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
 SWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
 SWOUT-TOTAL_PREC-MJM-2-D-P1D-P1D,,SWOUT,MJM-2-D,TOTAL_PREC,P1D,P1D,Total outgoing shortwave radiation over preceding day in megajoules per metre squared
+SWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,SWOUT_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous outgoing shortwave radiation calibration factor (unitless)
+TBR_TIP-INST-MM-PT30M-PT30M,,TBR_TIP,MM,INST,PT30M,PT30M,Instantaneous tipping bucket rain gauge tip amount in millimetres
 TEMP_AIR-MAX_PREC-DEGC-PT30M-P1D,,TEMP_AIR,DEGC,MAX_PREC,P1D,PT30M,Maximum air temperature over the preceding day in degrees Celsius
 TEMP_AIR-MEAN_PREC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MEAN_PREC,P1D,P1D,Mean air temperature over the preceding day in degrees Celsius
 TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,MEAN_PREC,PT30M,PT30M,Mean air temperature over the preceding 30 minutes in degrees Celsius

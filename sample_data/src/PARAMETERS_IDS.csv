@@ -22,7 +22,6 @@ DISCHARGE,Water discharge,WATER,VOLUME-FLOW-RATE,
 DLOSS,Soil dielectric loss tangent,SOIL,DLOSS,
 EFF_DEPTH,Effective Depth,SOIL,DEPTH,
 ERR_FLAGS,Error Flags,SENSOR,DIAGNOSTIC,
-FACTOR_CALIB,Calibration factor,SENSOR,CALIBRATION,
 FACTOR_INTEN,COSMOS intensity factor,NEUTRON,CALIBRATION,
 FACTOR_PA,COSMOS pressure factor,ATMOSPHERIC-PRESSURE,CALIBRATION,
 FACTOR_Q,COSMOS water vapour factor,HUMIDITY,CALIBRATION,
@@ -57,8 +56,10 @@ IMAGE_COLOUR_PROPORTION_GREEN_LM2,Proportion of green in an image after land mas
 IMAGE_FILENAME,Filename of image,IMAGE,FILENAME,
 LWIN,Incoming longwave radiation (corrected),INCOMING-LONGWAVE-RADIATION,ENERGY-DENSITY,
 LWIN_UNC,Incoming longwave radiation (uncorrected),INCOMING-LONGWAVE-RADIATION,ENERGY-DENSITY,
+LWIN_MULT,Incoming longwave radiation calibration factor,SENSOR,CALIBRATION,
 LWOUT,Outgoing longwave radiation (corrected),OUTGOING-LONGWAVE-RADIATION,ENERGY-DENSITY,
 LWOUT_UNC,Outgoing longwave radiation (uncorrected),OUTGOING-LONGWAVE-RADIATION,ENERGY-DENSITY,
+LWOUT_MULT,Outgoing longwave radiation calibration factor,SENSOR,CALIBRATION,
 MEASURE_PERIOD,Period of measurement,SAMPLES,TIME,
 NEUTRON_CTS,Neutron counts,NEUTRON,COUNT,
 PA,Atmospheric pressure,AIR,ATMOSPHERIC-PRESSURE,
@@ -77,12 +78,13 @@ PERM_50,Electrical permittivity at 50 cm depth,SOIL,ELECTRICAL-PERMITTIVITY,
 PERM_50_TDT,Electrical permittivity from TDT at 50 cm depth,SOIL,ELECTRICAL-PERMITTIVITY,
 PRECIPITATION,Precipitation,AIR,PRECIPITATION,
 PRECIPITATION_INTEN,Precipitation intensity,AIR,PRECIPITATION,
-PRECIPITATION_PLUVIO,Precipitation from Pluvio rain gauge,AIR,PRECIPITATION,
-PRECIPITATION_INTEN_PLUVIO,Precipitation intensity from Pluvio rain gauge,AIR,PRECIPITATION,
-PRECIPITATION_RAINE,Precipitation from RainE rain gauge,AIR,PRECIPITATION,
-PRECIPITATION_RAINE_ACC,Accumulated precipitation from RainE rain gauge,AIR,PRECIPITATION,
-PRECIPITATION_INTEN_RAINE,Precipitation intensity from RainE rain gauge,AIR,PRECIPITATION,
-PRECIPITATION_TIPPING,Precipitation from tipping bucket rain gauge,AIR,PRECIPITATION,
+PRECIPITATION_PLUVIO,Precipitation from Pluvio rain gauge,AIR,PRECIPITATION,PLUVIO
+PRECIPITATION_INTEN_PLUVIO,Precipitation intensity from Pluvio rain gauge,AIR,PRECIPITATION,PLUVIO
+PRECIPITATION_RAINE,Precipitation from RainE rain gauge,AIR,PRECIPITATION,RAINE
+PRECIPITATION_RAINE_ACC,Accumulated precipitation from RainE rain gauge,AIR,PRECIPITATION,RAINE
+PRECIPITATION_INTEN_RAINE,Precipitation intensity from RainE rain gauge,AIR,PRECIPITATION,RAINE
+PRECIPITATION_TIPPING,Precipitation from tipping bucket rain gauge,AIR,PRECIPITATION,TBR
+TBR_TIP,Tipping bucket rain gauge tip amount,SENSOR,CALIBRATION,
 Q,Absolute humidity,AIR,Q,
 Q_STD,Absolute humidity standard deviation,AIR,Q,
 REAL_DIEL_PERM,Soil real dielectric permittivity,SOIL,ELECTRICAL-PERMITTIVITY,
@@ -104,7 +106,9 @@ STATUS_P_HEATING,Status of Pluvio orifice rim heating element,SENSOR,DIAGNOSTIC,
 STATUS_PLUVIO,Status of Pluvio rain gauge,SENSOR,DIAGNOSTIC,PLUVIO
 SWE,Snow water equivalent,SNOW,SNOW-WATER-EQUIVALENT,
 SWIN,Incoming shortwave radiation,INCOMING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
+SWIN_MULT,Incoming shortwave radiation calibration factor,SENSOR,CALIBRATION,
 SWOUT,Outgoing shortwave radiation,OUTGOING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
+SWOUT_MULT,Outgoing shortwave radiation calibration factor,SENSOR,CALIBRATION,
 TEMP_AIR,Air temperature,AIR,TEMPERATURE,
 TEMP_AIR_STD,Air temperature standard deviation,AIR,TEMPERATURE,
 TEMP_CRNS,Temperature in CRNS tube,SENSOR,TEMPERATURE,CRNS
