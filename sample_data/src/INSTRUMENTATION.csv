@@ -23,7 +23,7 @@ MODEM_LX60,Sierra Wireless LX60 Modem,Replacement for MODEM_PRO (ProRoute Modem)
 MODEM_PRO,ProRoute modem,,H820E-W
 CS106,Barometric Pressure Sensor,First installed in Phase 3,CS106 Pressure sensor
 PHENOCAM,Phenocam,,Mobotix S14
-PHENOCAM_LENS,Phenocam lens,,Mobotix B016 hemispheric lens
+PHENOCAM_LENS,Phenocam lens,,Mobotix MX-O-SMA-S-6D016
 PLUVIO,Weighing Raingauge,,Ott Pluvio 2
 PYRANO_DOWN,Downward-facing pyranometer,,
 PYRANO_UP,Upward-facing pyranometer,,
