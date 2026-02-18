@@ -172,7 +172,7 @@ TEMP_SOIL_50-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,INST,PT30M,PT30M,Instantan
 TEMP_SOIL_50-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,MEAN_PREC,PT30M,PT30M,Mean soil temperature at 50 cm depth over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_50-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_50,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 50 cm depth over the preceding day in degrees Celsius
 TEMP_SONIC-INST-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,INST,PT30M,PT30M,Instantaneous sonic temperature in degrees Celsius
-TEMP_SONIC-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
+TEMP_SONIC-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
 UNCERTAINTY-MEAN_MID_24HOUR-MM-P1D-P1D,,UNCERTAINTY,MM,MEAN_MID_24HOUR,P1D,P1D,Mean uncertainty of snow water equivalent over the preceding day in millimetres
 UNCERTAINTY-MEAN_PREC-MM-PT1H-PT1H,,UNCERTAINTY,MM,MEAN_PREC,PT1H,PT1H,Mean uncertainty of snow water equivalent over the preceding hour in millimetres
 VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in kilopascals
