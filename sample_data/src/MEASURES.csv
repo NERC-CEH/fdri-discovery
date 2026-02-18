@@ -179,6 +179,7 @@ VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,INST,PT30M,PT30M,Instantaneous satur
 VOLTAGE_BATT-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE_BATT,V,MEAN_PREC,PT30M,PT30M,Mean battery voltage over the preceding 30 minutes in volts
 VWC_CRNS-MEAN_PREC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN_PREC,P1D,P1D,Mean volumetric water content from CRNS tube over the preceding day in percent
 VWC_CRNS-MEAN_PREC-PCT-PT1H-PT1H,,VWC_CRNS,PCT,MEAN_PREC,PT1H,PT1H,Mean volumetric water content from CRNS tube over the preceding hour in percent
+VWC_CRNS_NO_SNOW-MEAN_PREC-PCT-P1D-P1D,,VWC_CRNS_NO_SNOW,PCT,MEAN_PREC,P1D,P1D,Mean volumetric water content from CRNS tube (with snow content removed) over the preceding day in percent
 VWC_SOIL_10-INST-PCT-PT30M-PT30M,,VWC_SOIL_10,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 10 cm depth in percent
 VWC_SOIL_10-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_10,PCT,MEAN_PREC,P1D,P1D,Mean soil volumetric water content at 10 cm depth over the preceding day in percent
 VWC_SOIL_15-INST-PCT-PT30M-PT30M,,VWC_SOIL_15,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 15 cm depth in percent

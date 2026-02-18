@@ -139,8 +139,8 @@ TEMP_SONIC_STD,Sonic temperature standard deviation,AIR,TEMPERATURE,
 UNCERTAINTY,Measurement uncertainty,SAMPLES,UNCERTAINTY,
 VAPOUR_P,Vapour pressure,AIR,VAPOUR-PRESSURE,
 VOLTAGE_BATT,Battery voltage,BATTERY,VOLTAGE,
-VWC_CRNS,Volumetric water content from CRNS tube,SOIL,VWC,
-VWC_SOIL,Soil volumetric water content,SOIL,VWC,
+VWC_CRNS,Volumetric water content from CRNS tube,SOIL,VWC,CRNS
+VWC_CRNS_NO_SNOW,Volumetric water content from CRNS tube with snow content removed,SOIL,VWC,CRNS
 VWC_SOIL_5,Soil volumetric water content at 5 cm depth,SOIL,VWC,
 VWC_SOIL_10,Soil volumetric water content at 10 cm depth,SOIL,VWC,
 VWC_SOIL_15,Soil volumetric water content at 15 cm depth,SOIL,VWC,
