@@ -22,7 +22,6 @@ COND_15-INST-DSM-1-PT30M-PT30M,,COND_15,DSM-1,INST,PT30M,PT30M,Instantaneous soi
 COND_25-INST-DSM-1-PT30M-PT30M,,COND_25,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 25 cm depth
 COND_5-INST-DSM-1-PT30M-PT30M,,COND_5,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 5 cm depth
 COND_50-INST-DSM-1-PT30M-PT30M,,COND_50,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 50 cm depth
-COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,COUNT,UNITLESS,TOTAL_PREC,PT30M,PT30M,Total count over the preceding 30 minutes
 DIAG_FLAG_1-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_1,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 1
 DIAG_FLAG_2-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_2,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 2
 DIAG_FLAG_3-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_3,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 3
@@ -79,9 +78,15 @@ LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN_PREC,PT30M,PT30M,Mean 
 LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
 MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL_PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
-NEUTRON_CTS-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_CTS,CTS,TOTAL_PREC,P1D,P1D,Total neutron counts over the preceding day
-NEUTRON_CTS-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_CTS,CTS,TOTAL_PREC,PT1H,PT1H,Total neutron counts over the preceding hour
-NEUTRON_CTS-TOTAL_PREC-CTS-PT30M-PT30M,,NEUTRON_CTS,CTS,TOTAL_PREC,PT30M,PT30M,Total neutron counts over the preceding 30 minutes
+NAN_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,NAN_COUNT,UNITLESS,TOTAL_PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
+NEUTRON_COUNT-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT,CTS,TOTAL_PREC,P1D,P1D,Total neutron count over the preceding day
+NEUTRON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT,CTS,TOTAL_PREC,PT1H,PT1H,Total neutron count over the preceding hour
+NEUTRON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,NEUTRON_COUNT,CTS,TOTAL_PREC,PT30M,PT30M,Total neutron count over the preceding 30 minutes
+NEUTRON_COUNT_COR-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT_COR,CTS,TOTAL_PREC,P1D,P1D,Total corrected neutron count over the preceding day
+NEUTRON_COUNT_COR-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_COR,CTS,TOTAL_PREC,PT1H,PT1H,Total corrected neutron count over the preceding hour
+NEUTRON_COUNT_EST-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT_EST,CTS,TOTAL_PREC,P1D,P1D,Total estimated neutron count over the preceding day
+NEUTRON_COUNT_EST-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_EST,CTS,TOTAL_PREC,PT1H,PT1H,Total estimated neutron count over the preceding hour
+NEUTRON_COUNT_SMO-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_SMO,CTS,TOTAL_PREC,PT1H,PT1H,Total smoothed neutron count over the preceding hour
 PA-MEAN_PREC-HPA-P1D-P1D,,PA,HPA,MEAN_PREC,P1D,P1D,Mean atmospheric pressure over the preceding day in hectopascals
 PA-MEAN_PREC-HPA-PT1H-PT1H,,PA,HPA,MEAN_PREC,PT1H,PT1H,Mean atmospheric pressure over the preceding hour in hectopascals
 PA-MEAN_PREC-HPA-PT30M-PT30M,,PA,HPA,MEAN_PREC,PT30M,PT30M,Mean atmospheric pressure over the preceding 30 minutes in hectopascals
@@ -113,10 +118,11 @@ Q-MEAN_PREC-GM-3-P1D-P1D,,Q,GM-3,MEAN_PREC,P1D,P1D,Mean absolute humidity over t
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN_PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN_PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
 Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV_PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
-RH-INST-PCT-PT30M-PT30M,,RH,PCT,INST,PT30M,PT30M,Instantaneous relative humidity at 30 minutes in percent
 RH-MEAN_PREC-PCT-P1D-P1D,,RH,PCT,MEAN_PREC,P1D,P1D,Mean relative humidity over the preceding day in percent
 RH-MEAN_PREC-PCT-PT30M-PT30M,,RH,PCT,MEAN_PREC,PT30M,PT30M,Mean relative humidity over the preceding 30 minutes in percent
-RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH,PCT,STDDEV_PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent
+RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH_STD,PCT,STDDEV_PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent
+RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
+RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN_PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent
 RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN_PREC,PT30M,PT30M,Mean net radiation over preceding 30 minutes in watts per metre squared
 RN-TOTAL_PREC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL_PREC,P1D,P1D,Total net radiation over the preceding day in megajoules per metre squared
 SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL_PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless)
