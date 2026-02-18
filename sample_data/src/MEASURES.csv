@@ -172,9 +172,15 @@ TEMP_SOIL_50-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,INST,PT30M,PT30M,Instantan
 TEMP_SOIL_50-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,MEAN_PREC,PT30M,PT30M,Mean soil temperature at 50 cm depth over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_50-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_50,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 50 cm depth over the preceding day in degrees Celsius
 TEMP_SONIC-INST-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,INST,PT30M,PT30M,Instantaneous sonic temperature in degrees Celsius
-TEMP_SONIC-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
+TEMP_SONIC_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
 UNCERTAINTY-MEAN_MID_24HOUR-MM-P1D-P1D,,UNCERTAINTY,MM,MEAN_MID_24HOUR,P1D,P1D,Mean uncertainty of snow water equivalent over the preceding day in millimetres
 UNCERTAINTY-MEAN_PREC-MM-PT1H-PT1H,,UNCERTAINTY,MM,MEAN_PREC,PT1H,PT1H,Mean uncertainty of snow water equivalent over the preceding hour in millimetres
+UX-MEAN_PREC-MS-1-PT30M-PT30M,,UX,MS-1,MEAN_PREC,PT30M,PT30M,Mean X component of wind speed over the preceding 30 minutes in meters per second
+UY-MEAN_PREC-MS-1-PT30M-PT30M,,UY,MS-1,MEAN_PREC,PT30M,PT30M,Mean Y component of wind speed over the preceding 30 minutes in meters per second
+UZ-MEAN_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,MEAN_PREC,PT30M,PT30M,Mean Z component of wind speed over the preceding 30 minutes in meters per second
+UX_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UX_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of X component of wind speed in meters per second
+UY_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UY_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of Y component of wind speed in meters per second
+UZ_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UZ_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of Z component of wind speed in meters per second
 VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in kilopascals
 VOLTAGE_BATT-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE_BATT,V,MEAN_PREC,PT30M,PT30M,Mean battery voltage over the preceding 30 minutes in volts
 VWC_CRNS-MEAN_PREC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN_PREC,P1D,P1D,Mean volumetric water content from CRNS tube over the preceding day in percent
@@ -194,8 +200,14 @@ VWC_SOIL_50-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_50,PCT,MEAN_PREC,P1D,P1D,Mean soil v
 VWC_SOIL_65-INST-PCT-PT30M-PT30M,,VWC_SOIL_65,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 65 cm depth in percent
 WD-MEAN_PREC-DEG-P1D-P1D,,WD,DEG,MEAN_PREC,P1D,P1D,Mean wind direction over the preceding day in degrees
 WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN_PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees
-WD-STDDEV_PREC-DEG-PT30M-PT30M,,WD,DEG,STDDEV_PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
-WS-INST-MS-1-PT30M-PT30M,,WS,MS-1,INST,PT30M,PT30M,Instantaneous wind speed over the in meters per second
+WD_STD-STDDEV_PREC-DEG-PT30M-PT30M,,WD_STD,DEG,STDDEV_PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
+COV_TS_UX-INST-KMS-1-PT30M-PT30M,,COV_TS_UX,KMS-1,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UX wind speed component in kelvin meters per second
+COV_TS_UY-INST-KMS-1-PT30M-PT30M,,COV_TS_UY,KMS-1,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UY wind speed component in kelvin meters per second
+COV_TS_UZ-INST-KMS-1-PT30M-PT30M,,COV_TS_UZ,KMS-1,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UZ wind speed component in kelvin meters per second
+COV_UX_UY-INST-MS-1-PT30M-PT30M,,COV_UX_UY,MS-1,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UY in meters per second
+COV_UX_UZ-INST-MS-1-PT30M-PT30M,,COV_UX_UZ,MS-1,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UZ in meters per second
+COV_UY_UZ-INST-MS-1-PT30M-PT30M,,COV_UY_UZ,MS-1,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UY and UZ in meters per second
+WS_RES-INST-MS-1-PT30M-PT30M,,WS_RES,MS-1,INST,PT30M,PT30M,Instantaneous resultant wind speed over the in meters per second
 WS-MEAN_PREC-MS-1-P1D-P1D,,WS,MS-1,MEAN_PREC,P1D,P1D,Mean wind speed over the preceding day in meters per second
 WS-MEAN_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MEAN_PREC,PT30M,PT30M,Mean wind speed over the preceding 30 minutes in meters per second
-WS-STDDEV_PREC-MS-1-PT30M-PT30M,,WS,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second
+WS_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,WS_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second

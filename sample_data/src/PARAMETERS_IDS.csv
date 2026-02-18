@@ -10,6 +10,12 @@ COND_10,Electrical conductivity at 10 cm depth,SOIL,CONDUCTIVITY,
 COND_15,Electrical conductivity at 15 cm depth,SOIL,CONDUCTIVITY,
 COND_25,Electrical conductivity at 25 cm depth,SOIL,CONDUCTIVITY,
 COND_50,Electrical conductivity at 50 cm depth,SOIL,CONDUCTIVITY,
+COV_TS_UX,Covariance between sonic temperature and UX wind speed component,AIR,COVARIANCE
+COV_TS_UY,Covariance between sonic temperature and UY wind speed component,AIR,COVARIANCE
+COV_TS_UZ,Covariance between sonic temperature and UZ wind speed component,AIR,COVARIANCE
+COV_UX_UY,Covariance of wind speed component UX and UY,AIR,COVARIANCE
+COV_UX_UZ,Covariance of wind speed component UX and UZ,AIR,COVARIANCE
+COV_UY_UZ,Covariance of wind speed component UY and UZ,AIR,COVARIANCE
 DEW_POINT,Dew point temperature,AIR,TEMPERATURE,
 DIAG_FLAG_1,Diagnostic flag 1,SENSOR,DIAGNOSTIC,
 DIAG_FLAG_2,Diagnostic flag 2,SENSOR,DIAGNOSTIC,
@@ -137,6 +143,12 @@ TEMP_SOIL_50,Soil temperature at 50 cm depth,SOIL,TEMPERATURE,
 TEMP_SONIC,Sonic temperature,AIR,TEMPERATURE,
 TEMP_SONIC_STD,Sonic temperature standard deviation,AIR,TEMPERATURE,
 UNCERTAINTY,Measurement uncertainty,SAMPLES,UNCERTAINTY,
+UX,X component of wind speed,AIR,WS
+UY,Y component of wind speed,AIR,WS
+UZ,Z component of wind speed,AIR,WS
+UX_STD,X component of wind speed standard deviation,AIR,WS
+UY_STD,Y component of wind speed standard deviation,AIR,WS
+UZ_STD,Z component of wind speed standard deviation,AIR,WS
 VAPOUR_P,Vapour pressure,AIR,VAPOUR-PRESSURE,
 VOLTAGE_BATT,Battery voltage,BATTERY,VOLTAGE,
 VWC_CRNS,Volumetric water content from CRNS tube,SOIL,VWC,CRNS
@@ -152,5 +164,8 @@ WATER_LEVEL,Water level,WATER,DISTANCE,
 WATER_TEMP,Water temperature,WATER,TEMPERATURE,
 WATER_VELOCITY,Water velocity,WATER,VELOCITY,
 WD,Wind direction,AIR,WD,
+WD_STD,Wind direction standard deviation,AIR,WD,
 WG,Wind gust speed,AIR,WS,
 WS,Wind speed,AIR,WS,
+WS_RES,Resultant wind speed,AIR,WS,
+WS_STD,Wind speed standard deviation,AIR,WS,
