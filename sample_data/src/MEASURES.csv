@@ -36,11 +36,11 @@ FACTOR_Q-INST-UNITLESS-PT1H-PT1H,,FACTOR_Q,UNITLESS,INST,PT1H,PT1H,Instantaneous
 FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,INST,PT30M,PT30M,Instantaneous momentum flux in kilograms per metre per second squared
 FRICTIONV-INST-MS-1-PT30M-PT30M,,FRICTIONV,MS-1,INST,PT30M,PT30M,Instantaneous friction velocity in metres per second
 HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,INST,PT30M,PT30M,Instantaneous sensible heat flux in watts per metre squared
-HEATFLUX_SOIL-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL,MV,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
-HEATFLUX_SOIL-INST-UNITLESS-PT30M-PT30M,,HEATFLUX_SOIL,UNITLESS,INST,PT30M,PT30M,Instantaneous soil heat flux (unitless)
-HEATFLUX_SOIL-INST-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,INST,PT30M,PT30M,Instantaneous soil heat flux in watts per metre squared
+HEATFLUX_SOIL_MV-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL_MV,MV,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
+HEATFLUX_SOIL_CAL-INST-UNITLESS-PT30M-PT30M,,HEATFLUX_SOIL_CAL,UNITLESS,INST,PT30M,PT30M,Instantaneous soil heat flux calibration factor (unitless)
 HEATFLUX_SOIL-MEAN_PREC-WM-2-P1D-P1D,,HEATFLUX_SOIL,WM-2,MEAN_PREC,P1D,P1D,Mean soil heat flux in watts per metre squared over preceding day
 HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,MEAN_PREC,PT30M,PT30M,Mean soil heat flux in watts per metre squared over preceding 30 minutes
+HEATFLUX_SOIL_STD-STDDEV_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of soil heat flux in watts per metre squared over preceding 30 minutes
 IMAGE_COLOUR_AMOUNT_BLUE_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_BLUE_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of blue in image after land mask 1 over preceding day
 IMAGE_COLOUR_AMOUNT_BLUE_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_BLUE_LM2,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of blue in image after land mask 2 over preceding day
 IMAGE_COLOUR_AMOUNT_RED_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_RED_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of red in image after land mask 1 over preceding day
