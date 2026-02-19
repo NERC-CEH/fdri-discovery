@@ -46,7 +46,7 @@ embedded:
               - SITE_ATTRIBUTE
           properties:
             "@id": <http://fdri.ceh.ac.uk/id/argument/{|hash(PARAM_ID, PARAM_VALUE)|slug}#value>
-            "<schema:value>": "{PARAM_VALUE|asDecimal}^^<xsd:decimal>"
+            "<schema:value>": "{PARAM_VALUE|asDecimal}"
 
 resources:
   - name: Configuration
