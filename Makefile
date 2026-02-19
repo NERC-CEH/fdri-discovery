@@ -73,6 +73,7 @@ SAMPLES += $(TTL_BASE)/fdri_sites.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
+SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
@@ -252,6 +253,9 @@ $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gr
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gridded/%.zarr.json | build/data
 	$(GRIDMAP) --type zarr-meta --base-url http://fdri.ceh.ac.uk/id/dataset/$* --output $@ $(TPL)/gridded_metadata.yaml $(SRC)/gridded/$*.zarr.json
+
+$(TTL_BASE)/FDRI_QC_CONFIGS.ttl: $(TPL)/namespaces.yaml $(TPL)/QC_CONFIGS.yaml $(SRC)/FDRI_QC_CONFIGS.csv | build/data
+	$(MAPPER) $(TPL)/QC_CONFIGS.yaml $(SRC)/FDRI_QC_CONFIGS.csv $@
 
 $(VAL)/%.ttl: $(TTL_BASE)/%.ttl $(SHACL_BASE)/fdri_shacl.ttl  | build/validation
 	$(RUN) /bin/bash -c "shacl v -d $(TTL_BASE)/$*.ttl -s $(SHACL_BASE)/fdri_shacl.ttl > $@"
