@@ -27,4 +27,4 @@ FDRI-SE-HAFRF-07-WATER_LEV_PT_1MIN_RAW,WATER_LEV_PT_1MIN_RAW,WATER_LEVEL,NA,SE-H
 FDRI-SE-HAFRF-07-WATER_LEV_RADAR_1MIN_RAW,WATER_LEV_RADAR_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Stage_Avg,time
 FDRI-SE-HAFRF-07-WATER_TEMP_1MIN_RAW,WATER_TEMP_1MIN_RAW,WATER_TEMP,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Temp_C_Avg,time
 FDRI-SE-HAFRF-07-DIST_TO_WATER_RADAR_1MIN_RAW,DIST_TO_WATER_RADAR_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Distance_m_Avg,time
-FDRI-SE-HAFRF-07-RADAR_TEMP_1MIN_RAW,RADAR_TEMP_1MIN_RAW,TEMP_RADAR,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Inst_Temp,time
+FDRI-SE-HAFRF-07-RADAR_TEMP_1MIN_RAW,RADAR_TEMP_1MIN_RAW,TEMP_SENSOR,NA,SE-HAFRF-07,ukceh-fdri-staging-timeseries-level-0,one_minute,Inst_Temp,time
