@@ -103,42 +103,6 @@
             "round": 5
         }
     },
-    "COSMOS-ALIC1-COV_TS_UX_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-ALIC1-COV_TS_UX_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-ALIC1-COV_TS_UY_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-ALIC1-COV_TS_UY_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-ALIC1-COV_TS_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-ALIC1-COV_TS_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-ALIC1-COV_UX_UY_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-ALIC1-COV_UX_UY_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-ALIC1-COV_UX_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-ALIC1-COV_UX_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-ALIC1-COV_UY_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-ALIC1-COV_UY_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
     "COSMOS-ALIC1-CTS_EST_CRNS_1DAY_PROCESSED": {
         "depends_on": [
             "COSMOS-ALIC1-CTS_EST_CRNS_1HOUR_PROCESSED"
@@ -1004,12 +968,6 @@
     "COSMOS-ALIC1-WS_30MIN_PROCESSED": {
         "depends_on": [
             "COSMOS-ALIC1-WS_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-ALIC1-WS_RES_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-ALIC1-WS_RES_30MIN_RAW"
         ],
         "derivation": "PROCESS"
     },
@@ -26456,42 +26414,6 @@
             "round": 5
         }
     },
-    "COSMOS-HARWD-COV_TS_UX_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-HARWD-COV_TS_UX_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-HARWD-COV_TS_UY_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-HARWD-COV_TS_UY_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-HARWD-COV_TS_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-HARWD-COV_TS_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-HARWD-COV_UX_UY_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-HARWD-COV_UX_UY_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-HARWD-COV_UX_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-HARWD-COV_UX_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-HARWD-COV_UY_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-HARWD-COV_UY_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
     "COSMOS-HARWD-CTS_EST_CRNS_1DAY_PROCESSED": {
         "depends_on": [
             "COSMOS-HARWD-CTS_EST_CRNS_1HOUR_PROCESSED"
@@ -27357,12 +27279,6 @@
     "COSMOS-HARWD-WS_30MIN_PROCESSED": {
         "depends_on": [
             "COSMOS-HARWD-WS_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-HARWD-WS_RES_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-HARWD-WS_RES_30MIN_RAW"
         ],
         "derivation": "PROCESS"
     },
@@ -62329,42 +62245,6 @@
         "args": {
             "round": 5
         }
-    },
-    "COSMOS-WYTH1-COV_TS_UX_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-WYTH1-COV_TS_UX_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-WYTH1-COV_TS_UY_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-WYTH1-COV_TS_UY_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-WYTH1-COV_TS_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-WYTH1-COV_TS_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-WYTH1-COV_UX_UY_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-WYTH1-COV_UX_UY_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-WYTH1-COV_UX_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-WYTH1-COV_UX_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
-    "COSMOS-WYTH1-COV_UY_UZ_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-WYTH1-COV_UY_UZ_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
     },
     "COSMOS-WYTH1-CTS_BARE_30MIN_PROCESSED": {
         "depends_on": [
