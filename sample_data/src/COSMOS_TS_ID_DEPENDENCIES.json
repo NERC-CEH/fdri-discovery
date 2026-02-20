@@ -63108,12 +63108,6 @@
         ],
         "derivation": "PROCESS"
     },
-    "COSMOS-WYTH1-WS_RES_30MIN_PROCESSED": {
-        "depends_on": [
-            "COSMOS-WYTH1-WS_RES_30MIN_RAW"
-        ],
-        "derivation": "PROCESS"
-    },
     "COSMOS-FIVET-PE_30MIN_RAW": {
         "depends_on": [
             "COSMOS-FIVET-RN_30MIN_PROCESSED",
