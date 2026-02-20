@@ -7,10 +7,7 @@ INSERT {
         ?ds fdri:directDependsOn ?dep .
     }
 } WHERE {
-    ?ds dct:type/fdri:methodology/fdri:uses ?depDef .
-    ?ds fdri:originatingSite ?site .
-    ?dep fdri:originatingSite ?site ;
-        dct:type ?depDef .
+    ?ds fdri:methodology/fdri:uses ?dep .
     FILTER NOT EXISTS {
         ?ds fdri:directDependsOn ?x
     }
