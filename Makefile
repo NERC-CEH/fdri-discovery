@@ -131,6 +131,7 @@ contexts: $(CONTEXTS)
 samples: $(SAMPLES)
 reports: $(REPORTS)
 full_validation: $(VAL)/full_report.ttl
+	grep -q -E "conforms\s+true" $^
 
 validate: $(SCHEMA_FILE)
 	$(RUN) record-spec-cmd validate $^
