@@ -30,8 +30,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringPlatform>"
-      "<rdfs:label>": "Sensor slot {SENSOR_SLOT_ID} at {SITE_ID}@en"
-      "<skos:prefLabel>": "{SENSOR_SLOT_NAME}@en"
+      "<rdfs:label>": "{SENSOR_SLOT_NAME}@en"
       "^<dct:hasPart>": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"
 
   - name: SensorDeployment
