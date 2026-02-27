@@ -30,7 +30,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/cosmos-infill-{TIMESERIES_ID|slug}>"
       "@type": "<fdri:InternalDataProcessingConfiguration>"
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/infill-configuration>"
-      "<fdri:appliesToTimeSeries>": <http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>
+      "<fdri:appliesToDataset>": <http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>
   
   - name: PriorityAnnotation
     properties:

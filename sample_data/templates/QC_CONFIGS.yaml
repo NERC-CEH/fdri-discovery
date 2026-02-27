@@ -28,7 +28,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{FLAG_TS|slug}-{METHOD_ID|slug}>"
       "@type": <fdri:InternalDataProcessingConfiguration>
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/qc>"
-      "<fdri:appliesToTimeSeries>": <::FlagTS>
+      "<fdri:appliesToDataset>": <::FlagTS>
 
   - name: CurrentConfigurationItem
     properties:

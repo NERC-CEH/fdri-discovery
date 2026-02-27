@@ -64,7 +64,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/cosmos-calibration-configuration-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}-{TIMESERIES_ID|slug}>"
       "@type": "<fdri:InternalDataProcessingConfiguration>"
       "<fdri:appliesToFacility>": <::Sensor>
-      "<fdri:appliesToTimeSeries>": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
+      "<fdri:appliesToDataset>": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "<dct:type>": <::SensorCalibrationConfiguration>
 
   
