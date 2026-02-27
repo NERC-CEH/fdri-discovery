@@ -106,7 +106,7 @@ resources:
                         "@type": "<fdri:DataProcessingConfigurationType>"
                         "<skos:inScheme>": "<::ConfigurationTypeScheme>"
                         "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
-                  "<fdri:appliesToTimeSeries>": "<::Dataset>"
+                  "<fdri:appliesToDataset>": "<::Dataset>"
                   "<fdri:hasCurrentValue>":
                     - name: ProcessingConfigItem
                       properties:
