@@ -138,5 +138,4 @@ resources:
                             properties:
                               "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current.interval>"
                               "@type": "<dct:PeriodOfTime>"
-                              "<dcat:startDate>": "{start_date|asDateTime}"
-
+                              "<dcat:startDate>": "{use_start_date|asDateTime}"
