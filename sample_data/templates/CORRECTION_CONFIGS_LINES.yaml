@@ -54,7 +54,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{|hash(CORRECT_TS, METHOD_ID, OBS_START_DATETIME)|slug}>"
       "@type": <fdri:InternalDataProcessingConfiguration>
       "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-type/correction-configuration>
-      "<fdri:appliesToTimeSeries>": "<http://fdri.ceh.ac.uk/id/dataset/{CORRECT_TS|slug}>"
+      "<fdri:appliesToDataset>": "<http://fdri.ceh.ac.uk/id/dataset/{CORRECT_TS|slug}>"
       "<dct:title>": "Correction Configuration for {CORRECT_TS}@en"
 
   - name: ConfigurationItem

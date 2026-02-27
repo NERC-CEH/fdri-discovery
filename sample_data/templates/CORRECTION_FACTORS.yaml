@@ -26,7 +26,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/cosmos-correction-{TIMESERIES_ID|slug}>"
       "@type": "<fdri:InternalDataProcessingConfiguration>"
-      "<fdri:appliesToTimeSeries>": <http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>
+      "<fdri:appliesToDataset>": <http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>
       "<dct:type>": <::Correction>
 
   - name: ConfigurationItem

@@ -43,7 +43,7 @@ resources:
       "@type": "<fdri:InternalDataProcessingConfiguration>"
       "<dct:type>": <::PhenocamMaskConfigurationType>
       "<fdri:appliesToFacility>": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>
-      "<fdri:appliesToTimeSeries>":
+      "<fdri:appliesToDataset>":
         - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_red_{FEATURE_ID|slug}>
         - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_green_{FEATURE_ID|slug}>
         - <http://fdri.ceh.ac.uk/ref/cosmos/time-series/image_blue_{FEATURE_ID|slug}>
