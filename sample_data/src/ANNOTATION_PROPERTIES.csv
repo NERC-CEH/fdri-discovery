@@ -16,6 +16,7 @@ REF_Q0,,Ref Q0,Water vapour correction factor
 REF_SOC,,Ref SOC,Estimated mean Soil Organic Carbon (from lab analysis of soil samples)
 REF_SOC_STD,,Ref SOC STD,Estimated Standard deviation of Soil Organic Carbon (from lab analysis of soil samples)
 REF_SOIL_MOISTURE,,Ref Soil Moisture,Reference soil moisture from lab analysis on day of calibration
+GAMMA,,Gamma,Gamma correction value for drift in CRNS counts
 SOIL_COMMENT,,Ref Soil Comment,Comment on soil properties from lab analysis of field samples
 SAMPLING_START_DATETIME,,Sampling Start Datetime,Start datetime of soil sampling for lab analysis
 SAMPLING_END_DATETIME,,Sampling End Datetime,End datetime of soil sampling for lab analysis
