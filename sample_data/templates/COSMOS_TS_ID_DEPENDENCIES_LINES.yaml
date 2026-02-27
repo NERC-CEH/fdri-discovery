@@ -135,6 +135,8 @@ resources:
                           - "{load_depends_on|map_to('LoadDependencyArgument')}"
                         "<fdri:interval>":
                           - name: ProcessingConfigurationItemInterval
+                            requires:
+                              use_start_date:
                             properties:
                               "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current.interval>"
                               "@type": "<dct:PeriodOfTime>"
