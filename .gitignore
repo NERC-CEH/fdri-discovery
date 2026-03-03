@@ -174,3 +174,6 @@ ontology/doc/html/*.png
 
 # Scripts to add dataset configurations for all sites
 scripts/
+
+#Living documentation
+doc/understanding_metadata.md
