@@ -1,7 +1,6 @@
 ID,PARENT_ID,PARAMETER_ID,UNIT_ID,STATISTIC_ID,PERIODICITY,RESOLUTION,DESCRIPTION
 DISCHARGE-INST-M3S-1,,DISCHARGE,M3S-1,INST,,,Instantaneous discharge in cubic metres per second
-FLOW-INST-M3S-1,,FLOW,M3S-1,INST,,,Instantaneous flow in cubic metres per second
-FLOW-INST-LS-1,,FLOW,LS-1,INST,,,Instantaneous flow in litres per second
+DISCHARGE-INST-LS-1,,DISCHARGE,LS-1,INST,,,Instantaneous discharge in litres per second
 WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,Water velocity in metres per second
 WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,INST,,,Instantaneous water velocity in metres per second
 WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,,,Mean water velocity in metres per second
