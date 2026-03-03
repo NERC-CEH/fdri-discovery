@@ -150,3 +150,6 @@ Depending on the method specified, the `"args"` are specified by yet another nes
 
 - `"round"`: The number of decimal places the quantity being calculated should be rounded to. Recall the quantity being calculated is specified by the dataset name from the top level keys in `COSMOS_TS_ID_DEPENDENCIES.json`. For example, if the dataset is: `"COSMOS-FINCH-WD_30MIN_RAW"`, then the wind direction (WD) should be rounded to the number of decimal places specified in `"round"`
 - `"threshold"` (for `"AGGREGATE"` only): The minimum number of data points that can be used to obtain an accurate aggregation. For example, when taking a daily average of a quantity, there should be enough data points for the daily average to be accurate. If there are only 20 non null datapoints, and they are all from the beginning of the day, if the threshold is 40, taking a daily average using the reduced dataset will bias the result.
+
+
+## QC Tests

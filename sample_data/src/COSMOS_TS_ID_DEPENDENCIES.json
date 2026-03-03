@@ -100,7 +100,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-ALIC1-CTS_EST_CRNS_1DAY_PROCESSED": {
@@ -1072,7 +1073,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-BALRD-COV_TS_UX_30MIN_PROCESSED": {
@@ -2128,7 +2130,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-BICKL-COV_TS_UX_30MIN_PROCESSED": {
@@ -3212,7 +3215,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-BUNNY-COV_TS_UX_30MIN_PROCESSED": {
@@ -4296,7 +4300,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-CARDT-COV_TS_UX_30MIN_PROCESSED": {
@@ -5380,7 +5385,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-CGARW-COV_TS_UX_30MIN_PROCESSED": {
@@ -6938,7 +6944,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-CHIMN-COV_TS_UX_30MIN_PROCESSED": {
@@ -8465,7 +8472,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-CHOBH-COV_TS_UX_30MIN_PROCESSED": {
@@ -9549,7 +9557,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-COCHN-COV_TS_UX_30MIN_PROCESSED": {
@@ -11107,7 +11116,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-COCLP-COV_TS_UX_30MIN_PROCESSED": {
@@ -12187,7 +12197,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-CRICH-COV_TS_UX_30MIN_PROCESSED": {
@@ -13243,7 +13254,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-EASTB-COV_TS_UX_30MIN_PROCESSED": {
@@ -14451,7 +14463,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-ELMST-COV_TS_UX_30MIN_PROCESSED": {
@@ -15857,7 +15870,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-EUSTN-COV_TS_UX_30MIN_PROCESSED": {
@@ -17263,7 +17277,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-FINCH-COV_TS_UX_30MIN_PROCESSED": {
@@ -18697,7 +18712,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-FIVET-COV_TS_UX_30MIN_PROCESSED": {
@@ -20103,7 +20119,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-GISBN-COV_TS_UX_30MIN_PROCESSED": {
@@ -21335,7 +21352,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-GLENS-COV_TS_UX_30MIN_PROCESSED": {
@@ -22543,7 +22561,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-GLENW-COV_TS_UX_30MIN_PROCESSED": {
@@ -23949,7 +23968,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HADLW-COV_TS_UX_30MIN_PROCESSED": {
@@ -25355,7 +25375,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HARTW-COV_TS_UX_30MIN_PROCESSED": {
@@ -26411,7 +26432,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HARWD-CTS_EST_CRNS_1DAY_PROCESSED": {
@@ -27383,7 +27405,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HENFS-COV_TS_UX_30MIN_PROCESSED": {
@@ -28463,7 +28486,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HILLB-COV_TS_UX_30MIN_PROCESSED": {
@@ -29869,7 +29893,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HLACY-COV_TS_UX_30MIN_PROCESSED": {
@@ -31303,7 +31328,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HOLLN-COV_TS_UX_30MIN_PROCESSED": {
@@ -32411,7 +32437,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-HYBRY-COV_TS_UX_30MIN_PROCESSED": {
@@ -33817,7 +33844,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-LIZRD-COV_TS_UX_30MIN_PROCESSED": {
@@ -34873,7 +34901,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-LODTN-COV_TS_UX_30MIN_PROCESSED": {
@@ -36331,7 +36360,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-LULLN-COV_TS_UX_30MIN_PROCESSED": {
@@ -37415,7 +37445,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-MOORH-COV_TS_UX_30MIN_PROCESSED": {
@@ -38623,7 +38654,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-MOREM-COV_TS_UX_30MIN_PROCESSED": {
@@ -40057,7 +40089,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-MORLY-COV_TS_UX_30MIN_PROCESSED": {
@@ -41113,7 +41146,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-NWYKE-COV_TS_UX_30MIN_PROCESSED": {
@@ -42169,7 +42203,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-PLYNL-COV_TS_UX_30MIN_PROCESSED": {
@@ -43377,7 +43412,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-PORTN-COV_TS_UX_30MIN_PROCESSED": {
@@ -44433,7 +44469,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-RDMER-COV_TS_UX_30MIN_PROCESSED": {
@@ -45489,7 +45526,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-REDHL-COV_TS_UX_30MIN_PROCESSED": {
@@ -46573,7 +46611,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-RISEH-COV_TS_UX_30MIN_PROCESSED": {
@@ -47979,7 +48018,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-ROTHD-COV_TS_UX_30MIN_PROCESSED": {
@@ -49063,7 +49103,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-SHEEP-COV_TS_UX_30MIN_PROCESSED": {
@@ -50590,7 +50631,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-SOURH-COV_TS_UX_30MIN_PROCESSED": {
@@ -51798,7 +51840,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-SPENF-COV_TS_UX_30MIN_PROCESSED": {
@@ -53204,7 +53247,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-STGHT-COV_TS_UX_30MIN_PROCESSED": {
@@ -54312,7 +54356,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-STIPS-COV_TS_UX_30MIN_PROCESSED": {
@@ -55392,7 +55437,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-SYDLG-COV_TS_UX_30MIN_PROCESSED": {
@@ -56826,7 +56872,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-TADHM-COV_TS_UX_30MIN_PROCESSED": {
@@ -57882,7 +57929,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-WADDN-COV_TS_UX_30MIN_PROCESSED": {
@@ -59403,7 +59451,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-WIMPL-COV_TS_UX_30MIN_PROCESSED": {
@@ -60809,7 +60858,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-WRTTL-COV_TS_UX_30MIN_PROCESSED": {
@@ -62243,7 +62293,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_Q",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "REF_Q0"
         }
     },
     "COSMOS-WYTH1-CTS_BARE_30MIN_PROCESSED": {
