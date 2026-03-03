@@ -172,7 +172,8 @@ DuckDB.session.sql
 ontology/doc/html/*.html
 ontology/doc/html/*.png
 
-# Script to add to metadata json for all sites
-generate_new_PE_aggregation_entries.py
-generate_new_PE_correction_entries.py
-add_PE_raw_to_timeseries_ids.py
+# Scripts to add dataset configurations for all sites
+scripts/
+
+#Living documentation
+doc/understanding_metadata.md
