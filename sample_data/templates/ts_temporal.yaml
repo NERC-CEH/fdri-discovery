@@ -1,0 +1,19 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - extensions.py
+
+
+resources:
+    - name: Dataset
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
+        <dct:temporal>:
+            - name: DatasetTemporalExtent
+              properties:
+                "@type": "<dct:PeriodOfTime>"
+                "<dcat:startDate>": "{START|asDateTime}"
+                "<dcat:endDate>": "{END|asDateTime}"
