@@ -64,6 +64,8 @@ SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
+# Stop-gap temporal extents
+SAMPLES += $(TTL_BASE)/ts_temporal.ttl
 
 # NRFA
 SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
@@ -236,6 +238,9 @@ build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql 
 
 build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
+
+build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
