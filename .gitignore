@@ -170,11 +170,7 @@ DuckDB.session.sql
 
 # Generated Files
 ontology/doc/html/*.html
-<<<<<<< HEAD
-ontology/doc/html/*.png
-=======
 ontology/doc/html/*.png
 
 # Scripts to add dataset configurations for all sites
 scripts/
->>>>>>> bcce7b2 (Add REF_Q0 annotation to args for all COSMOSFACTOR_Q_1HOUR_PROCESSED datasets)
