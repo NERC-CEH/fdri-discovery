@@ -100,7 +100,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-ALIC1-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -1181,7 +1182,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-BALRD-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -2360,7 +2362,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-BICKL-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -3570,7 +3573,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-BUNNY-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -4780,7 +4784,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-CARDT-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -5990,7 +5995,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-CGARW-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -7733,7 +7739,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-CHIMN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -9444,7 +9451,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-CHOBH-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -10654,7 +10662,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-COCHN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -12397,7 +12406,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-COCLP-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -13604,7 +13614,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-CRICH-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -14783,7 +14794,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-EASTB-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -16131,7 +16143,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-ELMST-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -17705,7 +17718,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-EUSTN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -19279,7 +19293,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-FINCH-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -20884,7 +20899,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-FIVET-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -22458,7 +22474,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-GISBN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -23834,7 +23851,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-GLENS-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -25182,7 +25200,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-GLENW-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -26756,7 +26775,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HADLW-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -28330,7 +28350,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HARTW-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -29509,7 +29530,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HARWD-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -30590,7 +30612,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HENFS-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -31797,7 +31820,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HILLB-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -33371,7 +33395,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HLACY-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -34976,7 +35001,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HOLLN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -36214,7 +36240,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-HYBRY-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -37788,7 +37815,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-LIZRD-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -38967,7 +38995,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-LODTN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -40600,7 +40629,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-LULLN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -41810,7 +41840,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-MOORH-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -43158,7 +43189,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-MOREM-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -44763,7 +44795,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-MORLY-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -45942,7 +45975,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-NWYKE-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -47121,7 +47155,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-PLYNL-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -48469,7 +48504,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-PORTN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -49648,7 +49684,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-RDMER-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -50827,7 +50864,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-REDHL-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -52037,7 +52075,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-RISEH-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -53611,7 +53650,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-ROTHD-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -54821,7 +54861,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-SHEEP-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -56532,7 +56573,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-SOURH-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -57880,7 +57922,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-SPENF-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -59454,7 +59497,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-STGHT-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -60692,7 +60736,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-STIPS-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -61899,7 +61944,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-SYDLG-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -63504,7 +63550,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-TADHM-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -64683,7 +64730,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-WADDN-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -66387,7 +66435,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-WIMPL-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -67961,7 +68010,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-WRTTL-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
@@ -69566,7 +69616,8 @@
         "derivation": "CALCULATE",
         "method": "calc_factor_PA",
         "args": {
-            "round": 5
+            "round": 5,
+            "annotation": "L"
         }
     },
     "COSMOS-WYTH1-COSMOSFACTOR_Q_1HOUR_PROCESSED": {
