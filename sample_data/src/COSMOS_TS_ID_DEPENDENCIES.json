@@ -17,9 +17,10 @@
             "COSMOS-ALIC1-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-ALIC1-ALBEDO_SD_1DAY_PROCESSED": {
@@ -1103,9 +1104,10 @@
             "COSMOS-BALRD-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-BALRD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -2287,9 +2289,10 @@
             "COSMOS-BICKL-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-BICKL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -3502,9 +3505,10 @@
             "COSMOS-BUNNY-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-BUNNY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -4717,9 +4721,10 @@
             "COSMOS-CARDT-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-CARDT-ALBEDO_SD_1DAY_PROCESSED": {
@@ -5932,9 +5937,10 @@
             "COSMOS-CGARW-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-CGARW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -7680,9 +7686,10 @@
             "COSMOS-CHIMN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-CHIMN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -9396,9 +9403,10 @@
             "COSMOS-CHOBH-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-CHOBH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -10611,9 +10619,10 @@
             "COSMOS-COCHN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-COCHN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -12359,9 +12368,10 @@
             "COSMOS-COCLP-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-COCLP-ALBEDO_SD_1DAY_PROCESSED": {
@@ -13571,9 +13581,10 @@
             "COSMOS-CRICH-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-CRICH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -14755,9 +14766,10 @@
             "COSMOS-EASTB-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-EASTB-ALBEDO_SD_1DAY_PROCESSED": {
@@ -16108,9 +16120,10 @@
             "COSMOS-ELMST-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-ELMST-ALBEDO_SD_1DAY_PROCESSED": {
@@ -17687,9 +17700,10 @@
             "COSMOS-EUSTN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-EUSTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -19266,9 +19280,10 @@
             "COSMOS-FINCH-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-FINCH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -20876,9 +20891,10 @@
             "COSMOS-FIVET-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-FIVET-ALBEDO_SD_1DAY_PROCESSED": {
@@ -22455,9 +22471,10 @@
             "COSMOS-GISBN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-GISBN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -23836,9 +23853,10 @@
             "COSMOS-GLENS-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-GLENS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -25189,9 +25207,10 @@
             "COSMOS-GLENW-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-GLENW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -26768,9 +26787,10 @@
             "COSMOS-HADLW-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HADLW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -28347,9 +28367,10 @@
             "COSMOS-HARTW-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HARTW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -29531,9 +29552,10 @@
             "COSMOS-HARWD-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HARWD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -30617,9 +30639,10 @@
             "COSMOS-HENFS-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HENFS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -31829,9 +31852,10 @@
             "COSMOS-HILLB-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HILLB-ALBEDO_SD_1DAY_PROCESSED": {
@@ -33408,9 +33432,10 @@
             "COSMOS-HLACY-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HLACY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -35018,9 +35043,10 @@
             "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HOLLN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -36261,9 +36287,10 @@
             "COSMOS-HYBRY-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-HYBRY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -37840,9 +37867,10 @@
             "COSMOS-LIZRD-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-LIZRD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -39024,9 +39052,10 @@
             "COSMOS-LODTN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-LODTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -40662,9 +40691,10 @@
             "COSMOS-LULLN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-LULLN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -41877,9 +41907,10 @@
             "COSMOS-MOORH-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-MOORH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -43230,9 +43261,10 @@
             "COSMOS-MOREM-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-MOREM-ALBEDO_SD_1DAY_PROCESSED": {
@@ -44840,9 +44872,10 @@
             "COSMOS-MORLY-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-MORLY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -46024,9 +46057,10 @@
             "COSMOS-NWYKE-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-NWYKE-ALBEDO_SD_1DAY_PROCESSED": {
@@ -47208,9 +47242,10 @@
             "COSMOS-PLYNL-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-PLYNL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -48561,9 +48596,10 @@
             "COSMOS-PORTN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-PORTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -49745,9 +49781,10 @@
             "COSMOS-RDMER-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-RDMER-ALBEDO_SD_1DAY_PROCESSED": {
@@ -50929,9 +50966,10 @@
             "COSMOS-REDHL-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-REDHL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -52144,9 +52182,10 @@
             "COSMOS-RISEH-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-RISEH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -53723,9 +53762,10 @@
             "COSMOS-ROTHD-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-ROTHD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -54938,9 +54978,10 @@
             "COSMOS-SHEEP-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-SHEEP-ALBEDO_SD_1DAY_PROCESSED": {
@@ -56654,9 +56695,10 @@
             "COSMOS-SOURH-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-SOURH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -58007,9 +58049,10 @@
             "COSMOS-SPENF-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-SPENF-ALBEDO_SD_1DAY_PROCESSED": {
@@ -59586,9 +59629,10 @@
             "COSMOS-STGHT-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-STGHT-ALBEDO_SD_1DAY_PROCESSED": {
@@ -60829,9 +60873,10 @@
             "COSMOS-STIPS-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-STIPS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -62041,9 +62086,10 @@
             "COSMOS-SYDLG-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-SYDLG-ALBEDO_SD_1DAY_PROCESSED": {
@@ -63651,9 +63697,10 @@
             "COSMOS-TADHM-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-TADHM-ALBEDO_SD_1DAY_PROCESSED": {
@@ -64835,9 +64882,10 @@
             "COSMOS-WADDN-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-WADDN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -66544,9 +66592,10 @@
             "COSMOS-WIMPL-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-WIMPL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -68123,9 +68172,10 @@
             "COSMOS-WRTTL-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-WRTTL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -69733,9 +69783,10 @@
             "COSMOS-WYTH1-SWOUT_30MIN_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "calculate_albedo",
+        "method": "calc_albedo",
         "args": {
-            "round": 3
+            "round": 3,
+            "annotation": "LATITUDE"
         }
     },
     "COSMOS-WYTH1-ALBEDO_SD_1DAY_PROCESSED": {
