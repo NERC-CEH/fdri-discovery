@@ -170,16 +170,6 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **Update requirements:** If bulk export then process as now, replacing whole history. If incremental then check if version has actually changed and if so close off current value and set new current value. Maintaining the current value is non-monotonic so need a SPARQL Update or check against current data.
 
-### `sensor_calibrations` from `calib_factors_nr01_anem`, `SITE_INSTRUMENTATION`, `SENSOR_SLOT_IDS`, `TIMESERIES_DEFS` and `TIMESERIES_IDS`
-
-**WHAT:** Records of the sensor calibration corrections that apply to time series values.
-
-**Preprocessing:** Reformat date/time strings. Join TIMESERIES_DEFS on variable then TIMESERIES_ID on TIMESERIES_DEF and SITE. Join SENSOR_SLOT_IDS and then SITE_INSTRUMENTATION filtering by the date range of the correction to select the sensor instance that the calibration applies to
-
-**Generates:** `CalibrationActivity` representing the action of sensor calibration that gives rise to the correction factor; `InternalDataProcessingConfiguration` with a `ConfigurationItem` which represents the correction factor derived from the calibration.
-
-**Future source:** Assume that calibration activities and their outcomes in terms of calibration factors to be applied to data are managed in the asset management system. Or might be bulk export. Or might need to support both (incremental normally but allowance for bulk re-sync). A future source could provide a more direct mapping between the correction factor and the affected sensor and leave the metadata store to infer the affected time series based on deployment records for the sensor.
-
 ## Processing pipeline
 
 ### `CORRECTION_METHODS`
