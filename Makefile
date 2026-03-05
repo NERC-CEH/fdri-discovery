@@ -51,7 +51,6 @@ SAMPLES += $(TTL_BASE)/PARAMETERS_IDS.ttl
 SAMPLES += $(TTL_BASE)/PROCEDURE_TYPES.ttl
 SAMPLES += $(TTL_BASE)/processingLevels.ttl
 SAMPLES += $(TTL_BASE)/QC_CONFIGS.ttl
-SAMPLES += $(TTL_BASE)/sensor_calibrations.ttl
 SAMPLES += $(TTL_BASE)/sensor_deployments.ttl
 SAMPLES += $(TTL_BASE)/sensor_faults.ttl
 SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
@@ -184,9 +183,6 @@ build/landCoverObservations.csv: $(SRC)/LAND_COVER_OBSERVED.csv $(SQL)/landCover
 
 build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_config.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/phenocam_mask_config.sql"
-
-build/sensor_calibrations.csv: $(SRC)/calib_factors_nr01_anem.csv $(SRC)/SENSOR_SLOT_IDS.csv  $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_calibrations.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_calibrations.sql"
 
 build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
