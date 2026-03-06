@@ -35052,7 +35052,8 @@
     "COSMOS-HOLLN-ALBEDO_30MIN_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HOLLN-ALBEDO_30MIN_RAW"
+            "COSMOS-HOLLN-ALBEDO_30MIN_RAW",
+            "COSMOS-HOLLN-SWIN_30MIN_PROCESSED"
         ],
         "derivation": "PROCESS"
     },
