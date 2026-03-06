@@ -6,4 +6,3 @@ CORRECTIONS,Generic,SCALAR,Scalar,Multiply the value by a scale factor. E.g. y=C
 CORRECTIONS,Generic,ADD,Addition,Sum the data point and correction value. E.g. y=x+C
 CORRECTIONS,Generic,POWER,Power,Raise the data point to a power. E.g. y=x^C
 CORRECTIONS,Generic,CLIP,clip,Sets all values above or below a given threshold to the threshold value.
-CORRECTIONS,Generic,ALBEDO_SOUTH_SLOPE_CORRECTION,albedo_south_slope_correction,Correction for albedo at sites which are on a southerly slope
