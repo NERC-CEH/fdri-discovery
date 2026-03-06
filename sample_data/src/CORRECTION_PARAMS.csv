@@ -5,3 +5,4 @@ CORRECTION_FACTOR,Correction Factor,NUMERIC,The factor used to correct a timeser
 SITE_ATTRIBUTE,Site Attribute,STRING,An attribute of the site where the timeseries is located
 MIN,Min value,NUMERIC,Any values below the Min value will be set to the Min value
 MAX,Max value,NUMERIC,Any values above the Max value will be set to the Max value
+THETA_G,Angle of south slope,NUMERIC,Corrects the albedo due to the site having a slope in a southerly direction
