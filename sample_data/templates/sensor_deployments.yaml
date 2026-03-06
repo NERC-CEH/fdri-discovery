@@ -38,13 +38,13 @@ resources:
     requires:
       SENSOR_SLOT_NAME:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#senor-slot-name>"
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name>"
       "@type": <fdri:Annotation>
       "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/sensor_slot_name>"
       "<fdri:hasValue>":
         - name: SensorSlotName
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#senor-slot-name.value>"
+            "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name.value>"
             "@type": <schema:PropertyValue>
             "<schema:value>": "{SENSOR_SLOT_NAME}"
 
