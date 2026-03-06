@@ -3126,8 +3126,8 @@
     {
         "CORRECT_TS": "COSMOS-HOLLN-ALBEDO_30MIN_RAW",
         "DESCRIPTION": "Corrected Holln albedo data: accounting for southerly slope of site",
-        "OBS_START_DATETIME": "2013-01-01 00:30:00",
-        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "OBS_START_DATETIME": "2014-03-26 00:30:00",
+        "USE_START_DATETIME": "2014-03-26 00:30:00",
         "METHOD_ID": "ALBEDO_SOUTH_SLOPE_CORRECTION",
         "parameters": [
             {
