@@ -30,8 +30,23 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringPlatform>"
-      "<rdfs:label>": "Sensor slot {SENSOR_SLOT_ID} at {SITE_ID}@en"
+      "<rdfs:label>": "{SENSOR_SLOT_NAME} at {SITE_ID}@en"
+      "<fdri:hasAnnotation>": "<::SensorSlotNameAnnotation>"
       "^<dct:hasPart>": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"
+
+  - name: SensorSlotNameAnnotation
+    requires:
+      SENSOR_SLOT_NAME:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/sensor_slot_name>"
+      "<fdri:hasValue>":
+        - name: SensorSlotName
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{SENSOR_SLOT_NAME}"
 
   - name: SensorDeployment
     requires:
