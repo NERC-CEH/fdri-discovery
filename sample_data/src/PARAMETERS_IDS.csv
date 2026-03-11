@@ -115,6 +115,7 @@ SNOWD_DISTANCE_UNC,Distance between sensor and snow surface (uncorrected),SNOW,D
 SNOWD_SIGNALQUALITY,Quality number,SIGNAL,QUALITY,
 SOC_BATT,Battery state of charge,BATTERY,STATE_OF_CHARGE,
 SOIL_WATER_POT,Soil water potential,SOIL,WATER,
+SOLAR_ZENITH,Solar zenith angle,SUN,SOLAR-ZENITH-ANGLE,
 STATUS_P_HEATING,Status of Pluvio orifice rim heating element,SENSOR,DIAGNOSTIC,PLUVIO
 SENSOR_STATUS,Status of sensor,SENSOR,DIAGNOSTIC,
 SWE,Snow water equivalent,SNOW,SNOW-WATER-EQUIVALENT,

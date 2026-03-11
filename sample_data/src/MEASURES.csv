@@ -132,6 +132,7 @@ SNOWD_DISTANCE_UNC-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_UNC,M,INST,PT30M,PT30M,Ins
 SNOWD_SIGNALQUALITY-STDDEV_PREC-UNITLESS-PT30M-PT30M,,SNOWD_SIGNALQUALITY,UNITLESS,STDDEV_PREC,PT30M,PT30M,Standard deviation of snow depth signal quality over the preceding 30 minutes (uncorrected)
 SNOW_DAY-INST-UNITLESS-P1D-P1D,,SNOW_DAY,UNITLESS,INST,P1D,P1D,Indicator of snow day over the preceding day (unitless)
 SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,INST,PT1M,PT1M,Instantaneous status of sensor
+SOLAR_ZENITH-MEAN_PREC-UNITLESS-PT30M-PT30M,,SOLAR_ZENITH,UNITLESS,MEAN_PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
 STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
 SWE-MEAN_MID_24HOUR-MM-P1D-P1D,,SWE,MM,MEAN_MID_24HOUR,P1D,P1D,Mean snow water equivalent over the preceding day in millimetres
 SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN_PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
