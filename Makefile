@@ -172,7 +172,7 @@ build/shacl:
 build/data:
 	mkdir -p build/data
 
-build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/instrumentation_parameters.sql | build
+build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/MEASURES.csv $(SQL)/instrumentation_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/instrumentation_parameters.sql"
 
 build/landCoverLcm.csv: $(SRC)/LAND_COVER_LCM.csv $(SQL)/landCoverLcm.sql | build
@@ -184,7 +184,7 @@ build/landCoverObservations.csv: $(SRC)/LAND_COVER_OBSERVED.csv $(SQL)/landCover
 build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_config.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/phenocam_mask_config.sql"
 
-build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_deployments.sql | build
+build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
 
 build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv build/sensor_deployments.csv $(SQL)/sensor_faults.sql | build
