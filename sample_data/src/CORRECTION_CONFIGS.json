@@ -3125,7 +3125,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-HOLLN-ALBEDO_30MIN_RAW",
-        "DESCRIPTION": "Corrected albedo data: filter nighttime hours",
+        "DESCRIPTION": "Corrected albedo data: correct albedo to account for south facing slope at site",
         "OBS_START_DATETIME": "2013-01-01 00:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
         "METHOD_ID": "ALBEDO_SOUTH_SLOPE_CORRECTION",
