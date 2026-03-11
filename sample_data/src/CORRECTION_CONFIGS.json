@@ -3122,5 +3122,23 @@
                 "PARAM_VALUE": 0
             }
         ]
+    },
+    {
+        "CORRECT_TS": "COSMOS-HOLLN-ALBEDO_30MIN_RAW",
+        "DESCRIPTION": "Corrected albedo data: filter nighttime hours",
+        "OBS_START_DATETIME": "2013-01-01 00:30:00",
+        "USE_START_DATETIME": "2013-01-01 00:30:00",
+        "METHOD_ID": "ALBEDO_SOUTH_SLOPE_CORRECTION",
+        "parameters": [
+            {
+                "PARAM_ID": "DEP_TS",
+                "PARAM_VALUE": "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_PROCESSED"
+            },
+            {
+                "PARAM_ID": "THETA_G",
+                "PARAM_VALUE": 0.3128764
+            }
+
+        ]
     }
 ]
