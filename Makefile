@@ -70,7 +70,7 @@ SAMPLES += $(TTL_BASE)/ts_temporal.ttl
 SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
 
 # FDRI SAMPLES
-SAMPLES += $(TTL_BASE)/fdri_sites.ttl
+# SAMPLES += $(TTL_BASE)/fdri_sites.ttl - replaced by AMS_sites_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
@@ -114,6 +114,9 @@ SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
+
+# AMS Samples
+SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -237,6 +240,9 @@ build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.s
 
 build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
+
+build/AMS_sites_ext.csv: $(SRC)/AMS_sites.csv $(SQL)/AMS_sites_ext.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_sites_ext.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

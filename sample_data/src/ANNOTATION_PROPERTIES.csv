@@ -50,4 +50,5 @@ STATION-CRS2-MOD,,Station CRS2 Mod,Indicates if the station at the annotated sit
 STATION-FULL-TDT-ARRAY,,Station Full TDT Array,Indicates if the station at the annotated site uses a full TDT array,COSMOS-SITE,FULL-TDT-ARRAY
 SITE-WEB-IMAGE-COUNT,,Site Web Image Count,Number of published images of the annotated site,COSMOS-SITE-IMAGES,COUNT
 SITE-HOST-CLASS,,Site Host Classification,The classification of the host organisation for the annotated site,COSMOS-SITE-HOST,CLASSIFICATION
+SITE-STANDARD-INSTALLATION,,Site Standard Installation,Indicates if the annotated site has a standard installation of sensors,COSMOS-SITE,STANDARD-INSTALLATION
 BATCH-FILE-NAME,,Batch File Name,The name of the batch file that provided the annotated dataset metadata
