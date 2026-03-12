@@ -187,7 +187,7 @@ build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_c
 build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
 
-build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv build/sensor_deployments.csv $(SQL)/sensor_faults.sql | build
+build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SQL)/sensor_faults.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_faults.sql"
 
 build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sensor_firmware_configurations.sql | build
