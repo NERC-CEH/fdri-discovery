@@ -7,7 +7,7 @@ CRNS_2000_BARE,Cosmic-Ray Neutron Sensor (Bare),,Hydroinnova CRS-2000 (Bare)
 CS106,Barometric Pressure Sensor,First installed in Phase 3,Vaisala CS106
 ETHERNET_115,Ethernet Interface,,NL115
 ETHERNET_116,Ethernet Interface,,NL116
-GPRS,General Packet Radio Service,"Not an instrument, rather technology used",
+GPRS,General Packet Radio Service,Not an instrument rather technology used,
 HFP01SC,Heat Flux Plate,,Hukseflux HFP01SC
 HMP155,Humidity and Temperature Probe,,Vaisala HUMICAP HMP155
 HYGROCLIP_HC2,Hygroclip (relative humidity component of MetPak),Poor performance from this model,Rotronic hygroclip HC2-S(3)

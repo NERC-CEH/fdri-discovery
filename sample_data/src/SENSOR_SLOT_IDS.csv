@@ -8,6 +8,7 @@ CRNS_BARE,CRNS bare
 CRNS_SNOW,SnowFox
 CRNS2,CRNS 2
 ETHERNET,Ethernet Interface
+GPRS,General Packet Radio Service
 HMP,Humidity and temperature probe
 HFP1,Heat flux plate 1
 HFP2,Heat flux plate 2
