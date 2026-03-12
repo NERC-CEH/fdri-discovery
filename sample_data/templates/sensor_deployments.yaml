@@ -24,6 +24,21 @@ resources:
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
       "<fdri:serialNumber>": "{SERIAL_NUMBER}"
 
+  - name: SensorSlotNameAnnotation
+    requires:
+      SENSOR_SLOT_ID:
+      SENSOR_SLOT_NAME:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/sensor-slot-name>"
+      "<fdri:hasValue>":
+        - name: SensorSlotName
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{SENSOR_SLOT_NAME}"
+
   - name: SensorSlot
     requires:
       SENSOR_SLOT_ID:
@@ -33,20 +48,6 @@ resources:
       "<rdfs:label>": "{SENSOR_SLOT_NAME} at {SITE_ID}@en"
       "<fdri:hasAnnotation>": "<::SensorSlotNameAnnotation>"
       "^<dct:hasPart>": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"
-
-  - name: SensorSlotNameAnnotation
-    requires:
-      SENSOR_SLOT_NAME:
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name>"
-      "@type": <fdri:Annotation>
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/sensor_slot_name>"
-      "<fdri:hasValue>":
-        - name: SensorSlotName
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}#sensor-slot-name.value>"
-            "@type": <schema:PropertyValue>
-            "<schema:value>": "{SENSOR_SLOT_NAME}"
 
   - name: SensorDeployment
     requires:

@@ -34,6 +34,7 @@ OBSERVED-LAND-COVER,,Observed Land Cover,The observed land cover type within the
 OBSERVATION-SOURCE,,Observation Source,The source of the annotated observation,OBSERVATION,SOURCE
 OBSERVATION-COMMENT,,Observation Comment,Comments regarding the annotated observation,OBSERVATION,COMMENT
 WEATHER-CONDITIONS,,Weather Conditions,Description of weather conditions at time of annotated activity,WEATHER,DESCRIPTION
+SENSOR-SLOT-NAME,,Sensor Slot Name,The name of the sensor slot that is represented by the annotated platform,PLATFORM,NAME
 SITE-SOIL-TYPE,,Site Soil Type,The soil type at the annotated site,SOIL,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/soil-type
 SITE-PUBLIC,,Site Public,Indicates if the annotated site is publicly accessible,COSMOS-SITE,PUBLIC-ACCESS
 SITE-SNOW,,Site Monitors Snow,Indicates if the annotated site monitors snow,COSMOS-SITE,MONITORS-SNOW
