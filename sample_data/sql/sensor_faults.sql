@@ -11,7 +11,7 @@ COPY(
     select
         faultsSplit.*, SI.INSTRUMENT_ID, SI.SERIAL_NUMBER, SI.INSTANCE
     from
-        faultsSplit INNER JOIN TS on TS.TIMESERIES_ID == faultsSplit.TS_ID
+        faultsSplit INNER JOIN TS on TS.TIMESERIES_ID == faultsSplit.TIMESERIES_ID
                     LEFT  JOIN SI on
                         faultsSplit.SITE_ID == SI.SITE_ID and
                         SI.SENSOR_SLOT_ID == TS.SENSOR_SLOT_ID and
