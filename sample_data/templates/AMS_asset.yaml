@@ -1,0 +1,15 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+resources:
+  - name: Asset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSystem>
+      "<rdfs:label>": "{asset_Name}@en"

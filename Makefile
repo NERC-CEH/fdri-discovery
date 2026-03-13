@@ -117,6 +117,8 @@ SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
 
 # AMS Samples
 SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
+SAMPLES += $(TTL_BASE)/AMS_asset.ttl
+SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
