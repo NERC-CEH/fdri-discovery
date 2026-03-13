@@ -1,7 +1,8 @@
-CREATE TABLE IF NOT EXISTS TS AS FROM read_csv('./sample_data/src/TIMESERIES_IDS_COSMOS.csv', AUTO_DETECT=true);
-CREATE TABLE IF NOT EXISTS MEASURE AS FROM read_csv('./sample_data/src/MEASURES.csv', AUTO_DETECT=true);
-CREATE TABLE IF NOT EXISTS SI AS FROM read_csv('./sample_data/src/SITE_INSTRUMENTATION.csv', AUTO_DETECT=true, skip=0, encoding='utf-8-bom');
+CREATE TABLE IF NOT EXISTS TS AS FROM read_csv('./sample_data/src/TIMESERIES_IDS_COSMOS.csv', AUTO_DETECT=true, normalize_names=true);
+CREATE TABLE IF NOT EXISTS MEASURE AS FROM read_csv('./sample_data/src/MEASURES.csv', AUTO_DETECT=true, normalize_names=true);
+CREATE TABLE IF NOT EXISTS SI AS FROM read_csv('./sample_data/src/SITE_INSTRUMENTATION.csv', AUTO_DETECT=true, normalize_names=true);
 COPY (
-    SELECT DISTINCT MEASURE.PARAMETER_ID, SI.INSTRUMENT_ID
-    FROM TS JOIN MEASURE ON TS.MEASURE_ID == MEASURE.ID JOIN SI on TS.SENSOR_SLOT_ID == SI.SENSOR_SLOT_ID AND TS.SITE_ID == SI.SITE_ID
+    SELECT DISTINCT MEASURE.parameter_id, SI.instrument_id
+    FROM TS JOIN MEASURE ON TS.measure_id == MEASURE.id 
+         JOIN SI ON TS.sensor_slot_id == SI.sensor_slot_id AND TS.site_id == SI.site_id
 )TO './build/instrumentation_parameters.csv' (HEADER, DELIMITER ',') ;
