@@ -10,18 +10,6 @@
             "round": 3
         }
     },
-    "COSMOS-ALIC1-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-ALIC1-SWIN_30MIN_PROCESSED",
-            "COSMOS-ALIC1-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-ALIC1-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -1092,18 +1080,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-BALRD-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-BALRD-SWIN_30MIN_PROCESSED",
-            "COSMOS-BALRD-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -2276,18 +2252,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-BICKL-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-BICKL-SWIN_30MIN_PROCESSED",
-            "COSMOS-BICKL-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -3495,18 +3459,6 @@
             "round": 3
         }
     },
-    "COSMOS-BUNNY-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-BUNNY-SWIN_30MIN_PROCESSED",
-            "COSMOS-BUNNY-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-BUNNY-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -4710,18 +4662,6 @@
             "round": 3
         }
     },
-    "COSMOS-CARDT-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-CARDT-SWIN_30MIN_PROCESSED",
-            "COSMOS-CARDT-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-CARDT-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -5921,18 +5861,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-CGARW-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-CGARW-SWIN_30MIN_PROCESSED",
-            "COSMOS-CGARW-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -7673,18 +7601,6 @@
             "round": 3
         }
     },
-    "COSMOS-CHIMN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-CHIMN-SWIN_30MIN_PROCESSED",
-            "COSMOS-CHIMN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-CHIMN-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -9389,18 +9305,6 @@
             "round": 3
         }
     },
-    "COSMOS-CHOBH-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-CHOBH-SWIN_30MIN_PROCESSED",
-            "COSMOS-CHOBH-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-CHOBH-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -10600,18 +10504,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-COCHN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-COCHN-SWIN_30MIN_PROCESSED",
-            "COSMOS-COCHN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -12352,18 +12244,6 @@
             "round": 3
         }
     },
-    "COSMOS-COCLP-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-COCLP-SWIN_30MIN_PROCESSED",
-            "COSMOS-COCLP-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-COCLP-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -13564,18 +13444,6 @@
             "round": 3
         }
     },
-    "COSMOS-CRICH-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-CRICH-SWIN_30MIN_PROCESSED",
-            "COSMOS-CRICH-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-CRICH-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -14744,18 +14612,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-EASTB-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-EASTB-SWIN_30MIN_PROCESSED",
-            "COSMOS-EASTB-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -16097,18 +15953,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-ELMST-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-ELMST-SWIN_30MIN_PROCESSED",
-            "COSMOS-ELMST-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -17680,18 +17524,6 @@
             "round": 3
         }
     },
-    "COSMOS-EUSTN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-EUSTN-SWIN_30MIN_PROCESSED",
-            "COSMOS-EUSTN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-EUSTN-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -19255,18 +19087,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-FINCH-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-FINCH-SWIN_30MIN_PROCESSED",
-            "COSMOS-FINCH-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -20869,18 +20689,6 @@
             "round": 3
         }
     },
-    "COSMOS-FIVET-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-FIVET-SWIN_30MIN_PROCESSED",
-            "COSMOS-FIVET-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-FIVET-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -22448,18 +22256,6 @@
             "round": 3
         }
     },
-    "COSMOS-GISBN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-GISBN-SWIN_30MIN_PROCESSED",
-            "COSMOS-GISBN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-GISBN-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -23829,18 +23625,6 @@
             "round": 3
         }
     },
-    "COSMOS-GLENS-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-GLENS-SWIN_30MIN_PROCESSED",
-            "COSMOS-GLENS-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-GLENS-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -25178,18 +24962,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-GLENW-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-GLENW-SWIN_30MIN_PROCESSED",
-            "COSMOS-GLENW-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -26761,18 +26533,6 @@
             "round": 3
         }
     },
-    "COSMOS-HADLW-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HADLW-SWIN_30MIN_PROCESSED",
-            "COSMOS-HADLW-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-HADLW-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -28340,18 +28100,6 @@
             "round": 3
         }
     },
-    "COSMOS-HARTW-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HARTW-SWIN_30MIN_PROCESSED",
-            "COSMOS-HARTW-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-HARTW-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -29524,18 +29272,6 @@
             "round": 3
         }
     },
-    "COSMOS-HARWD-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HARWD-SWIN_30MIN_PROCESSED",
-            "COSMOS-HARWD-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-HARWD-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -30606,18 +30342,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-HENFS-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HENFS-SWIN_30MIN_PROCESSED",
-            "COSMOS-HENFS-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -31818,18 +31542,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-HILLB-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HILLB-SWIN_30MIN_PROCESSED",
-            "COSMOS-HILLB-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -33397,18 +33109,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-HLACY-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HLACY-SWIN_30MIN_PROCESSED",
-            "COSMOS-HLACY-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -35011,18 +34711,6 @@
             "round": 3
         }
     },
-    "COSMOS-HOLLN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HOLLN-SWIN_30MIN_PROCESSED",
-            "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-HOLLN-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -36250,18 +35938,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-HYBRY-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-HYBRY-SWIN_30MIN_PROCESSED",
-            "COSMOS-HYBRY-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -37833,18 +37509,6 @@
             "round": 3
         }
     },
-    "COSMOS-LIZRD-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-LIZRD-SWIN_30MIN_PROCESSED",
-            "COSMOS-LIZRD-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-LIZRD-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -39013,18 +38677,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-LODTN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-LODTN-SWIN_30MIN_PROCESSED",
-            "COSMOS-LODTN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -40655,18 +40307,6 @@
             "round": 3
         }
     },
-    "COSMOS-LULLN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-LULLN-SWIN_30MIN_PROCESSED",
-            "COSMOS-LULLN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-LULLN-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -41866,18 +41506,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-MOORH-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-MOORH-SWIN_30MIN_PROCESSED",
-            "COSMOS-MOORH-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -43219,18 +42847,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-MOREM-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-MOREM-SWIN_30MIN_PROCESSED",
-            "COSMOS-MOREM-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -44833,18 +44449,6 @@
             "round": 3
         }
     },
-    "COSMOS-MORLY-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-MORLY-SWIN_30MIN_PROCESSED",
-            "COSMOS-MORLY-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-MORLY-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -46017,18 +45621,6 @@
             "round": 3
         }
     },
-    "COSMOS-NWYKE-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-NWYKE-SWIN_30MIN_PROCESSED",
-            "COSMOS-NWYKE-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-NWYKE-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -47197,18 +46789,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-PLYNL-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-PLYNL-SWIN_30MIN_PROCESSED",
-            "COSMOS-PLYNL-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -48554,18 +48134,6 @@
             "round": 3
         }
     },
-    "COSMOS-PORTN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-PORTN-SWIN_30MIN_PROCESSED",
-            "COSMOS-PORTN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-PORTN-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -49738,18 +49306,6 @@
             "round": 3
         }
     },
-    "COSMOS-RDMER-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-RDMER-SWIN_30MIN_PROCESSED",
-            "COSMOS-RDMER-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-RDMER-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -50918,18 +50474,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-REDHL-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-REDHL-SWIN_30MIN_PROCESSED",
-            "COSMOS-REDHL-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -52133,18 +51677,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-RISEH-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-RISEH-SWIN_30MIN_PROCESSED",
-            "COSMOS-RISEH-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -53716,18 +53248,6 @@
             "round": 3
         }
     },
-    "COSMOS-ROTHD-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-ROTHD-SWIN_30MIN_PROCESSED",
-            "COSMOS-ROTHD-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-ROTHD-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -54927,18 +54447,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-SHEEP-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-SHEEP-SWIN_30MIN_PROCESSED",
-            "COSMOS-SHEEP-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -56647,18 +56155,6 @@
             "round": 3
         }
     },
-    "COSMOS-SOURH-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-SOURH-SWIN_30MIN_PROCESSED",
-            "COSMOS-SOURH-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-SOURH-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -57996,18 +57492,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-SPENF-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-SPENF-SWIN_30MIN_PROCESSED",
-            "COSMOS-SPENF-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -59579,18 +59063,6 @@
             "round": 3
         }
     },
-    "COSMOS-STGHT-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-STGHT-SWIN_30MIN_PROCESSED",
-            "COSMOS-STGHT-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-STGHT-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -60822,18 +60294,6 @@
             "round": 3
         }
     },
-    "COSMOS-STIPS-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-STIPS-SWIN_30MIN_PROCESSED",
-            "COSMOS-STIPS-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-STIPS-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -62030,18 +61490,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-SYDLG-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-SYDLG-SWIN_30MIN_PROCESSED",
-            "COSMOS-SYDLG-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -63644,18 +63092,6 @@
             "round": 3
         }
     },
-    "COSMOS-TADHM-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-TADHM-SWIN_30MIN_PROCESSED",
-            "COSMOS-TADHM-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-TADHM-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -64824,18 +64260,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-WADDN-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-WADDN-SWIN_30MIN_PROCESSED",
-            "COSMOS-WADDN-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -66537,18 +65961,6 @@
             "round": 3
         }
     },
-    "COSMOS-WIMPL-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-WIMPL-SWIN_30MIN_PROCESSED",
-            "COSMOS-WIMPL-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
-        "args": {
-            "round": 3
-        }
-    },
     "COSMOS-WIMPL-ALBEDO_SD_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
@@ -68112,18 +67524,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-WRTTL-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-WRTTL-SWIN_30MIN_PROCESSED",
-            "COSMOS-WRTTL-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -69722,18 +69122,6 @@
         ],
         "derivation": "CALCULATE",
         "method": "calculate_daily_albedo",
-        "args": {
-            "round": 3
-        }
-    },
-    "COSMOS-WYTH1-ALBEDO_30MIN_PROCESSED": {
-        "use_start_date": "2025-03-28T12:00:00Z",
-        "depends_on": [
-            "COSMOS-WYTH1-SWIN_30MIN_PROCESSED",
-            "COSMOS-WYTH1-SWOUT_30MIN_PROCESSED"
-        ],
-        "derivation": "CALCULATE",
-        "method": "calculate_albedo",
         "args": {
             "round": 3
         }
@@ -72228,5 +71616,1287 @@
             "FDRI-SE-CARWE-01-TA_1MIN_RAW"
         ],
         "derivation": "PROCESS"
+    },
+    "COSMOS-ALIC1-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-ALIC1-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-BALRD-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-BALRD-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-BICKL-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-BICKL-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-BUNNY-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-BUNNY-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-CARDT-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CARDT-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-CGARW-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CGARW-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-CHIMN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CHIMN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-CHOBH-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CHOBH-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-COCHN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-COCHN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-COCLP-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-COCLP-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-CRICH-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CRICH-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-EASTB-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-EASTB-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-ELMST-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-ELMST-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-EUSTN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-EUSTN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-FINCH-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-FINCH-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-FIVET-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-FIVET-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-GISBN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-GISBN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-GLENS-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-GLENS-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-GLENW-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-GLENW-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HADLW-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HADLW-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HARTW-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HARTW-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HARWD-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HARWD-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HENFS-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HENFS-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HILLB-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HILLB-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HLACY-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HLACY-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HOLLN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-HYBRY-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HYBRY-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-LIZRD-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-LIZRD-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-LODTN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-LODTN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-LULLN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-LULLN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-MOORH-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-MOORH-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-MOREM-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-MOREM-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-MORLY-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-MORLY-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-NWYKE-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-NWYKE-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-PLYNL-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-PLYNL-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-PORTN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-PORTN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-RDMER-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-RDMER-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-REDHL-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-REDHL-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-RISEH-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-RISEH-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-ROTHD-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-ROTHD-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-SHEEP-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SHEEP-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-SOURH-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SOURH-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-SPENF-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SPENF-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-STGHT-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-STGHT-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-STIPS-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-STIPS-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-SYDLG-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SYDLG-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-TADHM-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-TADHM-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-WADDN-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WADDN-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-WIMPL-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WIMPL-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-WRTTL-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WRTTL-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-WYTH1-SOLAR_ZENITH_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WYTH1-SWIN_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "solar_zenith",
+        "args": {
+            "round": 3,
+            "site_attribute": "LATITUDE"
+        }
+    },
+    "COSMOS-ALIC1-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-ALIC1-SWIN_30MIN_PROCESSED",
+            "COSMOS-ALIC1-SWOUT_30MIN_PROCESSED",
+            "COSMOS-ALIC1-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-BALRD-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-BALRD-SWIN_30MIN_PROCESSED",
+            "COSMOS-BALRD-SWOUT_30MIN_PROCESSED",
+            "COSMOS-BALRD-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-BICKL-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-BICKL-SWIN_30MIN_PROCESSED",
+            "COSMOS-BICKL-SWOUT_30MIN_PROCESSED",
+            "COSMOS-BICKL-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-BUNNY-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-BUNNY-SWIN_30MIN_PROCESSED",
+            "COSMOS-BUNNY-SWOUT_30MIN_PROCESSED",
+            "COSMOS-BUNNY-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-CARDT-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CARDT-SWIN_30MIN_PROCESSED",
+            "COSMOS-CARDT-SWOUT_30MIN_PROCESSED",
+            "COSMOS-CARDT-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-CGARW-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CGARW-SWIN_30MIN_PROCESSED",
+            "COSMOS-CGARW-SWOUT_30MIN_PROCESSED",
+            "COSMOS-CGARW-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-CHIMN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CHIMN-SWIN_30MIN_PROCESSED",
+            "COSMOS-CHIMN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-CHIMN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-CHOBH-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CHOBH-SWIN_30MIN_PROCESSED",
+            "COSMOS-CHOBH-SWOUT_30MIN_PROCESSED",
+            "COSMOS-CHOBH-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-COCHN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-COCHN-SWIN_30MIN_PROCESSED",
+            "COSMOS-COCHN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-COCHN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-COCLP-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-COCLP-SWIN_30MIN_PROCESSED",
+            "COSMOS-COCLP-SWOUT_30MIN_PROCESSED",
+            "COSMOS-COCLP-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-CRICH-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-CRICH-SWIN_30MIN_PROCESSED",
+            "COSMOS-CRICH-SWOUT_30MIN_PROCESSED",
+            "COSMOS-CRICH-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-EASTB-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-EASTB-SWIN_30MIN_PROCESSED",
+            "COSMOS-EASTB-SWOUT_30MIN_PROCESSED",
+            "COSMOS-EASTB-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-ELMST-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-ELMST-SWIN_30MIN_PROCESSED",
+            "COSMOS-ELMST-SWOUT_30MIN_PROCESSED",
+            "COSMOS-ELMST-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-EUSTN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-EUSTN-SWIN_30MIN_PROCESSED",
+            "COSMOS-EUSTN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-EUSTN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-FINCH-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-FINCH-SWIN_30MIN_PROCESSED",
+            "COSMOS-FINCH-SWOUT_30MIN_PROCESSED",
+            "COSMOS-FINCH-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-FIVET-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-FIVET-SWIN_30MIN_PROCESSED",
+            "COSMOS-FIVET-SWOUT_30MIN_PROCESSED",
+            "COSMOS-FIVET-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-GISBN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-GISBN-SWIN_30MIN_PROCESSED",
+            "COSMOS-GISBN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-GISBN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-GLENS-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-GLENS-SWIN_30MIN_PROCESSED",
+            "COSMOS-GLENS-SWOUT_30MIN_PROCESSED",
+            "COSMOS-GLENS-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-GLENW-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-GLENW-SWIN_30MIN_PROCESSED",
+            "COSMOS-GLENW-SWOUT_30MIN_PROCESSED",
+            "COSMOS-GLENW-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HADLW-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HADLW-SWIN_30MIN_PROCESSED",
+            "COSMOS-HADLW-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HADLW-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HARTW-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HARTW-SWIN_30MIN_PROCESSED",
+            "COSMOS-HARTW-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HARTW-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HARWD-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HARWD-SWIN_30MIN_PROCESSED",
+            "COSMOS-HARWD-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HARWD-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HENFS-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HENFS-SWIN_30MIN_PROCESSED",
+            "COSMOS-HENFS-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HENFS-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HILLB-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HILLB-SWIN_30MIN_PROCESSED",
+            "COSMOS-HILLB-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HILLB-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HLACY-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HLACY-SWIN_30MIN_PROCESSED",
+            "COSMOS-HLACY-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HLACY-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HOLLN-ALBEDO_30MIN_RAW": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HOLLN-SWIN_30MIN_PROCESSED",
+            "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-HOLLN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HOLLN-ALBEDO_30MIN_RAW"
+        ],
+        "derivation": "PROCESS"
+    },
+    "COSMOS-HYBRY-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-HYBRY-SWIN_30MIN_PROCESSED",
+            "COSMOS-HYBRY-SWOUT_30MIN_PROCESSED",
+            "COSMOS-HYBRY-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-LIZRD-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-LIZRD-SWIN_30MIN_PROCESSED",
+            "COSMOS-LIZRD-SWOUT_30MIN_PROCESSED",
+            "COSMOS-LIZRD-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-LODTN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-LODTN-SWIN_30MIN_PROCESSED",
+            "COSMOS-LODTN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-LODTN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-LULLN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-LULLN-SWIN_30MIN_PROCESSED",
+            "COSMOS-LULLN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-LULLN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-MOORH-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-MOORH-SWIN_30MIN_PROCESSED",
+            "COSMOS-MOORH-SWOUT_30MIN_PROCESSED",
+            "COSMOS-MOORH-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-MOREM-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-MOREM-SWIN_30MIN_PROCESSED",
+            "COSMOS-MOREM-SWOUT_30MIN_PROCESSED",
+            "COSMOS-MOREM-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-MORLY-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-MORLY-SWIN_30MIN_PROCESSED",
+            "COSMOS-MORLY-SWOUT_30MIN_PROCESSED",
+            "COSMOS-MORLY-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-NWYKE-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-NWYKE-SWIN_30MIN_PROCESSED",
+            "COSMOS-NWYKE-SWOUT_30MIN_PROCESSED",
+            "COSMOS-NWYKE-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-PLYNL-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-PLYNL-SWIN_30MIN_PROCESSED",
+            "COSMOS-PLYNL-SWOUT_30MIN_PROCESSED",
+            "COSMOS-PLYNL-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-PORTN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-PORTN-SWIN_30MIN_PROCESSED",
+            "COSMOS-PORTN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-PORTN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-RDMER-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-RDMER-SWIN_30MIN_PROCESSED",
+            "COSMOS-RDMER-SWOUT_30MIN_PROCESSED",
+            "COSMOS-RDMER-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-REDHL-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-REDHL-SWIN_30MIN_PROCESSED",
+            "COSMOS-REDHL-SWOUT_30MIN_PROCESSED",
+            "COSMOS-REDHL-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-RISEH-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-RISEH-SWIN_30MIN_PROCESSED",
+            "COSMOS-RISEH-SWOUT_30MIN_PROCESSED",
+            "COSMOS-RISEH-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-ROTHD-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-ROTHD-SWIN_30MIN_PROCESSED",
+            "COSMOS-ROTHD-SWOUT_30MIN_PROCESSED",
+            "COSMOS-ROTHD-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-SHEEP-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SHEEP-SWIN_30MIN_PROCESSED",
+            "COSMOS-SHEEP-SWOUT_30MIN_PROCESSED",
+            "COSMOS-SHEEP-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-SOURH-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SOURH-SWIN_30MIN_PROCESSED",
+            "COSMOS-SOURH-SWOUT_30MIN_PROCESSED",
+            "COSMOS-SOURH-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-SPENF-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SPENF-SWIN_30MIN_PROCESSED",
+            "COSMOS-SPENF-SWOUT_30MIN_PROCESSED",
+            "COSMOS-SPENF-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-STGHT-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-STGHT-SWIN_30MIN_PROCESSED",
+            "COSMOS-STGHT-SWOUT_30MIN_PROCESSED",
+            "COSMOS-STGHT-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-STIPS-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-STIPS-SWIN_30MIN_PROCESSED",
+            "COSMOS-STIPS-SWOUT_30MIN_PROCESSED",
+            "COSMOS-STIPS-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-SYDLG-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-SYDLG-SWIN_30MIN_PROCESSED",
+            "COSMOS-SYDLG-SWOUT_30MIN_PROCESSED",
+            "COSMOS-SYDLG-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-TADHM-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-TADHM-SWIN_30MIN_PROCESSED",
+            "COSMOS-TADHM-SWOUT_30MIN_PROCESSED",
+            "COSMOS-TADHM-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-WADDN-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WADDN-SWIN_30MIN_PROCESSED",
+            "COSMOS-WADDN-SWOUT_30MIN_PROCESSED",
+            "COSMOS-WADDN-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-WIMPL-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WIMPL-SWIN_30MIN_PROCESSED",
+            "COSMOS-WIMPL-SWOUT_30MIN_PROCESSED",
+            "COSMOS-WIMPL-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-WRTTL-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WRTTL-SWIN_30MIN_PROCESSED",
+            "COSMOS-WRTTL-SWOUT_30MIN_PROCESSED",
+            "COSMOS-WRTTL-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
+    },
+    "COSMOS-WYTH1-ALBEDO_30MIN_PROCESSED": {
+        "use_start_date": "2025-03-28T12:00:00Z",
+        "depends_on": [
+            "COSMOS-WYTH1-SWIN_30MIN_PROCESSED",
+            "COSMOS-WYTH1-SWOUT_30MIN_PROCESSED",
+            "COSMOS-WYTH1-SOLAR_ZENITH_30MIN_PROCESSED"
+        ],
+        "derivation": "CALCULATE",
+        "method": "calc_albedo",
+        "args": {
+            "round": 3
+        }
     }
 }
