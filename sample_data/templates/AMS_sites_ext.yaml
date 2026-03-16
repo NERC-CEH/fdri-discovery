@@ -59,16 +59,18 @@ resources:
         "<dct:identifier>": "{site_StationID}"
         "<fdri:hasAnnotation>":
             - name: StandardInstallation
+              requires:
+                site_Standard_Installation:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#standard-installation>"
                 "@type": "<fdri:Annotation>"
                 "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/site-standard-installation>"
                 "<fdri:hasValue>":
-                    name: "StandardInstallationValue"
-                    properties:
-                    "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#standard-installation.value>"
-                    "@type": "<schema:PropertyValue>"
-                    "<schema:value>": "{site_Standard_Installation | asBoolean}"
+                    - name: "StandardInstallationValue"
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#standard-installation.value>"
+                        "@type": "<schema:PropertyValue>"
+                        "<schema:value>": "{site_Standard_Installation|asBoolean}"
             - name: LandManagementClass
               requires:
                 site_Land_Management_Class:
@@ -78,23 +80,22 @@ resources:
                 "@type": "<fdri:Annotation>"
                 "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/observed-land-cover>"
                 "<fdri:hasValueSeries>":
-                    name: "LandManagementClassValueSeries"
-                    properties:
-                    "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.value-series>"
-                    "@type": "<fdri:PropertyValueSeries>"
-                    "<fdri:hasCurrentValue>":
-                        name: "LandManagementClassCurrentValue"
-                        properties:
-                        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.current-value>"
-                        "@type": "<fdri:TimeBoundPropertyValue>"
-                        "<schema:valueReference>": "<http://fdri.ceh.ac.uk/ref/cosmos/lcm-2015/{site_Land_Management_Class|asInt}>"
-                        "<fdri:interval>":
-                            name: "LandManagementClassCurrentValueInterval"
-                            properties:
-                            "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.current-value.interval>"
-                            "@type": "<dct:PeriodOfTime>"
-                            "<dcat:startDate>": "{site_Installation_DateTime}^^<xsd:dateTime>"
-
+                    - name: "LandManagementClassValueSeries"
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.value-series>"
+                        "@type": "<fdri:PropertyValueSeries>"
+                        "<fdri:hasCurrentValue>":
+                            - name: LandManagementClassCurrentValue
+                              properties:
+                                "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.current-value>"
+                                "@type": "<fdri:TimeBoundPropertyValue>"
+                                "<schema:valueReference>": "<http://fdri.ceh.ac.uk/ref/cosmos/lcm-2015/{site_Land_Management_Class|asInt}>"
+                                "<fdri:interval>":
+                                    - name: "LandManagementClassCurrentValueInterval"
+                                      properties:
+                                        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.current-value.interval>"
+                                        "@type": "<dct:PeriodOfTime>"
+                                        "<dcat:startDate>": "{site_Installation_DateTime}^^<xsd:dateTime>"
     
     - name: Catchment
       requires:

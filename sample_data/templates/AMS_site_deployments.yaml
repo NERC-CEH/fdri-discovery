@@ -12,7 +12,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/deployment/iams-deployment-{ID|slug}>"
       "@type": <fdri:StaticDeployment>
       "<ssn:deployedSystem>": <http://fdri.ceh.ac.uk/id/system/iams-{locHistory_AssetID|slug}>
-      "<ssn:deployedOnPlatform>": <http://fdri.ceh.ac.uk/id/platform/{site_Network|slug}-{site_StationID|slug}>
+      "<ssn:deployedOnPlatform>": <http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}>
       "<prov:startedAtTime>": "{start_date|asDateTime}"
       "<prov:endedAtTime>": "{end_date|asDateTime}"
       "<fdri:deployedHeight>": "{locHistory_Sensor_Height|asDecimal}"
