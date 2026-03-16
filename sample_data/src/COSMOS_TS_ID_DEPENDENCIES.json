@@ -71626,7 +71626,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-BALRD-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71638,7 +71638,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-BICKL-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71650,7 +71650,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-BUNNY-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71662,7 +71662,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-CARDT-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71674,7 +71674,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-CGARW-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71686,7 +71686,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-CHIMN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71698,7 +71698,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-CHOBH-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71710,7 +71710,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-COCHN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71722,7 +71722,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-COCLP-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71734,7 +71734,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-CRICH-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71746,7 +71746,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-EASTB-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71758,7 +71758,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-ELMST-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71770,7 +71770,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-EUSTN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71782,7 +71782,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-FINCH-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71794,7 +71794,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-FIVET-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71806,7 +71806,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-GISBN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71818,7 +71818,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-GLENS-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71830,7 +71830,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-GLENW-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71842,7 +71842,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HADLW-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71854,7 +71854,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HARTW-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71866,7 +71866,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HARWD-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71878,7 +71878,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HENFS-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71890,7 +71890,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HILLB-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71902,7 +71902,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HLACY-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71914,7 +71914,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71926,7 +71926,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-HYBRY-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71938,7 +71938,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-LIZRD-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71950,7 +71950,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-LODTN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71962,7 +71962,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-LULLN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71974,7 +71974,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-MOORH-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71986,7 +71986,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-MOREM-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -71998,7 +71998,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-MORLY-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72010,7 +72010,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-NWYKE-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72022,7 +72022,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-PLYNL-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72034,7 +72034,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-PORTN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72046,7 +72046,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-RDMER-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72058,7 +72058,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-REDHL-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72070,7 +72070,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-RISEH-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72082,7 +72082,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-ROTHD-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72094,7 +72094,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-SHEEP-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72106,7 +72106,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-SOURH-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72118,7 +72118,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-SPENF-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72130,7 +72130,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-STGHT-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72142,7 +72142,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-STIPS-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72154,7 +72154,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-SYDLG-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72166,7 +72166,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-TADHM-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72178,7 +72178,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-WADDN-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72190,7 +72190,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-WIMPL-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72202,7 +72202,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-WRTTL-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72214,7 +72214,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-WYTH1-SOLAR_ZENITH_30MIN_PROCESSED": {
@@ -72226,7 +72226,7 @@
         "method": "solar_zenith",
         "args": {
             "round": 3,
-            "site_attribute": "LATITUDE"
+            "site_attribute": "LAT"
         }
     },
     "COSMOS-ALIC1-ALBEDO_30MIN_PROCESSED": {
