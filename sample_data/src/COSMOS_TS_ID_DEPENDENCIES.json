@@ -71947,7 +71947,7 @@
         "depends_on": [
             "COSMOS-HOLLN-SWIN_30MIN_PROCESSED",
             "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED",
-            "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_PROCESSED"
+            "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
         ],
         "derivation": "CALCULATE",
         "method": "calc_albedo",
@@ -71958,15 +71958,9 @@
     "COSMOS-HOLLN-ALBEDO_30MIN_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HOLLN-SWIN_30MIN_PROCESSED",
-            "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED",
-            "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
+            "COSMOS-HOLLN-ALBEDO_30MIN_RAW"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_albedo",
-        "args": {
-            "round": 3
-        }
+        "derivation": "PROCESS"
     },
     "COSMOS-HYBRY-ALBEDO_30MIN_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
