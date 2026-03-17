@@ -117,3 +117,10 @@ one_offs:
       "@type": "<fdri:EnvironmentalMonitoringFacilityTypeScheme>"
       "<dct:title>": "Common Monitoring System Types@en"
       "<rdfs:label>": "Common Monitoring System Types@en"
+  
+  - name: CommonAssetStatusScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/asset-status>"
+      "@type": "<fdri:SystemStatusScheme>"
+      "<dct:title>": "Common Asset Statuses@en"
+      "<rdfs:label>": "Common Asset Statuses@en"
