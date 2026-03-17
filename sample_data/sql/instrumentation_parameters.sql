@@ -1,6 +1,11 @@
 CREATE TABLE IF NOT EXISTS TS AS FROM read_csv('./sample_data/src/TIMESERIES_IDS_COSMOS.csv', AUTO_DETECT=true);
 CREATE TABLE IF NOT EXISTS MEASURE AS FROM read_csv('./sample_data/src/MEASURES.csv', AUTO_DETECT=true);
-CREATE TABLE IF NOT EXISTS SI AS FROM read_csv('./sample_data/src/SITE_INSTRUMENTATION.csv', AUTO_DETECT=true);
+CREATE TABLE IF NOT EXISTS SI AS FROM read_csv('./sample_data/src/SITE_INSTRUMENTATION.csv', sep=',');
+
+-- Diagnostic: print actual column names
+SELECT column_name FROM information_schema.columns WHERE table_name = 'SI';
+SELECT column_name FROM information_schema.columns WHERE table_name = 'TS';
+
 COPY (
     SELECT DISTINCT MEASURE.PARAMETER_ID, SI.INSTRUMENT_ID
     FROM TS JOIN MEASURE ON TS.MEASURE_ID == MEASURE.ID JOIN SI on TS.SENSOR_SLOT_ID == SI.SENSOR_SLOT_ID AND TS.SITE_ID == SI.SITE_ID
