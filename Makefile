@@ -120,6 +120,7 @@ SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
 SAMPLES += $(TTL_BASE)/AMS_asset.ttl
 SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
+SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -252,6 +253,9 @@ build/AMS_station_deployments.csv: $(SRC)/AMS_sites.csv $(SRC)/AMS_asset_locatio
 
 build/AMS_site_deployments.csv: build/AMS_sites_ext.csv $(SRC)/AMS_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_site_deployments.sql"
+
+build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes.csv build/AMS_sites_ext.csv $(SQL)/AMS_issue_log_ext.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_issue_log_ext.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

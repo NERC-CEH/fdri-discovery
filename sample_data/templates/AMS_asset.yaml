@@ -12,4 +12,4 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
       "@type": <fdri:EnvironmentalMonitoringSystem>
-      "<rdfs:label>": "{asset_Name}@en"
+      "<rdfs:label>": "{asset_Name} {asset_SerialNumber}@en"
