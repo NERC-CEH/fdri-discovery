@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS TS AS FROM read_csv('./sample_data/src/TIMESERIES_IDS_COSMOS.csv', AUTO_DETECT=true);
 CREATE TABLE IF NOT EXISTS MEASURE AS FROM read_csv('./sample_data/src/MEASURES.csv', AUTO_DETECT=true);
-CREATE TABLE IF NOT EXISTS SI AS FROM read_csv('./sample_data/src/SITE_INSTRUMENTATION.csv', sep=',');
+CREATE TABLE IF NOT EXISTS SI AS FROM read_csv('./sample_data/src/SITE_INSTRUMENTATION.csv', AUTO_DETECT=true);
 
 -- Diagnostic: print actual column names
 SELECT column_name FROM information_schema.columns WHERE table_name = 'SI';
