@@ -20,7 +20,6 @@ resources:
         "@id": "<http://fdri.ceh.ac.uk/id/network/{site_Network|slug}>"
         "@type": <fdri:EnvironmentalMonitoringNetwork>
         "<rdfs:label>": "{site_Network}@en"
-        "<dct:identifier>": "{site_Network}"
 
     - name: Site
       properties:
@@ -37,7 +36,7 @@ resources:
                 "@type": "<geos:Geometry>"
                 "<geos:asWKT>": "POINT({site_Longitude}, {site_Latitude})^^<geos:wktLiteral>"
         "<dct:identifier>": "{site_id}"
-        "^<fdri:utilises>": <::Network>
+        "^<fdri:contains>": <::Network>
 
     - name: Station
       requires:
@@ -104,8 +103,7 @@ resources:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Catchment|slug}>"
         "@type": <fdri:FacilityGroup>
         "<rdfs:label>": "{site_Catchment}@en"
-        "<dct:hasPart>": "<::Site>"
-        "^<dct:isPartOf>": "<::Site>"
+        "<fdri:hasMember>": "<::Site>"
 
     - name: Region
       requires:
@@ -114,5 +112,4 @@ resources:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Region|slug}>"
         "@type": <fdri:Region>
         "<rdfs:label>": "{site_Region}@en"
-        "<dct:hasPart>": "<::Site>"
-        "^<dct:isPartOf>": "<::Site>"
+        "<fdri:hasMember>": "<::Site>"
