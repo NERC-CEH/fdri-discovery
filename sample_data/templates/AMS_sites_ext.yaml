@@ -1,0 +1,118 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+    - name: FDRI_Programme
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/programme/fdri>"
+        "@type": <fdri:EnvironmentalMonitoringProgramme>
+        "<rdfs:label>": "FDRI Programme@en"
+
+resources:
+    - name: Network
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/network/{site_Network|slug}>"
+        "@type": <fdri:EnvironmentalMonitoringNetwork>
+        "<rdfs:label>": "{site_Network}@en"
+        "<dct:identifier>": "{site_Network}"
+
+    - name: Site
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}>"
+        "@type": <fdri:EnvironmentalMonitoringSite>
+        "<rdfs:label>": "{site_Name}@en"
+        "<rdfs:comment>": "{site_Description}@en"
+        "<geo:lat>": "{site_Latitude|asDecimal}"
+        "<geo:long>": "{site_Longitude|asDecimal}"
+        "<geos:hasGeometry>": 
+            - name: LatLongPoint
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}#geo-latlong>"
+                "@type": "<geos:Geometry>"
+                "<geos:asWKT>": "POINT({site_Longitude}, {site_Latitude})^^<geos:wktLiteral>"
+        "<dct:identifier>": "{site_id}"
+        "^<fdri:utilises>": <::Network>
+
+    - name: Station
+      requires:
+        site_Station_type:
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/platform/{site_Network|slug}-{site_StationID|slug}>"
+        "@type": <fdri:EnvironmentalMonitoringPlatform>
+        "<rdfs:label>": "{site_Name} {site_Station_type}@en"
+        "<geo:lat>": "{site_Latitude|asDecimal}"
+        "<geo:long>": "{site_Longitude|asDecimal}"
+        "<geos:hasGeometry>": 
+            - name: LatLongPoint
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/platform/{site_Network|slug}-{site_StationID|slug}#geo-latlong>"
+                "@type": "<geos:Geometry>"
+                "<geos:asWKT>": "POINT({site_Longitude}, {site_Latitude})^^<geos:wktLiteral>"
+        "^<dct:hasPart>": "<::Site>"
+        "<dct:isPartOf>": "<::Site>"
+        "<dct:identifier>": "{site_StationID}"
+        "<fdri:hasAnnotation>":
+            - name: StandardInstallation
+              requires:
+                site_Standard_Installation:
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#standard-installation>"
+                "@type": "<fdri:Annotation>"
+                "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/site-standard-installation>"
+                "<fdri:hasValue>":
+                    - name: "StandardInstallationValue"
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#standard-installation.value>"
+                        "@type": "<schema:PropertyValue>"
+                        "<schema:value>": "{site_Standard_Installation|asBoolean}"
+            - name: LandManagementClass
+              requires:
+                site_Land_Management_Class:
+                site_Installation_DateTime:
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class>"
+                "@type": "<fdri:Annotation>"
+                "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/observed-land-cover>"
+                "<fdri:hasValueSeries>":
+                    - name: "LandManagementClassValueSeries"
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.value-series>"
+                        "@type": "<fdri:PropertyValueSeries>"
+                        "<fdri:hasCurrentValue>":
+                            - name: LandManagementClassCurrentValue
+                              properties:
+                                "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.current-value>"
+                                "@type": "<fdri:TimeBoundPropertyValue>"
+                                "<schema:valueReference>": "<http://fdri.ceh.ac.uk/ref/cosmos/lcm-2015/{site_Land_Management_Class|asInt}>"
+                                "<fdri:interval>":
+                                    - name: "LandManagementClassCurrentValueInterval"
+                                      properties:
+                                        "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_StationID|slug}#land-management-class.current-value.interval>"
+                                        "@type": "<dct:PeriodOfTime>"
+                                        "<dcat:startDate>": "{site_Installation_DateTime}^^<xsd:dateTime>"
+    
+    - name: Catchment
+      requires:
+        site_Catchment:
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Catchment|slug}>"
+        "@type": <fdri:FacilityGroup>
+        "<rdfs:label>": "{site_Catchment}@en"
+        "<dct:hasPart>": "<::Site>"
+        "^<dct:isPartOf>": "<::Site>"
+
+    - name: Region
+      requires:
+        site_Region:
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Region|slug}>"
+        "@type": <fdri:Region>
+        "<rdfs:label>": "{site_Region}@en"
+        "<dct:hasPart>": "<::Site>"
+        "^<dct:isPartOf>": "<::Site>"

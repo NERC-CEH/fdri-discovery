@@ -1,0 +1,9 @@
+site_Name,site_Catchment,site_StationID,site_Standard_Installation,site_Latitude,site_Longitude,site_Region,site_Land_Management,site_Affiliation,site_Network,site_Date_End,site_Station_type,site_Description,site_Installation_Date,site_Decommissioned_Date
+Carreg Wen,Severn,SE-CARWE-01-WS,1,52.48277697,-3.726718138,Cymru Wales,Broadleaf woodland,,FDRI,,Weather station,,23/06/2025 12:00,
+Foel Fadian,Severn,SE-FOFAD-01-PR,1,52.54511083,-3.720864236,,,,FDRI,,Precipitation,,"
+03/12/2025 15:30",
+Hafren Forest - Severn Trap,Severn,SE-SVTRP-01-WL,0,,,,,,FDRI,,Water level,Trapezoidal flume,19/05/2025 17:00,
+"Mill Farm, Chenies",Chess,CH-MILFA-01-RS,0,,,,,,FDRI,,Recharge Station,,,
+Scotsbridge,Chess,CH-SCOBR-01,0,,,,,,FDRI,,,,,
+Test Site,,xx-UKCEH_Wallingford,1,51.603,-0.711,UKCEH Wallingford,,,FDRI,,Test station,,,
+Test Site,,xx_UKCEH_Wallingford,1,51.603,-0.711,UKCEH Wallingford,,,FDRI,,Test station,,,
