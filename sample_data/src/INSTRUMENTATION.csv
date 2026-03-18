@@ -1,38 +1,36 @@
 INSTRUMENT_ID,INSTRUMENT_NAME,INSTRUMENT_COMMENT,MODEL
-4CR,Four-component radiometer,,Hukseflux NR01
-AWS,Automatic Weather Station,,Gill MetPak Weather Station
-AWS_ANEM,3D Sonic Anemometer,,Gill WindMaster3D
-AWS_ANEM_SONIC,3D Sonic Anemometer with sonic temperature upgrade,New transducers installed on WindMaster,
-AWS_SDM,SDMSI01(A),Component of Phase 3 logger comms,SDMSI01
-BATTERY,Battery,,
-CHAIN,Stainless steel chain,Chain added to pluvio raingauges to improve wind interference problem,Chain
-CRNS,Cosmic-ray soil moisure sensor (Moderated),,Hydroinnova CRS-2000 or CRS1000/B (Moderated)
-CRNS_BARE,Cosmic-ray soil moisure sensor (Bare),,Hydroinnova CRS-2000 or CRS1000/B (Bare)
-CRNS_SNOW,Snowfox COSMOS tube,,Hydroinnova Snowfox
-ETHERNET_115,Ethernet interface,,NL115
-ETHERNET_116,Ethernet interface,,NL116
-GPRS,GPRS,,
-HFP,Heat flux plate 1,,Hukseflux HFP01SC
-HYGROCLIP,Hygroclip (relative humidity component of MetPak),,Rotronic hygroclip HC2-S(3)
-HYGROCLIP_A,Hygroclip (relative humidity component of MetPak). Improved model.,New model of hygroclip deployed on advice from Rotronic due to poor performance of previous model.,Rotronic hygroclip HC2A-S(3)
-IMKO,Soil moisture profile sensor,,IMKO Digital TDT Soil moisture sensor
-LOGGER,DataLogger,,CR3000
+CHAIN,Stainless Steel Chain,Chain added to pluvio raingauges to improve wind interference problem,Chain
+CRNS_1000B,Cosmic-Ray Neutron Sensor (Moderated),,Hydroinnova CRS-1000/B (Moderated)
+CRNS_1000B_BARE,Cosmic-Ray Neutron Sensor (Bare),,Hydroinnova CRS-1000/B (Bare)
+CRNS_2000,Cosmic-Ray Neutron Sensor (Moderated),,Hydroinnova CRS-2000 (Moderated)
+CRNS_2000_BARE,Cosmic-Ray Neutron Sensor (Bare),,Hydroinnova CRS-2000 (Bare)
+CS106,Barometric Pressure Sensor,First installed in Phase 3,Vaisala CS106
+ETHERNET_115,Ethernet Interface,,NL115
+ETHERNET_116,Ethernet Interface,,NL116
+GPRS,General Packet Radio Service,Not an instrument rather technology used,
+HFP01SC,Heat Flux Plate,,Hukseflux HFP01SC
+HMP155,Humidity and Temperature Probe,,Vaisala HUMICAP HMP155
+HYGROCLIP_HC2,Hygroclip (relative humidity component of MetPak),Poor performance from this model,Rotronic hygroclip HC2-S(3)
+HYGROCLIP_HC2A,Hygroclip (relative humidity component of MetPak),,Rotronic hygroclip HC2A-S(3)
+IMKO,Soil Moisture Profile Sensor,,IMKO PICO-PROFILE
+LOGGER_CR3000,DataLogger,,CR3000
+METPAK,MetPak Automatic Weather Station,,Gill MetPak Weather Station
 MODEM,Modem,,COM1-10(A)
-MODEM_BGAN,BGAN modem,,
+MODEM_BGAN,BGAN Modem,For satellite network,
 MODEM_LX60,Sierra Wireless LX60 Modem,Replacement for MODEM_PRO (ProRoute Modem),Sierra Wireless LX60 Modem
-MODEM_PRO,ProRoute modem,,H820E-W
-CS106,Barometric Pressure Sensor,First installed in Phase 3,CS106 Pressure sensor
+MODEM_PRO,ProRoute Modem,,H820E-W
+NR01,NR01 Four-Component Radiometer,,Hukseflux NR01
 PHENOCAM,Phenocam,,Mobotix S14
-PHENOCAM_LENS,Phenocam lens,,Mobotix MX-O-SMA-S-6D016
-PLUVIO,Weighing Raingauge,,Ott Pluvio 2
-PYRANO_DOWN,Downward-facing pyranometer,,
-PYRANO_UP,Upward-facing pyranometer,,
-PYRGEO_DOWN,Downward-facing pyrgeometer,,
-PYRGEO_UP,Upward-facing pyrgeometer,,
-RAINE,Tipping weighing raingauge,Lambrecht Rain[e] initially deployed in addition to OTT Pluvio2,Lambrecht Rain[e]
-HMP,Relative humidity sensor,,Vaisala HUMICAP Humidity and temperature probe HMP155
-RH_INT,Logger enclosure internal relative humidity,UKCEH built internal relative humidity sensor,
-SR05A,Snow depth sensor,,Campbell SR05A
-STP,Soil Temperature profile,,Hukseflux STP01
-TBR,Tipping bucket raingauge,SBS,
-TDT,TDT sensor,,Acclima Digital TDT Soil moisture sensor
+PHENOCAM_LENS,Phenocam Lens,,Mobotix MX-O-SMA-S-6D016
+PLUVIO_2,Pluvio Weighing Raingauge,,OTT Pluvio2
+PLUVIO_2L,Pluvio Weighing Raingauge,,OTT Pluvio2L
+RAINE,Rain[e] Tipping Weighing Raingauge,,Lambrecht Rain[e]
+RH_INT,Logger Enclosure Relative Humidity Sensor,UKCEH built internal relative humidity sensor,
+ROLLS_BATTERY,Rolls Battery,,S12-160AGM
+SDMSI01,Sensor Interface Module,Component of Phase 3 logger comms,Campbell SDM-SI01
+SNOWFOX,Snowfox Cosmic-Ray Neutron Sensor,,Hydroinnova Snowfox
+SR05A,Snow Depth Sensor,,Campbell SR05A
+STP,Soil Temperature Profile,,Hukseflux STP01
+TBR,Tipping Bucket Raingauge,,EML SBS 500
+TDT,TDT Soil Moisture Sensor,,Acclima Digital TDT Soil moisture sensor
+WIND_ANEM,Windmaster 3D Sonic Anemometer,,Gill WindMaster3D
