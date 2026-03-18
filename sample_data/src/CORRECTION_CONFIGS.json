@@ -3135,6 +3135,10 @@
                 "PARAM_VALUE": "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
             },
             {
+                "PARAM_ID": "DEP_TS",
+                "PARAM_VALUE": "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
+            },
+            {
                 "PARAM_ID": "THETA_G",
                 "PARAM_VALUE": 0.3128764
             }
