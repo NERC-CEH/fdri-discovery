@@ -7,6 +7,13 @@ imports:
     - concept_schemes.yaml
     - extensions.py
 
+one_offs:
+    - name: FDRI_Programme
+      properties:
+        "@id": "<http://fdri.ceh.ac.uk/id/programme/fdri>"
+        "@type": <fdri:EnvironmentalMonitoringProgramme>
+        "<rdfs:label>": "FDRI Programme@en"
+
 resources:
     - name: Network
       properties:
