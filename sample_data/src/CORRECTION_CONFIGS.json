@@ -3132,7 +3132,7 @@
         "parameters": [
             {
                 "PARAM_ID": "DEP_TS",
-                "PARAM_VALUE": "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
+                "PARAM_VALUE": "COSMOS-HOLLN-SWIN_30MIN_PROCESSED"
             },
             {
                 "PARAM_ID": "DEP_TS",
