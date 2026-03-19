@@ -113,7 +113,7 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **Update requirements:** Bulk replacement?
 
-### `instrumentation_parameters` from `TIMESERIES_IDS` and `SENSOR_SLOT_IDS`
+### `instrumentation_parameters` from `TIMESERIES_IDS`, `MEASURES` and `SITE_INSTRUMENTATION`
 
 **What:** Mapping from variable to instrument type
 
@@ -125,9 +125,9 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **Update requirements:** Bulk replacement
 
-### `sensor_deployments` from `SITE_INSTRUMENTATION`, `SENSOR_SLOT_IDS` and `TIMESERIES_IDS`
+### `sensor_deployments` from `SITE_INSTRUMENTATION`, `MEASURES` and `TIMESERIES_IDS`
 
-**What:** `SITE_INSTRUMENTATION` gives history of sensor deployments at sites with sensor slot id and serial number. `SENSOR_SLOT_IDS` maps a sensor slot to an instrument type id. `TIMESERIES_ID` maps a site to a sensor slot and a variable.
+**What:** `SITE_INSTRUMENTATION` gives history of sensor deployments at sites with sensor slot id and instrument id. `TIMESERIES_ID` maps a site to a sensor slot and a variable.
 
 **Preprocessing:** Join first two on sensor slot id and then join to time series on site and sensor slot id.
 

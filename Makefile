@@ -70,7 +70,7 @@ SAMPLES += $(TTL_BASE)/ts_temporal.ttl
 SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
 
 # FDRI SAMPLES
-SAMPLES += $(TTL_BASE)/fdri_sites.ttl
+# SAMPLES += $(TTL_BASE)/fdri_sites.ttl - replaced by AMS_sites_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
@@ -114,6 +114,13 @@ SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
+
+# AMS Samples
+SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
+SAMPLES += $(TTL_BASE)/AMS_asset.ttl
+SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
+SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
+SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -172,7 +179,7 @@ build/shacl:
 build/data:
 	mkdir -p build/data
 
-build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/instrumentation_parameters.sql | build
+build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/MEASURES.csv $(SQL)/instrumentation_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/instrumentation_parameters.sql"
 
 build/landCoverLcm.csv: $(SRC)/LAND_COVER_LCM.csv $(SQL)/landCoverLcm.sql | build
@@ -184,10 +191,10 @@ build/landCoverObservations.csv: $(SRC)/LAND_COVER_OBSERVED.csv $(SQL)/landCover
 build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_config.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/phenocam_mask_config.sql"
 
-build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_deployments.sql | build
+build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
 
-build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv build/sensor_deployments.csv $(SQL)/sensor_faults.sql | build
+build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SQL)/sensor_faults.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_faults.sql"
 
 build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sensor_firmware_configurations.sql | build
@@ -237,6 +244,18 @@ build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.s
 
 build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
+
+build/AMS_sites_ext.csv: $(SRC)/AMS_sites.csv $(SQL)/AMS_sites_ext.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_sites_ext.sql"
+
+build/AMS_station_deployments.csv: $(SRC)/AMS_sites.csv $(SRC)/AMS_asset_location_history.csv $(SQL)/AMS_station_deployments.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_station_deployments.sql"
+
+build/AMS_site_deployments.csv: build/AMS_sites_ext.csv $(SRC)/AMS_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_site_deployments.sql"
+
+build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes.csv build/AMS_sites_ext.csv $(SQL)/AMS_issue_log_ext.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_issue_log_ext.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
