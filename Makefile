@@ -26,6 +26,8 @@ RECORDS = \
 	TimeSeriesDataset \
 	TimeSeriesDefinition
 
+SAMPLES += $(TTL_BASE)/ACTIVITY_ROLES.ttl
+SAMPLES += $(TTL_BASE)/ACTIVITY_TYPES.ttl
 SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
@@ -121,6 +123,7 @@ SAMPLES += $(TTL_BASE)/AMS_asset.ttl
 SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
+SAMPLES += $(TTL_BASE)/AMS_asset_modification.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 

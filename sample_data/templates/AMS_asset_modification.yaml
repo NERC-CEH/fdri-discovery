@@ -1,0 +1,74 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+mappings:
+  ActivityType:
+    Calibration: <http://fdri.ceh.ac.uk/ref/common/activity-type/system-calibration>
+    Maintenance: <http://fdri.ceh.ac.uk/ref/common/activity-type/system-maintenance>
+  SystemRole:
+    Calibration: <http://fdri.ceh.ac.uk/ref/common/activity-role/calibrated-system>
+    Maintenance: <http://fdri.ceh.ac.uk/ref/common/activity-role/maintained-system>
+    
+resources:
+  - name: Asset
+    requires:
+      assetMod_AssetID:
+      assetMod_ModType:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{assetMod_AssetID|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSystem>
+  
+  - name: ModificationActivity
+    requires:
+      assetMod_AssetID:
+      assetMod_ModType:
+      assetMod_Date:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/activity/ams-modification-{ID|slug}>"
+      "@type": <prov:Activity>
+      "<dct:type>": "{assetMod_ModType|map_by('ActivityType')}"
+      "<rdfs:label>": "Modification of asset {assetMod_AssetID} on {assetMod_Date|asDate} ({assetMod_ModType})@en"
+      "<prov:startedAtTime>": "{assetMod_Date|asDateTime}"
+      "<prov:endedAtTime>": "{assetMod_Date|endOfDay|asDateTime}"
+      "<rdfs:comment>":
+        - "Reason: {assetMod_Reason}@en"
+        - "Notes: {assetMod_Notes}@en"
+      "<prov:qualifiedUsage>":
+        - name: ModifiedAsset
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/activity/ams-modification-{ID|slug}#modified>"
+            "@type": <prov:Usage>
+            "<prov:entity>": <::Asset>
+            "<prov:hadRole>": "{assetMod_ModType|map_by('SystemRole')}"
+
+  - name: CalibrationValueSeries
+    requires:
+      assetMod_AssetID:
+      assetMod_ModType: "Calibration"
+      assetMod_Variable:
+      assetMod_Date:
+      assetMod_Variable_Coefficient:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{assetMod_AssetID|slug}#calibration-{assetMod_Variable|slug}>"
+      "@type": <fdri:CalibrationValueSeries>
+      "<fdri:appliesToVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{assetMod_Variable|slug}>"
+      "<fdri:hadValue>":
+        - name: CalibrationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{assetMod_AssetID|slug}#calibration-{assetMod_Variable|slug}.value-{ID|slug}>"
+            "@type": <fdri:TimeBoundPropertyValue>
+            "<fdri:interval>":
+              - name: CalibrationInterval
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{assetMod_AssetID|slug}#calibration-{assetMod_Variable|slug}.value-{ID|slug}.interval>"
+                  "@type": <dct:PeriodOfTime>
+                  "<dcat:startDate>": "{assetMod_Date|asDateTime}"
+            "<schema:value>": "{assetMod_Variable_Coefficient}"
+      "<fdri:wasModifiedBy>": <::ModificationActivity>
+      "^<fdri:hasCalibrationValueSeries>": <::Asset>
