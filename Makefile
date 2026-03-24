@@ -261,6 +261,9 @@ build/AMS_site_deployments.csv: build/AMS_sites_ext.csv $(SRC)/AMS_asset_locatio
 build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes.csv build/AMS_sites_ext.csv $(SQL)/AMS_issue_log_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_issue_log_ext.sql"
 
+build/AMS_asset_ext.csv: $(SRC)/AMS_asset.csv build/AMS_sites_ext.csv $(SQL)/AMS_asset_ext.sql
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_asset_ext.sql"
+
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
 

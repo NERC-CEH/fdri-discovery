@@ -7,7 +7,7 @@ COPY (
         -- coalesce(regexp_extract(site_StationID, '[^\-]+(-[^\-]+){2}'), site_StationID) as site_id,
         regexp_extract(site_StationID, '[^\-]+') as region_id,
         lcm_classes.LCM_CLASS as site_Land_Management_Class,
-        strftime('%Y-%m-%dT%H:%M:00Z', strptime(site_Installation_Date, '%d/%m/%Y %H:%M')) as site_Installation_DateTime,
-        strftime('%Y-%m-%dT%H:%M:00Z', strptime(site_Decommissioned_Date, '%d/%m/%Y %H:%M')) as site_Decommissioned_DateTime
+        strftime('%Y-%m-%dT%H:%M:00Z', try_strptime(site_Installation_Date, '%d/%m/%Y %H:%M')) as site_Installation_DateTime,
+        strftime('%Y-%m-%dT%H:%M:00Z', try_strptime(site_Decommissioned_Date, '%d/%m/%Y %H:%M')) as site_Decommissioned_DateTime
     FROM sites left join lcm_classes on sites.site_Land_Management = lcm_classes.DESCRIPTION
 ) TO './build/AMS_sites_ext.csv' (HEADER, DELIMITER ',') ;

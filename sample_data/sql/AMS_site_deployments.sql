@@ -15,6 +15,7 @@ COPY(
         sites.site_Network,
         lhx.*
     from sites 
-    join lhx on sites.site_id = lhx.locHistory_SiteCode
-    join assets on lhx.locHistory_AssetID = assets.ID
+    join assets on assets.asset_SiteID = sites.ID
+    join lhx on lhx.locHistory_AssetID = assets.ID
+    where sites.station_id is null
 ) TO './build/AMS_site_deployments.csv' (HEADER, DELIMITER ',') ;
