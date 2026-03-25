@@ -4,10 +4,13 @@
         "depends_on": [
             "COSMOS-ALIC1-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ALIC1-ALBEDO_SD_1DAY_PROCESSED": {
@@ -1078,10 +1081,13 @@
         "depends_on": [
             "COSMOS-BALRD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BALRD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -2250,10 +2256,13 @@
         "depends_on": [
             "COSMOS-BICKL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BICKL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -3453,10 +3462,13 @@
         "depends_on": [
             "COSMOS-BUNNY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BUNNY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -4656,10 +4668,13 @@
         "depends_on": [
             "COSMOS-CARDT-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CARDT-ALBEDO_SD_1DAY_PROCESSED": {
@@ -5859,10 +5874,13 @@
         "depends_on": [
             "COSMOS-CGARW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CGARW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -7595,10 +7613,13 @@
         "depends_on": [
             "COSMOS-CHIMN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CHIMN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -9299,10 +9320,13 @@
         "depends_on": [
             "COSMOS-CHOBH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CHOBH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -10502,10 +10526,13 @@
         "depends_on": [
             "COSMOS-COCHN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-COCHN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -12238,10 +12265,13 @@
         "depends_on": [
             "COSMOS-COCLP-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-COCLP-ALBEDO_SD_1DAY_PROCESSED": {
@@ -13438,10 +13468,13 @@
         "depends_on": [
             "COSMOS-CRICH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CRICH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -14610,10 +14643,13 @@
         "depends_on": [
             "COSMOS-EASTB-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-EASTB-ALBEDO_SD_1DAY_PROCESSED": {
@@ -15951,10 +15987,13 @@
         "depends_on": [
             "COSMOS-ELMST-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ELMST-ALBEDO_SD_1DAY_PROCESSED": {
@@ -17518,10 +17557,13 @@
         "depends_on": [
             "COSMOS-EUSTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-EUSTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -19085,10 +19127,13 @@
         "depends_on": [
             "COSMOS-FINCH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-FINCH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -20683,10 +20728,13 @@
         "depends_on": [
             "COSMOS-FIVET-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-FIVET-ALBEDO_SD_1DAY_PROCESSED": {
@@ -22250,10 +22298,13 @@
         "depends_on": [
             "COSMOS-GISBN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GISBN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -23619,10 +23670,13 @@
         "depends_on": [
             "COSMOS-GLENS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GLENS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -24960,10 +25014,13 @@
         "depends_on": [
             "COSMOS-GLENW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GLENW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -26527,10 +26584,13 @@
         "depends_on": [
             "COSMOS-HADLW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HADLW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -28094,10 +28154,13 @@
         "depends_on": [
             "COSMOS-HARTW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HARTW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -29266,10 +29329,13 @@
         "depends_on": [
             "COSMOS-HARWD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HARWD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -30340,10 +30406,13 @@
         "depends_on": [
             "COSMOS-HENFS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HENFS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -31540,10 +31609,13 @@
         "depends_on": [
             "COSMOS-HILLB-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HILLB-ALBEDO_SD_1DAY_PROCESSED": {
@@ -33107,10 +33179,13 @@
         "depends_on": [
             "COSMOS-HLACY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HLACY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -34705,10 +34780,13 @@
         "depends_on": [
             "COSMOS-HOLLN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HOLLN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -35936,10 +36014,13 @@
         "depends_on": [
             "COSMOS-HYBRY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HYBRY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -37503,10 +37584,13 @@
         "depends_on": [
             "COSMOS-LIZRD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LIZRD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -38675,10 +38759,13 @@
         "depends_on": [
             "COSMOS-LODTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LODTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -40301,10 +40388,13 @@
         "depends_on": [
             "COSMOS-LULLN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LULLN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -41504,10 +41594,13 @@
         "depends_on": [
             "COSMOS-MOORH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MOORH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -42845,10 +42938,13 @@
         "depends_on": [
             "COSMOS-MOREM-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MOREM-ALBEDO_SD_1DAY_PROCESSED": {
@@ -44443,10 +44539,13 @@
         "depends_on": [
             "COSMOS-MORLY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MORLY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -45615,10 +45714,13 @@
         "depends_on": [
             "COSMOS-NWYKE-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-NWYKE-ALBEDO_SD_1DAY_PROCESSED": {
@@ -46787,10 +46889,13 @@
         "depends_on": [
             "COSMOS-PLYNL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-PLYNL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -48128,10 +48233,13 @@
         "depends_on": [
             "COSMOS-PORTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-PORTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -49300,10 +49408,13 @@
         "depends_on": [
             "COSMOS-RDMER-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-RDMER-ALBEDO_SD_1DAY_PROCESSED": {
@@ -50472,10 +50583,13 @@
         "depends_on": [
             "COSMOS-REDHL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-REDHL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -51675,10 +51789,13 @@
         "depends_on": [
             "COSMOS-RISEH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-RISEH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -53242,10 +53359,13 @@
         "depends_on": [
             "COSMOS-ROTHD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ROTHD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -54445,10 +54565,13 @@
         "depends_on": [
             "COSMOS-SHEEP-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SHEEP-ALBEDO_SD_1DAY_PROCESSED": {
@@ -56149,10 +56272,13 @@
         "depends_on": [
             "COSMOS-SOURH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SOURH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -57490,10 +57616,13 @@
         "depends_on": [
             "COSMOS-SPENF-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SPENF-ALBEDO_SD_1DAY_PROCESSED": {
@@ -59057,10 +59186,13 @@
         "depends_on": [
             "COSMOS-STGHT-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-STGHT-ALBEDO_SD_1DAY_PROCESSED": {
@@ -60288,10 +60420,13 @@
         "depends_on": [
             "COSMOS-STIPS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-STIPS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -61488,10 +61623,13 @@
         "depends_on": [
             "COSMOS-SYDLG-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SYDLG-ALBEDO_SD_1DAY_PROCESSED": {
@@ -63086,10 +63224,13 @@
         "depends_on": [
             "COSMOS-TADHM-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-TADHM-ALBEDO_SD_1DAY_PROCESSED": {
@@ -64258,10 +64399,13 @@
         "depends_on": [
             "COSMOS-WADDN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WADDN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -65955,10 +66099,13 @@
         "depends_on": [
             "COSMOS-WIMPL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WIMPL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -67522,10 +67669,13 @@
         "depends_on": [
             "COSMOS-WRTTL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WRTTL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -69120,10 +69270,13 @@
         "depends_on": [
             "COSMOS-WYTH1-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WYTH1-ALBEDO_SD_1DAY_PROCESSED": {
