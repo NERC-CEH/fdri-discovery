@@ -1,4 +1,4 @@
-CREATE TABLE sites as from read_csv('./sample_data/src/AMS_sites.csv', AUTO_DETECT=true);
+CREATE TABLE sites as from read_csv('./sample_data/src/AMS_mill_site.csv', AUTO_DETECT=true);
 CREATE TABLE lcm_classes as from read_csv('./sample_data/src/LAND_COVER_LCM_CLASSES.csv', AUTO_DETECT=true);
 COPY (
     SELECT sites.*,

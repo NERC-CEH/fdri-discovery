@@ -1,6 +1,6 @@
 create table sites as from read_csv('./build/AMS_sites_ext.csv', AUTO_DETECT=true);
-create table lh as from read_csv('./sample_data/src/AMS_asset_location_history.csv', AUTO_DETECT=true);
-create table assets as from read_csv('./sample_data/src/AMS_asset.csv', AUTO_DETECT=true);
+create table lh as from read_csv(['./sample_data/src/AMS_mill_asset_location_history.csv'], AUTO_DETECT=true, union_by_name=true);
+create table assets as from read_csv('./build/AMS_asset_ext.csv', AUTO_DETECT=true);
 
 create table lhx as select *,
     strftime(locHistory_Date, '%Y-%m-%dT%H:%M:%SZ') as start_date,
