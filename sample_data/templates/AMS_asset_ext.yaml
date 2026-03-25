@@ -16,10 +16,23 @@ resources:
       "@type": <fdri:EnvironmentalMonitoringSystemType>
       "<skos:inScheme>": <::CommonSystemTypeScheme>
 
-  - name: Asset
+  - name: SensorAsset
+    requires:
+      is_sensor: "true"
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSensor>
+  
+  - name: NonSensorAsset
+    unless:
+      is_sensor: "true"
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
       "@type": <fdri:EnvironmentalMonitoringSystem>
+
+  - name: Asset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
       "<rdfs:label>": "{asset_Name} {asset_SerialNumber}@en"
       "<rdfs:comment>": "{asset_Description}@en"
       "<dct:type>":
@@ -33,7 +46,7 @@ resources:
             "<skos:prefLabel>": "{asset_Manufacturer} {asset_Model}@en"
             "<skos:inScheme>": <::CommonSystemTypeScheme>
             "^<skos:narrower>": <::InstrumentType>
-            # "<skos:broader>": <::InstrumentType> - currently inconsistent Instrument Type for the same make/model
+            "<skos:broader>": <::InstrumentType>
         - name: InstrumentType
           requires:
             asset_Instrument_Type:
