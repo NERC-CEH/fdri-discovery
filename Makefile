@@ -118,7 +118,7 @@ SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
 
 # AMS Samples
 SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
-SAMPLES += $(TTL_BASE)/AMS_asset.ttl
+SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
 SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
@@ -249,17 +249,20 @@ build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.s
 build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
 
-build/AMS_sites_ext.csv: $(SRC)/AMS_sites.csv $(SQL)/AMS_sites_ext.sql | build
+build/AMS_sites_ext.csv: $(SRC)/AMS_mill_site.csv $(SQL)/AMS_sites_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_sites_ext.sql"
 
-build/AMS_station_deployments.csv: $(SRC)/AMS_sites.csv $(SRC)/AMS_asset_location_history.csv $(SQL)/AMS_station_deployments.sql | build
+build/AMS_station_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_station_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_station_deployments.sql"
 
-build/AMS_site_deployments.csv: build/AMS_sites_ext.csv $(SRC)/AMS_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
+build/AMS_site_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_site_deployments.sql"
 
 build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes.csv build/AMS_sites_ext.csv $(SQL)/AMS_issue_log_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_issue_log_ext.sql"
+
+build/AMS_asset_ext.csv: $(SRC)/AMS_mill_assets.csv build/AMS_sites_ext.csv $(SQL)/AMS_asset_ext.sql
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_asset_ext.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
