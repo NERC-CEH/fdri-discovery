@@ -727,7 +727,11 @@
             "COSMOS-ALIC1-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-ALIC1-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -1853,7 +1857,11 @@
             "COSMOS-BALRD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-BALRD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -3059,7 +3067,11 @@
             "COSMOS-BICKL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-BICKL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -4265,7 +4277,11 @@
             "COSMOS-BUNNY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-BUNNY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -5471,7 +5487,11 @@
             "COSMOS-CARDT-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CARDT-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -6745,7 +6765,11 @@
             "COSMOS-CGARW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CGARW-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -8501,7 +8525,11 @@
             "COSMOS-CHIMN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CHIMN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -10123,7 +10151,11 @@
             "COSMOS-CHOBH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CHOBH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -11397,7 +11429,11 @@
             "COSMOS-COCHN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-COCHN-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -13065,7 +13101,11 @@
             "COSMOS-COCLP-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-COCLP-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -14240,7 +14280,11 @@
             "COSMOS-CRICH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CRICH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -15535,7 +15579,11 @@
             "COSMOS-EASTB-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-EASTB-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -16738,7 +16786,11 @@
             "COSMOS-ELMST-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-ELMST-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -18308,7 +18360,11 @@
             "COSMOS-EUSTN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-EUSTN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -19909,7 +19965,11 @@
             "COSMOS-FINCH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-FINCH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -21479,7 +21539,11 @@
             "COSMOS-FIVET-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-FIVET-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -23218,7 +23282,11 @@
             "COSMOS-GISBN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-GISBN-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -24562,7 +24630,11 @@
             "COSMOS-GLENS-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-GLENS-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -25765,7 +25837,11 @@
             "COSMOS-GLENW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-GLENW-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -27335,7 +27411,11 @@
             "COSMOS-HADLW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HADLW-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -28926,7 +29006,11 @@
             "COSMOS-HARTW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HARTW-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -30052,7 +30136,11 @@
             "COSMOS-HARWD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HARWD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -31206,7 +31294,11 @@
             "COSMOS-HENFS-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HENFS-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -32360,7 +32452,11 @@
             "COSMOS-HILLB-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HILLB-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -33961,7 +34057,11 @@
             "COSMOS-HLACY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HLACY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -35611,7 +35711,11 @@
             "COSMOS-HOLLN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HOLLN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -36765,7 +36869,11 @@
             "COSMOS-HYBRY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HYBRY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -38356,7 +38464,11 @@
             "COSMOS-LIZRD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-LIZRD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -39569,7 +39681,11 @@
             "COSMOS-LODTN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-LODTN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -41191,7 +41307,11 @@
             "COSMOS-LULLN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-LULLN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -42486,7 +42606,11 @@
             "COSMOS-MOORH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-MOORH-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -43720,7 +43844,11 @@
             "COSMOS-MOREM-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-MOREM-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -45311,7 +45439,11 @@
             "COSMOS-MORLY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-MORLY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -46486,7 +46618,11 @@
             "COSMOS-NWYKE-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-NWYKE-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -47781,7 +47917,11 @@
             "COSMOS-PLYNL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-PLYNL-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -49005,7 +49145,11 @@
             "COSMOS-PORTN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-PORTN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -50180,7 +50324,11 @@
             "COSMOS-RDMER-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-RDMER-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -51386,7 +51534,11 @@
             "COSMOS-REDHL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-REDHL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -52540,7 +52692,11 @@
             "COSMOS-RISEH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-RISEH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -54162,7 +54318,11 @@
             "COSMOS-ROTHD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-ROTHD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -55453,7 +55613,11 @@
             "COSMOS-SHEEP-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SHEEP-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -57164,7 +57328,11 @@
             "COSMOS-SOURH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SOURH-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -58367,7 +58535,11 @@
             "COSMOS-SPENF-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SPENF-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -60017,7 +60189,11 @@
             "COSMOS-STGHT-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-STGHT-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -61220,7 +61396,11 @@
             "COSMOS-STIPS-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-STIPS-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -62405,7 +62585,11 @@
             "COSMOS-SYDLG-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SYDLG-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -63996,7 +64180,11 @@
             "COSMOS-TADHM-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-TADHM-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -65280,7 +65468,11 @@
             "COSMOS-WADDN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WADDN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -66850,7 +67042,11 @@
             "COSMOS-WIMPL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WIMPL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -68451,7 +68647,11 @@
             "COSMOS-WRTTL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WRTTL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -69986,7 +70186,11 @@
             "COSMOS-WYTH1-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WYTH1-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
