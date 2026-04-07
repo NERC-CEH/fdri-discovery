@@ -135,8 +135,8 @@ Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV_PREC,PT30M,PT30M,Standard 
 RH-MEAN_PREC-PCT-P1D-P1D,,RH,PCT,MEAN_PREC,P1D,P1D,Mean relative humidity over the preceding day in percent
 RH-MEAN_PREC-PCT-PT30M-PT30M,,RH,PCT,MEAN_PREC,PT30M,PT30M,Mean relative humidity over the preceding 30 minutes in percent
 RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH_STD,PCT,STDDEV_PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent
-RH_CRNS_INT-INST-PCT-PT30M-PT30M,,RH_CRNS_INT,PCT,INST,PT30M,PT30M,Instantaneous internal CRNS relative humidity at 30 minutes in percent
-RH_LOGGER-MEAN_PREC-PCT-PT30M-PT30M,,RH_LOGGER,PCT,MEAN_PREC,PT30M,PT30M,Mean internal logger relative humidity over the preceding 30 minutes in percent
+RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
+RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN_PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent
 RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN_PREC,PT30M,PT30M,Mean net radiation over preceding 30 minutes in watts per metre squared
 RN-TOTAL_PREC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL_PREC,P1D,P1D,Total net radiation over the preceding day in megajoules per metre squared
 SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL_PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless)
