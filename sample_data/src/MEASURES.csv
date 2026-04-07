@@ -78,6 +78,8 @@ LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN_PREC,PT30M,PT30M,Mean 
 LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
 MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL_PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
+MSLP-MEAN_PREC-HPA-P1D-P1D,,MSLP,HPA,MEAN_PREC,P1D,P1D,Mean sea level pressure over the preceding day in hectopascals
+MSLP-MEAN_PREC-HPA-PT30M-PT30M,,MSLP,HPA,MEAN_PREC,PT30M,PT30M,Mean sea level pressure over the preceding 30 minutes in hectopascals
 NAN_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,NAN_COUNT,UNITLESS,TOTAL_PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
 NEUTRON_COUNT-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT,CTS,TOTAL_PREC,P1D,P1D,Total neutron count over the preceding day
 NEUTRON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT,CTS,TOTAL_PREC,PT1H,PT1H,Total neutron count over the preceding hour
