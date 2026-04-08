@@ -28,7 +28,7 @@ D86_25M-MEAN_PREC-CM-P1D-P1D,,D86_25M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 2
 D86_75M-MEAN_PREC-CM-P1D-P1D,,D86_75M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 75m from CRNS in cm over preceding day
 D86_150M-MEAN_PREC-CM-P1D-P1D,,D86_150M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 150m from CRNS in cm over preceding day
 D86_200M-MEAN_PREC-CM-P1D-P1D,,D86_200M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 200m from CRNS in cm over preceding day
-D86_1M-MEAN_PREC-CM-PT1H-PT1H,,D86_1M,CM,MEAN_PREC,PT1H,PT1H,Effective depth 1m from CRNS in cm over preceding hour
+D86_1M-MEAN_PREC-CM-PT1H-PT1H,,D86_1M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 1m from CRNS in cm over preceding hour
 D86_5M-MEAN_PREC-CM-PT1H-PT1H,,D86_5M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 5m from CRNS in cm over preceding hour
 D86_25M-MEAN_PREC-CM-PT1H-PT1H,,D86_25M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 25m from CRNS in cm over preceding hour
 D86_75M-MEAN_PREC-CM-PT1H-PT1H,,D86_75M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 75m from CRNS in cm over preceding hour
