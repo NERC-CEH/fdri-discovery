@@ -13,9 +13,7 @@ HMP,Humidity and temperature probe
 HFP1,Heat flux plate 1
 HFP2,Heat flux plate 2
 HYGROCLIP,Hygroclip
-IMKO1,IMKO 1
-IMKO2,IMKO 2
-IMKO3,IMKO 3
+IMKO,IMKO
 LOGGER,Logger
 MODEM,Modem
 PA,Air pressure sensor
