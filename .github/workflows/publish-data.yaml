@@ -84,8 +84,16 @@ jobs:
       - name: Publish sample data to old account
         run: bash legacy-publish.sh
 
+      - name: Configure AWS Credentials for UKCEH Dev on new account
+        if: ${{ github.ref == 'refs/heads/dev'}}
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ secrets.AWS_REGION }}
+
       - name: Configure AWS Credentials for UKCEH Staging on new account
-        if: ${{ github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/staging' }}
+        if: ${{ github.ref == 'refs/heads/staging' }}
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN_STAGING }}
