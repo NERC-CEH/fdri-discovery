@@ -153,3 +153,11 @@ Depending on the method specified, the `"args"` are specified by yet another nes
 
 
 ## QC Tests
+
+
+# Updating the Metadata
+
+Scripts are available in the (codeberg repo)[https://codeberg.org/CEH-HOTDOG/a_complete_list_of_things_that_are_useful/src/branch/main/metadata_config_tools] to quickly add new datasets to the metadata, avoiding having to copy and paste the same data for every site of a given network you want to add metadata to.
+
+Each script modifies a specific metadata configuration file, but can easily be adapted to work with different config files by replacing the templates and file paths within these scripts.
+
