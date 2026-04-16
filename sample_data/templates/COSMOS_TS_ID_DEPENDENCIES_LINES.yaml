@@ -62,21 +62,19 @@ embedded:
       "<fdri:hasStructuredValue>":
         - name: StructuredValue
           requires:
-            key:
-              - deployment_attribute
+            structured_value:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.structuredValue>"
             "@type": "<fdri:ConfigurationArgumentList>"
-            "<fdri:argument>": "{value|map_to('NestedMethodArgument')}"
+            "<fdri:argument>": "{structured_value|map_to('NestedMethodArgument')}"
       "<fdri:hasValue>":
         - name: ArgumentValue
           unless:
-            key:
-              - deployment_attribute
+            structured_value:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current#{key|slug}.value>"
             "@type": "<schema:PropertyValue>"
-            "<schema:value>": "{value}^^<xsd:integer>"
+            "<schema:value>": "{value}"
       "<fdri:parameter>":
         - name: ArgumentParameter
           properties:
@@ -108,7 +106,7 @@ resources:
                         "@type": "<fdri:DataProcessingConfigurationType>"
                         "<skos:inScheme>": "<::ConfigurationTypeScheme>"
                         "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
-                  "<fdri:appliesToTimeSeries>": "<::Dataset>"
+                  "<fdri:appliesToDataset>": "<::Dataset>"
                   "<fdri:hasCurrentValue>":
                     - name: ProcessingConfigItem
                       properties:
@@ -137,8 +135,9 @@ resources:
                           - "{load_depends_on|map_to('LoadDependencyArgument')}"
                         "<fdri:interval>":
                           - name: ProcessingConfigurationItemInterval
+                            requires:
+                              use_start_date:
                             properties:
                               "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id|slug}-current.interval>"
                               "@type": "<dct:PeriodOfTime>"
-                              "<dcat:startDate>": "2025-03-28T12:00:00Z^^<xsd:dateTime>"
-
+                              "<dcat:startDate>": "{use_start_date|asDateTime}"

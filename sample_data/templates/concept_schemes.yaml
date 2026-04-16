@@ -2,7 +2,7 @@ one_offs:
   - name: AggregationScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/aggregation>"
-      "@type": "<skos:ConceptScheme>"
+      "@type": "<fdri:AggregationScheme>"
       "<dct:title>": "FDRI Common Value Aggregations@en"
       "<rdfs:label>": "FDRI Common Value Aggregations@en"
 
@@ -37,14 +37,14 @@ one_offs:
   - name: ContextObjectScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/context>"
-      "@type": "<skos:ConceptScheme>"
+      "@type": "<fdri:EntityScheme>"
       "<dct:title>": "FDRI Common context objects@en"
       "<rdfs:label>": "FDRI Common context objects@en"
 
   - name: DataProcessingMethodScheme
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/common/method>
-      "@type": <skos:ConceptScheme>
+      "@type": "<fdri:DataProcessingMethodScheme>"
       "<dct:title>": "Data Processing Methods@en"
       "<rdfs:label>": "Data Processing Methods@en"
   
@@ -58,7 +58,7 @@ one_offs:
   - name: ObjectOfInterestScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/object-of-interest>"
-      "@type": "<skos:ConceptScheme>"
+      "@type": "<fdri:EntityScheme>"
       "<dct:title>": "FDRI Common Objects Of Interest@en"
       "<rdfs:label>": "FDRI Common Objects Of Interest@en"
 
@@ -72,7 +72,7 @@ one_offs:
   - name: PropertyScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/property>"
-      "@type": "<skos:ConceptScheme>"
+      "@type": "<fdri:PropertyScheme>"
       "<dct:title>": "FDRI Common Properties@en"
       "<rdfs:label>": "FDRI Common Properties@en"
 
@@ -117,3 +117,10 @@ one_offs:
       "@type": "<fdri:EnvironmentalMonitoringFacilityTypeScheme>"
       "<dct:title>": "Common Monitoring System Types@en"
       "<rdfs:label>": "Common Monitoring System Types@en"
+  
+  - name: CommonAssetStatusScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/asset-status>"
+      "@type": "<fdri:SystemStatusScheme>"
+      "<dct:title>": "Common Asset Statuses@en"
+      "<rdfs:label>": "Common Asset Statuses@en"

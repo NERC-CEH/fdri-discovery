@@ -9,14 +9,14 @@ imports:
 resources:
   - name: SensorFault
     requires:
-      VARIABLE:
+      TIMESERIES_ID:
       SERIAL_NUMBER:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}>"
       "@type": "<fdri:Fault>"
       "<rdfs:comment>": "{DESCRIPTION_OF_ISSUE}@en"
       "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
-      "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
+      "<fdri:appliesToDataset>": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "<fdri:interval>":
         name: Interval
         properties:
@@ -28,14 +28,14 @@ resources:
 
   - name: StationFault
     requires:
-      VARIABLE:
+      TIMESERIES_ID:
       SERIAL_NUMBER: ''
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/fault/cosmos-{$row}>"
       "@type": "<fdri:Fault>"
       "<rdfs:comment>": "{DESCRIPTION_OF_ISSUE}@en"
       "<fdri:removeData>": "{REMOVE_DATA|asBoolean('y')}"
-      "<fdri:affectedVariable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{VARIABLE|slug}>"
+      "<fdri:appliesToDataset>": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "<fdri:interval>":
         name: Interval
         properties:

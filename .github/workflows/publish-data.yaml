@@ -3,7 +3,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - main
+      - production
       - dev
       - staging
 
@@ -65,21 +65,49 @@ jobs:
       - name: Build sample data
         run: make samples
 
-      - name: Configure AWS Credentials for UKCEH Staging
+      - name: Configure AWS Credentials for UKCEH Staging on old account
         if: ${{ github.ref == 'refs/heads/staging' }}
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_OLD_STAGING }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Configure AWS Credentials for UKCEH Dev
-        if: ${{ github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main' }}
+      - name: Configure AWS Credentials for UKCEH Dev on old account
+        if: ${{ github.ref == 'refs/heads/dev' }}
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_OLD_DEV }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Publish sample data to old account
+        run: bash legacy-publish.sh
+
+      - name: Configure AWS Credentials for UKCEH Dev on new account
+        if: ${{ github.ref == 'refs/heads/dev'}}
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Publish sample data
+      - name: Configure AWS Credentials for UKCEH Staging on new account
+        if: ${{ github.ref == 'refs/heads/staging' }}
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_STAGING }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Configure AWS Credentials for UKCEH Prod on new account
+        if: ${{ github.ref == 'refs/heads/production' }}
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_PROD }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ secrets.AWS_REGION }}
+      
+      - name: Publish sample data to new account
         run: bash publish.sh
+
