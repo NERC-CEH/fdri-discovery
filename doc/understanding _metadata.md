@@ -2,18 +2,14 @@ This document details what is contained in the various files inside this reposit
 
 In particular, this document shows how files should be updated to deal with a new method/parameter/argument etc required in the metadata, and how these files are linked to the dri-timeseries-processor. 
 
+**Note:** As this repository is a work in progress, there may be some inconsistencies in e.g. naming conventions. 
+
 # `COSMOS_TS_ID_DEPENDENCIES.json`
 A JSON file where each dataset is listed as a top level key, together with their dependencies (other datasets that they depend on), and the processing step required to obtain that dataset from it's dependencies. 
 
 The names of the datasets (keys) are formatted as follows:
 
 `"{network}-{site}-{variable}-{resolution}-{status}"`
-
-- network: `COSMOS`
-- site: See `SITES.csv` for a list of 51 COSMOS sites
-- variable: e.g. `G1`, `G2`, `G`, `SWIN`, `SWOUT`, `LWIN`, `LWOUT`, `PA`, `PE`, `WS`, `WD` etc.
-- resolution: `30MIN`, `1DAY`
-- status: `RAW`, `PROCESSED`
 
 ```bash
 Example:
@@ -22,7 +18,15 @@ Example:
 
 ```
 
-The value for each dataset key-value pair is a nested dictionary. At the top level, keys and values of this nested dictionary are:
+The dataset names (keys) can be formed from the following options:
+- network: `COSMOS`, `FDRI`, `AMS`, `NMDB`, `NRFA`, `EA`, etc.
+- site: site from the given network. See `SITES.csv` for a list of 51 COSMOS sites, and similarly `NMDB_SITES.csv`, `NRFA_SITES.csv`, `fdri_sites.csv`, `AMS_sites.csv`, etc.
+- variable: e.g. `G1`, `G2`, `G`, `SWIN`, `SWOUT`, `LWIN`, `LWOUT`, `PA`, `PE`, `WS`, `WD`, etc.
+- resolution: `30MIN`, `1HOUR`, `1DAY`
+- status: `RAW`, `PROCESSED`
+
+
+The value for each dataset key is a nested dictionary. At the top level, keys and values of this nested dictionary are:
 
 - key: `"depends_on"`, value: a list of datasets that dataset depends on. 
 - key: `"derivation"`, value: one of `"PROCESS"`, `"CALCULATE"` or `"AGGREGATE"`, denoting the type derivation required to obtain the dataset from its dependencies. 
