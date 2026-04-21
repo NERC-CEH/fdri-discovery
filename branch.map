@@ -1,4 +1,4 @@
 branch      sqs_queue_url                                                                                       s3_destination
 dev         https://sqs.eu-west-2.amazonaws.com/740991959481/metadata-service-dev-update-queue.fifo             s3://ukceh-dri-staging-metadata-service-dev-state/data
-staging     https://sqs.eu-west-2.amazonaws.com/740991959481/metadata-service-update-queue.fifo                 s3://ukceh-dri-staging-metadata-service-state/data
+staging     https://sqs.eu-west-2.amazonaws.com/740991959481/metadata-service-dev-update-queue.fifo             s3://ukceh-dri-staging-metadata-service-dev-state/data
 production  https://sqs.eu-west-2.amazonaws.com/745651872039/metadata-service-update-queue.fifo                 s3://ukceh-dri-staging-metadata-service-state/data
