@@ -1,0 +1,125 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+one_offs:
+  - name: InfillConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/infill-configuration>"
+      "@type": "<fdri:DataProcessingConfigurationType>"
+      "<skos:prefLabel>": "Infill Processing Configuration@en"
+      "<rdfs:label>": "Infill Processing Configuration@en"
+      "<skos:inScheme>": "<::ConfigurationTypeScheme>"
+      "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
+  
+  - name: WindowParameter
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/parameter/WINDOW>
+      "@type": "<fdri:ConfigurationParameter>"
+      "<skos:prefLabel>": "Correction Factor@en"
+      "<rdfs:label>": "Correction Factor@en"
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+
+  - name: AltDataMethod
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/method/alt_data>"
+      "@type": "<fdri:DataProcessingMethod>"
+      "<skos:prefLabel>": "Alternate Data@en"
+      "<rdfs:label>": "Alternate Data@en"
+      "<skos:inScheme>": <::DataProcessingMethodScheme>
+      "^<skos:hasTopConcept>": <::DataProcessingMethodScheme>
+
+  - name: AltDataTimeseriesParameter
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts>"
+      "@type": "<fdri:ConfigurationParameter>"
+      "<skos:prefLabel>": "Dependency Timeseries@en"
+      "<rdfs:label>": "Dependency Timeseries@en"
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+      "^<fdri:parameter>": <::AltDataMethod>
+
+  - name: ConfigurationParameter
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/parameter/configuration>"
+      "@type": <fdri:ConfigurationParameter>
+      "<skos:prefLabel>": "Data Processing Configuration@en"
+      "<rdfs:label>": "Data Processing Configuration@en"
+      "<skos:inScheme>": <::ConfigurationParameterScheme>
+      "^<skos:hasTopConcept>": <::ConfigurationParameterScheme>
+      "^<fdri:parameter>": <::AltDataMethod>
+
+resources:
+  - name: DataProcessingConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/nmdb-infill-{TIMESERIES_ID|slug}>"
+      "@type": "<fdri:InternalDataProcessingConfiguration>"
+      "<dct:type>": <::InfillConfiguration>
+      "<fdri:appliesToDataset>": <http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>
+
+  - name: PriorityAnnotation
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/annotation/nmdb-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}>"
+      "@type": "<fdri:Annotation>"
+      "^<fdri:hasAnnotation>": <::DataProcessingConfiguration>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/priority>"
+      "<fdri:hasValue>":
+        - name: PriorityAnnotationValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/annotation/nmdb-infill-{TIMESERIES_ID|slug}-{PRIORITY|slug}#value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{PRIORITY}^^<xsd:integer>"
+
+  - name: CurrentConfigurationItem
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}>"
+      "@type": <fdri:ConfigurationItem>
+      "^<fdri:hasCurrentValue>": <::DataProcessingConfiguration>
+      "<fdri:method>": <::AltDataMethod>
+      "<fdri:observationInterval>":
+        - name: ClosedConfigurationInterval
+          requires:
+            END_DATETIME:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#interval>"
+            "@type": <dct:PeriodOfTime>
+            "<dcat:startDate>": "{START_DATETIME}^^<xsd:dateTime>"
+            "<dcat:endDate>": "{END_DATETIME}^^<xsd:dateTime>"
+        - name: OpenConfigurationInterval
+          requires:
+            END_DATETIME: ""
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#interval>"
+            "@type": <dct:PeriodOfTime>
+            "<dcat:startDate>": "{START_DATETIME}^^<xsd:dateTime>"
+      "<fdri:argument>":
+        - name: AltData
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data>"
+            "@type": "<fdri:Argument>"
+            "<fdri:parameter>": "<::AltDataTimeseriesParameter>"
+            "<fdri:hasValue>":
+              - name: AltDataValue
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}#alt-data.value>"
+                  "@type": <schema:PropertyValue>
+                  "<schema:valueReference>": <http://fdri.ceh.ac.uk/id/dataset/{ALT_TIMESERIES_ID|slug}>
+        - name: Window
+          requires:
+            WINDOW:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor>"
+            "@type": <fdri:Argument>
+            "<fdri:parameter>": <::WindowParameter>
+            "<fdri:hasValue>":
+              name: WindowValue
+              properties:
+                "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor.value>"
+                "@type": <schema:PropertyValue>
+                "<schema:value>": "{WINDOW}^^<xsd:decimal>"
