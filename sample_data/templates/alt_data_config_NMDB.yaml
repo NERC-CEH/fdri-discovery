@@ -122,4 +122,4 @@ resources:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/nmdb-alt_data-configuration-{TIMESERIES_ID|slug}-{PRIORITY|slug}-{START_DATETIME|slug}-{ALT_TIMESERIES_ID|slug}#correction-factor.value>"
                 "@type": <schema:PropertyValue>
-                "<schema:value>": "{WINDOW}^^<xsd:decimal>"
+                "<schema:value>": "{WINDOW}^^<xsd:duration>"
