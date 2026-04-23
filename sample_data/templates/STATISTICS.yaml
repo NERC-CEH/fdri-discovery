@@ -7,8 +7,6 @@ imports:
     - concept_schemes.yaml
     - extensions.py
 
-one_offs:
-
 resources:
   - name: StatisticsConcept
     properties:
