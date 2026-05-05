@@ -31,6 +31,9 @@ resources:
         "<geo:long>": "{site_Longitude|asDecimal}"
         "<geos:hasGeometry>": 
             - name: LatLongPoint
+              unless:
+                site_Latitude: NA
+                site_Longitude: NA
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
@@ -49,6 +52,9 @@ resources:
         "<geo:long>": "{site_Longitude|asDecimal}"
         "<geos:hasGeometry>": 
             - name: LatLongPoint
+              unless:
+                site_Latitude: NA
+                site_Longitude: NA
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/platform/{site_Network|slug}-{site_StationID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"

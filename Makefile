@@ -57,6 +57,7 @@ SAMPLES += $(TTL_BASE)/sensor_deployments.ttl
 SAMPLES += $(TTL_BASE)/sensor_faults.ttl
 SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
 SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
+SAMPLES += $(TTL_BASE)/site_slots.ttl
 SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
@@ -119,7 +120,7 @@ SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
 
 # AMS Samples
 SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
-SAMPLES += $(TTL_BASE)/AMS_asset.ttl
+SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
 SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
@@ -197,6 +198,9 @@ build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_c
 build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
 
+build/site_slots.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/site_slots.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/site_slots.sql"
+
 build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SQL)/sensor_faults.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_faults.sql"
 
@@ -248,17 +252,20 @@ build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.s
 build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
 
-build/AMS_sites_ext.csv: $(SRC)/AMS_sites.csv $(SQL)/AMS_sites_ext.sql | build
+build/AMS_sites_ext.csv: $(SRC)/AMS_mill_site.csv $(SQL)/AMS_sites_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_sites_ext.sql"
 
-build/AMS_station_deployments.csv: $(SRC)/AMS_sites.csv $(SRC)/AMS_asset_location_history.csv $(SQL)/AMS_station_deployments.sql | build
+build/AMS_station_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_station_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_station_deployments.sql"
 
-build/AMS_site_deployments.csv: build/AMS_sites_ext.csv $(SRC)/AMS_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
+build/AMS_site_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_site_deployments.sql"
 
 build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes.csv build/AMS_sites_ext.csv $(SQL)/AMS_issue_log_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_issue_log_ext.sql"
+
+build/AMS_asset_ext.csv: $(SRC)/AMS_mill_assets.csv build/AMS_sites_ext.csv $(SQL)/AMS_asset_ext.sql
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_asset_ext.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

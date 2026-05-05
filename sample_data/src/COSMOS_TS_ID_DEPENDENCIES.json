@@ -4,10 +4,13 @@
         "depends_on": [
             "COSMOS-ALIC1-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ALIC1-ALBEDO_SD_1DAY_PROCESSED": {
@@ -15,10 +18,13 @@
         "depends_on": [
             "COSMOS-ALIC1-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ALIC1-COSMOS_VWC_1DAY_RAW": {
@@ -724,7 +730,11 @@
             "COSMOS-ALIC1-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-ALIC1-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -1078,10 +1088,13 @@
         "depends_on": [
             "COSMOS-BALRD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BALRD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -1089,10 +1102,13 @@
         "depends_on": [
             "COSMOS-BALRD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BALRD-COSMOS_VWC_1DAY_RAW": {
@@ -1847,7 +1863,11 @@
             "COSMOS-BALRD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-BALRD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -2250,10 +2270,13 @@
         "depends_on": [
             "COSMOS-BICKL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BICKL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -2261,10 +2284,13 @@
         "depends_on": [
             "COSMOS-BICKL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BICKL-COSMOS_VWC_1DAY_RAW": {
@@ -3050,7 +3076,11 @@
             "COSMOS-BICKL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-BICKL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -3453,10 +3483,13 @@
         "depends_on": [
             "COSMOS-BUNNY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BUNNY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -3464,10 +3497,13 @@
         "depends_on": [
             "COSMOS-BUNNY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-BUNNY-COSMOS_VWC_1DAY_RAW": {
@@ -4253,7 +4289,11 @@
             "COSMOS-BUNNY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-BUNNY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -4656,10 +4696,13 @@
         "depends_on": [
             "COSMOS-CARDT-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CARDT-ALBEDO_SD_1DAY_PROCESSED": {
@@ -4667,10 +4710,13 @@
         "depends_on": [
             "COSMOS-CARDT-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CARDT-COSMOS_VWC_1DAY_RAW": {
@@ -5456,7 +5502,11 @@
             "COSMOS-CARDT-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CARDT-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -5859,10 +5909,13 @@
         "depends_on": [
             "COSMOS-CGARW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CGARW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -5870,10 +5923,13 @@
         "depends_on": [
             "COSMOS-CGARW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CGARW-COSMOS_VWC_1DAY_RAW": {
@@ -6727,7 +6783,11 @@
             "COSMOS-CGARW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CGARW-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -7595,10 +7655,13 @@
         "depends_on": [
             "COSMOS-CHIMN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CHIMN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -7606,10 +7669,13 @@
         "depends_on": [
             "COSMOS-CHIMN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CHIMN-COSMOS_VWC_1DAY_RAW": {
@@ -8480,7 +8546,11 @@
             "COSMOS-CHIMN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CHIMN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -9299,10 +9369,13 @@
         "depends_on": [
             "COSMOS-CHOBH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CHOBH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -9310,10 +9383,13 @@
         "depends_on": [
             "COSMOS-CHOBH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CHOBH-COSMOS_VWC_1DAY_RAW": {
@@ -10099,7 +10175,11 @@
             "COSMOS-CHOBH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CHOBH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -10502,10 +10582,13 @@
         "depends_on": [
             "COSMOS-COCHN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-COCHN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -10513,10 +10596,13 @@
         "depends_on": [
             "COSMOS-COCHN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-COCHN-COSMOS_VWC_1DAY_RAW": {
@@ -11370,7 +11456,11 @@
             "COSMOS-COCHN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-COCHN-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -12238,10 +12328,13 @@
         "depends_on": [
             "COSMOS-COCLP-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-COCLP-ALBEDO_SD_1DAY_PROCESSED": {
@@ -12249,10 +12342,13 @@
         "depends_on": [
             "COSMOS-COCLP-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-COCLP-COSMOS_VWC_1DAY_RAW": {
@@ -13035,7 +13131,11 @@
             "COSMOS-COCLP-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-COCLP-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -13438,10 +13538,13 @@
         "depends_on": [
             "COSMOS-CRICH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CRICH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -13449,10 +13552,13 @@
         "depends_on": [
             "COSMOS-CRICH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-CRICH-COSMOS_VWC_1DAY_RAW": {
@@ -14207,7 +14313,11 @@
             "COSMOS-CRICH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-CRICH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -14610,10 +14720,13 @@
         "depends_on": [
             "COSMOS-EASTB-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-EASTB-ALBEDO_SD_1DAY_PROCESSED": {
@@ -14621,10 +14734,13 @@
         "depends_on": [
             "COSMOS-EASTB-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-EASTB-COSMOS_VWC_1DAY_RAW": {
@@ -15499,7 +15615,11 @@
             "COSMOS-EASTB-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-EASTB-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -15951,10 +16071,13 @@
         "depends_on": [
             "COSMOS-ELMST-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ELMST-ALBEDO_SD_1DAY_PROCESSED": {
@@ -15962,10 +16085,13 @@
         "depends_on": [
             "COSMOS-ELMST-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ELMST-COSMOS_VWC_1DAY_RAW": {
@@ -16699,7 +16825,11 @@
             "COSMOS-ELMST-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-ELMST-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -17518,10 +17648,13 @@
         "depends_on": [
             "COSMOS-EUSTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-EUSTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -17529,10 +17662,13 @@
         "depends_on": [
             "COSMOS-EUSTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-EUSTN-COSMOS_VWC_1DAY_RAW": {
@@ -18266,7 +18402,11 @@
             "COSMOS-EUSTN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-EUSTN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -19085,10 +19225,13 @@
         "depends_on": [
             "COSMOS-FINCH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-FINCH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -19096,10 +19239,13 @@
         "depends_on": [
             "COSMOS-FINCH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-FINCH-COSMOS_VWC_1DAY_RAW": {
@@ -19864,7 +20010,11 @@
             "COSMOS-FINCH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-FINCH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -20683,10 +20833,13 @@
         "depends_on": [
             "COSMOS-FIVET-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-FIVET-ALBEDO_SD_1DAY_PROCESSED": {
@@ -20694,10 +20847,13 @@
         "depends_on": [
             "COSMOS-FIVET-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-FIVET-COSMOS_VWC_1DAY_RAW": {
@@ -21431,7 +21587,11 @@
             "COSMOS-FIVET-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-FIVET-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -22250,10 +22410,13 @@
         "depends_on": [
             "COSMOS-GISBN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GISBN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -22261,10 +22424,13 @@
         "depends_on": [
             "COSMOS-GISBN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GISBN-COSMOS_VWC_1DAY_RAW": {
@@ -23167,7 +23333,11 @@
             "COSMOS-GISBN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-GISBN-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -23619,10 +23789,13 @@
         "depends_on": [
             "COSMOS-GLENS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GLENS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -23630,10 +23803,13 @@
         "depends_on": [
             "COSMOS-GLENS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GLENS-COSMOS_VWC_1DAY_RAW": {
@@ -24508,7 +24684,11 @@
             "COSMOS-GLENS-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-GLENS-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -24960,10 +25140,13 @@
         "depends_on": [
             "COSMOS-GLENW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GLENW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -24971,10 +25154,13 @@
         "depends_on": [
             "COSMOS-GLENW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-GLENW-COSMOS_VWC_1DAY_RAW": {
@@ -25708,7 +25894,11 @@
             "COSMOS-GLENW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-GLENW-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -26527,10 +26717,13 @@
         "depends_on": [
             "COSMOS-HADLW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HADLW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -26538,10 +26731,13 @@
         "depends_on": [
             "COSMOS-HADLW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HADLW-COSMOS_VWC_1DAY_RAW": {
@@ -27275,7 +27471,11 @@
             "COSMOS-HADLW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HADLW-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -28094,10 +28294,13 @@
         "depends_on": [
             "COSMOS-HARTW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HARTW-ALBEDO_SD_1DAY_PROCESSED": {
@@ -28105,10 +28308,13 @@
         "depends_on": [
             "COSMOS-HARTW-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HARTW-COSMOS_VWC_1DAY_RAW": {
@@ -28863,7 +29069,11 @@
             "COSMOS-HARTW-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HARTW-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -29266,10 +29476,13 @@
         "depends_on": [
             "COSMOS-HARWD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HARWD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -29277,10 +29490,13 @@
         "depends_on": [
             "COSMOS-HARWD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HARWD-COSMOS_VWC_1DAY_RAW": {
@@ -29986,7 +30202,11 @@
             "COSMOS-HARWD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HARWD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -30340,10 +30560,13 @@
         "depends_on": [
             "COSMOS-HENFS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HENFS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -30351,10 +30574,13 @@
         "depends_on": [
             "COSMOS-HENFS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HENFS-COSMOS_VWC_1DAY_RAW": {
@@ -31137,7 +31363,11 @@
             "COSMOS-HENFS-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HENFS-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -31540,10 +31770,13 @@
         "depends_on": [
             "COSMOS-HILLB-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HILLB-ALBEDO_SD_1DAY_PROCESSED": {
@@ -31551,10 +31784,13 @@
         "depends_on": [
             "COSMOS-HILLB-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HILLB-COSMOS_VWC_1DAY_RAW": {
@@ -32288,7 +32524,11 @@
             "COSMOS-HILLB-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HILLB-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -33107,10 +33347,13 @@
         "depends_on": [
             "COSMOS-HLACY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HLACY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -33118,10 +33361,13 @@
         "depends_on": [
             "COSMOS-HLACY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HLACY-COSMOS_VWC_1DAY_RAW": {
@@ -33886,7 +34132,11 @@
             "COSMOS-HLACY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HLACY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -34705,10 +34955,13 @@
         "depends_on": [
             "COSMOS-HOLLN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HOLLN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -34716,10 +34969,13 @@
         "depends_on": [
             "COSMOS-HOLLN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HOLLN-COSMOS_VWC_1DAY_RAW": {
@@ -35533,7 +35789,11 @@
             "COSMOS-HOLLN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HOLLN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -35936,10 +36196,13 @@
         "depends_on": [
             "COSMOS-HYBRY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HYBRY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -35947,10 +36210,13 @@
         "depends_on": [
             "COSMOS-HYBRY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-HYBRY-COSMOS_VWC_1DAY_RAW": {
@@ -36684,7 +36950,11 @@
             "COSMOS-HYBRY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-HYBRY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -37503,10 +37773,13 @@
         "depends_on": [
             "COSMOS-LIZRD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LIZRD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -37514,10 +37787,13 @@
         "depends_on": [
             "COSMOS-LIZRD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LIZRD-COSMOS_VWC_1DAY_RAW": {
@@ -38272,7 +38548,11 @@
             "COSMOS-LIZRD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-LIZRD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -38675,10 +38955,13 @@
         "depends_on": [
             "COSMOS-LODTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LODTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -38686,10 +38969,13 @@
         "depends_on": [
             "COSMOS-LODTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LODTN-COSMOS_VWC_1DAY_RAW": {
@@ -39482,7 +39768,11 @@
             "COSMOS-LODTN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-LODTN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -40301,10 +40591,13 @@
         "depends_on": [
             "COSMOS-LULLN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LULLN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -40312,10 +40605,13 @@
         "depends_on": [
             "COSMOS-LULLN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-LULLN-COSMOS_VWC_1DAY_RAW": {
@@ -41101,7 +41397,11 @@
             "COSMOS-LULLN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-LULLN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -41504,10 +41804,13 @@
         "depends_on": [
             "COSMOS-MOORH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MOORH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -41515,10 +41818,13 @@
         "depends_on": [
             "COSMOS-MOORH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MOORH-COSMOS_VWC_1DAY_RAW": {
@@ -42393,7 +42699,11 @@
             "COSMOS-MOORH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-MOORH-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -42845,10 +43155,13 @@
         "depends_on": [
             "COSMOS-MOREM-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MOREM-ALBEDO_SD_1DAY_PROCESSED": {
@@ -42856,10 +43169,13 @@
         "depends_on": [
             "COSMOS-MOREM-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MOREM-COSMOS_VWC_1DAY_RAW": {
@@ -43624,7 +43940,11 @@
             "COSMOS-MOREM-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-MOREM-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -44443,10 +44763,13 @@
         "depends_on": [
             "COSMOS-MORLY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MORLY-ALBEDO_SD_1DAY_PROCESSED": {
@@ -44454,10 +44777,13 @@
         "depends_on": [
             "COSMOS-MORLY-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-MORLY-COSMOS_VWC_1DAY_RAW": {
@@ -45212,7 +45538,11 @@
             "COSMOS-MORLY-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-MORLY-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -45615,10 +45945,13 @@
         "depends_on": [
             "COSMOS-NWYKE-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-NWYKE-ALBEDO_SD_1DAY_PROCESSED": {
@@ -45626,10 +45959,13 @@
         "depends_on": [
             "COSMOS-NWYKE-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-NWYKE-COSMOS_VWC_1DAY_RAW": {
@@ -46384,7 +46720,11 @@
             "COSMOS-NWYKE-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-NWYKE-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -46787,10 +47127,13 @@
         "depends_on": [
             "COSMOS-PLYNL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-PLYNL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -46798,10 +47141,13 @@
         "depends_on": [
             "COSMOS-PLYNL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-PLYNL-COSMOS_VWC_1DAY_RAW": {
@@ -47676,7 +48022,11 @@
             "COSMOS-PLYNL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-PLYNL-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -48128,10 +48478,13 @@
         "depends_on": [
             "COSMOS-PORTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-PORTN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -48139,10 +48492,13 @@
         "depends_on": [
             "COSMOS-PORTN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-PORTN-COSMOS_VWC_1DAY_RAW": {
@@ -48897,7 +49253,11 @@
             "COSMOS-PORTN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-PORTN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -49300,10 +49660,13 @@
         "depends_on": [
             "COSMOS-RDMER-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-RDMER-ALBEDO_SD_1DAY_PROCESSED": {
@@ -49311,10 +49674,13 @@
         "depends_on": [
             "COSMOS-RDMER-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-RDMER-COSMOS_VWC_1DAY_RAW": {
@@ -50069,7 +50435,11 @@
             "COSMOS-RDMER-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-RDMER-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -50472,10 +50842,13 @@
         "depends_on": [
             "COSMOS-REDHL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-REDHL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -50483,10 +50856,13 @@
         "depends_on": [
             "COSMOS-REDHL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-REDHL-COSMOS_VWC_1DAY_RAW": {
@@ -51272,7 +51648,11 @@
             "COSMOS-REDHL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-REDHL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -51675,10 +52055,13 @@
         "depends_on": [
             "COSMOS-RISEH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-RISEH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -51686,10 +52069,13 @@
         "depends_on": [
             "COSMOS-RISEH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-RISEH-COSMOS_VWC_1DAY_RAW": {
@@ -52423,7 +52809,11 @@
             "COSMOS-RISEH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-RISEH-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -53242,10 +53632,13 @@
         "depends_on": [
             "COSMOS-ROTHD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ROTHD-ALBEDO_SD_1DAY_PROCESSED": {
@@ -53253,10 +53646,13 @@
         "depends_on": [
             "COSMOS-ROTHD-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-ROTHD-COSMOS_VWC_1DAY_RAW": {
@@ -54042,7 +54438,11 @@
             "COSMOS-ROTHD-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-ROTHD-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -54445,10 +54845,13 @@
         "depends_on": [
             "COSMOS-SHEEP-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SHEEP-ALBEDO_SD_1DAY_PROCESSED": {
@@ -54456,10 +54859,13 @@
         "depends_on": [
             "COSMOS-SHEEP-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SHEEP-COSMOS_VWC_1DAY_RAW": {
@@ -55330,7 +55736,11 @@
             "COSMOS-SHEEP-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SHEEP-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -56149,10 +56559,13 @@
         "depends_on": [
             "COSMOS-SOURH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SOURH-ALBEDO_SD_1DAY_PROCESSED": {
@@ -56160,10 +56573,13 @@
         "depends_on": [
             "COSMOS-SOURH-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SOURH-COSMOS_VWC_1DAY_RAW": {
@@ -57038,7 +57454,11 @@
             "COSMOS-SOURH-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SOURH-SNOWD_DISTANCE_COR_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -57490,10 +57910,13 @@
         "depends_on": [
             "COSMOS-SPENF-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SPENF-ALBEDO_SD_1DAY_PROCESSED": {
@@ -57501,10 +57924,13 @@
         "depends_on": [
             "COSMOS-SPENF-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SPENF-COSMOS_VWC_1DAY_RAW": {
@@ -58238,7 +58664,11 @@
             "COSMOS-SPENF-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SPENF-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -59057,10 +59487,13 @@
         "depends_on": [
             "COSMOS-STGHT-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-STGHT-ALBEDO_SD_1DAY_PROCESSED": {
@@ -59068,10 +59501,13 @@
         "depends_on": [
             "COSMOS-STGHT-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-STGHT-COSMOS_VWC_1DAY_RAW": {
@@ -59885,7 +60321,11 @@
             "COSMOS-STGHT-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-STGHT-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -60288,10 +60728,13 @@
         "depends_on": [
             "COSMOS-STIPS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-STIPS-ALBEDO_SD_1DAY_PROCESSED": {
@@ -60299,10 +60742,13 @@
         "depends_on": [
             "COSMOS-STIPS-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-STIPS-COSMOS_VWC_1DAY_RAW": {
@@ -61085,7 +61531,11 @@
             "COSMOS-STIPS-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-STIPS-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -61488,10 +61938,13 @@
         "depends_on": [
             "COSMOS-SYDLG-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SYDLG-ALBEDO_SD_1DAY_PROCESSED": {
@@ -61499,10 +61952,13 @@
         "depends_on": [
             "COSMOS-SYDLG-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-SYDLG-COSMOS_VWC_1DAY_RAW": {
@@ -62267,7 +62723,11 @@
             "COSMOS-SYDLG-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-SYDLG-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -63086,10 +63546,13 @@
         "depends_on": [
             "COSMOS-TADHM-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-TADHM-ALBEDO_SD_1DAY_PROCESSED": {
@@ -63097,10 +63560,13 @@
         "depends_on": [
             "COSMOS-TADHM-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-TADHM-COSMOS_VWC_1DAY_RAW": {
@@ -63855,7 +64321,11 @@
             "COSMOS-TADHM-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-TADHM-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -64258,10 +64728,13 @@
         "depends_on": [
             "COSMOS-WADDN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WADDN-ALBEDO_SD_1DAY_PROCESSED": {
@@ -64269,10 +64742,13 @@
         "depends_on": [
             "COSMOS-WADDN-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WADDN-COSMOS_VWC_1DAY_RAW": {
@@ -65136,7 +65612,11 @@
             "COSMOS-WADDN-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WADDN-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -65955,10 +66435,13 @@
         "depends_on": [
             "COSMOS-WIMPL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WIMPL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -65966,10 +66449,13 @@
         "depends_on": [
             "COSMOS-WIMPL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WIMPL-COSMOS_VWC_1DAY_RAW": {
@@ -66703,7 +67189,11 @@
             "COSMOS-WIMPL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WIMPL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -67522,10 +68012,13 @@
         "depends_on": [
             "COSMOS-WRTTL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WRTTL-ALBEDO_SD_1DAY_PROCESSED": {
@@ -67533,10 +68026,13 @@
         "depends_on": [
             "COSMOS-WRTTL-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WRTTL-COSMOS_VWC_1DAY_RAW": {
@@ -68301,7 +68797,11 @@
             "COSMOS-WRTTL-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WRTTL-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
@@ -69120,10 +69620,13 @@
         "depends_on": [
             "COSMOS-WYTH1-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calculate_daily_albedo",
+        "derivation": "AGGREGATE",
+        "method": "mean",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WYTH1-ALBEDO_SD_1DAY_PROCESSED": {
@@ -69131,10 +69634,13 @@
         "depends_on": [
             "COSMOS-WYTH1-ALBEDO_30MIN_PROCESSED"
         ],
-        "derivation": "CALCULATE",
-        "method": "calc_daily_albedo_sd",
+        "derivation": "AGGREGATE",
+        "method": "stdev",
         "args": {
-            "round": 3
+            "round": 3,
+            "start_time": "10:30:00",
+            "end_time": "14:00:00",
+            "threshold": 7
         }
     },
     "COSMOS-WYTH1-COSMOS_VWC_1DAY_RAW": {
@@ -69833,7 +70339,11 @@
             "COSMOS-WYTH1-ALBEDO_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
-        "method": "is_snow_day"
+        "method": "is_snow_day",
+        "args": {
+            "albedo_min_threshold": 0.35,
+            "albedo_max_threshold": 0.5
+        }
     },
     "COSMOS-WYTH1-STP_TSOIL10_1DAY_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",

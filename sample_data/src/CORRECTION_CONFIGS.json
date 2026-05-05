@@ -23,7 +23,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-ALIC1-LWOUT_30MIN_RAW",
-        "DESCRIPTION": "Long wave out raditaion correction",
+        "DESCRIPTION": "Long wave out radiation correction",
         "OBS_START_DATETIME": "2016-07-28 15:00:00",
         "OBS_END_DATETIME": "2018-12-20 12:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
@@ -67,7 +67,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-SHEEP-LWOUT_30MIN_RAW",
-        "DESCRIPTION": "Long wave out raditaion correction",
+        "DESCRIPTION": "Long wave out radiation correction",
         "OBS_START_DATETIME": "2018-12-03 12:30:00",
         "OBS_END_DATETIME": "2019-06-24 13:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
@@ -111,7 +111,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-BUNNY-LWOUT_30MIN_RAW",
-        "DESCRIPTION": "Long wave out raditaion correction",
+        "DESCRIPTION": "Long wave out radiation correction",
         "OBS_START_DATETIME": "2020-08-10 09:30:00",
         "OBS_END_DATETIME": "2020-08-17 15:00:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
@@ -155,7 +155,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-PLYNL-LWOUT_30MIN_RAW",
-        "DESCRIPTION": "Long wave out raditaion correction",
+        "DESCRIPTION": "Long wave out radiation correction",
         "OBS_START_DATETIME": "2019-11-15 09:00:00",
         "OBS_END_DATETIME": "2020-10-29 17:30:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
@@ -199,7 +199,7 @@
     },
     {
         "CORRECT_TS": "COSMOS-SPENF-LWOUT_30MIN_RAW",
-        "DESCRIPTION": "Long wave out raditaion correction",
+        "DESCRIPTION": "Long wave out radiation correction",
         "OBS_START_DATETIME": "2020-07-15 14:00:00",
         "OBS_END_DATETIME": "2020-07-17 12:00:00",
         "USE_START_DATETIME": "2013-01-01 00:30:00",
@@ -3130,6 +3130,10 @@
         "USE_START_DATETIME": "2013-01-01 00:30:00",
         "METHOD_ID": "ALBEDO_SOUTH_SLOPE_CORRECTION",
         "parameters": [
+            {
+                "PARAM_ID": "DEP_TS",
+                "PARAM_VALUE": "COSMOS-HOLLN-SWIN_30MIN_PROCESSED"
+            },
             {
                 "PARAM_ID": "DEP_TS",
                 "PARAM_VALUE": "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
