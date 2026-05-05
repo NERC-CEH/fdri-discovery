@@ -5,12 +5,12 @@ from rdf_mapper.lib.template_support import uri_expand
 from rdflib import Literal
 
 def with_datatype(text: str, state: TemplateState, dt: str):
-    dt_uri = uri_expand(dt, state.spec.namespaces, state)
-    if dt_uri is not None:
-        return Literal(text, datatype=dt_uri)
+    dt_uri_list = uri_expand(dt, state.spec.namespaces, state)
+    if dt_uri_list is not None and len(dt_uri_list) > 0:
+        return Literal(text, datatype=dt_uri_list[0])
 
 def end_of_day(text: str, state: TemplateState)-> str|None:
-    if text is None or type(text) == str and len(text) == 0:
+    if text is None or (isinstance(text, str) and len(text) == 0):
         return None
     dt = dateparser.parse(text)
     if dt is None:
@@ -25,3 +25,4 @@ def append_fragment(text: str, state: TemplateState, fragment: str, fragment_sep
 
 register('withDatatype', with_datatype)
 register('append_fragment', append_fragment)
+register('endOfDay', end_of_day)

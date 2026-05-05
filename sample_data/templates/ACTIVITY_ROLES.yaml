@@ -16,13 +16,19 @@ resources:
       "@type": <skos:Concept>
       "<skos:inScheme>": <::ActivityRoleScheme>
       "<skos:prefLabel>": "{Label}@en"
+      "<skos:scopeNote>": "{Description}@en"
+
+  - name: ChildActivityRole
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{ID|slug}>"
       "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{PARENT_ID|slug}>"
       "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{PARENT_ID|slug}>"
-      "<skos:scopeNote>": "{Description}@en"
 
   - name: TopLevelActivityRole
     unless:
-       - PARENT_ID:
+      PARENT_ID:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{ID|slug}>"
       "^<skos:hasTopConcept>": <::ActivityRoleScheme>
