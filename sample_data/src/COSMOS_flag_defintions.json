@@ -374,36 +374,6 @@
             "column_name": "CTS_MOD2_TEMP_INFILL_FLAG"
         }
     ],
-    "CTS_SMO_CRNS_FLAG_DEF": [
-        {
-            "scheme": "core_flag_scheme",
-            "column_name": "CTS_SMO_CRNS_CORE_FLAG"
-        }, {
-            "scheme": "cosmos_correction_flag_scheme",
-            "column_name": "CTS_SMO_CRNS_CORRS_FLAG"
-        }, {
-            "scheme": "cosmos_quality_control_flag_scheme",
-            "column_name": "CTS_SMO_CRNS_QC_FLAG"
-        }, {
-            "scheme": "cosmos_infill_flag_scheme",
-            "column_name": "CTS_SMO_CRNS_INFILL_FLAG"
-        }
-    ],
-    "CTS_SMO_SNOWFOX_FLAG_DEF": [
-        {
-            "scheme": "core_flag_scheme",
-            "column_name": "CTS_SMO_SNOWFOX_CORE_FLAG"
-        }, {
-            "scheme": "cosmos_correction_flag_scheme",
-            "column_name": "CTS_SMO_SNOWFOX_CORRS_FLAG"
-        }, {
-            "scheme": "cosmos_quality_control_flag_scheme",
-            "column_name": "CTS_SMO_SNOWFOX_QC_FLAG"
-        }, {
-            "scheme": "cosmos_infill_flag_scheme",
-            "column_name": "CTS_SMO_SNOWFOX_INFILL_FLAG"
-        }
-    ],
     "CTS_SNOW_FLAG_DEF": [
         {
             "scheme": "core_flag_scheme",
