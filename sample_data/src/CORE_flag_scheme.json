@@ -1,5 +1,8 @@
 {
-    "core_flags": [
+    "id": "core_flag_scheme",
+    "label": "Core Flag Scheme",
+    "flag_type": "core_flags",
+    "scheme": [
         {
             "name": "corrected",
             "description": "Data point has been adjusted from its original value.",
