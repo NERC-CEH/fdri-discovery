@@ -7,10 +7,11 @@ on:
       - staging
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
   actions: read
+  pull-requests: write
     
 jobs:
   publish:
