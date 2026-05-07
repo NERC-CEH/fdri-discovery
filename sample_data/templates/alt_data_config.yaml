@@ -28,7 +28,7 @@ one_offs:
 
   - name: AltDataMethod
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/method/alt_data>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/method/alt_data_static>"
       "@type": "<fdri:DataProcessingMethod>"
       "<skos:prefLabel>": "Alternate Data@en"
       "<rdfs:label>": "Alternate Data@en"
