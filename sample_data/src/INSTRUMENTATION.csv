@@ -33,4 +33,5 @@ SR05A,Snow Depth Sensor,,Campbell SR05A
 STP,Soil Temperature Profile,,Hukseflux STP01
 TBR,Tipping Bucket Raingauge,,EML SBS 500
 TDT,TDT Soil Moisture Sensor,,Acclima Digital TDT Soil moisture sensor
-WIND_ANEM,Windmaster 3D Sonic Anemometer,,Gill WindMaster3D
+WIND_ANEM_3D,3D Sonic Anemometer,,Gill WindMaster 3D Sonic Anemometer
+WIND_ANEM_2D,2D Sonic Anemometer,Integrated with METPAK,Gill Integrated WindSonic

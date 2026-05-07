@@ -1,22 +1,20 @@
 SENSOR_SLOT_ID,SENSOR_SLOT_NAME
 4CR,Radiometer
 BATTERY,Battery
-AWS,AWS
-AWS_ANEM,AWS anemometer
+ANEM,Anemometer
 CRNS,CRNS
 CRNS_BARE,CRNS bare
 CRNS_SNOW,SnowFox
 CRNS2,CRNS 2
 ETHERNET,Ethernet Interface
 GPRS,General Packet Radio Service
-HMP,Humidity and temperature probe
+THP,Temperature humidity and pressure sensors
 HFP1,Heat flux plate 1
 HFP2,Heat flux plate 2
 HYGROCLIP,Hygroclip
 IMKO,IMKO
 LOGGER,Logger
 MODEM,Modem
-PA,Air pressure sensor
 PHENOCAM,PhenoCam
 PHENOCAM_LENS1,PhenoCam lens 1
 PHENOCAM_LENS2,PhenoCam lens 2
