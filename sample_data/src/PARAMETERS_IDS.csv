@@ -1,6 +1,7 @@
 PARAMETER_ID,PARAMETER_NAME,OBJECT_OF_INTEREST,PROPERTY,CONTEXT_OBJECT
 AIR_DENSITY,Air density,AIR,DENSITY,
 ALBEDO,Albedo,GROUND,REFLECTANCE,
+ALBEDO_STD,Albedo standard deviation,GROUND,REFLECTANCE,
 ANGULAR_VELOCITY,Angular velocity of sensor,SENSOR,VELOCITY,
 BUCKET_LEVEL_RT,Level of rain gauge bucket (real-time),WATER,HEIGHT,
 BUCKET_LEVEL_NRT,Level of rain gauge bucket (non-real-time),WATER,HEIGHT,
@@ -10,13 +11,19 @@ COND_10,Electrical conductivity at 10 cm depth,SOIL,CONDUCTIVITY,
 COND_15,Electrical conductivity at 15 cm depth,SOIL,CONDUCTIVITY,
 COND_25,Electrical conductivity at 25 cm depth,SOIL,CONDUCTIVITY,
 COND_50,Electrical conductivity at 50 cm depth,SOIL,CONDUCTIVITY,
-COV_TS_UX,Covariance between sonic temperature and UX wind speed component,AIR,COVARIANCE
-COV_TS_UY,Covariance between sonic temperature and UY wind speed component,AIR,COVARIANCE
-COV_TS_UZ,Covariance between sonic temperature and UZ wind speed component,AIR,COVARIANCE
-COV_UX_UY,Covariance of wind speed component UX and UY,AIR,COVARIANCE
-COV_UX_UZ,Covariance of wind speed component UX and UZ,AIR,COVARIANCE
-COV_UY_UZ,Covariance of wind speed component UY and UZ,AIR,COVARIANCE
+COV_TS_UX,Covariance between sonic temperature and UX wind speed component,AIR,COVARIANCE,
+COV_TS_UY,Covariance between sonic temperature and UY wind speed component,AIR,COVARIANCE,
+COV_TS_UZ,Covariance between sonic temperature and UZ wind speed component,AIR,COVARIANCE,
+COV_UX_UY,Covariance of wind speed component UX and UY,AIR,COVARIANCE,
+COV_UX_UZ,Covariance of wind speed component UX and UZ,AIR,COVARIANCE,
+COV_UY_UZ,Covariance of wind speed component UY and UZ,AIR,COVARIANCE,
 DEW_POINT,Dew point temperature,AIR,TEMPERATURE,
+D86_1M,Effective depth 1 m from CRNS,SOIL,DEPTH,
+D86_5M,Effective depth 5 m from CRNS,SOIL,DEPTH,
+D86_25M,Effective depth 25 m from CRNS,SOIL,DEPTH,
+D86_75M,Effective depth 75 m from CRNS,SOIL,DEPTH,
+D86_150M,Effective depth 150 m from CRNS,SOIL,DEPTH,
+D86_200M,Effective depth 200 m from CRNS,SOIL,DEPTH,
 DIAG_FLAG_1,Diagnostic flag 1,SENSOR,DIAGNOSTIC,
 DIAG_FLAG_2,Diagnostic flag 2,SENSOR,DIAGNOSTIC,
 DIAG_FLAG_3,Diagnostic flag 3,SENSOR,DIAGNOSTIC,
@@ -72,6 +79,7 @@ LWOUT_UNC,Outgoing longwave radiation (uncorrected),OUTGOING-LONGWAVE-RADIATION,
 LWOUT_UNC_STD,Outgoing longwave radiation (uncorrected) standard deviation,OUTGOING-LONGWAVE-RADIATION,ENERGY-DENSITY,
 LWOUT_MULT,Outgoing longwave radiation calibration factor,SENSOR,CALIBRATION,
 MEASURE_PERIOD,Period of measurement,SAMPLES,TIME,
+MSLP,Mean sea level pressure,AIR,ATMOSPHERIC-PRESSURE,
 NAN_COUNT,NaN count,SAMPLES,COUNT,
 NEUTRON_COUNT,Neutron count,NEUTRON,COUNT,
 NEUTRON_COUNT_COR,Corrected neutron count,NEUTRON,COUNT,
@@ -103,8 +111,8 @@ REAL_DIEL_PERM,Soil real dielectric permittivity,SOIL,ELECTRICAL-PERMITTIVITY,
 REV,Number of revolutions of sensor,SENSOR,COUNT,
 REVOLUTIONS,Rotations,SENSOR,DIAGNOSTIC,
 RH,Relative humidity,AIR,RH,
-RH_STD,Relative humidity standard deviation,SENSOR,RH
-RH_SENSOR_INT,Internal sensor relative humidity,SENSOR,RH
+RH_STD,Relative humidity standard deviation,SENSOR,RH,
+RH_SENSOR_INT,Internal sensor relative humidity,SENSOR,RH,
 RN,Net radiation,NET-RADIATION,ENERGY-DENSITY,
 SAMPLES_COUNT,Number of samples,SAMPLES,COUNT,
 SIGNAL_TO_NOISE_RATIO,Signal-to-noise ratio,SENSOR,DIAGNOSTIC,
@@ -126,6 +134,8 @@ SWOUT,Outgoing shortwave radiation,OUTGOING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
 SWOUT_STD,Outgoing shortwave radiation standard deviation,OUTGOING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
 SWOUT_MULT,Outgoing shortwave radiation calibration factor,SENSOR,CALIBRATION,
 TEMP_AIR,Air temperature,AIR,TEMPERATURE,
+TEMP_AIR_MAX,Maximum air temperature,AIR,TEMPERATURE,
+TEMP_AIR_MIN,Minimum air temperature,AIR,TEMPERATURE,
 TEMP_AIR_STD,Air temperature standard deviation,AIR,TEMPERATURE,
 TEMP_SENSOR,Sensor temperature,SENSOR,TEMPERATURE,
 TEMP_SENSOR_STD,Sensor temperature standard deviation,SENSOR,TEMPERATURE,
@@ -143,12 +153,12 @@ TEMP_SOIL_50,Soil temperature at 50 cm depth,SOIL,TEMPERATURE,
 TEMP_SONIC,Sonic temperature,AIR,TEMPERATURE,
 TEMP_SONIC_STD,Sonic temperature standard deviation,AIR,TEMPERATURE,
 UNCERTAINTY,Measurement uncertainty,SAMPLES,UNCERTAINTY,
-UX,X component of wind speed,AIR,WS
-UY,Y component of wind speed,AIR,WS
-UZ,Z component of wind speed,AIR,WS
-UX_STD,X component of wind speed standard deviation,AIR,WS
-UY_STD,Y component of wind speed standard deviation,AIR,WS
-UZ_STD,Z component of wind speed standard deviation,AIR,WS
+UX,X component of wind speed,AIR,WS,
+UY,Y component of wind speed,AIR,WS,
+UZ,Z component of wind speed,AIR,WS,
+UX_STD,X component of wind speed standard deviation,AIR,WS,
+UY_STD,Y component of wind speed standard deviation,AIR,WS,
+UZ_STD,Z component of wind speed standard deviation,AIR,WS,
 VAPOUR_P,Vapour pressure,AIR,VAPOUR-PRESSURE,
 VOLTAGE_BATT,Battery voltage,BATTERY,VOLTAGE,
 VWC_CRNS,Volumetric water content from CRNS tube,SOIL,VWC,CRNS
