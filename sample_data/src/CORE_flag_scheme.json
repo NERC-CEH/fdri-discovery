@@ -1,42 +1,44 @@
-{
-    "id": "core_flag_scheme",
-    "label": "Core Flag Scheme",
-    "flag_type": "core_flags",
-    "scheme": [
-        {
-            "name": "corrected",
-            "description": "Data point has been adjusted from its original value.",
-            "id": 1
-        },
-        {
-            "name": "estimated",
-            "description": "Data point is an estimate in some way, either through infilling techniques or incomplete derivation.",
-            "id": 2
-        },
-        {
-            "name": "missing",
-            "description": "Data point was not recorded.",
-            "id": 4
-        },
-        {
-            "name": "removed",
-            "description": "Data point was removed by quality control.",
-            "id": 8
-        },
-        {
-            "name": "suspicious",
-            "description": "Data point is potentially erroneous or requiring further investigation.",
-            "id": 16
-        },
-        {
-            "name": "unchecked",
-            "description": "Data point has not been verified by QC.",
-            "id": 32
-        },
-        {
-            "name": "unsuccessful_correction",
-            "description": "A correction was attempted but was unsuccessful due to missing input data.",
-            "id": 64
-        }
-    ]
-}
+[
+    {
+        "id": "core_flag_scheme",
+        "label": "Core Flag Scheme",
+        "flag_type": "core_flags",
+        "scheme": [
+            {
+                "name": "corrected",
+                "description": "Data point has been adjusted from its original value.",
+                "value": 1
+            },
+            {
+                "name": "estimated",
+                "description": "Data point is an estimate in some way, either through infilling techniques or incomplete derivation.",
+                "value": 2
+            },
+            {
+                "name": "missing",
+                "description": "Data point was not recorded.",
+                "value": 4
+            },
+            {
+                "name": "removed",
+                "description": "Data point was removed by quality control.",
+                "value": 8
+            },
+            {
+                "name": "suspicious",
+                "description": "Data point is potentially erroneous or requiring further investigation.",
+                "value": 16
+            },
+            {
+                "name": "unchecked",
+                "description": "Data point has not been verified by QC.",
+                "value": 32
+            },
+            {
+                "name": "unsuccessful_correction",
+                "description": "A correction was attempted but was unsuccessful due to missing input data.",
+                "value": 64
+            }
+        ]
+    }
+]
