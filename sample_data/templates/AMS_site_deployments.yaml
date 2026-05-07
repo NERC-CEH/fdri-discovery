@@ -1,0 +1,28 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - extensions.py
+
+resources:
+  - name: Deployment
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/deployment/iams-deployment-{ID|slug}>"
+      "@type": <fdri:StaticDeployment>
+      "<ssn:deployedSystem>": <http://fdri.ceh.ac.uk/id/system/iams-{locHistory_AssetID|slug}>
+      "<ssn:deployedOnPlatform>": <http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}>
+      "<prov:startedAtTime>": "{start_date|asDateTime}"
+      "<prov:endedAtTime>": "{end_date|asDateTime}"
+      "<fdri:deployedHeight>": "{locHistory_Sensor_Height|asDecimal}"
+      "<fdri:canopyHeight>": "{locHistory_Canopy_Height_At_Install|asDecimal}"
+      "<fdri:deployedDepth>": "{locHistory_Sensor_Depth|asDecimal}"
+      "<fdri:deploymentNote>": "{locHistory_Notes}.@en"
+      "<fdri:distanceFromInlet>": "{locHistory_DistFromInlet|asDecimal}"
+      "<fdri:datum>": "{locHistory_Datum|asDecimal}"
+      "<fdri:distanceFromDatum>": "{locHistory_DistFromDatum|asDecimal}"
+      "<fdri:verticalOffset>": "{locHistory_Vertical.offset|asDecimal}"
+      "<fdri:northOffset>": "{locHistory_North.offset|asDecimal}"
+      "<fdri:eastOffset>": "{locHistory_East.offset|asDecimal}"
+      "<fdri:azimuth>": "{locHistory_Azimuth|asDecimal}"

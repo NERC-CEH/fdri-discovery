@@ -9,7 +9,7 @@ imports:
 
 mappings:
   parameters:
-    FQ [Flow]: flow
+    FQ [Flow]: discharge
   units:
     m³/s: m3s-1
 

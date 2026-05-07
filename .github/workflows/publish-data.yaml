@@ -3,21 +3,21 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - main
-      - dev
+      - production
       - staging
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
   actions: read
+  pull-requests: write
     
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo 
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
           submodules: true
@@ -69,17 +69,26 @@ jobs:
         if: ${{ github.ref == 'refs/heads/staging' }}
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_STAGING }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Configure AWS Credentials for UKCEH Dev
-        if: ${{ github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main' }}
+      - name: Configure AWS Credentials for UKCEH Prod
+        if: ${{ github.ref == 'refs/heads/production' }}
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_PROD }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ secrets.AWS_REGION }}
-
-      - name: Publish sample data
+      
+      - name: Publish sample data to new account
         run: bash publish.sh
+
+  create-staging-to-production-pr:
+    needs: [publish]
+    if: ${{ needs.publish.result == 'success' && github.ref_name == 'staging' }}
+    uses: NERC-CEH/dri-cicd/.github/workflows/auto-create-pr.yml@main
+    with:
+      base: production
+      head: staging
+

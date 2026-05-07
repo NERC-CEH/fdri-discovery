@@ -30,6 +30,7 @@ SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
+SAMPLES += $(TTL_BASE)/cosmos_ts_parameters.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
@@ -50,11 +51,11 @@ SAMPLES += $(TTL_BASE)/PARAMETERS_IDS.ttl
 SAMPLES += $(TTL_BASE)/PROCEDURE_TYPES.ttl
 SAMPLES += $(TTL_BASE)/processingLevels.ttl
 SAMPLES += $(TTL_BASE)/QC_CONFIGS.ttl
-SAMPLES += $(TTL_BASE)/sensor_calibrations.ttl
 SAMPLES += $(TTL_BASE)/sensor_deployments.ttl
 SAMPLES += $(TTL_BASE)/sensor_faults.ttl
 SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
 SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
+SAMPLES += $(TTL_BASE)/site_slots.ttl
 SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
@@ -63,15 +64,18 @@ SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
+# Stop-gap temporal extents
+SAMPLES += $(TTL_BASE)/ts_temporal.ttl
 
 # NRFA
 SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
 
 # FDRI SAMPLES
-SAMPLES += $(TTL_BASE)/fdri_sites.ttl
+# SAMPLES += $(TTL_BASE)/fdri_sites.ttl - replaced by AMS_sites_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
+SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
@@ -112,6 +116,13 @@ SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
 
+# AMS Samples
+SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
+SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
+SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
+SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
+SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
+
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
@@ -129,6 +140,7 @@ contexts: $(CONTEXTS)
 samples: $(SAMPLES)
 reports: $(REPORTS)
 full_validation: $(VAL)/full_report.ttl
+	grep -q -E "conforms\s+true" $^
 
 validate: $(SCHEMA_FILE)
 	$(RUN) record-spec-cmd validate $^
@@ -168,7 +180,7 @@ build/shacl:
 build/data:
 	mkdir -p build/data
 
-build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/instrumentation_parameters.sql | build
+build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/MEASURES.csv $(SQL)/instrumentation_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/instrumentation_parameters.sql"
 
 build/landCoverLcm.csv: $(SRC)/LAND_COVER_LCM.csv $(SQL)/landCoverLcm.sql | build
@@ -180,13 +192,13 @@ build/landCoverObservations.csv: $(SRC)/LAND_COVER_OBSERVED.csv $(SQL)/landCover
 build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_config.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/phenocam_mask_config.sql"
 
-build/sensor_calibrations.csv: $(SRC)/calib_factors_nr01_anem.csv $(SRC)/SENSOR_SLOT_IDS.csv  $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_calibrations.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_calibrations.sql"
-
-build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/sensor_deployments.sql | build
+build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
 
-build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_DEFS_COSMOS.csv build/sensor_deployments.csv $(SQL)/sensor_faults.sql | build
+build/site_slots.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/site_slots.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/site_slots.sql"
+
+build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SQL)/sensor_faults.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_faults.sql"
 
 build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sensor_firmware_configurations.sql | build
@@ -206,6 +218,9 @@ build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMES
 
 build/COSMOS_TS_ID_DEPENDENCIES_LINES.json: $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json $(SQL)/ts_id_dependencies.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/ts_id_dependencies.jq < $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json > $@"
+
+build/cosmos_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/cosmos_ts_parameters.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/cosmos_ts_parameters.sql"
 
 build/CORRECTION_CONFIGS_LINES.json: $(SRC)/CORRECTION_CONFIGS.json $(SQL)/CORRECTION_CONFIGS_LINES.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/CORRECTION_CONFIGS_LINES.jq < $(SRC)/CORRECTION_CONFIGS.json > $@"
@@ -231,6 +246,24 @@ build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql 
 build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
 
+build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
+
+build/AMS_sites_ext.csv: $(SRC)/AMS_mill_site.csv $(SQL)/AMS_sites_ext.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_sites_ext.sql"
+
+build/AMS_station_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_station_deployments.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_station_deployments.sql"
+
+build/AMS_site_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_site_deployments.sql"
+
+build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes.csv build/AMS_sites_ext.csv $(SQL)/AMS_issue_log_ext.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_issue_log_ext.sql"
+
+build/AMS_asset_ext.csv: $(SRC)/AMS_mill_assets.csv build/AMS_sites_ext.csv $(SQL)/AMS_asset_ext.sql
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_asset_ext.sql"
+
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
 
@@ -248,6 +281,9 @@ $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gr
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gridded/%.zarr.json | build/data
 	$(GRIDMAP) --type zarr-meta --base-url http://fdri.ceh.ac.uk/id/dataset/$* --output $@ $(TPL)/gridded_metadata.yaml $(SRC)/gridded/$*.zarr.json
+
+$(TTL_BASE)/FDRI_QC_CONFIGS.ttl: $(TPL)/namespaces.yaml $(TPL)/QC_CONFIGS.yaml $(SRC)/FDRI_QC_CONFIGS.csv | build/data
+	$(MAPPER) $(TPL)/QC_CONFIGS.yaml $(SRC)/FDRI_QC_CONFIGS.csv $@
 
 $(VAL)/%.ttl: $(TTL_BASE)/%.ttl $(SHACL_BASE)/fdri_shacl.ttl  | build/validation
 	$(RUN) /bin/bash -c "shacl v -d $(TTL_BASE)/$*.ttl -s $(SHACL_BASE)/fdri_shacl.ttl > $@"
