@@ -287,14 +287,11 @@ $(TTL_BASE)/COSMOS_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.y
 build/FDRI_FLAG_SCHEMES_LINES.json: $(SRC)/FDRI_flag_schemes.json $(SQL)/array_to_lines.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/FDRI_flag_schemes.json > $@"
 
-build/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
+$(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
 	$(MAPPER) $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json $@
 
 build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
-
-$(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
-	$(MAPPER) $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json $@
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
