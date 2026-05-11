@@ -29,10 +29,12 @@ resources:
         - name: RAW_BUCKET
           requires:
             PROCESS_LEVEL: RAW
+            S3_BUCKET:
           pattern: "{RAW_SOURCE_BUCKET}"
         - name: PROCESSED_BUCKET
           requires:
             PROCESS_LEVEL: PROCESSED
+            S3_BUCKET:
           pattern: "{PROCESSED_SOURCE_BUCKET}"
       "<fdri:sourceDataset>": "{S3_DATASET}"
       "<fdri:sourceColumnName>": "{COLUMN_NAME}"
