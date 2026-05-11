@@ -9,7 +9,9 @@ TPL = sample_data/templates
 TTL_BASE = build/data
 SHACL_BASE = build/shacl
 SCHEMA_FILE = ontology/schema/fdri.recordspec.yaml
-MAPPER = mapper
+SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$4}' branch.map)
+SOURCE_BUCKET := $(or ${SOURCE_BUCKET},fdri-discovery-sample-data)
+MAPPER = mapper -g SOURCE_BUCKET=${SOURCE_BUCKET}
 GRIDMAP = gridded-mapper
 
 RECORDS = \
@@ -133,6 +135,8 @@ SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
 
 REPORTS = $(SAMPLES:$(TTL_BASE)/%.ttl=$(VAL)/%.ttl)
+
+default: data
 
 data: validate reports full_validation
 all: validate schemas contexts reports full_validation
