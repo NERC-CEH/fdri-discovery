@@ -5,7 +5,7 @@ WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,Water velocity in metres per second
 WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,INST,,,Instantaneous water velocity in metres per second
 WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,,,Mean water velocity in metres per second
 WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,,,Maximum water velocity in metres per second
-REV-COUNT,,REV,UNITLESS,Number of revolutions,,,Number of revolutions counted in measurement period
+REV-COUNT,,REV,UNITLESS,,,,Number of revolutions counted in measurement period
 REV-TOTAL-COUNT,,REV,UNITLESS,TOTAL,,,Total number of revolutions counted in measurement Period
 ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,,,Mean angular velocity in revolutions per second
 WATER_TEMP-DEGC,,WATER_TEMP,DEGC,,,,Water temperature in degrees Celsius
