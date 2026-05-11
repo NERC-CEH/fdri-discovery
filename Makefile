@@ -9,9 +9,11 @@ TPL = sample_data/templates
 TTL_BASE = build/data
 SHACL_BASE = build/shacl
 SCHEMA_FILE = ontology/schema/fdri.recordspec.yaml
-SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$4}' branch.map)
-SOURCE_BUCKET := $(or ${SOURCE_BUCKET},fdri-discovery-sample-data)
-MAPPER = mapper -g SOURCE_BUCKET=${SOURCE_BUCKET}
+RAW_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$4}' branch.map)
+RAW_SOURCE_BUCKET := $(or ${RAW_SOURCE_BUCKET},fdri-dummy-ingested)
+PROCESSED_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$5}' branch.map)
+PROCESSED_SOURCE_BUCKET := $(or ${PROCESSED_SOURCE_BUCKET},fdri-dummy-processed)
+MAPPER = mapper -g RAW_SOURCE_BUCKET=${RAW_SOURCE_BUCKET} -g PROCESSED_SOURCE_BUCKET=${PROCESSED_SOURCE_BUCKET}
 GRIDMAP = gridded-mapper
 
 RECORDS = \
