@@ -26,7 +26,7 @@ resources:
             "@type": <fdri:Aggregation>
             "<fdri:periodicity>": "{PERIODICITY}^^<xsd:duration>"
             "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
-            "<fdri:valueStatistic>": <http://fdri.ceh.ac.uk/ref/common/staistic/{STAISTIC_ID}>
+            "<fdri:valueStatistic>": "<http://fdri.ceh.ac.uk/ref/common/statistic/{STATISTIC_ID|slug}>"
 
   - name: MeasureParent
     requires:
