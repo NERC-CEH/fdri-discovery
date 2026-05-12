@@ -1,0 +1,25 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+
+one_offs:
+  - name: FlagTypeScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/flag_type>"
+      "@type": <fdri:FlagTypeScheme>
+      "<rdfs:label>": "FDRI Common Flag Types@en"
+      "<dct:title>": "FDRI Common Flag Types@en"
+
+resources:
+  - name: FlagType
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/flag_type/{id|slug}>"
+      "@type": <fdri:FlagType>
+      "<skos:inScheme>": "<::FlagTypeScheme>"
+      "^<skos:hasTopConcept>": "<::FlagTypeScheme>"
+      "<rdfs:label>": "{label}@en"
+      "<skos:prefLabel>": "{label}@en"
+      "<skos:scopeNote>": "{description}@en"

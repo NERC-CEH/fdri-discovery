@@ -1,6 +1,8 @@
 globals:
     $baseURI: http://fdri.ceh.ac.uk/
     $datasetID: default
+    RAW_SOURCE_BUCKET: fdri-discovery-raw-data
+    PROCESSED_SOURCE_BUCKET: fdri-discovery-processed-data
 
 imports:
     - namespaces.yaml
@@ -22,7 +24,17 @@ resources:
       "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:originatingSite>": "<::Site>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/nmdb>"
-      "<fdri:sourceBucket>": "{S3_BUCKET}"
+      "<fdri:sourceBucket>":
+        - name: RAW_BUCKET
+          requires:
+            PROCESS_LEVEL: RAW
+            S3_BUCKET:
+          pattern: "{RAW_SOURCE_BUCKET}"
+        - name: PROCESSED_BUCKET
+          requires:
+            PROCESS_LEVEL: PROCESSED
+            S3_BUCKET:
+          pattern: "{PROCESSED_SOURCE_BUCKET}"
       "<fdri:sourceDataset>": "{S3_DATASET}"
       "<fdri:sourceColumnName>": "{COLUMN_NAME}"
       "<fdri:sourceTimeColumnName>": "{TIME_COLUMN_NAME}"
