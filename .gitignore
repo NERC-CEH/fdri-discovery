@@ -170,20 +170,7 @@ DuckDB.session.sql
 
 # Generated Files
 ontology/doc/html/*.html
-<<<<<<< HEAD
-<<<<<<< HEAD
-ontology/doc/html/*.png
-=======
-=======
->>>>>>> 6259e1a4c4f26d13bce3e35964705dc65de6213e
 ontology/doc/html/*.png
 
 # Scripts to add dataset configurations for all sites
 scripts/
-<<<<<<< HEAD
->>>>>>> bcce7b2 (Add REF_Q0 annotation to args for all COSMOSFACTOR_Q_1HOUR_PROCESSED datasets)
-=======
-
-#Living documentation
-doc/understanding_metadata.md
->>>>>>> 6259e1a4c4f26d13bce3e35964705dc65de6213e
