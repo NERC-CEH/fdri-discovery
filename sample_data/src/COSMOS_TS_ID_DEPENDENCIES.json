@@ -49,7 +49,7 @@
     "COSMOS-ALIC1-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-ALIC1-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-ALIC1-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -68,7 +68,7 @@
     "COSMOS-ALIC1-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-ALIC1-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-ALIC1-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -1149,7 +1149,7 @@
     "COSMOS-BALRD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-BALRD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-BALRD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -1168,7 +1168,7 @@
     "COSMOS-BALRD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-BALRD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-BALRD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -2347,7 +2347,7 @@
     "COSMOS-BICKL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-BICKL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-BICKL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -2366,7 +2366,7 @@
     "COSMOS-BICKL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-BICKL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-BICKL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -3576,7 +3576,7 @@
     "COSMOS-BUNNY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-BUNNY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-BUNNY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -3595,7 +3595,7 @@
     "COSMOS-BUNNY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-BUNNY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-BUNNY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -4805,7 +4805,7 @@
     "COSMOS-CARDT-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CARDT-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-CARDT-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -4824,7 +4824,7 @@
     "COSMOS-CARDT-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CARDT-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-CARDT-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -6034,7 +6034,7 @@
     "COSMOS-CGARW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CGARW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-CGARW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -6053,7 +6053,7 @@
     "COSMOS-CGARW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CGARW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-CGARW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -7796,7 +7796,7 @@
     "COSMOS-CHIMN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CHIMN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-CHIMN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -7815,7 +7815,7 @@
     "COSMOS-CHIMN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CHIMN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-CHIMN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -9526,7 +9526,7 @@
     "COSMOS-CHOBH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CHOBH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-CHOBH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -9545,7 +9545,7 @@
     "COSMOS-CHOBH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CHOBH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-CHOBH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -10755,7 +10755,7 @@
     "COSMOS-COCHN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-COCHN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-COCHN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -10774,7 +10774,7 @@
     "COSMOS-COCHN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-COCHN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-COCHN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -12517,7 +12517,7 @@
     "COSMOS-COCLP-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-COCLP-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-COCLP-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -12536,7 +12536,7 @@
     "COSMOS-COCLP-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-COCLP-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-COCLP-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -13743,7 +13743,7 @@
     "COSMOS-CRICH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CRICH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-CRICH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -13762,7 +13762,7 @@
     "COSMOS-CRICH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-CRICH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-CRICH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -14941,7 +14941,7 @@
     "COSMOS-EASTB-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-EASTB-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-EASTB-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -14960,7 +14960,7 @@
     "COSMOS-EASTB-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-EASTB-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-EASTB-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -16308,7 +16308,7 @@
     "COSMOS-ELMST-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-ELMST-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-ELMST-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -16327,7 +16327,7 @@
     "COSMOS-ELMST-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-ELMST-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-ELMST-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -17901,7 +17901,7 @@
     "COSMOS-EUSTN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-EUSTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-EUSTN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -17920,7 +17920,7 @@
     "COSMOS-EUSTN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-EUSTN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-EUSTN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -19494,7 +19494,7 @@
     "COSMOS-FINCH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-FINCH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-FINCH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -19513,7 +19513,7 @@
     "COSMOS-FINCH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-FINCH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-FINCH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -21118,7 +21118,7 @@
     "COSMOS-FIVET-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-FIVET-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-FIVET-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -21137,7 +21137,7 @@
     "COSMOS-FIVET-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-FIVET-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-FIVET-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -22711,7 +22711,7 @@
     "COSMOS-GISBN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-GISBN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-GISBN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -22730,7 +22730,7 @@
     "COSMOS-GISBN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-GISBN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-GISBN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -24106,7 +24106,7 @@
     "COSMOS-GLENS-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-GLENS-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-GLENS-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -24125,7 +24125,7 @@
     "COSMOS-GLENS-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-GLENS-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-GLENS-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -25473,7 +25473,7 @@
     "COSMOS-GLENW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-GLENW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-GLENW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -25492,7 +25492,7 @@
     "COSMOS-GLENW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-GLENW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-GLENW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -27066,7 +27066,7 @@
     "COSMOS-HADLW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HADLW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HADLW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -27085,7 +27085,7 @@
     "COSMOS-HADLW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HADLW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HADLW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -28659,7 +28659,7 @@
     "COSMOS-HARTW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HARTW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HARTW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -28678,7 +28678,7 @@
     "COSMOS-HARTW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HARTW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HARTW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -29857,7 +29857,7 @@
     "COSMOS-HARWD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HARWD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HARWD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -29876,7 +29876,7 @@
     "COSMOS-HARWD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HARWD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HARWD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -30957,7 +30957,7 @@
     "COSMOS-HENFS-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HENFS-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HENFS-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -30976,7 +30976,7 @@
     "COSMOS-HENFS-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HENFS-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HENFS-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -32183,7 +32183,7 @@
     "COSMOS-HILLB-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HILLB-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HILLB-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -32202,7 +32202,7 @@
     "COSMOS-HILLB-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HILLB-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HILLB-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -33776,7 +33776,7 @@
     "COSMOS-HLACY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HLACY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HLACY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -33795,7 +33795,7 @@
     "COSMOS-HLACY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HLACY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HLACY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -35400,7 +35400,7 @@
     "COSMOS-HOLLN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HOLLN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HOLLN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -35419,7 +35419,7 @@
     "COSMOS-HOLLN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HOLLN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HOLLN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -36657,7 +36657,7 @@
     "COSMOS-HYBRY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HYBRY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-HYBRY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -36676,7 +36676,7 @@
     "COSMOS-HYBRY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-HYBRY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-HYBRY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -38250,7 +38250,7 @@
     "COSMOS-LIZRD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-LIZRD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-LIZRD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -38269,7 +38269,7 @@
     "COSMOS-LIZRD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-LIZRD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-LIZRD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -39448,7 +39448,7 @@
     "COSMOS-LODTN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-LODTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-LODTN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -39467,7 +39467,7 @@
     "COSMOS-LODTN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-LODTN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-LODTN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -41100,7 +41100,7 @@
     "COSMOS-LULLN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-LULLN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-LULLN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -41119,7 +41119,7 @@
     "COSMOS-LULLN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-LULLN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-LULLN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -42329,7 +42329,7 @@
     "COSMOS-MOORH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-MOORH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-MOORH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -42348,7 +42348,7 @@
     "COSMOS-MOORH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-MOORH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-MOORH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -43696,7 +43696,7 @@
     "COSMOS-MOREM-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-MOREM-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-MOREM-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -43715,7 +43715,7 @@
     "COSMOS-MOREM-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-MOREM-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-MOREM-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -45320,7 +45320,7 @@
     "COSMOS-MORLY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-MORLY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-MORLY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -45339,7 +45339,7 @@
     "COSMOS-MORLY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-MORLY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-MORLY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -46518,7 +46518,7 @@
     "COSMOS-NWYKE-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-NWYKE-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-NWYKE-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -46537,7 +46537,7 @@
     "COSMOS-NWYKE-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-NWYKE-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-NWYKE-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -47716,7 +47716,7 @@
     "COSMOS-PLYNL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-PLYNL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-PLYNL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -47735,7 +47735,7 @@
     "COSMOS-PLYNL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-PLYNL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-PLYNL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -49083,7 +49083,7 @@
     "COSMOS-PORTN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-PORTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-PORTN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -49102,7 +49102,7 @@
     "COSMOS-PORTN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-PORTN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-PORTN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -50281,7 +50281,7 @@
     "COSMOS-RDMER-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-RDMER-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-RDMER-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -50300,7 +50300,7 @@
     "COSMOS-RDMER-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-RDMER-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-RDMER-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -51479,7 +51479,7 @@
     "COSMOS-REDHL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-REDHL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-REDHL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -51498,7 +51498,7 @@
     "COSMOS-REDHL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-REDHL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-REDHL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -52708,7 +52708,7 @@
     "COSMOS-RISEH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-RISEH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-RISEH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -52727,7 +52727,7 @@
     "COSMOS-RISEH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-RISEH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-RISEH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -54301,7 +54301,7 @@
     "COSMOS-ROTHD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-ROTHD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-ROTHD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -54320,7 +54320,7 @@
     "COSMOS-ROTHD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-ROTHD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-ROTHD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -55530,7 +55530,7 @@
     "COSMOS-SHEEP-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SHEEP-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-SHEEP-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -55549,7 +55549,7 @@
     "COSMOS-SHEEP-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SHEEP-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-SHEEP-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -57260,7 +57260,7 @@
     "COSMOS-SOURH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SOURH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-SOURH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -57279,7 +57279,7 @@
     "COSMOS-SOURH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SOURH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-SOURH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -58627,7 +58627,7 @@
     "COSMOS-SPENF-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SPENF-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-SPENF-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -58646,7 +58646,7 @@
     "COSMOS-SPENF-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SPENF-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-SPENF-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -60220,7 +60220,7 @@
     "COSMOS-STGHT-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-STGHT-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-STGHT-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -60239,7 +60239,7 @@
     "COSMOS-STGHT-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-STGHT-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-STGHT-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -61477,7 +61477,7 @@
     "COSMOS-STIPS-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-STIPS-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-STIPS-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -61496,7 +61496,7 @@
     "COSMOS-STIPS-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-STIPS-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-STIPS-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -62703,7 +62703,7 @@
     "COSMOS-SYDLG-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SYDLG-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-SYDLG-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -62722,7 +62722,7 @@
     "COSMOS-SYDLG-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-SYDLG-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-SYDLG-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -64327,7 +64327,7 @@
     "COSMOS-TADHM-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-TADHM-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-TADHM-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -64346,7 +64346,7 @@
     "COSMOS-TADHM-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-TADHM-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-TADHM-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -65525,7 +65525,7 @@
     "COSMOS-WADDN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WADDN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-WADDN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -65544,7 +65544,7 @@
     "COSMOS-WADDN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WADDN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-WADDN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -67248,7 +67248,7 @@
     "COSMOS-WIMPL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WIMPL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-WIMPL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -67267,7 +67267,7 @@
     "COSMOS-WIMPL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WIMPL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-WIMPL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -68841,7 +68841,7 @@
     "COSMOS-WRTTL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WRTTL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-WRTTL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -68860,7 +68860,7 @@
     "COSMOS-WRTTL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WRTTL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-WRTTL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -70465,7 +70465,7 @@
     "COSMOS-WYTH1-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WYTH1-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "COSMOS-WYTH1-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
@@ -70484,7 +70484,7 @@
     "COSMOS-WYTH1-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "CCOSMOS-WYTH1-CTS_MOD_CORR_1DAY_PROCESSED"
+            "COSMOS-WYTH1-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
