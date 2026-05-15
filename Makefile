@@ -9,7 +9,11 @@ TPL = sample_data/templates
 TTL_BASE = build/data
 SHACL_BASE = build/shacl
 SCHEMA_FILE = ontology/schema/fdri.recordspec.yaml
-MAPPER = mapper
+RAW_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$4}' branch.map)
+RAW_SOURCE_BUCKET := $(or ${RAW_SOURCE_BUCKET},fdri-dummy-ingested)
+PROCESSED_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$5}' branch.map)
+PROCESSED_SOURCE_BUCKET := $(or ${PROCESSED_SOURCE_BUCKET},fdri-dummy-processed)
+MAPPER = mapper -g RAW_SOURCE_BUCKET=${RAW_SOURCE_BUCKET} -g PROCESSED_SOURCE_BUCKET=${PROCESSED_SOURCE_BUCKET}
 GRIDMAP = gridded-mapper
 
 RECORDS = \
@@ -30,12 +34,15 @@ SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
+SAMPLES += $(TTL_BASE)/COSMOS_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/cosmos_ts_parameters.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/FACILITY_USAGE_ROLES.ttl
+SAMPLES += $(TTL_BASE)/FLAG_TYPES_LINES.ttl
+SAMPLES += $(TTL_BASE)/CORE_FLAG_SCHEME.ttl
 SAMPLES += $(TTL_BASE)/infill_config.ttl
 SAMPLES += $(TTL_BASE)/INSTRUMENTATION.ttl
 SAMPLES += $(TTL_BASE)/instrumentation_parameters.ttl
@@ -60,6 +67,7 @@ SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
+SAMPLES += $(TTL_BASE)/timeseries_flags_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
@@ -76,6 +84,7 @@ SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
+SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
@@ -128,6 +137,8 @@ SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
 
 REPORTS = $(SAMPLES:$(TTL_BASE)/%.ttl=$(VAL)/%.ttl)
+
+default: data
 
 data: validate reports full_validation
 all: validate schemas contexts reports full_validation
@@ -263,6 +274,30 @@ build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes
 
 build/AMS_asset_ext.csv: $(SRC)/AMS_mill_assets.csv build/AMS_sites_ext.csv $(SQL)/AMS_asset_ext.sql
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_asset_ext.sql"
+
+build/FLAG_TYPES_LINES.json: $(SRC)/flag_types.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/flag_types.json > $@"
+
+build/CORE_FLAG_SCHEME_LINES.json: $(SRC)/CORE_flag_scheme.json | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/CORE_flag_scheme.json > $@"
+
+$(TTL_BASE)/CORE_FLAG_SCHEME.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/CORE_FLAG_SCHEME_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/CORE_FLAG_SCHEME_LINES.json $@
+
+build/COSMOS_FLAG_SCHEMES_LINES.json: $(SRC)/COSMOS_flag_schemes.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/COSMOS_flag_schemes.json > $@"
+
+$(TTL_BASE)/COSMOS_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/COSMOS_FLAG_SCHEMES_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/COSMOS_FLAG_SCHEMES_LINES.json $@
+
+build/FDRI_FLAG_SCHEMES_LINES.json: $(SRC)/FDRI_flag_schemes.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/FDRI_flag_schemes.json > $@"
+
+$(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json $@
+
+build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

@@ -1,2 +1,1 @@
-to_entries |
 .[]

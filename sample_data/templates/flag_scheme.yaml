@@ -1,0 +1,27 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+
+embedded:
+  - name: FlagValue
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/{id|slug}/{name|slug}>"
+      "@type": <fdri:FlagValue>
+      "<skos:inScheme>": "<http://fdri.ceh.ac.uk/ref/common/{id|slug}>"
+      "<rdfs:label>": "{name}@en"
+      "<skos:prefLabel>": "{name}@en"
+      "<skos:scopeNote>": "{description}@en"
+      "<schema:value>": "{value|asInt}"
+
+resources:
+  - name: FlagValueScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/{id|slug}>"
+      "@type": <fdri:FlagValueScheme>
+      "<rdfs:label>": "{label}@en"
+      "<dct:title>": "{label}@en"
+      "<fdri:flagType>": "<http://fdri.ceh.ac.uk/ref/common/flag_type/{flag_type|slug}>"
+      "<skos:hasTopConcept>": "{scheme|map_to('FlagValue')}"

@@ -1,0 +1,118 @@
+[
+    {
+        "id": "cosmos_correction_flag_scheme",
+        "label": "COSMOS Correction Flag Scheme",
+        "flag_type": "correction_flags",
+        "scheme": [
+            {
+                "name": "add",
+                "description": "Sum the data point and correction value. E.g. y=x+C, where x is the data point and C is the change factor.",
+                "value": 1
+            },
+            {
+                "name": "LW_correction",
+                "description": "Correction for long wave radiation where calibration values are incorrect.",
+                "value": 2
+            },
+            {
+                "name": "scalar",
+                "description": "Multiply the data point by a correction factor. E.g. y=Cx where x is the data point and C is the correction factor.",
+                "value": 4
+            },
+            {
+                "name": "PA_correction",
+                "description": "Correct air pressure with bias calculated from mean sea level pressure.",
+                "value": 8
+            },
+            {
+                "name": "power",
+                "description": "Raise data point to power of correction factor. E.g. y=x^C where x is the data point and C is the correction factor.",
+                "value": 16
+            },
+            {
+                "name": "WD_correction",
+                "description": "Correct wind direction where wind sensor installed backwards.",
+                "value": 32
+            },
+            {
+                "name": "clip",
+                "description": "Clip values above or below threshold to the threshold.",
+                "value": 64
+            }
+        ]
+    },
+    {
+        "id": "cosmos_quality_control_flag_scheme",
+        "label": "COSMOS Quality Control Flag Scheme",
+        "flag_type": "quality_control_flags",
+        "scheme": [
+            {
+                "name": "range",
+                "description": "Data fell outside of legitimate min and max.",
+                "value": 1
+            },
+            {
+                "name": "battery_voltage",
+                "description": "The battery voltage was too low to power the sensor properly.",
+                "value": 2
+            },
+            {
+                "name": "samples",
+                "description": "Too few samples were taken by the logger from the sensor within the measuring period.",
+                "value": 4
+            },
+            {
+                "name": "error_code",
+                "description": "The data value is an error code.",
+                "value": 8
+            },
+            {
+                "name": "spike",
+                "description": "Spike in the data detected.",
+                "value": 16
+            },
+            {
+                "name": "NR01_temp",
+                "description": "The NR01 sensor temperature was out of operating range, meaning data cannot be trusted.",
+                "value": 32
+            },
+            {
+                "name": "HFP_removal",
+                "description": "Data removed during heat flux plate calibration period.",
+                "value": 64
+            },
+            {
+                "name": "pluvio_diagnostic",
+                "description": "Pluvio rainguage sent error diagnostic.",
+                "value": 128
+            },
+            {
+                "name": "snow_day_signal",
+                "description": "Signal from snow depth sensor too low.",
+                "value": 256
+            },
+            {
+                "name": "TDT_soil_temp",
+                "description": "Soil temperature too low for TDT to operate correctly.",
+                "value": 512
+            }
+        ]
+    },
+    {
+        "id": "cosmos_infill_flag_scheme",
+        "label": "COSMOS Infill Flag Scheme",
+        "flag_type": "infill_flags",
+        "scheme": [
+            {
+                "name": "linear_interp",
+                "description": "Linear interpolation used to infill gap.",
+                "value": 1
+            },
+            {
+                "name": "alt_data",
+                "description": "Alternative data used to infill gap.",
+                "value": 2
+            }
+        ]
+    }
+]
