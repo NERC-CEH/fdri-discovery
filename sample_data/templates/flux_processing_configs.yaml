@@ -71,11 +71,7 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/plan/{config_id|slug}>"
             "@type": "<fdri:TimeSeriesPlan>"
-            "<fdri:uses>":
-              - name: Uses
-                requires:
-                  depends_on:
-                template: "<{depends_on}>"
+            "<fdri:uses>": <{depends_on}>
             "<fdri:rawConfiguration>": "{raw}"
             "<fdri:configuration>":
               - name: FluxProcessingConfiguration

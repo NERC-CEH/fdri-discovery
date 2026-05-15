@@ -30,7 +30,7 @@ resources:
           properties:
             "@id": "<{dataset_id}#distribution>"
             "@type": "<dcat:Distribution>"
-            "<dct:accessURL>": "s3://{source_bucket}/network={network}/collection=eddypro/site={source_site_identifier}/^^<xsd:anyURI>"
+            "<dct:accessURL>": "s3://{source_bucket}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
             "<dct:format>": "<::GhgFormat>"
 
   - name: FluxTimeSeriesDataset
@@ -39,3 +39,8 @@ resources:
     properties:
       "@id": "<{dataset_id}>"
       "@type": "<fdri:TimeSeriesDataset>"
+      "<fdri:sourceBucket>": "{source_bucket}"
+      "<fdri:sourceDataset>": "{source_dataset}"
+      "<fdri:sourceColumnName>": "{source_column}"
+      "<fdri:sourceTimeColumnName>": "{time_column_name}"
+      # TODO: Verify what the S3 path should look like for flux timeseries datasetes and create a distribution
