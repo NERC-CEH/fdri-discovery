@@ -1,0 +1,41 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+
+one_offs:
+  - name: GhgFormat
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/format/ghg>"
+      "@type": "<skos:Concept>"
+      "<dct:identifier>": "application/x-eddypro-ghg"
+resources:
+
+  - name: FluxDatasetCommon
+    properties:
+      "@id": "<{dataset_id}>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{processing_level|slug}>"
+      "<fdri:originatingSite>": "<{site_id}>"
+
+  - name: FluxObservationDataset
+    unless:
+      "source_column":
+    properties:
+      "@id": "<{dataset_id}>"
+      "@type": "<fdri:ObservationDataset>"
+      "<dcat:distribution>":
+        - name: ObservationDatasetDistribution
+          properties:
+            "@id": "<{dataset_id}#distribution>"
+            "@type": "<dcat:Distribution>"
+            "<dct:accessURL>": "s3://{source_bucket}/network={network}/collection=eddypro/site={source_site_identifier}/^^<xsd:anyURI>"
+            "<dct:format>": "<::GhgFormat>"
+
+  - name: FluxTimeSeriesDataset
+    requires:
+      "source_column":
+    properties:
+      "@id": "<{dataset_id}>"
+      "@type": "<fdri:TimeSeriesDataset>"
