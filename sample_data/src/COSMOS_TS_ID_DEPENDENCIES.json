@@ -49,23 +49,39 @@
     "COSMOS-ALIC1-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-ALIC1-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-ALIC1-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-ALIC1-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-ALIC1-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-ALIC1-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-ALIC1-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -1133,23 +1149,39 @@
     "COSMOS-BALRD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-BALRD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-BALRD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-BALRD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-BALRD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-BALRD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-BALRD-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -2315,23 +2347,39 @@
     "COSMOS-BICKL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-BICKL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-BICKL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-BICKL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-BICKL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-BICKL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-BICKL-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -3528,23 +3576,39 @@
     "COSMOS-BUNNY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-BUNNY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-BUNNY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-BUNNY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-BUNNY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-BUNNY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-BUNNY-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -4741,23 +4805,39 @@
     "COSMOS-CARDT-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CARDT-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-CARDT-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CARDT-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CARDT-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-CARDT-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CARDT-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -5954,23 +6034,39 @@
     "COSMOS-CGARW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CGARW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-CGARW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CGARW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CGARW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-CGARW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CGARW-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -7700,23 +7796,39 @@
     "COSMOS-CHIMN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CHIMN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-CHIMN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CHIMN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CHIMN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-CHIMN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CHIMN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -9414,23 +9526,39 @@
     "COSMOS-CHOBH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CHOBH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-CHOBH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CHOBH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CHOBH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-CHOBH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CHOBH-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -10627,23 +10755,39 @@
     "COSMOS-COCHN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-COCHN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-COCHN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-COCHN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-COCHN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-COCHN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-COCHN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -12373,23 +12517,39 @@
     "COSMOS-COCLP-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-COCLP-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-COCLP-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-COCLP-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-COCLP-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-COCLP-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-COCLP-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -13583,23 +13743,39 @@
     "COSMOS-CRICH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CRICH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-CRICH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CRICH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-CRICH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-CRICH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-CRICH-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -14765,23 +14941,39 @@
     "COSMOS-EASTB-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-EASTB-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-EASTB-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-EASTB-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-EASTB-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-EASTB-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-EASTB-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -16116,23 +16308,39 @@
     "COSMOS-ELMST-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-ELMST-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-ELMST-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-ELMST-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-ELMST-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-ELMST-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-ELMST-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -17693,23 +17901,39 @@
     "COSMOS-EUSTN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-EUSTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-EUSTN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-EUSTN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-EUSTN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-EUSTN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-EUSTN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -19270,23 +19494,39 @@
     "COSMOS-FINCH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-FINCH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-FINCH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-FINCH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-FINCH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-FINCH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-FINCH-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -20878,23 +21118,39 @@
     "COSMOS-FIVET-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-FIVET-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-FIVET-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-FIVET-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-FIVET-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-FIVET-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-FIVET-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -22455,23 +22711,39 @@
     "COSMOS-GISBN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-GISBN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-GISBN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-GISBN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-GISBN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-GISBN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-GISBN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -23834,23 +24106,39 @@
     "COSMOS-GLENS-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-GLENS-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-GLENS-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-GLENS-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-GLENS-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-GLENS-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-GLENS-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -25185,23 +25473,39 @@
     "COSMOS-GLENW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-GLENW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-GLENW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-GLENW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-GLENW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-GLENW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-GLENW-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -26762,23 +27066,39 @@
     "COSMOS-HADLW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HADLW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HADLW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HADLW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HADLW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HADLW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HADLW-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -28339,23 +28659,39 @@
     "COSMOS-HARTW-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HARTW-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HARTW-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HARTW-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HARTW-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HARTW-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HARTW-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -29521,23 +29857,39 @@
     "COSMOS-HARWD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HARWD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HARWD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HARWD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HARWD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HARWD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HARWD-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -30605,23 +30957,39 @@
     "COSMOS-HENFS-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HENFS-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HENFS-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HENFS-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HENFS-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HENFS-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HENFS-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -31815,23 +32183,39 @@
     "COSMOS-HILLB-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HILLB-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HILLB-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HILLB-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HILLB-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HILLB-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HILLB-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -33392,23 +33776,39 @@
     "COSMOS-HLACY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HLACY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HLACY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HLACY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HLACY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HLACY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HLACY-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -35000,23 +35400,39 @@
     "COSMOS-HOLLN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HOLLN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HOLLN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HOLLN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HOLLN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HOLLN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HOLLN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -36241,23 +36657,39 @@
     "COSMOS-HYBRY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HYBRY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-HYBRY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HYBRY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-HYBRY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-HYBRY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-HYBRY-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -37818,23 +38250,39 @@
     "COSMOS-LIZRD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-LIZRD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-LIZRD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-LIZRD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-LIZRD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-LIZRD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-LIZRD-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -39000,23 +39448,39 @@
     "COSMOS-LODTN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-LODTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-LODTN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-LODTN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-LODTN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-LODTN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-LODTN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -40636,23 +41100,39 @@
     "COSMOS-LULLN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-LULLN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-LULLN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-LULLN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-LULLN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-LULLN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-LULLN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -41849,23 +42329,39 @@
     "COSMOS-MOORH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-MOORH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-MOORH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-MOORH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-MOORH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-MOORH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-MOORH-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -43200,23 +43696,39 @@
     "COSMOS-MOREM-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-MOREM-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-MOREM-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-MOREM-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-MOREM-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-MOREM-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-MOREM-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -44808,23 +45320,39 @@
     "COSMOS-MORLY-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-MORLY-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-MORLY-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-MORLY-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-MORLY-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-MORLY-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-MORLY-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -45990,23 +46518,39 @@
     "COSMOS-NWYKE-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-NWYKE-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-NWYKE-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-NWYKE-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-NWYKE-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-NWYKE-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-NWYKE-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -47172,23 +47716,39 @@
     "COSMOS-PLYNL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-PLYNL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-PLYNL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-PLYNL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-PLYNL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-PLYNL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-PLYNL-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -48523,23 +49083,39 @@
     "COSMOS-PORTN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-PORTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-PORTN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-PORTN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-PORTN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-PORTN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-PORTN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -49705,23 +50281,39 @@
     "COSMOS-RDMER-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-RDMER-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-RDMER-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-RDMER-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-RDMER-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-RDMER-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-RDMER-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -50887,23 +51479,39 @@
     "COSMOS-REDHL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-REDHL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-REDHL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-REDHL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-REDHL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-REDHL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-REDHL-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -52100,23 +52708,39 @@
     "COSMOS-RISEH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-RISEH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-RISEH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-RISEH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-RISEH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-RISEH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-RISEH-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -53677,23 +54301,39 @@
     "COSMOS-ROTHD-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-ROTHD-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-ROTHD-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-ROTHD-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-ROTHD-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-ROTHD-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-ROTHD-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -54890,23 +55530,39 @@
     "COSMOS-SHEEP-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SHEEP-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-SHEEP-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SHEEP-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SHEEP-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-SHEEP-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SHEEP-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -56604,23 +57260,39 @@
     "COSMOS-SOURH-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SOURH-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-SOURH-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SOURH-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SOURH-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-SOURH-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SOURH-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -57955,23 +58627,39 @@
     "COSMOS-SPENF-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SPENF-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-SPENF-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SPENF-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SPENF-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-SPENF-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SPENF-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -59532,23 +60220,39 @@
     "COSMOS-STGHT-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-STGHT-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-STGHT-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-STGHT-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-STGHT-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-STGHT-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-STGHT-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -60773,23 +61477,39 @@
     "COSMOS-STIPS-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-STIPS-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-STIPS-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-STIPS-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-STIPS-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-STIPS-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-STIPS-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -61983,23 +62703,39 @@
     "COSMOS-SYDLG-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SYDLG-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-SYDLG-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SYDLG-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-SYDLG-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-SYDLG-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-SYDLG-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -63591,23 +64327,39 @@
     "COSMOS-TADHM-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-TADHM-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-TADHM-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-TADHM-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-TADHM-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-TADHM-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-TADHM-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -64773,23 +65525,39 @@
     "COSMOS-WADDN-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WADDN-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-WADDN-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WADDN-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WADDN-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-WADDN-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WADDN-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -66480,23 +67248,39 @@
     "COSMOS-WIMPL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WIMPL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-WIMPL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WIMPL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WIMPL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-WIMPL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WIMPL-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -68057,23 +68841,39 @@
     "COSMOS-WRTTL-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WRTTL-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-WRTTL-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WRTTL-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WRTTL-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-WRTTL-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WRTTL-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
@@ -69665,23 +70465,39 @@
     "COSMOS-WYTH1-COSMOS_VWC_1HOUR_PROCESSED": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WYTH1-CTS_MOD_CORR_1HOUR_PROCESSED"
+            "CCOSMOS-WYTH1-CTS_MOD_CORR_1HOUR_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WYTH1-COSMOS_VWC_NO_SNOW_1DAY_RAW": {
         "use_start_date": "2025-03-28T12:00:00Z",
         "depends_on": [
-            "COSMOS-WYTH1-CTS_MOD_CORR_1DAY_PROCESSED"
+            "CCOSMOS-WYTH1-CTS_MOD_CORR_1DAY_PROCESSED"
         ],
         "derivation": "CALCULATE",
         "method": "calculate_VWC",
         "args": {
-            "round": 1
+            "round": 1,
+            "annotation": [
+                "REF_BULKDENSITY",
+                "REF_SOC",
+                "REF_LATTICEWATER",
+                "NO_MOD",
+                "N_MAX",
+                "N_MIN"
+            ]
         }
     },
     "COSMOS-WYTH1-COSMOS_VWC_NO_SNOW_1DAY_PROCESSED": {
