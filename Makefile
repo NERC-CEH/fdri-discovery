@@ -132,6 +132,11 @@ SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
 
+# Flux Samples
+SAMPLES += $(TTL_BASE)/flux_sites.ttl
+SAMPLES += $(TTL_BASE)/flux_datasets.ttl
+SAMPLES += $(TTL_BASE)/flux_processing_configs.ttl
+
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
@@ -298,6 +303,17 @@ $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yam
 
 build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
+
+# Flux
+
+build/flux_sites.json: $(SRC)/flux/sites.json | build
+	$(RUN) /bin/bash -c "jq -c "\".sites[]\"" < $(SRC)/flux/sites.json > $@"
+
+build/flux_datasets.json: $(SRC)/flux/datasets.json | build
+	$(RUN) /bin/bash -c "jq -c "\".datasets[]\"" < $(SRC)/flux/datasets.json > $@"
+
+build/flux_processing_configs.json: $(SRC)/flux/processing_configs.json $(SQL)/flux_processing_configs.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/flux_processing_configs.jq < $(SRC)/flux/processing_configs.json > $@"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
