@@ -58,44 +58,29 @@ embedded:
             "<fdri:argument>": "{structured_value | map_to(NestedMethodArgument)}"
 
 resources:
-  - name: FluxDataset
+  - name: FluxProcessingConfiguration
     properties:
-      "@id": "<{applies_to_dataset}>"
-      "<fdri:directDependsOn>":
-        - name: DependsOn
-          requires:
-            depends_on:
-          template: "<{depends_on}>"
-      "<fdri:methodology>":
-        - name: FluxProcessingPlan
+      "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{config_id|slug}>"
+      "@type": "<fdri:InternalDataProcessingConfiguration>"
+      "<dct:type>":
+        - name: ProcessingConfigType
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/plan/{config_id|slug}>"
-            "@type": "<fdri:TimeSeriesPlan>"
-            "<fdri:uses>": <{depends_on}>
-            "<fdri:rawConfiguration>": "{raw}"
-            "<fdri:configuration>":
-              - name: FluxProcessingConfiguration
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/{config_type|slug}>"
+            "@type": "<fdri:DataProcessingConfigurationType>"
+            "<skos:inScheme>": "<::ConfigurationTypeScheme>"
+            "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
+      "<fdri:appliesToDataset>": "<{applies_to_dataset}>"
+      "<fdri:rawConfiguration>": "{raw}"
+      "<fdri:hasCurrentValue>":
+        - name: FluxProcessingConfigItem
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current>"
+            "@type": "<fdri:ConfigurationItem>"
+            "<fdri:method>":
+              - name: FluxProcessingMethod
                 properties:
-                  "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{config_id|slug}>"
-                  "@type": "<fdri:InternalDataProcessingConfiguration>"
-                  "<dct:type>":
-                    - name: ProcessingConfigType
-                      properties:
-                        "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/{config_type|slug}>"
-                        "@type": "<fdri:DataProcessingConfigurationType>"
-                        "<skos:inScheme>": "<::ConfigurationTypeScheme>"
-                        "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
-                  "<fdri:appliesToDataset>": "<{applies_to_dataset}>"
-                  "<fdri:hasCurrentValue>":
-                    - name: FluxProcessingConfigItem
-                      properties:
-                        "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current>"
-                        "@type": "<fdri:ConfigurationItem>"
-                        "<fdri:method>":
-                          - name: FluxProcessingMethod
-                            properties:
-                              "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
-                              "@type": "<fdri:DataProcessingMethod>"
-                              "<skos:inScheme>": "<::DataProcessingMethodScheme>"
-                              "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
-                        "<fdri:argument>": "{param_entries | map_to(MethodArgument)}"
+                  "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
+                  "@type": "<fdri:DataProcessingMethod>"
+                  "<skos:inScheme>": "<::DataProcessingMethodScheme>"
+                  "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
+            "<fdri:argument>": "{param_entries | map_to(MethodArgument)}"
