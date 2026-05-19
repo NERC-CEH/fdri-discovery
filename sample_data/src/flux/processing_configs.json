@@ -289,6 +289,325 @@
       "params": {
         "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin"
       }
+    },
+    {
+      "config_id": "flux-plynl-H-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-Tau-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-Tau",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-H-qc-flag",
+      "config_type": "qc",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "flux_qc_flag",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-H"
+      }
+    },
+    {
+      "config_id": "flux-plynl-Tau-qc-flag",
+      "config_type": "qc",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-Tau",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "flux_qc_flag",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-Tau"
+      }
+    },
+    {
+      "config_id": "flux-plynl-co2-flux-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-co2-flux",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-h2o-flux-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h2o-flux",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-qc-H-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-H",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-qc-Tau-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-Tau",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-wind-speed-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-wind-speed",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-wind-dir-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-wind-dir",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-VPD-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-VPD",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-sonic-temp-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-sonic-temp",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-u-var-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-u-var",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-v-var-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-v-var",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-w-var-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-w-var",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-H-despiked-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H-despiked",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-H-L2-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H-L2",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-Tau-L2-process",
+      "config_type": "process",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-Tau-L2",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "process",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed"
+      }
+    },
+    {
+      "config_id": "flux-plynl-SHF-derivation",
+      "config_type": "calculate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-SHF",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "calc_flux_mean_shf",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": [
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf1-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf2-30min"
+        ]
+      }
+    },
+    {
+      "config_id": "flux-plynl-LE-L1-derivation",
+      "config_type": "calculate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L1",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "calc_flux_le_l1",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": [
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rn-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-SHF",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H"
+        ]
+      }
+    },
+    {
+      "config_id": "flux-plynl-LE-L1-range",
+      "config_type": "qc",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L1",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "range",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "lt": -50.0,
+        "gt": 600.0
+      }
+    },
+    {
+      "config_id": "flux-plynl-ET-L1-derivation",
+      "config_type": "calculate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-ET-L1",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "calc_flux_et_l1",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": [
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L1",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-ta-30min"
+        ]
+      }
+    },
+    {
+      "config_id": "flux-plynl-LE-L2-derivation",
+      "config_type": "calculate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L2",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "calc_flux_le_l2",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": [
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rn-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-SHF",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H-L2"
+        ]
+      }
+    },
+    {
+      "config_id": "flux-plynl-LE-L2-range",
+      "config_type": "qc",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L2",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "range",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "lt": -50.0,
+        "gt": 600.0
+      }
+    },
+    {
+      "config_id": "flux-plynl-ET-L2-derivation",
+      "config_type": "calculate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-ET-L2",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "calc_flux_et_l2",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": [
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L2",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-ta-30min"
+        ]
+      }
     }
   ]
 }
