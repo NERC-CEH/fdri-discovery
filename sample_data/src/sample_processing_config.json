@@ -1,0 +1,86 @@
+{
+    "configurations":[
+        {
+        "id": "cosmos-bunny-ta_30min_processed-range",
+            "type": "qc",
+            "method": "range",
+            "parameters": [
+                { "param": "lt", "value": -35 },
+                { "param": "gt", "value": 50 }
+            ]
+        },
+        {
+            "id": "cosmos-bunny-ta_30min_processed-error_code",
+            "type": "qc",
+            "method": "error_code",
+            "parameters": [
+                { "param": "value", "value": [7999, 8999] }
+            ]
+        },
+        {
+            "id": "cosmos-bunny-ta_30min_processed-spike",
+            "type": "qc",
+            "method": "spike",
+            "parameters": [
+                { "param": "gt", "value": 8.0 }
+            ]
+        },
+        {
+            "id": "cosmos-bunny-ta_30min_processed-samples",
+            "type": "qc",
+            "method": "samples",
+            "dep_ts": "COSMOS-BUNNY-SCANS_30MIN_RAW",
+            "parameters": [
+                { "param": "lt", "value": 60.0 }
+            ]
+        },
+        {
+            "id": "cosmos-bunny-ta_30min_processed-battery_v",
+            "type": "qc",
+            "method": "battery_v",
+            "dep_ts": "COSMOS-BUNNY-BATTV_30MIN_RAW",
+            "parameters": [
+                { "param": "lt", "value": 10.5 }
+            ]
+        },
+        {
+            "id": "infill_ta_30min_processed",
+            "type": "infill",
+            "method": "linear_linear",
+            "parameters": [
+                { "param": "window", "value": 1 },
+                { "param": "max_gap_size", "value": 10 }
+            ],
+            "obs_start": "2023-01-01T00:00:00Z"
+        },
+        {
+            "id": "complete_example",
+            "type": "qc|infill|correction|process",
+            "method": "method_name",
+            "load_ts": "DATA_SOURCE",
+            "dep_ts": "DATA_SOURCE",
+            "parameters": [
+                { "param": "example_param", "value": 42 },
+                { "param": "example_param2", "value": [1, 2, 3] },
+                { "param": "example_param3", "nested": [
+                    { "param": "nested_param1", "value": "nested_value1" },
+                    { "param": "nested_param2", "value": [4, 5, 6] }
+                ]}
+            ]
+        }
+    ],
+    "plans": [
+        {
+            "id": "cosmos-bunny-ta_30min_processed",
+            "input": "cosmos-bunny-ta_30min_raw",
+            "steps": [
+                "cosmos-bunny-ta_30min_processed-range",
+                "cosmos-bunny-ta_30min_processed-error_code",
+                "cosmos-bunny-ta_30min_processed-spike",
+                "cosmos-bunny-ta_30min_processed-samples",
+                "cosmos-bunny-ta_30min_processed-battery_v",
+                "infill_ta_30min_processed"
+            ]
+         }
+    ]
+}
