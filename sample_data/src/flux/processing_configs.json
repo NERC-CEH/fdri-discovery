@@ -1,0 +1,294 @@
+{
+  "processing_configs": [
+    {
+      "config_id": "flux-plynl-eddypro",
+      "config_type": "eddypro",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "eddypro-run",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": [
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-raw",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-ta-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rh-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-pa-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf1-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf2-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rn-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin-30min",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-dynamic-sonic-azimuth",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-dynamic-height-measurement",
+          "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-dynamic-height-canopy"
+        ],
+        "software_version": "7.0.9",
+        "file_prototype": "TOA5_25623.Time_Series_00_yyyy_mm_dd_HHMM.dat",
+        "master_sonic": "csat3_1",
+        "acquisition_frequency": 20.0,
+        "file_duration": 30,
+        "canopy_height": 0.2,
+        "displacement_height": 0.13,
+        "roughness_length": 0.01,
+        "column_mapping": [
+          {
+            "variable": "not_numeric",
+            "instrument": "",
+            "unit_in": "",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "u",
+            "instrument": "csat3_1",
+            "unit_in": "m_sec",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "v",
+            "instrument": "csat3_1",
+            "unit_in": "m_sec",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "w",
+            "instrument": "csat3_1",
+            "unit_in": "m_sec",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "ts",
+            "instrument": "csat3_1",
+            "unit_in": "celsius",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "anemometer_diagnostic",
+            "instrument": "csat3_1",
+            "unit_in": "dimensionless",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "co2",
+            "instrument": "generic_closed_path_1",
+            "measure_type": "mixing_ratio",
+            "unit_in": "ppm",
+            "conversion": ""
+          },
+          {
+            "variable": "h2o",
+            "instrument": "generic_closed_path_1",
+            "measure_type": "mixing_ratio",
+            "unit_in": "ppt",
+            "conversion": ""
+          },
+          {
+            "variable": "Diagnostic_irga",
+            "instrument": "generic_closed_path_1",
+            "measure_type": "other",
+            "unit_in": "dimensionless",
+            "conversion": "gain_offset"
+          },
+          {
+            "variable": "air_t",
+            "instrument": "other",
+            "unit_in": "celsius",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "cell_t",
+            "instrument": "generic_closed_path_1",
+            "unit_in": "celsius",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "int_p",
+            "instrument": "generic_closed_path_1",
+            "unit_in": "kpa",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "co2_signal_strength",
+            "instrument": "csat3_1",
+            "measure_type": "other",
+            "unit_in": "dimensionless",
+            "conversion": "gain_offset"
+          },
+          {
+            "variable": "h2o_signal_strength",
+            "instrument": "generic_closed_path_1",
+            "measure_type": "other",
+            "unit_in": "dimensionless",
+            "conversion": "gain_offset"
+          },
+          {
+            "variable": "PA_diff",
+            "instrument": "other",
+            "measure_type": "other",
+            "unit_in": "kpa",
+            "conversion": ""
+          },
+          {
+            "variable": "air_p",
+            "instrument": "other",
+            "unit_in": "kpa",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "flowrate",
+            "instrument": "other",
+            "unit_in": "lit_m",
+            "measure_type": "",
+            "conversion": ""
+          },
+          {
+            "variable": "ignore",
+            "instrument": "other",
+            "unit_in": "dimensionless",
+            "measure_type": "",
+            "conversion": "gain_offset"
+          }
+        ],
+        "instrument_specs": [
+          {
+            "manufacturer": "csi",
+            "model": "csat3_1",
+            "sw_version": "",
+            "id": "",
+            "height": 2.85,
+            "wformat": "uvw",
+            "wref": "",
+            "head_corr": 0,
+            "north_offset": 256.0,
+            "northward_separation": 0.0,
+            "eastward_separation": 0.0,
+            "vertical_separation": 0.0,
+            "vpath_length": 1.0,
+            "hpath_length": 1.0,
+            "tau": 0.1
+          },
+          {
+            "manufacturer": "other_irga",
+            "model": "generic_closed_path_1",
+            "sw_version": "",
+            "id": "CPEC_MillFarm",
+            "tube_length": 64.5,
+            "tube_diameter": 2.2,
+            "tube_flowrate": 8.0,
+            "northward_separation": 0.5,
+            "eastward_separation": 15.35,
+            "vertical_separation": -0.6,
+            "vpath_length": 12.0,
+            "hpath_length": 0.794,
+            "tau": 0.05,
+            "kw": 0.15,
+            "ko": 0.0085
+          }
+        ]
+      }
+    },
+    {
+      "config_id": "flux-plynl-raw-load-local-copy",
+      "config_type": "load-local-copy",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-raw",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "load-local-copy",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {}
+    },
+    {
+      "config_id": "flux-plynl-biomet-ta-30min-aggregate",
+      "config_type": "aggregate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-ta-30min",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "mean",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-ta"
+      }
+    },
+    {
+      "config_id": "flux-plynl-biomet-rh-30min-aggregate",
+      "config_type": "aggregate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rh-30min",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "mean",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rh"
+      }
+    },
+    {
+      "config_id": "flux-plynl-biomet-pa-30min-aggregate",
+      "config_type": "aggregate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-pa-30min",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "mean",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-pa"
+      }
+    },
+    {
+      "config_id": "flux-plynl-biomet-shf1-30min-aggregate",
+      "config_type": "aggregate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf1-30min",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "mean",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf1"
+      }
+    },
+    {
+      "config_id": "flux-plynl-biomet-shf2-30min-aggregate",
+      "config_type": "aggregate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf2-30min",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "mean",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf2"
+      }
+    },
+    {
+      "config_id": "flux-plynl-biomet-rn-30min-aggregate",
+      "config_type": "aggregate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rn-30min",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "mean",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rn"
+      }
+    },
+    {
+      "config_id": "flux-plynl-biomet-swin-30min-aggregate",
+      "config_type": "aggregate",
+      "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin-30min",
+      "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
+      "method": "mean",
+      "start_date": "2024-01-01T00:00:00Z",
+      "end_date": null,
+      "params": {
+        "dep_ts": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin"
+      }
+    }
+  ]
+}

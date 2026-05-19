@@ -1,0 +1,39 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - extensions.py
+
+one_offs:
+  - name: FormatScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/format>"
+      "@type": <skos:ConceptScheme>
+      "<rdfs:label>": "Format Scheme"
+      "<skos:prefLabel>": "Format Scheme"
+
+resources:
+  - name: Format
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/format/{ID|slug}>"
+      "@type": <skos:Concept>
+      "<rdfs:label>": "{LABEL}@en"
+      "<skos:prefLabel>": "{LABEL}@en"
+      "<skos:notation>": "{NOTATION}"
+      "<skos:inScheme>": <::FormatScheme>
+
+  - name: RoleParent
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/format/{PARENT_ID|slug}>"
+      "^<skos:broader>": <::Format>
+
+  - name: NoRoleParent
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/format/{ID|slug}>"
+      "^<skos:hasTopConcept>": <::FormatScheme>
