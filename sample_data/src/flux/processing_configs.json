@@ -2,7 +2,7 @@
   "processing_configs": [
     {
       "config_id": "flux-plynl-eddypro",
-      "config_type": "eddypro",
+      "config_type": "calculate",
       "applies_to_dataset": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "method": "eddypro-run",
