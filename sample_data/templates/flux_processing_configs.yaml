@@ -26,11 +26,18 @@ embedded:
           "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
           "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
 
+  - name: StructuredValue
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}.structured-value-{$listIndex}>"
+      "@type": "<fdri:ConfigurationArgumentList>"
+      "<fdri:argument>": "{entries | map_to(NestedMethodArgument)}"
+
   - name: MethodArgument
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}>"
       "@type": "<fdri:ConfigurationArgument>"
       "<fdri:parameter>": <http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>
+      "<fdri:hasStructuredValue>": "{structured_value|map_to(StructuredValue)}"
       "<fdri:hasValue>":
         - name: SimpleValue
           requires:
@@ -48,14 +55,6 @@ embedded:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}.value>"
             "@type": "<schema:PropertyValue>"
             "<schema:valueReference>": "<{value}>"
-      "<fdri:hasStructuredValue>":
-        - name: StructuredValue
-          requires:
-            structured_value:
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}.structured-value>"
-            "@type": "<fdri:ConfigurationArgumentList>"
-            "<fdri:argument>": "{structured_value | map_to(NestedMethodArgument)}"
 
 resources:
   - name: FluxProcessingConfiguration
