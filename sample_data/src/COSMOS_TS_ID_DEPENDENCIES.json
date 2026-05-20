@@ -72559,7 +72559,7 @@
         "args": {
             "round": 5,
             "wind_height": {
-                "platform": "cosmos-gisbn-ws_anem",
+                "platform": "cosmos-gisbn-aws_anem",
                 "attribute": "deployedHeight",
                 "source": "deployment"
             }
