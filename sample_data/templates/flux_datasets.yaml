@@ -1,6 +1,8 @@
 globals:
     $baseURI: http://fdri.ceh.ac.uk/
     $datasetID: default
+    RAW_SOURCE_BUCKET: fdri-discovery-raw-data
+    PROCESSED_SOURCE_BUCKET: fdri-discovery-processed-data
 
 imports:
     - namespaces.yaml
@@ -54,7 +56,15 @@ resources:
                   "@type": "<fdri:Aggregation>"
                   "<fdri:resolution>": "{resolution}^^<xsd:duration>"
                   "<fdri:periodicity>": "{periodicity}^^<xsd:duration>"
-      "<fdri:sourceBucket>": "{source_bucket}"
+      "<fdri:sourceBucket>":
+        - name: RAW_BUCKET
+          requires:
+            processing_level: raw
+          pattern: "{RAW_SOURCE_BUCKET}"
+        - name: PROCESSED_BUCKET
+          requires:
+            processing_level: processed
+          pattern: "{PROCESSED_SOURCE_BUCKET}"
       "<fdri:sourceDataset>": "{source_dataset}"
       "<fdri:sourceColumnName>": "{source_column}"
       "<fdri:sourceTimeColumnName>": "{time_column_name}"
