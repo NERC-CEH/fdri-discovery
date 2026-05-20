@@ -32,7 +32,15 @@ resources:
           properties:
             "@id": "<{dataset_id}#distribution>"
             "@type": "<dcat:Distribution>"
-            "<dct:accessURL>": "s3://{source_bucket}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
+            "<dct:accessURL>":
+              - name: RAW_BUCKET
+                requires:
+                  processing_level: raw
+                pattern: "s3://{RAW_SOURCE_BUCKET}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
+              - name: PROCESSED_BUCKET
+                requires:
+                  processing_level: processed
+                pattern: "s3://{PROCESSED_SOURCE_BUCKET}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
             "<dct:format>": "<::GhgFormat>"
 
   - name: FluxTimeSeriesDataset
