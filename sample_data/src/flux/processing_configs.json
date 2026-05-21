@@ -36,126 +36,144 @@
             "instrument": "",
             "unit_in": "",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 0
           },
           {
             "variable": "u",
             "instrument": "csat3_1",
             "unit_in": "m_sec",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 1
           },
           {
             "variable": "v",
             "instrument": "csat3_1",
             "unit_in": "m_sec",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 2
           },
           {
             "variable": "w",
             "instrument": "csat3_1",
             "unit_in": "m_sec",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 3
           },
           {
             "variable": "ts",
             "instrument": "csat3_1",
             "unit_in": "celsius",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 4
           },
           {
             "variable": "anemometer_diagnostic",
             "instrument": "csat3_1",
             "unit_in": "dimensionless",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 5
           },
           {
             "variable": "co2",
             "instrument": "generic_closed_path_1",
             "measure_type": "mixing_ratio",
             "unit_in": "ppm",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 6
           },
           {
             "variable": "h2o",
             "instrument": "generic_closed_path_1",
             "measure_type": "mixing_ratio",
             "unit_in": "ppt",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 7
           },
           {
             "variable": "Diagnostic_irga",
             "instrument": "generic_closed_path_1",
             "measure_type": "other",
             "unit_in": "dimensionless",
-            "conversion": "gain_offset"
+            "conversion": "gain_offset",
+            "column_index": 8
           },
           {
             "variable": "air_t",
             "instrument": "other",
             "unit_in": "celsius",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 9
           },
           {
             "variable": "cell_t",
             "instrument": "generic_closed_path_1",
             "unit_in": "celsius",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 10
           },
           {
             "variable": "int_p",
             "instrument": "generic_closed_path_1",
             "unit_in": "kpa",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 11
           },
           {
             "variable": "co2_signal_strength",
             "instrument": "csat3_1",
             "measure_type": "other",
             "unit_in": "dimensionless",
-            "conversion": "gain_offset"
+            "conversion": "gain_offset",
+            "column_index": 12
           },
           {
             "variable": "h2o_signal_strength",
             "instrument": "generic_closed_path_1",
             "measure_type": "other",
             "unit_in": "dimensionless",
-            "conversion": "gain_offset"
+            "conversion": "gain_offset",
+            "column_index": 13
           },
           {
             "variable": "PA_diff",
             "instrument": "other",
             "measure_type": "other",
             "unit_in": "kpa",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 14
           },
           {
             "variable": "air_p",
             "instrument": "other",
             "unit_in": "kpa",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 15
           },
           {
             "variable": "flowrate",
             "instrument": "other",
             "unit_in": "lit_m",
             "measure_type": "",
-            "conversion": ""
+            "conversion": "",
+            "column_index": 16
           },
           {
             "variable": "ignore",
             "instrument": "other",
             "unit_in": "dimensionless",
             "measure_type": "",
-            "conversion": "gain_offset"
+            "conversion": "gain_offset",
+            "column_index": 17
           }
         ],
         "instrument_specs": [
