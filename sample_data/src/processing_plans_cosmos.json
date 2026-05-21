@@ -7403,7 +7403,6 @@
     {
       "id": "cosmos-chimn-precip_tipping_1day-plan",
       "output": "cosmos-chimn-precip_tipping_1day_processed",
-      "input": "cosmos-chimn-precip_tipping_30min_processed",
       "steps": [
         "cosmos-chimn-precip_tipping_1day-sum"
       ]
@@ -50796,7 +50795,6 @@
     {
       "id": "cosmos-sheep-precip_tipping_1day-plan",
       "output": "cosmos-sheep-precip_tipping_1day_processed",
-      "input": "cosmos-sheep-precip_tipping_30min_processed",
       "steps": [
         "cosmos-sheep-precip_tipping_1day-sum"
       ]
@@ -59902,7 +59900,6 @@
     {
       "id": "cosmos-waddn-precip_tipping_1day-plan",
       "output": "cosmos-waddn-precip_tipping_1day_processed",
-      "input": "cosmos-waddn-precip_tipping_30min_processed",
       "steps": [
         "cosmos-waddn-precip_tipping_1day-sum"
       ]

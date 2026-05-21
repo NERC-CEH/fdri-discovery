@@ -33178,7 +33178,7 @@
     },
     {
       "id": "cosmos-chimn-precip_tipping_30min-get_precip_tipping",
-      "type": "calculation",
+      "type": "calculate",
       "method": "get_precip_tipping",
       "dep_ts": [
         "COSMOS-CHIMN-PRECIP_TIPPING_A_30MIN_PROCESSED",
@@ -228268,7 +228268,7 @@
     },
     {
       "id": "cosmos-sheep-precip_tipping_30min-get_precip_tipping",
-      "type": "calculation",
+      "type": "calculate",
       "method": "get_precip_tipping",
       "dep_ts": [
         "COSMOS-SHEEP-PRECIP_TIPPING_A_30MIN_PROCESSED",
@@ -269106,7 +269106,7 @@
     },
     {
       "id": "cosmos-waddn-precip_tipping_30min-get_precip_tipping",
-      "type": "calculation",
+      "type": "calculate",
       "method": "get_precip_tipping",
       "dep_ts": [
         "COSMOS-WADDN-PRECIP_TIPPING_A_30MIN_PROCESSED",
