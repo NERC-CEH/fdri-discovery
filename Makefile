@@ -75,6 +75,9 @@ SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
 # Stop-gap temporal extents
 SAMPLES += $(TTL_BASE)/ts_temporal.ttl
+# New COSMOS processing configurations
+SAMPLES += $(TTL_BASE)/processing_configurations_cosmos.ttl
+SAMPLES += $(TTL_BASE)/processing_plans_cosmos.ttl
 
 # NRFA
 SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
@@ -304,6 +307,15 @@ $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yam
 
 build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
+
+build/processing_configurations_cosmos.json: $(SRC)/processing_configurations_cosmos.json $(SQL)/processing_configurations.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_cosmos.json > $@"
+
+build/processing_plans_cosmos.json: $(SRC)/processing_plans_cosmos.json $(SQL)/processing_plans.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_cosmos.json > $@"
+
+$(TTL_BASE)/processing_plans_cosmos.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json | build/data
+	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json $@
 
 # Flux
 

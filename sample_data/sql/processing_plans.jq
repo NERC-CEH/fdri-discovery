@@ -1,0 +1,1 @@
+to_entries | map(.key as $site | .value | map(. + {"site": $site})) | flatten | .[]_
