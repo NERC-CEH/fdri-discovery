@@ -1,0 +1,2 @@
+ID,PARENT_ID,NAME,DESCRIPTION
+infill,,"Infill",The process of filling in missing data points in a time series, often using interpolation or other estimation techniques."

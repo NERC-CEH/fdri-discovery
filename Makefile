@@ -33,12 +33,14 @@ RECORDS = \
 SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
-SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
+SAMPLES += $(TTL_BASE)/CONFIGURATION_TYPES.ttl
+# Replaced by processing_plans_cosmos.ttl
+# SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
 SAMPLES += $(TTL_BASE)/COSMOS_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/cosmos_ts_parameters.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
-SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
+# SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/FACILITY_USAGE_ROLES.ttl
 SAMPLES += $(TTL_BASE)/FLAG_TYPES_LINES.ttl
@@ -310,6 +312,9 @@ build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMO
 
 build/processing_configurations_cosmos.json: $(SRC)/processing_configurations_cosmos.json $(SQL)/processing_configurations.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_cosmos.json > $@"
+
+$(TTL_BASE)/processing_configurations_cosmos.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_configurations.yaml build/processing_configurations_cosmos.json | build/data
+	$(MAPPER) $(TPL)/processing_configurations.yaml build/processing_configurations_cosmos.json $@
 
 build/processing_plans_cosmos.json: $(SRC)/processing_plans_cosmos.json $(SQL)/processing_plans.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_cosmos.json > $@"

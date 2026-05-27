@@ -1,1 +1,1 @@
-to_entries | map(.key as $site | .value | map(. + {"site": $site})) | flatten | .[]_
+to_entries | map(.key as $site | .value | map(. + {"site": $site})) | flatten | .[] | if .steps then . + {"steps_raw": .steps|tostring, "steps": .steps | map({"configuration": .})} else . end
