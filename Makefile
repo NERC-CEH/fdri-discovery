@@ -38,7 +38,8 @@ SAMPLES += $(TTL_BASE)/CONFIGURATION_TYPES.ttl
 # SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
 SAMPLES += $(TTL_BASE)/COSMOS_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/cosmos_ts_parameters.ttl
-SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
+# Replaced by processing_plans_cosmos.ttl
+# SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
 # SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
@@ -46,7 +47,8 @@ SAMPLES += $(TTL_BASE)/FACILITY_USAGE_ROLES.ttl
 SAMPLES += $(TTL_BASE)/FLAG_TYPES_LINES.ttl
 SAMPLES += $(TTL_BASE)/FORMATS.ttl
 SAMPLES += $(TTL_BASE)/CORE_FLAG_SCHEME.ttl
-SAMPLES += $(TTL_BASE)/infill_config.ttl
+# Replaced by processing_plans_cosmos.ttl
+# SAMPLES += $(TTL_BASE)/infill_config.ttl
 SAMPLES += $(TTL_BASE)/INSTRUMENTATION.ttl
 SAMPLES += $(TTL_BASE)/instrumentation_parameters.ttl
 SAMPLES += $(TTL_BASE)/LAND_COVER_LCM_CLASSES.ttl
@@ -60,7 +62,8 @@ SAMPLES += $(TTL_BASE)/PARAMETERS_IDS.ttl
 # SAMPLES += $(TTL_BASE)/phenocam_mask_config.ttl
 SAMPLES += $(TTL_BASE)/PROCEDURE_TYPES.ttl
 SAMPLES += $(TTL_BASE)/processingLevels.ttl
-SAMPLES += $(TTL_BASE)/QC_CONFIGS.ttl
+# Replaced by processing_plans_cosmos.ttl
+# SAMPLES += $(TTL_BASE)/QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/sensor_deployments.ttl
 SAMPLES += $(TTL_BASE)/sensor_faults.ttl
 SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
