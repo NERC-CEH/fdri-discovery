@@ -20,7 +20,7 @@ FDRI-SE-CARWE-01-RN_1MIN_RAW,RN_1MIN_RAW,RN,NA,SE-CARWE-01,ukceh-dri-staging-ing
 FDRI-SE-CARWE-01-TA_1MIN_RAW,TA_1MIN_RAW,TEMP_AIR,NA,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,RAW
 FDRI-SE-CARWE-01-DEWPOINT_1MIN_RAW,DEWPOINT_1MIN_RAW,DEW_POINT,NA,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,DewPoint_C,time,RAW
 FDRI-SE-CARWE-01-TS100_FAN_RPM_1MIN_RAW,TS100_FAN_RPM_1MIN_RAW,REVOLUTIONS,NA,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,TS100SS_Fan_RPM,time,RAW
-FDRI-SE-CARWE-01-TA_1MIN_PROCESSED,TA_1MIN_PROCESSED,TEMP_AIR,NA,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,RAW
+FDRI-SE-CARWE-01-TA_1MIN_PROCESSED,TA_1MIN_PROCESSED,TEMP_AIR,NA,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,PROCESSED
 FDRI-SE-HAFRF-07-BATTV_1MIN_RAW,BATTV_1MIN_RAW,VOLTAGE_BATT,LOGGER,SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,BattV,time,RAW
 FDRI-SE-HAFRF-07-LOGGER_TEMP_1MIN_RAW,LOGGER_TEMP_1MIN_RAW,TEMP_LOGGER,LOGGER,SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,PTemp_C,time,RAW
 FDRI-SE-HAFRF-07-WATER_LEV_PT_1MIN_RAW,WATER_LEV_PT_1MIN_RAW,WATER_LEVEL,NA,SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Lvl_cm_Avg,time,RAW
