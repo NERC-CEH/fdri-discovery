@@ -1,0 +1,30 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+
+embedded:
+  - name: DataProcessingStep
+    properties:
+      "@id": "<{$parentID}#step-{$listIndex}>"
+      "@type": "<fdri:TimeSeriesPlanStep>"
+      "<fdri:index>": "{$listIndex|asInt}"
+      "<fdri:configuration>":
+        - name: ConfigurationStub
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{configuration|slug}>"
+            "@type": "<fdri:InternalDataProcessingConfiguration>"
+            "<fdri:appliesToDataset>": "<http://fdri.ceh.ac.uk/id/dataset/{output|slug}>"
+
+resources:
+  - name: DataProcessingPlan
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/plan/{id}>"
+      "@type": "<fdri:TimeSeriesPlan>"
+      "^<fdri:methodology>": "<http://fdri.ceh.ac.uk/id/dataset/{output|slug}>"
+      "<dct:hasPart>": "{steps|map_to(DataProcessingStep)}"
+      "<fdri:rawConfiguration>": "{steps_raw}"
+  

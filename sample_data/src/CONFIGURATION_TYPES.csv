@@ -1,0 +1,6 @@
+ID,PARENT_ID,NAME,DESCRIPTION
+AGGREGATE,,"Aggregate","The process of summarizing or combining data points in a time series, often using statistical measures such as mean, max, min, etc."
+CALCULATE,,"Calculate","The process of performing mathematical operations on data points in a time series to derive new values or metrics."
+CORRECTION,,"Correction","The process of adjusting data points in a time series to account for known biases, errors, or other factors that may affect the accuracy of the data."
+QC,,"Quality Control","The process of identifying and removing erroneous or suspect data points in a time series based on predefined criteria or rules."
+INFILL,,"Infill","The process of filling in missing data points in a time series, often using interpolation or other estimation techniques."
