@@ -23,7 +23,7 @@ resources:
   - name: OutputDataset
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/dataset/{output|slug}>"
-      "<fdri:directDepndsOn>": "<http://fdri.ceh.ac.uk/id/dataset/{input|slug}>"
+      "<fdri:directDependsOn>": "<http://fdri.ceh.ac.uk/id/dataset/{input|slug}>"
       
   - name: DataProcessingPlan
     properties:
