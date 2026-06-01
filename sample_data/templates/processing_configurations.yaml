@@ -60,6 +60,6 @@ resources:
                 properties:
                   "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.loadts>"
                   "@type": "<fdri:ConfigurationItemArgument>"
-                  "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/load_ts>"
+                  "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts>"
                   "<fdri:hasValue>": "{load_ts|map_to(DepTimeSeriesValue)}"
 
