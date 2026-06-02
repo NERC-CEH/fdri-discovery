@@ -729,8 +729,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-07-28 14:00:00",
-        "end_date": "2016-07-29 00:00:00"
+        "start_date": "2016-07-28T14:00:00",
+        "end_date": "2016-07-29T00:00:00"
       }
     },
     {
@@ -744,8 +744,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-11-02 00:00:00",
-        "end_date": "2016-11-03 00:00:00"
+        "start_date": "2016-11-02T00:00:00",
+        "end_date": "2016-11-03T00:00:00"
       }
     },
     {
@@ -759,8 +759,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-11-19 17:00:00",
-        "end_date": "2016-11-20 00:00:00"
+        "start_date": "2016-11-19T17:00:00",
+        "end_date": "2016-11-20T00:00:00"
       }
     },
     {
@@ -774,8 +774,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-01-26 13:30:00",
-        "end_date": "2017-01-27 00:00:00"
+        "start_date": "2017-01-26T13:30:00",
+        "end_date": "2017-01-27T00:00:00"
       }
     },
     {
@@ -789,8 +789,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-05-16 07:30:00",
-        "end_date": "2017-05-17 00:00:00"
+        "start_date": "2017-05-16T07:30:00",
+        "end_date": "2017-05-17T00:00:00"
       }
     },
     {
@@ -804,8 +804,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-08-25 09:00:00",
-        "end_date": "2017-08-26 00:00:00"
+        "start_date": "2017-08-25T09:00:00",
+        "end_date": "2017-08-26T00:00:00"
       }
     },
     {
@@ -819,8 +819,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-11-10 11:30:00",
-        "end_date": "2017-11-11 00:00:00"
+        "start_date": "2017-11-10T11:30:00",
+        "end_date": "2017-11-11T00:00:00"
       }
     },
     {
@@ -834,8 +834,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-03-12 12:00:00",
-        "end_date": "2018-03-13 00:00:00"
+        "start_date": "2018-03-12T12:00:00",
+        "end_date": "2018-03-13T00:00:00"
       }
     },
     {
@@ -849,8 +849,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-06-01 09:30:00",
-        "end_date": "2018-06-02 00:00:00"
+        "start_date": "2018-06-01T09:30:00",
+        "end_date": "2018-06-02T00:00:00"
       }
     },
     {
@@ -864,8 +864,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-09-14 14:30:00",
-        "end_date": "2018-09-15 00:00:00"
+        "start_date": "2018-09-14T14:30:00",
+        "end_date": "2018-09-15T00:00:00"
       }
     },
     {
@@ -879,8 +879,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-10-29 11:30:00",
-        "end_date": "2018-10-30 00:00:00"
+        "start_date": "2018-10-29T11:30:00",
+        "end_date": "2018-10-30T00:00:00"
       }
     },
     {
@@ -894,8 +894,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-01 10:30:00",
-        "end_date": "2016-08-02 00:00:00"
+        "start_date": "2016-08-01T10:30:00",
+        "end_date": "2016-08-02T00:00:00"
       }
     },
     {
@@ -909,8 +909,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-12-20 10:00:00",
-        "end_date": "2018-12-20 11:30:00"
+        "start_date": "2018-12-20T10:00:00",
+        "end_date": "2018-12-20T11:30:00"
       }
     },
     {
@@ -924,8 +924,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-02 10:00:00",
-        "end_date": "2016-08-03 00:00:00"
+        "start_date": "2016-08-02T10:00:00",
+        "end_date": "2016-08-03T00:00:00"
       }
     },
     {
@@ -939,8 +939,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-17 00:30:00",
-        "end_date": "2016-08-18 00:00:00"
+        "start_date": "2016-08-17T00:30:00",
+        "end_date": "2016-08-18T00:00:00"
       }
     },
     {
@@ -954,8 +954,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-20 06:30:00",
-        "end_date": "2016-08-21 00:00:00"
+        "start_date": "2016-08-20T06:30:00",
+        "end_date": "2016-08-21T00:00:00"
       }
     },
     {
@@ -969,8 +969,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-21 01:30:00",
-        "end_date": "2016-08-22 00:00:00"
+        "start_date": "2016-08-21T01:30:00",
+        "end_date": "2016-08-22T00:00:00"
       }
     },
     {
@@ -984,8 +984,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-22 10:30:00",
-        "end_date": "2016-08-23 00:00:00"
+        "start_date": "2016-08-22T10:30:00",
+        "end_date": "2016-08-23T00:00:00"
       }
     },
     {
@@ -999,8 +999,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-10-03 10:30:00",
-        "end_date": "2016-10-04 00:00:00"
+        "start_date": "2016-10-03T10:30:00",
+        "end_date": "2016-10-04T00:00:00"
       }
     },
     {
@@ -1014,8 +1014,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-10-05 10:00:00",
-        "end_date": "2016-10-06 00:00:00"
+        "start_date": "2016-10-05T10:00:00",
+        "end_date": "2016-10-06T00:00:00"
       }
     },
     {
@@ -1148,8 +1148,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-07-28 14:00:00",
-        "end_date": "2016-07-29 00:00:00"
+        "start_date": "2016-07-28T14:00:00",
+        "end_date": "2016-07-29T00:00:00"
       }
     },
     {
@@ -1163,8 +1163,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-11-02 00:00:00",
-        "end_date": "2016-11-03 00:00:00"
+        "start_date": "2016-11-02T00:00:00",
+        "end_date": "2016-11-03T00:00:00"
       }
     },
     {
@@ -1178,8 +1178,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-11-19 17:00:00",
-        "end_date": "2016-11-20 00:00:00"
+        "start_date": "2016-11-19T17:00:00",
+        "end_date": "2016-11-20T00:00:00"
       }
     },
     {
@@ -1193,8 +1193,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-01-26 13:30:00",
-        "end_date": "2017-01-27 00:00:00"
+        "start_date": "2017-01-26T13:30:00",
+        "end_date": "2017-01-27T00:00:00"
       }
     },
     {
@@ -1208,8 +1208,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-05-16 07:30:00",
-        "end_date": "2017-05-17 00:00:00"
+        "start_date": "2017-05-16T07:30:00",
+        "end_date": "2017-05-17T00:00:00"
       }
     },
     {
@@ -1223,8 +1223,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-08-25 09:00:00",
-        "end_date": "2017-08-26 00:00:00"
+        "start_date": "2017-08-25T09:00:00",
+        "end_date": "2017-08-26T00:00:00"
       }
     },
     {
@@ -1238,8 +1238,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-11-10 11:30:00",
-        "end_date": "2017-11-11 00:00:00"
+        "start_date": "2017-11-10T11:30:00",
+        "end_date": "2017-11-11T00:00:00"
       }
     },
     {
@@ -1253,8 +1253,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-03-12 12:00:00",
-        "end_date": "2018-03-13 00:00:00"
+        "start_date": "2018-03-12T12:00:00",
+        "end_date": "2018-03-13T00:00:00"
       }
     },
     {
@@ -1268,8 +1268,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-06-01 09:30:00",
-        "end_date": "2018-06-02 00:00:00"
+        "start_date": "2018-06-01T09:30:00",
+        "end_date": "2018-06-02T00:00:00"
       }
     },
     {
@@ -1283,8 +1283,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-09-14 14:30:00",
-        "end_date": "2018-09-15 00:00:00"
+        "start_date": "2018-09-14T14:30:00",
+        "end_date": "2018-09-15T00:00:00"
       }
     },
     {
@@ -1298,8 +1298,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-10-29 11:30:00",
-        "end_date": "2018-10-30 00:00:00"
+        "start_date": "2018-10-29T11:30:00",
+        "end_date": "2018-10-30T00:00:00"
       }
     },
     {
@@ -1313,8 +1313,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-01 10:30:00",
-        "end_date": "2016-08-02 00:00:00"
+        "start_date": "2016-08-01T10:30:00",
+        "end_date": "2016-08-02T00:00:00"
       }
     },
     {
@@ -1328,8 +1328,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-12-20 10:00:00",
-        "end_date": "2018-12-20 11:30:00"
+        "start_date": "2018-12-20T10:00:00",
+        "end_date": "2018-12-20T11:30:00"
       }
     },
     {
@@ -1343,8 +1343,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-02 10:00:00",
-        "end_date": "2016-08-03 00:00:00"
+        "start_date": "2016-08-02T10:00:00",
+        "end_date": "2016-08-03T00:00:00"
       }
     },
     {
@@ -1358,8 +1358,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-17 00:30:00",
-        "end_date": "2016-08-18 00:00:00"
+        "start_date": "2016-08-17T00:30:00",
+        "end_date": "2016-08-18T00:00:00"
       }
     },
     {
@@ -1373,8 +1373,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-20 06:30:00",
-        "end_date": "2016-08-21 00:00:00"
+        "start_date": "2016-08-20T06:30:00",
+        "end_date": "2016-08-21T00:00:00"
       }
     },
     {
@@ -1388,8 +1388,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-21 01:30:00",
-        "end_date": "2016-08-22 00:00:00"
+        "start_date": "2016-08-21T01:30:00",
+        "end_date": "2016-08-22T00:00:00"
       }
     },
     {
@@ -1403,8 +1403,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-08-22 10:30:00",
-        "end_date": "2016-08-23 00:00:00"
+        "start_date": "2016-08-22T10:30:00",
+        "end_date": "2016-08-23T00:00:00"
       }
     },
     {
@@ -1418,8 +1418,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-10-03 10:30:00",
-        "end_date": "2016-10-04 00:00:00"
+        "start_date": "2016-10-03T10:30:00",
+        "end_date": "2016-10-04T00:00:00"
       }
     },
     {
@@ -1433,8 +1433,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-10-05 10:00:00",
-        "end_date": "2016-10-06 00:00:00"
+        "start_date": "2016-10-05T10:00:00",
+        "end_date": "2016-10-06T00:00:00"
       }
     },
     {
@@ -1586,8 +1586,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-07-28 15:00:00",
-        "end_date": "2018-12-20 12:30:00"
+        "start_date": "2016-07-28T15:00:00",
+        "end_date": "2018-12-20T12:30:00"
       }
     },
     {
@@ -1716,8 +1716,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-07-28 15:00:00",
-        "end_date": "2018-12-20 12:30:00"
+        "start_date": "2016-07-28T15:00:00",
+        "end_date": "2018-12-20T12:30:00"
       }
     },
     {
@@ -2019,7 +2019,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -2065,7 +2065,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2015-03-06 00:00:00"
+        "start_date": "2015-03-06T00:00:00"
       }
     },
     {
@@ -3330,8 +3330,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-07-28 15:00:00",
-        "end_date": "2018-12-20 12:30:00"
+        "start_date": "2016-07-28T15:00:00",
+        "end_date": "2018-12-20T12:30:00"
       }
     },
     {
@@ -6123,7 +6123,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -6169,8 +6169,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2014-05-16 00:30:00",
-        "end_date": "2014-07-29 14:30:00"
+        "start_date": "2014-05-16T00:30:00",
+        "end_date": "2014-07-29T14:30:00"
       }
     },
     {
@@ -8689,7 +8689,7 @@
         "COSMOS-BALRD-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-05-16 00:00:00"
+        "start_date": "2014-05-16T00:00:00"
       }
     },
     {
@@ -10591,7 +10591,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -13207,7 +13207,7 @@
         "COSMOS-BICKL-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2015-01-28 17:00:00"
+        "start_date": "2015-01-28T17:00:00"
       }
     },
     {
@@ -14714,8 +14714,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-08-10 09:30:00",
-        "end_date": "2020-08-17 15:00:00"
+        "start_date": "2020-08-10T09:30:00",
+        "end_date": "2020-08-17T15:00:00"
       }
     },
     {
@@ -14844,8 +14844,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-08-10 09:30:00",
-        "end_date": "2020-08-17 15:00:00"
+        "start_date": "2020-08-10T09:30:00",
+        "end_date": "2020-08-17T15:00:00"
       }
     },
     {
@@ -15147,7 +15147,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -16416,8 +16416,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-08-10 09:30:00",
-        "end_date": "2020-08-17 15:00:00"
+        "start_date": "2020-08-10T09:30:00",
+        "end_date": "2020-08-17T15:00:00"
       }
     },
     {
@@ -16524,8 +16524,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-08-10 09:30:00",
-        "end_date": "2020-08-17 15:00:00"
+        "start_date": "2020-08-10T09:30:00",
+        "end_date": "2020-08-17T15:00:00"
       }
     },
     {
@@ -17793,7 +17793,7 @@
         "COSMOS-BUNNY-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2015-01-27 00:00:00"
+        "start_date": "2015-01-27T00:00:00"
       }
     },
     {
@@ -19695,7 +19695,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -22311,7 +22311,7 @@
         "COSMOS-CARDT-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2015-06-24 00:00:00"
+        "start_date": "2015-06-24T00:00:00"
       }
     },
     {
@@ -24368,7 +24368,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -29449,7 +29449,7 @@
         "COSMOS-CGARW-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-06-29 00:00:00"
+        "start_date": "2016-06-29T00:00:00"
       }
     },
     {
@@ -30339,8 +30339,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-12-17 12:00:00",
-        "end_date": "2020-01-22 13:00:00"
+        "start_date": "2019-12-17T12:00:00",
+        "end_date": "2020-01-22T13:00:00"
       }
     },
     {
@@ -30354,7 +30354,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-09-07 09:00:00"
+        "start_date": "2021-09-07T09:00:00"
       }
     },
     {
@@ -31516,7 +31516,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -32840,8 +32840,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-08-18 12:00:00",
-        "end_date": "2020-09-15 08:00:00"
+        "start_date": "2020-08-18T12:00:00",
+        "end_date": "2020-09-15T08:00:00"
       }
     },
     {
@@ -36730,7 +36730,7 @@
         "COSMOS-CHIMN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2020-02-12 14:30:00"
+        "start_date": "2020-02-12T14:30:00"
       }
     },
     {
@@ -38632,7 +38632,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -38678,8 +38678,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-05-10 13:30:00",
-        "end_date": "2016-05-11 12:30:00"
+        "start_date": "2016-05-10T13:30:00",
+        "end_date": "2016-05-11T12:30:00"
       }
     },
     {
@@ -41263,7 +41263,7 @@
         "COSMOS-CHOBH-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2015-02-24 00:00:00"
+        "start_date": "2015-02-24T00:00:00"
       }
     },
     {
@@ -43320,7 +43320,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -48401,7 +48401,7 @@
         "COSMOS-COCHN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2017-08-23 00:00:00"
+        "start_date": "2017-08-23T00:00:00"
       }
     },
     {
@@ -49223,8 +49223,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-11-16 13:00:00",
-        "end_date": "2018-01-31 10:00:00"
+        "start_date": "2017-11-16T13:00:00",
+        "end_date": "2018-01-31T10:00:00"
       }
     },
     {
@@ -50386,7 +50386,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -52937,7 +52937,7 @@
         "COSMOS-COCLP-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-11-21 00:00:00"
+        "start_date": "2014-11-21T00:00:00"
       }
     },
     {
@@ -54839,7 +54839,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -57390,7 +57390,7 @@
         "COSMOS-CRICH-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-12-02 00:00:00"
+        "start_date": "2014-12-02T00:00:00"
       }
     },
     {
@@ -59447,7 +59447,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -62216,7 +62216,7 @@
         "COSMOS-EASTB-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-08-14 00:00:00"
+        "start_date": "2014-08-14T00:00:00"
       }
     },
     {
@@ -63723,8 +63723,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-07-14 13:00:00",
-        "end_date": "2021-07-21 07:00:00"
+        "start_date": "2021-07-14T13:00:00",
+        "end_date": "2021-07-21T07:00:00"
       }
     },
     {
@@ -64137,7 +64137,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -69000,7 +69000,7 @@
         "COSMOS-ELMST-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-08-11 00:00:00"
+        "start_date": "2016-08-11T00:00:00"
       }
     },
     {
@@ -70902,7 +70902,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -75765,7 +75765,7 @@
         "COSMOS-EUSTN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-03-31 00:00:00"
+        "start_date": "2016-03-31T00:00:00"
       }
     },
     {
@@ -77667,7 +77667,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -82595,7 +82595,7 @@
         "COSMOS-FINCH-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2017-06-07 11:30:00"
+        "start_date": "2017-06-07T11:30:00"
       }
     },
     {
@@ -84497,7 +84497,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -89360,7 +89360,7 @@
         "COSMOS-FIVET-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2018-06-26 00:00:00"
+        "start_date": "2018-06-26T00:00:00"
       }
     },
     {
@@ -91485,7 +91485,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -92907,8 +92907,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-10-06 12:00:00",
-        "end_date": "2016-11-18 13:00:00"
+        "start_date": "2016-10-06T12:00:00",
+        "end_date": "2016-11-18T13:00:00"
       }
     },
     {
@@ -94269,7 +94269,7 @@
         "COSMOS-GISBN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-08-15 00:00:00"
+        "start_date": "2014-08-15T00:00:00"
       }
     },
     {
@@ -96326,7 +96326,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -99095,7 +99095,7 @@
         "COSMOS-GLENS-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-05-14 00:00:00"
+        "start_date": "2014-05-14T00:00:00"
       }
     },
     {
@@ -100284,8 +100284,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-06-15 15:00:00",
-        "end_date": "2016-06-16 00:00:00"
+        "start_date": "2016-06-15T15:00:00",
+        "end_date": "2016-06-16T00:00:00"
       }
     },
     {
@@ -100299,8 +100299,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-06-20 15:30:00",
-        "end_date": "2016-06-21 00:00:00"
+        "start_date": "2016-06-20T15:30:00",
+        "end_date": "2016-06-21T00:00:00"
       }
     },
     {
@@ -100314,8 +100314,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-06-28 09:30:00",
-        "end_date": "2018-06-29 00:00:00"
+        "start_date": "2018-06-28T09:30:00",
+        "end_date": "2018-06-29T00:00:00"
       }
     },
     {
@@ -100329,8 +100329,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-11-14 11:30:00",
-        "end_date": "2018-11-14 12:00:00"
+        "start_date": "2018-11-14T11:30:00",
+        "end_date": "2018-11-14T12:00:00"
       }
     },
     {
@@ -100344,8 +100344,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-11-14 13:30:00",
-        "end_date": "2018-11-15 00:00:00"
+        "start_date": "2018-11-14T13:30:00",
+        "end_date": "2018-11-15T00:00:00"
       }
     },
     {
@@ -100359,8 +100359,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-08-22 11:30:00",
-        "end_date": "2019-08-23 00:00:00"
+        "start_date": "2019-08-22T11:30:00",
+        "end_date": "2019-08-23T00:00:00"
       }
     },
     {
@@ -100493,8 +100493,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-06-15 15:00:00",
-        "end_date": "2016-06-16 00:00:00"
+        "start_date": "2016-06-15T15:00:00",
+        "end_date": "2016-06-16T00:00:00"
       }
     },
     {
@@ -100508,8 +100508,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-06-20 15:30:00",
-        "end_date": "2016-06-21 00:00:00"
+        "start_date": "2016-06-20T15:30:00",
+        "end_date": "2016-06-21T00:00:00"
       }
     },
     {
@@ -100523,8 +100523,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-06-28 09:30:00",
-        "end_date": "2018-06-29 00:00:00"
+        "start_date": "2018-06-28T09:30:00",
+        "end_date": "2018-06-29T00:00:00"
       }
     },
     {
@@ -100538,8 +100538,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-11-14 11:30:00",
-        "end_date": "2018-11-14 12:00:00"
+        "start_date": "2018-11-14T11:30:00",
+        "end_date": "2018-11-14T12:00:00"
       }
     },
     {
@@ -100553,8 +100553,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-11-14 13:30:00",
-        "end_date": "2018-11-15 00:00:00"
+        "start_date": "2018-11-14T13:30:00",
+        "end_date": "2018-11-15T00:00:00"
       }
     },
     {
@@ -100568,8 +100568,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-08-22 11:30:00",
-        "end_date": "2019-08-23 00:00:00"
+        "start_date": "2019-08-22T11:30:00",
+        "end_date": "2019-08-23T00:00:00"
       }
     },
     {
@@ -101177,7 +101177,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -106040,7 +106040,7 @@
         "COSMOS-GLENW-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-06-15 00:00:00"
+        "start_date": "2016-06-15T00:00:00"
       }
     },
     {
@@ -107942,7 +107942,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -112805,7 +112805,7 @@
         "COSMOS-HADLW-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-10-27 00:00:00"
+        "start_date": "2016-10-27T00:00:00"
       }
     },
     {
@@ -114707,7 +114707,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -114753,8 +114753,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2014-05-20 00:30:00",
-        "end_date": "2014-07-30 10:30:00"
+        "start_date": "2014-05-20T00:30:00",
+        "end_date": "2014-07-30T10:30:00"
       }
     },
     {
@@ -117273,7 +117273,7 @@
         "COSMOS-HARTW-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-05-20 00:00:00"
+        "start_date": "2014-05-20T00:00:00"
       }
     },
     {
@@ -118856,7 +118856,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -118902,7 +118902,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2015-05-22 12:00:00"
+        "start_date": "2015-05-22T12:00:00"
       }
     },
     {
@@ -121865,8 +121865,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2017-12-19 11:00:00",
-        "end_date": "2018-06-28 13:00:00"
+        "start_date": "2017-12-19T11:00:00",
+        "end_date": "2018-06-28T13:00:00"
       }
     },
     {
@@ -123028,7 +123028,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -125579,7 +125579,7 @@
         "COSMOS-HENFS-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2015-12-17 00:00:00"
+        "start_date": "2015-12-17T00:00:00"
       }
     },
     {
@@ -127481,7 +127481,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -132344,7 +132344,7 @@
         "COSMOS-HILLB-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-06-14 18:30:00"
+        "start_date": "2016-06-14T18:30:00"
       }
     },
     {
@@ -134246,7 +134246,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -139174,7 +139174,7 @@
         "COSMOS-HLACY-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2018-04-11 00:00:00"
+        "start_date": "2018-04-11T00:00:00"
       }
     },
     {
@@ -139433,7 +139433,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -141047,8 +141047,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-05-20 10:30:00",
-        "end_date": "2021-09-01 00:00:00"
+        "start_date": "2021-05-20T10:30:00",
+        "end_date": "2021-09-01T00:00:00"
       }
     },
     {
@@ -141069,8 +141069,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-09-01 00:30:00",
-        "end_date": "2021-10-01 00:00:00"
+        "start_date": "2021-09-01T00:30:00",
+        "end_date": "2021-10-01T00:00:00"
       }
     },
     {
@@ -141091,8 +141091,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-10-01 00:30:00",
-        "end_date": "2021-11-01 00:00:00"
+        "start_date": "2021-10-01T00:30:00",
+        "end_date": "2021-11-01T00:00:00"
       }
     },
     {
@@ -141113,8 +141113,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-11-01 00:30:00",
-        "end_date": "2021-12-01 00:00:00"
+        "start_date": "2021-11-01T00:30:00",
+        "end_date": "2021-12-01T00:00:00"
       }
     },
     {
@@ -141135,8 +141135,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-12-01 00:30:00",
-        "end_date": "2022-01-01 00:00:00"
+        "start_date": "2021-12-01T00:30:00",
+        "end_date": "2022-01-01T00:00:00"
       }
     },
     {
@@ -141157,8 +141157,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2022-01-01 00:30:00",
-        "end_date": "2022-02-01 00:00:00"
+        "start_date": "2022-01-01T00:30:00",
+        "end_date": "2022-02-01T00:00:00"
       }
     },
     {
@@ -141179,8 +141179,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2022-02-01 00:30:00",
-        "end_date": "2022-03-01 00:00:00"
+        "start_date": "2022-02-01T00:30:00",
+        "end_date": "2022-03-01T00:00:00"
       }
     },
     {
@@ -141201,8 +141201,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2022-03-01 00:30:00",
-        "end_date": "2022-04-01 00:00:00"
+        "start_date": "2022-03-01T00:30:00",
+        "end_date": "2022-04-01T00:00:00"
       }
     },
     {
@@ -141223,8 +141223,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2022-04-01 00:30:00",
-        "end_date": "2022-05-03 14:00:00"
+        "start_date": "2022-04-01T00:30:00",
+        "end_date": "2022-05-03T14:00:00"
       }
     },
     {
@@ -141360,7 +141360,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -141406,8 +141406,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2014-03-25 00:30:00",
-        "end_date": "2014-07-17 05:00:00"
+        "start_date": "2014-03-25T00:30:00",
+        "end_date": "2014-07-17T05:00:00"
       }
     },
     {
@@ -142737,8 +142737,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-12-03 15:30:00",
-        "end_date": "2020-01-24 11:30:00"
+        "start_date": "2019-12-03T15:30:00",
+        "end_date": "2020-01-24T11:30:00"
       }
     },
     {
@@ -144006,7 +144006,7 @@
         "COSMOS-HOLLN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-03-25 00:00:00"
+        "start_date": "2014-03-25T00:00:00"
       }
     },
     {
@@ -145908,7 +145908,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -150771,7 +150771,7 @@
         "COSMOS-HYBRY-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2017-08-16 00:00:00"
+        "start_date": "2017-08-16T00:00:00"
       }
     },
     {
@@ -152673,7 +152673,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -155224,7 +155224,7 @@
         "COSMOS-LIZRD-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-10-17 00:00:00"
+        "start_date": "2014-10-17T00:00:00"
       }
     },
     {
@@ -157194,7 +157194,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -162122,7 +162122,7 @@
         "COSMOS-LODTN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-04-26 23:00:00"
+        "start_date": "2016-04-26T23:00:00"
       }
     },
     {
@@ -164024,7 +164024,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -164070,8 +164070,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-05-10 10:30:00",
-        "end_date": "2016-05-11 12:30:00"
+        "start_date": "2016-05-10T10:30:00",
+        "end_date": "2016-05-11T12:30:00"
       }
     },
     {
@@ -166655,7 +166655,7 @@
         "COSMOS-LULLN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-12-16 00:00:00"
+        "start_date": "2014-12-16T00:00:00"
       }
     },
     {
@@ -168712,7 +168712,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -171481,7 +171481,7 @@
         "COSMOS-MOORH-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-12-04 00:00:00"
+        "start_date": "2014-12-04T00:00:00"
       }
     },
     {
@@ -173383,7 +173383,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -178311,7 +178311,7 @@
         "COSMOS-MOREM-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2018-11-15 00:00:00"
+        "start_date": "2018-11-15T00:00:00"
       }
     },
     {
@@ -180213,7 +180213,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -182764,7 +182764,7 @@
         "COSMOS-MORLY-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-05-14 00:00:00"
+        "start_date": "2014-05-14T00:00:00"
       }
     },
     {
@@ -184666,7 +184666,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -187217,7 +187217,7 @@
         "COSMOS-NWYKE-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-10-16 00:00:00"
+        "start_date": "2014-10-16T00:00:00"
       }
     },
     {
@@ -188561,8 +188561,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-11-15 09:00:00",
-        "end_date": "2019-11-16 00:00:00"
+        "start_date": "2019-11-15T09:00:00",
+        "end_date": "2019-11-16T00:00:00"
       }
     },
     {
@@ -188576,8 +188576,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-10-22 11:30:00",
-        "end_date": "2020-10-23 00:00:00"
+        "start_date": "2020-10-22T11:30:00",
+        "end_date": "2020-10-23T00:00:00"
       }
     },
     {
@@ -188591,8 +188591,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-10-30 14:30:00",
-        "end_date": "2020-10-31 00:00:00"
+        "start_date": "2020-10-30T14:30:00",
+        "end_date": "2020-10-31T00:00:00"
       }
     },
     {
@@ -188725,8 +188725,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-11-15 09:00:00",
-        "end_date": "2019-11-16 00:00:00"
+        "start_date": "2019-11-15T09:00:00",
+        "end_date": "2019-11-16T00:00:00"
       }
     },
     {
@@ -188740,8 +188740,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-10-22 11:30:00",
-        "end_date": "2020-10-23 00:00:00"
+        "start_date": "2020-10-22T11:30:00",
+        "end_date": "2020-10-23T00:00:00"
       }
     },
     {
@@ -188755,8 +188755,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-10-30 14:30:00",
-        "end_date": "2020-10-31 00:00:00"
+        "start_date": "2020-10-30T14:30:00",
+        "end_date": "2020-10-31T00:00:00"
       }
     },
     {
@@ -188969,8 +188969,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-11-15 09:00:00",
-        "end_date": "2020-10-29 17:30:00"
+        "start_date": "2019-11-15T09:00:00",
+        "end_date": "2020-10-29T17:30:00"
       }
     },
     {
@@ -189099,8 +189099,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-11-15 09:00:00",
-        "end_date": "2020-10-29 17:30:00"
+        "start_date": "2019-11-15T09:00:00",
+        "end_date": "2020-10-29T17:30:00"
       }
     },
     {
@@ -189402,7 +189402,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -190824,8 +190824,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-11-15 09:00:00",
-        "end_date": "2020-10-29 17:30:00"
+        "start_date": "2019-11-15T09:00:00",
+        "end_date": "2020-10-29T17:30:00"
       }
     },
     {
@@ -190932,8 +190932,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2019-11-15 09:00:00",
-        "end_date": "2020-10-29 17:30:00"
+        "start_date": "2019-11-15T09:00:00",
+        "end_date": "2020-10-29T17:30:00"
       }
     },
     {
@@ -192201,7 +192201,7 @@
         "COSMOS-PLYNL-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-11-05 00:00:00"
+        "start_date": "2014-11-05T00:00:00"
       }
     },
     {
@@ -194103,7 +194103,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -195307,8 +195307,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-01-28 11:30:00",
-        "end_date": "2020-03-04 11:30:00"
+        "start_date": "2020-01-28T11:30:00",
+        "end_date": "2020-03-04T11:30:00"
       }
     },
     {
@@ -196669,7 +196669,7 @@
         "COSMOS-PORTN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-12-18 00:00:00"
+        "start_date": "2014-12-18T00:00:00"
       }
     },
     {
@@ -198571,7 +198571,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -201122,7 +201122,7 @@
         "COSMOS-RDMER-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2015-02-11 00:00:00"
+        "start_date": "2015-02-11T00:00:00"
       }
     },
     {
@@ -203024,7 +203024,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -205640,7 +205640,7 @@
         "COSMOS-REDHL-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-02-18 00:00:00"
+        "start_date": "2016-02-18T00:00:00"
       }
     },
     {
@@ -207542,7 +207542,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -212405,7 +212405,7 @@
         "COSMOS-RISEH-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-05-04 00:00:00"
+        "start_date": "2016-05-04T00:00:00"
       }
     },
     {
@@ -214307,7 +214307,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -214353,8 +214353,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2014-08-02 14:30:00",
-        "end_date": "2014-08-06 08:30:00"
+        "start_date": "2014-08-02T14:30:00",
+        "end_date": "2014-08-06T08:30:00"
       }
     },
     {
@@ -216938,7 +216938,7 @@
         "COSMOS-ROTHD-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-07-25 00:00:00"
+        "start_date": "2014-07-25T00:00:00"
       }
     },
     {
@@ -217828,8 +217828,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2016-04-04 15:00:00",
-        "end_date": "2016-08-24 08:30:00"
+        "start_date": "2016-04-04T15:00:00",
+        "end_date": "2016-08-24T08:30:00"
       }
     },
     {
@@ -217843,7 +217843,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-07-07 13:00:00"
+        "start_date": "2021-07-07T13:00:00"
       }
     },
     {
@@ -218610,8 +218610,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-12-03 12:30:00",
-        "end_date": "2019-06-24 13:30:00"
+        "start_date": "2018-12-03T12:30:00",
+        "end_date": "2019-06-24T13:30:00"
       }
     },
     {
@@ -218740,8 +218740,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-12-03 12:30:00",
-        "end_date": "2019-06-24 13:30:00"
+        "start_date": "2018-12-03T12:30:00",
+        "end_date": "2019-06-24T13:30:00"
       }
     },
     {
@@ -219043,7 +219043,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -220367,8 +220367,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-12-03 12:30:00",
-        "end_date": "2019-06-24 13:30:00"
+        "start_date": "2018-12-03T12:30:00",
+        "end_date": "2019-06-24T13:30:00"
       }
     },
     {
@@ -220475,8 +220475,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2018-12-03 12:30:00",
-        "end_date": "2019-06-24 13:30:00"
+        "start_date": "2018-12-03T12:30:00",
+        "end_date": "2019-06-24T13:30:00"
       }
     },
     {
@@ -224272,7 +224272,7 @@
         "COSMOS-SHEEP-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2020-02-11 15:30:00"
+        "start_date": "2020-02-11T15:30:00"
       }
     },
     {
@@ -226329,7 +226329,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -229098,7 +229098,7 @@
         "COSMOS-SOURH-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-11-19 00:00:00"
+        "start_date": "2014-11-19T00:00:00"
       }
     },
     {
@@ -230716,8 +230716,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-07-15 14:00:00",
-        "end_date": "2020-07-17 12:00:00"
+        "start_date": "2020-07-15T14:00:00",
+        "end_date": "2020-07-17T12:00:00"
       }
     },
     {
@@ -231019,7 +231019,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -232007,8 +232007,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-07-15 14:00:00",
-        "end_date": "2020-07-17 12:00:00"
+        "start_date": "2020-07-15T14:00:00",
+        "end_date": "2020-07-17T12:00:00"
       }
     },
     {
@@ -232115,8 +232115,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2020-07-15 14:00:00",
-        "end_date": "2020-07-17 12:00:00"
+        "start_date": "2020-07-15T14:00:00",
+        "end_date": "2020-07-17T12:00:00"
       }
     },
     {
@@ -235912,7 +235912,7 @@
         "COSMOS-SPENF-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2016-11-23 10:00:00"
+        "start_date": "2016-11-23T10:00:00"
       }
     },
     {
@@ -237882,7 +237882,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -240498,7 +240498,7 @@
         "COSMOS-STGHT-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2015-08-18 00:00:00"
+        "start_date": "2015-08-18T00:00:00"
       }
     },
     {
@@ -242468,7 +242468,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -245019,7 +245019,7 @@
         "COSMOS-STIPS-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-11-06 00:00:00"
+        "start_date": "2014-11-06T00:00:00"
       }
     },
     {
@@ -246921,7 +246921,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -251849,7 +251849,7 @@
         "COSMOS-SYDLG-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2018-11-27 00:00:00"
+        "start_date": "2018-11-27T00:00:00"
       }
     },
     {
@@ -253751,7 +253751,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -256302,7 +256302,7 @@
         "COSMOS-TADHM-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2014-10-14 00:00:00"
+        "start_date": "2014-10-14T00:00:00"
       }
     },
     {
@@ -257124,7 +257124,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2021-06-03 10:00:00"
+        "start_date": "2021-06-03T10:00:00"
       }
     },
     {
@@ -258286,7 +258286,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -258332,8 +258332,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2014-10-04 03:30:00",
-        "end_date": "2014-10-16 15:00:00"
+        "start_date": "2014-10-04T03:30:00",
+        "end_date": "2014-10-16T15:00:00"
       }
     },
     {
@@ -263500,7 +263500,7 @@
         "COSMOS-WADDN-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2020-02-13 15:30:00"
+        "start_date": "2020-02-13T15:30:00"
       }
     },
     {
@@ -265402,7 +265402,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -270265,7 +270265,7 @@
         "COSMOS-WIMPL-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2019-09-10 00:00:00"
+        "start_date": "2019-09-10T00:00:00"
       }
     },
     {
@@ -272167,7 +272167,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -277095,7 +277095,7 @@
         "COSMOS-WRTTL-UY_30MIN_PROCESSED"
       ],
       "observation_interval": {
-        "start_date": "2017-06-04 00:00:00"
+        "start_date": "2017-06-04T00:00:00"
       }
     },
     {
@@ -278685,7 +278685,7 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-01-01 00:30:00"
+        "start_date": "2013-01-01T00:30:00"
       }
     },
     {
@@ -278731,8 +278731,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2013-11-26 00:30:00",
-        "end_date": "2016-10-01 00:00:00"
+        "start_date": "2013-11-26T00:30:00",
+        "end_date": "2016-10-01T00:00:00"
       }
     },
     {

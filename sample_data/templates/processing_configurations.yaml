@@ -13,13 +13,13 @@ embedded:
       "@type": "<schema:PropertyValue>"
       "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{id|slug}>"
 
-  - name: NestedArgument
+  - name: StructuredArgument
     properties:
       "@id": "<{$parentID}.{child_key|slug}>"
       "@type": "<fdri:ConfigurationArgument>"
       "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{child_key|slug}>"
       "<fdri:hasValue>":
-        name: NestedArgumentValue
+        name: StructuredArgumentValue
         properties:
           "@id": "<{$parentID}.{child_key|slug}.value>"
           "@type": "<schema:PropertyValue>"
@@ -28,7 +28,7 @@ embedded:
   - name: GenericArgument
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}>"
-      "@type": "<fdri:ConfigurationItemArgument>"
+      "@type": "<fdri:ConfigurationArgument>"
       "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{param|slug}>"
       "<fdri:hasValue>":
         - name: GenericArgumentValue
@@ -45,7 +45,7 @@ embedded:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.structured>"
             "@type": "<fdri:ConfigurationArgumentList>"
-            "<fdri:argument>": "{structured_value|map_to(NestedArgument)}"
+            "<fdri:argument>": "{structured_value|map_to(StructuredArgument)}"
   
 resources:
   - name: DataProcessingConfiguration
@@ -83,7 +83,7 @@ resources:
                   dep_ts:
                 properties:
                   "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.depts>"
-                  "@type": "<fdri:ConfigurationItemArgument>"
+                  "@type": "<fdri:ConfigurationArgument>"
                   "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts>"
                   "<fdri:hasValue>": "{dep_ts|map_to(DepTimeSeriesValue)}"
               - name: LoadTimeSeries
@@ -91,7 +91,7 @@ resources:
                   load_ts:
                 properties:
                   "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.loadts>"
-                  "@type": "<fdri:ConfigurationItemArgument>"
+                  "@type": "<fdri:ConfigurationArgument>"
                   "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts>"
                   "<fdri:hasValue>": "{load_ts|map_to(DepTimeSeriesValue)}"
 
