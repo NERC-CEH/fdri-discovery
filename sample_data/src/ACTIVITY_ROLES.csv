@@ -1,0 +1,4 @@
+ID,PARENT_ID,Label,Description
+affected-system,,Affected System,System that is affected by the activity.
+calibrated-system,affected-system,Calibrated System,System that has been calibrated.
+maintained-system,affected-system,Maintained System,System that has been maintained.

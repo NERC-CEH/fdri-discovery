@@ -1,0 +1,34 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: ActivityType
+    requires:
+      ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-type/{ID|slug}>"
+      "@type": <fdri:ActivityType>
+      "<skos:inScheme>": <::ActivityTypeScheme>
+      "<skos:prefLabel>": "{Label}@en"
+      "<skos:scopeNote>": "{Description}@en"
+
+  - name: ChildActivityType
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-type/{ID|slug}>"
+      "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/activity-type/{PARENT_ID|slug}>"
+      "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/activity-type/{PARENT_ID|slug}>"
+
+  - name: TopLevelActivityType
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-type/{ID|slug}>"
+      "^<skos:hasTopConcept>": <::ActivityTypeScheme>

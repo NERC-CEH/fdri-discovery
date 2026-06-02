@@ -1,0 +1,4 @@
+ID,PARENT_ID,Label,Description
+system-related,,Environmental Monitoring System Related Activity,"Activity that relates to an environmental monitoring system."
+system-calibration,system-related,System Calibration,"Activity that relates to the calibration of an environmental monitoring system."
+system-maintenance,system-related,System Maintenance,"Activity that relates to the maintenance of an environmental monitoring system."

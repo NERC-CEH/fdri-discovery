@@ -1,0 +1,34 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: ActivityRole
+    requires:
+      ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{ID|slug}>"
+      "@type": <skos:Concept>
+      "<skos:inScheme>": <::ActivityRoleScheme>
+      "<skos:prefLabel>": "{Label}@en"
+      "<skos:scopeNote>": "{Description}@en"
+
+  - name: ChildActivityRole
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{ID|slug}>"
+      "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{PARENT_ID|slug}>"
+      "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{PARENT_ID|slug}>"
+
+  - name: TopLevelActivityRole
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/activity-role/{ID|slug}>"
+      "^<skos:hasTopConcept>": <::ActivityRoleScheme>
