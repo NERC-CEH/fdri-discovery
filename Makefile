@@ -9,7 +9,11 @@ TPL = sample_data/templates
 TTL_BASE = build/data
 SHACL_BASE = build/shacl
 SCHEMA_FILE = ontology/schema/fdri.recordspec.yaml
-MAPPER = mapper
+RAW_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$4}' branch.map)
+RAW_SOURCE_BUCKET := $(or ${RAW_SOURCE_BUCKET},fdri-dummy-ingested)
+PROCESSED_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$5}' branch.map)
+PROCESSED_SOURCE_BUCKET := $(or ${PROCESSED_SOURCE_BUCKET},fdri-dummy-processed)
+MAPPER = mapper -g RAW_SOURCE_BUCKET=${RAW_SOURCE_BUCKET} -g PROCESSED_SOURCE_BUCKET=${PROCESSED_SOURCE_BUCKET}
 GRIDMAP = gridded-mapper
 
 RECORDS = \
@@ -29,14 +33,15 @@ RECORDS = \
 SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
-SAMPLES += $(TTL_BASE)/COSMOS_TS_ID_DEPENDENCIES_LINES.ttl
+SAMPLES += $(TTL_BASE)/CONFIGURATION_TYPES.ttl
+SAMPLES += $(TTL_BASE)/COSMOS_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/cosmos_ts_parameters.ttl
-SAMPLES += $(TTL_BASE)/CORRECTION_CONFIGS_LINES.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_METHOD_PARAMS.ttl
-SAMPLES += $(TTL_BASE)/CORRECTION_METHODS.ttl
 SAMPLES += $(TTL_BASE)/CORRECTION_PARAMS.ttl
 SAMPLES += $(TTL_BASE)/FACILITY_USAGE_ROLES.ttl
-SAMPLES += $(TTL_BASE)/infill_config.ttl
+SAMPLES += $(TTL_BASE)/FLAG_TYPES_LINES.ttl
+SAMPLES += $(TTL_BASE)/FORMATS.ttl
+SAMPLES += $(TTL_BASE)/CORE_FLAG_SCHEME.ttl
 SAMPLES += $(TTL_BASE)/INSTRUMENTATION.ttl
 SAMPLES += $(TTL_BASE)/instrumentation_parameters.ttl
 SAMPLES += $(TTL_BASE)/LAND_COVER_LCM_CLASSES.ttl
@@ -50,7 +55,6 @@ SAMPLES += $(TTL_BASE)/PARAMETERS_IDS.ttl
 # SAMPLES += $(TTL_BASE)/phenocam_mask_config.ttl
 SAMPLES += $(TTL_BASE)/PROCEDURE_TYPES.ttl
 SAMPLES += $(TTL_BASE)/processingLevels.ttl
-SAMPLES += $(TTL_BASE)/QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/sensor_deployments.ttl
 SAMPLES += $(TTL_BASE)/sensor_faults.ttl
 SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
@@ -60,12 +64,16 @@ SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/STATISTICS.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
+SAMPLES += $(TTL_BASE)/timeseries_flags_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
 # Stop-gap temporal extents
 SAMPLES += $(TTL_BASE)/ts_temporal.ttl
+# COSMOS processing configurations
+SAMPLES += $(TTL_BASE)/processing_configurations_cosmos.ttl
+SAMPLES += $(TTL_BASE)/processing_plans_cosmos.ttl
 
 # NRFA
 SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
@@ -76,6 +84,7 @@ SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
+SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
@@ -123,11 +132,18 @@ SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
 SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
 
+# Flux Samples
+SAMPLES += $(TTL_BASE)/flux_sites.ttl
+SAMPLES += $(TTL_BASE)/flux_datasets.ttl
+SAMPLES += $(TTL_BASE)/flux_processing_configs.ttl
+
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
 CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
 
 REPORTS = $(SAMPLES:$(TTL_BASE)/%.ttl=$(VAL)/%.ttl)
+
+default: data
 
 data: validate reports full_validation
 all: validate schemas contexts reports full_validation
@@ -216,14 +232,8 @@ build/timeseries_measures_fdri.csv: $(SRC)/TIMESERIES_DEFS_FDRI.csv $(SRC)/TIMES
 build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMESERIES_IDS_NMDB.csv $(SQL)/timeseries_measures_nmdb.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_nmdb.sql"
 
-build/COSMOS_TS_ID_DEPENDENCIES_LINES.json: $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json $(SQL)/ts_id_dependencies.jq | build
-	$(RUN) /bin/bash -c "jq -c -f $(SQL)/ts_id_dependencies.jq < $(SRC)/COSMOS_TS_ID_DEPENDENCIES.json > $@"
-
 build/cosmos_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/cosmos_ts_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/cosmos_ts_parameters.sql"
-
-build/CORRECTION_CONFIGS_LINES.json: $(SRC)/CORRECTION_CONFIGS.json $(SQL)/CORRECTION_CONFIGS_LINES.jq | build
-	$(RUN) /bin/bash -c "jq -c -f $(SQL)/CORRECTION_CONFIGS_LINES.jq < $(SRC)/CORRECTION_CONFIGS.json > $@"
 
 build/fdri_site_assets.csv: $(SRC)/fdri_sites.csv $(SRC)/fdri_asset.csv $(SQL)/fdri_site_assets.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_site_assets.sql"
@@ -263,6 +273,53 @@ build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes
 
 build/AMS_asset_ext.csv: $(SRC)/AMS_mill_assets.csv build/AMS_sites_ext.csv $(SQL)/AMS_asset_ext.sql
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_asset_ext.sql"
+
+build/FLAG_TYPES_LINES.json: $(SRC)/flag_types.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/flag_types.json > $@"
+
+build/CORE_FLAG_SCHEME_LINES.json: $(SRC)/CORE_flag_scheme.json | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/CORE_flag_scheme.json > $@"
+
+$(TTL_BASE)/CORE_FLAG_SCHEME.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/CORE_FLAG_SCHEME_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/CORE_FLAG_SCHEME_LINES.json $@
+
+build/COSMOS_FLAG_SCHEMES_LINES.json: $(SRC)/COSMOS_flag_schemes.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/COSMOS_flag_schemes.json > $@"
+
+$(TTL_BASE)/COSMOS_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/COSMOS_FLAG_SCHEMES_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/COSMOS_FLAG_SCHEMES_LINES.json $@
+
+build/FDRI_FLAG_SCHEMES_LINES.json: $(SRC)/FDRI_flag_schemes.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/FDRI_flag_schemes.json > $@"
+
+$(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json $@
+
+build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
+
+build/processing_configurations_cosmos.json: $(SRC)/processing_configurations_cosmos.json $(SQL)/processing_configurations.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_cosmos.json > $@"
+
+$(TTL_BASE)/processing_configurations_cosmos.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_configurations.yaml build/processing_configurations_cosmos.json | build/data
+	$(MAPPER) $(TPL)/processing_configurations.yaml build/processing_configurations_cosmos.json $@
+
+build/processing_plans_cosmos.json: $(SRC)/processing_plans_cosmos.json $(SQL)/processing_plans.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_cosmos.json > $@"
+
+$(TTL_BASE)/processing_plans_cosmos.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json | build/data
+	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json $@
+
+# Flux
+
+build/flux_sites.json: $(SRC)/flux/sites.json | build
+	$(RUN) /bin/bash -c "jq -c "\".sites[]\"" < $(SRC)/flux/sites.json > $@"
+
+build/flux_datasets.json: $(SRC)/flux/datasets.json | build
+	$(RUN) /bin/bash -c "jq -c "\".datasets[]\"" < $(SRC)/flux/datasets.json > $@"
+
+build/flux_processing_configs.json: $(SRC)/flux/processing_configs.json $(SQL)/flux_processing_configs.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/flux_processing_configs.jq < $(SRC)/flux/processing_configs.json > $@"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

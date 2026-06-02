@@ -1,0 +1,85 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+
+embedded:
+  - name: NestedMethodArgument
+    properties:
+      "@id": "<{$parentID}.{child_key|slug}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:hasValue>":
+        - name: NestedArgumentValueValue
+          properties:
+            "@id": "<{$parentID}.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{value}"
+      "<fdri:parameter>":
+        name: NestedArgumentParameter
+        properties:
+          "@id": <http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}.{child_key|slug}>
+          "@type": "<fdri:ConfigurationParameter>"
+          "<skos:inScheme>": "<::ConfigurationParameterScheme>"
+          "<skos:broader>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
+          "^<skos:narrower>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>"
+
+  - name: StructuredValue
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}.structured-value-{$listIndex}>"
+      "@type": "<fdri:ConfigurationArgumentList>"
+      "<fdri:argument>": "{entries | map_to(NestedMethodArgument)}"
+
+  - name: MethodArgument
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": <http://fdri.ceh.ac.uk/ref/common/parameter/{key|slug}>
+      "<fdri:hasStructuredValue>": "{structured_value|map_to(StructuredValue)}"
+      "<fdri:hasValue>":
+        - name: SimpleValue
+          requires:
+            value:
+          unless:
+            key: "dep_ts"
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{value}"
+        - name: ReferenceValue
+          requires:
+            key: "dep_ts"
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current#{key|slug}.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:valueReference>": "<{value}>"
+
+resources:
+  - name: FluxProcessingConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{config_id|slug}>"
+      "@type": "<fdri:InternalDataProcessingConfiguration>"
+      "<dct:type>":
+        - name: ProcessingConfigType
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/{config_type|slug}>"
+            "@type": "<fdri:DataProcessingConfigurationType>"
+            "<skos:inScheme>": "<::ConfigurationTypeScheme>"
+            "^<skos:hasTopConcept>": "<::ConfigurationTypeScheme>"
+      "<fdri:appliesToDataset>": "<{applies_to_dataset}>"
+      "<fdri:rawConfiguration>": "{raw}"
+      "<fdri:hasCurrentValue>":
+        - name: FluxProcessingConfigItem
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{config_id|slug}-current>"
+            "@type": "<fdri:ConfigurationItem>"
+            "<fdri:method>":
+              - name: FluxProcessingMethod
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
+                  "@type": "<fdri:DataProcessingMethod>"
+                  "<skos:inScheme>": "<::DataProcessingMethodScheme>"
+                  "^<skos:hasTopConcept>": "<::DataProcessingMethodScheme>"
+            "<fdri:argument>": "{param_entries | map_to(MethodArgument)}"

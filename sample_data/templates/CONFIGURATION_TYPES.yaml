@@ -1,0 +1,29 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - extensions.py
+
+resources:
+  - name: InfillConfigurationType
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/configuration-type/{ID|slug}>
+      "@type": <fdri:DataProcessingConfigurationType>
+      "<skos:prefLabel>": "{NAME}@en"
+      "<skos:scopeNote>": "{DESCRIPTION}@en"
+      "<skos:inScheme>": <http://fdri.ceh.ac.uk/ref/common/configuration-type>
+  - name: InfillConfigurationTypeParent
+    requires:
+      PARENT_ID:
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/configuration-type/{PARENT_ID|slug}>
+      "<skos:narrower>": <::InfillConfigurationType>
+      "^<skos:broader>": <::InfillConfigurationType>
+  - name: InfillConfigurationTypeTop
+    unless:
+      PARENT_ID:
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/common/configuration-type>
+      "<skos:hasTopConcept>": <::InfillConfigurationType>

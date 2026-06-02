@@ -9,3 +9,39 @@ LE,Equal or less than,Value equal or less than
 VALUE,Numeric value,Exact numeric value
 TIME_GE,Equal or later than time,Time equal or later than
 TIME_LE,Equal or earlier than time,Time equal or earlier than
+INSTRUMENT_SPECS,Instrument specifications,Structured parameter containing instrument specifications
+INSTRUMENT_SPECS.MANUFACTURER,Manufacturer of the instrument
+INSTRUMENT_SPECS.MODEL,Model of the instrument
+INSTRUMENT_SPECS.SW_VERSION,Software version,Version of the instrument software
+INSTRUMENT_SPECS.ID,Instrument ID,Unique identifier for the instrument
+INSTRUMENT_SPECS.HEIGHT,Instrument height,Height of the instrument above ground level in meters
+INSTRUMENT_SPECS.WFORMAT,WFORMAT,
+INSTRUMENT_SPECS.WREF,WREF,
+INSTRUMENT_SPECS.HEAD_CORR,HEAD_CORR,
+INSTRUMENT_SPECS.NORTH_OFFSET,NORTH_OFFSET,
+INSTRUMENT_SPECS.NORTHWARD_SEPARATION,NORTHWARD_SEPARATION,
+INSTRUMENT_SPECS.EASTWARD_SEPARATION,EASTWARD_SEPARATION,
+INSTRUMENT_SPECS.VERTICAL_SEPARATION,VERTICAL_SEPARATION,
+INSTRUMENT_SPECS.VPATH_LENGTH,VPATH_LENGTH,
+INSTRUMENT_SPECS.HPATH_LENGTH,HPATH_LENGTH,
+INSTRUMENT_SPECS.TAU,TAU,
+INSTRUMENT_SPECS.TUBE_LENGTH,TUBE_LENGTH,
+INSTRUMENT_SPECS.TUBE_DIAMETER,TUBE_DIAMETER,
+INSTRUMENT_SPECS.TUBE_FLOWRATE,TUBE_FLOWRATE,
+INSTRUMENT_SPECS.KW,KW,
+INSTRUMENT_SPECS.KO,KO,
+COLUMN_MAPPING,Column mapping,Mapping of column names to measure and units
+COLUMN_MAPPING.VARIABLE,Variable name,Name of the variable
+COLUMN_MAPPING.UNIT_IN,Unit,Unit of the variable
+COLUMN_MAPPING.INSTRUMENT,Instrument,Instrument used to measure the variable
+COLUMN_MAPPING.MEASURE_TYPE,Measure type,Type of measure
+COLUMN_MAPPING.CONVERSION,Conversion,Conversion to apply to the variable
+COLUMN_MAPPING.COLUMN_INDEX,Column index,Column index position of this variable
+SOFTWARE_VERSION,Software version,Version of the software used in processing
+FILE_PROTOTYPE,File prototype,Prototype of the file to be processed
+MASTER_SONIC,MASTER_SONIC,
+ACQUISITION_FREQUENCY,Acquisition frequency,Frequency at which data is acquired in Hz
+FILE_DURATION,File duration,Duration of the file in seconds
+CANOPY_HEIGHT,Canopy height,Height of the canopy in meters
+DISPLACEMENT_HEIGHT,Displacement height,Displacement height in meters
+ROUGHNESS_LENGTH,Roughness length,Roughness length in meters

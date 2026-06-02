@@ -1,0 +1,6 @@
+ID,PARENT_ID,LABEL,NOTATION
+application,,Application,
+application/json,application,JSON,application/json
+application/vnd.apache.parquet,application,Apache Parquet,application/vnd.apache.parquet
+text,,Text,
+text/csv,text,Comma Separated Values,text/csv

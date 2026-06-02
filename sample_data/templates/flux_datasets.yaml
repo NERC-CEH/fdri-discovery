@@ -1,0 +1,79 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+    RAW_SOURCE_BUCKET: fdri-discovery-raw-data
+    PROCESSED_SOURCE_BUCKET: fdri-discovery-processed-data
+
+imports:
+    - namespaces.yaml
+
+one_offs:
+  - name: GhgFormat
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/format/ghg>"
+      "@type": "<skos:Concept>"
+      "<dct:identifier>": "application/x-eddypro-ghg"
+resources:
+
+  - name: FluxDatasetCommon
+    properties:
+      "@id": "<{dataset_id}>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{processing_level|slug}>"
+      "<fdri:originatingSite>": "<{site_id}>"
+
+  - name: FluxObservationDataset
+    unless:
+      "source_column":
+    properties:
+      "@id": "<{dataset_id}>"
+      "@type": "<fdri:ObservationDataset>"
+      "<dcat:distribution>":
+        - name: ObservationDatasetDistribution
+          properties:
+            "@id": "<{dataset_id}#distribution>"
+            "@type": "<dcat:Distribution>"
+            "<dct:accessURL>":
+              - name: RAW_BUCKET
+                requires:
+                  processing_level: raw
+                pattern: "s3://{RAW_SOURCE_BUCKET}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
+              - name: PROCESSED_BUCKET
+                requires:
+                  processing_level: processed
+                pattern: "s3://{PROCESSED_SOURCE_BUCKET}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
+            "<dct:format>": "<::GhgFormat>"
+
+  - name: FluxTimeSeriesDataset
+    requires:
+      "source_column":
+    properties:
+      "@id": "<{dataset_id}>"
+      "@type": "<fdri:TimeSeriesDataset>"
+      "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/{network|slug}>"
+      # Inline measure per dataset — should this reference a shared concept URI instead?
+      # See MEASURE_ID/UNIT_ID/STATISTIC_ID in sample_data/src/MEASURES.csv.
+      "<fdri:measure>":
+        - name: FluxMeasure
+          properties:
+            "@id": "<{dataset_id}#measure>"
+            "@type": "<fdri:Measure>"
+            "<fdri:aggregation>":
+              - name: FluxAggregation
+                properties:
+                  "@id": "<{dataset_id}#aggregation>"
+                  "@type": "<fdri:Aggregation>"
+                  "<fdri:resolution>": "{resolution}^^<xsd:duration>"
+                  "<fdri:periodicity>": "{periodicity}^^<xsd:duration>"
+      "<fdri:sourceBucket>":
+        - name: RAW_BUCKET
+          requires:
+            processing_level: raw
+          pattern: "{RAW_SOURCE_BUCKET}"
+        - name: PROCESSED_BUCKET
+          requires:
+            processing_level: processed
+          pattern: "{PROCESSED_SOURCE_BUCKET}"
+      "<fdri:sourceDataset>": "{source_dataset}"
+      "<fdri:sourceColumnName>": "{source_column}"
+      "<fdri:sourceTimeColumnName>": "{time_column_name}"
+      # TODO: Verify what the S3 path should look like for flux timeseries datasetes and create a distribution

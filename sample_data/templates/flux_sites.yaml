@@ -1,0 +1,36 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+
+resources:
+
+  - name: FluxSite
+    properties:
+      "@id": "<{site_id}>"
+      "@type": "<fdri:EnvironmentalMonitoringSite>"
+      "^<fdri:contains>": <http://fdri.ceh.ac.uk/id/network/{network|slug}>
+      "<dct:identifier>": "{identifiers}"
+      "<geos:hasGeometry>":
+        - name: LatLongPoint
+          properties:
+            "@id": "<{site_id}#geo-latlong>"
+            "@type": "<geos:Geometry>"
+            "<geos:asWKT>": "POINT({lon}, {lat})^^<geos:wktLiteral>"
+      "<fdri:hasRepresentativePoint>": <::LatLongPoint>
+      "<geo:lat>": "{lat|asDecimal}"
+      "<geo:long>": "{lon|asDecimal}"
+      "<geo:alt>": "{altitude|asDecimal}"
+      "<spatialrelations:easting>": "{easting|asDecimal}"
+      "<spatialrelations:northing>": "{northing|asDecimal}"
+      "<fdri:operatingPeriod>":
+          - name: OperatingPeriod
+            properties:
+              "@id": "<{site_id}#operating-period>"
+              "@type": "<dct:PeriodOfTime>"
+              "<dcat:startDate>": "{start_date | asDateOrDatetime}"
+              "<dcat:endDate>": "{end_date | asDateOrDatetime}"
+
+

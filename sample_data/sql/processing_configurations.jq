@@ -1,0 +1,1 @@
+to_entries | map(.key as $site | .value | map(. + {"site": $site})) | flatten | .[] | . + {"raw": . | tostring} | if .dep_ts then . + {"dep_ts": .dep_ts | map({"id": .})} else . end | if .load_ts then . + {"load_ts": .load_ts | map({"id": .})} else . end
