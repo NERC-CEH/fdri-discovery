@@ -2423,6 +2423,9 @@
       "id": "cosmos-alic1-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-ALIC1-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -6594,6 +6597,9 @@
       "id": "cosmos-balrd-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-BALRD-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -11102,6 +11108,9 @@
       "id": "cosmos-bickl-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-BICKL-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -11164,6 +11173,9 @@
       "id": "cosmos-bickl-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-BICKL-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -15736,6 +15748,9 @@
       "id": "cosmos-bunny-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-BUNNY-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -15798,6 +15813,9 @@
       "id": "cosmos-bunny-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-BUNNY-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -20362,6 +20380,9 @@
       "id": "cosmos-cardt-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CARDT-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -20424,6 +20445,9 @@
       "id": "cosmos-cardt-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CARDT-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -25087,6 +25111,9 @@
       "id": "cosmos-cgarw-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CGARW-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -32335,6 +32362,9 @@
       "id": "cosmos-chimn-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CHIMN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -32397,6 +32427,9 @@
       "id": "cosmos-chimn-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CHIMN-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -39576,6 +39609,9 @@
       "id": "cosmos-chobh-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CHOBH-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -39638,6 +39674,9 @@
       "id": "cosmos-chobh-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CHOBH-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -44301,6 +44340,9 @@
       "id": "cosmos-cochn-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-COCHN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -51464,6 +51506,9 @@
       "id": "cosmos-coclp-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-COCLP-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -55972,6 +56017,9 @@
       "id": "cosmos-crich-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-CRICH-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -60635,6 +60683,9 @@
       "id": "cosmos-eastb-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-EASTB-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -65393,6 +65444,9 @@
       "id": "cosmos-elmst-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-ELMST-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -72242,6 +72296,9 @@
       "id": "cosmos-eustn-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-EUSTN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -79091,6 +79148,9 @@
       "id": "cosmos-finch-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-FINCH-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -79153,6 +79213,9 @@
       "id": "cosmos-finch-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-FINCH-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -86002,6 +86065,9 @@
       "id": "cosmos-fivet-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-FIVET-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -93074,6 +93140,9 @@
       "id": "cosmos-gisbn-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-GISBN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -97983,6 +98052,9 @@
       "id": "cosmos-glens-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-GLENS-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -102975,6 +103047,9 @@
       "id": "cosmos-glenw-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-GLENW-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -109824,6 +109899,9 @@
       "id": "cosmos-hadlw-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HADLW-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -116701,6 +116779,9 @@
       "id": "cosmos-hartw-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HARTW-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -120913,6 +120994,9 @@
       "id": "cosmos-harwd-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HARWD-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -125124,6 +125208,9 @@
       "id": "cosmos-henfs-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HENFS-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -129632,6 +129719,9 @@
       "id": "cosmos-hillb-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HILLB-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -136481,6 +136571,9 @@
       "id": "cosmos-hlacy-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HLACY-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -136543,6 +136636,9 @@
       "id": "cosmos-hlacy-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HLACY-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -143751,6 +143847,9 @@
       "id": "cosmos-holln-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HOLLN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -143813,6 +143912,9 @@
       "id": "cosmos-holln-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HOLLN-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -148349,6 +148451,9 @@
       "id": "cosmos-hybry-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-HYBRY-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -155198,6 +155303,9 @@
       "id": "cosmos-lizrd-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-LIZRD-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -159774,6 +159882,9 @@
       "id": "cosmos-lodtn-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-LODTN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -159836,6 +159947,9 @@
       "id": "cosmos-lodtn-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-LODTN-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -166713,6 +166827,9 @@
       "id": "cosmos-lulln-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-LULLN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -166775,6 +166892,9 @@
       "id": "cosmos-lulln-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-LULLN-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -171438,6 +171558,9 @@
       "id": "cosmos-moorh-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-MOORH-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -176164,6 +176287,9 @@
       "id": "cosmos-morem-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-MOREM-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -176226,6 +176352,9 @@
       "id": "cosmos-morem-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-MOREM-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -183075,6 +183204,9 @@
       "id": "cosmos-morly-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-MORLY-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -187583,6 +187715,9 @@
       "id": "cosmos-nwyke-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-NWYKE-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -192450,6 +192585,9 @@
       "id": "cosmos-plynl-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-PLYNL-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -197232,6 +197370,9 @@
       "id": "cosmos-portn-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-PORTN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -201768,6 +201909,9 @@
       "id": "cosmos-rdmer-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-RDMER-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -206276,6 +206420,9 @@
       "id": "cosmos-redhl-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-REDHL-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -206338,6 +206485,9 @@
       "id": "cosmos-redhl-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-REDHL-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -210846,6 +210996,9 @@
       "id": "cosmos-riseh-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-RISEH-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -217723,6 +217876,9 @@
       "id": "cosmos-rothd-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-ROTHD-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -217785,6 +217941,9 @@
       "id": "cosmos-rothd-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-ROTHD-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -222538,6 +222697,9 @@
       "id": "cosmos-sheep-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-SHEEP-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -222600,6 +222762,9 @@
       "id": "cosmos-sheep-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-SHEEP-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -229934,6 +230099,9 @@
       "id": "cosmos-sourh-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-SOURH-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -234692,6 +234860,9 @@
       "id": "cosmos-spenf-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-SPENF-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -241665,6 +241836,9 @@
       "id": "cosmos-stght-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-STGHT-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -241727,6 +241901,9 @@
       "id": "cosmos-stght-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-STGHT-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -246303,6 +246480,9 @@
       "id": "cosmos-stips-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-STIPS-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -250811,6 +250991,9 @@
       "id": "cosmos-sydlg-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-SYDLG-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -250873,6 +251056,9 @@
       "id": "cosmos-sydlg-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-SYDLG-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -257722,6 +257908,9 @@
       "id": "cosmos-tadhm-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-TADHM-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -262350,6 +262539,9 @@
       "id": "cosmos-waddn-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-WADDN-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -262412,6 +262604,9 @@
       "id": "cosmos-waddn-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-WADDN-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -269535,6 +269730,9 @@
       "id": "cosmos-wimpl-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-WIMPL-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -276384,6 +276582,9 @@
       "id": "cosmos-wrttl-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-WRTTL-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -276446,6 +276647,9 @@
       "id": "cosmos-wrttl-precip_raine_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-WRTTL-PRECIP_RAINE_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",
@@ -283009,6 +283213,9 @@
       "id": "cosmos-wyth1-precip_30min-sum",
       "type": "aggregate",
       "method": "sum",
+      "dep_ts": [
+        "COSMOS-WYTH1-PRECIP_1MIN_RAW"
+      ],
       "parameters": [
         {
           "param": "threshold",

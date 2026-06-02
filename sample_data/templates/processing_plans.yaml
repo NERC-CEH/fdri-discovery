@@ -20,11 +20,17 @@ embedded:
             "<fdri:appliesToDataset>": "<http://fdri.ceh.ac.uk/id/dataset/{output|slug}>"
 
 resources:
+  - name: OutputDataset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{output|slug}>"
+      "<fdri:directDependsOn>": "<http://fdri.ceh.ac.uk/id/dataset/{input|slug}>"
+      
   - name: DataProcessingPlan
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/plan/{id}>"
       "@type": "<fdri:TimeSeriesPlan>"
-      "^<fdri:methodology>": "<http://fdri.ceh.ac.uk/id/dataset/{output|slug}>"
+      "^<fdri:methodology>": "<::OutputDataset>"
+      "<fdri:uses>": "<http://fdri.ceh.ac.uk/id/dataset/{input|slug}>"
       "<dct:hasPart>": "{steps|map_to(DataProcessingStep)}"
       "<fdri:rawConfiguration>": "{steps_raw}"
   
