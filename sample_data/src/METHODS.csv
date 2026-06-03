@@ -1,7 +1,7 @@
 PROCESSING_TYPE,CATEGORY,METHOD_ID,METHOD_NAME,METHOD_DESCRIPTION
 QC,COSMOS Specific,PLUVIO_DIAG,Pluvio Diagnostic,Removes precip where pluvio diagnostic value > 0
 QC,COSMOS Specific,SNOWD_SIGNAL,Snow distance signal,Removes snow depth where signal value too low
-QC,COSMOS Specific,HFP_REMOVAL,Heat flux plates,Removes G1 and G2 for 0:30 and 1:00 while plates are heating up to calibrate 
+QC,COSMOS Specific,HFP_REMOVAL,Heat flux plates,Removes G1 and G2 for 0:30 and 1:00 while plates are heating up to calibrate
 QC,COSMOS Specific,NR01_TEMP,Radiometer temperture,Removes LWIN and LWOUT where radiometer tempurature out of range
 QC,COSMOS Specific,TDT_TSOIL,TDT soil temp,Removes TDT VWC where TDT soil tempurature too low
 QC,Generic,ERROR_CODE,Error code,Find and remove known error codes
@@ -48,3 +48,4 @@ CORRECTION,GENERIC,PA_CORR
 CORRECTION,GENERIC,SCALAR
 CORRECTION,GENERIC,WD
 INFILL,GENERIC,LINEAR_LINEAR
+INFILL,GENERIC,ALT_DATA
