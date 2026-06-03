@@ -1,0 +1,70 @@
+{
+  "NMDB-JUNG": [
+    {
+      "id": "nmdb-jung-neutron_cts_1hour-infill-1",
+      "type": "infill",
+      "method": "alt_data_dynamic",
+      "dep_ts": [
+        "NMDB-JUNG1-NEUTRON_CTS_1HOUR_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "window",
+          "value": "P7D"
+        },
+        {
+          "param": "min_threshold",
+          "value": 12
+        },
+        {
+          "param": "max_threshold",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "id": "nmdb-jung-neutron_cts_1hour-infill-2",
+      "type": "infill",
+      "method": "alt_data_dynamic",
+      "dep_ts": [
+        "NMDB-NEWK-NEUTRON_CTS_1HOUR_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "window",
+          "value": "P7D"
+        },
+        {
+          "param": "min_threshold",
+          "value": 12
+        },
+        {
+          "param": "max_threshold",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "id": "nmdb-jung-neutron_cts_1hour-infill-3",
+      "type": "infill",
+      "method": "alt_data_dynamic",
+      "dep_ts": [
+        "NMDB-APTY-NEUTRON_CTS_1HOUR_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "window",
+          "value": "P7D"
+        },
+        {
+          "param": "min_threshold",
+          "value": 12
+        },
+        {
+          "param": "max_threshold",
+          "value": 48
+        }
+      ]
+    }
+  ]
+}
