@@ -716,27 +716,11 @@
       ]
     },
     {
-      "id": "flux-plynl-h-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-tau-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
       "id": "flux-plynl-h-qc-flag",
       "type": "qc",
       "method": "flux_qc_flag",
       "dep_ts": [
-        "flux-plynl-qc-H"
+        "flux-plynl-qc-h"
       ]
     },
     {
@@ -744,119 +728,7 @@
       "type": "qc",
       "method": "flux_qc_flag",
       "dep_ts": [
-        "flux-plynl-qc-Tau"
-      ]
-    },
-    {
-      "id": "flux-plynl-co2-flux-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-h2o-flux-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-qc-h-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-qc-tau-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-wind-speed-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-wind-dir-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-vpd-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-sonic-temp-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-u-var-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-v-var-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-w-var-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-h-despiked-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-h-l2-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
-      ]
-    },
-    {
-      "id": "flux-plynl-tau-l2-process",
-      "type": "process",
-      "method": "process",
-      "dep_ts": [
-        "flux-plynl-processed"
+        "flux-plynl-qc-tau"
       ]
     },
     {
@@ -874,8 +746,8 @@
       "method": "calc_flux_le_l1",
       "dep_ts": [
         "flux-plynl-biomet-rn-30min",
-        "flux-plynl-SHF",
-        "flux-plynl-H"
+        "flux-plynl-shf",
+        "flux-plynl-h"
       ]
     },
     {
@@ -898,7 +770,7 @@
       "type": "calculate",
       "method": "calc_flux_et_l1",
       "dep_ts": [
-        "flux-plynl-LE-L1",
+        "flux-plynl-le-l1",
         "flux-plynl-biomet-ta-30min"
       ]
     },
@@ -908,8 +780,8 @@
       "method": "calc_flux_le_l2",
       "dep_ts": [
         "flux-plynl-biomet-rn-30min",
-        "flux-plynl-SHF",
-        "flux-plynl-H-L2"
+        "flux-plynl-shf",
+        "flux-plynl-h-l2"
       ]
     },
     {
@@ -932,7 +804,7 @@
       "type": "calculate",
       "method": "calc_flux_et_l2",
       "dep_ts": [
-        "flux-plynl-LE-L2",
+        "flux-plynl-le-l2",
         "flux-plynl-biomet-ta-30min"
       ]
     }
