@@ -30,7 +30,6 @@ RECORDS = \
 	TimeSeriesDataset \
 	TimeSeriesDefinition
 
-SAMPLES += $(TTL_BASE)/alt_data_config.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_TYPES.ttl

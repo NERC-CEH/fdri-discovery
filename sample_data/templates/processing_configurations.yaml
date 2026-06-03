@@ -13,23 +13,39 @@ embedded:
       "@type": "<schema:PropertyValue>"
       "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{id|slug}>"
 
-  - name: GenericArgumentValue
+  - name: StructuredArgument
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.value>"
-      "@type": "<schema:PropertyValue>"
-      "<schema:value>": "{value}"
+      "@id": "<{$parentID}.{child_key|slug}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{param|slug}.{child_key|slug}>"
+      "<fdri:hasValue>":
+        name: StructuredArgumentValue
+        properties:
+          "@id": "<{$parentID}.{child_key|slug}.value>"
+          "@type": "<schema:PropertyValue>"
+          "<schema:value>": "{value}"
 
   - name: GenericArgument
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}>"
-      "@type": "<fdri:ConfigurationItemArgument>"
+      "@type": "<fdri:ConfigurationArgument>"
       "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{param|slug}>"
       "<fdri:hasValue>":
         - name: GenericArgumentValue
+          requires:
+            value:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.value>"
             "@type": "<schema:PropertyValue>"
             "<schema:value>": "{value}"
+      "<fdri:hasStructuredValue>":
+        - name: StructuredArgumentList
+          requires:
+            structured_value:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.structured>"
+            "@type": "<fdri:ConfigurationArgumentList>"
+            "<fdri:argument>": "{structured_value|map_to(StructuredArgument)}"
   
 resources:
   - name: DataProcessingConfiguration
@@ -44,6 +60,22 @@ resources:
             "@type": "<fdri:ConfigurationItem>"
             "<fdri:rawConfiguration>": "{raw}"
             "<fdri:method>": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
+            "<fdri:observationInterval>":
+              - name: ClosedObservationInterval
+                requires:
+                  obs_end_date:
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#observationInterval>"
+                  "@type": "<dct:PeriodOfTime>"
+                  "<dcat:startDate>": "{obs_start_date}^^<xsd:dateTime>"
+                  "<dcat:endDate>": "{obs_end_date}^^<xsd:dateTime>"
+              - name: OpenObservationInterval
+                requires:
+                  obs_end_date: ""
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#observationInterval>"
+                  "@type": "<dct:PeriodOfTime>"
+                  "<dcat:startDate>": "{obs_start_date}^^<xsd:dateTime>"
             "<fdri:argument>":
               - "{parameters|map_to(GenericArgument)}"
               - name: DepTimeSeries
@@ -51,7 +83,7 @@ resources:
                   dep_ts:
                 properties:
                   "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.depts>"
-                  "@type": "<fdri:ConfigurationItemArgument>"
+                  "@type": "<fdri:ConfigurationArgument>"
                   "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts>"
                   "<fdri:hasValue>": "{dep_ts|map_to(DepTimeSeriesValue)}"
               - name: LoadTimeSeries
@@ -59,7 +91,7 @@ resources:
                   load_ts:
                 properties:
                   "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.loadts>"
-                  "@type": "<fdri:ConfigurationItemArgument>"
+                  "@type": "<fdri:ConfigurationArgument>"
                   "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts>"
                   "<fdri:hasValue>": "{load_ts|map_to(DepTimeSeriesValue)}"
 
