@@ -17,7 +17,7 @@ embedded:
     properties:
       "@id": "<{$parentID}.{child_key|slug}>"
       "@type": "<fdri:ConfigurationArgument>"
-      "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{child_key|slug}>"
+      "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{param|slug}.{child_key|slug}>"
       "<fdri:hasValue>":
         name: StructuredArgumentValue
         properties:
