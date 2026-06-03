@@ -29568,6 +29568,42 @@
       ]
     },
     {
+      "id": "cosmos-chimn-cts_mod_30min-alt_data-1",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-CHIMN-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.00776
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2020-01-22T13:00:00",
+        "end_date": "2020-02-12T12:00:00"
+      }
+    },
+    {
+      "id": "cosmos-chimn-cts_mod_30min-alt_data-2",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-CHIMN-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 0.61759
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2020-02-12T12:30:00",
+        "end_date": "2021-09-07T09:00:00"
+      }
+    },
+    {
       "id": "cosmos-chimn-cts_mod_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -47934,6 +47970,24 @@
           "value": 2
         }
       ]
+    },
+    {
+      "id": "cosmos-coclp-cts_mod_30min-alt_data",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-COCLP-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 0.99404
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2018-01-31T10:00:00",
+        "end_date": "2019-10-31T12:00:00"
+      }
     },
     {
       "id": "cosmos-coclp-cts_mod_30min-battery_v",
@@ -118625,6 +118679,24 @@
       ]
     },
     {
+      "id": "cosmos-henfs-cts_mod_30min-alt_data",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-HENFS-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.03104
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2018-06-28T13:00:00",
+        "end_date": "2019-02-12T12:00:00"
+      }
+    },
+    {
       "id": "cosmos-henfs-cts_mod_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -136262,6 +136334,24 @@
           "value": 2
         }
       ]
+    },
+    {
+      "id": "cosmos-holln-cts_mod_30min-alt_data",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-HOLLN-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 0.96367
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2018-12-19T12:00:00",
+        "end_date": "2019-11-05T12:30:00"
+      }
     },
     {
       "id": "cosmos-holln-cts_mod_30min-battery_v",
@@ -212065,6 +212155,42 @@
       ]
     },
     {
+      "id": "cosmos-sheep-cts_mod_30min-alt_data-1",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-SHEEP-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.02015
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2016-08-24T08:30:00",
+        "end_date": "2017-12-14T17:00:00"
+      }
+    },
+    {
+      "id": "cosmos-sheep-cts_mod_30min-alt_data-2",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-SHEEP-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 0.59151
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2020-02-11T15:00:00",
+        "end_date": "2021-07-07T12:00:00"
+      }
+    },
+    {
       "id": "cosmos-sheep-cts_mod_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -234928,6 +235054,24 @@
           "value": 2
         }
       ]
+    },
+    {
+      "id": "cosmos-stips-cts_mod_30min-alt_data",
+      "type": "infill",
+      "method": "alt_data",
+      "dep_ts": [
+        "COSMOS-STIPS-CTS_MOD2_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0059
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2023-01-06T15:30:00",
+        "end_date": "2023-05-24T12:00:00"
+      }
     },
     {
       "id": "cosmos-stips-cts_mod_30min-battery_v",

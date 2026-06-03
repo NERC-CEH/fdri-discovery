@@ -7084,7 +7084,9 @@
         "cosmos-chimn-cts_mod_30min-range",
         "cosmos-chimn-cts_mod_30min-battery_v",
         "cosmos-chimn-cts_mod_30min-error_code",
-        "cosmos-chimn-cts_mod_30min-samples"
+        "cosmos-chimn-cts_mod_30min-samples",
+        "cosmos-chimn-cts_mod_30min-alt_data-1",
+        "cosmos-chimn-cts_mod_30min-alt_data-2"
       ]
     },
     {
@@ -11424,7 +11426,8 @@
         "cosmos-coclp-cts_mod_30min-range",
         "cosmos-coclp-cts_mod_30min-battery_v",
         "cosmos-coclp-cts_mod_30min-error_code",
-        "cosmos-coclp-cts_mod_30min-samples"
+        "cosmos-coclp-cts_mod_30min-samples",
+        "cosmos-coclp-cts_mod_30min-alt_data"
       ]
     },
     {
@@ -28231,7 +28234,8 @@
         "cosmos-henfs-cts_mod_30min-range",
         "cosmos-henfs-cts_mod_30min-battery_v",
         "cosmos-henfs-cts_mod_30min-error_code",
-        "cosmos-henfs-cts_mod_30min-samples"
+        "cosmos-henfs-cts_mod_30min-samples",
+        "cosmos-henfs-cts_mod_30min-alt_data"
       ]
     },
     {
@@ -32357,7 +32361,8 @@
         "cosmos-holln-cts_mod_30min-range",
         "cosmos-holln-cts_mod_30min-battery_v",
         "cosmos-holln-cts_mod_30min-error_code",
-        "cosmos-holln-cts_mod_30min-samples"
+        "cosmos-holln-cts_mod_30min-samples",
+        "cosmos-holln-cts_mod_30min-alt_data"
       ]
     },
     {
@@ -50497,7 +50502,9 @@
         "cosmos-sheep-cts_mod_30min-range",
         "cosmos-sheep-cts_mod_30min-battery_v",
         "cosmos-sheep-cts_mod_30min-error_code",
-        "cosmos-sheep-cts_mod_30min-samples"
+        "cosmos-sheep-cts_mod_30min-samples",
+        "cosmos-sheep-cts_mod_30min-alt_data-1",
+        "cosmos-sheep-cts_mod_30min-alt_data-2"
       ]
     },
     {
@@ -55929,7 +55936,8 @@
         "cosmos-stips-cts_mod_30min-range",
         "cosmos-stips-cts_mod_30min-battery_v",
         "cosmos-stips-cts_mod_30min-error_code",
-        "cosmos-stips-cts_mod_30min-samples"
+        "cosmos-stips-cts_mod_30min-samples",
+        "cosmos-stips-cts_mod_30min-alt_data"
       ]
     },
     {
