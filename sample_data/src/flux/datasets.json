@@ -267,7 +267,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -281,7 +281,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-Tau",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-tau",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -323,7 +323,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-H",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-h",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -337,7 +337,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-Tau",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-tau",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -379,7 +379,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-VPD",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-vpd",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -449,7 +449,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H-despiked",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h-despiked",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -463,7 +463,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-H-L2",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h-l2",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -477,7 +477,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-Tau-L2",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-tau-l2",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -491,7 +491,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-SHF",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-shf",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -505,7 +505,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L1",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-le-l1",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -519,7 +519,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-ET-L1",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-et-l1",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -533,7 +533,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-LE-L2",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-le-l2",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",
@@ -547,7 +547,7 @@
       "processing_level": "processed"
     },
     {
-      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-ET-L2",
+      "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-et-l2",
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "platform_id": "http://fdri.ceh.ac.uk/id/platform/flux-plynl-ec",
       "network": "fdri",

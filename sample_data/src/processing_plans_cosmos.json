@@ -267,7 +267,26 @@
       "input": "cosmos-alic1-g1_30min_raw",
       "steps": [
         "cosmos-alic1-g1_30min-load_raw",
-        "cosmos-alic1-g1_30min-correction-scalar",
+        "cosmos-alic1-g1_30min-correction-scalar-1",
+        "cosmos-alic1-g1_30min-correction-scalar-2",
+        "cosmos-alic1-g1_30min-correction-scalar-3",
+        "cosmos-alic1-g1_30min-correction-scalar-4",
+        "cosmos-alic1-g1_30min-correction-scalar-5",
+        "cosmos-alic1-g1_30min-correction-scalar-6",
+        "cosmos-alic1-g1_30min-correction-scalar-7",
+        "cosmos-alic1-g1_30min-correction-scalar-8",
+        "cosmos-alic1-g1_30min-correction-scalar-9",
+        "cosmos-alic1-g1_30min-correction-scalar-10",
+        "cosmos-alic1-g1_30min-correction-scalar-11",
+        "cosmos-alic1-g1_30min-correction-scalar-12",
+        "cosmos-alic1-g1_30min-correction-scalar-13",
+        "cosmos-alic1-g1_30min-correction-scalar-14",
+        "cosmos-alic1-g1_30min-correction-scalar-15",
+        "cosmos-alic1-g1_30min-correction-scalar-16",
+        "cosmos-alic1-g1_30min-correction-scalar-17",
+        "cosmos-alic1-g1_30min-correction-scalar-18",
+        "cosmos-alic1-g1_30min-correction-scalar-19",
+        "cosmos-alic1-g1_30min-correction-scalar-20",
         "cosmos-alic1-g1_30min-range",
         "cosmos-alic1-g1_30min-battery_v",
         "cosmos-alic1-g1_30min-error_code",
@@ -290,7 +309,26 @@
       "input": "cosmos-alic1-g2_30min_raw",
       "steps": [
         "cosmos-alic1-g2_30min-load_raw",
-        "cosmos-alic1-g2_30min-correction-scalar",
+        "cosmos-alic1-g2_30min-correction-scalar-1",
+        "cosmos-alic1-g2_30min-correction-scalar-2",
+        "cosmos-alic1-g2_30min-correction-scalar-3",
+        "cosmos-alic1-g2_30min-correction-scalar-4",
+        "cosmos-alic1-g2_30min-correction-scalar-5",
+        "cosmos-alic1-g2_30min-correction-scalar-6",
+        "cosmos-alic1-g2_30min-correction-scalar-7",
+        "cosmos-alic1-g2_30min-correction-scalar-8",
+        "cosmos-alic1-g2_30min-correction-scalar-9",
+        "cosmos-alic1-g2_30min-correction-scalar-10",
+        "cosmos-alic1-g2_30min-correction-scalar-11",
+        "cosmos-alic1-g2_30min-correction-scalar-12",
+        "cosmos-alic1-g2_30min-correction-scalar-13",
+        "cosmos-alic1-g2_30min-correction-scalar-14",
+        "cosmos-alic1-g2_30min-correction-scalar-15",
+        "cosmos-alic1-g2_30min-correction-scalar-16",
+        "cosmos-alic1-g2_30min-correction-scalar-17",
+        "cosmos-alic1-g2_30min-correction-scalar-18",
+        "cosmos-alic1-g2_30min-correction-scalar-19",
+        "cosmos-alic1-g2_30min-correction-scalar-20",
         "cosmos-alic1-g2_30min-range",
         "cosmos-alic1-g2_30min-battery_v",
         "cosmos-alic1-g2_30min-error_code",
@@ -7409,12 +7447,15 @@
       "input": "cosmos-chimn-cts_mod_30min_raw",
       "steps": [
         "cosmos-chimn-cts_mod_30min-load_raw",
-        "cosmos-chimn-cts_mod_30min-correction-scalar",
+        "cosmos-chimn-cts_mod_30min-correction-scalar-1",
+        "cosmos-chimn-cts_mod_30min-correction-scalar-2",
         "cosmos-chimn-cts_mod_30min-spike",
         "cosmos-chimn-cts_mod_30min-range",
         "cosmos-chimn-cts_mod_30min-battery_v",
         "cosmos-chimn-cts_mod_30min-error_code",
-        "cosmos-chimn-cts_mod_30min-samples"
+        "cosmos-chimn-cts_mod_30min-samples",
+        "cosmos-chimn-cts_mod_30min-alt_data-1",
+        "cosmos-chimn-cts_mod_30min-alt_data-2"
       ]
     },
     {
@@ -7798,6 +7839,20 @@
       "output": "cosmos-chimn-precip_tipping_30min_processed",
       "steps": [
         "cosmos-chimn-precip_tipping_30min-get_precip_tipping"
+      ]
+    },
+    {
+      "id": "cosmos-chimn-precip_tipping_a_30min-plan",
+      "output": "cosmos-chimn-precip_tipping_a_30min_processed",
+      "steps": [
+        "cosmos-chimn-precip_tipping_a_30min-sum"
+      ]
+    },
+    {
+      "id": "cosmos-chimn-precip_tipping_b_30min-plan",
+      "output": "cosmos-chimn-precip_tipping_b_30min_processed",
+      "steps": [
+        "cosmos-chimn-precip_tipping_b_30min-sum"
       ]
     },
     {
@@ -11982,7 +12037,8 @@
         "cosmos-coclp-cts_mod_30min-range",
         "cosmos-coclp-cts_mod_30min-battery_v",
         "cosmos-coclp-cts_mod_30min-error_code",
-        "cosmos-coclp-cts_mod_30min-samples"
+        "cosmos-coclp-cts_mod_30min-samples",
+        "cosmos-coclp-cts_mod_30min-alt_data"
       ]
     },
     {
@@ -24570,7 +24626,12 @@
       "input": "cosmos-glenw-g1_30min_raw",
       "steps": [
         "cosmos-glenw-g1_30min-load_raw",
-        "cosmos-glenw-g1_30min-correction-scalar",
+        "cosmos-glenw-g1_30min-correction-scalar-1",
+        "cosmos-glenw-g1_30min-correction-scalar-2",
+        "cosmos-glenw-g1_30min-correction-scalar-3",
+        "cosmos-glenw-g1_30min-correction-scalar-4",
+        "cosmos-glenw-g1_30min-correction-scalar-5",
+        "cosmos-glenw-g1_30min-correction-scalar-6",
         "cosmos-glenw-g1_30min-range",
         "cosmos-glenw-g1_30min-battery_v",
         "cosmos-glenw-g1_30min-error_code",
@@ -24593,7 +24654,12 @@
       "input": "cosmos-glenw-g2_30min_raw",
       "steps": [
         "cosmos-glenw-g2_30min-load_raw",
-        "cosmos-glenw-g2_30min-correction-scalar",
+        "cosmos-glenw-g2_30min-correction-scalar-1",
+        "cosmos-glenw-g2_30min-correction-scalar-2",
+        "cosmos-glenw-g2_30min-correction-scalar-3",
+        "cosmos-glenw-g2_30min-correction-scalar-4",
+        "cosmos-glenw-g2_30min-correction-scalar-5",
+        "cosmos-glenw-g2_30min-correction-scalar-6",
         "cosmos-glenw-g2_30min-range",
         "cosmos-glenw-g2_30min-battery_v",
         "cosmos-glenw-g2_30min-error_code",
@@ -29695,7 +29761,8 @@
         "cosmos-henfs-cts_mod_30min-range",
         "cosmos-henfs-cts_mod_30min-battery_v",
         "cosmos-henfs-cts_mod_30min-error_code",
-        "cosmos-henfs-cts_mod_30min-samples"
+        "cosmos-henfs-cts_mod_30min-samples",
+        "cosmos-henfs-cts_mod_30min-alt_data"
       ]
     },
     {
@@ -34051,7 +34118,8 @@
         "cosmos-holln-cts_mod_30min-range",
         "cosmos-holln-cts_mod_30min-battery_v",
         "cosmos-holln-cts_mod_30min-error_code",
-        "cosmos-holln-cts_mod_30min-samples"
+        "cosmos-holln-cts_mod_30min-samples",
+        "cosmos-holln-cts_mod_30min-alt_data"
       ]
     },
     {
@@ -34364,7 +34432,15 @@
       "input": "cosmos-holln-pa_30min_raw",
       "steps": [
         "cosmos-holln-pa_30min-load_raw",
-        "cosmos-holln-pa_30min-correction-pa_corr",
+        "cosmos-holln-pa_30min-correction-pa_corr-1",
+        "cosmos-holln-pa_30min-correction-pa_corr-2",
+        "cosmos-holln-pa_30min-correction-pa_corr-3",
+        "cosmos-holln-pa_30min-correction-pa_corr-4",
+        "cosmos-holln-pa_30min-correction-pa_corr-5",
+        "cosmos-holln-pa_30min-correction-pa_corr-6",
+        "cosmos-holln-pa_30min-correction-pa_corr-7",
+        "cosmos-holln-pa_30min-correction-pa_corr-8",
+        "cosmos-holln-pa_30min-correction-pa_corr-9",
         "cosmos-holln-pa_30min-range",
         "cosmos-holln-pa_30min-battery_v",
         "cosmos-holln-pa_30min-error_code",
@@ -46010,7 +46086,9 @@
       "input": "cosmos-plynl-g1_30min_raw",
       "steps": [
         "cosmos-plynl-g1_30min-load_raw",
-        "cosmos-plynl-g1_30min-correction-scalar",
+        "cosmos-plynl-g1_30min-correction-scalar-1",
+        "cosmos-plynl-g1_30min-correction-scalar-2",
+        "cosmos-plynl-g1_30min-correction-scalar-3",
         "cosmos-plynl-g1_30min-range",
         "cosmos-plynl-g1_30min-battery_v",
         "cosmos-plynl-g1_30min-error_code",
@@ -46033,7 +46111,9 @@
       "input": "cosmos-plynl-g2_30min_raw",
       "steps": [
         "cosmos-plynl-g2_30min-load_raw",
-        "cosmos-plynl-g2_30min-correction-scalar",
+        "cosmos-plynl-g2_30min-correction-scalar-1",
+        "cosmos-plynl-g2_30min-correction-scalar-2",
+        "cosmos-plynl-g2_30min-correction-scalar-3",
         "cosmos-plynl-g2_30min-range",
         "cosmos-plynl-g2_30min-battery_v",
         "cosmos-plynl-g2_30min-error_code",
@@ -53147,12 +53227,15 @@
       "input": "cosmos-sheep-cts_mod_30min_raw",
       "steps": [
         "cosmos-sheep-cts_mod_30min-load_raw",
-        "cosmos-sheep-cts_mod_30min-correction-scalar",
+        "cosmos-sheep-cts_mod_30min-correction-scalar-1",
+        "cosmos-sheep-cts_mod_30min-correction-scalar-2",
         "cosmos-sheep-cts_mod_30min-spike",
         "cosmos-sheep-cts_mod_30min-range",
         "cosmos-sheep-cts_mod_30min-battery_v",
         "cosmos-sheep-cts_mod_30min-error_code",
-        "cosmos-sheep-cts_mod_30min-samples"
+        "cosmos-sheep-cts_mod_30min-samples",
+        "cosmos-sheep-cts_mod_30min-alt_data-1",
+        "cosmos-sheep-cts_mod_30min-alt_data-2"
       ]
     },
     {
@@ -53538,6 +53621,20 @@
       "output": "cosmos-sheep-precip_tipping_30min_processed",
       "steps": [
         "cosmos-sheep-precip_tipping_30min-get_precip_tipping"
+      ]
+    },
+    {
+      "id": "cosmos-sheep-precip_tipping_a_30min-plan",
+      "output": "cosmos-sheep-precip_tipping_a_30min_processed",
+      "steps": [
+        "cosmos-sheep-precip_tipping_a_30min-sum"
+      ]
+    },
+    {
+      "id": "cosmos-sheep-precip_tipping_b_30min-plan",
+      "output": "cosmos-sheep-precip_tipping_b_30min_processed",
+      "steps": [
+        "cosmos-sheep-precip_tipping_b_30min-sum"
       ]
     },
     {
@@ -58874,7 +58971,8 @@
         "cosmos-stips-cts_mod_30min-range",
         "cosmos-stips-cts_mod_30min-battery_v",
         "cosmos-stips-cts_mod_30min-error_code",
-        "cosmos-stips-cts_mod_30min-samples"
+        "cosmos-stips-cts_mod_30min-samples",
+        "cosmos-stips-cts_mod_30min-alt_data"
       ]
     },
     {
@@ -63134,6 +63232,20 @@
       "output": "cosmos-waddn-precip_tipping_30min_processed",
       "steps": [
         "cosmos-waddn-precip_tipping_30min-get_precip_tipping"
+      ]
+    },
+    {
+      "id": "cosmos-waddn-precip_tipping_a_30min-plan",
+      "output": "cosmos-waddn-precip_tipping_a_30min_processed",
+      "steps": [
+        "cosmos-waddn-precip_tipping_a_30min-sum"
+      ]
+    },
+    {
+      "id": "cosmos-waddn-precip_tipping_b_30min-plan",
+      "output": "cosmos-waddn-precip_tipping_b_30min_processed",
+      "steps": [
+        "cosmos-waddn-precip_tipping_b_30min-sum"
       ]
     },
     {
