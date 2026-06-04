@@ -1,0 +1,211 @@
+{
+  "flux-plynl": [
+    {
+      "id": "flux-plynl-biomet-pa-30min-plan",
+      "output": "flux-plynl-biomet-pa-30min",
+      "input": "flux-plynl-biomet-pa",
+      "steps": [
+        "flux-plynl-biomet-pa-30min-aggregate"
+      ]
+    },
+    {
+      "id": "flux-plynl-et-l2-plan",
+      "output": "flux-plynl-et-l2",
+      "steps": [
+        "flux-plynl-et-l2-derivation"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-l2-plan",
+      "output": "flux-plynl-h-l2",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-co2-flux-plan",
+      "output": "flux-plynl-co2-flux",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-h-despiked-plan",
+      "output": "flux-plynl-h-despiked",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-u-var-plan",
+      "output": "flux-plynl-u-var",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-sonic-temp-plan",
+      "output": "flux-plynl-sonic-temp",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-tau-l2-plan",
+      "output": "flux-plynl-tau-l2",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-biomet-rn-30min-plan",
+      "output": "flux-plynl-biomet-rn-30min",
+      "input": "flux-plynl-biomet-rn",
+      "steps": [
+        "flux-plynl-biomet-rn-30min-aggregate"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-rh-30min-plan",
+      "output": "flux-plynl-biomet-rh-30min",
+      "input": "flux-plynl-biomet-rh",
+      "steps": [
+        "flux-plynl-biomet-rh-30min-aggregate"
+      ]
+    },
+    {
+      "id": "flux-plynl-shf-plan",
+      "output": "flux-plynl-shf",
+      "steps": [
+        "flux-plynl-shf-derivation"
+      ]
+    },
+    {
+      "id": "flux-plynl-vpd-plan",
+      "output": "flux-plynl-vpd",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-qc-h-plan",
+      "output": "flux-plynl-qc-h",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-biomet-shf2-30min-plan",
+      "output": "flux-plynl-biomet-shf2-30min",
+      "input": "flux-plynl-biomet-shf2",
+      "steps": [
+        "flux-plynl-biomet-shf2-30min-aggregate"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-swin-30min-plan",
+      "output": "flux-plynl-biomet-swin-30min",
+      "input": "flux-plynl-biomet-swin",
+      "steps": [
+        "flux-plynl-biomet-swin-30min-aggregate"
+      ]
+    },
+    {
+      "id": "flux-plynl-processed-plan",
+      "output": "flux-plynl-processed",
+      "steps": [
+        "flux-plynl-eddypro"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-shf1-30min-plan",
+      "output": "flux-plynl-biomet-shf1-30min",
+      "input": "flux-plynl-biomet-shf1",
+      "steps": [
+        "flux-plynl-biomet-shf1-30min-aggregate"
+      ]
+    },
+    {
+      "id": "flux-plynl-et-l1-plan",
+      "output": "flux-plynl-et-l1",
+      "steps": [
+        "flux-plynl-et-l1-derivation"
+      ]
+    },
+    {
+      "id": "flux-plynl-raw-plan",
+      "output": "flux-plynl-raw",
+      "steps": [
+        "flux-plynl-raw-load-local-copy"
+      ]
+    },
+    {
+      "id": "flux-plynl-w-var-plan",
+      "output": "flux-plynl-w-var",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-h2o-flux-plan",
+      "output": "flux-plynl-h2o-flux",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-qc-tau-plan",
+      "output": "flux-plynl-qc-tau",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-tau-plan",
+      "output": "flux-plynl-tau",
+      "input": "flux-plynl-processed",
+      "steps": [
+        "flux-plynl-tau-qc-flag"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-plan",
+      "output": "flux-plynl-h",
+      "input": "flux-plynl-processed",
+      "steps": [
+        "flux-plynl-h-qc-flag"
+      ]
+    },
+    {
+      "id": "flux-plynl-wind-speed-plan",
+      "output": "flux-plynl-wind-speed",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-le-l1-plan",
+      "output": "flux-plynl-le-l1",
+      "steps": [
+        "flux-plynl-le-l1-derivation",
+        "flux-plynl-le-l1-range"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-ta-30min-plan",
+      "output": "flux-plynl-biomet-ta-30min",
+      "input": "flux-plynl-biomet-ta",
+      "steps": [
+        "flux-plynl-biomet-ta-30min-aggregate"
+      ]
+    },
+    {
+      "id": "flux-plynl-v-var-plan",
+      "output": "flux-plynl-v-var",
+      "input": "flux-plynl-processed",
+      "steps": []
+    },
+    {
+      "id": "flux-plynl-le-l2-plan",
+      "output": "flux-plynl-le-l2",
+      "steps": [
+        "flux-plynl-le-l2-derivation",
+        "flux-plynl-le-l2-range"
+      ]
+    },
+    {
+      "id": "flux-plynl-wind-dir-plan",
+      "output": "flux-plynl-wind-dir",
+      "input": "flux-plynl-processed",
+      "steps": []
+    }
+  ]
+}
