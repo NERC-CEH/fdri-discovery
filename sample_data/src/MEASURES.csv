@@ -1,229 +1,229 @@
-ID,PARENT_ID,PARAMETER_ID,UNIT_ID,STATISTIC_ID,PERIODICITY,RESOLUTION,DESCRIPTION
-DISCHARGE-INST-M3S-1,,DISCHARGE,M3S-1,INST,,,Instantaneous discharge in cubic metres per second
-DISCHARGE-INST-LS-1,,DISCHARGE,LS-1,INST,,,Instantaneous discharge in litres per second
-WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,Water velocity in metres per second
-WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,INST,,,Instantaneous water velocity in metres per second
-WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,,,Mean water velocity in metres per second
-WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,,,Maximum water velocity in metres per second
-REV-COUNT,,REV,UNITLESS,,,,Number of revolutions counted in measurement period
-REV-TOTAL-COUNT,,REV,UNITLESS,TOTAL,,,Total number of revolutions counted in measurement Period
-ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,,,Mean angular velocity in revolutions per second
-WATER_TEMP-DEGC,,WATER_TEMP,DEGC,,,,Water temperature in degrees Celsius
-WATER_TEMP-INST-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,INST,,,Instantaneous water temperature in degrees Celsius
-WATER_TEMP-MEAN-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,MEAN,,,Mean water temperature in degrees Celsius
-AIR_DENSITY-INST-KGM-3-PT30M-PT30M,,AIR_DENSITY,KGM-3,INST,PT30M,PT30M,
-ALBEDO-MEAN_PREC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN_PREC,P1D,P1D,Mean albedo over the preceding day
-ALBEDO_STD-MEAN_PREC-UNITLESS-P1D-P1D,,ALBEDO_STD,UNITLESS,STDDEV_PREC,P1D,P1D,Standard deviation of albedo over the preceding day
-ALBEDO-MEAN_PREC-UNITLESS-PT30M-PT30M,,ALBEDO,UNITLESS,MEAN_PREC,PT30M,PT30M,Mean albedo over the preceding 30 minutes
-BUCKET_LEVEL_RT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_RT,MM,INST,PT1M,PT1M,Instantaneous bucket level (real-time) in millimetres
-BUCKET_LEVEL_NRT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_NRT,MM,INST,PT1M,PT1M,Instantaneous bucket level (non-real-time) in millimetres
-COND_10-INST-DSM-1-PT30M-PT30M,,COND_10,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 10 cm depth
-COND_15-INST-DSM-1-PT30M-PT30M,,COND_15,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 15 cm depth
-COND_25-INST-DSM-1-PT30M-PT30M,,COND_25,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 25 cm depth
-COND_5-INST-DSM-1-PT30M-PT30M,,COND_5,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 5 cm depth
-COND_50-INST-DSM-1-PT30M-PT30M,,COND_50,DSM-1,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 50 cm depth
-D86_1M-MEAN_PREC-CM-P1D-P1D,,D86_1M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 1m from CRNS in cm over preceding day
-D86_5M-MEAN_PREC-CM-P1D-P1D,,D86_5M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 5m from CRNS in cm over preceding day
-D86_25M-MEAN_PREC-CM-P1D-P1D,,D86_25M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 25m from CRNS in cm over preceding day
-D86_75M-MEAN_PREC-CM-P1D-P1D,,D86_75M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 75m from CRNS in cm over preceding day
-D86_150M-MEAN_PREC-CM-P1D-P1D,,D86_150M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 150m from CRNS in cm over preceding day
-D86_200M-MEAN_PREC-CM-P1D-P1D,,D86_200M,CM,MEAN_PREC,P1D,P1D,D86 effective depth 200m from CRNS in cm over preceding day
-D86_1M-MEAN_PREC-CM-PT1H-PT1H,,D86_1M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 1m from CRNS in cm over preceding hour
-D86_5M-MEAN_PREC-CM-PT1H-PT1H,,D86_5M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 5m from CRNS in cm over preceding hour
-D86_25M-MEAN_PREC-CM-PT1H-PT1H,,D86_25M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 25m from CRNS in cm over preceding hour
-D86_75M-MEAN_PREC-CM-PT1H-PT1H,,D86_75M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 75m from CRNS in cm over preceding hour
-D86_150M-MEAN_PREC-CM-PT1H-PT1H,,D86_150M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 150m from CRNS in cm over preceding hour
-D86_200M-MEAN_PREC-CM-PT1H-PT1H,,D86_200M,CM,MEAN_PREC,PT1H,PT1H,D86 effective depth 200m from CRNS in cm over preceding hour
-DIAG_FLAG_1-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_1,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 1
-DIAG_FLAG_2-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_2,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 2
-DIAG_FLAG_3-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_3,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 3
-DIAG_FLAG_4-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_4,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 4
-DIAG_FLAG_5-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_5,UNITLESS,INST,PT30M,PT30M,Instantaneous diagnostic flag 5
-DIAG_PRECIP-INST-UNITLESS-PT30M-PT30M,,DIAG_PRECIP,UNITLESS,INST,PT30M,PT30M,Instantaneous Precipitation diagnostic flag
-EFF_DEPTH-MEAN_PREC-CM-P1D-P1D,,EFF_DEPTH,CM,MEAN_PREC,P1D,P1D,Effective depth in cm over preceding day
-EFF_DEPTH-MEAN_PREC-CM-PT1H-PT1H,,EFF_DEPTH,CM,MEAN_PREC,PT1H,PT1H,Effective depth in cm over preceding hour
-FACTOR_INTEN-INST-UNITLESS-PT1H-PT1H,,FACTOR_INTEN,UNITLESS,INST,PT1H,PT1H,Instantaneous intensity factor (unitless)
-FACTOR_PA-INST-UNITLESS-PT1H-PT1H,,FACTOR_PA,UNITLESS,INST,PT1H,PT1H,Instantaneous pressure facctor (unitless)
-FACTOR_Q-INST-UNITLESS-PT1H-PT1H,,FACTOR_Q,UNITLESS,INST,PT1H,PT1H,Instantaneous water vapour factor (unitless)
-FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,INST,PT30M,PT30M,Instantaneous momentum flux in kilograms per metre per second squared
-FRICTIONV-INST-MS-1-PT30M-PT30M,,FRICTIONV,MS-1,INST,PT30M,PT30M,Instantaneous friction velocity in metres per second
-HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,INST,PT30M,PT30M,Instantaneous sensible heat flux in watts per metre squared
-HEATFLUX_SOIL_MV-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL_MV,MV,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
-HEATFLUX_SOIL_CAL-INST-UNITLESS-PT30M-PT30M,,HEATFLUX_SOIL_CAL,UNITLESS,INST,PT30M,PT30M,Instantaneous soil heat flux calibration factor (unitless)
-HEATFLUX_SOIL-MEAN_PREC-WM-2-P1D-P1D,,HEATFLUX_SOIL,WM-2,MEAN_PREC,P1D,P1D,Mean soil heat flux in watts per metre squared over preceding day
-HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,MEAN_PREC,PT30M,PT30M,Mean soil heat flux in watts per metre squared over preceding 30 minutes
-HEATFLUX_SOIL_STD-STDDEV_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of soil heat flux in watts per metre squared over preceding 30 minutes
-IMAGE_COLOUR_AMOUNT_BLUE_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_BLUE_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of blue in image after land mask 1 over preceding day
-IMAGE_COLOUR_AMOUNT_BLUE_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_BLUE_LM2,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of blue in image after land mask 2 over preceding day
-IMAGE_COLOUR_AMOUNT_RED_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_RED_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of red in image after land mask 1 over preceding day
-IMAGE_COLOUR_AMOUNT_RED_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_RED_LM2,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of red in image after land mask 2 over preceding day
-IMAGE_COLOUR_AMOUNT_GREEN_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_GREEN_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of green in image after land mask 1 over preceding day
-IMAGE_COLOUR_AMOUNT_GREEN_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_GREEN_LM2,UNITLESS,MEAN_PREC,P1D,PT1M,Amount of green in image after land mask 2 over preceding day
-IMAGE_COLOUR_AMOUNT_BLUE_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_BLUE_LM1,UNITLESS,INST,PT1M,PT1M,Instantaneous amount of blue in image after land mask 1
-IMAGE_COLOUR_AMOUNT_BLUE_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_BLUE_LM2,UNITLESS,INST,PT1M,PT1M,Instantaneous amount of blue in image after land mask 2
-IMAGE_COLOUR_AMOUNT_RED_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_RED_LM1,UNITLESS,INST,PT1M,PT1M,Instantaneous amount of red in image after land mask 1
-IMAGE_COLOUR_AMOUNT_RED_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_RED_LM2,UNITLESS,INST,PT1M,PT1M,Instantaneous amount of red in image after land mask 2
-IMAGE_COLOUR_AMOUNT_GREEN_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_GREEN_LM1,UNITLESS,INST,PT1M,PT1M,Instantaneous amount of green in image after land mask 1
-IMAGE_COLOUR_AMOUNT_GREEN_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_GREEN_LM2,UNITLESS,INST,PT1M,PT1M,Instantaneous amount of green in image after land mask 2
-IMAGE_COLOUR_PROPORTION_BLUE_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_BLUE_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Proportion of blue in image after land mask 1 over preceding day
-IMAGE_COLOUR_PROPORTION_BLUE_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_BLUE_LM2,UNITLESS,MEAN_PREC,P1D,PT1M,Proportion of blue in image after land mask 2 over preceding day
-IMAGE_COLOUR_PROPORTION_RED_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_RED_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Proportion of red in image after land mask 1 over preceding day
-IMAGE_COLOUR_PROPORTION_RED_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_RED_LM2,UNITLESS,MEAN_PREC,P1D,PT1M,Proportion of red in image after land mask 2 over preceding day
-IMAGE_COLOUR_PROPORTION_GREEN_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_GREEN_LM1,UNITLESS,MEAN_PREC,P1D,PT1M,Proportion of green in image after land mask 1 over preceding day
-IMAGE_COLOUR_PROPORTION_GREEN_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_GREEN_LM2,UNITLESS,MEAN_PREC,P1D,PT1M,Proportion of green in image after land mask 2 over preceding day
-IMAGE_COLOUR_PROPORTION_BLUE_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_BLUE_LM1,UNITLESS,INST,PT1M,PT1M,Instantaneous proportion of blue in image after land mask 1
-IMAGE_COLOUR_PROPORTION_BLUE_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_BLUE_LM2,UNITLESS,INST,PT1M,PT1M,Instantaneous proportion of blue in image after land mask 2
-IMAGE_COLOUR_PROPORTION_RED_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_RED_LM1,UNITLESS,INST,PT1M,PT1M,Instantaneous proportion of red in image after land mask 1
-IMAGE_COLOUR_PROPORTION_RED_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_RED_LM2,UNITLESS,INST,PT1M,PT1M,Instantaneous proportion of red in image after land mask 2
-IMAGE_COLOUR_PROPORTION_GREEN_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_GREEN_LM1,UNITLESS,INST,PT1M,PT1M,Instantaneous proportion of green in image after land mask 1
-IMAGE_COLOUR_PROPORTION_GREEN_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_GREEN_LM2,UNITLESS,INST,PT1M,PT1M,Instantaneous proportion of green in image after land mask 2
-LWIN-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,MEAN_PREC,PT30M,PT30M,Mean incoming longwave radiation over preceding 30 minutes in watts per metre squared
-LWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation over preceding 30 minutes in watts per metre squared
-LWIN-TOTAL_PREC-MJM-2-D-P1D-P1D,,LWIN,MJM-2-D,TOTAL_PREC,P1D,P1D,Total incoming longwave radiation over preceding day in megajoules per metre squared
-LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN_PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
-LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
-LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous incoming longwave radiation calibration factor (unitless)
-LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN_PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
-LWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation over preceding 30 minutes in watts per metre squared
-LWOUT-TOTAL_PREC-MJM-2-D-P1D-P1D,,LWOUT,MJM-2-D,TOTAL_PREC,P1D,P1D,Total outgoing longwave radiation over preceding day in megajoules per metre squared
-LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN_PREC,PT30M,PT30M,Mean outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
-LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
-LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
-MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL_PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
-MSLP-MEAN_PREC-HPA-P1D-P1D,,MSLP,HPA,MEAN_PREC,P1D,P1D,Mean sea level pressure over the preceding day in hectopascals
-MSLP-MEAN_PREC-HPA-PT30M-PT30M,,MSLP,HPA,MEAN_PREC,PT30M,PT30M,Mean sea level pressure over the preceding 30 minutes in hectopascals
-NAN_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,NAN_COUNT,UNITLESS,TOTAL_PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
-NEUTRON_COUNT-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT,CTS,TOTAL_PREC,P1D,P1D,Total neutron count over the preceding day
-NEUTRON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT,CTS,TOTAL_PREC,PT1H,PT1H,Total neutron count over the preceding hour
-NEUTRON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,NEUTRON_COUNT,CTS,TOTAL_PREC,PT30M,PT30M,Total neutron count over the preceding 30 minutes
-NEUTRON_COUNT_COR-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT_COR,CTS,TOTAL_PREC,P1D,P1D,Total corrected neutron count over the preceding day
-NEUTRON_COUNT_COR-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_COR,CTS,TOTAL_PREC,PT1H,PT1H,Total corrected neutron count over the preceding hour
-NEUTRON_COUNT_EST-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT_EST,CTS,TOTAL_PREC,P1D,P1D,Total estimated neutron count over the preceding day
-NEUTRON_COUNT_EST-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_EST,CTS,TOTAL_PREC,PT1H,PT1H,Total estimated neutron count over the preceding hour
-NEUTRON_COUNT_SMO-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_SMO,CTS,TOTAL_PREC,PT1H,PT1H,Total smoothed neutron count over the preceding hour
-PA-MEAN_PREC-HPA-P1D-P1D,,PA,HPA,MEAN_PREC,P1D,P1D,Mean atmospheric pressure over the preceding day in hectopascals
-PA-MEAN_PREC-HPA-PT1H-PT1H,,PA,HPA,MEAN_PREC,PT1H,PT1H,Mean atmospheric pressure over the preceding hour in hectopascals
-PA-MEAN_PREC-HPA-PT30M-PT30M,,PA,HPA,MEAN_PREC,PT30M,PT30M,Mean atmospheric pressure over the preceding 30 minutes in hectopascals
-PA-STDDEV_PREC-HPA-PT30M-PT30M,,PA_STD,HPA,STDDEV_PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in hectopascals
-PE-TOTAL_PREC-MM-P1D-P1D,,PE,MM,TOTAL_PREC,P1D,P1D,Total potential evaporation over the preceding day in millimetres
-PE-TOTAL_PREC-MM-PT30M-PT30M,,PE,MM,TOTAL_PREC,PT30M,PT30M,Total potential evaporation over the preceding 30 minutes in millimetres
-PERM_10-INST-UNITLESS-PT30M-PT30M,,PERM_10,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity at 10 cm depth
-PERM_15-INST-UNITLESS-PT30M-PT30M,,PERM_15,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity at 15 cm depth
-PERM_25-INST-UNITLESS-PT30M-PT30M,,PERM_25,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity at 25 cm depth
-PERM_5-INST-UNITLESS-PT30M-PT30M,,PERM_5,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity at 5 cm depth
-PERM_50-INST-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,INST,PT30M,PT30M,Instantaneous relative permittivity at 50 cm depth
-PRECIP-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation over the preceding minute in millimetres
-PRECIP-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation over the preceding 30 minutes in millimetres
-PRECIP-TOTAL_PREC-MM-P1D-P1D,,PRECIP,MM,TOTAL_PREC,P1D,P1D,Total precipitation over the preceding day in millimetres
-PRECIP_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TOT,MM,TOTAL_PREC,PT1M,PT1M,Accumulated total precipitation in millimetres
-PRECIP_NRT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_NRT,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation (non-real-time) over the preceding minute in millimetres
-PRECIP_RT_NRT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_RT_NRT,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation (real-time and non-real-time) over the preceding minute in millimetres
-PRECIP_NRT_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_NRT_TOT,MM,TOTAL_PREC,PT1M,PT1M,Accumulated total precipitation (non-real-time) over the preceding minute in millimetres
-PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per minute
-PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN,MM_HR-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per hour
-PRECIP_INTEN_RT-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_RT,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity (real-time) over the preceding minute in millimetres per minute
-PRECIP_INTEN_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_M-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per minute
-PRECIP_INTEN_LR-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_HR-1,MEAN_PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per hour
-PRECIP_TIP_A-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_A,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from tip A over the preceding minute in millimetres
-PRECIP_TIP_B-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_B,MM,TOTAL_PREC,PT1M,PT1M,Total precipitation from tip B over the preceding minute in millimetres
-PRECIP_TIP_A-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_A,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from tip A over the preceding 30 minutes in millimetres
-PRECIP_TIP_B-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_B,MM,TOTAL_PREC,PT30M,PT30M,Total precipitation from tip B over the preceding 30 minutes in millimetres
-Q-MEAN_PREC-GM-3-P1D-P1D,,Q,GM-3,MEAN_PREC,P1D,P1D,Mean absolute humidity over the preceding day in grams per cubic metre
-Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN_PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
-Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN_PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
-Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV_PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
-RH-MEAN_PREC-PCT-P1D-P1D,,RH,PCT,MEAN_PREC,P1D,P1D,Mean relative humidity over the preceding day in percent
-RH-MEAN_PREC-PCT-PT30M-PT30M,,RH,PCT,MEAN_PREC,PT30M,PT30M,Mean relative humidity over the preceding 30 minutes in percent
-RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH_STD,PCT,STDDEV_PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent
-RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
-RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN_PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent
-RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN_PREC,PT30M,PT30M,Mean net radiation over preceding 30 minutes in watts per metre squared
-RN-TOTAL_PREC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL_PREC,P1D,P1D,Total net radiation over the preceding day in megajoules per metre squared
-SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL_PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless)
-SMI-MEAN_PREC-UNITLESS-P1D-P1D,,SMI,UNITLESS,MEAN_PREC,P1D,P1D,Soil moisture index over the preceding day (unitless)
-SNOWD_DISTANCE_COR-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_COR,M,INST,PT30M,PT30M,Instantaneous snow depth in metres (corrected)
-SNOWD_DISTANCE_COR-MEAN_PREC-M-P1D-P1D,,SNOWD_DISTANCE_COR,M,MEAN_PREC,P1D,P1D,Mean snow depth over the preceding day in metres (corrected)
-SNOWD_DISTANCE_UNC-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_UNC,M,INST,PT30M,PT30M,Instantaneous snow depth in metres (uncorrected)
-SNOWD_SIGNALQUALITY-STDDEV_PREC-UNITLESS-PT30M-PT30M,,SNOWD_SIGNALQUALITY,UNITLESS,STDDEV_PREC,PT30M,PT30M,Standard deviation of snow depth signal quality over the preceding 30 minutes (uncorrected)
-SNOW_DAY-INST-UNITLESS-P1D-P1D,,SNOW_DAY,UNITLESS,INST,P1D,P1D,Indicator of snow day over the preceding day (unitless)
-SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,INST,PT1M,PT1M,Instantaneous status of sensor
-SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN_PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
-STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
-SWE-MEAN_MID_24HOUR-MM-P1D-P1D,,SWE,MM,MEAN_MID_24HOUR,P1D,P1D,Mean snow water equivalent over the preceding day in millimetres
-SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN_PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
-SWIN-MEAN_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,MEAN_PREC,PT30M,PT30M,Mean incoming shortwave radiation over preceding 30 minutes in watts per metre squared
-SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
-SWIN-TOTAL_PREC-MJM-2-D-P1D-P1D,,SWIN,MJM-2-D,TOTAL_PREC,P1D,P1D,Total incoming shortwave radiation over preceding day in megajoules per metre squared
-SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
-SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,MEAN_PREC,PT30M,PT30M,Mean outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
-SWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,SWOUT_STD,WM-2,STDDEV_PREC,PT30M,PT30M,Standard deviation of outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
-SWOUT-TOTAL_PREC-MJM-2-D-P1D-P1D,,SWOUT,MJM-2-D,TOTAL_PREC,P1D,P1D,Total outgoing shortwave radiation over preceding day in megajoules per metre squared
-SWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,SWOUT_MULT,UNITLESS,INST,PT30M,PT30M,Instantaneous outgoing shortwave radiation calibration factor (unitless)
-TBR_TIP-INST-MM-PT30M-PT30M,,TBR_TIP,MM,INST,PT30M,PT30M,Instantaneous tipping bucket rain gauge tip amount in millimetres
-TEMP_AIR-MAX_PREC-DEGC-PT30M-P1D,,TEMP_AIR_MAX,DEGC,MAX_PREC,P1D,PT30M,Maximum air temperature over the preceding day in degrees Celsius
-TEMP_AIR-MEAN_PREC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MEAN_PREC,P1D,P1D,Mean air temperature over the preceding day in degrees Celsius
-TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,MEAN_PREC,PT30M,PT30M,Mean air temperature over the preceding 30 minutes in degrees Celsius
-TEMP_AIR-MIN_PREC-DEGC-PT30M-P1D,,TEMP_AIR_MIN,DEGC,MIN_PREC,P1D,PT30M,Minimum air temperature over the preceding day in degrees Celsius
-TEMP_AIR_STD-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR_STD,DEGC,STDDEV_PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
-TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,MEAN_PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in degrees Celsius
-TEMP_SENSOR_STD-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_STD,DEGC,STDDEV_PREC,PT30M,PT30M,Standard deviation of temperature of sensor over the preceding 30 minutes in degrees Celsius
-TEMP_SENSOR_INT-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_INT,DEGC,MEAN_PREC,PT30M,PT30M,Mean internal temperature of sensor over the preceding 30 minutes in degrees Celsius
-TEMP_LOADCELL-INST-MM-PT1M-PT1M,,TEMP_LOADCELL,MM,INST,PT1M,PT1M,Instantaneous internal temperature of load cell in millimetres
-TEMP_SOIL_10-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_10,DEGC,INST,PT30M,PT30M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
-TEMP_SOIL_10-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_10,DEGC,MEAN_PREC,PT30M,PT30M,Mean soil temperature at 10 cm depth over the preceding 30 minutes in degrees Celsius
-TEMP_SOIL_10-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_10,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 10 cm depth over the preceding day in degrees Celsius
-TEMP_SOIL_15-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_15,DEGC,INST,PT30M,PT30M,Instantaneous soil temperature at 15 cm depth in degrees Celsius
-TEMP_SOIL_15-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_15,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 15 cm depth over the preceding day in degrees Celsius
-TEMP_SOIL_2-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_2,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 2 cm depth over the preceding day in degrees Celsius
-TEMP_SOIL_2-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_2,DEGC,MEAN_PREC,PT30M,PT30M,Mean soil temperature at 2 cm depth over the preceding 30 minutes in degrees Celsius
-TEMP_SOIL_20-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_20,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 20 cm depth over the preceding day in degrees Celsius
-TEMP_SOIL_20-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_20,DEGC,MEAN_PREC,PT30M,PT30M,Mean soil temperature at 20 cm depth over the preceding 30 minutes in degrees Celsius
-TEMP_SOIL_25-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_25,DEGC,INST,PT30M,PT30M,Instantaneous soil temperature at 25 cm depth in degrees Celsius
-TEMP_SOIL_25-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_25,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 25 cm depth over the preceding day in degrees Celsius
-TEMP_SOIL_5-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_5,DEGC,INST,PT30M,PT30M,Instantaneous soil temperature at 5 cm depth in degrees Celsius
-TEMP_SOIL_5-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_5,DEGC,MEAN_PREC,PT30M,PT30M,Mean soil temperature at 5 cm depth over the preceding 30 minutes in degrees Celsius
-TEMP_SOIL_5-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_5,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 5 cm depth over the preceding day in degrees Celsius
-TEMP_SOIL_50-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,INST,PT30M,PT30M,Instantaneous soil temperature at 50 cm depth in degrees Celsius
-TEMP_SOIL_50-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,MEAN_PREC,PT30M,PT30M,Mean soil temperature at 50 cm depth over the preceding 30 minutes in degrees Celsius
-TEMP_SOIL_50-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_50,DEGC,MEAN_PREC,P1D,P1D,Mean soil temperature at 50 cm depth over the preceding day in degrees Celsius
-TEMP_SONIC-INST-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,INST,PT30M,PT30M,Instantaneous sonic temperature in degrees Celsius
-TEMP_SONIC_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
-UNCERTAINTY-MEAN_MID_24HOUR-MM-P1D-P1D,,UNCERTAINTY,MM,MEAN_MID_24HOUR,P1D,P1D,Mean uncertainty of snow water equivalent over the preceding day in millimetres
-UNCERTAINTY-MEAN_PREC-MM-PT1H-PT1H,,UNCERTAINTY,MM,MEAN_PREC,PT1H,PT1H,Mean uncertainty of snow water equivalent over the preceding hour in millimetres
-UX-MEAN_PREC-MS-1-PT30M-PT30M,,UX,MS-1,MEAN_PREC,PT30M,PT30M,Mean X component of wind speed over the preceding 30 minutes in meters per second
-UY-MEAN_PREC-MS-1-PT30M-PT30M,,UY,MS-1,MEAN_PREC,PT30M,PT30M,Mean Y component of wind speed over the preceding 30 minutes in meters per second
-UZ-MEAN_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,MEAN_PREC,PT30M,PT30M,Mean Z component of wind speed over the preceding 30 minutes in meters per second
-UX_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UX_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of X component of wind speed in meters per second
-UY_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UY_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of Y component of wind speed in meters per second
-UZ_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UZ_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of Z component of wind speed in meters per second
-VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in kilopascals
-VOLTAGE_BATT-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE_BATT,V,MEAN_PREC,PT30M,PT30M,Mean battery voltage over the preceding 30 minutes in volts
-VWC_CRNS-MEAN_PREC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN_PREC,P1D,P1D,Mean volumetric water content from CRNS tube over the preceding day in percent
-VWC_CRNS-MEAN_PREC-PCT-PT1H-PT1H,,VWC_CRNS,PCT,MEAN_PREC,PT1H,PT1H,Mean volumetric water content from CRNS tube over the preceding hour in percent
-VWC_CRNS_NO_SNOW-MEAN_PREC-PCT-P1D-P1D,,VWC_CRNS_NO_SNOW,PCT,MEAN_PREC,P1D,P1D,Mean volumetric water content from CRNS tube (with snow content removed) over the preceding day in percent
-VWC_SOIL-INST-PCT-PT1M-PT1M,,VWC_SOIL,PCT,INST,PT1M,PT1M,Instantaneous soil volumetric water in percent
-VWC_SOIL_10-INST-PCT-PT30M-PT30M,,VWC_SOIL_10,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 10 cm depth in percent
-VWC_SOIL_10-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_10,PCT,MEAN_PREC,P1D,P1D,Mean soil volumetric water content at 10 cm depth over the preceding day in percent
-VWC_SOIL_15-INST-PCT-PT30M-PT30M,,VWC_SOIL_15,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 15 cm depth in percent
-VWC_SOIL_15-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_15,PCT,MEAN_PREC,P1D,P1D,Mean soil volumetric water content at 15 cm depth over the preceding day in percent
-VWC_SOIL_25-INST-PCT-PT30M-PT30M,,VWC_SOIL_25,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 25 cm depth in percent
-VWC_SOIL_25-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_25,PCT,MEAN_PREC,P1D,P1D,Mean soil volumetric water content at 25 cm depth over the preceding day in percent
-VWC_SOIL_40-INST-PCT-PT30M-PT30M,,VWC_SOIL_40,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 40 cm depth in percent
-VWC_SOIL_5-INST-PCT-PT30M-PT30M,,VWC_SOIL_5,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 5 cm depth in percent
-VWC_SOIL_5-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_5,PCT,MEAN_PREC,P1D,P1D,Mean soil volumetric water content at 5 cm depth over the preceding day in percent
-VWC_SOIL_50-INST-PCT-PT30M-PT30M,,VWC_SOIL_50,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 50 cm depth in percent
-VWC_SOIL_50-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_50,PCT,MEAN_PREC,P1D,P1D,Mean soil volumetric water content at 50 cm depth over the preceding day in percent
-VWC_SOIL_65-INST-PCT-PT30M-PT30M,,VWC_SOIL_65,PCT,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 65 cm depth in percent
-WD-MEAN_PREC-DEG-P1D-P1D,,WD,DEG,MEAN_PREC,P1D,P1D,Mean wind direction over the preceding day in degrees
-WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN_PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees
-WD_STD-STDDEV_PREC-DEG-PT30M-PT30M,,WD_STD,DEG,STDDEV_PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
-COV_TS_UX-INST-KMS-1-PT30M-PT30M,,COV_TS_UX,KMS-1,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UX wind speed component in kelvin meters per second
-COV_TS_UY-INST-KMS-1-PT30M-PT30M,,COV_TS_UY,KMS-1,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UY wind speed component in kelvin meters per second
-COV_TS_UZ-INST-KMS-1-PT30M-PT30M,,COV_TS_UZ,KMS-1,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UZ wind speed component in kelvin meters per second
-COV_UX_UY-INST-MS-1-PT30M-PT30M,,COV_UX_UY,MS-1,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UY in meters per second
-COV_UX_UZ-INST-MS-1-PT30M-PT30M,,COV_UX_UZ,MS-1,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UZ in meters per second
-COV_UY_UZ-INST-MS-1-PT30M-PT30M,,COV_UY_UZ,MS-1,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UY and UZ in meters per second
-WS_RES-INST-MS-1-PT30M-PT30M,,WS_RES,MS-1,INST,PT30M,PT30M,Instantaneous resultant wind speed over the in meters per second
-WS-MEAN_PREC-MS-1-P1D-P1D,,WS,MS-1,MEAN_PREC,P1D,P1D,Mean wind speed over the preceding day in meters per second
-WS-MEAN_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MEAN_PREC,PT30M,PT30M,Mean wind speed over the preceding 30 minutes in meters per second
-WS_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,WS_STD,MS-1,STDDEV_PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second
+ID,PARENT_ID,PARAMETER_ID,UNIT_ID,AGGREGATION_ID,TIME_ANCHOR_ID,PERIODICITY,RESOLUTION,DESCRIPTION
+DISCHARGE-INST-M3S-1,,DISCHARGE,M3S-1,NONE,INST,,,Instantaneous discharge in cubic metres per second
+DISCHARGE-INST-LS-1,,DISCHARGE,LS-1,NONE,INST,,,Instantaneous discharge in litres per second
+WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,,Water velocity in metres per second
+WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,NONE,INST,,,Instantaneous water velocity in metres per second
+WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,PREC,,,Mean water velocity in metres per second
+WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,PREC,,,Maximum water velocity in metres per second
+REV-COUNT,,REV,UNITLESS,,,,,Number of revolutions counted in measurement period
+REV-TOTAL-COUNT,,REV,UNITLESS,TOTAL,PREC,,,Total number of revolutions counted in measurement Period
+ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,PREC,,,Mean angular velocity in revolutions per second
+WATER_TEMP-DEGC,,WATER_TEMP,DEGC,,,,,Water temperature in degrees Celsius
+WATER_TEMP-INST-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,NONE,INST,,,Instantaneous water temperature in degrees Celsius
+WATER_TEMP-MEAN-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,MEAN,PREC,,,Mean water temperature in degrees Celsius
+AIR_DENSITY-INST-KGM-3-PT30M-PT30M,,AIR_DENSITY,KGM-3,NONE,INST,PT30M,PT30M,Instantaneous air density in kilograms per metre cubed
+ALBEDO-MEAN_PREC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN,PREC,P1D,P1D,Mean albedo over the preceding day
+ALBEDO_STD-MEAN_PREC-UNITLESS-P1D-P1D,,ALBEDO_STD,UNITLESS,STDDEV,PREC,P1D,P1D,Standard deviation of albedo over the preceding day
+ALBEDO-MEAN_PREC-UNITLESS-PT30M-PT30M,,ALBEDO,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean albedo over the preceding 30 minutes
+BUCKET_LEVEL_RT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_RT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (real-time) in millimetres
+BUCKET_LEVEL_NRT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_NRT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (non-real-time) in millimetres
+COND_10-INST-DSM-1-PT30M-PT30M,,COND_10,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 10 cm depth
+COND_15-INST-DSM-1-PT30M-PT30M,,COND_15,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 15 cm depth
+COND_25-INST-DSM-1-PT30M-PT30M,,COND_25,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 25 cm depth
+COND_5-INST-DSM-1-PT30M-PT30M,,COND_5,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 5 cm depth
+COND_50-INST-DSM-1-PT30M-PT30M,,COND_50,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 50 cm depth
+D86_1M-MEAN_PREC-CM-P1D-P1D,,D86_1M,CM,MEAN,PREC,P1D,P1D,D86 effective depth 1m from CRNS in cm over preceding day
+D86_5M-MEAN_PREC-CM-P1D-P1D,,D86_5M,CM,MEAN,PREC,P1D,P1D,D86 effective depth 5m from CRNS in cm over preceding day
+D86_25M-MEAN_PREC-CM-P1D-P1D,,D86_25M,CM,MEAN,PREC,P1D,P1D,D86 effective depth 25m from CRNS in cm over preceding day
+D86_75M-MEAN_PREC-CM-P1D-P1D,,D86_75M,CM,MEAN,PREC,P1D,P1D,D86 effective depth 75m from CRNS in cm over preceding day
+D86_150M-MEAN_PREC-CM-P1D-P1D,,D86_150M,CM,MEAN,PREC,P1D,P1D,D86 effective depth 150m from CRNS in cm over preceding day
+D86_200M-MEAN_PREC-CM-P1D-P1D,,D86_200M,CM,MEAN,PREC,P1D,P1D,D86 effective depth 200m from CRNS in cm over preceding day
+D86_1M-MEAN_PREC-CM-PT1H-PT1H,,D86_1M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 1m from CRNS in cm over preceding hour
+D86_5M-MEAN_PREC-CM-PT1H-PT1H,,D86_5M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 5m from CRNS in cm over preceding hour
+D86_25M-MEAN_PREC-CM-PT1H-PT1H,,D86_25M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 25m from CRNS in cm over preceding hour
+D86_75M-MEAN_PREC-CM-PT1H-PT1H,,D86_75M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 75m from CRNS in cm over preceding hour
+D86_150M-MEAN_PREC-CM-PT1H-PT1H,,D86_150M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 150m from CRNS in cm over preceding hour
+D86_200M-MEAN_PREC-CM-PT1H-PT1H,,D86_200M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 200m from CRNS in cm over preceding hour
+DIAG_FLAG_1-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_1,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 1
+DIAG_FLAG_2-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_2,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 2
+DIAG_FLAG_3-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_3,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 3
+DIAG_FLAG_4-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_4,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 4
+DIAG_FLAG_5-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_5,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 5
+DIAG_PRECIP-INST-UNITLESS-PT30M-PT30M,,DIAG_PRECIP,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous Precipitation diagnostic flag
+EFF_DEPTH-MEAN_PREC-CM-P1D-P1D,,EFF_DEPTH,CM,MEAN,PREC,P1D,P1D,Effective depth in cm over preceding day
+EFF_DEPTH-MEAN_PREC-CM-PT1H-PT1H,,EFF_DEPTH,CM,MEAN,PREC,PT1H,PT1H,Effective depth in cm over preceding hour
+FACTOR_INTEN-INST-UNITLESS-PT1H-PT1H,,FACTOR_INTEN,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous intensity factor (unitless)
+FACTOR_PA-INST-UNITLESS-PT1H-PT1H,,FACTOR_PA,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous pressure facctor (unitless)
+FACTOR_Q-INST-UNITLESS-PT1H-PT1H,,FACTOR_Q,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous water vapour factor (unitless)
+FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,NONE,INST,PT30M,PT30M,Instantaneous momentum flux in kilograms per metre per second squared
+FRICTIONV-INST-MS-1-PT30M-PT30M,,FRICTIONV,MS-1,NONE,INST,PT30M,PT30M,Instantaneous friction velocity in metres per second
+HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,NONE,INST,PT30M,PT30M,Instantaneous sensible heat flux in watts per metre squared
+HEATFLUX_SOIL_MV-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL_MV,MV,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
+HEATFLUX_SOIL_CAL-INST-UNITLESS-PT30M-PT30M,,HEATFLUX_SOIL_CAL,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux calibration factor (unitless)
+HEATFLUX_SOIL-MEAN_PREC-WM-2-P1D-P1D,,HEATFLUX_SOIL,WM-2,MEAN,PREC,P1D,P1D,Mean soil heat flux in watts per metre squared over preceding day
+HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,MEAN,PREC,PT30M,PT30M,Mean soil heat flux in watts per metre squared over preceding 30 minutes
+HEATFLUX_SOIL_STD-STDDEV_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of soil heat flux in watts per metre squared over preceding 30 minutes
+IMAGE_COLOUR_AMOUNT_BLUE_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_BLUE_LM1,UNITLESS,MEAN,PREC,P1D,PT1M,Amount of blue in image after land mask 1 over preceding day
+IMAGE_COLOUR_AMOUNT_BLUE_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_BLUE_LM2,UNITLESS,MEAN,PREC,P1D,PT1M,Amount of blue in image after land mask 2 over preceding day
+IMAGE_COLOUR_AMOUNT_RED_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_RED_LM1,UNITLESS,MEAN,PREC,P1D,PT1M,Amount of red in image after land mask 1 over preceding day
+IMAGE_COLOUR_AMOUNT_RED_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_RED_LM2,UNITLESS,MEAN,PREC,P1D,PT1M,Amount of red in image after land mask 2 over preceding day
+IMAGE_COLOUR_AMOUNT_GREEN_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_GREEN_LM1,UNITLESS,MEAN,PREC,P1D,PT1M,Amount of green in image after land mask 1 over preceding day
+IMAGE_COLOUR_AMOUNT_GREEN_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_AMOUNT_GREEN_LM2,UNITLESS,MEAN,PREC,P1D,PT1M,Amount of green in image after land mask 2 over preceding day
+IMAGE_COLOUR_AMOUNT_BLUE_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_BLUE_LM1,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous amount of blue in image after land mask 1
+IMAGE_COLOUR_AMOUNT_BLUE_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_BLUE_LM2,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous amount of blue in image after land mask 2
+IMAGE_COLOUR_AMOUNT_RED_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_RED_LM1,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous amount of red in image after land mask 1
+IMAGE_COLOUR_AMOUNT_RED_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_RED_LM2,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous amount of red in image after land mask 2
+IMAGE_COLOUR_AMOUNT_GREEN_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_GREEN_LM1,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous amount of green in image after land mask 1
+IMAGE_COLOUR_AMOUNT_GREEN_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_GREEN_LM2,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous amount of green in image after land mask 2
+IMAGE_COLOUR_PROPORTION_BLUE_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_BLUE_LM1,UNITLESS,MEAN,PREC,P1D,PT1M,Proportion of blue in image after land mask 1 over preceding day
+IMAGE_COLOUR_PROPORTION_BLUE_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_BLUE_LM2,UNITLESS,MEAN,PREC,P1D,PT1M,Proportion of blue in image after land mask 2 over preceding day
+IMAGE_COLOUR_PROPORTION_RED_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_RED_LM1,UNITLESS,MEAN,PREC,P1D,PT1M,Proportion of red in image after land mask 1 over preceding day
+IMAGE_COLOUR_PROPORTION_RED_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_RED_LM2,UNITLESS,MEAN,PREC,P1D,PT1M,Proportion of red in image after land mask 2 over preceding day
+IMAGE_COLOUR_PROPORTION_GREEN_LM1-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_GREEN_LM1,UNITLESS,MEAN,PREC,P1D,PT1M,Proportion of green in image after land mask 1 over preceding day
+IMAGE_COLOUR_PROPORTION_GREEN_LM2-MEAN_PREC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_GREEN_LM2,UNITLESS,MEAN,PREC,P1D,PT1M,Proportion of green in image after land mask 2 over preceding day
+IMAGE_COLOUR_PROPORTION_BLUE_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_BLUE_LM1,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous proportion of blue in image after land mask 1
+IMAGE_COLOUR_PROPORTION_BLUE_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_BLUE_LM2,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous proportion of blue in image after land mask 2
+IMAGE_COLOUR_PROPORTION_RED_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_RED_LM1,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous proportion of red in image after land mask 1
+IMAGE_COLOUR_PROPORTION_RED_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_RED_LM2,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous proportion of red in image after land mask 2
+IMAGE_COLOUR_PROPORTION_GREEN_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_GREEN_LM1,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous proportion of green in image after land mask 1
+IMAGE_COLOUR_PROPORTION_GREEN_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION_GREEN_LM2,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous proportion of green in image after land mask 2
+LWIN-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation over preceding 30 minutes in watts per metre squared
+LWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation over preceding 30 minutes in watts per metre squared
+LWIN-TOTAL_PREC-MJM-2-D-P1D-P1D,,LWIN,MJM-2-D,TOTAL,PREC,P1D,P1D,Total incoming longwave radiation over preceding day in megajoules per metre squared
+LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming longwave radiation calibration factor (unitless)
+LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
+LWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation over preceding 30 minutes in watts per metre squared
+LWOUT-TOTAL_PREC-MJM-2-D-P1D-P1D,,LWOUT,MJM-2-D,TOTAL,PREC,P1D,P1D,Total outgoing longwave radiation over preceding day in megajoules per metre squared
+LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
+MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
+MSLP-MEAN_PREC-HPA-P1D-P1D,,MSLP,HPA,MEAN,PREC,P1D,P1D,Mean sea level pressure over the preceding day in hectopascals
+MSLP-MEAN_PREC-HPA-PT30M-PT30M,,MSLP,HPA,MEAN,PREC,PT30M,PT30M,Mean sea level pressure over the preceding 30 minutes in hectopascals
+NAN_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,NAN_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
+NEUTRON_COUNT-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT,CTS,TOTAL,PREC,P1D,P1D,Total neutron count over the preceding day
+NEUTRON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total neutron count over the preceding hour
+NEUTRON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,NEUTRON_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total neutron count over the preceding 30 minutes
+NEUTRON_COUNT_COR-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT_COR,CTS,TOTAL,PREC,P1D,P1D,Total corrected neutron count over the preceding day
+NEUTRON_COUNT_COR-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_COR,CTS,TOTAL,PREC,PT1H,PT1H,Total corrected neutron count over the preceding hour
+NEUTRON_COUNT_EST-TOTAL_PREC-CTS-P1D-P1D,,NEUTRON_COUNT_EST,CTS,TOTAL,PREC,P1D,P1D,Total estimated neutron count over the preceding day
+NEUTRON_COUNT_EST-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_EST,CTS,TOTAL,PREC,PT1H,PT1H,Total estimated neutron count over the preceding hour
+NEUTRON_COUNT_SMO-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_SMO,CTS,TOTAL,PREC,PT1H,PT1H,Total smoothed neutron count over the preceding hour
+PA-MEAN_PREC-HPA-P1D-P1D,,PA,HPA,MEAN,PREC,P1D,P1D,Mean atmospheric pressure over the preceding day in hectopascals
+PA-MEAN_PREC-HPA-PT1H-PT1H,,PA,HPA,MEAN,PREC,PT1H,PT1H,Mean atmospheric pressure over the preceding hour in hectopascals
+PA-MEAN_PREC-HPA-PT30M-PT30M,,PA,HPA,MEAN,PREC,PT30M,PT30M,Mean atmospheric pressure over the preceding 30 minutes in hectopascals
+PA-STDDEV_PREC-HPA-PT30M-PT30M,,PA_STD,HPA,STDDEV,PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in hectopascals
+PE-TOTAL_PREC-MM-P1D-P1D,,PE,MM,TOTAL,PREC,P1D,P1D,Total potential evaporation over the preceding day in millimetres
+PE-TOTAL_PREC-MM-PT30M-PT30M,,PE,MM,TOTAL,PREC,PT30M,PT30M,Total potential evaporation over the preceding 30 minutes in millimetres
+PERM_10-INST-UNITLESS-PT30M-PT30M,,PERM_10,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 10 cm depth
+PERM_15-INST-UNITLESS-PT30M-PT30M,,PERM_15,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 15 cm depth
+PERM_25-INST-UNITLESS-PT30M-PT30M,,PERM_25,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 25 cm depth
+PERM_5-INST-UNITLESS-PT30M-PT30M,,PERM_5,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 5 cm depth
+PERM_50-INST-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 50 cm depth
+PRECIP-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation over the preceding minute in millimetres
+PRECIP-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation over the preceding 30 minutes in millimetres
+PRECIP-TOTAL_PREC-MM-P1D-P1D,,PRECIP,MM,TOTAL,PREC,P1D,P1D,Total precipitation over the preceding day in millimetres
+PRECIP_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TOT,MM,TOTAL,PREC,PT1M,PT1M,Accumulated total precipitation in millimetres
+PRECIP_NRT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_NRT,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation (non-real-time) over the preceding minute in millimetres
+PRECIP_RT_NRT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_RT_NRT,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation (real-time and non-real-time) over the preceding minute in millimetres
+PRECIP_NRT_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_NRT_TOT,MM,TOTAL,PREC,PT1M,PT1M,Accumulated total precipitation (non-real-time) over the preceding minute in millimetres
+PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per minute
+PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN,MM_HR-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per hour
+PRECIP_INTEN_RT-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_RT,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity (real-time) over the preceding minute in millimetres per minute
+PRECIP_INTEN_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per minute
+PRECIP_INTEN_LR-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_HR-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per hour
+PRECIP_TIP_A-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_A,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation from tip A over the preceding minute in millimetres
+PRECIP_TIP_B-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_B,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation from tip B over the preceding minute in millimetres
+PRECIP_TIP_A-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_A,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation from tip A over the preceding 30 minutes in millimetres
+PRECIP_TIP_B-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_B,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation from tip B over the preceding 30 minutes in millimetres
+Q-MEAN_PREC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PREC,P1D,P1D,Mean absolute humidity over the preceding day in grams per cubic metre
+Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
+Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
+Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
+RH-MEAN_PREC-PCT-P1D-P1D,,RH,PCT,MEAN,PREC,P1D,P1D,Mean relative humidity over the preceding day in percent
+RH-MEAN_PREC-PCT-PT30M-PT30M,,RH,PCT,MEAN,PREC,PT30M,PT30M,Mean relative humidity over the preceding 30 minutes in percent
+RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH_STD,PCT,STDDEV,PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent
+RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,NONE,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
+RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN,PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent
+RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN,PREC,PT30M,PT30M,Mean net radiation over preceding 30 minutes in watts per metre squared
+RN-TOTAL_PREC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL,PREC,P1D,P1D,Total net radiation over the preceding day in megajoules per metre squared
+SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless)
+SMI-MEAN_PREC-UNITLESS-P1D-P1D,,SMI,UNITLESS,MEAN,PREC,P1D,P1D,Soil moisture index over the preceding day (unitless)
+SNOWD_DISTANCE_COR-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_COR,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (corrected)
+SNOWD_DISTANCE_COR-MEAN_PREC-M-P1D-P1D,,SNOWD_DISTANCE_COR,M,MEAN,PREC,P1D,P1D,Mean snow depth over the preceding day in metres (corrected)
+SNOWD_DISTANCE_UNC-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_UNC,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (uncorrected)
+SNOWD_SIGNALQUALITY-STDDEV_PREC-UNITLESS-PT30M-PT30M,,SNOWD_SIGNALQUALITY,UNITLESS,STDDEV,PREC,PT30M,PT30M,Standard deviation of snow depth signal quality over the preceding 30 minutes (uncorrected)
+SNOW_DAY-INST-UNITLESS-P1D-P1D,,SNOW_DAY,UNITLESS,NONE,INST,P1D,P1D,Indicator of snow day over the preceding day (unitless)
+SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous status of sensor
+SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
+STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,NONE,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
+SWE-MEAN_MID_24HOUR-MM-P1D-P1D,,SWE,MM,MEAN,MIDPOINT,P1D,P1D,Mean snow water equivalent over the preceding day in millimetres
+SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
+SWIN-MEAN_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming shortwave radiation over preceding 30 minutes in watts per metre squared
+SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
+SWIN-TOTAL_PREC-MJM-2-D-P1D-P1D,,SWIN,MJM-2-D,TOTAL,PREC,P1D,P1D,Total incoming shortwave radiation over preceding day in megajoules per metre squared
+SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
+SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
+SWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,SWOUT_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
+SWOUT-TOTAL_PREC-MJM-2-D-P1D-P1D,,SWOUT,MJM-2-D,TOTAL,PREC,P1D,P1D,Total outgoing shortwave radiation over preceding day in megajoules per metre squared
+SWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,SWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing shortwave radiation calibration factor (unitless)
+TBR_TIP-INST-MM-PT30M-PT30M,,TBR_TIP,MM,NONE,INST,PT30M,PT30M,Instantaneous tipping bucket rain gauge tip amount in millimetres
+TEMP_AIR-MAX_PREC-DEGC-PT30M-P1D,,TEMP_AIR_MAX,DEGC,MAX,PREC,P1D,PT30M,Maximum air temperature over the preceding day in degrees Celsius
+TEMP_AIR-MEAN_PREC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MEAN,PREC,P1D,P1D,Mean air temperature over the preceding day in degrees Celsius
+TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,MEAN,PREC,PT30M,PT30M,Mean air temperature over the preceding 30 minutes in degrees Celsius
+TEMP_AIR-MIN_PREC-DEGC-PT30M-P1D,,TEMP_AIR_MIN,DEGC,MIN,PREC,P1D,PT30M,Minimum air temperature over the preceding day in degrees Celsius
+TEMP_AIR_STD-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR_STD,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
+TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_SENSOR_STD-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_STD,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_SENSOR_INT-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_INT,DEGC,MEAN,PREC,PT30M,PT30M,Mean internal temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_LOADCELL-INST-MM-PT1M-PT1M,,TEMP_LOADCELL,MM,NONE,INST,PT1M,PT1M,Instantaneous internal temperature of load cell in millimetres
+TEMP_SOIL_10-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_10,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
+TEMP_SOIL_10-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_10,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 10 cm depth over the preceding 30 minutes in degrees Celsius
+TEMP_SOIL_10-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_10,DEGC,MEAN,PREC,P1D,P1D,Mean soil temperature at 10 cm depth over the preceding day in degrees Celsius
+TEMP_SOIL_15-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_15,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 15 cm depth in degrees Celsius
+TEMP_SOIL_15-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_15,DEGC,MEAN,PREC,P1D,P1D,Mean soil temperature at 15 cm depth over the preceding day in degrees Celsius
+TEMP_SOIL_2-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_2,DEGC,MEAN,PREC,P1D,P1D,Mean soil temperature at 2 cm depth over the preceding day in degrees Celsius
+TEMP_SOIL_2-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_2,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 2 cm depth over the preceding 30 minutes in degrees Celsius
+TEMP_SOIL_20-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_20,DEGC,MEAN,PREC,P1D,P1D,Mean soil temperature at 20 cm depth over the preceding day in degrees Celsius
+TEMP_SOIL_20-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_20,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 20 cm depth over the preceding 30 minutes in degrees Celsius
+TEMP_SOIL_25-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_25,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 25 cm depth in degrees Celsius
+TEMP_SOIL_25-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_25,DEGC,MEAN,PREC,P1D,P1D,Mean soil temperature at 25 cm depth over the preceding day in degrees Celsius
+TEMP_SOIL_5-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_5,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 5 cm depth in degrees Celsius
+TEMP_SOIL_5-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_5,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 5 cm depth over the preceding 30 minutes in degrees Celsius
+TEMP_SOIL_5-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_5,DEGC,MEAN,PREC,P1D,P1D,Mean soil temperature at 5 cm depth over the preceding day in degrees Celsius
+TEMP_SOIL_50-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 50 cm depth in degrees Celsius
+TEMP_SOIL_50-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 50 cm depth over the preceding 30 minutes in degrees Celsius
+TEMP_SOIL_50-MEAN_PREC-DEGC-P1D-P1D,,TEMP_SOIL_50,DEGC,MEAN,PREC,P1D,P1D,Mean soil temperature at 50 cm depth over the preceding day in degrees Celsius
+TEMP_SONIC-INST-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,NONE,INST,PT30M,PT30M,Instantaneous sonic temperature in degrees Celsius
+TEMP_SONIC_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
+UNCERTAINTY-MEAN_MID_24HOUR-MM-P1D-P1D,,UNCERTAINTY,MM,MEAN,MIDPOINT,P1D,P1D,Mean uncertainty of snow water equivalent over the preceding day in millimetres
+UNCERTAINTY-MEAN_PREC-MM-PT1H-PT1H,,UNCERTAINTY,MM,MEAN,PREC,PT1H,PT1H,Mean uncertainty of snow water equivalent over the preceding hour in millimetres
+UX-MEAN_PREC-MS-1-PT30M-PT30M,,UX,MS-1,MEAN,PREC,PT30M,PT30M,Mean X component of wind speed over the preceding 30 minutes in meters per second
+UY-MEAN_PREC-MS-1-PT30M-PT30M,,UY,MS-1,MEAN,PREC,PT30M,PT30M,Mean Y component of wind speed over the preceding 30 minutes in meters per second
+UZ-MEAN_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,MEAN,PREC,PT30M,PT30M,Mean Z component of wind speed over the preceding 30 minutes in meters per second
+UX_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UX_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of X component of wind speed in meters per second
+UY_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UY_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of Y component of wind speed in meters per second
+UZ_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UZ_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of Z component of wind speed in meters per second
+VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,NONE,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in kilopascals
+VOLTAGE_BATT-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE_BATT,V,MEAN,PREC,PT30M,PT30M,Mean battery voltage over the preceding 30 minutes in volts
+VWC_CRNS-MEAN_PREC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN,PREC,P1D,P1D,Mean volumetric water content from CRNS tube over the preceding day in percent
+VWC_CRNS-MEAN_PREC-PCT-PT1H-PT1H,,VWC_CRNS,PCT,MEAN,PREC,PT1H,PT1H,Mean volumetric water content from CRNS tube over the preceding hour in percent
+VWC_CRNS_NO_SNOW-MEAN_PREC-PCT-P1D-P1D,,VWC_CRNS_NO_SNOW,PCT,MEAN,PREC,P1D,P1D,Mean volumetric water content from CRNS tube (with snow content removed) over the preceding day in percent
+VWC_SOIL-INST-PCT-PT1M-PT1M,,VWC_SOIL,PCT,NONE,INST,PT1M,PT1M,Instantaneous soil volumetric water in percent
+VWC_SOIL_10-INST-PCT-PT30M-PT30M,,VWC_SOIL_10,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 10 cm depth in percent
+VWC_SOIL_10-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_10,PCT,MEAN,PREC,P1D,P1D,Mean soil volumetric water content at 10 cm depth over the preceding day in percent
+VWC_SOIL_15-INST-PCT-PT30M-PT30M,,VWC_SOIL_15,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 15 cm depth in percent
+VWC_SOIL_15-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_15,PCT,MEAN,PREC,P1D,P1D,Mean soil volumetric water content at 15 cm depth over the preceding day in percent
+VWC_SOIL_25-INST-PCT-PT30M-PT30M,,VWC_SOIL_25,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 25 cm depth in percent
+VWC_SOIL_25-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_25,PCT,MEAN,PREC,P1D,P1D,Mean soil volumetric water content at 25 cm depth over the preceding day in percent
+VWC_SOIL_40-INST-PCT-PT30M-PT30M,,VWC_SOIL_40,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 40 cm depth in percent
+VWC_SOIL_5-INST-PCT-PT30M-PT30M,,VWC_SOIL_5,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 5 cm depth in percent
+VWC_SOIL_5-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_5,PCT,MEAN,PREC,P1D,P1D,Mean soil volumetric water content at 5 cm depth over the preceding day in percent
+VWC_SOIL_50-INST-PCT-PT30M-PT30M,,VWC_SOIL_50,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 50 cm depth in percent
+VWC_SOIL_50-MEAN_PREC-PCT-P1D-P1D,,VWC_SOIL_50,PCT,MEAN,PREC,P1D,P1D,Mean soil volumetric water content at 50 cm depth over the preceding day in percent
+VWC_SOIL_65-INST-PCT-PT30M-PT30M,,VWC_SOIL_65,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 65 cm depth in percent
+WD-MEAN_PREC-DEG-P1D-P1D,,WD,DEG,MEAN,PREC,P1D,P1D,Mean wind direction over the preceding day in degrees
+WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN,PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees
+WD_STD-STDDEV_PREC-DEG-PT30M-PT30M,,WD_STD,DEG,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
+COV_TS_UX-INST-KMS-1-PT30M-PT30M,,COV_TS_UX,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UX wind speed component in kelvin meters per second
+COV_TS_UY-INST-KMS-1-PT30M-PT30M,,COV_TS_UY,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UY wind speed component in kelvin meters per second
+COV_TS_UZ-INST-KMS-1-PT30M-PT30M,,COV_TS_UZ,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UZ wind speed component in kelvin meters per second
+COV_UX_UY-INST-MS-1-PT30M-PT30M,,COV_UX_UY,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UY in meters per second
+COV_UX_UZ-INST-MS-1-PT30M-PT30M,,COV_UX_UZ,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UZ in meters per second
+COV_UY_UZ-INST-MS-1-PT30M-PT30M,,COV_UY_UZ,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UY and UZ in meters per second
+WS_RES-INST-MS-1-PT30M-PT30M,,WS_RES,MS-1,NONE,INST,PT30M,PT30M,Instantaneous resultant wind speed over the in meters per second
+WS-MEAN_PREC-MS-1-P1D-P1D,,WS,MS-1,MEAN,PREC,P1D,P1D,Mean wind speed over the preceding day in meters per second
+WS-MEAN_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MEAN,PREC,PT30M,PT30M,Mean wind speed over the preceding 30 minutes in meters per second
+WS_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,WS_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second
