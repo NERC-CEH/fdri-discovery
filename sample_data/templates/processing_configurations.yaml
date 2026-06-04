@@ -25,6 +25,13 @@ embedded:
           "@type": "<schema:PropertyValue>"
           "<schema:value>": "{value}"
 
+  - name: StructuredItem
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.structured.{idx}>"
+      "@type": "<fdri:ConfigurationArgumentList>"
+      "<fdri:index>": "{idx|asInt}"
+      "<fdri:argument>": "{entries|map_to(StructuredArgument)}"
+
   - name: GenericArgument
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}>"
@@ -38,14 +45,7 @@ embedded:
             "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.value>"
             "@type": "<schema:PropertyValue>"
             "<schema:value>": "{value}"
-      "<fdri:hasStructuredValue>":
-        - name: StructuredArgumentList
-          requires:
-            structured_value:
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.structured>"
-            "@type": "<fdri:ConfigurationArgumentList>"
-            "<fdri:argument>": "{structured_value|map_to(StructuredArgument)}"
+      "<fdri:hasStructuredValue>": "{structured_items|map_to(StructuredItem)}"
   
 resources:
   - name: DataProcessingConfiguration

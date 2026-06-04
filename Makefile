@@ -133,7 +133,8 @@ SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
 # Flux Samples
 SAMPLES += $(TTL_BASE)/flux_sites.ttl
 SAMPLES += $(TTL_BASE)/flux_datasets.ttl
-SAMPLES += $(TTL_BASE)/flux_processing_configs.ttl
+SAMPLES += $(TTL_BASE)/processing_configurations_flux.ttl
+SAMPLES += $(TTL_BASE)/processing_plans_flux.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -308,6 +309,18 @@ build/processing_plans_cosmos.json: $(SRC)/processing_plans_cosmos.json $(SQL)/p
 $(TTL_BASE)/processing_plans_cosmos.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json | build/data
 	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json $@
 
+build/processing_configurations_flux.json: $(SRC)/processing_configurations_flux.json $(SQL)/processing_configurations.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_flux.json > $@"
+
+$(TTL_BASE)/processing_configurations_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_configurations.yaml build/processing_configurations_flux.json | build/data
+	$(MAPPER) $(TPL)/processing_configurations.yaml build/processing_configurations_flux.json $@
+
+build/processing_plans_flux.json: $(SRC)/processing_plans_flux.json $(SQL)/processing_plans.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_flux.json > $@"
+
+$(TTL_BASE)/processing_plans_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_flux.json | build/data
+	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_flux.json $@
+
 # Flux
 
 build/flux_sites.json: $(SRC)/flux/sites.json | build
@@ -315,9 +328,6 @@ build/flux_sites.json: $(SRC)/flux/sites.json | build
 
 build/flux_datasets.json: $(SRC)/flux/datasets.json | build
 	$(RUN) /bin/bash -c "jq -c "\".datasets[]\"" < $(SRC)/flux/datasets.json > $@"
-
-build/flux_processing_configs.json: $(SRC)/flux/processing_configs.json $(SQL)/flux_processing_configs.jq | build
-	$(RUN) /bin/bash -c "jq -c -f $(SQL)/flux_processing_configs.jq < $(SRC)/flux/processing_configs.json > $@"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@

@@ -1968,18 +1968,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-alic-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-alic-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -5970,18 +5972,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-balrd-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-balrd-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -10327,18 +10331,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-bickl-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-bickl-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -14772,18 +14778,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-bunny-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-bunny-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -19209,18 +19217,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-cardt-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-cardt-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -23771,18 +23781,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-cgarw-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-cgarw-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -30757,18 +30769,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-chimn-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-chimn-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -37666,18 +37680,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-chobh-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-chobh-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -42243,18 +42259,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-cochn-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-cochn-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -49129,18 +49147,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-coclp-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-coclp-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -53471,18 +53491,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-crich-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-crich-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -57968,18 +57990,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-eastb-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-eastb-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -62547,18 +62571,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-elmst-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-elmst-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -69114,18 +69140,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-eustn-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-eustn-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -75681,18 +75709,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-finch-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-finch-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -82313,18 +82343,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-fivet-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-fivet-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -89103,18 +89135,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-gisbn-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-gisbn-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -93833,18 +93867,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-glens-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-glens-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -98573,18 +98609,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-glenw-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-glenw-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -105140,18 +105178,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-hadlw-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-hadlw-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -111707,18 +111747,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-hartw-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-hartw-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -115748,18 +115790,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-harwd-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-harwd-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -119836,18 +119880,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-henfs-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-henfs-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -124178,18 +124224,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-hillb-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-hillb-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -130745,18 +130793,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-hlacy-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-hlacy-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -137676,18 +137726,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-holln-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-holln-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -142113,18 +142165,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-hybry-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-hybry-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -148680,18 +148734,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-lizrd-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-lizrd-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -153090,18 +153146,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-lodtn-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-lodtn-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -159722,18 +159780,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-lulln-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-lulln-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -164299,18 +164359,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-moorh-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-moorh-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -168859,18 +168921,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-morem-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-morem-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -175491,18 +175555,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-morly-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-morly-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -179833,18 +179899,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-nwyke-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-nwyke-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -184458,18 +184526,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-plynl-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-plynl-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -189048,18 +189118,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-portn-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-portn-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -193405,18 +193477,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-rdmer-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-rdmer-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -197747,18 +197821,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-redhl-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-redhl-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -202154,18 +202230,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-riseh-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-riseh-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -208721,18 +208799,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-rothd-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-rothd-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -213382,18 +213462,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-sheep-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-sheep-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -220461,18 +220543,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-sourh-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-sourh-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -225040,18 +225124,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-spenf-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-spenf-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -231705,18 +231791,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-stght-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-stght-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -236198,18 +236286,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-stips-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-stips-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -240540,18 +240630,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-sydlg-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-sydlg-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -247172,18 +247264,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-tadhm-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-tadhm-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -251596,18 +251690,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-waddn-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-waddn-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -258505,18 +258601,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-wimpl-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-wimpl-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -265072,18 +265170,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-wrttl-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-wrttl-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
@@ -271398,18 +271498,20 @@
         {
           "param": "wind_height",
           "structured_value": [
-            {
-              "param": "platform",
-              "value": "cosmos-wyth1-aws_anem"
-            },
-            {
-              "param": "attribute",
-              "value": "deployedHeight"
-            },
-            {
-              "param": "source",
-              "value": "deployment"
-            }
+            [
+              {
+                "param": "platform",
+                "value": "cosmos-wyth1-aws_anem"
+              },
+              {
+                "param": "attribute",
+                "value": "deployedHeight"
+              },
+              {
+                "param": "source",
+                "value": "deployment"
+              }
+            ]
           ]
         }
       ]
