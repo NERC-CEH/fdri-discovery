@@ -5,3 +5,4 @@ CORRECTION,,"Correction","The process of adjusting data points in a time series 
 QC,,"Quality Control","The process of identifying and removing erroneous or suspect data points in a time series based on predefined criteria or rules."
 INFILL,,"Infill","The process of filling in missing data points in a time series, often using interpolation or other estimation techniques."
 LOAD-LOCAL-COPY,,"Load Local Copy","The process of loading a remote dataset into a local copy for use in downstream processing."
+LOAD_RAW,,"Load Raw","The process of loading a remote data into memory for use in downstream processing."
