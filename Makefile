@@ -222,9 +222,6 @@ build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sen
 build/siteVariance.csv: $(SRC)/SITES.csv $(SQL)/siteLayout.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/siteLayout.sql"
 
-build/timeseries_measures_cosmos.csv: $(SRC)/TIMESERIES_DEFS_COSMOS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SQL)/timeseries_measures_cosmos.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_cosmos.sql"
-
 build/timeseries_measures_fdri.csv: $(SRC)/TIMESERIES_DEFS_FDRI.csv $(SRC)/TIMESERIES_IDS_FDRI.csv $(SQL)/timeseries_measures_fdri.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_fdri.sql"
 
