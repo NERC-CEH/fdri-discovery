@@ -105,6 +105,7 @@
     {
       "id": "flux-plynl-processed-plan",
       "output": "flux-plynl-processed",
+      "input": "flux-plynl-raw",
       "steps": [
         "flux-plynl-eddypro"
       ]
