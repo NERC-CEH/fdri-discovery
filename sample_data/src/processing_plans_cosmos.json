@@ -994,6 +994,13 @@
         "cosmos-alic1-ws_30min-samples",
         "cosmos-alic1-ws_30min-infill"
       ]
+    },
+    {
+      "id": "cosmos-alic1-solar_zenith_30min-plan",
+      "output": "cosmos-alic1-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-alic1-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-BALRD": [
@@ -2107,6 +2114,13 @@
         "cosmos-balrd-ws_res_30min-range",
         "cosmos-balrd-ws_res_30min-battery_v",
         "cosmos-balrd-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-balrd-solar_zenith_30min-plan",
+      "output": "cosmos-balrd-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-balrd-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -3237,6 +3251,13 @@
         "cosmos-bickl-ws_res_30min-range",
         "cosmos-bickl-ws_res_30min-battery_v",
         "cosmos-bickl-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-bickl-solar_zenith_30min-plan",
+      "output": "cosmos-bickl-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-bickl-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -4372,6 +4393,13 @@
         "cosmos-bunny-ws_res_30min-battery_v",
         "cosmos-bunny-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-bunny-solar_zenith_30min-plan",
+      "output": "cosmos-bunny-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-bunny-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-CARDT": [
@@ -5501,6 +5529,13 @@
         "cosmos-cardt-ws_res_30min-range",
         "cosmos-cardt-ws_res_30min-battery_v",
         "cosmos-cardt-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-cardt-solar_zenith_30min-plan",
+      "output": "cosmos-cardt-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-cardt-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -7236,6 +7271,13 @@
         "cosmos-cgarw-ws_res_30min-battery_v",
         "cosmos-cgarw-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-cgarw-solar_zenith_30min-plan",
+      "output": "cosmos-cgarw-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-cgarw-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-CHIMN": [
@@ -8969,6 +9011,13 @@
         "cosmos-chimn-ws_res_30min-battery_v",
         "cosmos-chimn-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-chimn-solar_zenith_30min-plan",
+      "output": "cosmos-chimn-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-chimn-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-CHOBH": [
@@ -10099,6 +10148,13 @@
         "cosmos-chobh-ws_res_30min-range",
         "cosmos-chobh-ws_res_30min-battery_v",
         "cosmos-chobh-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-chobh-solar_zenith_30min-plan",
+      "output": "cosmos-chobh-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-chobh-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -11834,6 +11890,13 @@
         "cosmos-cochn-ws_res_30min-battery_v",
         "cosmos-cochn-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-cochn-solar_zenith_30min-plan",
+      "output": "cosmos-cochn-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-cochn-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-COCLP": [
@@ -12986,6 +13049,13 @@
         "cosmos-coclp-ws_res_30min-battery_v",
         "cosmos-coclp-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-coclp-solar_zenith_30min-plan",
+      "output": "cosmos-coclp-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-coclp-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-CRICH": [
@@ -14098,6 +14168,13 @@
         "cosmos-crich-ws_res_30min-range",
         "cosmos-crich-ws_res_30min-battery_v",
         "cosmos-crich-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-crich-solar_zenith_30min-plan",
+      "output": "cosmos-crich-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-crich-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -15351,6 +15428,13 @@
         "cosmos-eastb-ws_res_30min-range",
         "cosmos-eastb-ws_res_30min-battery_v",
         "cosmos-eastb-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-eastb-solar_zenith_30min-plan",
+      "output": "cosmos-eastb-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-eastb-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -16947,6 +17031,13 @@
         "cosmos-elmst-ws_res_30min-battery_v",
         "cosmos-elmst-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-elmst-solar_zenith_30min-plan",
+      "output": "cosmos-elmst-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-elmst-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-EUSTN": [
@@ -18540,6 +18631,13 @@
         "cosmos-eustn-ws_res_30min-range",
         "cosmos-eustn-ws_res_30min-battery_v",
         "cosmos-eustn-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-eustn-solar_zenith_30min-plan",
+      "output": "cosmos-eustn-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-eustn-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -20152,6 +20250,13 @@
         "cosmos-finch-ws_res_30min-battery_v",
         "cosmos-finch-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-finch-solar_zenith_30min-plan",
+      "output": "cosmos-finch-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-finch-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-FIVET": [
@@ -21746,6 +21851,13 @@
         "cosmos-fivet-ws_res_30min-battery_v",
         "cosmos-fivet-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-fivet-solar_zenith_30min-plan",
+      "output": "cosmos-fivet-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-fivet-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-GISBN": [
@@ -23037,6 +23149,13 @@
         "cosmos-gisbn-ws_res_30min-battery_v",
         "cosmos-gisbn-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-gisbn-solar_zenith_30min-plan",
+      "output": "cosmos-gisbn-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-gisbn-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-GLENS": [
@@ -24289,6 +24408,13 @@
         "cosmos-glens-ws_res_30min-range",
         "cosmos-glens-ws_res_30min-battery_v",
         "cosmos-glens-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-glens-solar_zenith_30min-plan",
+      "output": "cosmos-glens-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-glens-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -25896,6 +26022,13 @@
         "cosmos-glenw-ws_res_30min-battery_v",
         "cosmos-glenw-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-glenw-solar_zenith_30min-plan",
+      "output": "cosmos-glenw-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-glenw-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-HADLW": [
@@ -27490,6 +27623,13 @@
         "cosmos-hadlw-ws_res_30min-battery_v",
         "cosmos-hadlw-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-hadlw-solar_zenith_30min-plan",
+      "output": "cosmos-hadlw-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-hadlw-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-HARTW": [
@@ -28604,6 +28744,13 @@
         "cosmos-hartw-ws_res_30min-battery_v",
         "cosmos-hartw-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-hartw-solar_zenith_30min-plan",
+      "output": "cosmos-hartw-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-hartw-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-HARWD": [
@@ -29557,6 +29704,13 @@
         "cosmos-harwd-ws_30min-error_code",
         "cosmos-harwd-ws_30min-samples",
         "cosmos-harwd-ws_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-harwd-solar_zenith_30min-plan",
+      "output": "cosmos-harwd-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-harwd-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -30709,6 +30863,13 @@
         "cosmos-henfs-ws_res_30min-range",
         "cosmos-henfs-ws_res_30min-battery_v",
         "cosmos-henfs-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-henfs-solar_zenith_30min-plan",
+      "output": "cosmos-henfs-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-henfs-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -32303,6 +32464,13 @@
         "cosmos-hillb-ws_res_30min-range",
         "cosmos-hillb-ws_res_30min-battery_v",
         "cosmos-hillb-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-hillb-solar_zenith_30min-plan",
+      "output": "cosmos-hillb-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-hillb-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -33915,6 +34083,13 @@
         "cosmos-hlacy-ws_res_30min-battery_v",
         "cosmos-hlacy-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-hlacy-solar_zenith_30min-plan",
+      "output": "cosmos-hlacy-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-hlacy-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-HOLLN": [
@@ -35094,6 +35269,13 @@
         "cosmos-holln-ws_res_30min-range",
         "cosmos-holln-ws_res_30min-battery_v",
         "cosmos-holln-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-holln-solar_zenith_30min-plan",
+      "output": "cosmos-holln-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-holln-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -36689,6 +36871,13 @@
         "cosmos-hybry-ws_res_30min-battery_v",
         "cosmos-hybry-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-hybry-solar_zenith_30min-plan",
+      "output": "cosmos-hybry-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-hybry-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-LIZRD": [
@@ -37801,6 +37990,13 @@
         "cosmos-lizrd-ws_res_30min-range",
         "cosmos-lizrd-ws_res_30min-battery_v",
         "cosmos-lizrd-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-lizrd-solar_zenith_30min-plan",
+      "output": "cosmos-lizrd-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-lizrd-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -39450,6 +39646,13 @@
         "cosmos-lodtn-ws_res_30min-battery_v",
         "cosmos-lodtn-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-lodtn-solar_zenith_30min-plan",
+      "output": "cosmos-lodtn-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-lodtn-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-LULLN": [
@@ -40580,6 +40783,13 @@
         "cosmos-lulln-ws_res_30min-range",
         "cosmos-lulln-ws_res_30min-battery_v",
         "cosmos-lulln-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-lulln-solar_zenith_30min-plan",
+      "output": "cosmos-lulln-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-lulln-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -41833,6 +42043,13 @@
         "cosmos-moorh-ws_res_30min-range",
         "cosmos-moorh-ws_res_30min-battery_v",
         "cosmos-moorh-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-moorh-solar_zenith_30min-plan",
+      "output": "cosmos-moorh-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-moorh-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -43445,6 +43662,13 @@
         "cosmos-morem-ws_res_30min-battery_v",
         "cosmos-morem-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-morem-solar_zenith_30min-plan",
+      "output": "cosmos-morem-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-morem-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-MORLY": [
@@ -44558,6 +44782,13 @@
         "cosmos-morly-ws_res_30min-battery_v",
         "cosmos-morly-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-morly-solar_zenith_30min-plan",
+      "output": "cosmos-morly-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-morly-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-NWYKE": [
@@ -45670,6 +45901,13 @@
         "cosmos-nwyke-ws_res_30min-range",
         "cosmos-nwyke-ws_res_30min-battery_v",
         "cosmos-nwyke-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-nwyke-solar_zenith_30min-plan",
+      "output": "cosmos-nwyke-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-nwyke-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -46934,6 +47172,13 @@
         "cosmos-plynl-ws_res_30min-battery_v",
         "cosmos-plynl-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-plynl-solar_zenith_30min-plan",
+      "output": "cosmos-plynl-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-plynl-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-PORTN": [
@@ -48048,6 +48293,13 @@
         "cosmos-portn-ws_res_30min-battery_v",
         "cosmos-portn-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-portn-solar_zenith_30min-plan",
+      "output": "cosmos-portn-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-portn-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-RDMER": [
@@ -49160,6 +49412,13 @@
         "cosmos-rdmer-ws_res_30min-range",
         "cosmos-rdmer-ws_res_30min-battery_v",
         "cosmos-rdmer-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-rdmer-solar_zenith_30min-plan",
+      "output": "cosmos-rdmer-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-rdmer-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -50290,6 +50549,13 @@
         "cosmos-redhl-ws_res_30min-range",
         "cosmos-redhl-ws_res_30min-battery_v",
         "cosmos-redhl-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-redhl-solar_zenith_30min-plan",
+      "output": "cosmos-redhl-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-redhl-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -51885,6 +52151,13 @@
         "cosmos-riseh-ws_res_30min-battery_v",
         "cosmos-riseh-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-riseh-solar_zenith_30min-plan",
+      "output": "cosmos-riseh-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-riseh-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-ROTHD": [
@@ -53015,6 +53288,13 @@
         "cosmos-rothd-ws_res_30min-range",
         "cosmos-rothd-ws_res_30min-battery_v",
         "cosmos-rothd-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-rothd-solar_zenith_30min-plan",
+      "output": "cosmos-rothd-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-rothd-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -54752,6 +55032,13 @@
         "cosmos-sheep-ws_res_30min-battery_v",
         "cosmos-sheep-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-sheep-solar_zenith_30min-plan",
+      "output": "cosmos-sheep-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-sheep-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-SOURH": [
@@ -56004,6 +56291,13 @@
         "cosmos-sourh-ws_res_30min-range",
         "cosmos-sourh-ws_res_30min-battery_v",
         "cosmos-sourh-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-sourh-solar_zenith_30min-plan",
+      "output": "cosmos-sourh-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-sourh-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -57602,6 +57896,13 @@
         "cosmos-spenf-ws_res_30min-battery_v",
         "cosmos-spenf-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-spenf-solar_zenith_30min-plan",
+      "output": "cosmos-spenf-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-spenf-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-STGHT": [
@@ -58769,6 +59070,13 @@
         "cosmos-stght-ws_res_30min-battery_v",
         "cosmos-stght-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-stght-solar_zenith_30min-plan",
+      "output": "cosmos-stght-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-stght-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-STIPS": [
@@ -59919,6 +60227,13 @@
         "cosmos-stips-ws_res_30min-range",
         "cosmos-stips-ws_res_30min-battery_v",
         "cosmos-stips-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-stips-solar_zenith_30min-plan",
+      "output": "cosmos-stips-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-stips-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -61531,6 +61846,13 @@
         "cosmos-sydlg-ws_res_30min-battery_v",
         "cosmos-sydlg-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-sydlg-solar_zenith_30min-plan",
+      "output": "cosmos-sydlg-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-sydlg-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-TADHM": [
@@ -62643,6 +62965,13 @@
         "cosmos-tadhm-ws_res_30min-range",
         "cosmos-tadhm-ws_res_30min-battery_v",
         "cosmos-tadhm-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-tadhm-solar_zenith_30min-plan",
+      "output": "cosmos-tadhm-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-tadhm-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -64361,6 +64690,13 @@
         "cosmos-waddn-ws_res_30min-battery_v",
         "cosmos-waddn-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-waddn-solar_zenith_30min-plan",
+      "output": "cosmos-waddn-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-waddn-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-WIMPL": [
@@ -65954,6 +66290,13 @@
         "cosmos-wimpl-ws_res_30min-range",
         "cosmos-wimpl-ws_res_30min-battery_v",
         "cosmos-wimpl-ws_res_30min-error_code"
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-solar_zenith_30min-plan",
+      "output": "cosmos-wimpl-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-wimpl-solar_zenith_30min-solar_zenith"
       ]
     }
   ],
@@ -67566,6 +67909,13 @@
         "cosmos-wrttl-ws_res_30min-battery_v",
         "cosmos-wrttl-ws_res_30min-error_code"
       ]
+    },
+    {
+      "id": "cosmos-wrttl-solar_zenith_30min-plan",
+      "output": "cosmos-wrttl-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-wrttl-solar_zenith_30min-solar_zenith"
+      ]
     }
   ],
   "COSMOS-WYTH1": [
@@ -68507,6 +68857,13 @@
         "cosmos-wyth1-ws_30min-error_code",
         "cosmos-wyth1-ws_30min-samples",
         "cosmos-wyth1-ws_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-wyth1-solar_zenith_30min-plan",
+      "output": "cosmos-wyth1-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-wyth1-solar_zenith_30min-solar_zenith"
       ]
     }
   ]
