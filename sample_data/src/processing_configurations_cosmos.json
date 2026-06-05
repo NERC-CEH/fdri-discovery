@@ -4611,6 +4611,24 @@
           "value": 60.0
         }
       ]
+    },
+    {
+      "id": "cosmos-alic1-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-ALIC1-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-BALRD": [
@@ -9368,6 +9386,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-balrd-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-BALRD-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -14177,6 +14213,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-bickl-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-BICKL-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -19056,6 +19110,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-bunny-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-BUNNY-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-CARDT": [
@@ -23863,6 +23935,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cardt-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-CARDT-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -31485,6 +31575,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-CGARW-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -39295,6 +39403,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-chimn-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-CHIMN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-CHOBH": [
@@ -44117,6 +44243,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-chobh-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-CHOBH-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -51741,6 +51885,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-cochn-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-COCHN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-COCLP": [
@@ -56618,6 +56780,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-coclp-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-COCLP-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-CRICH": [
@@ -61360,6 +61540,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-crich-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-CRICH-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -66525,6 +66723,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eastb-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-EASTB-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -73747,6 +73963,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-elmst-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-ELMST-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-EUSTN": [
@@ -80946,6 +81180,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-EUSTN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -88214,6 +88466,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-finch-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-FINCH-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-FIVET": [
@@ -95415,6 +95685,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-fivet-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-FIVET-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-GISBN": [
@@ -100695,6 +100983,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-gisbn-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-GISBN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-GLENS": [
@@ -105858,6 +106164,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glens-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-GLENS-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -113241,6 +113565,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-glenw-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-GLENW-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-HADLW": [
@@ -120442,6 +120784,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-hadlw-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HADLW-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-HARTW": [
@@ -125201,6 +125561,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-hartw-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HARTW-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-HARWD": [
@@ -129160,6 +129538,24 @@
         {
           "param": "lt",
           "value": 60.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-harwd-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HARWD-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -134037,6 +134433,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-henfs-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HENFS-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -141238,6 +141652,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HILLB-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -148506,6 +148938,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-hlacy-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HLACY-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-HOLLN": [
@@ -153674,6 +154124,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-holln-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HOLLN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -160877,6 +161345,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-hybry-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-HYBRY-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-LIZRD": [
@@ -165619,6 +166105,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lizrd-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-LIZRD-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -172987,6 +173491,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-lodtn-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-LODTN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-LULLN": [
@@ -177809,6 +178331,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lulln-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-LULLN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -182974,6 +183514,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-moorh-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-MOORH-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -190242,6 +190800,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-morem-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-MOREM-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-MORLY": [
@@ -194986,6 +195562,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-morly-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-MORLY-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-NWYKE": [
@@ -199728,6 +200322,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-nwyke-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-NWYKE-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -205053,6 +205665,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-plynl-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-PLYNL-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-PORTN": [
@@ -209812,6 +210442,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-portn-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-PORTN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-RDMER": [
@@ -214554,6 +215202,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-rdmer-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-RDMER-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -219363,6 +220029,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-redhl-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-REDHL-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -226566,6 +227250,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-riseh-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-RISEH-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-ROTHD": [
@@ -231388,6 +232090,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-rothd-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-ROTHD-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -239251,6 +239971,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-sheep-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-SHEEP-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-SOURH": [
@@ -244414,6 +245152,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sourh-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-SOURH-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -251666,6 +252422,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-spenf-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-SPENF-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-STGHT": [
@@ -256575,6 +257349,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-stght-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-STGHT-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-STIPS": [
@@ -261435,6 +262227,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-stips-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-STIPS-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -268703,6 +269513,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-sydlg-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-SYDLG-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-TADHM": [
@@ -273445,6 +274273,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-tadhm-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-TADHM-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -281128,6 +281974,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-waddn-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-WADDN-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-WIMPL": [
@@ -288327,6 +289191,24 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-WIMPL-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -295595,6 +296477,24 @@
           "value": 30.0
         }
       ]
+    },
+    {
+      "id": "cosmos-wrttl-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-WRTTL-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "COSMOS-WYTH1": [
@@ -299488,6 +300388,24 @@
         {
           "param": "lt",
           "value": 60.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wyth1-solar_zenith_30min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "COSMOS-WYTH1-SWIN_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
