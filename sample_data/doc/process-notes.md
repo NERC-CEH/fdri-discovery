@@ -233,11 +233,22 @@ the other providing the derivation, method and additional arguments for the TSDE
 
 ## Datasets and variables
 
-### `STATISTICS`
+### `AGGREGATION`
 
-**What:** Id, label and definition for statistic (MEAN_PREC, INST etc).
+**What:** Id, label and definition for aggregation (MEAN, MIN, MAX etc).
 
-**Generates:** CV for statistics
+**Generates:** CV for aggregations
+
+**Future source:** Vocab server
+
+**Update requirements:** Bulk update on CV change
+
+
+### `TIME ANCHOR`
+
+**What:** Id, label and definition for time anchor. This indictates which period of data a timestamp refers to, e.g. preceeding, proceding or instanteous.
+
+**Generates:** CV for time anchors
 
 **Future source:** Vocab server
 
