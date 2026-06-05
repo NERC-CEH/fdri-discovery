@@ -132,27 +132,6 @@
       ]
     },
     {
-      "id": "flux-plynl-dynamic-sonic-azimuth-plan",
-      "output": "flux-plynl-dynamic-sonic-azimuth",
-      "steps": [
-        "flux-plynl-dynamic-sonic-azimuth-load-raw"
-      ]
-    },
-    {
-      "id": "flux-plynl-dynamic-height-measurement-plan",
-      "output": "flux-plynl-dynamic-height-measurement",
-      "steps": [
-        "flux-plynl-dynamic-height-measurement-load-raw"
-      ]
-    },
-    {
-      "id": "flux-plynl-dynamic-height-canopy-plan",
-      "output": "flux-plynl-dynamic-height-canopy",
-      "steps": [
-        "flux-plynl-dynamic-height-canopy-load-raw"
-      ]
-    },
-    {
       "id": "flux-plynl-raw-plan",
       "output": "flux-plynl-raw",
       "steps": [
