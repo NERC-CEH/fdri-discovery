@@ -137,9 +137,9 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **Update requirements:** Incremental record updates as deployments change.
 
-### `sensor_faults` from `SENSOR_FAULTS`, `TIMESERIES_DEFS` and `sensor_deployments`
+### `sensor_faults` from `SENSOR_FAULTS` and `sensor_deployments`
 
-**What:** `SENSOR_FAULTS` gives list of time periods of faults on specific sensors with comments, includes the affected variables (could be multiple `;`-separated affected variables per fault). `TIMESERIES_DEFS` is used to limit the results to only variables which have an existing definition.
+**What:** `SENSOR_FAULTS` gives list of time periods of faults on specific sensors with comments, includes the affected variables (could be multiple `;`-separated affected variables per fault).
 
 **Preprocessing:** Splits faults to single row per variable and then checks fault for match to a deployed sensor with overlapping time periods. To test that, we need mapping from variable to sensor from the `sensor_deployments` intermediate.
 
@@ -243,15 +243,6 @@ the other providing the derivation, method and additional arguments for the TSDE
 
 **Update requirements:** Bulk update on CV change
 
-### `TIMESERIES_DEFS`
-
-**What:** Definitions of time series with id, label, parameter, statistic, unit, processing level
-
-**Generates:** `TimeSeriesDefinition` for all timeseries datasets (which are then common across individual series)
-
-**Future source:** ?? Managed in metadata store?
-
-**Update requirements:** Update API to manage definitions and related configurations?
 
 ### `TIMESERIES_IDS`
 
