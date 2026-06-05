@@ -655,9 +655,89 @@
       ]
     },
     {
+      "id": "flux-plynl-dynamic-sonic-azimuth-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-dynamic-sonic-azimuth"
+      ]
+    },
+    {
+      "id": "flux-plynl-dynamic-height-measurement-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-dynamic-height-measurement"
+      ]
+    },
+    {
+      "id": "flux-plynl-dynamic-height-canopy-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-dynamic-height-canopy"
+      ]
+    },
+    {
       "id": "flux-plynl-raw-load-local-copy",
-      "type": "load-local-copy",
+      "type": "load",
       "method": "load-local-copy"
+    },
+    {
+      "id": "flux-plynl-biomet-ta-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-biomet-ta"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-rh-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-biomet-rh"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-pa-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-biomet-pa"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-shf1-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-biomet-shf1"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-shf2-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-biomet-shf2"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-rn-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-biomet-rn"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-swin-load-raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-biomet-swin"
+      ]
     },
     {
       "id": "flux-plynl-biomet-ta-30min-aggregate",

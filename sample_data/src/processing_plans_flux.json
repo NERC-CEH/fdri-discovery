@@ -5,6 +5,7 @@
       "output": "flux-plynl-biomet-pa-30min",
       "input": "flux-plynl-biomet-pa",
       "steps": [
+        "flux-plynl-biomet-pa-load-raw",
         "flux-plynl-biomet-pa-30min-aggregate"
       ]
     },
@@ -56,6 +57,7 @@
       "output": "flux-plynl-biomet-rn-30min",
       "input": "flux-plynl-biomet-rn",
       "steps": [
+        "flux-plynl-biomet-rn-load-raw",
         "flux-plynl-biomet-rn-30min-aggregate"
       ]
     },
@@ -64,6 +66,7 @@
       "output": "flux-plynl-biomet-rh-30min",
       "input": "flux-plynl-biomet-rh",
       "steps": [
+        "flux-plynl-biomet-rh-load-raw",
         "flux-plynl-biomet-rh-30min-aggregate"
       ]
     },
@@ -91,6 +94,7 @@
       "output": "flux-plynl-biomet-shf2-30min",
       "input": "flux-plynl-biomet-shf2",
       "steps": [
+        "flux-plynl-biomet-shf2-load-raw",
         "flux-plynl-biomet-shf2-30min-aggregate"
       ]
     },
@@ -99,6 +103,7 @@
       "output": "flux-plynl-biomet-swin-30min",
       "input": "flux-plynl-biomet-swin",
       "steps": [
+        "flux-plynl-biomet-swin-load-raw",
         "flux-plynl-biomet-swin-30min-aggregate"
       ]
     },
@@ -115,6 +120,7 @@
       "output": "flux-plynl-biomet-shf1-30min",
       "input": "flux-plynl-biomet-shf1",
       "steps": [
+        "flux-plynl-biomet-shf1-load-raw",
         "flux-plynl-biomet-shf1-30min-aggregate"
       ]
     },
@@ -123,6 +129,27 @@
       "output": "flux-plynl-et-l1",
       "steps": [
         "flux-plynl-et-l1-derivation"
+      ]
+    },
+    {
+      "id": "flux-plynl-dynamic-sonic-azimuth-plan",
+      "output": "flux-plynl-dynamic-sonic-azimuth",
+      "steps": [
+        "flux-plynl-dynamic-sonic-azimuth-load-raw"
+      ]
+    },
+    {
+      "id": "flux-plynl-dynamic-height-measurement-plan",
+      "output": "flux-plynl-dynamic-height-measurement",
+      "steps": [
+        "flux-plynl-dynamic-height-measurement-load-raw"
+      ]
+    },
+    {
+      "id": "flux-plynl-dynamic-height-canopy-plan",
+      "output": "flux-plynl-dynamic-height-canopy",
+      "steps": [
+        "flux-plynl-dynamic-height-canopy-load-raw"
       ]
     },
     {
@@ -185,6 +212,7 @@
       "output": "flux-plynl-biomet-ta-30min",
       "input": "flux-plynl-biomet-ta",
       "steps": [
+        "flux-plynl-biomet-ta-load-raw",
         "flux-plynl-biomet-ta-30min-aggregate"
       ]
     },
