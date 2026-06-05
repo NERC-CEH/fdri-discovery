@@ -118,7 +118,6 @@ SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 
 # NMDB Samples
 SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
-SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
 
@@ -220,9 +219,6 @@ build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sen
 
 build/siteVariance.csv: $(SRC)/SITES.csv $(SQL)/siteLayout.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/siteLayout.sql"
-
-build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMESERIES_IDS_NMDB.csv $(SQL)/timeseries_measures_nmdb.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_nmdb.sql"
 
 build/cosmos_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/cosmos_ts_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/cosmos_ts_parameters.sql"
