@@ -321,7 +321,7 @@
       "dep_ts": [
         "COSMOS-ALIC1-SWIN_30MIN_PROCESSED",
         "COSMOS-ALIC1-SWOUT_30MIN_PROCESSED",
-        "COSMOS-ALIC1-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-ALIC1-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -5047,7 +5047,7 @@
       "dep_ts": [
         "COSMOS-BALRD-SWIN_30MIN_PROCESSED",
         "COSMOS-BALRD-SWOUT_30MIN_PROCESSED",
-        "COSMOS-BALRD-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-BALRD-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -9806,7 +9806,7 @@
       "dep_ts": [
         "COSMOS-BICKL-SWIN_30MIN_PROCESSED",
         "COSMOS-BICKL-SWOUT_30MIN_PROCESSED",
-        "COSMOS-BICKL-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-BICKL-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -14615,7 +14615,7 @@
       "dep_ts": [
         "COSMOS-BUNNY-SWIN_30MIN_PROCESSED",
         "COSMOS-BUNNY-SWOUT_30MIN_PROCESSED",
-        "COSMOS-BUNNY-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-BUNNY-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -19492,7 +19492,7 @@
       "dep_ts": [
         "COSMOS-CARDT-SWIN_30MIN_PROCESSED",
         "COSMOS-CARDT-SWOUT_30MIN_PROCESSED",
-        "COSMOS-CARDT-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-CARDT-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -24581,7 +24581,7 @@
       "dep_ts": [
         "COSMOS-CGARW-SWIN_30MIN_PROCESSED",
         "COSMOS-CGARW-SWOUT_30MIN_PROCESSED",
-        "COSMOS-CGARW-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-CGARW-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -32219,7 +32219,7 @@
       "dep_ts": [
         "COSMOS-CHIMN-SWIN_30MIN_PROCESSED",
         "COSMOS-CHIMN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-CHIMN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-CHIMN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -39731,7 +39731,7 @@
       "dep_ts": [
         "COSMOS-CHOBH-SWIN_30MIN_PROCESSED",
         "COSMOS-CHOBH-SWOUT_30MIN_PROCESSED",
-        "COSMOS-CHOBH-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-CHOBH-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -44835,7 +44835,7 @@
       "dep_ts": [
         "COSMOS-COCHN-SWIN_30MIN_PROCESSED",
         "COSMOS-COCHN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-COCHN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-COCHN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -52209,7 +52209,7 @@
       "dep_ts": [
         "COSMOS-COCLP-SWIN_30MIN_PROCESSED",
         "COSMOS-COCLP-SWOUT_30MIN_PROCESSED",
-        "COSMOS-COCLP-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-COCLP-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -57054,7 +57054,7 @@
       "dep_ts": [
         "COSMOS-CRICH-SWIN_30MIN_PROCESSED",
         "COSMOS-CRICH-SWOUT_30MIN_PROCESSED",
-        "COSMOS-CRICH-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-CRICH-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -61846,7 +61846,7 @@
       "dep_ts": [
         "COSMOS-EASTB-SWIN_30MIN_PROCESSED",
         "COSMOS-EASTB-SWOUT_30MIN_PROCESSED",
-        "COSMOS-EASTB-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-EASTB-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -67195,7 +67195,7 @@
       "dep_ts": [
         "COSMOS-ELMST-SWIN_30MIN_PROCESSED",
         "COSMOS-ELMST-SWOUT_30MIN_PROCESSED",
-        "COSMOS-ELMST-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-ELMST-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -74415,7 +74415,7 @@
       "dep_ts": [
         "COSMOS-EUSTN-SWIN_30MIN_PROCESSED",
         "COSMOS-EUSTN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-EUSTN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-EUSTN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -81616,7 +81616,7 @@
       "dep_ts": [
         "COSMOS-FINCH-SWIN_30MIN_PROCESSED",
         "COSMOS-FINCH-SWOUT_30MIN_PROCESSED",
-        "COSMOS-FINCH-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-FINCH-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -88882,7 +88882,7 @@
       "dep_ts": [
         "COSMOS-FIVET-SWIN_30MIN_PROCESSED",
         "COSMOS-FIVET-SWOUT_30MIN_PROCESSED",
-        "COSMOS-FIVET-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-FIVET-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -95931,7 +95931,7 @@
       "dep_ts": [
         "COSMOS-GISBN-SWIN_30MIN_PROCESSED",
         "COSMOS-GISBN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-GISBN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-GISBN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -101179,7 +101179,7 @@
       "dep_ts": [
         "COSMOS-GLENS-SWIN_30MIN_PROCESSED",
         "COSMOS-GLENS-SWOUT_30MIN_PROCESSED",
-        "COSMOS-GLENS-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-GLENS-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -106528,7 +106528,7 @@
       "dep_ts": [
         "COSMOS-GLENW-SWIN_30MIN_PROCESSED",
         "COSMOS-GLENW-SWOUT_30MIN_PROCESSED",
-        "COSMOS-GLENW-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-GLENW-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -113909,7 +113909,7 @@
       "dep_ts": [
         "COSMOS-HADLW-SWIN_30MIN_PROCESSED",
         "COSMOS-HADLW-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HADLW-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HADLW-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -120878,7 +120878,7 @@
       "dep_ts": [
         "COSMOS-HARTW-SWIN_30MIN_PROCESSED",
         "COSMOS-HARTW-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HARTW-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HARTW-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -125525,7 +125525,7 @@
       "dep_ts": [
         "COSMOS-HARWD-SWIN_30MIN_PROCESSED",
         "COSMOS-HARWD-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HARWD-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HARWD-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -129630,7 +129630,7 @@
       "dep_ts": [
         "COSMOS-HENFS-SWIN_30MIN_PROCESSED",
         "COSMOS-HENFS-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HENFS-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HENFS-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -134707,7 +134707,7 @@
       "dep_ts": [
         "COSMOS-HILLB-SWIN_30MIN_PROCESSED",
         "COSMOS-HILLB-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HILLB-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HILLB-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -141908,7 +141908,7 @@
       "dep_ts": [
         "COSMOS-HLACY-SWIN_30MIN_PROCESSED",
         "COSMOS-HLACY-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HLACY-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HLACY-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -148974,7 +148974,7 @@
       "dep_ts": [
         "COSMOS-HOLLN-SWIN_30MIN_PROCESSED",
         "COSMOS-HOLLN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -148989,7 +148989,7 @@
       "method": "ALBEDO_SOUTH_SLOPE_CORRECTION",
       "dep_ts": [
         "COSMOS-HOLLN-SWIN_30MIN_PROCESSED",
-        "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HOLLN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -154344,7 +154344,7 @@
       "dep_ts": [
         "COSMOS-HYBRY-SWIN_30MIN_PROCESSED",
         "COSMOS-HYBRY-SWOUT_30MIN_PROCESSED",
-        "COSMOS-HYBRY-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-HYBRY-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -161313,7 +161313,7 @@
       "dep_ts": [
         "COSMOS-LIZRD-SWIN_30MIN_PROCESSED",
         "COSMOS-LIZRD-SWOUT_30MIN_PROCESSED",
-        "COSMOS-LIZRD-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-LIZRD-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -166321,7 +166321,7 @@
       "dep_ts": [
         "COSMOS-LODTN-SWIN_30MIN_PROCESSED",
         "COSMOS-LODTN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-LODTN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-LODTN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -173423,7 +173423,7 @@
       "dep_ts": [
         "COSMOS-LULLN-SWIN_30MIN_PROCESSED",
         "COSMOS-LULLN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-LULLN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-LULLN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -178295,7 +178295,7 @@
       "dep_ts": [
         "COSMOS-MOORH-SWIN_30MIN_PROCESSED",
         "COSMOS-MOORH-SWOUT_30MIN_PROCESSED",
-        "COSMOS-MOORH-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-MOORH-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -183644,7 +183644,7 @@
       "dep_ts": [
         "COSMOS-MOREM-SWIN_30MIN_PROCESSED",
         "COSMOS-MOREM-SWOUT_30MIN_PROCESSED",
-        "COSMOS-MOREM-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-MOREM-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -190678,7 +190678,7 @@
       "dep_ts": [
         "COSMOS-MORLY-SWIN_30MIN_PROCESSED",
         "COSMOS-MORLY-SWOUT_30MIN_PROCESSED",
-        "COSMOS-MORLY-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-MORLY-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -195422,7 +195422,7 @@
       "dep_ts": [
         "COSMOS-NWYKE-SWIN_30MIN_PROCESSED",
         "COSMOS-NWYKE-SWOUT_30MIN_PROCESSED",
-        "COSMOS-NWYKE-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-NWYKE-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -200214,7 +200214,7 @@
       "dep_ts": [
         "COSMOS-PLYNL-SWIN_30MIN_PROCESSED",
         "COSMOS-PLYNL-SWOUT_30MIN_PROCESSED",
-        "COSMOS-PLYNL-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-PLYNL-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -205489,7 +205489,7 @@
       "dep_ts": [
         "COSMOS-PORTN-SWIN_30MIN_PROCESSED",
         "COSMOS-PORTN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-PORTN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-PORTN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -210248,7 +210248,7 @@
       "dep_ts": [
         "COSMOS-RDMER-SWIN_30MIN_PROCESSED",
         "COSMOS-RDMER-SWOUT_30MIN_PROCESSED",
-        "COSMOS-RDMER-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-RDMER-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -214992,7 +214992,7 @@
       "dep_ts": [
         "COSMOS-REDHL-SWIN_30MIN_PROCESSED",
         "COSMOS-REDHL-SWOUT_30MIN_PROCESSED",
-        "COSMOS-REDHL-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-REDHL-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -220033,7 +220033,7 @@
       "dep_ts": [
         "COSMOS-RISEH-SWIN_30MIN_PROCESSED",
         "COSMOS-RISEH-SWOUT_30MIN_PROCESSED",
-        "COSMOS-RISEH-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-RISEH-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -227002,7 +227002,7 @@
       "dep_ts": [
         "COSMOS-ROTHD-SWIN_30MIN_PROCESSED",
         "COSMOS-ROTHD-SWOUT_30MIN_PROCESSED",
-        "COSMOS-ROTHD-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-ROTHD-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -232122,7 +232122,7 @@
       "dep_ts": [
         "COSMOS-SHEEP-SWIN_30MIN_PROCESSED",
         "COSMOS-SHEEP-SWOUT_30MIN_PROCESSED",
-        "COSMOS-SHEEP-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-SHEEP-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -239735,7 +239735,7 @@
       "dep_ts": [
         "COSMOS-SOURH-SWIN_30MIN_PROCESSED",
         "COSMOS-SOURH-SWOUT_30MIN_PROCESSED",
-        "COSMOS-SOURH-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-SOURH-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -245084,7 +245084,7 @@
       "dep_ts": [
         "COSMOS-SPENF-SWIN_30MIN_PROCESSED",
         "COSMOS-SPENF-SWOUT_30MIN_PROCESSED",
-        "COSMOS-SPENF-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-SPENF-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -252134,7 +252134,7 @@
       "dep_ts": [
         "COSMOS-STGHT-SWIN_30MIN_PROCESSED",
         "COSMOS-STGHT-SWOUT_30MIN_PROCESSED",
-        "COSMOS-STGHT-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-STGHT-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -257043,7 +257043,7 @@
       "dep_ts": [
         "COSMOS-STIPS-SWIN_30MIN_PROCESSED",
         "COSMOS-STIPS-SWOUT_30MIN_PROCESSED",
-        "COSMOS-STIPS-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-STIPS-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -262105,7 +262105,7 @@
       "dep_ts": [
         "COSMOS-SYDLG-SWIN_30MIN_PROCESSED",
         "COSMOS-SYDLG-SWOUT_30MIN_PROCESSED",
-        "COSMOS-SYDLG-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-SYDLG-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -269139,7 +269139,7 @@
       "dep_ts": [
         "COSMOS-TADHM-SWIN_30MIN_PROCESSED",
         "COSMOS-TADHM-SWOUT_30MIN_PROCESSED",
-        "COSMOS-TADHM-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-TADHM-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -274171,7 +274171,7 @@
       "dep_ts": [
         "COSMOS-WADDN-SWIN_30MIN_PROCESSED",
         "COSMOS-WADDN-SWOUT_30MIN_PROCESSED",
-        "COSMOS-WADDN-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-WADDN-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -281796,7 +281796,7 @@
       "dep_ts": [
         "COSMOS-WIMPL-SWIN_30MIN_PROCESSED",
         "COSMOS-WIMPL-SWOUT_30MIN_PROCESSED",
-        "COSMOS-WIMPL-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-WIMPL-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -288997,7 +288997,7 @@
       "dep_ts": [
         "COSMOS-WRTTL-SWIN_30MIN_PROCESSED",
         "COSMOS-WRTTL-SWOUT_30MIN_PROCESSED",
-        "COSMOS-WRTTL-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-WRTTL-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -295911,7 +295911,7 @@
       "dep_ts": [
         "COSMOS-WYTH1-SWIN_30MIN_PROCESSED",
         "COSMOS-WYTH1-SWOUT_30MIN_PROCESSED",
-        "COSMOS-WYTH1-SOLAR_ZENITH_30MIN_RAW"
+        "COSMOS-WYTH1-SOLAR_ZENITH_30MIN_PROCESSED"
       ],
       "parameters": [
         {
