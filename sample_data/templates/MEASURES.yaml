@@ -27,7 +27,7 @@ resources:
             "@type": <fdri:Aggregation>
             "<fdri:periodicity>": "{PERIODICITY}^^<xsd:duration>"
             "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
-            "<fdri:valueAggregation>": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{AGGREGATION_ID|slug}>"
+            "<fdri:aggregation>": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{AGGREGATION_ID|slug}>"
             "<fdri:valueTimeAnchor>": "<http://fdri.ceh.ac.uk/ref/common/time_anchor/{TIME_ANCHOR_ID|slug}>"
 
   - name: MeasureParent

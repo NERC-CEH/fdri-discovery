@@ -11,7 +11,7 @@ resources:
   - name: AggregationConcept
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{AGGREGATION_ID|slug}>"
-      "@type": "<fdri:ValueAggregation>"
+      "@type": "<fdri:Aggregation>"
       "<skos:inScheme>": "<::AggregationConcept>"
       "^<skos:hasTopConcept>": "<::AggregationConcept>"
       "<skos:prefLabel>": "{AGGREGATION_NAME}@en"

@@ -10,7 +10,7 @@ imports:
 resources:
   - name: TimeAnchorConcept
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{TIME_ANCHOR_ID|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/time_anchor/{TIME_ANCHOR_ID|slug}>"
       "@type": "<fdri:ValueTimeAnchor>"
       "<skos:inScheme>": "<::TimeAnchorConcept>"
       "^<skos:hasTopConcept>": "<::TimeAnchorConcept>"
@@ -21,7 +21,7 @@ resources:
     requires:
       DESCRIPTION:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistic/{TIME_ANCHOR_ID|slug}>"
-      "@type": "<fdri:ValueStatistic>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/time_anchor/{TIME_ANCHOR_ID|slug}>"
+      "@type": "<fdri:ValueTimeAnchor>"
       "<skos:scopeNote>": "{DESCRIPTION}@en"
 

@@ -65,7 +65,6 @@ SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/timeseries_flags_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
-SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
 # Stop-gap temporal extents
 SAMPLES += $(TTL_BASE)/ts_temporal.ttl
@@ -120,7 +119,6 @@ SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 # NMDB Samples
 SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
-SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
 
 # AMS Samples
 SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl

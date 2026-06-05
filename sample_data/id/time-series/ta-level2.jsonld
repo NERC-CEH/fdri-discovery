@@ -6,7 +6,8 @@
     "observedProperty": {"@id":"http://fdri.ceh.ac.uk/id/variable/ta"},
     "resolution": "PT30M",
     "periodicity": "PT30M",
-    "valueStatistic": {"@id": "http://fdri.ceh.ac.uk/ref/common/valueStatistic/mean-prec"},
+    "aggregation": {"@id": "http://fdri.ceh.ac.uk/ref/common/aggregation/mean"},
+    "valueTimeAnchor": {"@id": "http://fdri.ceh.ac.uk/ref/common/time_anchor/prec"},
     "processingLevel": {"@id": "http://fdri.ceh.ac.uk/ref/common/processingLevel/2"},
     "methodology": {"@id": "http://fdri.ceh.ac.uk/ref/cosmos/method/ta-qc-infill"}
 }
