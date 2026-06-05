@@ -63,7 +63,6 @@ SAMPLES += $(TTL_BASE)/SITES.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/timeseries_flags_cosmos.ttl
-SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_fdri.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
@@ -221,9 +220,6 @@ build/sensor_firmware_configurations.csv: $(SRC)/Firmware_history.csv $(SQL)/sen
 
 build/siteVariance.csv: $(SRC)/SITES.csv $(SQL)/siteLayout.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/siteLayout.sql"
-
-build/timeseries_measures_fdri.csv: $(SRC)/TIMESERIES_DEFS_FDRI.csv $(SRC)/TIMESERIES_IDS_FDRI.csv $(SQL)/timeseries_measures_fdri.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_fdri.sql"
 
 build/timeseries_measures_nmdb.csv: $(SRC)/TIMESERIES_DEFS_NMDB.csv $(SRC)/TIMESERIES_IDS_NMDB.csv $(SQL)/timeseries_measures_nmdb.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_measures_nmdb.sql"
