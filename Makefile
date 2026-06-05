@@ -287,6 +287,9 @@ $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yam
 build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
 
+build/timeseries_flags_fdri.csv: $(SRC)/TIMESERIES_IDS_FDRI.csv $(SRC)/FDRI_flag_definitions.csv $(SQL)/timeseries_flags_fdri.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_fdri.sql"
+
 build/processing_configurations_cosmos.json: $(SRC)/processing_configurations_cosmos.json $(SQL)/processing_configurations.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_cosmos.json > $@"
 
