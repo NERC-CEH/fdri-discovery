@@ -1,3 +1,4 @@
+MAKEFLAGS += -j 4
 IMAGE=293385631482.dkr.ecr.eu-west-1.amazonaws.com/epimorphics/record-spec-tools/unstable:1.0-SNAPSHOT
 RUN=docker run --rm -v .:/data ${IMAGE}
 
