@@ -1,0 +1,13 @@
+{
+  "NMDB-JUNG": [
+    {
+      "id": "nmdb-jung-neutron_cts_1hour-plan",
+      "output": "nmdb-jung-neutron_cts_1hour_processed",
+      "steps": [
+        "nmdb-jung-neutron_cts_1hour-infill-1",
+        "nmdb-jung-neutron_cts_1hour-infill-2",
+        "nmdb-jung-neutron_cts_1hour-infill-3"
+      ]
+    }
+  ]
+}

@@ -119,6 +119,8 @@ SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 # NMDB Samples
 SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
+SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
+SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
 
 # AMS Samples
 SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
@@ -300,6 +302,26 @@ build/processing_plans_cosmos.json: $(SRC)/processing_plans_cosmos.json $(SQL)/p
 $(TTL_BASE)/processing_plans_cosmos.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json | build/data
 	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_cosmos.json $@
 
+build/processing_configurations_nmdb.json: $(SRC)/processing_configurations_nmdb.json $(SQL)/processing_configurations.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_nmdb.json > $@"
+
+$(TTL_BASE)/processing_configurations_nmdb.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_configurations.yaml build/processing_configurations_nmdb.json | build/data
+	$(MAPPER) $(TPL)/processing_configurations.yaml build/processing_configurations_nmdb.json $@
+
+build/processing_plans_nmdb.json: $(SRC)/processing_plans_nmdb.json $(SQL)/processing_plans.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_nmdb.json > $@"
+
+$(TTL_BASE)/processing_plans_nmdb.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_nmdb.json | build/data
+	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_nmdb.json $@
+
+# Flux
+
+build/flux_sites.json: $(SRC)/flux/sites.json | build
+	$(RUN) /bin/bash -c "jq -c "\".sites[]\"" < $(SRC)/flux/sites.json > $@"
+
+build/flux_datasets.json: $(SRC)/flux/datasets.json | build
+	$(RUN) /bin/bash -c "jq -c "\".datasets[]\"" < $(SRC)/flux/datasets.json > $@"
+
 build/processing_configurations_flux.json: $(SRC)/processing_configurations_flux.json $(SQL)/processing_configurations.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_flux.json > $@"
 
@@ -311,14 +333,6 @@ build/processing_plans_flux.json: $(SRC)/processing_plans_flux.json $(SQL)/proce
 
 $(TTL_BASE)/processing_plans_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_flux.json | build/data
 	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_flux.json $@
-
-# Flux
-
-build/flux_sites.json: $(SRC)/flux/sites.json | build
-	$(RUN) /bin/bash -c "jq -c "\".sites[]\"" < $(SRC)/flux/sites.json > $@"
-
-build/flux_datasets.json: $(SRC)/flux/datasets.json | build
-	$(RUN) /bin/bash -c "jq -c "\".datasets[]\"" < $(SRC)/flux/datasets.json > $@"
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
