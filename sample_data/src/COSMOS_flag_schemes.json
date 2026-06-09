@@ -10,7 +10,7 @@
                 "value": 1
             },
             {
-                "name": "LW_correction",
+                "name": "lw_corr",
                 "description": "Correction for long wave radiation where calibration values are incorrect.",
                 "value": 2
             },
@@ -20,7 +20,7 @@
                 "value": 4
             },
             {
-                "name": "PA_correction",
+                "name": "pa_corr",
                 "description": "Correct air pressure with bias calculated from mean sea level pressure.",
                 "value": 8
             },
@@ -30,7 +30,7 @@
                 "value": 16
             },
             {
-                "name": "WD_correction",
+                "name": "wd",
                 "description": "Correct wind direction where wind sensor installed backwards.",
                 "value": 32
             },
@@ -52,7 +52,7 @@
                 "value": 1
             },
             {
-                "name": "battery_voltage",
+                "name": "battery_v",
                 "description": "The battery voltage was too low to power the sensor properly.",
                 "value": 2
             },
@@ -72,27 +72,27 @@
                 "value": 16
             },
             {
-                "name": "NR01_temp",
+                "name": "nr01_temp",
                 "description": "The NR01 sensor temperature was out of operating range, meaning data cannot be trusted.",
                 "value": 32
             },
             {
-                "name": "HFP_removal",
+                "name": "hfp_removal",
                 "description": "Data removed during heat flux plate calibration period.",
                 "value": 64
             },
             {
-                "name": "pluvio_diagnostic",
+                "name": "pluvio_diag",
                 "description": "Pluvio rainguage sent error diagnostic.",
                 "value": 128
             },
             {
-                "name": "snow_day_signal",
+                "name": "snowd_signal",
                 "description": "Signal from snow depth sensor too low.",
                 "value": 256
             },
             {
-                "name": "TDT_soil_temp",
+                "name": "tdt_tsoil",
                 "description": "Soil temperature too low for TDT to operate correctly.",
                 "value": 512
             }
