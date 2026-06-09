@@ -7,7 +7,7 @@
     "resolution": "PT30M",
     "periodicity": "PT30M",
     "aggregation": {"@id": "http://fdri.ceh.ac.uk/ref/common/aggregation/mean"},
-    "valueTimeAnchor": {"@id": "http://fdri.ceh.ac.uk/ref/common/time_anchor/prec"},
+    "valueTimeAnchor": {"@id": "http://fdri.ceh.ac.uk/ref/common/time-anchor/prec"},
     "processingLevel": {"@id": "http://fdri.ceh.ac.uk/ref/common/processingLevel/2"},
     "methodology": {"@id": "http://fdri.ceh.ac.uk/ref/cosmos/method/ta-qc-infill"}
 }

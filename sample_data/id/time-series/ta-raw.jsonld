@@ -6,6 +6,6 @@
     "observedProperty": {"@id":"http://fdri.ceh.ac.uk/id/variable/ta"},
     "resolution": "PT1M",
     "periodicity": "PT1M",
-    "valueTimeAnchor": {"@id": "http://fdri.ceh.ac.uk/ref/common/time_anchor/inst"},
+    "valueTimeAnchor": {"@id": "http://fdri.ceh.ac.uk/ref/common/time-anchor/inst"},
     "processingLevel": {"@id": "http://fdri.ceh.ac.uk/ref/common/processingLevel/0"}
 }

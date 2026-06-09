@@ -49,7 +49,7 @@ resources:
             "<rdfs:label>": "{measure_Data_Periodicity_Duration}@en"
             "<skos:inScheme>": <::CommonAggregationScheme>
             "^<skos:hasTopConcept>": <::CommonAggregationScheme>
-            "<fdri:ValueTimeAnchor>": <http://fdri.ceh.ac.uk/ref/common/time_anchor/inst>
+            "<fdri:ValueTimeAnchor>": <http://fdri.ceh.ac.uk/ref/common/time-anchor/inst>
             "<fdri:resolution>": "{measure_Data_Periodicity_Duration}^^<xsd:duration>"
             "<fdri:periodicity>": "{measure_Data_Periodicity_Duration}^^<xsd:duration>"
       "<rdfs:label>": "{measure_Sensor_Measurement_Variable} ({measure_Unit})@en"

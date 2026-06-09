@@ -78,7 +78,7 @@ one_offs:
   
   - name: ValueTimeAnchorScheme
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/time_anchor>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/time-anchor>"
       "@type": "<skos:ConceptScheme>"
       "<dct:title>": "Value Time Anchor@en"
       "<rdfs:label>": "Value Time Anchor@en"
