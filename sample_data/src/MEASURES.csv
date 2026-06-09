@@ -246,3 +246,35 @@ WS_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,WS_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standar
 WS-MEAN_PREC-MS-1-P1D-P1D,,WS,MS-1,MEAN,PREC,P1D,P1D,Mean wind speed over the preceding day in meters per second
 WS-MEAN_PREC-MS-1-PT1M-PT1M,,WS,MS-1,MEAN,PREC,PT1M,PT1M,Mean wind speed over the preceding minute in metres per second
 WS-MEAN_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MEAN,PREC,PT30M,PT30M,Mean wind speed over the preceding 30 minutes in meters per second
+VWC_SOIL_5-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_5,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 5 cm depth over the preceding 15 minutes in cubic metres per cubic metre
+VWC_SOIL_10-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_10,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 10 cm depth over the preceding 15 minutes in cubic metres per cubic metre
+VWC_SOIL_15-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_15,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 15 cm depth over the preceding 15 minutes in cubic metres per cubic metre
+VWC_SOIL_25-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_25,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 25 cm depth over the preceding 15 minutes in cubic metres per cubic metre
+VWC_SOIL_50-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_50,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 50 cm depth over the preceding 15 minutes in cubic metres per cubic metre
+COND_5-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_5,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 5 cm depth over the preceding 15 minutes in dS/m
+COND_10-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_10,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 10 cm depth over the preceding 15 minutes in dS/m
+COND_15-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_15,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 15 cm depth over the preceding 15 minutes in dS/m
+COND_25-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_25,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 25 cm depth over the preceding 15 minutes in dS/m
+COND_50-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_50,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 50 cm depth over the preceding 15 minutes in dS/m
+TEMP_SOIL_5-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_5,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 5 cm depth over the preceding 15 minutes in degrees Celsius
+TEMP_SOIL_10-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_10,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 10 cm depth over the preceding 15 minutes in degrees Celsius
+COND-MEAN_PREC-DSM-1-PT15M-PT15M,,COND,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in dS/m
+COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
+MEASURE_PERIOD-TOTAL_PREC-M_SEC-PT1H-PT1H,,MEASURE_PERIOD,M_SEC,TOTAL,PREC,PT1H,PT1H,Total measurement period over the preceding hour in milliseconds
+MUON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,MUON_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total muon count over the preceding hour in counts
+PROP_PERIOD-INST-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,NONE,INST,PT15M,PT15M,Instantaneous instrument period in seconds
+SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT1H-PT1H,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT1H,PT1H,Total number of samples over the preceding hour (unitless)
+SWE_AREAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_AREAL,PCT,MEAN,PREC,PT1H,PT1H,Mean areal snow water equivalent over the preceding hour in percent
+SWE_LOCAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_LOCAL,PCT,MEAN,PREC,PT1H,PT1H,Mean local snow water equivalent over the preceding hour in percent
+TEMP_SENSOR-MEAN_PREC-DEGC-PT1H-PT1H,,TEMP_SENSOR,DEGC,MEAN,PREC,PT1H,PT1H,Mean sensor temperature over the preceding hour in degrees Celsius
+TEMP_SOIL-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature over the preceding 15 minutes in degrees Celsius
+VOLTAGE_BATT-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE_BATT,V,MEAN,PREC,PT1H,PT1H,Mean battery voltage over the preceding hour in volts
+VOLTAGE-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE,V,MEAN,PREC,PT1H,PT1H,Mean voltage over the preceding hour in volts
+VWC_SOIL-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content over the preceding 15 minutes in cubic metres per cubic metre
+WATER_LEVEL-INST-CM-PT1M-PT1M,,WATER_LEVEL,CM,NONE,INST,PT1M,PT1M,Instantaneous water level in centimetres
+TEMP_SOIL_15-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_15,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 15 cm depth over the preceding 15 minutes in degrees Celsius
+TEMP_SOIL_25-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_25,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 25 cm depth over the preceding 15 minutes in degrees Celsius
+TEMP_SOIL_50-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_50,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 50 cm depth over the preceding 15 minutes in degrees Celsius
+PROP_PERIOD-MEAN_PREC-UNITLESS-PT15M-PT15M,,PROP_PERIOD,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes (unitless)
+PROP_PERIOD-MEAN_PREC-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes in seconds
+VOLT_RATIO-MEAN_PREC-UNITLESS-PT15M-PT15M,,VOLT_RATIO,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean voltage ratio over the preceding 15 minutes (unitless)
