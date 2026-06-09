@@ -73,7 +73,7 @@ SAMPLES += $(TTL_BASE)/processing_configurations_cosmos.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_cosmos.ttl
 
 # NRFA
-SAMPLES += $(TTL_BASE)/NRFA_SITES.ttl
+SAMPLES += $(TTL_BASE)/SITES_NRFA.ttl
 
 # FDRI SAMPLES
 SAMPLES += $(TTL_BASE)/fdri_sites.ttl

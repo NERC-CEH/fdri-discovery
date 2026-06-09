@@ -31,7 +31,7 @@ For example, in `TIMESERIES_IDS_COSMOS.json` we have:
 The dataset names/`TIMESERIES_ID` can be formed from the following options:
 
 - **network**: `COSMOS`, `FDRI`, `AMS`, `NMDB`, `NRFA`, `EA`, etc.
-- **site**: site from the given network. See `SITES_COSMOS.csv` for a list of 51 COSMOS sites, and similarly `SITES_NMDB.csv`, `NRFA_SITES.csv`, `fdri_sites.csv`, `AMS_sites.csv`, etc. The naming conventions for these files will be made consistent in due course.
+- **site**: site from the given network. See `SITES_COSMOS.csv` for a list of 51 COSMOS sites, and similarly `SITES_NMDB.csv`, `SITES_NRFA.csv`, `fdri_sites.csv`, `AMS_sites.csv`, etc. The naming conventions for these files will be made consistent in due course.
 - **variable**: e.g. `G1`, `G2`, `G`, `SWIN`, `SWOUT`, `LWIN`, `LWOUT`, `PA`, `PE`, `WS`, `WD`, etc.
 - **resolution**: `30MIN`, `1HOUR`, `1DAY`
 - **status**: `RAW`, `PROCESSED`
