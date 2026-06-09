@@ -31,7 +31,7 @@ For example, in `TIMESERIES_IDS_COSMOS.json` we have:
 The dataset names/`TIMESERIES_ID` can be formed from the following options:
 
 - **network**: `COSMOS`, `FDRI`, `AMS`, `NMDB`, `NRFA`, `EA`, etc.
-- **site**: site from the given network. See `SITES.csv` for a list of 51 COSMOS sites, and similarly `NMDB_SITES.csv`, `NRFA_SITES.csv`, `fdri_sites.csv`, `AMS_sites.csv`, etc. The naming conventions for these files will be made consistent in due course.
+- **site**: site from the given network. See `SITES_COSMOS.csv` for a list of 51 COSMOS sites, and similarly `NMDB_SITES.csv`, `NRFA_SITES.csv`, `fdri_sites.csv`, `AMS_sites.csv`, etc. The naming conventions for these files will be made consistent in due course.
 - **variable**: e.g. `G1`, `G2`, `G`, `SWIN`, `SWOUT`, `LWIN`, `LWOUT`, `PA`, `PE`, `WS`, `WD`, etc.
 - **resolution**: `30MIN`, `1HOUR`, `1DAY`
 - **status**: `RAW`, `PROCESSED`
@@ -59,7 +59,7 @@ Depending on the method, there may be an additional key: `"args"`. The value of 
 - `"round"`: The number of decimal places the quantity being calculated should be rounded to. Recall the quantity being calculated is specified by the dataset name from the top level keys in `<NETWORK>_TS_ID_DEPENDENCIES.json`. For example, if the dataset is: `"COSMOS-FINCH-WD_30MIN_RAW"`, then the wind direction (WD) should be rounded to the number of decimal places specified in `"round"`.
 - `"threshold"` (for `"AGGREGATE"` only): The minimum number of data points that can be used to obtain an accurate aggregation. For example, when taking a daily average of a quantity, there should be enough data points for the daily average to be accurate. If there are only 20 non null datapoints, and they are all from the beginning of the day, if the threshold is 40, taking a daily average using the reduced dataset will bias the result.
 - `"start_/end_date"`: a string that gets converted to a date time object in the `dri-timeseries-processor` repository. used for `"AGGREGATE"` methods where only certain times of the day should be aggregated, such as the albedo.
-- `"annotation"`: value: a list of strings of site attributes. These are values specific to the site. For example, if one of the annotations is `"ALTITUDE"`, the metadata model finds the altitude value by looking at the `ALTITUDE` column in`<NETWORK>_SITES.csv`. Other annotations may point to other files, for example the numerical values for the annotation `"REF_C0"` is looked up in `SITE_CALLIBRATION_INFO.csv`. Annotations in `<NETWORK>_SITES.csv` and `SITE_CALLIBRATION_INFO.csv` must also be registered in `ANNOTATION_PROPERTIES.csv`.
+- `"annotation"`: value: a list of strings of site attributes. These are values specific to the site. For example, if one of the annotations is `"ALTITUDE"`, the metadata model finds the altitude value by looking at the `ALTITUDE` column in`SITES_<NETWORK>.csv`. Other annotations may point to other files, for example the numerical values for the annotation `"REF_C0"` is looked up in `SITE_CALLIBRATION_INFO.csv`. Annotations in `SITES_<NETWORK>.csv` and `SITE_CALLIBRATION_INFO.csv` must also be registered in `ANNOTATION_PROPERTIES.csv`.
 
 ```bash
 Example:
