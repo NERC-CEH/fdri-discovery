@@ -124,6 +124,8 @@ SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_DEFS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/timeseries_measures_nmdb.ttl
+SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
+SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
 
 # AMS Samples
 SAMPLES += $(TTL_BASE)/AMS_sites_ext.ttl
