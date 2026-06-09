@@ -655,30 +655,6 @@
       ]
     },
     {
-      "id": "flux-plynl-dynamic-sonic-azimuth-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-dynamic-sonic-azimuth"
-      ]
-    },
-    {
-      "id": "flux-plynl-dynamic-height-measurement-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-dynamic-height-measurement"
-      ]
-    },
-    {
-      "id": "flux-plynl-dynamic-height-canopy-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-dynamic-height-canopy"
-      ]
-    },
-    {
       "id": "flux-plynl-raw-load-local-copy",
       "type": "load",
       "method": "load-local-copy"
