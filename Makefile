@@ -117,7 +117,7 @@ SAMPLES += $(TTL_BASE)/GEAR-daily.ttl
 SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 
 # NMDB Samples
-SAMPLES += $(TTL_BASE)/NMDB_SITES.ttl
+SAMPLES += $(TTL_BASE)/SITES_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
