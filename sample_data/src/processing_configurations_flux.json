@@ -1,6 +1,11 @@
 {
   "flux-plynl": [
     {
+      "id": "flux-plynl-raw-load-local-copy",
+      "type": "load",
+      "method": "load-local-copy"
+    },
+    {
       "id": "flux-plynl-eddypro",
       "type": "calculate",
       "method": "eddypro-run",
@@ -655,72 +660,11 @@
       ]
     },
     {
-      "id": "flux-plynl-raw-load-local-copy",
-      "type": "load",
-      "method": "load-local-copy"
-    },
-    {
-      "id": "flux-plynl-biomet-ta-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-biomet-ta"
-      ]
-    },
-    {
-      "id": "flux-plynl-biomet-rh-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-biomet-rh"
-      ]
-    },
-    {
-      "id": "flux-plynl-biomet-pa-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-biomet-pa"
-      ]
-    },
-    {
-      "id": "flux-plynl-biomet-shf1-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-biomet-shf1"
-      ]
-    },
-    {
-      "id": "flux-plynl-biomet-shf2-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-biomet-shf2"
-      ]
-    },
-    {
-      "id": "flux-plynl-biomet-rn-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-biomet-rn"
-      ]
-    },
-    {
-      "id": "flux-plynl-biomet-swin-load-raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "flux-plynl-biomet-swin"
-      ]
-    },
-    {
-      "id": "flux-plynl-biomet-ta-30min-aggregate",
+      "id": "flux-plynl-biomet-pa-30min-aggregate",
       "type": "aggregate",
       "method": "mean",
       "dep_ts": [
-        "flux-plynl-biomet-ta"
+        "flux-plynl-biomet-pa"
       ]
     },
     {
@@ -732,11 +676,11 @@
       ]
     },
     {
-      "id": "flux-plynl-biomet-pa-30min-aggregate",
+      "id": "flux-plynl-biomet-rn-30min-aggregate",
       "type": "aggregate",
       "method": "mean",
       "dep_ts": [
-        "flux-plynl-biomet-pa"
+        "flux-plynl-biomet-rn"
       ]
     },
     {
@@ -756,11 +700,12 @@
       ]
     },
     {
-      "id": "flux-plynl-biomet-rn-30min-aggregate",
-      "type": "aggregate",
-      "method": "mean",
+      "id": "flux-plynl-shf-derivation",
+      "type": "calculate",
+      "method": "calc_flux_mean_shf",
       "dep_ts": [
-        "flux-plynl-biomet-rn"
+        "flux-plynl-biomet-shf1-30min",
+        "flux-plynl-biomet-shf2-30min"
       ]
     },
     {
@@ -772,11 +717,75 @@
       ]
     },
     {
+      "id": "flux-plynl-biomet-ta-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-ta"
+      ]
+    },
+    {
+      "id": "flux-plynl-co2-flux-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
       "id": "flux-plynl-h-qc-flag",
       "type": "qc",
       "method": "flux_qc_flag",
       "dep_ts": [
         "flux-plynl-qc-h"
+      ]
+    },
+    {
+      "id": "flux-plynl-h2o-flux-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-qc-h-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-qc-tau-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-sonic-temp-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-tau-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
       ]
     },
     {
@@ -788,12 +797,69 @@
       ]
     },
     {
-      "id": "flux-plynl-shf-derivation",
-      "type": "calculate",
-      "method": "calc_flux_mean_shf",
+      "id": "flux-plynl-u-var-load",
+      "type": "load",
+      "method": "load",
       "dep_ts": [
-        "flux-plynl-biomet-shf1-30min",
-        "flux-plynl-biomet-shf2-30min"
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-v-var-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-vpd-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-w-var-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-wind-dir-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-wind-speed-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-et-l1-derivation",
+      "type": "calculate",
+      "method": "calc_flux_et_l1",
+      "dep_ts": [
+        "flux-plynl-le-l1",
+        "flux-plynl-biomet-ta-30min"
+      ]
+    },
+    {
+      "id": "flux-plynl-et-l2-derivation",
+      "type": "calculate",
+      "method": "calc_flux_et_l2",
+      "dep_ts": [
+        "flux-plynl-le-l2",
+        "flux-plynl-biomet-ta-30min"
       ]
     },
     {
@@ -822,15 +888,6 @@
       ]
     },
     {
-      "id": "flux-plynl-et-l1-derivation",
-      "type": "calculate",
-      "method": "calc_flux_et_l1",
-      "dep_ts": [
-        "flux-plynl-le-l1",
-        "flux-plynl-biomet-ta-30min"
-      ]
-    },
-    {
       "id": "flux-plynl-le-l2-derivation",
       "type": "calculate",
       "method": "calc_flux_le_l2",
@@ -853,15 +910,6 @@
           "param": "gt",
           "value": 600.0
         }
-      ]
-    },
-    {
-      "id": "flux-plynl-et-l2-derivation",
-      "type": "calculate",
-      "method": "calc_flux_et_l2",
-      "dep_ts": [
-        "flux-plynl-le-l2",
-        "flux-plynl-biomet-ta-30min"
       ]
     }
   ]
