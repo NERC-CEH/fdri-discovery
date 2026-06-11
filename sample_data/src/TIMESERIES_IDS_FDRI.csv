@@ -25,7 +25,7 @@ FDRI-SE-CARWE-01-WS-FAN_RPM_1MIN_RAW,NA,SE-CARWE-01-WS,ukceh-dri-staging-ingeste
 FDRI-SE-CARWE-01-WS-TA_1MIN_PROCESSED,NA,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M,PROCESSED,TA_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-WD_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,RAW,
 FDRI-SE-FOFAD-01-PR-WS_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,Windspeed,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,RAW,
-FDRI-SE-FOFAD-01-PR-FA_STATUS_CNT_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_cnt,time,COUNT-TOTAL_PREC-CTS-PT1H-PT1H,RAW,
+FDRI-SE-FOFAD-01-PR-FA_STATUS_CNT_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_cnt,time,STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_BATTV_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_battV,time,VOLTAGE_BATT-MEAN_PREC-V-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_PA_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_pressure,time,PA-MEAN_PREC-HPA-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_PANELTEMP_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_paneltemp,time,TEMP_SENSOR-MEAN_PREC-DEGC-PT1H-PT1H,RAW,
@@ -39,7 +39,7 @@ FDRI-SE-FOFAD-01-PR-FA_UG_HV_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingest
 FDRI-SE-FOFAD-01-PR-FA_UG_ACQ_TIME_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_ug_acq_time,time,MEASURE_PERIOD-TOTAL_PREC-M_SEC-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_UG_NEUTRONS_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_ug_neutrons,time,NEUTRON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_UG_MUONS_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_ug_muons,time,MUON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,RAW,
-FDRI-SE-FOFAD-01-PR-FA_DATA_CNT_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_data_cnt,time,COUNT-TOTAL_PREC-CTS-PT1H-PT1H,RAW,
+FDRI-SE-FOFAD-01-PR-FA_DATA_CNT_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_data_cnt,time,STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_SOILMOISTURE_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_soilmoisture,time,VWC_CRNS-MEAN_PREC-PCT-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_SWE_AREAL_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_SWE_areal,time,SWE_AREAL-MEAN_PREC-PCT-PT1H-PT1H,RAW,
 FDRI-SE-FOFAD-01-PR-FA_SWE_LOCAL_1MIN_RAW,NA,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,FA_SWE_local,time,SWE_LOCAL-MEAN_PREC-PCT-PT1H-PT1H,RAW,

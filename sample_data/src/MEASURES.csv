@@ -134,9 +134,7 @@ Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV,PREC,PT30M,PT30M,Standard 
 Q-MEAN_PREC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PREC,P1D,P1D,Mean absolute humidity over the preceding day in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
-REV-COUNT,,REV,UNITLESS,,,,,Number of revolutions counted in measurement period
-REV-TOTAL-COUNT,,REV,UNITLESS,TOTAL,PREC,,,Total number of revolutions counted in measurement Period
-REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,,REVOLUTIONS,RPM,MEAN,PREC,PT1M,PT1M,Mean fan speed over the preceding minute in revolutions per minute
+REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,,REVOLUTIONS,RPM,MEAN,PREC,PT1M,PT1M,Mean revolutions over the preceding minute in revolutions per minute
 RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,NONE,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
 RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN,PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent
 RH-MEAN_PREC-PCT-P1D-P1D,,RH,PCT,MEAN,PREC,P1D,P1D,Mean relative humidity over the preceding day in percent
@@ -259,7 +257,7 @@ COND_50-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_50,DSM-1,MEAN,PREC,PT15M,PT15M,Mean so
 TEMP_SOIL_5-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_5,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 5 cm depth over the preceding 15 minutes in degrees Celsius
 TEMP_SOIL_10-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_10,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 10 cm depth over the preceding 15 minutes in degrees Celsius
 COND-MEAN_PREC-DSM-1-PT15M-PT15M,,COND,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in dS/m
-COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
+STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
 MEASURE_PERIOD-TOTAL_PREC-M_SEC-PT1H-PT1H,,MEASURE_PERIOD,M_SEC,TOTAL,PREC,PT1H,PT1H,Total measurement period over the preceding hour in milliseconds
 MUON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,MUON_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total muon count over the preceding hour in counts
 PROP_PERIOD-INST-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,NONE,INST,PT15M,PT15M,Instantaneous instrument period in seconds
@@ -277,4 +275,4 @@ TEMP_SOIL_25-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_25,DEGC,MEAN,PREC,PT15M,PT15M
 TEMP_SOIL_50-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_50,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 50 cm depth over the preceding 15 minutes in degrees Celsius
 PROP_PERIOD-MEAN_PREC-UNITLESS-PT15M-PT15M,,PROP_PERIOD,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes (unitless)
 PROP_PERIOD-MEAN_PREC-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes in seconds
-VOLT_RATIO-MEAN_PREC-UNITLESS-PT15M-PT15M,,VOLT_RATIO,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean voltage ratio over the preceding 15 minutes (unitless)
+VOLTAGE_RATIO-MEAN_PREC-UNITLESS-PT15M-PT15M,,VOLTAGE_RATIO,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean voltage ratio over the preceding 15 minutes (unitless)
