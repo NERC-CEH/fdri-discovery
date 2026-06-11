@@ -134,6 +134,7 @@ Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV,PREC,PT30M,PT30M,Standard 
 Q-MEAN_PREC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PREC,P1D,P1D,Mean absolute humidity over the preceding day in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
+REV-TOTAL-COUNT,,REVOLUTIONS,UNITLESS,TOTAL,PREC,,,Total number of revolutions counted in measurement Period
 REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,,REVOLUTIONS,RPM,MEAN,PREC,PT1M,PT1M,Mean revolutions over the preceding minute in revolutions per minute
 RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,NONE,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
 RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN,PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent

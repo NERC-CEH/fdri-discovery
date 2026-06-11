@@ -63,7 +63,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/sensor/rca-impeller-{Impeller no.|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
       "<dct:type>": <::ImpellerType>
-      "<sosa:observes>": <http://fdri.ceh.ac.uk/ref/common/cop/rev>
+      "<sosa:observes>": <http://fdri.ceh.ac.uk/ref/common/cop/revolutions>
       "<fdri:measures>": <http://fdri.ceh.ac.uk/ref/common/measure/rev-total-count>
 
   - name: Team
@@ -110,7 +110,7 @@ resources:
             "<prov:hadRole>": "<::Surveyor>"
       "<fdri:hasAnnotation>": <::WeatherAnnotation>
       "<sosa:observes>":
-        - <http://fdri.ceh.ac.uk/ref/common/cop/rev>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/revolutions>
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
         - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
 
@@ -132,7 +132,7 @@ resources:
       "<fdri:originatingSite>": "<::Site>"
       "<sosa:hasFeatureOfInterest>": "<::FeatureOfInterest>"
       "<sosa:observedProperty>":
-        - <http://fdri.ceh.ac.uk/ref/common/cop/rev>
+        - <http://fdri.ceh.ac.uk/ref/common/cop/revolutions>
         - <http://fdri.ceh.ac.uk/ref/common/cop/water_velocity>
         - <http://fdri.ceh.ac.uk/ref/common/cop/discharge>
       "<fdri:measure>":

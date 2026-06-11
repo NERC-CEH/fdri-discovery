@@ -2,7 +2,4 @@ Network,Catchment,Station_name,SiteID,StationID,Station_type,Latitude,Longitude,
 FDRI,Severn,Carreg Wen,SE-CARWE-01,SE-CARWE-01-WS,WS,52.48277697,-3.726718138,23-06-2025 12:00:00,,1,,Broadleaf woodland
 FDRI,Severn,Hafren Forest - Severn Trap,SE-SVTRP-01,SE-SVTRP-01-WL,WL,52.47060072,-3.69043706,19-05-2025 17:00:00,,0,Trapezoidal flume,
 FDRI,Severn,Foel Fadian,SE-FOFAD-01,SE-FOFAD-01-PR,PR,52.54511083,-3.720864236,03-12-2025 15:30:00,,1,,
-FDRI,Chess,Mill Farm - Chenies,CH-MILFA-01,CH-MILFA-01-RS,RS,,,,,1,,
-FDRI,Chess,Scotsbridge,CH-SCOBR-01,CH-SCOBR-01,,,,,,0,,
-FDRI,Chess,Tring Grange Farm,CH-TRIGR-01,CH-TRIGR-01-RS,RS,,,,,1,,
-FDRI,,Test Site,,xx-UKCEH_Wallingford,TEST,51.603,-0.711,,,1,,
+FDRI,,Test Site,,xx-UKCEH_Wallingford,TEST,51.603,-0.711,01-01-2024 00:00:00,,1,,
