@@ -38,6 +38,11 @@
                 "name": "clip",
                 "description": "Clip values above or below threshold to the threshold.",
                 "value": 64
+            },
+            {
+                "name": "albedo_south_slope_correction",
+                "description": "Correct albedo based on slope of station.",
+                "value": 128
             }
         ]
     },
