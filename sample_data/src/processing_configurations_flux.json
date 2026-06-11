@@ -845,6 +845,30 @@
       ]
     },
     {
+      "id": "flux-plynl-h-despiked-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-l2-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-tau-l2-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
       "id": "flux-plynl-et-l1-derivation",
       "type": "calculate",
       "method": "calc_flux_et_l1",
