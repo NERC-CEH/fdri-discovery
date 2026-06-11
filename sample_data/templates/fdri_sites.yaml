@@ -22,9 +22,10 @@ resources:
 
   - name: Catchment
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/facility-group/fdri-catchment-{Catchment|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/facility-group/fdri-catchment-{catchment|slug}>"
       "@type": "<fdri:FacilityGroup>"
-      "<rdfs:label>": "{Catchment}@en"
+      "<rdfs:label>": "Catchment {catchment}@en"
+      "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/facility-group-type/catchment>
 
   - name: Site
     properties:

@@ -1,0 +1,42 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+one_offs:
+  - name: FDRI
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/programme/fdri>"
+      "@type": "<fdri:EnvironmentalMonitoringProgramme>"
+      "<rdfs:label>": "FDRI Programme@en"
+  
+resources:
+  - name: LatLongPoint
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/fdri-{SiteID|slug}#geo-latlong>"
+      "@type": "<geos:Geometry>"
+      "<geos:asWKT>": "{geometry}^^<geos:wktLiteral>"
+
+  - name: CatchmentGroup
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/facility-group/fdri-catchment-{catchment|slug}>"
+      "@type": "<fdri:FacilityGroup>"
+      "<rdfs:label>": "Catchment {catchment}@en"
+
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/fdri-{SiteID|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSite>
+      "<rdfs:label>": "{Site Name} ({SiteID})@en"
+      "<dct:title>": "{Site Name} ({SiteID})@en"
+      "^<fdri:utilises>": <http://fdri.ceh.ac.uk/id/programme/fdri>
+      <dct:identifier>: "{SiteID}"
+      "<geos:hasGeometry>": <::LatLongPoint>
+      "<fdri:hasRepresentativePoint>": <::LatLongPoint>
+      "<geo:lat>": "{lat|float}"
+      "<geo:long>": "{lon|float}"
+      "<fdri:isPartOfProgramme>": <::FDRI>
