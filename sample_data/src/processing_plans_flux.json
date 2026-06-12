@@ -172,6 +172,27 @@
       ]
     },
     {
+      "id": "flux-plynl-h-despiked-plan",
+      "output": "flux-plynl-h-despiked",
+      "steps": [
+        "flux-plynl-h-despiked-load"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-l2-plan",
+      "output": "flux-plynl-h-l2",
+      "steps": [
+        "flux-plynl-h-l2-load"
+      ]
+    },
+    {
+      "id": "flux-plynl-tau-l2-plan",
+      "output": "flux-plynl-tau-l2",
+      "steps": [
+        "flux-plynl-tau-l2-load"
+      ]
+    },
+    {
       "id": "flux-plynl-et-l1-plan",
       "output": "flux-plynl-et-l1",
       "steps": [
