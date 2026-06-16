@@ -14,7 +14,7 @@ COPY(
         faultsSplit INNER JOIN TS on TS.TIMESERIES_ID == faultsSplit.TIMESERIES_ID
                     LEFT  JOIN SI on
                         faultsSplit.SITE_ID == SI.SITE_ID and
-                        SI.SENSOR_SLOT_ID == TS.SENSOR_SLOT_ID and
+                        SI.COLUMN_NAME == TS.COLUMN_NAME and
                         faultsSplit.START_DATETIME >= SI.START_DATETIME and
                         (SI.END_DATETIME is NULL or
                         (faultsSplit.END_DATETIME <= SI.END_DATETIME) or

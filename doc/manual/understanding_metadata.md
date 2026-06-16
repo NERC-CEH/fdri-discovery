@@ -11,7 +11,6 @@ In particular, this document shows which files should be updated to handle a new
 
 - Each dataset from a given network must be registered inside `TIMESERIES_IDS_<NETWORK>.csv`.
 - When registering a dataset in `TIMESERIES_IDS_<NETWORK>.csv`, the dataset name is added to the `TIMESERIES_ID` column. 
-- Datasets of variables that are not measured, but that must be derived from other data, such as `ALBEDO` or `PE`, do not have a `SENSOR_SLOT_ID` and the entry to this column is left empty in `TIMESERIES_IDS_<NETWORK>.csv`. 
 - For 'intermediate' datasets, whose data output we do not wish to store, but is required to calculate another dataset, such as the `SOLAR_ZENITH`, the `S3_BUCKET` and `S3_DATASET` entries are also left empty in `TIMESERIES_IDS_<NETWORK>.csv`.
 
 
