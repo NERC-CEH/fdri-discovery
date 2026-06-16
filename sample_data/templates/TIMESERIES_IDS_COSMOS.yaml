@@ -22,8 +22,8 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "@type": "<fdri:TimeSeriesDataset>"
+      "<skos:prefLabel>": "{LABEL}@en"
       "<dct:identifier>": "{TIMESERIES_ID}"
-      # "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:originatingSite>": "<::Site>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/cosmos>"
       "<fdri:sourceBucket>":

@@ -21,8 +21,8 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "@type": "<fdri:TimeSeriesDataset>"
-      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/fdri/time-series/{TIMESERIES_DEF|slug}>"
-      "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "<skos:prefLabel>": "{LABEL}@en"
+      "<dct:identifier>": "{TIMESERIES_ID}"
       "<fdri:originatingSite>": "<::Site>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/fdri>"
       "<fdri:sourceBucket>":
