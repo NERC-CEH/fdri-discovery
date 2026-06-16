@@ -1,0 +1,7 @@
+AGGREGATION_ID,AGGREGATION_NAME
+NONE,No aggregation
+MEAN,Mean
+MAX,Maximum
+MIN,Minimum
+STDDEV,Standard deviation
+TOTAL,Total

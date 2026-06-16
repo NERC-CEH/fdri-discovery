@@ -20,13 +20,15 @@ resources:
       "<fdri:aggregation>":
         - name: Aggregation
           requires:
-            STATISTIC_ID:
+            AGGREGATION_ID:
+            TIME_ANCHOR_ID:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{ID|slug}#aggregation>"
             "@type": <fdri:Aggregation>
             "<fdri:periodicity>": "{PERIODICITY}^^<xsd:duration>"
             "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
-            "<fdri:valueStatistic>": "<http://fdri.ceh.ac.uk/ref/common/statistic/{STATISTIC_ID|slug}>"
+            "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{AGGREGATION_ID|slug}>"
+            "<fdri:valueTimeAnchor>": "<http://fdri.ceh.ac.uk/ref/common/time-anchor/{TIME_ANCHOR_ID|slug}>"
 
   - name: MeasureParent
     requires:

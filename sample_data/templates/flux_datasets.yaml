@@ -51,7 +51,7 @@ resources:
       "@type": "<fdri:TimeSeriesDataset>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/{network|slug}>"
       # Inline measure per dataset — should this reference a shared concept URI instead?
-      # See MEASURE_ID/UNIT_ID/STATISTIC_ID in sample_data/src/MEASURES.csv.
+      # See MEASURE_ID/UNIT_ID/AGGREGATION_ID/TIME_ANCHOR_ID in sample_data/src/MEASURES.csv.
       "<fdri:measure>":
         - name: FluxMeasure
           properties:

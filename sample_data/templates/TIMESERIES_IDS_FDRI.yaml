@@ -39,6 +39,8 @@ resources:
       "<fdri:sourceDataset>": "{S3_DATASET}"
       "<fdri:sourceColumnName>": "{COLUMN_NAME}"
       "<fdri:sourceTimeColumnName>": "{TIME_COLUMN_NAME}"
+      "<fdri:measure>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"
 
   - name: RawTimeSeriesDistribution
     requires:
