@@ -31,6 +31,7 @@ RECORDS = \
 	TimeSeriesDataset \
 	TimeSeriesDefinition
 
+SAMPLES += $(TTL_BASE)/AGGREGATION.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_TYPES.ttl
@@ -78,7 +79,7 @@ SAMPLES += $(TTL_BASE)/SITES_NRFA.ttl
 # FDRI SAMPLES
 SAMPLES += $(TTL_BASE)/SITES_FDRI.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
-SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
+# SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
