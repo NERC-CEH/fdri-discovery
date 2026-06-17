@@ -27,8 +27,8 @@
         ]
     },
     {
-        "id": "cosmos_infill_flag_scheme",
-        "label": "COSMOS Infill Flag Scheme",
+        "id": "nmdb_infill_flag_scheme",
+        "label": "NMDB Infill Flag Scheme",
         "flag_type": "infill_flags",
         "scheme": [
             {
