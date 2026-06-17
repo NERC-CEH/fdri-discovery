@@ -37,7 +37,7 @@
                 "value": 1
             },
             {
-                "name": "battery_voltage",
+                "name": "battery_v",
                 "description": "The battery voltage was too low to power the sensor properly.",
                 "value": 2
             },

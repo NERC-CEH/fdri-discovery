@@ -141,7 +141,7 @@
       "id": "cosmos-alic1-cts_smo_crns_1hour-plan",
       "output": "cosmos-alic1-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-alic1-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-alic1-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -1211,7 +1211,7 @@
       "id": "cosmos-balrd-cts_smo_crns_1hour-plan",
       "output": "cosmos-balrd-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-balrd-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-balrd-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -2332,7 +2332,7 @@
       "id": "cosmos-bickl-cts_smo_crns_1hour-plan",
       "output": "cosmos-bickl-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-bickl-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-bickl-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -3469,7 +3469,7 @@
       "id": "cosmos-bunny-cts_smo_crns_1hour-plan",
       "output": "cosmos-bunny-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-bunny-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-bunny-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -4610,7 +4610,7 @@
       "id": "cosmos-cardt-cts_smo_crns_1hour-plan",
       "output": "cosmos-cardt-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-cardt-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-cardt-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -5761,14 +5761,14 @@
       "id": "cosmos-cgarw-cts_smo_crns_1hour-plan",
       "output": "cosmos-cgarw-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-cgarw-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-cgarw-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-cgarw-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-cgarw-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-cgarw-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-cgarw-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -7542,7 +7542,7 @@
       "id": "cosmos-chimn-cts_smo_crns_1hour-plan",
       "output": "cosmos-chimn-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-chimn-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-chimn-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -9228,7 +9228,7 @@
       "id": "cosmos-chobh-cts_smo_crns_1hour-plan",
       "output": "cosmos-chobh-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-chobh-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-chobh-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -10380,14 +10380,14 @@
       "id": "cosmos-cochn-cts_smo_crns_1hour-plan",
       "output": "cosmos-cochn-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-cochn-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-cochn-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-cochn-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-cochn-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-cochn-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-cochn-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -12146,7 +12146,7 @@
       "id": "cosmos-coclp-cts_smo_crns_1hour-plan",
       "output": "cosmos-coclp-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-coclp-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-coclp-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -13266,7 +13266,7 @@
       "id": "cosmos-crich-cts_smo_crns_1hour-plan",
       "output": "cosmos-crich-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-crich-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-crich-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -14400,14 +14400,14 @@
       "id": "cosmos-eastb-cts_smo_crns_1hour-plan",
       "output": "cosmos-eastb-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-eastb-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-eastb-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-eastb-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-eastb-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-eastb-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-eastb-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -15646,7 +15646,7 @@
       "id": "cosmos-elmst-cts_smo_crns_1hour-plan",
       "output": "cosmos-elmst-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-elmst-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-elmst-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -17248,7 +17248,7 @@
       "id": "cosmos-eustn-cts_smo_crns_1hour-plan",
       "output": "cosmos-eustn-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-eustn-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-eustn-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -18849,7 +18849,7 @@
       "id": "cosmos-finch-cts_smo_crns_1hour-plan",
       "output": "cosmos-finch-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-finch-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-finch-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -20467,7 +20467,7 @@
       "id": "cosmos-fivet-cts_smo_crns_1hour-plan",
       "output": "cosmos-fivet-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-fivet-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-fivet-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -22119,14 +22119,14 @@
       "id": "cosmos-gisbn-cts_smo_crns_1hour-plan",
       "output": "cosmos-gisbn-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-gisbn-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-gisbn-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-gisbn-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-gisbn-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-gisbn-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-gisbn-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -23380,14 +23380,14 @@
       "id": "cosmos-glens-cts_smo_crns_1hour-plan",
       "output": "cosmos-glens-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-glens-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-glens-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-glens-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-glens-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-glens-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-glens-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -24626,7 +24626,7 @@
       "id": "cosmos-glenw-cts_smo_crns_1hour-plan",
       "output": "cosmos-glenw-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-glenw-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-glenw-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -26239,7 +26239,7 @@
       "id": "cosmos-hadlw-cts_smo_crns_1hour-plan",
       "output": "cosmos-hadlw-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-hadlw-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-hadlw-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -27840,7 +27840,7 @@
       "id": "cosmos-hartw-cts_smo_crns_1hour-plan",
       "output": "cosmos-hartw-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-hartw-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-hartw-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -28895,7 +28895,7 @@
       "id": "cosmos-harwd-cts_smo_crns_1hour-plan",
       "output": "cosmos-harwd-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-harwd-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-harwd-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -29961,7 +29961,7 @@
       "id": "cosmos-henfs-cts_smo_crns_1hour-plan",
       "output": "cosmos-henfs-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-henfs-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-henfs-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -31081,7 +31081,7 @@
       "id": "cosmos-hillb-cts_smo_crns_1hour-plan",
       "output": "cosmos-hillb-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-hillb-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-hillb-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -32682,7 +32682,7 @@
       "id": "cosmos-hlacy-cts_smo_crns_1hour-plan",
       "output": "cosmos-hlacy-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-hlacy-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-hlacy-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -34339,7 +34339,7 @@
       "id": "cosmos-holln-cts_smo_crns_1hour-plan",
       "output": "cosmos-holln-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-holln-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-holln-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -35487,7 +35487,7 @@
       "id": "cosmos-hybry-cts_smo_crns_1hour-plan",
       "output": "cosmos-hybry-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-hybry-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-hybry-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -37088,7 +37088,7 @@
       "id": "cosmos-lizrd-cts_smo_crns_1hour-plan",
       "output": "cosmos-lizrd-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-lizrd-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-lizrd-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -38245,7 +38245,7 @@
       "id": "cosmos-lodtn-cts_smo_crns_1hour-plan",
       "output": "cosmos-lodtn-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-lodtn-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-lodtn-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -39863,7 +39863,7 @@
       "id": "cosmos-lulln-cts_smo_crns_1hour-plan",
       "output": "cosmos-lulln-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-lulln-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-lulln-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -41015,14 +41015,14 @@
       "id": "cosmos-moorh-cts_smo_crns_1hour-plan",
       "output": "cosmos-moorh-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-moorh-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-moorh-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-moorh-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-moorh-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-moorh-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-moorh-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -42261,7 +42261,7 @@
       "id": "cosmos-morem-cts_smo_crns_1hour-plan",
       "output": "cosmos-morem-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-morem-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-morem-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -43879,7 +43879,7 @@
       "id": "cosmos-morly-cts_smo_crns_1hour-plan",
       "output": "cosmos-morly-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-morly-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-morly-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -44999,7 +44999,7 @@
       "id": "cosmos-nwyke-cts_smo_crns_1hour-plan",
       "output": "cosmos-nwyke-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-nwyke-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-nwyke-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -46133,14 +46133,14 @@
       "id": "cosmos-plynl-cts_smo_crns_1hour-plan",
       "output": "cosmos-plynl-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-plynl-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-plynl-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-plynl-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-plynl-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-plynl-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-plynl-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -47389,7 +47389,7 @@
       "id": "cosmos-portn-cts_smo_crns_1hour-plan",
       "output": "cosmos-portn-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-portn-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-portn-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -48510,7 +48510,7 @@
       "id": "cosmos-rdmer-cts_smo_crns_1hour-plan",
       "output": "cosmos-rdmer-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-rdmer-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-rdmer-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -49630,7 +49630,7 @@
       "id": "cosmos-redhl-cts_smo_crns_1hour-plan",
       "output": "cosmos-redhl-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-redhl-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-redhl-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -50767,7 +50767,7 @@
       "id": "cosmos-riseh-cts_smo_crns_1hour-plan",
       "output": "cosmos-riseh-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-riseh-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-riseh-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -52368,7 +52368,7 @@
       "id": "cosmos-rothd-cts_smo_crns_1hour-plan",
       "output": "cosmos-rothd-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-rothd-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-rothd-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -53560,7 +53560,7 @@
       "id": "cosmos-sheep-cts_smo_crns_1hour-plan",
       "output": "cosmos-sheep-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-sheep-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-sheep-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -55263,14 +55263,14 @@
       "id": "cosmos-sourh-cts_smo_crns_1hour-plan",
       "output": "cosmos-sourh-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-sourh-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-sourh-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
       "id": "cosmos-sourh-cts_smo_snowfox_1hour-plan",
       "output": "cosmos-sourh-cts_smo_snowfox_1hour_processed",
       "steps": [
-        "cosmos-sourh-cts_smo_snowfox_1hour-rolling_mean_for_snow"
+        "cosmos-sourh-cts_smo_snowfox_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -56509,7 +56509,7 @@
       "id": "cosmos-spenf-cts_smo_crns_1hour-plan",
       "output": "cosmos-spenf-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-spenf-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-spenf-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -58150,7 +58150,7 @@
       "id": "cosmos-stght-cts_smo_crns_1hour-plan",
       "output": "cosmos-stght-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-stght-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-stght-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -59325,7 +59325,7 @@
       "id": "cosmos-stips-cts_smo_crns_1hour-plan",
       "output": "cosmos-stips-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-stips-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-stips-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -60445,7 +60445,7 @@
       "id": "cosmos-sydlg-cts_smo_crns_1hour-plan",
       "output": "cosmos-sydlg-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-sydlg-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-sydlg-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -62063,7 +62063,7 @@
       "id": "cosmos-tadhm-cts_smo_crns_1hour-plan",
       "output": "cosmos-tadhm-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-tadhm-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-tadhm-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -63221,7 +63221,7 @@
       "id": "cosmos-waddn-cts_smo_crns_1hour-plan",
       "output": "cosmos-waddn-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-waddn-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-waddn-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -64907,7 +64907,7 @@
       "id": "cosmos-wimpl-cts_smo_crns_1hour-plan",
       "output": "cosmos-wimpl-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-wimpl-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-wimpl-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -66508,7 +66508,7 @@
       "id": "cosmos-wrttl-cts_smo_crns_1hour-plan",
       "output": "cosmos-wrttl-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-wrttl-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-wrttl-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
@@ -68073,7 +68073,7 @@
       "id": "cosmos-wyth1-cts_smo_crns_1hour-plan",
       "output": "cosmos-wyth1-cts_smo_crns_1hour_processed",
       "steps": [
-        "cosmos-wyth1-cts_smo_crns_1hour-rolling_mean_for_snow"
+        "cosmos-wyth1-cts_smo_crns_1hour-rolling_mean_for_counts"
       ]
     },
     {
