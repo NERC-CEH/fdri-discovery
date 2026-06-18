@@ -119,6 +119,7 @@ SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 # NMDB Samples
 SAMPLES += $(TTL_BASE)/SITES_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
+SAMPLES += $(TTL_BASE)/timeseries_flags_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
 
@@ -288,6 +289,9 @@ build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMO
 
 build/timeseries_flags_fdri.csv: $(SRC)/TIMESERIES_IDS_FDRI.csv $(SRC)/FDRI_flag_definitions.csv $(SQL)/timeseries_flags_fdri.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_fdri.sql"
+
+build/timeseries_flags_nmdb.csv: $(SRC)/TIMESERIES_IDS_NMDB.csv $(SRC)/NMDB_flag_definitions.csv $(SQL)/timeseries_flags_nmdb.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_nmdb.sql"
 
 build/processing_configurations_cosmos.json: $(SRC)/processing_configurations_cosmos.json $(SQL)/processing_configurations.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_cosmos.json > $@"
