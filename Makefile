@@ -63,11 +63,11 @@ SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
 SAMPLES += $(TTL_BASE)/site_slots.ttl
 SAMPLES += $(TTL_BASE)/SITES_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
+SAMPLES += $(TTL_BASE)/TIME_ANCHOR.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/timeseries_flags_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
-SAMPLES += $(TTL_BASE)/VALUE_TIME_ANCHOR.ttl
 
 # Stop-gap temporal extents
 SAMPLES += $(TTL_BASE)/ts_temporal.ttl
