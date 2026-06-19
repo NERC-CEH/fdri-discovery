@@ -122,6 +122,7 @@ SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/timeseries_flags_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
+SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 
 # AMS Samples
 #SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
@@ -283,6 +284,12 @@ build/FDRI_FLAG_SCHEMES_LINES.json: $(SRC)/FDRI_flag_schemes.json $(SQL)/array_t
 
 $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
 	$(MAPPER) $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json $@
+
+build/NMDB_FLAG_SCHEMES_LINES.json: $(SRC)/NMDB_flag_schemes.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/NMDB_flag_schemes.json > $@"
+
+$(TTL_BASE)/NMDB_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/NMDB_FLAG_SCHEMES_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/NMDB_FLAG_SCHEMES_LINES.json $@
 
 build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
