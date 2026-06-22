@@ -11,7 +11,7 @@ resources:
     properties:
       "@id": "<{site_id}>"
       "@type": "<fdri:EnvironmentalMonitoringSite>"
-      "^<fdri:contains>": <http://fdri.ceh.ac.uk/id/network/{network|slug}>
+      "^<doo:contains>": <http://fdri.ceh.ac.uk/id/network/{network|slug}>
       "<dct:identifier>": "{identifiers}"
       "<geos:hasGeometry>":
         - name: LatLongPoint

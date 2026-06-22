@@ -28,8 +28,8 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSite>"
       "<rdfs:label>": "{SITE_NAME}@en"
-      "^<fdri:contains>": <::Network>
-      "^<fdri:utilises>": <::Programme>
+      "^<doo:contains>": <::Network>
+      "^<doo:utilises>": <::Programme>
       "<dct:identifier>": "{SITE_ID}"
       "<geos:hasGeometry>":
         - name: LatLongPoint
