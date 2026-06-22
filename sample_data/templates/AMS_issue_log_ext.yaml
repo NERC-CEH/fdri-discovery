@@ -1,0 +1,48 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - extensions.py
+
+resources:
+  - name: Issue
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/fault/iams-issue-{ID|slug}>"
+      "@type": <fdri:Fault>
+      "<rdfs:comment>": "{log_Issue}@en"
+      <fdri:affectedFacility>:
+        - name: AffectedAsset
+          unless:
+            log_AssetID: "0"
+          properties:
+            "@id": <http://fdri.ceh.ac.uk/id/system/iams-{log_AssetID|slug}>
+        - name: AffectedSite
+          requires:
+            site_id:
+            site_Network:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}>"
+        - name: AffectedFacility
+          requires:
+            station_id:
+            site_Network:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/platform/{site_Network|slug}-{station_id|slug}>"
+      <fdri:interval>:
+        - name: IssueInterval
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/fault/iams-issue-{ID|slug}#interval>"
+            "@type": <dct:PeriodOfTime>
+            <dcat:startDate>: "{log_Date|asDateTime}"
+        - name: IssueIntervalEnd
+          requires:
+            log_lastNoteDate:
+            log_lastNoteStatus:
+              - "Completed"
+              - "Cancelled"
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/fault/iams-issue-{ID|slug}#interval>"
+            "@type": <dct:PeriodOfTime>
+            <dcat:endDate>: "{log_ResolvedDate|asDateTime}"

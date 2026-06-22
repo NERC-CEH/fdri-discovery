@@ -28,7 +28,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{FLAG_TS|slug}-{METHOD_ID|slug}>"
       "@type": <fdri:InternalDataProcessingConfiguration>
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/configuration-type/qc>"
-      "<fdri:appliesToTimeSeries>": <::FlagTS>
+      "<fdri:appliesToDataset>": <::FlagTS>
 
   - name: CurrentConfigurationItem
     properties:
@@ -39,7 +39,7 @@ resources:
 
   - name: ConfigurationArgument
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/configuration-argument/current-{$row}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-argument/{FLAG_TS|slug}-{METHOD_ID|slug}-current-{$row}>"
       "@type": <fdri:ConfigurationArgument>
       "<fdri:parameter>": <::Parameter>
       "^<fdri:argument>": <::CurrentConfigurationItem>
@@ -48,7 +48,7 @@ resources:
     requires:
       PARAM_NUMERIC_VALUE:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/configuration-argument/current-{$row}#value>"
+      "@id": "<http://fdri.ceh.ac.uk/configuration-argument/{FLAG_TS|slug}-{METHOD_ID|slug}-current-{$row}#value>"
       "@type": <schema:PropertyValue>
       "<schema:value>": "{PARAM_NUMERIC_VALUE}^^<xsd:decimal>"
       "^<fdri:hasValue>": <::ConfigurationArgument>
@@ -57,7 +57,7 @@ resources:
     requires:
       PARAM_TS_VALUE:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/configuration-argument/current-{$row}#value>"
+      "@id": "<http://fdri.ceh.ac.uk/configuration-argument/{FLAG_TS|slug}-{METHOD_ID|slug}-current-{$row}#value>"
       "@type": <schema:PropertyValue>
       "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{PARAM_TS_VALUE|slug}>"
       "^<fdri:hasValue>": <::ConfigurationArgument>
@@ -66,7 +66,7 @@ resources:
     requires:
       PARAM_TIME_VALUE:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/configuration-argument/current-{$row}#value>"
+      "@id": "<http://fdri.ceh.ac.uk/configuration-argument/{FLAG_TS|slug}-{METHOD_ID|slug}-current-{$row}#value>"
       "@type": <schema:PropertyValue>
       "<schema:value>": "{PARAM_TIME_VALUE}^^<xsd:time>"
       "^<fdri:hasValue>": <::ConfigurationArgument>

@@ -1,0 +1,69 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+  - extensions.py
+
+resources:
+  - name: InstrumentType
+    requires:
+      asset_Instrument_Type:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{asset_Instrument_Type|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSystemType>
+      "<skos:inScheme>": <::CommonSystemTypeScheme>
+
+  - name: SensorAsset
+    requires:
+      is_sensor: "true"
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSensor>
+  
+  - name: NonSensorAsset
+    unless:
+      is_sensor: "true"
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSystem>
+
+  - name: Asset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/system/iams-{ID|slug}>"
+      "<rdfs:label>": "{asset_Name} {asset_SerialNumber}@en"
+      "<rdfs:comment>": "{asset_Description}@en"
+      "<dct:type>":
+        - name: MakeModel
+          requires:
+            asset_Manufacturer:
+            asset_Model:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{asset_Manufacturer|slug}-{asset_Model|slug}>"
+            "@type": <fdri:EnvironmentalMonitoringSystemType>
+            "<skos:prefLabel>": "{asset_Manufacturer} {asset_Model}@en"
+            "<skos:inScheme>": <::CommonSystemTypeScheme>
+            "^<skos:narrower>": <::InstrumentType>
+            "<skos:broader>": <::InstrumentType>
+        - name: InstrumentType
+          requires:
+            asset_Instrument_Type:
+          unless:
+            asset_Manufacturer:
+            asset_Model:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{asset_Instrument_Type|slug}>"
+      "<fdri:assetNumber>": "{asset_CEHAssetNumber}"
+      "<fdri:dateOfPurchase>": "{asset_AcquiredDate|asDate}"
+      "<fdri:serialNumber>": "{asset_SerialNumber}"
+      "<adms:status>":
+        - name: AssetStatus
+          requires:
+            asset_Status:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/ref/common/asset-status/{asset_Status|slug}>"
+            "@type": <fdri:SystemStatus>
+            "<skos:inScheme>": <::CommonAssetStatusScheme>
+            "^<skos:hasTopConcept>": <::CommonAssetStatusScheme>

@@ -1,5 +1,6 @@
 prefix dct: <http://purl.org/dc/terms/>
 prefix fdri: <http://fdri.ceh.ac.uk/vocab/metadata/>
+prefix sdo: <http://schema.org/>
 
 DROP SILENT GRAPH <http://fdri.ceh.ac.uk/id/dataset/dependency-graph> ;
 INSERT {
@@ -7,13 +8,13 @@ INSERT {
         ?ds fdri:directDependsOn ?dep .
     }
 } WHERE {
-    ?ds dct:type/fdri:methodology/fdri:uses ?depDef .
-    ?ds fdri:originatingSite ?site .
-    ?dep fdri:originatingSite ?site ;
-        dct:type ?depDef .
-    FILTER NOT EXISTS {
-        ?ds fdri:directDependsOn ?x
-    }
+  ?ds fdri:methodology/dct:hasPart/fdri:configuration/fdri:hasCurrentValue/fdri:argument ?arg .
+  {
+    ?arg fdri:parameter <http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts> . 
+  } UNION {
+    ?arg fdri:parameter <http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts> . 
+  }
+  ?arg fdri:hasValue/sdo:valueReference ?dep .
 };
 INSERT {
     GRAPH <http://fdri.ceh.ac.uk/id/dataset/dependency-graph> {

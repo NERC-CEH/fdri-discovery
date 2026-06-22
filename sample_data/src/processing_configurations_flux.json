@@ -1,0 +1,940 @@
+{
+  "flux-plynl": [
+    {
+      "id": "flux-plynl-raw-load-local-copy",
+      "type": "load",
+      "method": "load-local-copy"
+    },
+    {
+      "id": "flux-plynl-eddypro",
+      "type": "calculate",
+      "method": "eddypro-run",
+      "dep_ts": [
+        "flux-plynl-raw",
+        "flux-plynl-biomet-ta-30min",
+        "flux-plynl-biomet-rh-30min",
+        "flux-plynl-biomet-pa-30min",
+        "flux-plynl-biomet-shf1-30min",
+        "flux-plynl-biomet-shf2-30min",
+        "flux-plynl-biomet-rn-30min",
+        "flux-plynl-biomet-swin-30min",
+        "flux-plynl-dynamic-sonic-azimuth",
+        "flux-plynl-dynamic-height-measurement",
+        "flux-plynl-dynamic-height-canopy"
+      ],
+      "parameters": [
+        {
+          "param": "software_version",
+          "value": "7.0.9"
+        },
+        {
+          "param": "file_prototype",
+          "value": "TOA5_25623.Time_Series_00_yyyy_mm_dd_HHMM.dat"
+        },
+        {
+          "param": "master_sonic",
+          "value": "csat3_1"
+        },
+        {
+          "param": "acquisition_frequency",
+          "value": 20.0
+        },
+        {
+          "param": "file_duration",
+          "value": 30
+        },
+        {
+          "param": "canopy_height",
+          "value": 0.2
+        },
+        {
+          "param": "displacement_height",
+          "value": 0.13
+        },
+        {
+          "param": "roughness_length",
+          "value": 0.01
+        },
+        {
+          "param": "column_mapping",
+          "structured_value": [
+            [
+              {
+                "param": "variable",
+                "value": "not_numeric"
+              },
+              {
+                "param": "instrument",
+                "value": ""
+              },
+              {
+                "param": "unit_in",
+                "value": ""
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 0
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "u"
+              },
+              {
+                "param": "instrument",
+                "value": "csat3_1"
+              },
+              {
+                "param": "unit_in",
+                "value": "m_sec"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 1
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "v"
+              },
+              {
+                "param": "instrument",
+                "value": "csat3_1"
+              },
+              {
+                "param": "unit_in",
+                "value": "m_sec"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 2
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "w"
+              },
+              {
+                "param": "instrument",
+                "value": "csat3_1"
+              },
+              {
+                "param": "unit_in",
+                "value": "m_sec"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 3
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "ts"
+              },
+              {
+                "param": "instrument",
+                "value": "csat3_1"
+              },
+              {
+                "param": "unit_in",
+                "value": "celsius"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 4
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "anemometer_diagnostic"
+              },
+              {
+                "param": "instrument",
+                "value": "csat3_1"
+              },
+              {
+                "param": "unit_in",
+                "value": "dimensionless"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 5
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "co2"
+              },
+              {
+                "param": "instrument",
+                "value": "generic_closed_path_1"
+              },
+              {
+                "param": "measure_type",
+                "value": "mixing_ratio"
+              },
+              {
+                "param": "unit_in",
+                "value": "ppm"
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 6
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "h2o"
+              },
+              {
+                "param": "instrument",
+                "value": "generic_closed_path_1"
+              },
+              {
+                "param": "measure_type",
+                "value": "mixing_ratio"
+              },
+              {
+                "param": "unit_in",
+                "value": "ppt"
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 7
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "Diagnostic_irga"
+              },
+              {
+                "param": "instrument",
+                "value": "generic_closed_path_1"
+              },
+              {
+                "param": "measure_type",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "dimensionless"
+              },
+              {
+                "param": "conversion",
+                "value": "gain_offset"
+              },
+              {
+                "param": "column_index",
+                "value": 8
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "air_t"
+              },
+              {
+                "param": "instrument",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "celsius"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 9
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "cell_t"
+              },
+              {
+                "param": "instrument",
+                "value": "generic_closed_path_1"
+              },
+              {
+                "param": "unit_in",
+                "value": "celsius"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 10
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "int_p"
+              },
+              {
+                "param": "instrument",
+                "value": "generic_closed_path_1"
+              },
+              {
+                "param": "unit_in",
+                "value": "kpa"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 11
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "co2_signal_strength"
+              },
+              {
+                "param": "instrument",
+                "value": "csat3_1"
+              },
+              {
+                "param": "measure_type",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "dimensionless"
+              },
+              {
+                "param": "conversion",
+                "value": "gain_offset"
+              },
+              {
+                "param": "column_index",
+                "value": 12
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "h2o_signal_strength"
+              },
+              {
+                "param": "instrument",
+                "value": "generic_closed_path_1"
+              },
+              {
+                "param": "measure_type",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "dimensionless"
+              },
+              {
+                "param": "conversion",
+                "value": "gain_offset"
+              },
+              {
+                "param": "column_index",
+                "value": 13
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "PA_diff"
+              },
+              {
+                "param": "instrument",
+                "value": "other"
+              },
+              {
+                "param": "measure_type",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "kpa"
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 14
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "air_p"
+              },
+              {
+                "param": "instrument",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "kpa"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 15
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "flowrate"
+              },
+              {
+                "param": "instrument",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "lit_m"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": ""
+              },
+              {
+                "param": "column_index",
+                "value": 16
+              }
+            ],
+            [
+              {
+                "param": "variable",
+                "value": "ignore"
+              },
+              {
+                "param": "instrument",
+                "value": "other"
+              },
+              {
+                "param": "unit_in",
+                "value": "dimensionless"
+              },
+              {
+                "param": "measure_type",
+                "value": ""
+              },
+              {
+                "param": "conversion",
+                "value": "gain_offset"
+              },
+              {
+                "param": "column_index",
+                "value": 17
+              }
+            ]
+          ]
+        },
+        {
+          "param": "instrument_specs",
+          "structured_value": [
+            [
+              {
+                "param": "manufacturer",
+                "value": "csi"
+              },
+              {
+                "param": "model",
+                "value": "csat3_1"
+              },
+              {
+                "param": "sw_version",
+                "value": ""
+              },
+              {
+                "param": "id",
+                "value": ""
+              },
+              {
+                "param": "height",
+                "value": 2.85
+              },
+              {
+                "param": "wformat",
+                "value": "uvw"
+              },
+              {
+                "param": "wref",
+                "value": ""
+              },
+              {
+                "param": "head_corr",
+                "value": 0
+              },
+              {
+                "param": "north_offset",
+                "value": 256.0
+              },
+              {
+                "param": "northward_separation",
+                "value": 0.0
+              },
+              {
+                "param": "eastward_separation",
+                "value": 0.0
+              },
+              {
+                "param": "vertical_separation",
+                "value": 0.0
+              },
+              {
+                "param": "vpath_length",
+                "value": 1.0
+              },
+              {
+                "param": "hpath_length",
+                "value": 1.0
+              },
+              {
+                "param": "tau",
+                "value": 0.1
+              }
+            ],
+            [
+              {
+                "param": "manufacturer",
+                "value": "other_irga"
+              },
+              {
+                "param": "model",
+                "value": "generic_closed_path_1"
+              },
+              {
+                "param": "sw_version",
+                "value": ""
+              },
+              {
+                "param": "id",
+                "value": "CPEC_MillFarm"
+              },
+              {
+                "param": "tube_length",
+                "value": 64.5
+              },
+              {
+                "param": "tube_diameter",
+                "value": 2.2
+              },
+              {
+                "param": "tube_flowrate",
+                "value": 8.0
+              },
+              {
+                "param": "northward_separation",
+                "value": 0.5
+              },
+              {
+                "param": "eastward_separation",
+                "value": 15.35
+              },
+              {
+                "param": "vertical_separation",
+                "value": -0.6
+              },
+              {
+                "param": "vpath_length",
+                "value": 12.0
+              },
+              {
+                "param": "hpath_length",
+                "value": 0.794
+              },
+              {
+                "param": "tau",
+                "value": 0.05
+              },
+              {
+                "param": "kw",
+                "value": 0.15
+              },
+              {
+                "param": "ko",
+                "value": 0.0085
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-pa-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-pa"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-rh-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-rh"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-rn-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-rn"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-shf1-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-shf1"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-shf2-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-shf2"
+      ]
+    },
+    {
+      "id": "flux-plynl-shf-derivation",
+      "type": "calculate",
+      "method": "calc_flux_mean_shf",
+      "dep_ts": [
+        "flux-plynl-biomet-shf1-30min",
+        "flux-plynl-biomet-shf2-30min"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-swin-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-swin"
+      ]
+    },
+    {
+      "id": "flux-plynl-biomet-ta-30min-aggregate",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "flux-plynl-biomet-ta"
+      ]
+    },
+    {
+      "id": "flux-plynl-co2-flux-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-qc-flag",
+      "type": "qc",
+      "method": "flux_qc_flag",
+      "dep_ts": [
+        "flux-plynl-qc-h"
+      ]
+    },
+    {
+      "id": "flux-plynl-h2o-flux-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-qc-h-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-qc-tau-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-sonic-temp-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-tau-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-tau-qc-flag",
+      "type": "qc",
+      "method": "flux_qc_flag",
+      "dep_ts": [
+        "flux-plynl-qc-tau"
+      ]
+    },
+    {
+      "id": "flux-plynl-u-var-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-v-var-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-vpd-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-w-var-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-wind-dir-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-wind-speed-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-despiked-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-h-l2-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-tau-l2-load",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "flux-plynl-processed"
+      ]
+    },
+    {
+      "id": "flux-plynl-et-l1-derivation",
+      "type": "calculate",
+      "method": "calc_flux_et_l1",
+      "dep_ts": [
+        "flux-plynl-le-l1",
+        "flux-plynl-biomet-ta-30min"
+      ]
+    },
+    {
+      "id": "flux-plynl-et-l2-derivation",
+      "type": "calculate",
+      "method": "calc_flux_et_l2",
+      "dep_ts": [
+        "flux-plynl-le-l2",
+        "flux-plynl-biomet-ta-30min"
+      ]
+    },
+    {
+      "id": "flux-plynl-le-l1-derivation",
+      "type": "calculate",
+      "method": "calc_flux_le_l1",
+      "dep_ts": [
+        "flux-plynl-biomet-rn-30min",
+        "flux-plynl-shf",
+        "flux-plynl-h"
+      ]
+    },
+    {
+      "id": "flux-plynl-le-l1-range",
+      "type": "qc",
+      "method": "range",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -50.0
+        },
+        {
+          "param": "gt",
+          "value": 600.0
+        }
+      ]
+    },
+    {
+      "id": "flux-plynl-le-l2-derivation",
+      "type": "calculate",
+      "method": "calc_flux_le_l2",
+      "dep_ts": [
+        "flux-plynl-biomet-rn-30min",
+        "flux-plynl-shf",
+        "flux-plynl-h-l2"
+      ]
+    },
+    {
+      "id": "flux-plynl-le-l2-range",
+      "type": "qc",
+      "method": "range",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -50.0
+        },
+        {
+          "param": "gt",
+          "value": 600.0
+        }
+      ]
+    }
+  ]
+}

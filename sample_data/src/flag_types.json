@@ -1,0 +1,22 @@
+[
+    {
+        "id": "core_flags",
+        "label": "Core Flags",
+        "description": "General pupose flags giving high level information about the data point."
+    },
+    {
+        "id": "quality_control_flags",
+        "label": "Quality Control Flags",
+        "description": "Flags that indicate the quality control tests a data point has failed."
+    },
+    {
+        "id": "correction_flags",
+        "label": "Correction Flags",
+        "description": "Flags that indicate the correction method applied to a data point."
+    },
+    {
+        "id": "infill_flags",
+        "label": "Infill Flags",
+        "description": "Flags that indicate the infilling technique used to fill gaps in the data."
+    }
+]

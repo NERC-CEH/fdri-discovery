@@ -1,0 +1,97 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+  - concept_schemes.yaml
+
+embedded:
+  - name: DepTimeSeriesValue
+    properties:
+      "@id": "<{$parentID}.value>"
+      "@type": "<schema:PropertyValue>"
+      "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{id|slug}>"
+
+  - name: StructuredArgument
+    properties:
+      "@id": "<{$parentID}.{child_key|slug}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{param|slug}.{child_key|slug}>"
+      "<fdri:hasValue>":
+        name: StructuredArgumentValue
+        properties:
+          "@id": "<{$parentID}.{child_key|slug}.value>"
+          "@type": "<schema:PropertyValue>"
+          "<schema:value>": "{value}"
+
+  - name: StructuredItem
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.structured.{idx}>"
+      "@type": "<fdri:ConfigurationArgumentList>"
+      "<fdri:index>": "{idx|asInt}"
+      "<fdri:argument>": "{entries|map_to(StructuredArgument)}"
+
+  - name: GenericArgument
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{param|slug}>"
+      "<fdri:hasValue>":
+        - name: GenericArgumentValue
+          requires:
+            value:
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{param}.value>"
+            "@type": "<schema:PropertyValue>"
+            "<schema:value>": "{value}"
+      "<fdri:hasStructuredValue>": "{structured_items|map_to(StructuredItem)}"
+  
+resources:
+  - name: DataProcessingConfiguration
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/data-processing-configuration/{id}>"
+      "@type": "<fdri:InternalDataProcessingConfiguration>"
+      "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-type/{type|slug}>
+      "<fdri:hasCurrentValue>":
+        - name: ConfigurationItem"
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}>"
+            "@type": "<fdri:ConfigurationItem>"
+            "<fdri:rawConfiguration>": "{raw}"
+            "<fdri:method>": "<http://fdri.ceh.ac.uk/ref/common/method/{method|slug}>"
+            "<fdri:observationInterval>":
+              - name: ClosedObservationInterval
+                requires:
+                  obs_end_date:
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#observationInterval>"
+                  "@type": "<dct:PeriodOfTime>"
+                  "<dcat:startDate>": "{obs_start_date}^^<xsd:dateTime>"
+                  "<dcat:endDate>": "{obs_end_date}^^<xsd:dateTime>"
+              - name: OpenObservationInterval
+                requires:
+                  obs_end_date: ""
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#observationInterval>"
+                  "@type": "<dct:PeriodOfTime>"
+                  "<dcat:startDate>": "{obs_start_date}^^<xsd:dateTime>"
+            "<fdri:argument>":
+              - "{parameters|map_to(GenericArgument)}"
+              - name: DepTimeSeries
+                requires:
+                  dep_ts:
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.depts>"
+                  "@type": "<fdri:ConfigurationArgument>"
+                  "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts>"
+                  "<fdri:hasValue>": "{dep_ts|map_to(DepTimeSeriesValue)}"
+              - name: LoadTimeSeries
+                requires:
+                  load_ts:
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.loadts>"
+                  "@type": "<fdri:ConfigurationArgument>"
+                  "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts>"
+                  "<fdri:hasValue>": "{load_ts|map_to(DepTimeSeriesValue)}"
+

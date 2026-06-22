@@ -132,6 +132,21 @@ resources:
             "<schema:value>": "{REF_SOC|asDecimal}"
       "^<fdri:hasAnnotation>": "<::Site>"
 
+  - name: GAMMA
+    requires:
+      GAMMA:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#gamma>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/gamma>"
+      "<fdri:hasValue>":
+        - name: GammaValue
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#gamma.value>"
+            "@type": <schema:PropertyValue>
+            "<schema:value>": "{GAMMA|asDecimal}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
   - name: CALIBRATION_COMMENT
     requires:
       CALIBRATION_COMMENT:

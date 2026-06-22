@@ -1,0 +1,13 @@
+"ID","logNote_LogID","logNote_Note","logNote_Developer","logNote_Status","logNote_Date","logNote_Owner"
+1,1,"test",,"Open",18/10/2024 00:00:00,"Liaromatis, David"
+2,1,"test",,"Open",18/10/2024 00:00:00,"Dcruz, Dena Roselyn"
+3,4,"Test issue for erratic data from NR01",,"Open",05/06/2025 00:00:00,"Cooper, Hollie"
+4,3,,,,,
+5,11,"Returned to CSL when CSL rep. Doug visited UKCEH Wallingford.",,"Completed",26/09/2025 00:00:00,"Burton, Tom"
+6,10,"Returned to CSL when CSL rep. Doug visited UKCEH Wallingford.",,"Completed",26/09/2025 00:00:00,"Burton, Tom"
+7,9,"Returned to CSL when CSL rep. Doug visited UKCEH Wallingford.",,"Completed",26/09/0205 00:00:00,"Burton, Tom"
+8,12,"Faulty sensor returned",,"Completed",24/10/2025 00:00:00,"Dcruz, Dena Roselyn"
+9,16,,,,,
+10,19,"fault is suspected to be caused by the logger requesting SDI-12 data at the time when the sensor commicates with its cloud platform and will not respond. Poor signal could be causing the cloud communication time to take longer than usual. Unable to replicate the fault in test area, but Jasmine has written an update for the script which should prevent good data being overwritten with NANs if data is requested during the cloud communication time.",,"Open",,
+11,22,"Supplier contacted for replacement cables",,"Open",23/02/2026 00:00:00,"Ali, Azmol"
+12,23,"Supplier contacted for replacement cables.",,"Open",23/02/2026 00:00:00,"Ali, Azmol"

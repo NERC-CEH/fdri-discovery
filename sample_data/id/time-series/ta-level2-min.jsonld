@@ -6,7 +6,7 @@
     "observedProperty": {"@id":"http://fdri.ceh.ac.uk/id/variable/ta"},
     "resolution": "PT30M",
     "periodicity": "P1D",
-    "valueStatistic": {"@id": "http://fdri.ceh.ac.uk/ref/common/valueStatistic/min"},
+    "aggregation": {"@id": "http://fdri.ceh.ac.uk/ref/common/aggregation/min"},
     "processingLevel": {"@id": "http://fdri.ceh.ac.uk/ref/common/processingLevel/2"},
     "methodology": {"@id": "http://fdri.ceh.ac.uk/ref/cosmos/method-ta-min"}
 }

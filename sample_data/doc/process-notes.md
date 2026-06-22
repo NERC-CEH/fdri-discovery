@@ -113,7 +113,7 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **Update requirements:** Bulk replacement?
 
-### `instrumentation_parameters` from `TIMESERIES_IDS` and `SENSOR_SLOT_IDS`
+### `instrumentation_parameters` from `TIMESERIES_IDS`, `MEASURES` and `SITE_INSTRUMENTATION`
 
 **What:** Mapping from variable to instrument type
 
@@ -125,9 +125,9 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **Update requirements:** Bulk replacement
 
-### `sensor_deployments` from `SITE_INSTRUMENTATION`, `SENSOR_SLOT_IDS` and `TIMESERIES_IDS`
+### `sensor_deployments` from `SITE_INSTRUMENTATION`, `MEASURES` and `TIMESERIES_IDS`
 
-**What:** `SITE_INSTRUMENTATION` gives history of sensor deployments at sites with sensor slot id and serial number. `SENSOR_SLOT_IDS` maps a sensor slot to an instrument type id. `TIMESERIES_ID` maps a site to a sensor slot and a variable.
+**What:** `SITE_INSTRUMENTATION` gives history of sensor deployments at sites with sensor slot id and instrument id. `TIMESERIES_ID` maps a site to a sensor slot and a variable.
 
 **Preprocessing:** Join first two on sensor slot id and then join to time series on site and sensor slot id.
 
@@ -137,9 +137,9 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **Update requirements:** Incremental record updates as deployments change.
 
-### `sensor_faults` from `SENSOR_FAULTS`, `TIMESERIES_DEFS` and `sensor_deployments`
+### `sensor_faults` from `SENSOR_FAULTS` and `sensor_deployments`
 
-**What:** `SENSOR_FAULTS` gives list of time periods of faults on specific sensors with comments, includes the affected variables (could be multiple `;`-separated affected variables per fault). `TIMESERIES_DEFS` is used to limit the results to only variables which have an existing definition.
+**What:** `SENSOR_FAULTS` gives list of time periods of faults on specific sensors with comments, includes the affected variables (could be multiple `;`-separated affected variables per fault).
 
 **Preprocessing:** Splits faults to single row per variable and then checks fault for match to a deployed sensor with overlapping time periods. To test that, we need mapping from variable to sensor from the `sensor_deployments` intermediate.
 
@@ -169,16 +169,6 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 **Future source:** Assume incremental record updates from asset management system for new firmware versions. Or might be bulk export. Or might need to support both (incremental normally but allowance for bulk re-sync).
 
 **Update requirements:** If bulk export then process as now, replacing whole history. If incremental then check if version has actually changed and if so close off current value and set new current value. Maintaining the current value is non-monotonic so need a SPARQL Update or check against current data.
-
-### `sensor_calibrations` from `calib_factors_nr01_anem`, `SITE_INSTRUMENTATION`, `SENSOR_SLOT_IDS`, `TIMESERIES_DEFS` and `TIMESERIES_IDS`
-
-**WHAT:** Records of the sensor calibration corrections that apply to time series values.
-
-**Preprocessing:** Reformat date/time strings. Join TIMESERIES_DEFS on variable then TIMESERIES_ID on TIMESERIES_DEF and SITE. Join SENSOR_SLOT_IDS and then SITE_INSTRUMENTATION filtering by the date range of the correction to select the sensor instance that the calibration applies to
-
-**Generates:** `CalibrationActivity` representing the action of sensor calibration that gives rise to the correction factor; `InternalDataProcessingConfiguration` with a `ConfigurationItem` which represents the correction factor derived from the calibration.
-
-**Future source:** Assume that calibration activities and their outcomes in terms of calibration factors to be applied to data are managed in the asset management system. Or might be bulk export. Or might need to support both (incremental normally but allowance for bulk re-sync). A future source could provide a more direct mapping between the correction factor and the affected sensor and leave the metadata store to infer the affected time series based on deployment records for the sensor.
 
 ## Processing pipeline
 
@@ -243,25 +233,27 @@ the other providing the derivation, method and additional arguments for the TSDE
 
 ## Datasets and variables
 
-### `STATISTICS`
+### `AGGREGATION`
 
-**What:** Id, label and definition for statistic (MEAN_PREC, INST etc).
+**What:** Id, label and definition for aggregation (MEAN, MIN, MAX etc).
 
-**Generates:** CV for statistics
+**Generates:** CV for aggregations
 
 **Future source:** Vocab server
 
 **Update requirements:** Bulk update on CV change
 
-### `TIMESERIES_DEFS`
 
-**What:** Definitions of time series with id, label, parameter, statistic, unit, processing level
+### `TIME ANCHOR`
 
-**Generates:** `TimeSeriesDefinition` for all timeseries datasets (which are then common across individual series)
+**What:** Id, label and definition for time anchor. This indictates which period of data a timestamp refers to, e.g. preceeding, proceding or instanteous.
 
-**Future source:** ?? Managed in metadata store?
+**Generates:** CV for time anchors
 
-**Update requirements:** Update API to manage definitions and related configurations?
+**Future source:** Vocab server
+
+**Update requirements:** Bulk update on CV change
+
 
 ### `TIMESERIES_IDS`
 

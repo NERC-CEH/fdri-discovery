@@ -15,6 +15,7 @@ KMS-1,K ms-1
 LS-1,litres s-1
 M,metres
 M3S-1,m3 s-1
+M3-M3,m3/m3
 MJD,MJday-1
 MJM-2-D,MJ m-2 day-1
 MM,mm
@@ -22,7 +23,9 @@ MM_M-1,mm min-1
 MM_HR-1,mm hr-1
 MS-1,ms-1
 MV,mV
+M_SEC,mS
 PCT,%
+RADIANS,rad
 REVS-1,Revolutions s-1
 RPM,rpm
 SAMPLES,Samples
@@ -31,3 +34,6 @@ SM-1,Sm-1
 UNITLESS,Unitless
 V,V
 WM-2,Wm-2
+UMOLM-2S-1,µmol m-2 s-1
+MMOLM-2S-1,mmol m-2 s-1
+M2S-2,m2 s-2

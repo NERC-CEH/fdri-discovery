@@ -1,0 +1,99 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: Network
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/network/{Network|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringNetwork>"
+      "<rdfs:label>": "{Network}@en"
+
+  - name: Programme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/programme/{Network|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringProgramme>"
+      "<rdfs:label>": "FDRI Programme@en"
+
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}>"
+      "@type": <fdri:EnvironmentalMonitoringSite>
+      "<dct:identifier>": "{SiteID}"
+      "^<fdri:contains>": <::Network>
+      "^<fdri:utilises>": <::Programme>
+      "<fdri:utilisedBy>": <::Programme>
+
+  - name: Station
+    requires:
+      StationID:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{StationID|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringPlatform>"
+      "<rdfs:label>": "{Station_name}@en"
+      "<geo:lat>": "{Latitude|asDecimal}"
+      "<geo:long>": "{Longitude|asDecimal}"
+      "<geos:hasGeometry>": 
+          - name: LatLongPoint
+            properties:
+              "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{StationID|slug}#geo-latlong>"
+              "@type": "<geos:Geometry>"
+              "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
+      "^<dct:hasPart>": "<::Site>"
+      "<dct:isPartOf>": "<::Site>"
+      "<dct:identifier>": "{StationID}"
+      "<fdri:hasAnnotation>":
+          - name: StandardInstallation
+            requires:
+              Standard_Installation:
+            properties:
+              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#standard-installation>"
+              "@type": "<fdri:Annotation>"
+              "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/site-standard-installation>"
+              "<fdri:hasValue>":
+                  - name: "StandardInstallationValue"
+                    properties:
+                      "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#standard-installation.value>"
+                      "@type": "<schema:PropertyValue>"
+                      "<schema:value>": "{Standard_Installation|asBoolean}"
+          - name: LandManagementClass
+            requires:
+              Land_management:
+            properties:
+              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#land-management-class>"
+              "@type": "<fdri:Annotation>"
+              "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/observed-land-cover>"
+              "<fdri:hasValue>":
+                  - name: "LandManagementValue"
+                    properties:
+                      "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#land-management.value>"
+                      "@type": "<schema:PropertyValue>"
+                      "<schema:value>": "{Land_management|asBoolean}"
+      "<fdri:operatingPeriod>":
+          - name: OperatingPeriod
+            properties:
+              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#operating-period>"
+              "@type": "<dct:PeriodOfTime>"
+              "<dcat:startDate>": "{Date_installed | asDateOrDatetime}"
+
+  - name: Catchment
+    requires:
+      Catchment:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{Network|slug}-catchment-{Catchment|slug}>"
+      "@type": "<fdri:FacilityGroup>"
+      "<rdfs:label>": "{Catchment}@en"
+      "<fdri:hasMember>": "<::Station>"
+
+  - name: StationType
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{SiteID|slug}-{Station_type|slug}>"
+      "@type": "<fdri:EnvironmentalMonitoringPlatform>"
+      "<dct:identifier>": "{Station_type}"
+      "^<dct:hasPart>": <::Station>
+
