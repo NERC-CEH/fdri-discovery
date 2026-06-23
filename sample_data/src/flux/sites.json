@@ -3,9 +3,8 @@
     {
       "site_id": "http://fdri.ceh.ac.uk/id/site/flux-plynl",
       "network": "fdri",
-      "alt_id": "flux-plynl",
+      "alt_id": "PLYNL",
       "identifiers": [
-        "flux-plynl",
         "PLYNL"
       ],
       "full_name": "Plynlimon flux tower",
