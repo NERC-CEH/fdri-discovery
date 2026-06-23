@@ -17,18 +17,10 @@ resources:
       "<skos:inScheme>": <::MeasureScheme>
       "<fdri:variable>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:hasUnit>": "<http://fdri.ceh.ac.uk/ref/common/unit/{UNIT_ID|slug}>"
-      "<fdri:aggregation>":
-        - name: Aggregation
-          requires:
-            AGGREGATION_ID:
-            TIME_ANCHOR_ID:
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{ID|slug}#aggregation>"
-            "@type": <fdri:Aggregation>
-            "<fdri:periodicity>": "{PERIODICITY}^^<xsd:duration>"
-            "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
-            "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{AGGREGATION_ID|slug}>"
-            "<fdri:valueTimeAnchor>": "<http://fdri.ceh.ac.uk/ref/common/time-anchor/{TIME_ANCHOR_ID|slug}>"
+      "<fdri:aggregation>": "<http://fdri.ceh.ac.uk/ref/common/aggregation/{AGGREGATION_ID|slug}>"
+      "<fdri:periodicity>": "{PERIODICITY}^^<xsd:duration>"
+      "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
+      "<fdri:valueTimeAnchor>": "<http://fdri.ceh.ac.uk/ref/common/time-anchor/{TIME_ANCHOR_ID|slug}>"
 
   - name: MeasureParent
     requires:

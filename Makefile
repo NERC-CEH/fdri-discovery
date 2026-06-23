@@ -31,6 +31,7 @@ RECORDS = \
 	TimeSeriesDataset \
 	TimeSeriesDefinition
 
+SAMPLES += $(TTL_BASE)/AGGREGATION.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_TYPES.ttl
@@ -62,10 +63,12 @@ SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
 SAMPLES += $(TTL_BASE)/site_slots.ttl
 SAMPLES += $(TTL_BASE)/SITES_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
+SAMPLES += $(TTL_BASE)/TIME_ANCHOR.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/timeseries_flags_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
+
 # Stop-gap temporal extents
 SAMPLES += $(TTL_BASE)/ts_temporal.ttl
 # COSMOS processing configurations
@@ -78,7 +81,7 @@ SAMPLES += $(TTL_BASE)/SITES_NRFA.ttl
 # FDRI SAMPLES
 SAMPLES += $(TTL_BASE)/SITES_FDRI.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
-SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
+# SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl

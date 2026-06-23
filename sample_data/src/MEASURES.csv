@@ -277,3 +277,19 @@ TEMP_SOIL_50-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_50,DEGC,MEAN,PREC,PT15M,PT15M
 PROP_PERIOD-MEAN_PREC-UNITLESS-PT15M-PT15M,,PROP_PERIOD,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes (unitless)
 PROP_PERIOD-MEAN_PREC-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes in seconds
 VOLTAGE_RATIO-MEAN_PREC-UNITLESS-PT15M-PT15M,,VOLTAGE_RATIO,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean voltage ratio over the preceding 15 minutes (unitless)
+CO2_FLUX-INST-UMOLM-2S-1-PT30M-PT30M,,CO2_FLUX,UMOLM-2S-1,NONE,INST,PT30M,PT30M,Instantaneous CO2 flux in micromoles per metre squared per second
+ET-INST-MM-PT30M-PT30M,,ET,MM,NONE,INST,PT30M,PT30M,Instantaneous evapotranspiration in millimetres
+H2O_FLUX-INST-MMOLM-2S-1-PT30M-PT30M,,H2O_FLUX,MMOLM-2S-1,NONE,INST,PT30M,PT30M,Instantaneous H2O flux in millimoles per metre squared per second
+HEATFLUX_LATENT-INST-WM-2-PT30M-PT30M,,HEATFLUX_LATENT,WM-2,NONE,INST,PT30M,PT30M,Instantaneous latent heat flux in watts per metre squared
+HEATFLUX_SOIL-MEAN_PREC-WM-2-PT15M-PT15M,,HEATFLUX_SOIL,WM-2,MEAN,PREC,PT15M,PT15M,Mean soil heat flux in watts per metre squared over preceding 15 minutes
+HEIGHT_CANOPY-INST-M-PT30M-PT30M,,HEIGHT_CANOPY,M,NONE,INST,PT30M,PT30M,Instantaneous canopy height in metres
+HEIGHT_MEASUREMENT-INST-M-PT30M-PT30M,,HEIGHT_MEASUREMENT,M,NONE,INST,PT30M,PT30M,Instantaneous measurement height in metres
+QC_FLUX_MOM-INST-UNITLESS-PT30M-PT30M,,QC_FLUX_MOM,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous quality flag for momentum flux (unitless)
+QC_HEATFLUX_SENSIBLE-INST-UNITLESS-PT30M-PT30M,,QC_HEATFLUX_SENSIBLE,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous quality flag for sensible heat flux (unitless)
+SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees
+TEMP_NR-MEAN_PREC-DEGC-PT1M-PT1M,,TEMP_NR,DEGC,MEAN,PREC,PT1M,PT1M,Mean net radiometer temperature over preceding minute in degrees Celsius
+TEMP_NR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_NR,DEGC,MEAN,PREC,PT30M,PT30M,Mean net radiometer temperature over preceding 30 minutes in degrees Celsius
+UX_VAR-INST-M2S-2-PT30M-PT30M,,UX_VAR,M2S-2,NONE,INST,PT30M,PT30M,Instantaneous X component wind speed variance in metres squared per second squared
+UY_VAR-INST-M2S-2-PT30M-PT30M,,UY_VAR,M2S-2,NONE,INST,PT30M,PT30M,Instantaneous Y component wind speed variance in metres squared per second squared
+UZ_VAR-INST-M2S-2-PT30M-PT30M,,UZ_VAR,M2S-2,NONE,INST,PT30M,PT30M,Instantaneous Z component wind speed variance in metres squared per second squared
+VPD-INST-HPA-PT30M-PT30M,,VPD,HPA,NONE,INST,PT30M,PT30M,Instantaneous vapour pressure deficit in hectopascals
