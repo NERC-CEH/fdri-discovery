@@ -126,7 +126,6 @@ SAMPLES += $(TTL_BASE)/NMDB_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/timeseries_flags_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
-SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 
 # AMS Samples
 #SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
