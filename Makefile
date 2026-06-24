@@ -81,6 +81,7 @@ SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
+SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
 
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
@@ -120,6 +121,7 @@ SAMPLES += $(TTL_BASE)/SITES_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
+SAMPLES += $(TTL_BASE)/nmdb_ts_parameters.ttl
 
 # AMS Samples
 #SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
@@ -222,6 +224,9 @@ build/cosmos_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES
 build/fdri_site_assets.csv: $(SRC)/SITES_FDRI.csv $(SRC)/fdri_asset.csv $(SQL)/fdri_site_assets.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_site_assets.sql"
 
+build/fdri_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_FDRI.csv $(SRC)/MEASURES.csv $(SQL)/fdri_ts_parameters.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_ts_parameters.sql"
+
 build/fdri_measure_ext.csv: $(SRC)/fdri_measure.csv $(SRC)/intervalDuration.csv $(SQL)/fdri_measure_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_measure_ext.sql"
 
@@ -308,6 +313,9 @@ build/processing_plans_nmdb.json: $(SRC)/processing_plans_nmdb.json $(SQL)/proce
 
 $(TTL_BASE)/processing_plans_nmdb.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_nmdb.json | build/data
 	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_nmdb.json $@
+
+build/nmdb_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_NMDB.csv $(SRC)/MEASURES.csv $(SQL)/nmdb_ts_parameters.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/nmdb_ts_parameters.sql"
 
 # Flux
 
