@@ -31,6 +31,7 @@ RECORDS = \
 	TimeSeriesDataset \
 	TimeSeriesDefinition
 
+SAMPLES += $(TTL_BASE)/AGGREGATION.ttl
 SAMPLES += $(TTL_BASE)/ANNOTATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_PROPERTIES.ttl
 SAMPLES += $(TTL_BASE)/CONFIGURATION_TYPES.ttl
@@ -61,10 +62,12 @@ SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
 SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
 SAMPLES += $(TTL_BASE)/SITES_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
+SAMPLES += $(TTL_BASE)/TIME_ANCHOR.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/timeseries_flags_cosmos.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_FDRI.ttl
 SAMPLES += $(TTL_BASE)/UNITS.ttl
+
 # Stop-gap temporal extents
 SAMPLES += $(TTL_BASE)/ts_temporal.ttl
 # COSMOS processing configurations
@@ -77,7 +80,7 @@ SAMPLES += $(TTL_BASE)/SITES_NRFA.ttl
 # FDRI SAMPLES
 SAMPLES += $(TTL_BASE)/SITES_FDRI.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
-SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
+# SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
@@ -119,6 +122,8 @@ SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 # NMDB Samples
 SAMPLES += $(TTL_BASE)/SITES_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
+SAMPLES += $(TTL_BASE)/NMDB_FLAG_SCHEMES.ttl
+SAMPLES += $(TTL_BASE)/timeseries_flags_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
 SAMPLES += $(TTL_BASE)/nmdb_ts_parameters.ttl
@@ -284,11 +289,20 @@ build/FDRI_FLAG_SCHEMES_LINES.json: $(SRC)/FDRI_flag_schemes.json $(SQL)/array_t
 $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
 	$(MAPPER) $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json $@
 
+build/NMDB_FLAG_SCHEMES_LINES.json: $(SRC)/NMDB_flag_schemes.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/NMDB_flag_schemes.json > $@"
+
+$(TTL_BASE)/NMDB_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/NMDB_FLAG_SCHEMES_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/NMDB_FLAG_SCHEMES_LINES.json $@
+
 build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
 
 build/timeseries_flags_fdri.csv: $(SRC)/TIMESERIES_IDS_FDRI.csv $(SRC)/FDRI_flag_definitions.csv $(SQL)/timeseries_flags_fdri.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_fdri.sql"
+
+build/timeseries_flags_nmdb.csv: $(SRC)/TIMESERIES_IDS_NMDB.csv $(SRC)/NMDB_flag_definitions.csv $(SQL)/timeseries_flags_nmdb.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_nmdb.sql"
 
 build/processing_configurations_cosmos.json: $(SRC)/processing_configurations_cosmos.json $(SQL)/processing_configurations.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_cosmos.json > $@"
