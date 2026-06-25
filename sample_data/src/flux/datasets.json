@@ -298,7 +298,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M"
+      "measure_id": "HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-tau",
@@ -313,7 +313,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M"
+      "measure_id": "FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-co2-flux",
@@ -328,7 +328,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "CO2_FLUX-INST-UMOLM-2S-1-PT30M-PT30M"
+      "measure_id": "CO2_FLUX-MEAN_PREC-UMOLM-2S-1-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h2o-flux",
@@ -343,7 +343,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "H2O_FLUX-INST-MMOLM-2S-1-PT30M-PT30M"
+      "measure_id": "H2O_FLUX-MEAN_PREC-MMOLM-2S-1-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-h",
@@ -358,7 +358,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "QC_HEATFLUX_SENSIBLE-INST-UNITLESS-PT30M-PT30M"
+      "measure_id": "QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-tau",
@@ -373,7 +373,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "QC_FLUX_MOM-INST-UNITLESS-PT30M-PT30M"
+      "measure_id": "QC_FLUX_MOM-MEAN_PREC-UNITLESS-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-wind-speed",
@@ -418,7 +418,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "VPD-INST-HPA-PT30M-PT30M"
+      "measure_id": "VPD-MEAN_PREC-HPA-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-sonic-temp",
@@ -433,7 +433,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "TEMP_SONIC-INST-DEGC-PT30M-PT30M"
+      "measure_id": "TEMP_SONIC-MEAN_PREC-DEGC-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-u-var",
@@ -448,7 +448,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "UX_VAR-INST-M2S-2-PT30M-PT30M"
+      "measure_id": "UX_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-v-var",
@@ -463,7 +463,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "UY_VAR-INST-M2S-2-PT30M-PT30M"
+      "measure_id": "UY_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-w-var",
@@ -478,7 +478,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "UZ_VAR-INST-M2S-2-PT30M-PT30M"
+      "measure_id": "UZ_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h-despiked",
@@ -493,7 +493,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M"
+      "measure_id": "HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h-l2",
@@ -508,7 +508,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M"
+      "measure_id": "HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-tau-l2",
@@ -523,7 +523,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M"
+      "measure_id": "FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-shf",
@@ -553,7 +553,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "HEATFLUX_LATENT-INST-WM-2-PT30M-PT30M"
+      "measure_id": "HEATFLUX_LATENT-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-et-l1",
@@ -568,7 +568,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "ET-INST-MM-PT30M-PT30M"
+      "measure_id": "ET-MEAN_PREC-MM-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-le-l2",
@@ -583,7 +583,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "HEATFLUX_LATENT-INST-WM-2-PT30M-PT30M"
+      "measure_id": "HEATFLUX_LATENT-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-et-l2",
@@ -598,7 +598,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "ET-INST-MM-PT30M-PT30M"
+      "measure_id": "ET-MEAN_PREC-MM-PT30M-PT30M"
     }
   ]
 }
