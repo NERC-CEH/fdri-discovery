@@ -20,7 +20,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Site Name|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSite>"
       "<rdfs:label>": "{Site Name}@en"
-      "^<fdri:contains>": <::Network>
+      "^<doo:contains>": <::Network>
       "<geos:hasGeometry>":
         - name: LatLongPoint
           properties:

@@ -20,7 +20,7 @@ resources:
       "@type": "<fdri:EnvironmentalMonitoringSite>"
       "<dct:identifier>": "{Station number}"
       "<rdfs:label>": "{Station name}@en"
-      "^<fdri:contains>": "<http://fdri.ceh.ac.uk/id/network/ea-manual-sites>"
+      "^<doo:contains>": "<http://fdri.ceh.ac.uk/id/network/ea-manual-sites>"
       "<geos:hasGeometry>":
         - name: EastingNorthingPoint
           properties:
