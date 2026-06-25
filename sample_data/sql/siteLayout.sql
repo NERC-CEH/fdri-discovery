@@ -1,4 +1,4 @@
-CREATE TABLE SITES AS FROM read_csv('./sample_data/src/SITES.csv', AUTO_DETECT=true);
+CREATE TABLE SITES AS FROM read_csv('./sample_data/src/SITES_COSMOS.csv', AUTO_DETECT=true);
 COPY(
     SELECT SITE_ID, STANDARD_LAYOUT FROM SITES WHERE STANDARD_LAYOUT != 'Y'
 ) TO './build/siteVariance.csv' (HEADER, DELIMITER ',') ;

@@ -1,0 +1,5 @@
+TIME_ANCHOR_ID,TIME_ANCHOR_NAME,DESCRIPTION
+INST,Instantaneous,Instantaneous measurement taken at timestamp
+PREC,Preceding period,Measurment aggregated over period preceding timestamp
+PROC,Proceeding period,Measurment aggregated over period proceeding timestamp
+MIDPOINT,Midpoint of period,Timestamp at midpoint of aggregated period

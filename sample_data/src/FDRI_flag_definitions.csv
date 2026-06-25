@@ -1,0 +1,5 @@
+FLAG_DEF,FLAG_COLUMN,FLAG_SCHEME
+TA_FLAG_DEF,AirTemp_C_CORE_FLAG,core_flag_scheme
+TA_FLAG_DEF,AirTemp_C_CORRS_FLAG,fdri_correction_flag_scheme
+TA_FLAG_DEF,AirTemp_C_QC_FLAG,fdri_quality_control_flag_scheme
+TA_FLAG_DEF,AirTemp_C_INFILL_FLAG,fdri_infill_flag_scheme

@@ -39,6 +39,8 @@ resources:
       "<fdri:sourceDataset>": "{S3_DATASET}"
       "<fdri:sourceColumnName>": "{COLUMN_NAME}"
       "<fdri:sourceTimeColumnName>": "{TIME_COLUMN_NAME}"
+      "<fdri:measure>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
+      "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"
 
   - name: RawTimeSeriesDistribution
     requires:
@@ -48,7 +50,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/distribution/{TIMESERIES_ID|slug}>"
       "@type": "<dcat:Distribution>"
       "<dct:format>": "<http://fdri.ceh.ac.uk/ref/common/format/application_vnd.apache.parquet>"
-      "<dct:accessURL>": "s3://{RAW_SOURCE_BUCKET}/{NETWORK}/dataset={S3_DATASET}/sites={SITE_ID}/^^<xsd:anyURI>"
+      "<dct:accessURL>": "s3://{RAW_SOURCE_BUCKET}/{NETWORK}/dataset={S3_DATASET}/site={SITE_ID}/^^<xsd:anyURI>"
       "^<dcat:distribution>": "<::TimeSeriesDataset>"
 
   - name: ProcessedTimeSeriesDistribution

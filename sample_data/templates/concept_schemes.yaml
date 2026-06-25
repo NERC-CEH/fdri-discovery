@@ -75,14 +75,14 @@ one_offs:
       "@type": "<fdri:PropertyScheme>"
       "<dct:title>": "FDRI Common Properties@en"
       "<rdfs:label>": "FDRI Common Properties@en"
-
-  - name: ValueStatisticScheme
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/common/statistic>"
-      "@type": "<skos:ConceptScheme>"
-      "<dct:title>": "Value Statistics@en"
-      "<rdfs:label>": "Value Statistics@en"
   
+  - name: ValueTimeAnchorScheme
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/time-anchor>"
+      "@type": "<fdri:ValueTimeAnchorScheme>"
+      "<dct:title>": "Value Time Anchor@en"
+      "<rdfs:label>": "Value Time Anchor@en"
+
   - name: UnitScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/unit>"

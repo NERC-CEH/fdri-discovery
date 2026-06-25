@@ -125,8 +125,8 @@ resources:
       "<rdfs:comment>": "{TEXT_GENERAL}@en"
       "<dct:identifier>":
         - "{NRFA_ID}"
-      "^<fdri:contains>": <::Nrfa>
-      "^<fdri:utilises>": <::NrfaProgramme>
+      "^<doo:contains>": <::Nrfa>
+      "^<doo:utilises>": <::NrfaProgramme>
       "<fdri:utilisedBy>": <::NrfaProgramme>
       "<sosa:hasFeatureOfInterest>": <::MonitoredFeature>
       "<geos:hasGeometry>":

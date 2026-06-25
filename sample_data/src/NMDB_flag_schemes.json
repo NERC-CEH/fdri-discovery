@@ -1,0 +1,14 @@
+[    
+    {
+        "id": "nmdb_infill_flag_scheme",
+        "label": "NMDB Infill Flag Scheme",
+        "flag_type": "infill_flags",
+        "scheme": [
+            {
+                "name": "alt_data_dynamic",
+                "description": "Alternative data used to infill gap, with dynamic correction factor.",
+                "value": 4
+            }
+        ]
+    }
+]

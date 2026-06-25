@@ -1,0 +1,27 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: TimeAnchorConcept
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/time-anchor/{TIME_ANCHOR_ID|slug}>"
+      "@type": "<fdri:ValueTimeAnchor>"
+      "<skos:inScheme>": "<::ValueTimeAnchorScheme>"
+      "^<skos:hasTopConcept>": "<::ValueTimeAnchorScheme>"
+      "<skos:prefLabel>": "{TIME_ANCHOR_NAME}@en"
+
+  - name: TimeAnchorDescription
+    # Add DESCRIPTION as a skos:scopeNote if there is one.
+    requires:
+      DESCRIPTION:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/time-anchor/{TIME_ANCHOR_ID|slug}>"
+      "@type": "<fdri:ValueTimeAnchor>"
+      "<skos:scopeNote>": "{DESCRIPTION}@en"
+

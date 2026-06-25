@@ -85,8 +85,8 @@ resources:
         "<rdfs:label>": "{SITE_NAME}@en"
         "<rdfs:comment>": "{SITE_DESC}@en"
         "<dct:identifier>": "{SITE_ID}"
-        "^<fdri:contains>": <::Cosmos>
-        "^<fdri:utilises>": <::CosmosProgramme>
+        "^<doo:contains>": <::Cosmos>
+        "^<doo:utilises>": <::CosmosProgramme>
         "<fdri:utilisedBy>": <::CosmosProgramme>
         "<geos:hasGeometry>": 
             - name: EastingsNorthingsPoint
