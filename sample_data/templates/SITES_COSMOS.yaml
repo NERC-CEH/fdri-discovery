@@ -52,18 +52,18 @@ resources:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#geo-eastings>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING}, {NORTHING})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING} {NORTHING})^^<geos:wktLiteral>"
             - name: LatLongPoint
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "POINT({LONGITUDE} {LATITUDE})^^<geos:wktLiteral>"
         "<fdri:hasRepresentativePoint>": 
             - name: LatLongRepPoint
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#point-latlong>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "POINT({LONGITUDE} {LATITUDE})^^<geos:wktLiteral>"
         "<geo:lat>": "{LATITUDE|asDecimal}"
         "<geo:long>": "{LONGITUDE|asDecimal}"
         "<spatialrelations:easting>": "{EASTING|asDecimal}"
@@ -93,12 +93,12 @@ resources:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#geo-eastings>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING}, {NORTHING})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING} {NORTHING})^^<geos:wktLiteral>"
             - name: LatLongPoint
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "POINT({LONGITUDE} {LATITUDE})^^<geos:wktLiteral>"
         "<geo:lat>": "{LATITUDE|asDecimal}"
         "<geo:long>": "{LONGITUDE|asDecimal}"
         "<spatialrelations:easting>": "{EASTING|asDecimal}"
@@ -122,7 +122,7 @@ resources:
               "<fdri:hasValue>":
                 name: "SoilTypeValue"
                 properties:
-                  "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#soil-type.value>
+                  "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#soil-type.value>"
                   "@type": "<schema:PropertyValue>"
                   "<schema:valueReference>":
                     name: SoilTypeConcept

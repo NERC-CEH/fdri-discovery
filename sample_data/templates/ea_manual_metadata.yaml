@@ -26,7 +26,7 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Station name|slug}#geo-easting-northing>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({Easting}, {Northing})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({Easting} {Northing})^^<geos:wktLiteral>"
 
   - name: FOI
     properties:
@@ -37,7 +37,7 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Station name|slug}#geo-easting-northing>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({Easting}, {Northing})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({Easting} {Northing})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::EastingNorthingPoint>
 
   - name: VariableGroup

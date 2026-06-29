@@ -43,7 +43,7 @@ resources:
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{StationID|slug}#geo-latlong>"
               "@type": "<geos:Geometry>"
-              "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
+              "<geos:asWKT>": "POINT({Longitude} {Latitude})^^<geos:wktLiteral>"
       "^<dct:hasPart>": "<::Site>"
       "<dct:isPartOf>": "<::Site>"
       "<dct:identifier>": "{StationID}"

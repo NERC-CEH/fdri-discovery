@@ -37,7 +37,7 @@ resources:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "POINT({site_Longitude}, {site_Latitude})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "POINT({site_Longitude} {site_Latitude})^^<geos:wktLiteral>"
         "<dct:identifier>": "{site_id}"
         "^<doo:contains>": <::Network>
 
@@ -58,7 +58,7 @@ resources:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/platform/{site_Network|slug}-{site_StationID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "POINT({site_Longitude}, {site_Latitude})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "POINT({site_Longitude} {site_Latitude})^^<geos:wktLiteral>"
         "^<dct:hasPart>": "<::Site>"
         "<dct:isPartOf>": "<::Site>"
         "<dct:identifier>": "{site_StationID}"

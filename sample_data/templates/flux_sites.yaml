@@ -18,7 +18,7 @@ resources:
           properties:
             "@id": "<{site_id}#geo-latlong>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "POINT({lon}, {lat})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "POINT({lon} {lat})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
       "<geo:lat>": "{lat|asDecimal}"
       "<geo:long>": "{lon|asDecimal}"
