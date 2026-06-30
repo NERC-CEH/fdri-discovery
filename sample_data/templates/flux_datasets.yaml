@@ -51,16 +51,6 @@ resources:
       "@type": "<fdri:TimeSeriesDataset>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/{network|slug}>"
       "<fdri:measure>": "<http://fdri.ceh.ac.uk/ref/common/measure/{measure_id|slug}>"
-      "<fdri:sourceBucket>":
-        - name: RAW_BUCKET
-          requires:
-            processing_level: raw
-          pattern: "{RAW_SOURCE_BUCKET}"
-        - name: PROCESSED_BUCKET
-          requires:
-            processing_level: processed
-          pattern: "{PROCESSED_SOURCE_BUCKET}"
-      "<fdri:sourceDataset>": "{source_dataset}"
       "<fdri:sourceColumnName>": "{source_column}"
       "<fdri:sourceTimeColumnName>": "{time_column_name}"
       # TODO: Verify what the S3 path should look like for flux timeseries datasetes and create a distribution
