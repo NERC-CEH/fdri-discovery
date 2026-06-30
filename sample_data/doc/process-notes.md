@@ -117,7 +117,7 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 **What:** Mapping from variable to instrument type
 
-**Preprocessing:** Join on slot ID to give a table of instrument type and variable id
+**Preprocessing:** Join on column name to give a table of instrument type and variable id
 
 **Generates:** `EnvironmentalMonitoringSystemType` concepts in a scheme with `fdri:observes` links to observed properties.
 
@@ -127,9 +127,9 @@ In many cases some preprocessing is performed by a SQL (duckdb) script. These ca
 
 ### `sensor_deployments` from `SITE_INSTRUMENTATION`, `MEASURES` and `TIMESERIES_IDS`
 
-**What:** `SITE_INSTRUMENTATION` gives history of sensor deployments at sites with sensor slot id and instrument id. `TIMESERIES_ID` maps a site to a sensor slot and a variable.
+**What:** `SITE_INSTRUMENTATION` gives history of sensor deployments at sites with instrument id an the column name it is deployed to. `TIMESERIES_ID` maps a site to a column name and a variable.
 
-**Preprocessing:** Join first two on sensor slot id and then join to time series on site and sensor slot id.
+**Preprocessing:** Join first two on column name and then join to time series on site id.
 
 **Generates:** `EnvironmentalMonitoringSensor` and `Deployment` information.
 
@@ -257,7 +257,7 @@ the other providing the derivation, method and additional arguments for the TSDE
 
 ### `TIMESERIES_IDS`
 
-**What:** Definition of all time timeseries datasets for each site with time series definition, variable, sensor slot, processing level, and S3 source location information.
+**What:** Definition of all time timeseries datasets for each site with time series definition, variable, processing level, and S3 source location information.
 
 **Generates:** `TimeSeriesDatasets` collected into a series for each site and a series for each site/variable (across processing levels).
 

@@ -10,7 +10,7 @@ imports:
 resources:
   - name: Site
     properties:
-      "@id": <http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>
+      "@id": <http://fdri.ceh.ac.uk/id/site/fdri-{SITE_ID|slug}>
       "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
 
   - name: TimeSeriesDataset
