@@ -60,7 +60,7 @@ resources:
 
   - name: Impeller
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/rca-impeller-{Impeller no.|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/rca-impeller-{Impeller no.|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
       "<dct:type>": <::ImpellerType>
       "<sosa:observes>": <http://fdri.ceh.ac.uk/ref/common/cop/revolutions>

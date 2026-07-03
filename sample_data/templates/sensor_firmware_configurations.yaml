@@ -12,7 +12,7 @@ resources:
       INSTRUMENT_ID:
       SERIAL_NUMBER:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
 
   - name: SensorFirmwareConfigurationSeries
