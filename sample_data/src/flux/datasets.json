@@ -7,12 +7,13 @@
       "network": "fdri",
       "source_dataset": "Flux",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": null,
       "time_column_name": "TIMESTAMP",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": null
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-ta",
@@ -21,12 +22,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_1MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "AirTemp_C",
       "time_column_name": "time",
       "resolution": "PT1M",
       "periodicity": "PT1M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rh",
@@ -35,12 +37,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_1MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "RH",
       "time_column_name": "time",
       "resolution": "PT1M",
       "periodicity": "PT1M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "RH-MEAN_PREC-PCT-PT1M-PT1M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-pa",
@@ -49,12 +52,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_1MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "Pressure_Avg",
       "time_column_name": "time",
       "resolution": "PT1M",
       "periodicity": "PT1M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "PA-MEAN_PREC-HPA-PT1M-PT1M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf1",
@@ -63,12 +67,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_15MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "G_PLATE_1_1_1",
       "time_column_name": "time",
       "resolution": "PT15M",
       "periodicity": "PT15M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "HEATFLUX_SOIL-MEAN_PREC-WM-2-PT15M-PT15M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf2",
@@ -77,12 +82,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_15MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "G_PLATE_1_1_2",
       "time_column_name": "time",
       "resolution": "PT15M",
       "periodicity": "PT15M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "HEATFLUX_SOIL-MEAN_PREC-WM-2-PT15M-PT15M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rn",
@@ -91,12 +97,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_1MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "T_nr_Avg",
       "time_column_name": "time",
       "resolution": "PT1M",
       "periodicity": "PT1M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "TEMP_NR-MEAN_PREC-DEGC-PT1M-PT1M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin",
@@ -105,12 +112,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_1MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "R_SW_in_Avg",
       "time_column_name": "time",
       "resolution": "PT1M",
       "periodicity": "PT1M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "SWIN-MEAN_PREC-WM-2-PT1M-PT1M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-dynamic-sonic-azimuth",
@@ -119,12 +127,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_METADATA",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "sonic_azimuth",
       "time_column_name": "timestamp",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "SONIC_AZIMUTH-INST-DEG-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-dynamic-height-measurement",
@@ -133,12 +142,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_METADATA",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "height_measurement",
       "time_column_name": "timestamp",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "HEIGHT_MEASUREMENT-INST-M-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-dynamic-height-canopy",
@@ -147,12 +157,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_METADATA",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "height_canopy",
       "time_column_name": "timestamp",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "raw"
+      "processing_level": "raw",
+      "measure_id": "HEIGHT_CANOPY-INST-M-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-ta-30min",
@@ -161,12 +172,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_30MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "AirTemp_C",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rh-30min",
@@ -175,12 +187,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_30MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "RH",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "RH-MEAN_PREC-PCT-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-pa-30min",
@@ -189,12 +202,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_30MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "Pressure_Avg",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "PA-MEAN_PREC-HPA-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf1-30min",
@@ -203,12 +217,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_30MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "G_PLATE_1_1_1",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-shf2-30min",
@@ -217,12 +232,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_30MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "G_PLATE_1_1_2",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-rn-30min",
@@ -231,12 +247,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_30MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "T_nr_Avg",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "TEMP_NR-MEAN_PREC-DEGC-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin-30min",
@@ -245,12 +262,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_BIOMET_30MIN",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "R_SW_in_Avg",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "SWIN-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-processed",
@@ -259,12 +277,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": null,
       "time_column_name": "date",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": null
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h",
@@ -273,12 +292,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "H",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-tau",
@@ -287,12 +307,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "Tau",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-co2-flux",
@@ -301,12 +322,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "co2_flux",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "CO2_FLUX-MEAN_PREC-UMOLM-2S-1-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h2o-flux",
@@ -315,12 +337,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "h2o_flux",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "H2O_FLUX-MEAN_PREC-MMOLM-2S-1-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-h",
@@ -329,12 +352,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "qc_H",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-tau",
@@ -343,12 +367,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "qc_Tau",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "QC_FLUX_MOM-MEAN_PREC-UNITLESS-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-wind-speed",
@@ -357,12 +382,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "wind_speed",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "WS-MEAN_PREC-MS-1-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-wind-dir",
@@ -371,12 +397,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "wind_dir",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "WD-MEAN_PREC-DEG-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-vpd",
@@ -385,12 +412,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "VPD",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "VPD-MEAN_PREC-HPA-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-sonic-temp",
@@ -399,12 +427,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "sonic_temperature",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "TEMP_SONIC-MEAN_PREC-DEGC-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-u-var",
@@ -413,12 +442,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "u_var",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "UX_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-v-var",
@@ -427,12 +457,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "v_var",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "UY_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-w-var",
@@ -441,12 +472,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "w_var",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "UZ_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h-despiked",
@@ -455,12 +487,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "H_despiked",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h-l2",
@@ -469,12 +502,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "H_L2",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-tau-l2",
@@ -483,12 +517,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "Tau_L2",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-shf",
@@ -497,12 +532,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "SHF",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-le-l1",
@@ -511,12 +547,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "LE_L1",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_LATENT-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-et-l1",
@@ -525,12 +562,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "ET_L1",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "ET-MEAN_PREC-MM-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-le-l2",
@@ -539,12 +577,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "LE_L2",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "HEATFLUX_LATENT-MEAN_PREC-WM-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-et-l2",
@@ -553,12 +592,13 @@
       "network": "fdri",
       "source_dataset": "FLUX_PROCESSED",
       "source_site": "flux-plynl",
-      "source_site_identifier": "flux-plynl",
+      "source_site_identifier": "PLYNL",
       "source_column": "ET_L2",
       "time_column_name": "time",
       "resolution": "PT30M",
       "periodicity": "PT30M",
-      "processing_level": "processed"
+      "processing_level": "processed",
+      "measure_id": "ET-MEAN_PREC-MM-PT30M-PT30M"
     }
   ]
 }

@@ -25,8 +25,8 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}>"
       "@type": <fdri:EnvironmentalMonitoringSite>
       "<dct:identifier>": "{SiteID}"
-      "^<fdri:contains>": <::Network>
-      "^<fdri:utilises>": <::Programme>
+      "^<doo:contains>": <::Network>
+      "^<doo:utilises>": <::Programme>
       "<fdri:utilisedBy>": <::Programme>
 
   - name: Station
@@ -43,7 +43,7 @@ resources:
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{StationID|slug}#geo-latlong>"
               "@type": "<geos:Geometry>"
-              "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
+              "<geos:asWKT>": "POINT({Longitude} {Latitude})^^<geos:wktLiteral>"
       "^<dct:hasPart>": "<::Site>"
       "<dct:isPartOf>": "<::Site>"
       "<dct:identifier>": "{StationID}"

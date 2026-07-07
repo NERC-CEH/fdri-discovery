@@ -60,7 +60,6 @@ SAMPLES += $(TTL_BASE)/sensor_deployments.ttl
 SAMPLES += $(TTL_BASE)/sensor_faults.ttl
 SAMPLES += $(TTL_BASE)/sensor_firmware_configurations.ttl
 SAMPLES += $(TTL_BASE)/SITE_CALIBRATION_INFO.ttl
-SAMPLES += $(TTL_BASE)/site_slots.ttl
 SAMPLES += $(TTL_BASE)/SITES_COSMOS.ttl
 SAMPLES += $(TTL_BASE)/siteVariance.ttl
 SAMPLES += $(TTL_BASE)/TIME_ANCHOR.ttl
@@ -85,6 +84,7 @@ SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
 SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
+SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
 
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
@@ -122,8 +122,11 @@ SAMPLES += $(TTL_BASE)/GEAR-hrly.ttl
 # NMDB Samples
 SAMPLES += $(TTL_BASE)/SITES_NMDB.ttl
 SAMPLES += $(TTL_BASE)/TIMESERIES_IDS_NMDB.ttl
+SAMPLES += $(TTL_BASE)/NMDB_FLAG_SCHEMES.ttl
+SAMPLES += $(TTL_BASE)/timeseries_flags_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
+SAMPLES += $(TTL_BASE)/nmdb_ts_parameters.ttl
 
 # AMS Samples
 #SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
@@ -211,9 +214,6 @@ build/phenocam_mask_config.csv: $(SRC)/PHENOCAM_MASKS.csv $(SQL)/phenocam_mask_c
 build/sensor_deployments.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES.csv $(SQL)/sensor_deployments.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_deployments.sql"
 
-build/site_slots.csv: $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/SENSOR_SLOT_IDS.csv $(SQL)/site_slots.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/site_slots.sql"
-
 build/sensor_faults.csv: $(SRC)/SENSOR_FAULTS.csv $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SQL)/sensor_faults.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sensor_faults.sql"
 
@@ -228,6 +228,9 @@ build/cosmos_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/MEASURES
 
 build/fdri_site_assets.csv: $(SRC)/SITES_FDRI.csv $(SRC)/fdri_asset.csv $(SQL)/fdri_site_assets.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_site_assets.sql"
+
+build/fdri_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_FDRI.csv $(SRC)/MEASURES.csv $(SQL)/fdri_ts_parameters.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_ts_parameters.sql"
 
 build/fdri_measure_ext.csv: $(SRC)/fdri_measure.csv $(SRC)/intervalDuration.csv $(SQL)/fdri_measure_ext.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_measure_ext.sql"
@@ -286,11 +289,20 @@ build/FDRI_FLAG_SCHEMES_LINES.json: $(SRC)/FDRI_flag_schemes.json $(SQL)/array_t
 $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json | build/data
 	$(MAPPER) $(TPL)/flag_scheme.yaml build/FDRI_FLAG_SCHEMES_LINES.json $@
 
+build/NMDB_FLAG_SCHEMES_LINES.json: $(SRC)/NMDB_flag_schemes.json $(SQL)/array_to_lines.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/NMDB_flag_schemes.json > $@"
+
+$(TTL_BASE)/NMDB_FLAG_SCHEMES.ttl: $(TPL)/namespaces.yaml $(TPL)/flag_scheme.yaml build/NMDB_FLAG_SCHEMES_LINES.json | build/data
+	$(MAPPER) $(TPL)/flag_scheme.yaml build/NMDB_FLAG_SCHEMES_LINES.json $@
+
 build/timeseries_flags_cosmos.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/COSMOS_flag_definitions.csv $(SQL)/timeseries_flags_cosmos.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_cosmos.sql"
 
 build/timeseries_flags_fdri.csv: $(SRC)/TIMESERIES_IDS_FDRI.csv $(SRC)/FDRI_flag_definitions.csv $(SQL)/timeseries_flags_fdri.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_fdri.sql"
+
+build/timeseries_flags_nmdb.csv: $(SRC)/TIMESERIES_IDS_NMDB.csv $(SRC)/NMDB_flag_definitions.csv $(SQL)/timeseries_flags_nmdb.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/timeseries_flags_nmdb.sql"
 
 build/processing_configurations_cosmos.json: $(SRC)/processing_configurations_cosmos.json $(SQL)/processing_configurations.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_cosmos.json > $@"
@@ -315,6 +327,9 @@ build/processing_plans_nmdb.json: $(SRC)/processing_plans_nmdb.json $(SQL)/proce
 
 $(TTL_BASE)/processing_plans_nmdb.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_nmdb.json | build/data
 	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_nmdb.json $@
+
+build/nmdb_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_NMDB.csv $(SRC)/MEASURES.csv $(SQL)/nmdb_ts_parameters.sql | build
+	$(RUN) /bin/bash -c "duckdb < $(SQL)/nmdb_ts_parameters.sql"
 
 # Flux
 

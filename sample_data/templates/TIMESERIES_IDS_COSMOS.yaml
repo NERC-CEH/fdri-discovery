@@ -22,8 +22,10 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
       "@type": "<fdri:TimeSeriesDataset>"
+      "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "<dct:title>": "{LABEL}@en"
+      "<rdfs:label>": "{LABEL}@en"
       "<dct:identifier>": "{TIMESERIES_ID}"
-      # "<sosa:observedProperty>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
       "<fdri:originatingSite>": "<::Site>"
       "<fdri:originatingProgramme>": "<http://fdri.ceh.ac.uk/id/programme/cosmos>"
       "<fdri:sourceBucket>":
@@ -64,16 +66,4 @@ resources:
       "<dct:format>": "<http://fdri.ceh.ac.uk/ref/common/format/application_vnd.apache.parquet>"
       "<dct:accessURL>": "s3://{PROCESSED_SOURCE_BUCKET}/{NETWORK}/dataset={S3_DATASET}/site={SITE_ID}/^^<xsd:anyURI>"
       "^<dcat:distribution>": "<::TimeSeriesDataset>"
-
-  - name: SensorSlot
-    requires:
-      SENSOR_SLOT_ID:
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/platform/cosmos-{SITE_ID|slug}-{SENSOR_SLOT_ID|slug}>"
-      "@type": "<fdri:EnvironmentalMonitoringPlatform>"
-      "<dct:isPartOf>": "<::Site>"
-      "^<dct:hasPart>": "<::Site>"
-      # "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
-      "<fdri:measures>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
-      "^<fdri:originatingFacility>": "<::TimeSeriesDataset>"
 

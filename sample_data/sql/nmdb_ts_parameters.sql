@@ -1,6 +1,6 @@
-CREATE TABLE IF NOT EXISTS TS AS FROM read_csv('./sample_data/src/TIMESERIES_IDS_COSMOS.csv', AUTO_DETECT=true);
+CREATE TABLE IF NOT EXISTS TS AS FROM read_csv('./sample_data/src/TIMESERIES_IDS_NMDB.csv', AUTO_DETECT=true);
 CREATE TABLE IF NOT EXISTS MEASURE AS FROM read_csv('./sample_data/src/MEASURES.csv', AUTO_DETECT=true);
 COPY (
     SELECT TS.TIMESERIES_ID, TS.SITE_ID, MEASURE.PARAMETER_ID
     FROM TS JOIN MEASURE ON TS.MEASURE_ID=MEASURE.ID
-) TO './build/cosmos_ts_parameters.csv' (HEADER, DELIMITER ',') ;
+) TO './build/nmdb_ts_parameters.csv' (HEADER, DELIMITER ',') ;

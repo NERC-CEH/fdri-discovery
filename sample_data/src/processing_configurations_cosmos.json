@@ -331,7 +331,7 @@
       ]
     },
     {
-      "id": "cosmos-alic1-albedo_sd_1day-stdev",
+      "id": "cosmos-alic1-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -5205,7 +5205,7 @@
       ]
     },
     {
-      "id": "cosmos-balrd-albedo_sd_1day-stdev",
+      "id": "cosmos-balrd-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -10112,7 +10112,7 @@
       ]
     },
     {
-      "id": "cosmos-bickl-albedo_sd_1day-stdev",
+      "id": "cosmos-bickl-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -15069,7 +15069,7 @@
       ]
     },
     {
-      "id": "cosmos-bunny-albedo_sd_1day-stdev",
+      "id": "cosmos-bunny-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -20094,7 +20094,7 @@
       ]
     },
     {
-      "id": "cosmos-cardt-albedo_sd_1day-stdev",
+      "id": "cosmos-cardt-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -25331,7 +25331,7 @@
       ]
     },
     {
-      "id": "cosmos-cgarw-albedo_sd_1day-stdev",
+      "id": "cosmos-cgarw-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -33116,7 +33116,7 @@
       ]
     },
     {
-      "id": "cosmos-chimn-albedo_sd_1day-stdev",
+      "id": "cosmos-chimn-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -40776,7 +40776,7 @@
       ]
     },
     {
-      "id": "cosmos-chobh-albedo_sd_1day-stdev",
+      "id": "cosmos-chobh-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -46028,7 +46028,7 @@
       ]
     },
     {
-      "id": "cosmos-cochn-albedo_sd_1day-stdev",
+      "id": "cosmos-cochn-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -53549,7 +53549,7 @@
       ]
     },
     {
-      "id": "cosmos-coclp-albedo_sd_1day-stdev",
+      "id": "cosmos-coclp-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -58542,7 +58542,7 @@
       ]
     },
     {
-      "id": "cosmos-crich-albedo_sd_1day-stdev",
+      "id": "cosmos-crich-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -63482,7 +63482,7 @@
       ]
     },
     {
-      "id": "cosmos-eastb-albedo_sd_1day-stdev",
+      "id": "cosmos-eastb-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -68978,7 +68978,7 @@
       ]
     },
     {
-      "id": "cosmos-elmst-albedo_sd_1day-stdev",
+      "id": "cosmos-elmst-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -76346,7 +76346,7 @@
       ]
     },
     {
-      "id": "cosmos-eustn-albedo_sd_1day-stdev",
+      "id": "cosmos-eustn-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -83695,7 +83695,7 @@
       ]
     },
     {
-      "id": "cosmos-finch-albedo_sd_1day-stdev",
+      "id": "cosmos-finch-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -91109,7 +91109,7 @@
       ]
     },
     {
-      "id": "cosmos-fivet-albedo_sd_1day-stdev",
+      "id": "cosmos-fivet-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -98306,7 +98306,7 @@
       ]
     },
     {
-      "id": "cosmos-gisbn-albedo_sd_1day-stdev",
+      "id": "cosmos-gisbn-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -103701,7 +103701,7 @@
       ]
     },
     {
-      "id": "cosmos-glens-albedo_sd_1day-stdev",
+      "id": "cosmos-glens-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -109197,7 +109197,7 @@
       ]
     },
     {
-      "id": "cosmos-glenw-albedo_sd_1day-stdev",
+      "id": "cosmos-glenw-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -116726,7 +116726,7 @@
       ]
     },
     {
-      "id": "cosmos-hadlw-albedo_sd_1day-stdev",
+      "id": "cosmos-hadlw-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -123843,7 +123843,7 @@
       ]
     },
     {
-      "id": "cosmos-hartw-albedo_sd_1day-stdev",
+      "id": "cosmos-hartw-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -128638,7 +128638,7 @@
       ]
     },
     {
-      "id": "cosmos-harwd-albedo_sd_1day-stdev",
+      "id": "cosmos-harwd-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -132891,7 +132891,7 @@
       ]
     },
     {
-      "id": "cosmos-henfs-albedo_sd_1day-stdev",
+      "id": "cosmos-henfs-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -138116,7 +138116,7 @@
       ]
     },
     {
-      "id": "cosmos-hillb-albedo_sd_1day-stdev",
+      "id": "cosmos-hillb-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -145465,7 +145465,7 @@
       ]
     },
     {
-      "id": "cosmos-hlacy-albedo_sd_1day-stdev",
+      "id": "cosmos-hlacy-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -152694,7 +152694,7 @@
       ]
     },
     {
-      "id": "cosmos-holln-albedo_sd_1day-stdev",
+      "id": "cosmos-holln-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -158197,7 +158197,7 @@
       ]
     },
     {
-      "id": "cosmos-hybry-albedo_sd_1day-stdev",
+      "id": "cosmos-hybry-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -165314,7 +165314,7 @@
       ]
     },
     {
-      "id": "cosmos-lizrd-albedo_sd_1day-stdev",
+      "id": "cosmos-lizrd-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -170470,7 +170470,7 @@
       ]
     },
     {
-      "id": "cosmos-lodtn-albedo_sd_1day-stdev",
+      "id": "cosmos-lodtn-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -177720,7 +177720,7 @@
       ]
     },
     {
-      "id": "cosmos-lulln-albedo_sd_1day-stdev",
+      "id": "cosmos-lulln-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -182740,7 +182740,7 @@
       ]
     },
     {
-      "id": "cosmos-moorh-albedo_sd_1day-stdev",
+      "id": "cosmos-moorh-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -188236,7 +188236,7 @@
       ]
     },
     {
-      "id": "cosmos-morem-albedo_sd_1day-stdev",
+      "id": "cosmos-morem-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -195418,7 +195418,7 @@
       ]
     },
     {
-      "id": "cosmos-morly-albedo_sd_1day-stdev",
+      "id": "cosmos-morly-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -200310,7 +200310,7 @@
       ]
     },
     {
-      "id": "cosmos-nwyke-albedo_sd_1day-stdev",
+      "id": "cosmos-nwyke-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -205250,7 +205250,7 @@
       ]
     },
     {
-      "id": "cosmos-plynl-albedo_sd_1day-stdev",
+      "id": "cosmos-plynl-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -210672,7 +210672,7 @@
       ]
     },
     {
-      "id": "cosmos-portn-albedo_sd_1day-stdev",
+      "id": "cosmos-portn-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -215579,7 +215579,7 @@
       ]
     },
     {
-      "id": "cosmos-rdmer-albedo_sd_1day-stdev",
+      "id": "cosmos-rdmer-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -220471,7 +220471,7 @@
       ]
     },
     {
-      "id": "cosmos-redhl-albedo_sd_1day-stdev",
+      "id": "cosmos-redhl-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -225660,7 +225660,7 @@
       ]
     },
     {
-      "id": "cosmos-riseh-albedo_sd_1day-stdev",
+      "id": "cosmos-riseh-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -232777,7 +232777,7 @@
       ]
     },
     {
-      "id": "cosmos-rothd-albedo_sd_1day-stdev",
+      "id": "cosmos-rothd-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -238045,7 +238045,7 @@
       ]
     },
     {
-      "id": "cosmos-sheep-albedo_sd_1day-stdev",
+      "id": "cosmos-sheep-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -245806,7 +245806,7 @@
       ]
     },
     {
-      "id": "cosmos-sourh-albedo_sd_1day-stdev",
+      "id": "cosmos-sourh-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -251302,7 +251302,7 @@
       ]
     },
     {
-      "id": "cosmos-spenf-albedo_sd_1day-stdev",
+      "id": "cosmos-spenf-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -258500,7 +258500,7 @@
       ]
     },
     {
-      "id": "cosmos-stght-albedo_sd_1day-stdev",
+      "id": "cosmos-stght-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -263557,7 +263557,7 @@
       ]
     },
     {
-      "id": "cosmos-stips-albedo_sd_1day-stdev",
+      "id": "cosmos-stips-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -268767,7 +268767,7 @@
       ]
     },
     {
-      "id": "cosmos-sydlg-albedo_sd_1day-stdev",
+      "id": "cosmos-sydlg-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -275949,7 +275949,7 @@
       ]
     },
     {
-      "id": "cosmos-tadhm-albedo_sd_1day-stdev",
+      "id": "cosmos-tadhm-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -281129,7 +281129,7 @@
       ]
     },
     {
-      "id": "cosmos-waddn-albedo_sd_1day-stdev",
+      "id": "cosmos-waddn-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -288902,7 +288902,7 @@
       ]
     },
     {
-      "id": "cosmos-wimpl-albedo_sd_1day-stdev",
+      "id": "cosmos-wimpl-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -296251,7 +296251,7 @@
       ]
     },
     {
-      "id": "cosmos-wrttl-albedo_sd_1day-stdev",
+      "id": "cosmos-wrttl-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [
@@ -303313,7 +303313,7 @@
       ]
     },
     {
-      "id": "cosmos-wyth1-albedo_sd_1day-stdev",
+      "id": "cosmos-wyth1-albedo_std_1day-stdev",
       "type": "aggregate",
       "method": "stdev",
       "dep_ts": [

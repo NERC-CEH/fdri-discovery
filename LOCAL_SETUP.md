@@ -78,12 +78,22 @@ GITHUB_REF_NAME=staging make all
 For `staging` this produces `ukceh-dri-staging-ingested` / `ukceh-dri-staging-processed`; `production` gives the
 `ukceh-dri-production-*` names. Anything not listed in `branch.map` falls back to the `fdri-dummy-*` placeholders.
 
-## Step 2 - Run the docker compose to set up local metadata API
+## Step 2 - Get latest dri-metadata-api changes (optional)
+
+In case of updates to the dri-metadata-api repository, navigate to your clone and do a fresh pull:
+
+```sh
+cd source/repos/fdri/dri-metadata-api  # or wherever your repository is
+git pull
+```
+
+
+## Step 3 - Run the docker compose to set up local metadata API
 
 From the `fdri-discovery` repo root:
 
 ```sh
-docker compose up
+docker compose up -d
 ```
 
 This starts, in order:

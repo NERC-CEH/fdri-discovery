@@ -88,12 +88,12 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/feature/nrfa-{NRFA_ID|slug}#geo-eastings>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING}, {NORTHING})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING} {NORTHING})^^<geos:wktLiteral>"
         - name: LatLongPoint
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/feature/nrfa-{NRFA_ID|slug}#geo-latlong>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "POINT({LONGITUDE} {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
       "<geo:lat>": "{LATITUDE|asDecimal}"
       "<geo:long>": "{LONGITUDE|asDecimal}"
@@ -125,8 +125,8 @@ resources:
       "<rdfs:comment>": "{TEXT_GENERAL}@en"
       "<dct:identifier>":
         - "{NRFA_ID}"
-      "^<fdri:contains>": <::Nrfa>
-      "^<fdri:utilises>": <::NrfaProgramme>
+      "^<doo:contains>": <::Nrfa>
+      "^<doo:utilises>": <::NrfaProgramme>
       "<fdri:utilisedBy>": <::NrfaProgramme>
       "<sosa:hasFeatureOfInterest>": <::MonitoredFeature>
       "<geos:hasGeometry>":
@@ -134,12 +134,12 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#geo-eastings>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING}, {NORTHING})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "<http://www.opengis.net/def/crs/EPSG/0/27700> POINT({EASTING} {NORTHING})^^<geos:wktLiteral>"
         - name: LatLongPoint
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/nrfa-{NRFA_ID|slug}#geo-latlong>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "POINT({LONGITUDE} {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
       "<geo:lat>": "{LATITUDE|asDecimal}"
       "<geo:long>": "{LONGITUDE|asDecimal}"
