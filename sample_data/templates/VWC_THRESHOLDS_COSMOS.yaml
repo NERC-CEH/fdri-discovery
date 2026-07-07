@@ -1,0 +1,92 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+
+resources:
+  - name: Site
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"
+
+  - name: WiltingPoint
+    requires:
+      WILTING_POINT:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#wilting-point>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/vwc_wilting_point>"
+      "<fdri:hasValueSeries>":
+        - name: WiltingPointSeries
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#wilting-point.series>"
+            "@type": <fdri:PropertyValueSeries>
+            "<fdri:hasCurrentValue>":
+              - name: WiltingPointCurrentValue
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#wilting-point.{START_DATE|slug}>"
+                  "@type": <fdri:TimeBoundPropertyValue>
+                  "<schema:value>": "{WILTING_POINT|asDecimal}"
+                  "<fdri:interval>":
+                    - name: WiltingPointInterval
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#wilting-point.{START_DATE|slug}.interval>"
+                        "@type": "<dct:PeriodOfTime>"
+                        "<dcat:startDate>": "{START_DATE|asDate}"
+                        "<dcat:endDate>": "{END_DATE|asDate}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: FieldCapacity
+    requires:
+      FIELD_CAPACITY:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#field-capacity>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/vwc_field_capacity>"
+      "<fdri:hasValueSeries>":
+        - name: FieldCapacitySeries
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#field-capacity.series>"
+            "@type": <fdri:PropertyValueSeries>
+            "<fdri:hasCurrentValue>":
+              - name: FieldCapacityCurrentValue
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#field-capacity.{START_DATE|slug}>"
+                  "@type": <fdri:TimeBoundPropertyValue>
+                  "<schema:value>": "{FIELD_CAPACITY|asDecimal}"
+                  "<fdri:interval>":
+                    - name: FieldCapacityInterval
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#field-capacity.{START_DATE|slug}.interval>"
+                        "@type": "<dct:PeriodOfTime>"
+                        "<dcat:startDate>": "{START_DATE|asDate}"
+                        "<dcat:endDate>": "{END_DATE|asDate}"
+      "^<fdri:hasAnnotation>": "<::Site>"
+
+  - name: Saturation
+    requires:
+      SATURATION:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#saturation>"
+      "@type": <fdri:Annotation>
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/vwc_saturation>"
+      "<fdri:hasValueSeries>":
+        - name: SaturationSeries
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#saturation.series>"
+            "@type": <fdri:PropertyValueSeries>
+            "<fdri:hasCurrentValue>":
+              - name: SaturationCurrentValue
+                properties:
+                  "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#saturation.{START_DATE|slug}>"
+                  "@type": <fdri:TimeBoundPropertyValue>
+                  "<schema:value>": "{SATURATION|asDecimal}"
+                  "<fdri:interval>":
+                    - name: SaturationInterval
+                      properties:
+                        "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#saturation.{START_DATE|slug}.interval>"
+                        "@type": "<dct:PeriodOfTime>"
+                        "<dcat:startDate>": "{START_DATE|asDate}"
+                        "<dcat:endDate>": "{END_DATE|asDate}"
+      "^<fdri:hasAnnotation>": "<::Site>"
