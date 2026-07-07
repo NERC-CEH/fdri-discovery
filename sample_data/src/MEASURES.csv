@@ -1,6 +1,6 @@
 ID,PARENT_ID,PARAMETER_ID,UNIT_ID,AGGREGATION_ID,TIME_ANCHOR_ID,PERIODICITY,RESOLUTION,DESCRIPTION
 AIR_DENSITY-INST-KGM-3-PT30M-PT30M,,AIR_DENSITY,KGM-3,NONE,INST,PT30M,PT30M,Instantaneous air density in kilograms per metre cubed
-ALBEDO_STD-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO_STD,UNITLESS,STDDEV,PROC,P1D,P1D,Standard deviation of albedo over the proceeding day
+ALBEDO-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,STDDEV,PROC,P1D,P1D,Standard deviation of albedo over the proceeding day
 ALBEDO-MEAN_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN,PROC,P1D,P1D,Mean albedo over the proceeding day
 ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,,ALBEDO,UNITLESS,MEAN,PREC,PT1M,PT1M,Mean albedo over the preceding minute
 ALBEDO-MEAN_PREC-UNITLESS-PT30M-PT30M,,ALBEDO,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean albedo over the preceding 30 minutes
@@ -51,7 +51,7 @@ HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,NONE,INST,PT30M,
 HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,MEAN,PREC,PT30M,PT30M,Mean sensible heat flux over the preceding 30 minutes in watts per metre squared
 HEATFLUX_SOIL_CAL-INST-UNITLESS-PT30M-PT30M,,HEATFLUX_SOIL_CAL,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux calibration factor (unitless)
 HEATFLUX_SOIL_MV-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL_MV,MV,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
-HEATFLUX_SOIL_STD-STDDEV_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of soil heat flux in watts per metre squared over preceding 30 minutes
+HEATFLUX_SOIL-STDDEV_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of soil heat flux in watts per metre squared over preceding 30 minutes
 HEATFLUX_SOIL-MEAN_PROC-WM-2-P1D-P1D,,HEATFLUX_SOIL,WM-2,MEAN,PROC,P1D,P1D,Mean soil heat flux in watts per metre squared over proceeding day
 HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,MEAN,PREC,PT30M,PT30M,Mean soil heat flux in watts per metre squared over preceding 30 minutes
 IMAGE_COLOUR_AMOUNT_BLUE_LM1-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_AMOUNT_BLUE_LM1,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous amount of blue in image after land mask 1
@@ -80,17 +80,17 @@ IMAGE_COLOUR_PROPORTION_RED_LM2-INST-UNITLESS-PT1M-PT1M,,IMAGE_COLOUR_PROPORTION
 IMAGE_COLOUR_PROPORTION_RED_LM2-MEAN_PROC-UNITLESS-PT1M-P1D,,IMAGE_COLOUR_PROPORTION_RED_LM2,UNITLESS,MEAN,PROC,P1D,PT1M,Proportion of red in image after land mask 2 over proceeding day
 LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming longwave radiation calibration factor (unitless)
 LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
-LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWIN-MEAN_PREC-WM-2-PT1M-PT1M,,LWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming longwave radiation over the preceding minute in watts per metre squared
 LWIN-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation over preceding 30 minutes in watts per metre squared
-LWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation over preceding 30 minutes in watts per metre squared
+LWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation over preceding 30 minutes in watts per metre squared
 LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,LWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming longwave radiation over proceeding day in megajoules per metre squared
 LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
 LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
-LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,LWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing longwave radiation over the preceding minute in watts per metre squared
 LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
-LWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation over preceding 30 minutes in watts per metre squared
+LWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation over preceding 30 minutes in watts per metre squared
 LWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,,LWOUT,MJM-2-D,TOTAL,PROC,P1D,P1D,Total outgoing longwave radiation over proceeding day in megajoules per metre squared
 MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
 MSLP-MEAN_PROC-HPA-P1D-P1D,,MSLP,HPA,MEAN,PROC,P1D,P1D,Mean sea level pressure over the proceeding day in hectopascals
@@ -108,7 +108,7 @@ PA-MEAN_PROC-HPA-P1D-P1D,,PA,HPA,MEAN,PROC,P1D,P1D,Mean atmospheric pressure ove
 PA-MEAN_PREC-HPA-PT1H-PT1H,,PA,HPA,MEAN,PREC,PT1H,PT1H,Mean atmospheric pressure over the preceding hour in hectopascals
 PA-MEAN_PREC-HPA-PT1M-PT1M,,PA,HPA,MEAN,PREC,PT1M,PT1M,Mean atmospheric pressure over the preceding minute in hectopascals
 PA-MEAN_PREC-HPA-PT30M-PT30M,,PA,HPA,MEAN,PREC,PT30M,PT30M,Mean atmospheric pressure over the preceding 30 minutes in hectopascals
-PA-STDDEV_PREC-HPA-PT30M-PT30M,,PA_STD,HPA,STDDEV,PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in hectopascals
+PA-STDDEV_PREC-HPA-PT30M-PT30M,,PA,HPA,STDDEV,PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in hectopascals
 PE-TOTAL_PROC-MM-P1D-P1D,,PE,MM,TOTAL,PROC,P1D,P1D,Total potential evaporation over the proceeding day in millimetres
 PE-TOTAL_PREC-MM-PT30M-PT30M,,PE,MM,TOTAL,PREC,PT30M,PT30M,Total potential evaporation over the preceding 30 minutes in millimetres
 PERM_10-INST-UNITLESS-PT30M-PT30M,,PERM_10,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 10 cm depth
@@ -132,7 +132,7 @@ PRECIP_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TOT,MM,TOTAL,PREC,PT1M,PT1M,Accumulat
 PRECIP-TOTAL_PROC-MM-P1D-P1D,,PRECIP,MM,TOTAL,PROC,P1D,P1D,Total precipitation over the proceeding day in millimetres
 PRECIP-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation over the preceding minute in millimetres
 PRECIP-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation over the preceding 30 minutes in millimetres
-Q_STD-STDDEV_PREC-GM-3-PT30M-PT30M,,Q_STD,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
+Q-STDDEV_PREC-GM-3-PT30M-PT30M,,Q,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
 Q-MEAN_PROC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PROC,P1D,P1D,Mean absolute humidity over the proceeding day in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
@@ -143,7 +143,7 @@ RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN,PREC,PT30M,PT30M
 RH-MEAN_PROC-PCT-P1D-P1D,,RH,PCT,MEAN,PROC,P1D,P1D,Mean relative humidity over the proceeding day in percent
 RH-MEAN_PREC-PCT-PT1M-PT1M,,RH,PCT,MEAN,PREC,PT1M,PT1M,Mean relative humidity over the preceding minute in percent
 RH-MEAN_PREC-PCT-PT30M-PT30M,,RH,PCT,MEAN,PREC,PT30M,PT30M,Mean relative humidity over the preceding 30 minutes in percent
-RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH_STD,PCT,STDDEV,PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent
+RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH,PCT,STDDEV,PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent
 RN-MEAN_PREC-WM-2-PT1M-PT1M,,RN,WM-2,MEAN,PREC,PT1M,PT1M,Mean net radiation over the preceding minute in watts per metre squared
 RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN,PREC,PT30M,PT30M,Mean net radiation over preceding 30 minutes in watts per metre squared
 RN-TOTAL_PROC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total net radiation over the proceeding day in megajoules per metre squared
@@ -163,15 +163,15 @@ SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalen
 SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
 SWIN-MEAN_PREC-WM-2-PT1M-PT1M,,SWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming shortwave radiation over the preceding minute in watts per metre squared
 SWIN-MEAN_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming shortwave radiation over preceding 30 minutes in watts per metre squared
-SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
+SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,SWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming shortwave radiation over proceeding day in megajoules per metre squared
 SWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,SWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing shortwave radiation calibration factor (unitless)
 SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,SWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing shortwave radiation over the preceding minute in watts per metre squared
 SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
-SWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,SWOUT_STD,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
+SWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
 SWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,,SWOUT,MJM-2-D,TOTAL,PROC,P1D,P1D,Total outgoing shortwave radiation over proceeding day in megajoules per metre squared
 TBR_TIP-INST-MM-PT30M-PT30M,,TBR_TIP,MM,NONE,INST,PT30M,PT30M,Instantaneous tipping bucket rain gauge tip amount in millimetres
-TEMP_AIR_STD-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR_STD,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
+TEMP_AIR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
 TEMP_AIR-MAX_PROC-DEGC-PT30M-P1D,,TEMP_AIR_MAX,DEGC,MAX,PROC,P1D,PT30M,Maximum air temperature over the proceeding day in degrees Celsius
 TEMP_AIR-MEAN_PROC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MEAN,PROC,P1D,P1D,Mean air temperature over the proceeding day in degrees Celsius
 TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M,,TEMP_AIR,DEGC,MEAN,PREC,PT1M,PT1M,Mean air temperature over the preceding minute in degrees Celsius
@@ -180,7 +180,7 @@ TEMP_AIR-MIN_PROC-DEGC-PT30M-P1D,,TEMP_AIR_MIN,DEGC,MIN,PROC,P1D,PT30M,Minimum a
 TEMP_LOADCELL-INST-MM-PT1M-PT1M,,TEMP_LOADCELL,MM,NONE,INST,PT1M,PT1M,Instantaneous internal temperature of load cell in millimetres
 TEMP_LOGGER-INST-DEGC-PT1M-PT1M,,TEMP_LOGGER,DEGC,NONE,INST,PT1M,PT1M,Instantaneous logger temperature in degrees Celsius
 TEMP_SENSOR_INT-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_INT,DEGC,MEAN,PREC,PT30M,PT30M,Mean internal temperature of sensor over the preceding 30 minutes in degrees Celsius
-TEMP_SENSOR_STD-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_STD,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_SENSOR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SENSOR-INST-DEGC-PT1M-PT1M,,TEMP_SENSOR,DEGC,NONE,INST,PT1M,PT1M,Instantaneous sensor temperature in degrees Celsius
 TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_10-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_10,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
@@ -200,16 +200,16 @@ TEMP_SOIL_5-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_5,DEGC,MEAN,PREC,PT30M,PT30M,M
 TEMP_SOIL_50-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 50 cm depth in degrees Celsius
 TEMP_SOIL_50-MEAN_PROC-DEGC-P1D-P1D,,TEMP_SOIL_50,DEGC,MEAN,PROC,P1D,P1D,Mean soil temperature at 50 cm depth over the proceeding day in degrees Celsius
 TEMP_SOIL_50-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_50,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 50 cm depth over the preceding 30 minutes in degrees Celsius
-TEMP_SONIC_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
+TEMP_SONIC-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
 TEMP_SONIC-INST-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,NONE,INST,PT30M,PT30M,Instantaneous sonic temperature in degrees Celsius
 TEMP_SONIC-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,MEAN,PREC,PT30M,PT30M,Mean sonic temperature over the preceding 30 minutes in degrees Celsius
 UNCERTAINTY-MEAN_PROC-MM-P1D-P1D,,UNCERTAINTY,MM,MEAN,PROC,P1D,P1D,Mean uncertainty of snow water equivalent over the proceeding day in millimetres
 UNCERTAINTY-MEAN_PREC-MM-PT1H-PT1H,,UNCERTAINTY,MM,MEAN,PREC,PT1H,PT1H,Mean uncertainty of snow water equivalent over the preceding hour in millimetres
-UX_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UX_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of X component of wind speed in meters per second
+UX-STDDEV_PREC-MS-1-PT30M-PT30M,,UX,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of X component of wind speed in meters per second
 UX-MEAN_PREC-MS-1-PT30M-PT30M,,UX,MS-1,MEAN,PREC,PT30M,PT30M,Mean X component of wind speed over the preceding 30 minutes in meters per second
-UY_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UY_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of Y component of wind speed in meters per second
+UY-STDDEV_PREC-MS-1-PT30M-PT30M,,UY,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of Y component of wind speed in meters per second
 UY-MEAN_PREC-MS-1-PT30M-PT30M,,UY,MS-1,MEAN,PREC,PT30M,PT30M,Mean Y component of wind speed over the preceding 30 minutes in meters per second
-UZ_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,UZ_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of Z component of wind speed in meters per second
+UZ-STDDEV_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of Z component of wind speed in meters per second
 UZ-MEAN_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,MEAN,PREC,PT30M,PT30M,Mean Z component of wind speed over the preceding 30 minutes in meters per second
 VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,NONE,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in kilopascals
 VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,,VOLTAGE_BATT,V,MEAN,PREC,PT1M,PT1M,Mean battery voltage over the preceding minute in volts
@@ -239,12 +239,12 @@ WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,NONE,INST,,,Ins
 WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,PREC,,,Maximum water velocity in metres per second
 WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,PREC,,,Mean water velocity in metres per second
 WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,,Water velocity in metres per second
-WD_STD-STDDEV_PREC-DEG-PT30M-PT30M,,WD_STD,DEG,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
+WD-STDDEV_PREC-DEG-PT30M-PT30M,,WD,DEG,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
 WD-MEAN_PROC-DEG-P1D-P1D,,WD,DEG,MEAN,PROC,P1D,P1D,Mean wind direction over the proceeding day in degrees
 WD-MEAN_PREC-DEG-PT1M-PT1M,,WD,DEG,MEAN,PREC,PT1M,PT1M,Mean wind direction over the preceding minute in degrees
 WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN,PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees
 WS_RES-INST-MS-1-PT30M-PT30M,,WS_RES,MS-1,NONE,INST,PT30M,PT30M,Instantaneous resultant wind speed over the in meters per second
-WS_STD-STDDEV_PREC-MS-1-PT30M-PT30M,,WS_STD,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second
+WS-STDDEV_PREC-MS-1-PT30M-PT30M,,WS,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second
 WS-MEAN_PROC-MS-1-P1D-P1D,,WS,MS-1,MEAN,PROC,P1D,P1D,Mean wind speed over the proceeding day in meters per second
 WS-MEAN_PREC-MS-1-PT1M-PT1M,,WS,MS-1,MEAN,PREC,PT1M,PT1M,Mean wind speed over the preceding minute in metres per second
 WS-MEAN_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MEAN,PREC,PT30M,PT30M,Mean wind speed over the preceding 30 minutes in meters per second
