@@ -292,8 +292,8 @@ QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_HEATFLUX_SENSIBLE,UNITLE
 SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees
 TEMP_NR-MEAN_PREC-DEGC-PT1M-PT1M,,TEMP_NR,DEGC,MEAN,PREC,PT1M,PT1M,Mean net radiometer temperature over preceding minute in degrees Celsius
 TEMP_NR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_NR,DEGC,MEAN,PREC,PT30M,PT30M,Mean net radiometer temperature over preceding 30 minutes in degrees Celsius
-UX_VAR-MEAN_PREC-M2S-2-PT30M-PT30M,,UX_VAR,M2S-2,MEAN,PREC,PT30M,PT30M,X component wind speed variance over the preceding 30 minutes in metres squared per second squared
-UY_VAR-MEAN_PREC-M2S-2-PT30M-PT30M,,UY_VAR,M2S-2,MEAN,PREC,PT30M,PT30M,Y component wind speed variance over the preceding 30 minutes in metres squared per second squared
-UZ_VAR-MEAN_PREC-M2S-2-PT30M-PT30M,,UZ_VAR,M2S-2,MEAN,PREC,PT30M,PT30M,Z component wind speed variance over the preceding 30 minutes in metres squared per second squared
+UX-VAR_PREC-M2S-2-PT30M-PT30M,,UX,M2S-2,VAR,PREC,PT30M,PT30M,X component wind speed variance over the preceding 30 minutes in metres squared per second squared
+UY-VAR_PREC-M2S-2-PT30M-PT30M,,UY,M2S-2,VAR,PREC,PT30M,PT30M,Y component wind speed variance over the preceding 30 minutes in metres squared per second squared
+UZ-VAR_PREC-M2S-2-PT30M-PT30M,,UZ,M2S-2,VAR,PREC,PT30M,PT30M,Z component wind speed variance over the preceding 30 minutes in metres squared per second squared
 VPD-MEAN_PREC-HPA-PT30M-PT30M,,VPD,HPA,MEAN,PREC,PT30M,PT30M,Mean vapour pressure deficit over the preceding 30 minutes in hectopascals
 NEUTRON_COUNT-MEAN_PROC-CTS-S-1-PT1H-PT1H,,NEUTRON_COUNT,CTS-S-1,MEAN,PROC,PT1H,PT1H,Mean neutron count over the proceeding hour in counts per second
