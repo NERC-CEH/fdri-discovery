@@ -108,6 +108,7 @@ resources:
       properties:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Catchment|slug}>"
         "@type": <fdri:FacilityGroup>
+        "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/catchment>"
         "<rdfs:label>": "{site_Catchment}@en"
         "<fdri:hasMember>": "<::Site>"
 
@@ -116,6 +117,7 @@ resources:
         site_Region:
       properties:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Region|slug}>"
-        "@type": <fdri:Region>
+        "@type": "<fdri:FacilityGroup>"
+        "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/region>"
         "<rdfs:label>": "{site_Region}@en"
         "<fdri:hasMember>": "<::Site>"

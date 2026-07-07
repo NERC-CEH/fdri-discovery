@@ -67,7 +67,7 @@ resources:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/cosmos-region-{REGION|slug}>"
         "@type": <fdri:FacilityGroup>
         "<rdfs:label>": "{REGION} Region Group"
-        "<dct:type>": <::RegionGroupType>
+        "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/facility-group-type/region>
 
     - name: MonitoringSite
       properties:

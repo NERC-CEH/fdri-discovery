@@ -81,7 +81,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{Network|slug}-catchment-{Catchment|slug}>"
       "@type": "<fdri:FacilityGroup>"
       "<rdfs:label>": "{Catchment}@en"
-      "<dct:type>": <::CatchmentType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/catchment>"
       "<fdri:hasMember>": "<::MonitoringSite>"
 
   - name: SiteArea
@@ -92,7 +92,7 @@ resources:
       "@type": "<fdri:FacilityGroup>"
       "<dct:identifier>": "{SiteAreaID}"
       "<rdfs:label>": "{SiteAreaID}"
-      "<dct:type>": <::LocationGroupType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/location>"
       "<fdri:hasMember>": "<::MonitoringSite>"
 
   - name: SiteType

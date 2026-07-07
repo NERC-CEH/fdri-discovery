@@ -55,50 +55,6 @@ one_offs:
       "<dct:title>": "Monitoring Facility Group Types@en"
       "<rdfs:label>": "Monitoring Facility Group Types@en"
 
-  - name: CatchmentType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/group-type/catchment>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "Catchment Group@en"
-      "<skos:prefLabel>": "Catchment Group@en"
-      "<skos:inScheme>": <::FacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::FacilityGroupTypeScheme>
-
-  - name: CountryGroupType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/group-type/country>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "Country Group@en"
-      "<skos:prefLabel>": "Country Group@en"
-      "<skos:inScheme>": <::FacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::FacilityGroupTypeScheme>
-
-  - name: LocationGroupType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/group-type/location>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "Location Group@en"
-      "<skos:prefLabel>": "Location Group@en"
-      "<skos:inScheme>": <::FacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::FacilityGroupTypeScheme>
-
-  - name: RegionGroupType
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/group-type/region>"
-      "@type": "<fdri:FacilityGroupType>"
-      "<skos:prefLabel>": "Region Group@en"
-      "<skos:inScheme>": <::FacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::FacilityGroupTypeScheme>
-
-  - name: RiverGroupType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/group-type/river>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "River Group@en"
-      "<skos:prefLabel>": "River Group@en"
-      "<skos:inScheme>": <::FacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::FacilityGroupTypeScheme>
-
   - name: MeasureScheme
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/common/measure>

@@ -160,7 +160,7 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-river-{RIVER|slug}>
       "@type": <fdri:FacilityGroup>
       "<rdfs:label>": "{RIVER}@en"
-      "<dct:type>": <::RiverGroupType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/river>"
       "<fdri:hasMember>": <::MonitoringSite>
 
   - name: LocationGroup
@@ -168,7 +168,7 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-location-{LOCATION|slug}>
       "@type": <fdri:FacilityGroup>
       "<rdfs:label>": "{LOCATION}@en"
-      "<dct:type>": <::LocationGroupType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/location>"
       "<fdri:hasMember>": <::MonitoringSite>
 
   - name: CountryGroup
@@ -178,6 +178,6 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-country-{COUNTRY_CODE|slug}>
       "@type": <fdri:FacilityGroup>
       "<rdfs:label>": "{COUNTRY_CODE}@en"
-      "<dct:type>": <::CountryGroupType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/country>"
       "<fdri:hasMember>": <::MonitoringSite>
 
