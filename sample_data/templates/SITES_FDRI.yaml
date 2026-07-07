@@ -7,32 +7,6 @@ imports:
     - concept_schemes.yaml
     - extensions.py
 
-one_offs:
-  - name: FDRIFacilityGroupTypeScheme
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/fdri/group-type>
-      "@type": <fdri:FacilityGroupTypeScheme>
-      "<dct:title>": "FDRI Monitoring Facility Group Types@en"
-      "<rdfs:label>": "FDRI Monitoring Facility Group Types@en"
-
-  - name: CatchmentType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/fdri/group-type/catchment>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "FDRI Catchment Group@en"
-      "<skos:prefLabel>": "FDRI Catchment Group@en"
-      "<skos:inScheme>": <::FDRIFacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::FDRIFacilityGroupTypeScheme>
-
-  - name: SiteAreaType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/fdri/group-type/site-area>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "FDRI Site Area Group@en"
-      "<skos:prefLabel>": "FDRI Site Area Group@en"
-      "<skos:inScheme>": <::FDRIFacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::FDRIFacilityGroupTypeScheme>
-
 resources:
   - name: Network
     properties:
@@ -118,7 +92,7 @@ resources:
       "@type": "<fdri:FacilityGroup>"
       "<dct:identifier>": "{SiteAreaID}"
       "<rdfs:label>": "{SiteAreaID}"
-      "<dct:type>": <::SiteAreaType>
+      "<dct:type>": <::LocationGroupType>
       "<fdri:hasMember>": "<::MonitoringSite>"
 
   - name: SiteType
