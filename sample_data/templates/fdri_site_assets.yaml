@@ -7,14 +7,6 @@ imports:
     - concept_schemes.yaml
     - extensions.py
 
-one_offs:
-  - name: FdriSystemTypeScheme
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/fdri/monitoring-system-type>"
-      "@type": "<fdri:EnvironmentalMonitoringFacilityTypeScheme>"
-      "<rdfs:label>": "FDRI Monitoring System Type Scheme@en"
-      "<dct:title>": "FDRI Monitoring System Type Scheme@en"
-
 resources:
   - name: Platform
     properties:
@@ -26,11 +18,11 @@ resources:
       asset_Make:
       asset_Model:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/fdri/monitoring-system-type/{asset_Make|slug}-{asset_Model|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{asset_Make|slug}-{asset_Model|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSystemType>"
       "<rdfs:label>": "{asset_Make} {asset_Model}@en"
-      "<skos:inScheme>": <::FdriSystemTypeScheme>
-      "^<skos:hasTopConcept>": <::FdriSystemTypeScheme>
+      "<skos:inScheme>": "<::CommonSystemTypeScheme>"
+      "^<skos:hasTopConcept>": "<::CommonSystemTypeScheme>"
 
   - name: Sensor
     properties:
