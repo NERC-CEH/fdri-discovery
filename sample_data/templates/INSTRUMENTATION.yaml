@@ -6,26 +6,20 @@ imports:
   - namespaces.yaml
   - extensions.py
 
-one_offs:
-  - name: SystemTypeScheme
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type>"
-      "@type": "<fdri:EnvironmentalMonitoringFacilityTypeScheme>"
-
 resources:
   - name: InstrumentType
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{INSTRUMENT_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSystemType>"
       "<skos:prefLabel>": "{INSTRUMENT_NAME}@en"
-      "<skos:inScheme>": "<::SystemTypeScheme>"
-      "^<skos:hasTopConcept>": "<::SystemTypeScheme>"
+      "<skos:inScheme>": "<::CommonSystemTypeScheme>"
+      "^<skos:hasTopConcept>": "<::CommonSystemTypeScheme>"
 
   - name: InstrumentDescription
     requires:
       INSTRUMENT_COMMENT:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{INSTRUMENT_ID|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{INSTRUMENT_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSystemType>"
       "<skos:scopeNote>": "{INSTRUMENT_COMMENT}@en"
   
@@ -33,9 +27,9 @@ resources:
     requires:
       MODEL:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/monitoring-system-type/{MODEL|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{MODEL|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSystemType>"
       "<skos:prefLabel>": "{MODEL}@en"
-      "<skos:inScheme>": "<::SystemTypeScheme>"
+      "<skos:inScheme>": "<::CommonSystemTypeScheme>"
       "<skos:broader>": "<::InstrumentType>"
       "^<skos:narrower>": "<::InstrumentType>"

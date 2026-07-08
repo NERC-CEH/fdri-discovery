@@ -28,8 +28,8 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{system_type|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringFacilityType>"
       "<skos:prefLabel>": "{system_type}@en"
-      "<skos:inScheme>": "<::SensorTypeScheme>"
-      "^<skos:hasTopConcept>": "<::SensorTypeScheme>"
+      "<skos:inScheme>": "<::CommonSystemTypeScheme>"
+      "^<skos:hasTopConcept>": "<::CommonSystemTypeScheme>"
       "<fdri:measures>":
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_temp-inst-degc>
