@@ -448,7 +448,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "UX_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
+      "measure_id": "UX-VAR_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-v-var",
@@ -463,7 +463,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "UY_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
+      "measure_id": "UY-VAR_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-w-var",
@@ -478,7 +478,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "UZ_VAR-MEAN_PREC-M2S-2-PT30M-PT30M"
+      "measure_id": "UZ-VAR_PREC-M2S-2-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h-despiked",
