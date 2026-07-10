@@ -66,35 +66,35 @@ resources:
 
   - name: ADVConfiguration
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#firmware-configuration>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-adv-{ADV_Serial_Number|slug}#firmware-configuration>"
       "@type": "<fdri:ConfigurationValueSeries>"
       "<rdfs:label>": "Firmware Version Configuration for Sontek ADV {ADV_Serial_Number}@en"
       "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>
       "<fdri:hadValue>":
         - name: ConfigurationValue
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#firmware-configuration.value-{Date|slug}>"
+            "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-adv-{ADV_Serial_Number|slug}#firmware-configuration.value-{Date|slug}>"
             "@type": "<fdri:TimeBoundPropertyValue>"
             "<fdri:interval>": <::SurveyInterval>
             "<schema:value>": "{ADV_Firmware_Version}"
 
   - name: ADVBeamsConfiguration
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#beams-configuration>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-adv-{ADV_Serial_Number|slug}#beams-configuration>"
       "@type": "<fdri:ConfigurationValueSeries>"
       "<rdfs:label>": "Number of Beams Configuration for Sontek ADV {ADV_Serial_Number}@en"
       "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/configuration-property/number-of-beams>
       "<fdri:hadValue>":
         - name: ConfigurationValue
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}#beams-configuration.value-{Date|slug}>"
+            "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-adv-{ADV_Serial_Number|slug}#beams-configuration.value-{Date|slug}>"
             "@type": "<fdri:TimeBoundPropertyValue>"
             "<fdri:interval>": <::SurveyInterval>
             "<schema:value>": "{ADV_NumberOfBeams}"
 
   - name: ADVDevice
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/sontek-adv-{ADV_Serial_Number|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/sontek-adv-{ADV_Serial_Number|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
       "<rdfs:label>": "Sontek ADV Device {ADV_Serial_Number}@en"
       "<dct:type>": <::SontekADVDeviceType>

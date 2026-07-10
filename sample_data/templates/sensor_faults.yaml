@@ -24,7 +24,7 @@ resources:
           "@type": "<dct:PeriodOfTime>"
           "<dcat:startDate>": "{START_DATETIME|asDateTime}"
           "<dcat:endDate>": "{END_DATETIME|asDateTime}"
-      "<fdri:affectedFacility>": "<http://fdri.ceh.ac.uk/id/sensor/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
+      "<fdri:affectedFacility>": "<http://fdri.ceh.ac.uk/id/system/cosmos-{INSTRUMENT_ID|slug}-{SERIAL_NUMBER|slug}>"
 
   - name: StationFault
     requires:

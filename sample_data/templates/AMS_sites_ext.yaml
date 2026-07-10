@@ -37,7 +37,7 @@ resources:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/{site_Network|slug}-{site_id|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "POINT({site_Longitude}, {site_Latitude})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "POINT({site_Longitude} {site_Latitude})^^<geos:wktLiteral>"
         "<dct:identifier>": "{site_id}"
         "^<doo:contains>": <::Network>
 
@@ -58,7 +58,7 @@ resources:
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/platform/{site_Network|slug}-{site_StationID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
-                "<geos:asWKT>": "POINT({site_Longitude}, {site_Latitude})^^<geos:wktLiteral>"
+                "<geos:asWKT>": "POINT({site_Longitude} {site_Latitude})^^<geos:wktLiteral>"
         "^<dct:hasPart>": "<::Site>"
         "<dct:isPartOf>": "<::Site>"
         "<dct:identifier>": "{site_StationID}"
@@ -108,6 +108,7 @@ resources:
       properties:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Catchment|slug}>"
         "@type": <fdri:FacilityGroup>
+        "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/catchment>"
         "<rdfs:label>": "{site_Catchment}@en"
         "<fdri:hasMember>": "<::Site>"
 
@@ -116,6 +117,7 @@ resources:
         site_Region:
       properties:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{site_Network|slug}-{site_Region|slug}>"
-        "@type": <fdri:Region>
+        "@type": "<fdri:FacilityGroup>"
+        "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/region>"
         "<rdfs:label>": "{site_Region}@en"
         "<fdri:hasMember>": "<::Site>"

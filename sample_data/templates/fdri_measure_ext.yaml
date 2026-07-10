@@ -10,7 +10,7 @@ imports:
 resources:
   - name: Sensor
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/fdri-{measure_AssetID|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/fdri-{measure_AssetID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
 
   - name: Variable

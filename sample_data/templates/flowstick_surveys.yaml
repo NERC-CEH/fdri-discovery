@@ -28,35 +28,35 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/ref/common/monitoring-system-type/{system_type|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringFacilityType>"
       "<skos:prefLabel>": "{system_type}@en"
-      "<skos:inScheme>": "<::SensorTypeScheme>"
-      "^<skos:hasTopConcept>": "<::SensorTypeScheme>"
+      "<skos:inScheme>": "<::CommonSystemTypeScheme>"
+      "^<skos:hasTopConcept>": "<::CommonSystemTypeScheme>"
       "<fdri:measures>":
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_velocity-inst-ms-1>
         - <http://fdri.ceh.ac.uk/ref/common/measure/water_temp-inst-degc>
 
   - name: SensorFirmwareConfiguration
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/{system_type|slug}-{serial_number|slug}#firmware>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/{system_type|slug}-{serial_number|slug}#firmware>"
       "@type": "<fdri:ConfigurationValueSeries>"
       "<rdfs:label>": "Firmware configuration for {system_type} {serial_number}@en"
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/configuration-property/firmware-version>"
       "<fdri:hadValue>":
         - name: FirmwareVersion
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/sensor/{system_type|slug}-{serial_number|slug}#firmware-version-{datetime|slug}>"
+            "@id": "<http://fdri.ceh.ac.uk/id/system/{system_type|slug}-{serial_number|slug}#firmware-version-{datetime|slug}>"
             "@type": "<fdri:TimeBoundPropertyValue>"
             "<rdfs:label>": "Firmware version for {system_type} {serial_number}@en"
             "<schema:value>": "{version}"
             "<fdri:interval>":
               - name: FirmwareVersionPeriod
                 properties:
-                  "@id": "<http://fdri.ceh.ac.uk/id/sensor/{system_type|slug}-{serial_number|slug}#firmware-version-{datetime|slug}.interval>"
+                  "@id": "<http://fdri.ceh.ac.uk/id/system/{system_type|slug}-{serial_number|slug}#firmware-version-{datetime|slug}.interval>"
                   "@type": "<dct:PeriodOfTime>"
                   "<dcat:startDate>": "{stime}^^<xsd:dateTime>"
                   "<dcat:endDate>": "{datetime}^^<xsd:dateTime>"
   - name: Sensor
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/sensor/{system_type|slug}-{serial_number|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/system/{system_type|slug}-{serial_number|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSensor>"
       "<rdfs:label>": "{system_type} {serial_number}@en"
       "<fdri:serialNumber>": "{serial_number}"

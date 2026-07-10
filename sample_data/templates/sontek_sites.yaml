@@ -12,7 +12,7 @@ resources:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/site/rca-{Site Number|slug}#geo-latlong>"
       "@type": "<geos:Geometry>"
-      "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
+      "<geos:asWKT>": "POINT({Longitude} {Latitude})^^<geos:wktLiteral>"
 
   - name: Site
     properties:

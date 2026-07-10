@@ -28,15 +28,16 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringSite>"
       "<rdfs:label>": "{SITE_NAME}@en"
+      "<dct:identifier>": "{SITE_ID}"
       "^<doo:contains>": <::Network>
       "^<doo:utilises>": <::Programme>
-      "<dct:identifier>": "{SITE_ID}"
+      "<fdri:utilisedBy>": <::Programme>
       "<geos:hasGeometry>":
         - name: LatLongPoint
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}#geo-latlong>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "POINT({LONGITUDE}, {LATITUDE})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "POINT({LONGITUDE} {LATITUDE})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
       "<geo:lat>": "{LATITUDE | asDecimal}"
       "<geo:long>": "{LONGITUDE | asDecimal}"

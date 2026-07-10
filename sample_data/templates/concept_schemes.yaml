@@ -47,7 +47,14 @@ one_offs:
       "@type": "<fdri:DataProcessingMethodScheme>"
       "<dct:title>": "Data Processing Methods@en"
       "<rdfs:label>": "Data Processing Methods@en"
-  
+
+  - name: FacilityGroupTypeScheme
+    properties:
+      "@id": <http://fdri.ceh.ac.uk/ref/group-type>
+      "@type": <fdri:FacilityGroupTypeScheme>
+      "<dct:title>": "Monitoring Facility Group Types@en"
+      "<rdfs:label>": "Monitoring Facility Group Types@en"
+
   - name: MeasureScheme
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/common/measure>

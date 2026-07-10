@@ -20,66 +20,59 @@ resources:
       "@type": "<fdri:EnvironmentalMonitoringProgramme>"
       "<rdfs:label>": "FDRI Programme@en"
 
-  - name: Site
+  - name: MonitoringSite
+    requires:
+      SiteID:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}>"
       "@type": <fdri:EnvironmentalMonitoringSite>
+      "<rdfs:label>": "{Site_name}@en"
+      "<rdfs:comment>": "{Description}@en"
       "<dct:identifier>": "{SiteID}"
       "^<doo:contains>": <::Network>
       "^<doo:utilises>": <::Programme>
       "<fdri:utilisedBy>": <::Programme>
-
-  - name: Station
-    requires:
-      StationID:
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{StationID|slug}>"
-      "@type": "<fdri:EnvironmentalMonitoringPlatform>"
-      "<rdfs:label>": "{Station_name}@en"
-      "<geo:lat>": "{Latitude|asDecimal}"
-      "<geo:long>": "{Longitude|asDecimal}"
       "<geos:hasGeometry>": 
           - name: LatLongPoint
             properties:
-              "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{StationID|slug}#geo-latlong>"
+              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#geo-latlong>"
               "@type": "<geos:Geometry>"
-              "<geos:asWKT>": "POINT({Longitude}, {Latitude})^^<geos:wktLiteral>"
-      "^<dct:hasPart>": "<::Site>"
-      "<dct:isPartOf>": "<::Site>"
-      "<dct:identifier>": "{StationID}"
+              "<geos:asWKT>": "POINT({Longitude} {Latitude})^^<geos:wktLiteral>"
+      "<geo:lat>": "{Latitude|asDecimal}"
+      "<geo:long>": "{Longitude|asDecimal}"
+      "<fdri:operatingPeriod>":
+          - name: OperatingPeriod
+            properties:
+              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#operating-period>"
+              "@type": "<dct:PeriodOfTime>"
+              "<dcat:startDate>": "{Date_installed | asDateOrDatetime}"
       "<fdri:hasAnnotation>":
           - name: StandardInstallation
             requires:
               Standard_Installation:
             properties:
-              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#standard-installation>"
+              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#standard-installation>"
               "@type": "<fdri:Annotation>"
               "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/site-standard-installation>"
               "<fdri:hasValue>":
                   - name: "StandardInstallationValue"
                     properties:
-                      "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#standard-installation.value>"
+                      "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#standard-installation.value>"
                       "@type": "<schema:PropertyValue>"
                       "<schema:value>": "{Standard_Installation|asBoolean}"
           - name: LandManagementClass
             requires:
               Land_management:
             properties:
-              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#land-management-class>"
+              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#land-management-class>"
               "@type": "<fdri:Annotation>"
               "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/observed-land-cover>"
               "<fdri:hasValue>":
                   - name: "LandManagementValue"
                     properties:
-                      "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#land-management.value>"
+                      "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#land-management.value>"
                       "@type": "<schema:PropertyValue>"
                       "<schema:value>": "{Land_management|asBoolean}"
-      "<fdri:operatingPeriod>":
-          - name: OperatingPeriod
-            properties:
-              "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{StationID|slug}#operating-period>"
-              "@type": "<dct:PeriodOfTime>"
-              "<dcat:startDate>": "{Date_installed | asDateOrDatetime}"
 
   - name: Catchment
     requires:
@@ -88,12 +81,24 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{Network|slug}-catchment-{Catchment|slug}>"
       "@type": "<fdri:FacilityGroup>"
       "<rdfs:label>": "{Catchment}@en"
-      "<fdri:hasMember>": "<::Station>"
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/catchment>"
+      "<fdri:hasMember>": "<::MonitoringSite>"
 
-  - name: StationType
+  - name: SiteArea
+    requires:
+      SiteAreaID:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{SiteID|slug}-{Station_type|slug}>"
+      "@id": "<http://fdri.ceh.ac.uk/id/facility-group/{Network|slug}-{SiteAreaID|slug}>"
+      "@type": "<fdri:FacilityGroup>"
+      "<dct:identifier>": "{SiteAreaID}"
+      "<rdfs:label>": "{SiteAreaID}"
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/location>"
+      "<fdri:hasMember>": "<::MonitoringSite>"
+
+  - name: SiteType
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/platform/{Network|slug}-{SiteAreaID|slug}-{Site_type|slug}>"
       "@type": "<fdri:EnvironmentalMonitoringPlatform>"
-      "<dct:identifier>": "{Station_type}"
-      "^<dct:hasPart>": <::Station>
+      "<dct:identifier>": "{Site_type}"
+      "^<dct:hasPart>": <::MonitoringSite>
 

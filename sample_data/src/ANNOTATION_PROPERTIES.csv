@@ -18,6 +18,9 @@ REF_SOC_STD,,Ref SOC STD,Estimated Standard deviation of Soil Organic Carbon (fr
 REF_SOIL_MOISTURE,,Ref Soil Moisture,Reference soil moisture from lab analysis on day of calibration
 GAMMA,,Gamma,Gamma correction value for drift in CRNS counts
 SOIL_COMMENT,,Ref Soil Comment,Comment on soil properties from lab analysis of field samples
+VWC_WILTING_POINT,,VWC Wilting Point,The volumetric water content at the wilting point of the soil at the annotated site
+VWC_FIELD_CAPACITY,,VWC Field Capacity,The volumetric water content at field capacity of the soil at the annotated site
+VWC_SATURATION,,VWC Saturation,The volumetric water content at saturation of the soil at the annotated site
 SAMPLING_START_DATETIME,,Sampling Start Datetime,Start datetime of soil sampling for lab analysis
 SAMPLING_END_DATETIME,,Sampling End Datetime,End datetime of soil sampling for lab analysis
 PRIORITY,,Priority,A relative priority number for the annotated object.
@@ -34,7 +37,6 @@ OBSERVED-LAND-COVER,,Observed Land Cover,The observed land cover type within the
 OBSERVATION-SOURCE,,Observation Source,The source of the annotated observation,OBSERVATION,SOURCE
 OBSERVATION-COMMENT,,Observation Comment,Comments regarding the annotated observation,OBSERVATION,COMMENT
 WEATHER-CONDITIONS,,Weather Conditions,Description of weather conditions at time of annotated activity,WEATHER,DESCRIPTION
-SENSOR-SLOT-NAME,,Sensor Slot Name,The name of the sensor slot that is represented by the annotated platform,PLATFORM,NAME
 SITE-SOIL-TYPE,,Site Soil Type,The soil type at the annotated site,SOIL,CLASSIFICATION,,http://fdri.ceh.ac.uk/ref/cosmos/soil-type
 SITE-PUBLIC,,Site Public,Indicates if the annotated site is publicly accessible,COSMOS-SITE,PUBLIC-ACCESS
 SITE-SNOW,,Site Monitors Snow,Indicates if the annotated site monitors snow,COSMOS-SITE,MONITORS-SNOW

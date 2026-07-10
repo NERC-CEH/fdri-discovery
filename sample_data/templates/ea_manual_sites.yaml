@@ -26,5 +26,5 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/ea-manual-{Site Name|slug}#geo-latlong>"
             "@type": "<geos:Geometry>"
-            "<geos:asWKT>": "POINT({lon}, {lat})^^<geos:wktLiteral>"
+            "<geos:asWKT>": "POINT({lon} {lat})^^<geos:wktLiteral>"
       "<fdri:hasRepresentativePoint>": <::LatLongPoint>
