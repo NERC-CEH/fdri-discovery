@@ -16,6 +16,7 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/site/fdri-{SITE_ID|slug}>
       "@type": "<fdri:EnvironmentalMonitoringSite>"
       "<sosa:observes>": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      <fdri:measures>: "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
 
   - name: TimeSeriesDataset
     properties:

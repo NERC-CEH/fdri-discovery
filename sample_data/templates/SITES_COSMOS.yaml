@@ -8,33 +8,24 @@ imports:
     - extensions.py
 
 one_offs:
-  - name: CosmosFacilityGroupTypeScheme
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/cosmos/group-type>
-      "@type": "<fdri:FacilityGroupTypeScheme>"
-      "<dct:title>": "COSMOS Monitoring Facility Group Types@en"
-  - name: RegionGroupType
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/group-type/region>"
-      "@type": "<fdri:FacilityGroupType>"
-      "<skos:prefLabel>": "COSMOS Region Group@en"
-      "<skos:inScheme>": <::CosmosFacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::CosmosFacilityGroupTypeScheme>
   - name: SoilTypeScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/soil-type>"
       "@type": "<skos:ConceptScheme>"
       "<dct:title>": "COSMOS Soil Type Classification Scheme@en"
+
   - name: BedrockClassScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class>"
       "@type": "<skos:ConceptScheme>"
       "<dct:title>": "COSMOS Bedrock Classification Scheme@en"
+
   - name: Cosmos
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/network/cosmos>"
       "@type": "<fdri:EnvironmentalMonitoringNetwork>"
       "<rdfs:label>": "COSMOS Network@en"
+
   - name: CosmosProgramme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/programme/cosmos>"
@@ -76,8 +67,8 @@ resources:
         "@id": "<http://fdri.ceh.ac.uk/id/facility-group/cosmos-region-{REGION|slug}>"
         "@type": <fdri:FacilityGroup>
         "<rdfs:label>": "{REGION} Region Group"
-        "<dct:type>": <::RegionGroupType>
-    
+        "<dct:type>": <http://fdri.ceh.ac.uk/ref/common/facility-group-type/region>
+
     - name: MonitoringSite
       properties:
         "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"

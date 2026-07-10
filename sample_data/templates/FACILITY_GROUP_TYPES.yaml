@@ -1,0 +1,19 @@
+globals:
+    $baseURI: http://fdri.ceh.ac.uk/
+    $datasetID: default
+
+imports:
+    - namespaces.yaml
+    - concept_schemes.yaml
+    - extensions.py
+
+resources:
+  - name: GroupType
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/{ID|slug}>"
+      "@type": <fdri:FacilityGroupType>
+      "<rdfs:label>": "{LABEL}@en"
+      "<skos:prefLabel>": "{LABEL}@en"
+      "<skos:inScheme>": <::FacilityGroupTypeScheme>
+      "^<skos:hasTopConcept>": <::FacilityGroupTypeScheme>
+

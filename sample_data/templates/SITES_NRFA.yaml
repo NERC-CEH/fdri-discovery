@@ -20,40 +20,6 @@ one_offs:
       "@type": "<fdri:EnvironmentalMonitoringProgramme>"
       "<rdfs:label>": "NRFA Programme@en"
 
-  - name: NrfaFacilityGroupTypeScheme
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type>
-      "@type": <fdri:FacilityGroupTypeScheme>
-      "<dct:title>": "NRFA Monitoring Facility Group Types@en"
-      "<rdfs:label>": "NRFA Monitoring Facility Group Types@en"
-
-  - name: RiverGroupType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/river>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "NRFA River Group@en"
-      "<skos:prefLabel>": "NRFA River Group@en"
-      "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
-
-  - name: LocationGroupType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/location>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "NRFA Location Group@en"
-      "<skos:prefLabel>": "NRFA Location Group@en"
-      "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
-
-  - name: CountryGroupType
-    properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/nrfa/group-type/country>
-      "@type": <fdri:FacilityGroupType>
-      "<rdfs:label>": "NRFA Country Group@en"
-      "<skos:prefLabel>": "NRFA Country Group@en"
-      "<skos:inScheme>": <::NrfaFacilityGroupTypeScheme>
-      "^<skos:hasTopConcept>": <::NrfaFacilityGroupTypeScheme>
-
   - name: OperatorRole
     properties:
       "@id": <http://fdri.ceh.ac.uk/ref/common/related-party-role/operator>
@@ -194,7 +160,7 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-river-{RIVER|slug}>
       "@type": <fdri:FacilityGroup>
       "<rdfs:label>": "{RIVER}@en"
-      "<dct:type>": <::RiverGroupType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/river>"
       "<fdri:hasMember>": <::MonitoringSite>
 
   - name: LocationGroup
@@ -202,7 +168,7 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-location-{LOCATION|slug}>
       "@type": <fdri:FacilityGroup>
       "<rdfs:label>": "{LOCATION}@en"
-      "<dct:type>": <::LocationGroupType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/location>"
       "<fdri:hasMember>": <::MonitoringSite>
 
   - name: CountryGroup
@@ -212,6 +178,6 @@ resources:
       "@id": <http://fdri.ceh.ac.uk/id/facility-group/nrfa-country-{COUNTRY_CODE|slug}>
       "@type": <fdri:FacilityGroup>
       "<rdfs:label>": "{COUNTRY_CODE}@en"
-      "<dct:type>": <::CountryGroupType>
+      "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/country>"
       "<fdri:hasMember>": <::MonitoringSite>
 
