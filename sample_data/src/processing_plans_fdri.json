@@ -1,0 +1,263 @@
+{
+  "FDRI-SE-CARWE-01-WS": [
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1min-plan",
+      "output": "fdri-se-carwe-01-ws-albedo_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-albedo_1min-load_raw",
+        "fdri-se-carwe-01-ws-albedo_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-battsoc_1min-plan",
+      "output": "fdri-se-carwe-01-ws-battsoc_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-BATTSOC_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-battsoc_1min-load_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-battv_1min-plan",
+      "output": "fdri-se-carwe-01-ws-battv_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-battv_1min-load_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-dewpoint_1min-plan",
+      "output": "fdri-se-carwe-01-ws-dewpoint_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-DEWPOINT_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-dewpoint_1min-load_raw",
+        "fdri-se-carwe-01-ws-dewpoint_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-int_1min-plan",
+      "output": "fdri-se-carwe-01-ws-int_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-INT_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-int_1min-load_raw",
+        "fdri-se-carwe-01-ws-dewpoint_1min_raw-battery_v",
+        "fdri-se-carwe-01-ws-int_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-int_hr_1min-plan",
+      "output": "fdri-se-carwe-01-ws-int_hr_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-INT_HR_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-int_hr_1min-load_raw",
+        "fdri-se-carwe-01-ws-int_hr_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-int_lr_1min-plan",
+      "output": "fdri-se-carwe-01-ws-int_lr_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-INT_LR_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-int_lr_1min-load_raw",
+        "fdri-se-carwe-01-ws-int_lr_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-int_lr_hr_1min-plan",
+      "output": "fdri-se-carwe-01-ws-int_lr_hr_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-INT_LR_HR_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-int_lr_hr_1min-load_raw",
+        "fdri-se-carwe-01-ws-int_lr_hr_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1min-plan",
+      "output": "fdri-se-carwe-01-ws-lwin_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-lwin_1min-load_raw",
+        "fdri-se-carwe-01-ws-lwin_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-plan",
+      "output": "fdri-se-carwe-01-ws-lwout_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-lwout_1min-load_raw",
+        "fdri-se-carwe-01-ws-lwout_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-pa_1min-plan",
+      "output": "fdri-se-carwe-01-ws-pa_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-PA_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-pa_1min-load_raw",
+        "fdri-se-carwe-01-ws-pa_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_1min-plan",
+      "output": "fdri-se-carwe-01-ws-precip_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-PRECIP_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_1min-load_raw",
+        "fdri-se-carwe-01-ws-precip_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_tot_1min-plan",
+      "output": "fdri-se-carwe-01-ws-precip_tot_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_tot_1min-load_raw",
+        "fdri-se-carwe-01-ws-precip_tot_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-rh_1min-plan",
+      "output": "fdri-se-carwe-01-ws-rh_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-RH_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-rh_1min-load_raw",
+        "fdri-se-carwe-01-ws-rh_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-rn_1min-plan",
+      "output": "fdri-se-carwe-01-ws-rn_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-RN_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-rn_1min-load_raw",
+        "fdri-se-carwe-01-ws-rn_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1min-plan",
+      "output": "fdri-se-carwe-01-ws-swin_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-swin_1min-load_raw",
+        "fdri-se-carwe-01-ws-swin_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1min-plan",
+      "output": "fdri-se-carwe-01-ws-swout_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-swout_1min-load_raw",
+        "fdri-se-carwe-01-ws-swout_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ta_1min-plan",
+      "output": "fdri-se-carwe-01-ws-ta_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-TA_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-ta_1min-load_raw",
+        "fdri-se-carwe-01-ws-ta_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-tnr01_1min-plan",
+      "output": "fdri-se-carwe-01-ws-tnr01_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-tnr01_1min-load_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ts100_fan_rpm_1min-plan",
+      "output": "fdri-se-carwe-01-ws-ts100_fan_rpm_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-TS100_FAN_RPM_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-ts100_fan_rpm_1min-load_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-wd_1min-plan",
+      "output": "fdri-se-carwe-01-ws-wd_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-WD_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-wd_1min-load_raw",
+        "fdri-se-carwe-01-ws-wd_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ws_1min-plan",
+      "output": "fdri-se-carwe-01-ws-ws_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-WS_1MIN_RAW",
+      "steps": [
+        "fdri-se-carwe-01-ws-ws_1min-load_raw",
+        "fdri-se-carwe-01-ws-ws_1min_raw-battery_v"
+      ]
+    }
+  ],
+  "FDRI-SE-SVTRP-01-WL": [
+    {
+      "id": "fdri-se-svtrp-01-wl-battv_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-battv_1min_processed",
+      "input": "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW",
+      "steps": [
+        "fdri-se-svtrp-01-wl-battv_1min-load_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_processed",
+      "input": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW",
+      "steps": [
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-logger_temp_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-logger_temp_1min_processed",
+      "input": "FDRI-SE-SVTRP-01-WL-LOGGER_TEMP_1MIN_RAW",
+      "steps": [
+        "fdri-se-svtrp-01-wl-logger_temp_1min-load_raw",
+        "fdri-se-svtrp-01-wl-logger_temp_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-radar_temp_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-radar_temp_1min_processed",
+      "input": "FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_RAW",
+      "steps": [
+        "fdri-se-svtrp-01-wl-radar_temp_1min-load_raw",
+        "fdri-se-svtrp-01-wl-radar_temp_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-water_lev_pt_1min_processed",
+      "input": "FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW",
+      "steps": [
+        "fdri-se-svtrp-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-se-svtrp-01-wl-water_lev_pt_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-water_lev_radar_1min_processed",
+      "input": "FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW",
+      "steps": [
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min_raw-battery_v"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_temp_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-water_temp_1min_processed",
+      "input": "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW",
+      "steps": [
+        "fdri-se-svtrp-01-wl-water_temp_1min-load_raw",
+        "fdri-se-svtrp-01-wl-water_temp_1min_raw-battery_v"
+      ]
+    }
+  ]
+}

@@ -84,9 +84,10 @@ SAMPLES += $(TTL_BASE)/SITES_FDRI.ttl
 SAMPLES += $(TTL_BASE)/fdri_site_assets.ttl
 # SAMPLES += $(TTL_BASE)/fdri_measure_ext.ttl
 SAMPLES += $(TTL_BASE)/fdri_asset_loc_history.ttl
-SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
+SAMPLES += $(TTL_BASE)/processing_configurations_fdri.ttl
+SAMPLES += $(TTL_BASE)/processing_plans_fdri.ttl
 
 # Gauging Data Samples
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
@@ -333,6 +334,20 @@ $(TTL_BASE)/processing_plans_nmdb.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_
 build/nmdb_ts_parameters.csv: $(SRC)/TIMESERIES_IDS_NMDB.csv $(SRC)/MEASURES.csv $(SQL)/nmdb_ts_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/nmdb_ts_parameters.sql"
 
+# FDRI
+
+build/processing_configurations_fdri.json: $(SRC)/processing_configurations_fdri.json $(SQL)/processing_configurations.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_fdri.json > $@"
+
+$(TTL_BASE)/processing_configurations_fdri.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_configurations.yaml build/processing_configurations_fdri.json | build/data
+	$(MAPPER) $(TPL)/processing_configurations.yaml build/processing_configurations_fdri.json $@
+
+build/processing_plans_fdri.json: $(SRC)/processing_plans_fdri.json $(SQL)/processing_plans.jq | build
+	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_fdri.json > $@"
+
+$(TTL_BASE)/processing_plans_fdri.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_fdri.json | build/data
+	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_fdri.json $@
+
 # Flux
 
 build/flux_sites.json: $(SRC)/flux/sites.json | build
@@ -370,9 +385,6 @@ $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gr
 
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/gridded_metadata.yaml $(SRC)/gridded/%.zarr.json | build/data
 	$(GRIDMAP) --type zarr-meta --base-url http://fdri.ceh.ac.uk/id/dataset/$* --output $@ $(TPL)/gridded_metadata.yaml $(SRC)/gridded/$*.zarr.json
-
-$(TTL_BASE)/FDRI_QC_CONFIGS.ttl: $(TPL)/namespaces.yaml $(TPL)/QC_CONFIGS.yaml $(SRC)/FDRI_QC_CONFIGS.csv | build/data
-	$(MAPPER) $(TPL)/QC_CONFIGS.yaml $(SRC)/FDRI_QC_CONFIGS.csv $@
 
 $(VAL)/%.ttl: $(TTL_BASE)/%.ttl $(SHACL_BASE)/fdri_shacl.ttl  | build/validation
 	$(RUN) /bin/bash -c "shacl v -d $(TTL_BASE)/$*.ttl -s $(SHACL_BASE)/fdri_shacl.ttl > $@"
