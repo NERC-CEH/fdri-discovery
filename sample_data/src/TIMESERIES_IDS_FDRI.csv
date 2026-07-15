@@ -100,8 +100,6 @@ FDRI-WALLING_TEST-SWOUT_1MIN_RAW,Outgoing shortwave radiation,WALLING_TEST,ukceh
 FDRI-WALLING_TEST-LWOUT_1MIN_RAW,Outgoing longwave radiation,WALLING_TEST,ukceh-dri-staging-ingested,thirty_minute,LWOUT,time,LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,RAW,
 FDRI-WALLING_TEST-TNR01_1MIN_RAW,Sensor temperature (NR01),WALLING_TEST,ukceh-dri-staging-ingested,thirty_minute,TNR01,time,TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M,RAW,
 FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_PROCESSED,Albedo,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,albedo_Avg,time,ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,PROCESSED,ALBEDO_FLAG_DEF
-FDRI-SE-CARWE-01-WS-BATTSOC_1MIN_PROCESSED,Battery state of charge,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,BattSoC_Avg,time,SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,PROCESSED,BATTSOC_FLAG_DEF
-FDRI-SE-CARWE-01-WS-BATTV_1MIN_PROCESSED,Battery voltage,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,BattV_Avg,time,VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,PROCESSED,BATTV_FLAG_DEF
 FDRI-SE-CARWE-01-WS-DEWPOINT_1MIN_PROCESSED,Dew point temperature,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,DewPoint_C,time,DEW_POINT-INST-DEGC-PT1M-PT1M,PROCESSED,DEWPOINT_FLAG_DEF
 FDRI-SE-CARWE-01-WS-INT_1MIN_PROCESSED,Precipitation intensity,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Int_1m,time,PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,PROCESSED,INT_FLAG_DEF
 FDRI-SE-CARWE-01-WS-INT_HR_1MIN_PROCESSED,Precipitation intensity,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Int_1m_hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,PROCESSED,INT_HR_FLAG_DEF
@@ -121,9 +119,7 @@ FDRI-SE-CARWE-01-WS-TNR01_1MIN_PROCESSED,Sensor temperature (NR01),SE-CARWE-01-W
 FDRI-SE-CARWE-01-WS-TS100_FAN_RPM_1MIN_PROCESSED,Aspirated screen fan speed,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,TS100SS_Fan_RPM,time,REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,PROCESSED,TS100_FAN_RPM_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WD_1MIN_PROCESSED,Wind direction,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,PROCESSED,WD_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WS_1MIN_PROCESSED,Wind speed,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,WS_ms_Avg,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,PROCESSED,WS_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-BATTV_1MIN_PROCESSED,Battery voltage,SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,BattV,time,VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,PROCESSED,BATTV_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED,Distance to water (Radar),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Distance_m_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,DIST_TO_WATER_RADAR_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-LOGGER_TEMP_1MIN_PROCESSED,Temperature in the logger,SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,PTemp_C,time,TEMP_LOGGER-INST-DEGC-PT1M-PT1M,PROCESSED,LOGGER_TEMP_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_PROCESSED,Sensor temperature (Radar),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Inst_Temp,time,TEMP_SENSOR-INST-DEGC-PT1M-PT1M,PROCESSED,RADAR_TEMP_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_PROCESSED,Water level (Pressure transducer),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,WATER_LEV_PT_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED,Water level (Radar),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Stage_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,WATER_LEV_RADAR_FLAG_DEF

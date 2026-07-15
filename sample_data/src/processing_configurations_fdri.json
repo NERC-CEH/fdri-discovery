@@ -9,22 +9,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-battsoc_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTSOC_1MIN_RAW"
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-battv_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-dewpoint_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -431,27 +415,11 @@
   ],
   "FDRI-SE-SVTRP-01-WL": [
     {
-      "id": "fdri-se-svtrp-01-wl-battv_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
         "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-logger_temp_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-LOGGER_TEMP_1MIN_RAW"
       ]
     },
     {
@@ -488,20 +456,6 @@
     },
     {
       "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_raw-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-logger_temp_1min_raw-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
