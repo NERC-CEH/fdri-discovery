@@ -116,7 +116,6 @@ FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,SE-CARWE-01
 FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF
 FDRI-SE-CARWE-01-WS-TA_1MIN_PROCESSED,Air temperature,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M,PROCESSED,TA_FLAG_DEF
 FDRI-SE-CARWE-01-WS-TNR01_1MIN_PROCESSED,Sensor temperature (NR01),SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,T_nr,time,TEMP_SENSOR-INST-KEL-PT1M-PT1M,PROCESSED,TNR01_FLAG_DEF
-FDRI-SE-CARWE-01-WS-TS100_FAN_RPM_1MIN_PROCESSED,Aspirated screen fan speed,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,TS100SS_Fan_RPM,time,REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,PROCESSED,TS100_FAN_RPM_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WD_1MIN_PROCESSED,Wind direction,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,PROCESSED,WD_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WS_1MIN_PROCESSED,Wind speed,SE-CARWE-01-WS,ukceh-fdri-staging-timeseries-processed,one_minute,WS_ms_Avg,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,PROCESSED,WS_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED,Distance to water (Radar),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Distance_m_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,DIST_TO_WATER_RADAR_FLAG_DEF
