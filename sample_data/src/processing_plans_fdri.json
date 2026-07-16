@@ -134,17 +134,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-rn_1min-plan",
-      "output": "fdri-se-carwe-01-ws-rn_1min_processed",
-      "input": "FDRI-SE-CARWE-01-WS-RN_1MIN_RAW",
-      "steps": [
-        "fdri-se-carwe-01-ws-rn_1min-load_raw",
-        "fdri-se-carwe-01-ws-rn_1min-battery_v",
-        "fdri-se-carwe-01-ws-rn_1min-range",
-        "fdri-se-carwe-01-ws-rn_1min-spike"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-swin_1min-plan",
       "output": "fdri-se-carwe-01-ws-swin_1min_processed",
       "input": "FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW",
