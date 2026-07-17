@@ -88,10 +88,6 @@ SAMPLES += $(TTL_BASE)/FDRI_QC_CONFIGS.ttl
 SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
 
-# Gauging Data Samples
-SAMPLES += $(TTL_BASE)/flowstick_surveys.ttl
-SAMPLES += $(TTL_BASE)/sontek_surveys.ttl
-
 # Gridded Data Samples
 SAMPLES += $(TTL_BASE)/chess-met_dtr.ttl
 SAMPLES += $(TTL_BASE)/chess-met_huss.ttl
@@ -235,12 +231,6 @@ build/fdri_measure_ext.csv: $(SRC)/fdri_measure.csv $(SRC)/intervalDuration.csv 
 
 build/fdri_asset_loc_history.csv: $(SRC)/SITES_FDRI.csv $(SRC)/fdri_loc_history.csv $(SQL)/fdri_asset_loc_history.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/fdri_asset_loc_history.sql"
-
-build/flowstick_surveys.csv: $(SRC)/nivu_flowstick/metadata.parquet $(SQL)/flowstick_surveys.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/flowstick_surveys.sql"
-
-build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
 
 build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
