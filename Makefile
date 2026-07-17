@@ -89,8 +89,6 @@ SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
 
 # Gauging Data Samples
-SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
-SAMPLES += $(TTL_BASE)/ea_manual_metadata.ttl
 SAMPLES += $(TTL_BASE)/flowstick_surveys.ttl
 SAMPLES += $(TTL_BASE)/sontek_surveys.ttl
 
