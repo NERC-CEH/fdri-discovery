@@ -122,12 +122,6 @@ SAMPLES += $(TTL_BASE)/processing_configurations_nmdb.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
 SAMPLES += $(TTL_BASE)/nmdb_ts_parameters.ttl
 
-# AMS Samples
-#SAMPLES += $(TTL_BASE)/AMS_asset_ext.ttl
-#SAMPLES += $(TTL_BASE)/AMS_site_deployments.ttl
-#SAMPLES += $(TTL_BASE)/AMS_station_deployments.ttl
-#SAMPLES += $(TTL_BASE)/AMS_issue_log_ext.ttl
-
 # Flux Samples
 SAMPLES += $(TTL_BASE)/flux_sites.ttl
 SAMPLES += $(TTL_BASE)/flux_datasets.ttl
@@ -235,21 +229,6 @@ build/fdri_asset_loc_history.csv: $(SRC)/SITES_FDRI.csv $(SRC)/fdri_loc_history.
 build/ts_temporal.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/TIMESERIES_TEMPORAL_EXTENTS_COSMOS.csv $(SQL)/ts_temporal.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/ts_temporal.sql"
 
-# build/AMS_sites_ext.csv: $(SRC)/AMS_mill_site.csv $(SQL)/AMS_sites_ext.sql | build
-# 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_sites_ext.sql"
-
-# build/AMS_station_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_station_deployments.sql | build
-# 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_station_deployments.sql"
-
-# build/AMS_site_deployments.csv: build/AMS_sites_ext.csv build/AMS_asset_ext.csv $(SRC)/AMS_mill_asset_location_history.csv $(SQL)/AMS_site_deployments.sql | build
-# 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_site_deployments.sql"
-
-# build/AMS_issue_log_ext.csv: $(SRC)/AMS_issue_log.csv $(SRC)/AMS_issue_log_notes.csv build/AMS_sites_ext.csv $(SQL)/AMS_issue_log_ext.sql | build
-# 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_issue_log_ext.sql"
-
-# build/AMS_asset_ext.csv: $(SRC)/AMS_mill_assets.csv build/AMS_sites_ext.csv $(SQL)/AMS_asset_ext.sql
-# 	$(RUN) /bin/bash -c "duckdb < $(SQL)/AMS_asset_ext.sql"
-
 build/FLAG_TYPES_LINES.json: $(SRC)/flag_types.json $(SQL)/array_to_lines.jq | build
 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/array_to_lines.jq < $(SRC)/flag_types.json > $@"
 
@@ -333,6 +312,8 @@ build/processing_plans_flux.json: $(SRC)/processing_plans_flux.json $(SQL)/proce
 $(TTL_BASE)/processing_plans_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_flux.json | build/data
 	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_flux.json $@
 
+# Common name-based processing targets
+
 $(TTL_BASE)/%.ttl: $(TPL)/namespaces.yaml $(TPL)/%.yaml $(SRC)/%.csv | build/data
 	$(MAPPER) $(TPL)/$*.yaml $(SRC)/$*.csv $@
 
@@ -357,8 +338,12 @@ $(TTL_BASE)/FDRI_QC_CONFIGS.ttl: $(TPL)/namespaces.yaml $(TPL)/QC_CONFIGS.yaml $
 $(VAL)/%.ttl: $(TTL_BASE)/%.ttl $(SHACL_BASE)/fdri_shacl.ttl  | build/validation
 	$(RUN) /bin/bash -c "shacl v -d $(TTL_BASE)/$*.ttl -s $(SHACL_BASE)/fdri_shacl.ttl > $@"
 
+# Build the RDFS schema for the FDRI ontology
+
 ontology/build/fdri-metadata.rdfs.ttl:
 	make -C ontology build/fdri-metadata.rdfs.ttl
+
+# Full validation report
 
 $(VAL)/data.nt: $(SAMPLES) ontology/owl/fdri-metadata.ttl ontology/build/fdri-metadata.rdfs.ttl | build/validation
 	$(RUN) riot --output=nt $^ > $@
