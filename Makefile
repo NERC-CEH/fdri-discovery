@@ -92,8 +92,6 @@ SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
 SAMPLES += $(TTL_BASE)/ea_manual_sites.ttl
 SAMPLES += $(TTL_BASE)/ea_manual_metadata.ttl
 SAMPLES += $(TTL_BASE)/flowstick_surveys.ttl
-SAMPLES += $(TTL_BASE)/rca_sites.ttl
-SAMPLES += $(TTL_BASE)/rca_surveys.ttl
 SAMPLES += $(TTL_BASE)/sontek_surveys.ttl
 
 # Gridded Data Samples
@@ -242,12 +240,6 @@ build/fdri_asset_loc_history.csv: $(SRC)/SITES_FDRI.csv $(SRC)/fdri_loc_history.
 
 build/flowstick_surveys.csv: $(SRC)/nivu_flowstick/metadata.parquet $(SQL)/flowstick_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/flowstick_surveys.sql"
-
-build/rca_sites.csv: $(SRC)/rca_excel/sites.parquet $(SQL)/rca_sites.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/rca_sites.sql"
-
-build/rca_surveys.csv: $(SRC)/rca_excel/metadata.parquet $(SQL)/rca_surveys.sql | build
-	$(RUN) /bin/bash -c "duckdb < $(SQL)/rca_surveys.sql"
 
 build/sontek_surveys.csv: $(SRC)/sontek/metadata.parquet $(SQL)/sontek_surveys.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/sontek_surveys.sql"
