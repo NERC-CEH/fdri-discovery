@@ -671,6 +671,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-ALIC1-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -5803,6 +5813,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-BALRD-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -10710,6 +10730,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-BICKL-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -15667,6 +15697,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-BUNNY-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -20692,6 +20732,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-CARDT-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -25958,6 +26008,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-CGARW-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -25966,6 +26026,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-CGARW-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -33915,6 +33985,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-CHIMN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -41374,6 +41454,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-CHOBH-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -46655,6 +46745,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-COCHN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -46663,6 +46763,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-COCHN-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -54248,6 +54358,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-COCLP-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -59140,6 +59260,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-CRICH-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -64109,6 +64239,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-EASTB-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -64117,6 +64257,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-EASTB-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -69576,6 +69726,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-ELMST-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -76944,6 +77104,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-EUSTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -84293,6 +84463,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-FINCH-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -91707,6 +91887,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-FIVET-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -99001,6 +99191,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-GISBN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -99009,6 +99209,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-GISBN-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -104328,6 +104538,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-GLENS-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -104336,6 +104556,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-GLENS-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -109795,6 +110025,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-GLENW-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -117324,6 +117564,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HADLW-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -124441,6 +124691,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HARTW-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -128978,6 +129238,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HARWD-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -133590,6 +133860,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HENFS-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -138714,6 +138994,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HILLB-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -146063,6 +146353,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HLACY-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -153378,6 +153678,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HOLLN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -158795,6 +159105,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-HYBRY-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -165912,6 +166232,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-LIZRD-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -171136,6 +171466,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-LODTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -178318,6 +178658,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-LULLN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -183367,6 +183717,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-MOORH-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -183375,6 +183735,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-MOORH-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -188834,6 +189204,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-MOREM-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -196016,6 +196396,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-MORLY-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -200908,6 +201298,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-NWYKE-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -205877,6 +206277,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-PLYNL-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -205885,6 +206295,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-PLYNL-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -211270,6 +211690,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-PORTN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -216177,6 +216607,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-RDMER-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -221069,6 +221509,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-REDHL-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -226258,6 +226708,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-RISEH-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -233375,6 +233835,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-ROTHD-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -238844,6 +239314,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-SHEEP-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -246433,6 +246913,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-SOURH-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -246441,6 +246931,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-SOURH-CTS_SNOWFOX_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -251900,6 +252400,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-SPENF-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -259166,6 +259676,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-STGHT-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -264241,6 +264761,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-STIPS-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -269365,6 +269895,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-SYDLG-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -276547,6 +277087,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-TADHM-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -281809,6 +282359,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-WADDN-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -289500,6 +290060,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-WIMPL-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -296849,6 +297419,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-WRTTL-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
@@ -303721,6 +304301,16 @@
       "method": "rolling_mean_for_counts",
       "dep_ts": [
         "COSMOS-WYTH1-CTS_MOD_CORR_1HOUR_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "window_size",
+          "value": "PT25H"
+        },
+        {
+          "param": "threshold",
+          "value": 21
+        }
       ]
     },
     {
