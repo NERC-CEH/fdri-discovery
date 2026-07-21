@@ -47,6 +47,7 @@ DISPLACEMENT_HEIGHT,Displacement height,Displacement height in meters
 ROUGHNESS_LENGTH,Roughness length,Roughness length in meters
 ALBEDO_MAX_THRESHOLD
 ALBEDO_MIN_THRESHOLD
+ALIGNMENT,Alignment,Alignment of TimeStream RollingAggregate
 ANNOTATION
 WIND_HEIGHT
 WIND_HEIGHT.PLATFORM
@@ -66,3 +67,4 @@ THRESHOLD
 MAX_THRESHOLD
 MIN_THRESHOLD
 WINDOW
+WINDOW_SIZE,Window size,Size of window surrounding datapoint
