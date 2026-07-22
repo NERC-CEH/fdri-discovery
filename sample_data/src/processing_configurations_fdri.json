@@ -1,0 +1,938 @@
+{
+  "FDRI-SE-CARWE-01-WS": [
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-dewpoint_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-DEWPOINT_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_hr_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_HR_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_HR_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-pa_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PA_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_tot_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-rh_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-RH_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ta_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TA_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-tnr01_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-wd_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-WD_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ws_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-WS_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-dewpoint_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_hr_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-pa_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_tot_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-rh_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ta_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-wd_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ws_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 1.2
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 0.3
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-dewpoint_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-dewpoint_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_hr_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 150.0
+        },
+        {
+          "param": "gt",
+          "value": 700.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 150.0
+        },
+        {
+          "param": "gt",
+          "value": 700.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-pa_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 800.0
+        },
+        {
+          "param": "gt",
+          "value": 1200.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-pa_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 20.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-rh_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 105.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 1200.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 1200.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ta_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ta_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-tnr01_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-tnr01_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-wd_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 360.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ws_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 30.0
+        }
+      ]
+    }
+  ],
+  "FDRI-SE-SVTRP-01-WL": [
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-radar_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-radar_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 500.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-radar_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-radar_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 500.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 500.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    }
+  ]
+}
