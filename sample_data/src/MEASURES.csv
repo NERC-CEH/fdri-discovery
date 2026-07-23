@@ -182,6 +182,9 @@ TEMP_LOGGER-INST-DEGC-PT1M-PT1M,,TEMP_LOGGER,DEGC,NONE,INST,PT1M,PT1M,Instantane
 TEMP_SENSOR_INT-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_INT,DEGC,MEAN,PREC,PT30M,PT30M,Mean internal temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SENSOR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SENSOR-INST-DEGC-PT1M-PT1M,,TEMP_SENSOR,DEGC,NONE,INST,PT1M,PT1M,Instantaneous sensor temperature in degrees Celsius
+TEMP_SENSOR-INST-KEL-PT1M-PT1M,,TEMP_SENSOR,KEL,NONE,INST,PT1M,PT1M,Instantaneous sensor temperature in Kelvin
+TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,,TEMP_SENSOR,KEL,MEAN,PREC,PT1M,PT1M,Mean sensor temperature over the preceding minute in Kelvin
+TEMP_SENSOR-MEAN_PREC-KEL-PT30M-PT30M,,TEMP_SENSOR,KEL,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in Kelvin
 TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_10-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_10,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
 TEMP_SOIL_10-MEAN_PROC-DEGC-P1D-P1D,,TEMP_SOIL_10,DEGC,MEAN,PROC,P1D,P1D,Mean soil temperature at 10 cm depth over the proceeding day in degrees Celsius

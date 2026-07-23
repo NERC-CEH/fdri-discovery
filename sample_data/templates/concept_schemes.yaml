@@ -50,8 +50,8 @@ one_offs:
 
   - name: FacilityGroupTypeScheme
     properties:
-      "@id": <http://fdri.ceh.ac.uk/ref/group-type>
-      "@type": <fdri:FacilityGroupTypeScheme>
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/group-type>"
+      "@type": "<fdri:FacilityGroupTypeScheme>"
       "<dct:title>": "Monitoring Facility Group Types@en"
       "<rdfs:label>": "Monitoring Facility Group Types@en"
 
