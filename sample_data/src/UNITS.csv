@@ -17,6 +17,7 @@ LS-1,litres s-1
 M,metres
 M3S-1,m3 s-1
 M3-M3,m3/m3
+MAH,mAh
 MJD,MJday-1
 MJM-2-D,MJ m-2 day-1
 MM,mm
@@ -29,6 +30,7 @@ PCT,%
 RADIANS,rad
 REVS-1,Revolutions s-1
 RPM,rpm
+RSSI,Received Signal Strength Indicator
 SAMPLES,Samples
 SEC,Seconds
 SM-1,Sm-1
