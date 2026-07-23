@@ -12,25 +12,25 @@ one_offs:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/soil-type>"
       "@type": "<skos:ConceptScheme>"
-      "<dct:title>": "COSMOS Soil Type Classification Scheme@en"
+      "<dct:title>": "COSMOS-UK Soil Type Classification Scheme@en"
 
   - name: BedrockClassScheme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/bedrock-class>"
       "@type": "<skos:ConceptScheme>"
-      "<dct:title>": "COSMOS Bedrock Classification Scheme@en"
+      "<dct:title>": "COSMOS-UK Bedrock Classification Scheme@en"
 
   - name: Cosmos
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/network/cosmos>"
       "@type": "<fdri:EnvironmentalMonitoringNetwork>"
-      "<rdfs:label>": "COSMOS Network@en"
+      "<rdfs:label>": "COSMOS-UK@en"
 
   - name: CosmosProgramme
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/programme/cosmos>"
       "@type": "<fdri:EnvironmentalMonitoringProgramme>"
-      "<rdfs:label>": "COSMOS Programme@en"
+      "<rdfs:label>": "COSMOS-UK Programme@en"
 
 resources:
     - name: MonitoredFeature
@@ -38,7 +38,7 @@ resources:
         "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}>"
         "@type": "<fdri:GeospatialFeatureOfInterest>"
         "<rdfs:label>": "Environment at {SITE_NAME}@en"
-        "<geos:hasGeometry>": 
+        "<geos:hasGeometry>":
             - name: EastingsNorthingsPoint
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#geo-eastings>"
@@ -49,7 +49,7 @@ resources:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#geo-latlong>"
                 "@type": "<geos:Geometry>"
                 "<geos:asWKT>": "POINT({LONGITUDE} {LATITUDE})^^<geos:wktLiteral>"
-        "<fdri:hasRepresentativePoint>": 
+        "<fdri:hasRepresentativePoint>":
             - name: LatLongRepPoint
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/feature/cosmos-{SITE_ID|slug}#point-latlong>"
@@ -79,7 +79,7 @@ resources:
         "^<doo:contains>": <::Cosmos>
         "^<doo:utilises>": <::CosmosProgramme>
         "<fdri:utilisedBy>": <::CosmosProgramme>
-        "<geos:hasGeometry>": 
+        "<geos:hasGeometry>":
             - name: EastingsNorthingsPoint
               properties:
                 "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#geo-eastings>"
