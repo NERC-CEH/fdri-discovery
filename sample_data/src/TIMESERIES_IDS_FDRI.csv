@@ -122,7 +122,6 @@ FDRI-SE-CARWE-01-WS-PA_1MIN_PROCESSED,Atmospheric pressure,SE-CARWE-01,ukceh-fdr
 FDRI-SE-CARWE-01-WS-PRECIP_1MIN_PROCESSED,Precipitation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Precip_lr,time,PRECIP-TOTAL_PREC-MM-PT1M-PT1M,PROCESSED,PRECIP_FLAG_DEF
 FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_PROCESSED,Accumulated total precipitation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Precip_Tot,time,PRECIP_TOT-TOTAL_PREC-MM-PT1M-PT1M,PROCESSED,PRECIP_TOT_FLAG_DEF
 FDRI-SE-CARWE-01-WS-RH_1MIN_PROCESSED,Relative humidity,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,RH,time,RH-MEAN_PREC-PCT-PT1M-PT1M,PROCESSED,RH_FLAG_DEF
-FDRI-SE-CARWE-01-WS-TNR01_AVG_1MIN_PROCESSED,Sensor temperature (NR01),SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,PROCESSED,TNR01_FLAG_DEF
 FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF
 FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF
 FDRI-SE-CARWE-01-WS-TA_1MIN_PROCESSED,Air temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M,PROCESSED,TA_FLAG_DEF
