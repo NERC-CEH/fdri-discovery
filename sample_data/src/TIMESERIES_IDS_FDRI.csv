@@ -88,13 +88,13 @@ FDRI-SE-FOFAD-01-PR-TEMP_SOIL_4_15MIN_RAW,Soil temperature (50cm depth),SE-FOFAD
 FDRI-SE-FOFAD-01-PR-PERIOD_4_15MIN_RAW,Period (50cm depth),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_4_P,time,PROP_PERIOD-MEAN_PREC-UNITLESS-PT15M-PT15M,RAW,
 FDRI-SE-FOFAD-01-PR-PERIOD_AVG_4_15MIN_RAW,Average period (50cm depth),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_4_PA,time,PROP_PERIOD-MEAN_PREC-SEC-PT15M-PT15M,RAW,
 FDRI-SE-FOFAD-01-PR-VOLTAGE_RATIO_4_15MIN_RAW,Voltage ratio (50cm depth),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_4_VR,time,VOLTAGE_RATIO-MEAN_PREC-UNITLESS-PT15M-PT15M,RAW,
-FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW,Battery voltage,SE-SVTRP-01-WL,ukceh-dri-staging-ingested,one_minute,BattV,time,VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,RAW,
-FDRI-SE-SVTRP-01-WL-LOGGER_TEMP_1MIN_RAW,Temperature in the logger,SE-SVTRP-01-WL,ukceh-dri-staging-ingested,one_minute,PTemp_C,time,TEMP_LOGGER-INST-DEGC-PT1M-PT1M,RAW,
-FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW,Water level (Pressure transducer),SE-SVTRP-01-WL,ukceh-dri-staging-ingested,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,RAW,
-FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW,Water level (Radar),SE-SVTRP-01-WL,ukceh-dri-staging-ingested,one_minute,Stage_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,RAW,
-FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW,Water temperature (Pressure transducer),SE-SVTRP-01-WL,ukceh-dri-staging-ingested,one_minute,Temp_C_Avg,time,WATER_TEMP-INST-DEGC-PT1M-PT1M,RAW,
-FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW,Distance to water (Radar),SE-SVTRP-01-WL,ukceh-dri-staging-ingested,one_minute,Distance_m_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,RAW,
-FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_RAW,Sensor temperature (Radar),SE-SVTRP-01-WL,ukceh-dri-staging-ingested,one_minute,Inst_Temp,time,TEMP_SENSOR-INST-DEGC-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW,Battery voltage,SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,BattV,time,VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-LOGGER_TEMP_1MIN_RAW,Temperature in the logger,SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,PTemp_C,time,TEMP_LOGGER-INST-DEGC-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW,Water level (Pressure transducer),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW,Water level (Radar),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Stage_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW,Water temperature (Pressure transducer),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Temp_C_Avg,time,WATER_TEMP-INST-DEGC-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW,Distance to water (Radar),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Distance_m_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_RAW,Sensor temperature (Radar),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Inst_Temp,time,TEMP_SENSOR-INST-DEGC-PT1M-PT1M,RAW,
 FDRI-WALLING_TEST-SWIN_1MIN_RAW,Incoming shortwave radiation,WALLING_TEST,ukceh-dri-staging-ingested,thirty_minute,SWIN,time,SWIN-MEAN_PREC-WM-2-PT30M-PT30M,RAW,
 FDRI-WALLING_TEST-LWIN_1MIN_RAW,Incoming longwave radiation,WALLING_TEST,ukceh-dri-staging-ingested,thirty_minute,LWIN,time,LWIN-MEAN_PREC-WM-2-PT30M-PT30M,RAW,
 FDRI-WALLING_TEST-SWOUT_1MIN_RAW,Outgoing shortwave radiation,WALLING_TEST,ukceh-dri-staging-ingested,thirty_minute,SWOUT,time,SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,RAW,
@@ -119,8 +119,8 @@ FDRI-SE-CARWE-01-WS-TA_1MIN_PROCESSED,Air temperature,SE-CARWE-01,ukceh-fdri-sta
 FDRI-SE-CARWE-01-WS-TNR01_1MIN_PROCESSED,Sensor temperature (NR01),SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,T_nr,time,TEMP_SENSOR-INST-KEL-PT1M-PT1M,PROCESSED,TNR01_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WD_1MIN_PROCESSED,Wind direction,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,PROCESSED,WD_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WS_1MIN_PROCESSED,Wind speed,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,WS_ms_Avg,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,PROCESSED,WS_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED,Distance to water (Radar),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Distance_m_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,DIST_TO_WATER_RADAR_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_PROCESSED,Sensor temperature (Radar),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Inst_Temp,time,TEMP_SENSOR-INST-DEGC-PT1M-PT1M,PROCESSED,RADAR_TEMP_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_PROCESSED,Water level (Pressure transducer),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,WATER_LEV_PT_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED,Water level (Radar),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Stage_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,WATER_LEV_RADAR_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_PROCESSED,Water temperature (Pressure transducer),SE-SVTRP-01-WL,ukceh-fdri-staging-timeseries-processed,one_minute,Temp_C_Avg,time,WATER_TEMP-INST-DEGC-PT1M-PT1M,PROCESSED,WATER_TEMP_FLAG_DEF
+FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED,Distance to water (Radar),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Distance_m_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,DIST_TO_WATER_RADAR_FLAG_DEF
+FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_PROCESSED,Sensor temperature (Radar),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Inst_Temp,time,TEMP_SENSOR-INST-DEGC-PT1M-PT1M,PROCESSED,RADAR_TEMP_FLAG_DEF
+FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_PROCESSED,Water level (Pressure transducer),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,WATER_LEV_PT_FLAG_DEF
+FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED,Water level (Radar),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Stage_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,WATER_LEV_RADAR_FLAG_DEF
+FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_PROCESSED,Water temperature (Pressure transducer),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Temp_C_Avg,time,WATER_TEMP-INST-DEGC-PT1M-PT1M,PROCESSED,WATER_TEMP_FLAG_DEF
