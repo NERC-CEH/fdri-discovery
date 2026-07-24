@@ -16,7 +16,6 @@ FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW,Incoming shortwave radiation,SE-CARWE-01,ukceh
 FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW,Incoming longwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW,Outgoing longwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,
-FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW,Sensor temperature (NR01),SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,T_nr,time,TEMP_SENSOR-INST-KEL-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-TNR01_AVG_1MIN_RAW,Sensor temperature (NR01),SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-TA_1MIN_RAW,Air temperature,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-DEWPOINT_1MIN_RAW,Dew point temperature,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,DewPoint_C,time,DEW_POINT-INST-DEGC-PT1M-PT1M,RAW,
@@ -125,7 +124,6 @@ FDRI-SE-CARWE-01-WS-RH_1MIN_PROCESSED,Relative humidity,SE-CARWE-01,ukceh-fdri-s
 FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF
 FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF
 FDRI-SE-CARWE-01-WS-TA_1MIN_PROCESSED,Air temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M,PROCESSED,TA_FLAG_DEF
-FDRI-SE-CARWE-01-WS-TNR01_1MIN_PROCESSED,Sensor temperature (NR01),SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,T_nr,time,TEMP_SENSOR-INST-KEL-PT1M-PT1M,PROCESSED,TNR01_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WD_1MIN_PROCESSED,Wind direction,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,PROCESSED,WD_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WS_1MIN_PROCESSED,Wind speed,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,WS_ms_Avg,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,PROCESSED,WS_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED,Distance to water (Radar),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Distance_m_Avg,time,WATER_LEVEL-INST-M-PT1M-PT1M,PROCESSED,DIST_TO_WATER_RADAR_FLAG_DEF

@@ -121,14 +121,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-tnr01_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-wd_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -627,32 +619,6 @@
     },
     {
       "id": "fdri-se-carwe-01-ws-ta_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-tnr01_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -35.0
-        },
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-tnr01_1min-spike",
       "type": "qc",
       "method": "SPIKE",
       "parameters": [
