@@ -188,9 +188,6 @@ At the quality control stage of the `PROCESS`, the following files are searched:
 - `METHODS.csv`
 - `PARAMS.csv`
 - `METHOD_PARAMS.csv`
-- `QC_FLAG_CODES.csv`
-
-These work similarly to those files used during the correction stage. The additional file `QC_FLAG_CODES.csv` manages the flagging mechanism, where flags are added to the data if the dataset does not meet the QC tests.
 
 Recently some QC configs have been added to `FDRI_QC_CONFIGS.csv`, e.g. battery voltage: `"BATTV"`.
 

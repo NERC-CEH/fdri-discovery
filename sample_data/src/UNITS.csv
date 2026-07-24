@@ -9,6 +9,7 @@ DEGF,Deg Fahrenheit
 DSM-1,dSm-1
 GM-3,gm-3
 HPA,hPa
+KEL,Kelvin
 KGM-1S-2,kgm-1s-2
 KGM-3,kgm-3
 KPA,kPa
@@ -34,6 +35,7 @@ RSSI,Received Signal Strength Indicator
 SAMPLES,Samples
 SEC,Seconds
 SM-1,Sm-1
+UAMP,uA
 UNITLESS,Unitless
 V,V
 WM-2,Wm-2

@@ -11,21 +11,26 @@ CO2_FLUX-MEAN_PREC-UMOLM-2S-1-PT30M-PT30M,,CO2_FLUX,UMOLM-2S-1,MEAN,PREC,PT30M,P
 COND_10-INST-DSM-1-PT15M-PT15M,,COND_10,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous electrical conductivity at 10 cm depth in dS/m
 COND_10-INST-DSM-1-PT30M-PT30M,,COND_10,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 10 cm depth
 COND_10-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_10,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity over the preceding 10 minutes at 10 cm depth
+COND_10-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_10,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 10 cm depth over the preceding 15 minutes in dS/m
 COND_15-INST-DSM-1-PT15M-PT15M,,COND_15,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous electrical conductivity at 15 cm depth in dS/m
 COND_15-INST-DSM-1-PT30M-PT30M,,COND_15,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 15 cm depth
+COND_15-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_15,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 15 cm depth over the preceding 15 minutes in dS/m
 COND_20-INST-DSM-1-PT30M-PT30M,,COND_20,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 20 cm depth
 COND_20-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_20,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity over the preceding 10 minutes at 20 cm depth
 COND_25-INST-DSM-1-PT15M-PT15M,,COND_25,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous electrical conductivity at 25 cm depth in dS/m
 COND_25-INST-DSM-1-PT30M-PT30M,,COND_25,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 25 cm depth
+COND_25-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_25,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 25 cm depth over the preceding 15 minutes in dS/m
 COND_30-INST-DSM-1-PT30M-PT30M,,COND_30,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 30 cm depth
 COND_30-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_30,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity over the preceding 10 minutes at 30 cm depth
 COND_40-INST-DSM-1-PT30M-PT30M,,COND_40,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 40 cm depth
 COND_40-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_40,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity over the preceding 10 minutes at 40 cm depth
 COND_5-INST-DSM-1-PT15M-PT15M,,COND_5,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous electrical conductivity at 5 cm depth in dS/m
 COND_5-INST-DSM-1-PT30M-PT30M,,COND_5,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 5 cm depth
+COND_5-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_5,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 5 cm depth over the preceding 15 minutes in dS/m
 COND_50-INST-DSM-1-PT15M-PT15M,,COND_50,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous electrical conductivity at 50 cm depth in dS/m
 COND_50-INST-DSM-1-PT30M-PT30M,,COND_50,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 50 cm depth
 COND_50-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_50,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity over the preceding 10 minutes at 50 cm depth
+COND_50-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_50,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 50 cm depth over the preceding 15 minutes in dS/m
 COND_60-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_60,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity over the preceding 10 minutes at 60 cm depth
 COND-MEAN_PREC-DSM-1-PT15M-PT15M,,COND,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in dS/m
 COV_TS_UX-INST-KMS-1-PT30M-PT30M,,COV_TS_UX,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UX wind speed component in kelvin meters per second
@@ -34,6 +39,7 @@ COV_TS_UZ-INST-KMS-1-PT30M-PT30M,,COV_TS_UZ,KMS-1,NONE,INST,PT30M,PT30M,Instanta
 COV_UX_UY-INST-MS-1-PT30M-PT30M,,COV_UX_UY,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UY in meters per second
 COV_UX_UZ-INST-MS-1-PT30M-PT30M,,COV_UX_UZ,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UZ in meters per second
 COV_UY_UZ-INST-MS-1-PT30M-PT30M,,COV_UY_UZ,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UY and UZ in meters per second
+CURRENT-INST-UAMP-PT30M-PT30M,,CURRENT,UAMP,NONE,INST,PT30M,PT30M,Instantaneous current over the preceding 30 minutes in microampere
 D86_150M-MEAN_PREC-CM-PT1H-PT1H,,D86_150M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 150m from CRNS in cm over preceding hour
 D86_150M-MEAN_PROC-CM-P1D-P1D,,D86_150M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 150m from CRNS in cm over proceeding day
 D86_1M-MEAN_PREC-CM-PT1H-PT1H,,D86_1M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 1m from CRNS in cm over preceding hour
@@ -121,10 +127,12 @@ MATPOT_SOIL_40-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_40,KPA,MEAN,PREC,PT10M,PT1
 MATPOT_SOIL_50-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_50,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 50 cm depth over preceding 10 minutes in kilopascals
 MATPOT_SOIL_60-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_60,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 60 cm depth over preceding 10 minutes in kilopascals
 MEASURE_PERIOD-TOTAL_PREC-M_SEC-PT1H-PT1H,,MEASURE_PERIOD,M_SEC,TOTAL,PREC,PT1H,PT1H,Total measurement period over the preceding hour in milliseconds
+MEASURE_PERIOD-TOTAL_PREC-M_SEC-PT30M-PT30M,,MEASURE_PERIOD,M_SEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over the preceding 30 minutes in milliseconds
 MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
 MSLP-MEAN_PREC-HPA-PT30M-PT30M,,MSLP,HPA,MEAN,PREC,PT30M,PT30M,Mean sea level pressure over the preceding 30 minutes in hectopascals
 MSLP-MEAN_PROC-HPA-P1D-P1D,,MSLP,HPA,MEAN,PROC,P1D,P1D,Mean sea level pressure over the proceeding day in hectopascals
 MUON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,MUON_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total muon count over the preceding hour in counts
+MUON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,MUON_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total muon count over the preceding 30 minutes in counts
 NAN_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,NAN_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
 NEUTRON_COUNT_COR-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_COR,CTS,TOTAL,PREC,PT1H,PT1H,Total corrected neutron count over the preceding hour
 NEUTRON_COUNT_COR-TOTAL_PROC-CTS-P1D-P1D,,NEUTRON_COUNT_COR,CTS,TOTAL,PROC,P1D,P1D,Total corrected neutron count over the proceeding day
@@ -182,6 +190,8 @@ PRECIP-TOTAL_PROC-MM-P1D-P1D,,PRECIP,MM,TOTAL,PROC,P1D,P1D,Total precipitation o
 PROP_PERIOD-INST-SEC-PT10M-PT10M,,PROP_PERIOD,SEC,NONE,INST,PT10M,PT10M,Instantaneous instrument period over 10 minutes
 PROP_PERIOD-INST-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,NONE,INST,PT15M,PT15M,Instantaneous instrument period in seconds
 PROP_PERIOD-MEAN_PREC-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes in seconds
+PROP_PERIOD-MEAN_PREC-UNITLESS-PT15M-PT15M,,PROP_PERIOD,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes (unitless)
+PULSE_HEIGHT_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,PULSE_HEIGHT_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count of pulses at particular pulse-height(s) over the preceding 30 minutes
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
 Q-MEAN_PROC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PROC,P1D,P1D,Mean absolute humidity over the proceeding day in grams per cubic metre
@@ -213,9 +223,12 @@ SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,,SOC_BATT,PCT,MEAN,PREC,PT1M,PT1M,Mean battery 
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
 SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees
 STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
+STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,STATUS_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count over the preceding 30 minutes in counts
 STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,NONE,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
 SWE_AREAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_AREAL,PCT,MEAN,PREC,PT1H,PT1H,Mean areal snow water equivalent over the preceding hour in percent
+SWE_AREAL-MEAN_PREC-PCT-PT30M-PT30M,,SWE_AREAL,PCT,MEAN,PREC,PT30M,PT30M,Mean areal snow water equivalent over the preceding 30 minutes in percent
 SWE_LOCAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_LOCAL,PCT,MEAN,PREC,PT1H,PT1H,Mean local snow water equivalent over the preceding hour in percent
+SWE_LOCAL-MEAN_PREC-PCT-PT30M-PT30M,,SWE_LOCAL,PCT,MEAN,PREC,PT30M,PT30M,Mean local snow water equivalent over the preceding 30 minutes in percent
 SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
 SWE-MEAN_PROC-MM-P1D-P1D,,SWE,MM,MEAN,PROC,P1D,P1D,Mean snow water equivalent over the proceeding day in millimetres
 SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
@@ -238,11 +251,16 @@ TEMP_AIR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,STDDEV,PREC,PT30M,PT30M,Sta
 TEMP_LOADCELL-INST-MM-PT1M-PT1M,,TEMP_LOADCELL,MM,NONE,INST,PT1M,PT1M,Instantaneous internal temperature of load cell in millimetres
 TEMP_LOGGER-INST-DEGC-PT1M-PT1M,,TEMP_LOGGER,DEGC,NONE,INST,PT1M,PT1M,Instantaneous logger temperature in degrees Celsius
 TEMP_NR-MEAN_PREC-DEGC-PT1M-PT1M,,TEMP_NR,DEGC,MEAN,PREC,PT1M,PT1M,Mean net radiometer temperature over preceding minute in degrees Celsius
+TEMP_NR-MEAN_PREC-DEGC-PT1M-PT1M,,TEMP_NR,DEGC,MEAN,PREC,PT1M,PT1M,Mean net radiometer temperature over preceding minute in degrees Celsius
 TEMP_NR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_NR,DEGC,MEAN,PREC,PT30M,PT30M,Mean net radiometer temperature over preceding 30 minutes in degrees Celsius
 TEMP_SENSOR_INT-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_INT,DEGC,MEAN,PREC,PT30M,PT30M,Mean internal temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SENSOR-INST-DEGC-PT1M-PT1M,,TEMP_SENSOR,DEGC,NONE,INST,PT1M,PT1M,Instantaneous sensor temperature in degrees Celsius
+TEMP_SENSOR-INST-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,NONE,INST,PT30M,PT30M,Instantaneous temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_SENSOR-INST-KEL-PT1M-PT1M,,TEMP_SENSOR,KEL,NONE,INST,PT1M,PT1M,Instantaneous sensor temperature in Kelvin
 TEMP_SENSOR-MEAN_PREC-DEGC-PT1H-PT1H,,TEMP_SENSOR,DEGC,MEAN,PREC,PT1H,PT1H,Mean sensor temperature over the preceding hour in degrees Celsius
 TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,,TEMP_SENSOR,KEL,MEAN,PREC,PT1M,PT1M,Mean sensor temperature over the preceding minute in Kelvin
+TEMP_SENSOR-MEAN_PREC-KEL-PT30M-PT30M,,TEMP_SENSOR,KEL,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in Kelvin
 TEMP_SENSOR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_10-INST-DEGC-PT10M-PT10M,,TEMP_SOIL_10,DEGC,NONE,INST,PT10M,PT10M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
 TEMP_SOIL_10-INST-DEGC-PT15M-PT15M,,TEMP_SOIL_10,DEGC,NONE,INST,PT15M,PT15M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
@@ -308,10 +326,14 @@ VOLTAGE_BATT-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE_BATT,V,MEAN,PREC,PT30M,PT30M,Mean 
 VOLTAGE_RATIO-INST-UNITLESS-PT15M-PT15M,,VOLTAGE_RATIO,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous voltage ratio (unitless)
 VOLTAGE_RATIO-MEAN_PREC-UNITLESS-PT15M-PT15M,,VOLTAGE_RATIO,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean voltage ratio over the preceding 15 minutes (unitless)
 VOLTAGE-INST-V-PT15M-PT15M,,VOLTAGE,V,NONE,INST,PT15M,PT15M,Instantaneous voltage over the preceding 15 minutes in volts
+VOLTAGE-INST-V-PT30M-PT30M,,VOLTAGE,V,NONE,INST,PT30M,PT30M,Instantaneous voltage over the preceding 30 minutes in volts
 VOLTAGE-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE,V,MEAN,PREC,PT1H,PT1H,Mean voltage over the preceding hour in volts
+VOLTAGE-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE,V,MEAN,PREC,PT30M,PT30M,Mean voltage over the preceding 30 minutes in volts
 VPD-MEAN_PREC-HPA-PT30M-PT30M,,VPD,HPA,MEAN,PREC,PT30M,PT30M,Mean vapour pressure deficit over the preceding 30 minutes in hectopascals
 VWC_CRNS_NO_SNOW-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS_NO_SNOW,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube (with snow content removed) over the proceeding day in percent
 VWC_CRNS-MEAN_PREC-PCT-PT1H-PT1H,,VWC_CRNS,PCT,MEAN,PREC,PT1H,PT1H,Mean volumetric water content from CRNS tube over the preceding hour in percent
+VWC_CRNS-MEAN_PREC-PCT-PT30M-PT30M,,VWC_CRNS,PCT,MEAN,PREC,PT30M,PT30M,Mean volumetric water content from CRNS tube over the preceding 30 minutes in percent
+VWC_CRNS-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube over the proceeding day in percent
 VWC_CRNS-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube over the proceeding day in percent
 VWC_SOIL_10-INST-M3-M3-PT15M-PT15M,,VWC_SOIL_10,M3-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 10 cm depth in cubic metres per cubic metre
 VWC_SOIL_10-INST-PCT-PT10M-PT10M,,VWC_SOIL_10,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 10 cm depth in percent
