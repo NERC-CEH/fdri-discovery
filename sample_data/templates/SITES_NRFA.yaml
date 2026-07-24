@@ -12,7 +12,7 @@ one_offs:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/network/nrfa>"
       "@type": "<fdri:EnvironmentalMonitoringNetwork>"
-      "<rdfs:label>": "NRFA Network@en"
+      "<rdfs:label>": "NRFA@en"
 
   - name: NrfaProgramme
     properties:
@@ -180,4 +180,3 @@ resources:
       "<rdfs:label>": "{COUNTRY_CODE}@en"
       "<dct:type>": "<http://fdri.ceh.ac.uk/ref/common/facility-group-type/country>"
       "<fdri:hasMember>": <::MonitoringSite>
-

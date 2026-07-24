@@ -12,7 +12,7 @@ one_offs:
     properties:
       "@id": "<http://fdri.ceh.ac.uk/id/network/nmdb>"
       "@type": "<fdri:EnvironmentalMonitoringNetwork>"
-      "<rdfs:label>": "NMDB Network@en"
+      "<rdfs:label>": "NMDB@en"
       "<foaf:homepage>": "https://www.nmdb.eu/station/^^<xsd:anyURI>"
 
   - name: Programme
@@ -48,4 +48,3 @@ resources:
             "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}#operating-period>"
             "@type": "<dct:PeriodOfTime>"
             "<dcat:startDate>": "{DATE_INSTALLED | asDateOrDatetime}"
-
