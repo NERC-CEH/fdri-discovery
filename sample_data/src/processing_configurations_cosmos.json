@@ -2343,69 +2343,6 @@
       ]
     },
     {
-      "id": "cosmos-alic1-pe_1day-mean_sum",
-      "type": "aggregate",
-      "method": "mean_sum",
-      "dep_ts": [
-        "COSMOS-ALIC1-PE_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "cosmos-alic1-pe_30min-calculate_pe",
-      "type": "calculate",
-      "method": "calculate_PE",
-      "dep_ts": [
-        "COSMOS-ALIC1-RN_30MIN_PROCESSED",
-        "COSMOS-ALIC1-G_30MIN_PROCESSED",
-        "COSMOS-ALIC1-TA_30MIN_PROCESSED",
-        "COSMOS-ALIC1-RH_30MIN_PROCESSED",
-        "COSMOS-ALIC1-WS_30MIN_PROCESSED",
-        "COSMOS-ALIC1-PA_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 5
-        },
-        {
-          "param": "wind_height",
-          "structured_value": [
-            [
-              {
-                "param": "platform",
-                "value": "cosmos-alic-aws_anem"
-              },
-              {
-                "param": "attribute",
-                "value": "deployedHeight"
-              },
-              {
-                "param": "source",
-                "value": "deployment"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cosmos-alic1-pe_30min-correction-clip",
-      "type": "correction",
-      "method": "CLIP",
-      "parameters": [
-        {
-          "param": "min",
-          "value": 0
-        }
-      ]
-    },
-    {
       "id": "cosmos-alic1-precip_1day-sum",
       "type": "aggregate",
       "method": "sum",
@@ -130372,69 +130309,6 @@
         {
           "param": "gt",
           "value": 20.0
-        }
-      ]
-    },
-    {
-      "id": "cosmos-harwd-pe_1day-mean_sum",
-      "type": "aggregate",
-      "method": "mean_sum",
-      "dep_ts": [
-        "COSMOS-HARWD-PE_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "cosmos-harwd-pe_30min-calculate_pe",
-      "type": "calculate",
-      "method": "calculate_PE",
-      "dep_ts": [
-        "COSMOS-HARWD-RN_30MIN_PROCESSED",
-        "COSMOS-HARWD-G_30MIN_PROCESSED",
-        "COSMOS-HARWD-TA_30MIN_PROCESSED",
-        "COSMOS-HARWD-RH_30MIN_PROCESSED",
-        "COSMOS-HARWD-WS_30MIN_PROCESSED",
-        "COSMOS-HARWD-PA_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 5
-        },
-        {
-          "param": "wind_height",
-          "structured_value": [
-            [
-              {
-                "param": "platform",
-                "value": "cosmos-harwd-aws_anem"
-              },
-              {
-                "param": "attribute",
-                "value": "deployedHeight"
-              },
-              {
-                "param": "source",
-                "value": "deployment"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cosmos-harwd-pe_30min-correction-clip",
-      "type": "correction",
-      "method": "CLIP",
-      "parameters": [
-        {
-          "param": "min",
-          "value": 0
         }
       ]
     },
@@ -305505,69 +305379,6 @@
         {
           "param": "gt",
           "value": 20.0
-        }
-      ]
-    },
-    {
-      "id": "cosmos-wyth1-pe_1day-mean_sum",
-      "type": "aggregate",
-      "method": "mean_sum",
-      "dep_ts": [
-        "COSMOS-WYTH1-PE_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "cosmos-wyth1-pe_30min-calculate_pe",
-      "type": "calculate",
-      "method": "calculate_PE",
-      "dep_ts": [
-        "COSMOS-WYTH1-RN_30MIN_PROCESSED",
-        "COSMOS-WYTH1-G_30MIN_PROCESSED",
-        "COSMOS-WYTH1-TA_30MIN_PROCESSED",
-        "COSMOS-WYTH1-RH_30MIN_PROCESSED",
-        "COSMOS-WYTH1-WS_30MIN_PROCESSED",
-        "COSMOS-WYTH1-PA_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 5
-        },
-        {
-          "param": "wind_height",
-          "structured_value": [
-            [
-              {
-                "param": "platform",
-                "value": "cosmos-wyth1-aws_anem"
-              },
-              {
-                "param": "attribute",
-                "value": "deployedHeight"
-              },
-              {
-                "param": "source",
-                "value": "deployment"
-              }
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cosmos-wyth1-pe_30min-correction-clip",
-      "type": "correction",
-      "method": "CLIP",
-      "parameters": [
-        {
-          "param": "min",
-          "value": 0
         }
       ]
     },

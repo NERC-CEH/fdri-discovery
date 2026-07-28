@@ -448,21 +448,6 @@
       ]
     },
     {
-      "id": "cosmos-alic1-pe_1day-plan",
-      "output": "cosmos-alic1-pe_1day_processed",
-      "steps": [
-        "cosmos-alic1-pe_1day-mean_sum"
-      ]
-    },
-    {
-      "id": "cosmos-alic1-pe_30min-plan",
-      "output": "cosmos-alic1-pe_30min_processed",
-      "steps": [
-        "cosmos-alic1-pe_30min-calculate_pe",
-        "cosmos-alic1-pe_30min-correction-clip"
-      ]
-    },
-    {
       "id": "cosmos-alic1-precip_1day-plan",
       "output": "cosmos-alic1-precip_1day_processed",
       "steps": [
@@ -29157,21 +29142,6 @@
         "cosmos-harwd-pa_30min-samples",
         "cosmos-harwd-pa_30min-spike",
         "cosmos-harwd-pa_30min-infill"
-      ]
-    },
-    {
-      "id": "cosmos-harwd-pe_1day-plan",
-      "output": "cosmos-harwd-pe_1day_processed",
-      "steps": [
-        "cosmos-harwd-pe_1day-mean_sum"
-      ]
-    },
-    {
-      "id": "cosmos-harwd-pe_30min-plan",
-      "output": "cosmos-harwd-pe_30min_processed",
-      "steps": [
-        "cosmos-harwd-pe_30min-calculate_pe",
-        "cosmos-harwd-pe_30min-correction-clip"
       ]
     },
     {
@@ -68323,21 +68293,6 @@
         "cosmos-wyth1-pa_30min-samples",
         "cosmos-wyth1-pa_30min-spike",
         "cosmos-wyth1-pa_30min-infill"
-      ]
-    },
-    {
-      "id": "cosmos-wyth1-pe_1day-plan",
-      "output": "cosmos-wyth1-pe_1day_processed",
-      "steps": [
-        "cosmos-wyth1-pe_1day-mean_sum"
-      ]
-    },
-    {
-      "id": "cosmos-wyth1-pe_30min-plan",
-      "output": "cosmos-wyth1-pe_30min_processed",
-      "steps": [
-        "cosmos-wyth1-pe_30min-calculate_pe",
-        "cosmos-wyth1-pe_30min-correction-clip"
       ]
     },
     {
