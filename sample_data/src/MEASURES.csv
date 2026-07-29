@@ -495,3 +495,15 @@ WS-MEAN_PREC-MS-1-PT1M-PT1M,,WS,MS-1,MEAN,PREC,PT1M,PT1M,Mean wind speed over th
 WS-MEAN_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MEAN,PREC,PT30M,PT30M,Mean wind speed over the preceding 30 minutes in meters per second
 WS-MEAN_PROC-MS-1-P1D-P1D,,WS,MS-1,MEAN,PROC,P1D,P1D,Mean wind speed over the proceeding day in meters per second
 WS-STDDEV_PREC-MS-1-PT30M-PT30M,,WS,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second
+FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-1,NONE,PREC,PT30M,PT30M,Mean momentum flux over the preceding 30 minutes
+HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,MEAN,PREC,PT30M,PT30M,Mean sensible heat flux over the preceding 30 minutes (unitless)
+HEATFLUX_STORAGE_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_STORAGE_SENSIBLE,WM-2,MEAN,PREC,PT30M,PT30M,Mean sensible storage heat flux over the preceding 30 minutes
+HEATFLUX_STORAGE_LATENT-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_STORAGE_LATENT,WM-2,MEAN,PREC,PT30M,PT30M,Mean latent storage heat flux over the preceding 30 minutes
+CO2_FLUX_STORAGE-MEAN-PREC-UMOLM-2S-1-PT30M-PT30M,,CO2_FLUX_STORAGE,UMOLM-2S-1,MEAN,PREC,PT30M,PT30M,Mean storage gas flux of CO2 over the preceding 30 minutes
+H2O_FLUX_STORAGE-MEAN-PREC-UMOLM-2S-1-PT30M-PT30M,,H2O_FLUX_STORAGE,UMOLM-2S-1,MEAN,PREC,PT30M,PT30M,Mean storage gas flux of H2O over the preceding 30 minutes
+CO2_MOLAR_DENSITY-MEAN-PREC-MMOLM-3-PT30M-PT30M,,CO2_MOLAR_DENSITY,MMOLM-3,MEAN,PREC,PT30M,PT30M,Mean molar density of CO2 over the preceding 30 minutes
+H2O_MOLAR_DENSITY-MMOLM-3,,H2O_MOLAR_DENSITY,MMOLM-3,,,,,Mean molar density of H2O over the preceding 30 minutes
+TEMP_SONIC-MEAN-PREC-KEL-PT30M-PT30M,,TEMP_SONIC,KEL,MEAN,PREC,PT30M,PT30M,Mean sonic temperature over the preceding 30 minutes in Kelvin
+TEMP_AIR-MEAN-PREC-KEL-PT30M-PT30M,,TEMP_AIR,KEL,MEAN,PREC,PT30M,PT30M,Mean air temperature over the preceding 30 minutes in Kelvin
+AIR_HEAT_CAPACITY-JK-1-KG-1,,AIR_HEAT_CAPACITY,JK-1KG-1,MEAN,PREC,PT30M,PT30M,Specific heat at constant pressure of ambient air
+AIR_MOLAR_VOLUME,Molar volume of ambient air,AIR,MOLAR-VOLUME,
