@@ -103,7 +103,7 @@
       "resolution": "PT1M",
       "periodicity": "PT1M",
       "processing_level": "raw",
-      "measure_id": "TEMP_NR-MEAN_PREC-DEGC-PT1M-PT1M"
+      "measure_id": "TEMP_SENSOR-MEAN_PREC-DEGC-PT1M-PT1M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin",
@@ -253,7 +253,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "TEMP_NR-MEAN_PREC-DEGC-PT30M-PT30M"
+      "measure_id": "TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-biomet-swin-30min",
