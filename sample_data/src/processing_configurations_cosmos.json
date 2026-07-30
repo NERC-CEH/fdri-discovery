@@ -32409,6 +32409,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-CGARW-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-CGARW-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-CGARW-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-CGARW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-CGARW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-CGARW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-CHIMN": [
@@ -53160,6 +53391,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-COCHN-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-COCHN-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-COCHN-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-COCHN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-COCHN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-COCHN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -75829,6 +76291,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-ELMST-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-ELMST-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-ELMST-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-ELMST-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-ELMST-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-ELMST-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-EUSTN": [
@@ -83190,6 +83883,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-EUSTN-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-EUSTN-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-EUSTN-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-EUSTN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-EUSTN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-EUSTN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -90620,6 +91544,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-FINCH-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-FINCH-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-FINCH-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-FINCH-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-finch-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-FINCH-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-finch-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-FINCH-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-finch-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-FIVET": [
@@ -97981,6 +99136,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-FIVET-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-FIVET-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-FIVET-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-FIVET-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-FIVET-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-FIVET-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -116321,6 +117707,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-GLENW-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-GLENW-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-GLENW-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-GLENW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-GLENW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-GLENW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-HADLW": [
@@ -123682,6 +125299,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HADLW-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HADLW-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HADLW-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HADLW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HADLW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HADLW-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -145067,6 +146915,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HILLB-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HILLB-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HILLB-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HILLB-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HILLB-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HILLB-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-HLACY": [
@@ -152493,6 +154572,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HLACY-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HLACY-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HLACY-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HLACY-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HLACY-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HLACY-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -165190,6 +167500,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HYBRY-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HYBRY-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-HYBRY-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HYBRY-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HYBRY-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-HYBRY-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-LIZRD": [
@@ -177622,6 +180163,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-LODTN-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-LODTN-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-LODTN-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-LODTN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-LODTN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-LODTN-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -195376,6 +198148,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-MOREM-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-MOREM-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-MOREM-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-MOREM-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-morem-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-MOREM-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-morem-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-MOREM-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-morem-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -232849,6 +235852,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-RISEH-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-RISEH-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-RISEH-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-RISEH-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-RISEH-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-RISEH-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-ROTHD": [
@@ -258610,6 +261844,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-SPENF-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-SPENF-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-SPENF-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-SPENF-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-SPENF-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-SPENF-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-STGHT": [
@@ -276131,6 +279596,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-SYDLG-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-SYDLG-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-SYDLG-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-SYDLG-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-SYDLG-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-SYDLG-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
@@ -296245,6 +299941,237 @@
           "value": "LAT"
         }
       ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-WIMPL-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-WIMPL-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-WIMPL-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-WIMPL-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-WIMPL-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-WIMPL-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
     }
   ],
   "COSMOS-WRTTL": [
@@ -303671,6 +307598,237 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc15_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-WRTTL-PROFILE_VWC15_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc40_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-WRTTL-PROFILE_VWC40_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc65_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "COSMOS-WRTTL-PROFILE_VWC65_30MIN_RAW"
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc15_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-WRTTL-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc15_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc15_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc15_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc15_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc40_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-WRTTL-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc40_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc40_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc40_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc40_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc65_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "COSMOS-WRTTL-BATTV_30MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc65_30min-error_code",
+      "type": "qc",
+      "method": "ERROR_CODE",
+      "parameters": [
+        {
+          "param": "value",
+          "value": [
+            7999.0,
+            8999.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc65_30min-infill",
+      "type": "infill",
+      "parameters": [
+        {
+          "param": "window",
+          "value": 1
+        },
+        {
+          "param": "max_gap_size",
+          "value": 6
+        }
+      ],
+      "method": "linear_interp"
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc65_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc65_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
         }
       ]
     }
