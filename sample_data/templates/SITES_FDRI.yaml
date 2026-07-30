@@ -32,7 +32,7 @@ resources:
       "^<doo:contains>": <::Network>
       "^<doo:utilises>": <::Programme>
       "<fdri:utilisedBy>": <::Programme>
-      "<geos:hasGeometry>": 
+      "<geos:hasGeometry>":
           - name: LatLongPoint
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#geo-latlong>"
@@ -46,6 +46,7 @@ resources:
               "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#operating-period>"
               "@type": "<dct:PeriodOfTime>"
               "<dcat:startDate>": "{Date_installed | asDateOrDatetime}"
+              "<dcat:endDate>": "{Date_decomissioned | asDateOrDatetime}"
       "<fdri:hasAnnotation>":
           - name: StandardInstallation
             requires:
@@ -101,4 +102,3 @@ resources:
       "@type": "<fdri:EnvironmentalMonitoringPlatform>"
       "<dct:identifier>": "{Site_type}"
       "^<dct:hasPart>": <::MonitoringSite>
-

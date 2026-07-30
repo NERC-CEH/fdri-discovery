@@ -28,7 +28,7 @@
       "input": "FDRI-SE-CARWE-01-WS-PRECIP_INT_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-precip_int_1min-load_raw",
-        "fdri-se-carwe-01-ws-dewpoint_1min-battery_v",
+        "fdri-se-carwe-01-ws-precip_int_1min-battery_v",
         "fdri-se-carwe-01-ws-precip_int_1min-battery_v",
         "fdri-se-carwe-01-ws-precip_int_1min-range"
       ]
@@ -152,16 +152,6 @@
         "fdri-se-carwe-01-ws-ta_1min-battery_v",
         "fdri-se-carwe-01-ws-ta_1min-range",
         "fdri-se-carwe-01-ws-ta_1min-spike"
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-tnr01_1min-plan",
-      "output": "fdri-se-carwe-01-ws-tnr01_1min_processed",
-      "input": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW",
-      "steps": [
-        "fdri-se-carwe-01-ws-tnr01_1min-load_raw",
-        "fdri-se-carwe-01-ws-tnr01_1min-range",
-        "fdri-se-carwe-01-ws-tnr01_1min-spike"
       ]
     },
     {
