@@ -146,6 +146,7 @@ PERM_50-INST-UNITLESS-PT15M-PT15M,,PERM_50,UNITLESS,NONE,INST,PT15M,PT15M,Instan
 PERM_50-INST-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous electrical permittivity at 50 cm depth
 PERM_50-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_50,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 50 cm depth over the preceding 10 minutes
 POWER-INST-MAH-PT15M-PT15M,,POWER,MAH,NONE,INST,PT15M,PT15M,Instantaneous power consumption over the preceding 15 minutes in milliamp-hours
+POWER-INST-MAH-PT1H-PT1H,,POWER,MAH,NONE,INST,PT1H,PT1H,Instantaneous power consumption over the preceding hour in milliamp-hours
 PPFD_IN-INST-UMOLM-2S-1-PT1M-PT1M,,PPFD_IN,UMOLM-2S-1,NONE,INST,PT1M,PT1M,Instantaneous incoming photosynthetic photon flux density
 PRECIP_INTEN_LR-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_HR-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per hour
 PRECIP_INTEN_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per minute
@@ -189,6 +190,7 @@ SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT1H-PT1H,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,P
 SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless)
 SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous status of sensor
 SIGNAL_STRENGTH-INST-RSSI-PT15M-PT15M,,SIGNAL_STRENGTH,RSSI,NONE,INST,PT15M,PT15M,Instantaneous signal strength over the preceding 15 minutes in received signal strength indicator
+SIGNAL_STRENGTH-INST-RSSI-PT1H-PT1H,,SIGNAL_STRENGTH,RSSI,NONE,INST,PT1H,PT1H,Instantaneous signal strength over the preceding hour in received signal strength indicator
 SMI-MEAN_PROC-UNITLESS-P1D-P1D,,SMI,UNITLESS,MEAN,PROC,P1D,P1D,Soil moisture index over the proceeding day (unitless)
 SNOW_DAY-PROC-UNITLESS-P1D-P1D,,SNOW_DAY,UNITLESS,NONE,PROC,P1D,P1D,Indicator of snow day over the proceeding day (unitless)
 SNOWD_DISTANCE_COR-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_COR,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (corrected)
@@ -303,6 +305,7 @@ VOLTAGE_RATIO-INST-UNITLESS-PT15M-PT15M,,VOLTAGE_RATIO,UNITLESS,NONE,INST,PT15M,
 VOLTAGE_RATIO-MEAN_PREC-UNITLESS-PT15M-PT15M,,VOLTAGE_RATIO,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean voltage ratio over the preceding 15 minutes (unitless)
 VOLTAGE-INST-V-PT15M-PT15M,,VOLTAGE,V,NONE,INST,PT15M,PT15M,Instantaneous voltage over the preceding 15 minutes in volts
 VOLTAGE-INST-V-PT30M-PT30M,,VOLTAGE,V,NONE,INST,PT30M,PT30M,Instantaneous voltage over the preceding 30 minutes in volts
+VOLTAGE-INST-V-PT1H-PT1H,,VOLTAGE,V,NONE,INST,PT1H,PT1H,Instantaneous voltage over the preceding hour in volts
 VOLTAGE-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE,V,MEAN,PREC,PT1H,PT1H,Mean voltage over the preceding hour in volts
 VOLTAGE-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE,V,MEAN,PREC,PT30M,PT30M,Mean voltage over the preceding 30 minutes in volts
 VPD-MEAN_PREC-HPA-PT30M-PT30M,,VPD,HPA,MEAN,PREC,PT30M,PT30M,Mean vapour pressure deficit over the preceding 30 minutes in hectopascals
