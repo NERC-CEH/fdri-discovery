@@ -7263,6 +7263,45 @@
       "steps": [
         "cosmos-cgarw-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc15_30min-plan",
+      "output": "cosmos-cgarw-profile_vwc15_30min_processed",
+      "input": "cosmos-cgarw-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-cgarw-profile_vwc15_30min-load_raw",
+        "cosmos-cgarw-profile_vwc15_30min-range",
+        "cosmos-cgarw-profile_vwc15_30min-battery_v",
+        "cosmos-cgarw-profile_vwc15_30min-error_code",
+        "cosmos-cgarw-profile_vwc15_30min-spike",
+        "cosmos-cgarw-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc40_30min-plan",
+      "output": "cosmos-cgarw-profile_vwc40_30min_processed",
+      "input": "cosmos-cgarw-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-cgarw-profile_vwc40_30min-load_raw",
+        "cosmos-cgarw-profile_vwc40_30min-range",
+        "cosmos-cgarw-profile_vwc40_30min-battery_v",
+        "cosmos-cgarw-profile_vwc40_30min-error_code",
+        "cosmos-cgarw-profile_vwc40_30min-spike",
+        "cosmos-cgarw-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cgarw-profile_vwc65_30min-plan",
+      "output": "cosmos-cgarw-profile_vwc65_30min_processed",
+      "input": "cosmos-cgarw-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-cgarw-profile_vwc65_30min-load_raw",
+        "cosmos-cgarw-profile_vwc65_30min-range",
+        "cosmos-cgarw-profile_vwc65_30min-battery_v",
+        "cosmos-cgarw-profile_vwc65_30min-error_code",
+        "cosmos-cgarw-profile_vwc65_30min-spike",
+        "cosmos-cgarw-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-CHIMN": [
@@ -11881,6 +11920,45 @@
       "output": "cosmos-cochn-solar_zenith_30min_processed",
       "steps": [
         "cosmos-cochn-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc15_30min-plan",
+      "output": "cosmos-cochn-profile_vwc15_30min_processed",
+      "input": "cosmos-cochn-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-cochn-profile_vwc15_30min-load_raw",
+        "cosmos-cochn-profile_vwc15_30min-range",
+        "cosmos-cochn-profile_vwc15_30min-battery_v",
+        "cosmos-cochn-profile_vwc15_30min-error_code",
+        "cosmos-cochn-profile_vwc15_30min-spike",
+        "cosmos-cochn-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc40_30min-plan",
+      "output": "cosmos-cochn-profile_vwc40_30min_processed",
+      "input": "cosmos-cochn-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-cochn-profile_vwc40_30min-load_raw",
+        "cosmos-cochn-profile_vwc40_30min-range",
+        "cosmos-cochn-profile_vwc40_30min-battery_v",
+        "cosmos-cochn-profile_vwc40_30min-error_code",
+        "cosmos-cochn-profile_vwc40_30min-spike",
+        "cosmos-cochn-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cochn-profile_vwc65_30min-plan",
+      "output": "cosmos-cochn-profile_vwc65_30min_processed",
+      "input": "cosmos-cochn-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-cochn-profile_vwc65_30min-load_raw",
+        "cosmos-cochn-profile_vwc65_30min-range",
+        "cosmos-cochn-profile_vwc65_30min-battery_v",
+        "cosmos-cochn-profile_vwc65_30min-error_code",
+        "cosmos-cochn-profile_vwc65_30min-spike",
+        "cosmos-cochn-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -17023,6 +17101,45 @@
       "steps": [
         "cosmos-elmst-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc15_30min-plan",
+      "output": "cosmos-elmst-profile_vwc15_30min_processed",
+      "input": "cosmos-elmst-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-elmst-profile_vwc15_30min-load_raw",
+        "cosmos-elmst-profile_vwc15_30min-range",
+        "cosmos-elmst-profile_vwc15_30min-battery_v",
+        "cosmos-elmst-profile_vwc15_30min-error_code",
+        "cosmos-elmst-profile_vwc15_30min-spike",
+        "cosmos-elmst-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc40_30min-plan",
+      "output": "cosmos-elmst-profile_vwc40_30min_processed",
+      "input": "cosmos-elmst-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-elmst-profile_vwc40_30min-load_raw",
+        "cosmos-elmst-profile_vwc40_30min-range",
+        "cosmos-elmst-profile_vwc40_30min-battery_v",
+        "cosmos-elmst-profile_vwc40_30min-error_code",
+        "cosmos-elmst-profile_vwc40_30min-spike",
+        "cosmos-elmst-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-elmst-profile_vwc65_30min-plan",
+      "output": "cosmos-elmst-profile_vwc65_30min_processed",
+      "input": "cosmos-elmst-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-elmst-profile_vwc65_30min-load_raw",
+        "cosmos-elmst-profile_vwc65_30min-range",
+        "cosmos-elmst-profile_vwc65_30min-battery_v",
+        "cosmos-elmst-profile_vwc65_30min-error_code",
+        "cosmos-elmst-profile_vwc65_30min-spike",
+        "cosmos-elmst-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-EUSTN": [
@@ -18623,6 +18740,45 @@
       "output": "cosmos-eustn-solar_zenith_30min_processed",
       "steps": [
         "cosmos-eustn-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc15_30min-plan",
+      "output": "cosmos-eustn-profile_vwc15_30min_processed",
+      "input": "cosmos-eustn-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-eustn-profile_vwc15_30min-load_raw",
+        "cosmos-eustn-profile_vwc15_30min-range",
+        "cosmos-eustn-profile_vwc15_30min-battery_v",
+        "cosmos-eustn-profile_vwc15_30min-error_code",
+        "cosmos-eustn-profile_vwc15_30min-spike",
+        "cosmos-eustn-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc40_30min-plan",
+      "output": "cosmos-eustn-profile_vwc40_30min_processed",
+      "input": "cosmos-eustn-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-eustn-profile_vwc40_30min-load_raw",
+        "cosmos-eustn-profile_vwc40_30min-range",
+        "cosmos-eustn-profile_vwc40_30min-battery_v",
+        "cosmos-eustn-profile_vwc40_30min-error_code",
+        "cosmos-eustn-profile_vwc40_30min-spike",
+        "cosmos-eustn-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-eustn-profile_vwc65_30min-plan",
+      "output": "cosmos-eustn-profile_vwc65_30min_processed",
+      "input": "cosmos-eustn-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-eustn-profile_vwc65_30min-load_raw",
+        "cosmos-eustn-profile_vwc65_30min-range",
+        "cosmos-eustn-profile_vwc65_30min-battery_v",
+        "cosmos-eustn-profile_vwc65_30min-error_code",
+        "cosmos-eustn-profile_vwc65_30min-spike",
+        "cosmos-eustn-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -20242,6 +20398,45 @@
       "steps": [
         "cosmos-finch-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc15_30min-plan",
+      "output": "cosmos-finch-profile_vwc15_30min_processed",
+      "input": "cosmos-finch-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-finch-profile_vwc15_30min-load_raw",
+        "cosmos-finch-profile_vwc15_30min-range",
+        "cosmos-finch-profile_vwc15_30min-battery_v",
+        "cosmos-finch-profile_vwc15_30min-error_code",
+        "cosmos-finch-profile_vwc15_30min-spike",
+        "cosmos-finch-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc40_30min-plan",
+      "output": "cosmos-finch-profile_vwc40_30min_processed",
+      "input": "cosmos-finch-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-finch-profile_vwc40_30min-load_raw",
+        "cosmos-finch-profile_vwc40_30min-range",
+        "cosmos-finch-profile_vwc40_30min-battery_v",
+        "cosmos-finch-profile_vwc40_30min-error_code",
+        "cosmos-finch-profile_vwc40_30min-spike",
+        "cosmos-finch-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-finch-profile_vwc65_30min-plan",
+      "output": "cosmos-finch-profile_vwc65_30min_processed",
+      "input": "cosmos-finch-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-finch-profile_vwc65_30min-load_raw",
+        "cosmos-finch-profile_vwc65_30min-range",
+        "cosmos-finch-profile_vwc65_30min-battery_v",
+        "cosmos-finch-profile_vwc65_30min-error_code",
+        "cosmos-finch-profile_vwc65_30min-spike",
+        "cosmos-finch-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-FIVET": [
@@ -21842,6 +22037,45 @@
       "output": "cosmos-fivet-solar_zenith_30min_processed",
       "steps": [
         "cosmos-fivet-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc15_30min-plan",
+      "output": "cosmos-fivet-profile_vwc15_30min_processed",
+      "input": "cosmos-fivet-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-fivet-profile_vwc15_30min-load_raw",
+        "cosmos-fivet-profile_vwc15_30min-range",
+        "cosmos-fivet-profile_vwc15_30min-battery_v",
+        "cosmos-fivet-profile_vwc15_30min-error_code",
+        "cosmos-fivet-profile_vwc15_30min-spike",
+        "cosmos-fivet-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc40_30min-plan",
+      "output": "cosmos-fivet-profile_vwc40_30min_processed",
+      "input": "cosmos-fivet-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-fivet-profile_vwc40_30min-load_raw",
+        "cosmos-fivet-profile_vwc40_30min-range",
+        "cosmos-fivet-profile_vwc40_30min-battery_v",
+        "cosmos-fivet-profile_vwc40_30min-error_code",
+        "cosmos-fivet-profile_vwc40_30min-spike",
+        "cosmos-fivet-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-fivet-profile_vwc65_30min-plan",
+      "output": "cosmos-fivet-profile_vwc65_30min_processed",
+      "input": "cosmos-fivet-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-fivet-profile_vwc65_30min-load_raw",
+        "cosmos-fivet-profile_vwc65_30min-range",
+        "cosmos-fivet-profile_vwc65_30min-battery_v",
+        "cosmos-fivet-profile_vwc65_30min-error_code",
+        "cosmos-fivet-profile_vwc65_30min-spike",
+        "cosmos-fivet-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -26014,6 +26248,45 @@
       "steps": [
         "cosmos-glenw-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc15_30min-plan",
+      "output": "cosmos-glenw-profile_vwc15_30min_processed",
+      "input": "cosmos-glenw-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-glenw-profile_vwc15_30min-load_raw",
+        "cosmos-glenw-profile_vwc15_30min-range",
+        "cosmos-glenw-profile_vwc15_30min-battery_v",
+        "cosmos-glenw-profile_vwc15_30min-error_code",
+        "cosmos-glenw-profile_vwc15_30min-spike",
+        "cosmos-glenw-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc40_30min-plan",
+      "output": "cosmos-glenw-profile_vwc40_30min_processed",
+      "input": "cosmos-glenw-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-glenw-profile_vwc40_30min-load_raw",
+        "cosmos-glenw-profile_vwc40_30min-range",
+        "cosmos-glenw-profile_vwc40_30min-battery_v",
+        "cosmos-glenw-profile_vwc40_30min-error_code",
+        "cosmos-glenw-profile_vwc40_30min-spike",
+        "cosmos-glenw-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-glenw-profile_vwc65_30min-plan",
+      "output": "cosmos-glenw-profile_vwc65_30min_processed",
+      "input": "cosmos-glenw-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-glenw-profile_vwc65_30min-load_raw",
+        "cosmos-glenw-profile_vwc65_30min-range",
+        "cosmos-glenw-profile_vwc65_30min-battery_v",
+        "cosmos-glenw-profile_vwc65_30min-error_code",
+        "cosmos-glenw-profile_vwc65_30min-spike",
+        "cosmos-glenw-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-HADLW": [
@@ -27614,6 +27887,45 @@
       "output": "cosmos-hadlw-solar_zenith_30min_processed",
       "steps": [
         "cosmos-hadlw-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc15_30min-plan",
+      "output": "cosmos-hadlw-profile_vwc15_30min_processed",
+      "input": "cosmos-hadlw-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-hadlw-profile_vwc15_30min-load_raw",
+        "cosmos-hadlw-profile_vwc15_30min-range",
+        "cosmos-hadlw-profile_vwc15_30min-battery_v",
+        "cosmos-hadlw-profile_vwc15_30min-error_code",
+        "cosmos-hadlw-profile_vwc15_30min-spike",
+        "cosmos-hadlw-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc40_30min-plan",
+      "output": "cosmos-hadlw-profile_vwc40_30min_processed",
+      "input": "cosmos-hadlw-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-hadlw-profile_vwc40_30min-load_raw",
+        "cosmos-hadlw-profile_vwc40_30min-range",
+        "cosmos-hadlw-profile_vwc40_30min-battery_v",
+        "cosmos-hadlw-profile_vwc40_30min-error_code",
+        "cosmos-hadlw-profile_vwc40_30min-spike",
+        "cosmos-hadlw-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hadlw-profile_vwc65_30min-plan",
+      "output": "cosmos-hadlw-profile_vwc65_30min_processed",
+      "input": "cosmos-hadlw-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-hadlw-profile_vwc65_30min-load_raw",
+        "cosmos-hadlw-profile_vwc65_30min-range",
+        "cosmos-hadlw-profile_vwc65_30min-battery_v",
+        "cosmos-hadlw-profile_vwc65_30min-error_code",
+        "cosmos-hadlw-profile_vwc65_30min-spike",
+        "cosmos-hadlw-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -32442,6 +32754,45 @@
       "steps": [
         "cosmos-hillb-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc15_30min-plan",
+      "output": "cosmos-hillb-profile_vwc15_30min_processed",
+      "input": "cosmos-hillb-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-hillb-profile_vwc15_30min-load_raw",
+        "cosmos-hillb-profile_vwc15_30min-range",
+        "cosmos-hillb-profile_vwc15_30min-battery_v",
+        "cosmos-hillb-profile_vwc15_30min-error_code",
+        "cosmos-hillb-profile_vwc15_30min-spike",
+        "cosmos-hillb-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc40_30min-plan",
+      "output": "cosmos-hillb-profile_vwc40_30min_processed",
+      "input": "cosmos-hillb-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-hillb-profile_vwc40_30min-load_raw",
+        "cosmos-hillb-profile_vwc40_30min-range",
+        "cosmos-hillb-profile_vwc40_30min-battery_v",
+        "cosmos-hillb-profile_vwc40_30min-error_code",
+        "cosmos-hillb-profile_vwc40_30min-spike",
+        "cosmos-hillb-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hillb-profile_vwc65_30min-plan",
+      "output": "cosmos-hillb-profile_vwc65_30min_processed",
+      "input": "cosmos-hillb-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-hillb-profile_vwc65_30min-load_raw",
+        "cosmos-hillb-profile_vwc65_30min-range",
+        "cosmos-hillb-profile_vwc65_30min-battery_v",
+        "cosmos-hillb-profile_vwc65_30min-error_code",
+        "cosmos-hillb-profile_vwc65_30min-spike",
+        "cosmos-hillb-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-HLACY": [
@@ -34059,6 +34410,45 @@
       "output": "cosmos-hlacy-solar_zenith_30min_processed",
       "steps": [
         "cosmos-hlacy-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc15_30min-plan",
+      "output": "cosmos-hlacy-profile_vwc15_30min_processed",
+      "input": "cosmos-hlacy-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-hlacy-profile_vwc15_30min-load_raw",
+        "cosmos-hlacy-profile_vwc15_30min-range",
+        "cosmos-hlacy-profile_vwc15_30min-battery_v",
+        "cosmos-hlacy-profile_vwc15_30min-error_code",
+        "cosmos-hlacy-profile_vwc15_30min-spike",
+        "cosmos-hlacy-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc40_30min-plan",
+      "output": "cosmos-hlacy-profile_vwc40_30min_processed",
+      "input": "cosmos-hlacy-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-hlacy-profile_vwc40_30min-load_raw",
+        "cosmos-hlacy-profile_vwc40_30min-range",
+        "cosmos-hlacy-profile_vwc40_30min-battery_v",
+        "cosmos-hlacy-profile_vwc40_30min-error_code",
+        "cosmos-hlacy-profile_vwc40_30min-spike",
+        "cosmos-hlacy-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hlacy-profile_vwc65_30min-plan",
+      "output": "cosmos-hlacy-profile_vwc65_30min_processed",
+      "input": "cosmos-hlacy-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-hlacy-profile_vwc65_30min-load_raw",
+        "cosmos-hlacy-profile_vwc65_30min-range",
+        "cosmos-hlacy-profile_vwc65_30min-battery_v",
+        "cosmos-hlacy-profile_vwc65_30min-error_code",
+        "cosmos-hlacy-profile_vwc65_30min-spike",
+        "cosmos-hlacy-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -36848,6 +37238,45 @@
       "steps": [
         "cosmos-hybry-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc15_30min-plan",
+      "output": "cosmos-hybry-profile_vwc15_30min_processed",
+      "input": "cosmos-hybry-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-hybry-profile_vwc15_30min-load_raw",
+        "cosmos-hybry-profile_vwc15_30min-range",
+        "cosmos-hybry-profile_vwc15_30min-battery_v",
+        "cosmos-hybry-profile_vwc15_30min-error_code",
+        "cosmos-hybry-profile_vwc15_30min-spike",
+        "cosmos-hybry-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc40_30min-plan",
+      "output": "cosmos-hybry-profile_vwc40_30min_processed",
+      "input": "cosmos-hybry-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-hybry-profile_vwc40_30min-load_raw",
+        "cosmos-hybry-profile_vwc40_30min-range",
+        "cosmos-hybry-profile_vwc40_30min-battery_v",
+        "cosmos-hybry-profile_vwc40_30min-error_code",
+        "cosmos-hybry-profile_vwc40_30min-spike",
+        "cosmos-hybry-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-hybry-profile_vwc65_30min-plan",
+      "output": "cosmos-hybry-profile_vwc65_30min_processed",
+      "input": "cosmos-hybry-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-hybry-profile_vwc65_30min-load_raw",
+        "cosmos-hybry-profile_vwc65_30min-range",
+        "cosmos-hybry-profile_vwc65_30min-battery_v",
+        "cosmos-hybry-profile_vwc65_30min-error_code",
+        "cosmos-hybry-profile_vwc65_30min-spike",
+        "cosmos-hybry-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-LIZRD": [
@@ -39622,6 +40051,45 @@
       "output": "cosmos-lodtn-solar_zenith_30min_processed",
       "steps": [
         "cosmos-lodtn-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc15_30min-plan",
+      "output": "cosmos-lodtn-profile_vwc15_30min_processed",
+      "input": "cosmos-lodtn-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-lodtn-profile_vwc15_30min-load_raw",
+        "cosmos-lodtn-profile_vwc15_30min-range",
+        "cosmos-lodtn-profile_vwc15_30min-battery_v",
+        "cosmos-lodtn-profile_vwc15_30min-error_code",
+        "cosmos-lodtn-profile_vwc15_30min-spike",
+        "cosmos-lodtn-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc40_30min-plan",
+      "output": "cosmos-lodtn-profile_vwc40_30min_processed",
+      "input": "cosmos-lodtn-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-lodtn-profile_vwc40_30min-load_raw",
+        "cosmos-lodtn-profile_vwc40_30min-range",
+        "cosmos-lodtn-profile_vwc40_30min-battery_v",
+        "cosmos-lodtn-profile_vwc40_30min-error_code",
+        "cosmos-lodtn-profile_vwc40_30min-spike",
+        "cosmos-lodtn-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-lodtn-profile_vwc65_30min-plan",
+      "output": "cosmos-lodtn-profile_vwc65_30min_processed",
+      "input": "cosmos-lodtn-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-lodtn-profile_vwc65_30min-load_raw",
+        "cosmos-lodtn-profile_vwc65_30min-range",
+        "cosmos-lodtn-profile_vwc65_30min-battery_v",
+        "cosmos-lodtn-profile_vwc65_30min-error_code",
+        "cosmos-lodtn-profile_vwc65_30min-spike",
+        "cosmos-lodtn-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -43638,6 +44106,45 @@
       "output": "cosmos-morem-solar_zenith_30min_processed",
       "steps": [
         "cosmos-morem-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc15_30min-plan",
+      "output": "cosmos-morem-profile_vwc15_30min_processed",
+      "input": "cosmos-morem-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-morem-profile_vwc15_30min-load_raw",
+        "cosmos-morem-profile_vwc15_30min-range",
+        "cosmos-morem-profile_vwc15_30min-battery_v",
+        "cosmos-morem-profile_vwc15_30min-error_code",
+        "cosmos-morem-profile_vwc15_30min-spike",
+        "cosmos-morem-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc40_30min-plan",
+      "output": "cosmos-morem-profile_vwc40_30min_processed",
+      "input": "cosmos-morem-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-morem-profile_vwc40_30min-load_raw",
+        "cosmos-morem-profile_vwc40_30min-range",
+        "cosmos-morem-profile_vwc40_30min-battery_v",
+        "cosmos-morem-profile_vwc40_30min-error_code",
+        "cosmos-morem-profile_vwc40_30min-spike",
+        "cosmos-morem-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-morem-profile_vwc65_30min-plan",
+      "output": "cosmos-morem-profile_vwc65_30min_processed",
+      "input": "cosmos-morem-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-morem-profile_vwc65_30min-load_raw",
+        "cosmos-morem-profile_vwc65_30min-range",
+        "cosmos-morem-profile_vwc65_30min-battery_v",
+        "cosmos-morem-profile_vwc65_30min-error_code",
+        "cosmos-morem-profile_vwc65_30min-spike",
+        "cosmos-morem-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -52128,6 +52635,45 @@
       "steps": [
         "cosmos-riseh-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc15_30min-plan",
+      "output": "cosmos-riseh-profile_vwc15_30min_processed",
+      "input": "cosmos-riseh-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-riseh-profile_vwc15_30min-load_raw",
+        "cosmos-riseh-profile_vwc15_30min-range",
+        "cosmos-riseh-profile_vwc15_30min-battery_v",
+        "cosmos-riseh-profile_vwc15_30min-error_code",
+        "cosmos-riseh-profile_vwc15_30min-spike",
+        "cosmos-riseh-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc40_30min-plan",
+      "output": "cosmos-riseh-profile_vwc40_30min_processed",
+      "input": "cosmos-riseh-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-riseh-profile_vwc40_30min-load_raw",
+        "cosmos-riseh-profile_vwc40_30min-range",
+        "cosmos-riseh-profile_vwc40_30min-battery_v",
+        "cosmos-riseh-profile_vwc40_30min-error_code",
+        "cosmos-riseh-profile_vwc40_30min-spike",
+        "cosmos-riseh-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-riseh-profile_vwc65_30min-plan",
+      "output": "cosmos-riseh-profile_vwc65_30min_processed",
+      "input": "cosmos-riseh-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-riseh-profile_vwc65_30min-load_raw",
+        "cosmos-riseh-profile_vwc65_30min-range",
+        "cosmos-riseh-profile_vwc65_30min-battery_v",
+        "cosmos-riseh-profile_vwc65_30min-error_code",
+        "cosmos-riseh-profile_vwc65_30min-spike",
+        "cosmos-riseh-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-ROTHD": [
@@ -57873,6 +58419,45 @@
       "steps": [
         "cosmos-spenf-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc15_30min-plan",
+      "output": "cosmos-spenf-profile_vwc15_30min_processed",
+      "input": "cosmos-spenf-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-spenf-profile_vwc15_30min-load_raw",
+        "cosmos-spenf-profile_vwc15_30min-range",
+        "cosmos-spenf-profile_vwc15_30min-battery_v",
+        "cosmos-spenf-profile_vwc15_30min-error_code",
+        "cosmos-spenf-profile_vwc15_30min-spike",
+        "cosmos-spenf-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc40_30min-plan",
+      "output": "cosmos-spenf-profile_vwc40_30min_processed",
+      "input": "cosmos-spenf-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-spenf-profile_vwc40_30min-load_raw",
+        "cosmos-spenf-profile_vwc40_30min-range",
+        "cosmos-spenf-profile_vwc40_30min-battery_v",
+        "cosmos-spenf-profile_vwc40_30min-error_code",
+        "cosmos-spenf-profile_vwc40_30min-spike",
+        "cosmos-spenf-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-spenf-profile_vwc65_30min-plan",
+      "output": "cosmos-spenf-profile_vwc65_30min_processed",
+      "input": "cosmos-spenf-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-spenf-profile_vwc65_30min-load_raw",
+        "cosmos-spenf-profile_vwc65_30min-range",
+        "cosmos-spenf-profile_vwc65_30min-battery_v",
+        "cosmos-spenf-profile_vwc65_30min-error_code",
+        "cosmos-spenf-profile_vwc65_30min-spike",
+        "cosmos-spenf-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-STGHT": [
@@ -61822,6 +62407,45 @@
       "output": "cosmos-sydlg-solar_zenith_30min_processed",
       "steps": [
         "cosmos-sydlg-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc15_30min-plan",
+      "output": "cosmos-sydlg-profile_vwc15_30min_processed",
+      "input": "cosmos-sydlg-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-sydlg-profile_vwc15_30min-load_raw",
+        "cosmos-sydlg-profile_vwc15_30min-range",
+        "cosmos-sydlg-profile_vwc15_30min-battery_v",
+        "cosmos-sydlg-profile_vwc15_30min-error_code",
+        "cosmos-sydlg-profile_vwc15_30min-spike",
+        "cosmos-sydlg-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc40_30min-plan",
+      "output": "cosmos-sydlg-profile_vwc40_30min_processed",
+      "input": "cosmos-sydlg-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-sydlg-profile_vwc40_30min-load_raw",
+        "cosmos-sydlg-profile_vwc40_30min-range",
+        "cosmos-sydlg-profile_vwc40_30min-battery_v",
+        "cosmos-sydlg-profile_vwc40_30min-error_code",
+        "cosmos-sydlg-profile_vwc40_30min-spike",
+        "cosmos-sydlg-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-sydlg-profile_vwc65_30min-plan",
+      "output": "cosmos-sydlg-profile_vwc65_30min_processed",
+      "input": "cosmos-sydlg-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-sydlg-profile_vwc65_30min-load_raw",
+        "cosmos-sydlg-profile_vwc65_30min-range",
+        "cosmos-sydlg-profile_vwc65_30min-battery_v",
+        "cosmos-sydlg-profile_vwc65_30min-error_code",
+        "cosmos-sydlg-profile_vwc65_30min-spike",
+        "cosmos-sydlg-profile_vwc65_30min-infill"
       ]
     }
   ],
@@ -66268,6 +66892,45 @@
       "steps": [
         "cosmos-wimpl-solar_zenith_30min-solar_zenith"
       ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc15_30min-plan",
+      "output": "cosmos-wimpl-profile_vwc15_30min_processed",
+      "input": "cosmos-wimpl-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-wimpl-profile_vwc15_30min-load_raw",
+        "cosmos-wimpl-profile_vwc15_30min-range",
+        "cosmos-wimpl-profile_vwc15_30min-battery_v",
+        "cosmos-wimpl-profile_vwc15_30min-error_code",
+        "cosmos-wimpl-profile_vwc15_30min-spike",
+        "cosmos-wimpl-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc40_30min-plan",
+      "output": "cosmos-wimpl-profile_vwc40_30min_processed",
+      "input": "cosmos-wimpl-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-wimpl-profile_vwc40_30min-load_raw",
+        "cosmos-wimpl-profile_vwc40_30min-range",
+        "cosmos-wimpl-profile_vwc40_30min-battery_v",
+        "cosmos-wimpl-profile_vwc40_30min-error_code",
+        "cosmos-wimpl-profile_vwc40_30min-spike",
+        "cosmos-wimpl-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-wimpl-profile_vwc65_30min-plan",
+      "output": "cosmos-wimpl-profile_vwc65_30min_processed",
+      "input": "cosmos-wimpl-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-wimpl-profile_vwc65_30min-load_raw",
+        "cosmos-wimpl-profile_vwc65_30min-range",
+        "cosmos-wimpl-profile_vwc65_30min-battery_v",
+        "cosmos-wimpl-profile_vwc65_30min-error_code",
+        "cosmos-wimpl-profile_vwc65_30min-spike",
+        "cosmos-wimpl-profile_vwc65_30min-infill"
+      ]
     }
   ],
   "COSMOS-WRTTL": [
@@ -67885,6 +68548,45 @@
       "output": "cosmos-wrttl-solar_zenith_30min_processed",
       "steps": [
         "cosmos-wrttl-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc15_30min-plan",
+      "output": "cosmos-wrttl-profile_vwc15_30min_processed",
+      "input": "cosmos-wrttl-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-wrttl-profile_vwc15_30min-load_raw",
+        "cosmos-wrttl-profile_vwc15_30min-range",
+        "cosmos-wrttl-profile_vwc15_30min-battery_v",
+        "cosmos-wrttl-profile_vwc15_30min-error_code",
+        "cosmos-wrttl-profile_vwc15_30min-spike",
+        "cosmos-wrttl-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc40_30min-plan",
+      "output": "cosmos-wrttl-profile_vwc40_30min_processed",
+      "input": "cosmos-wrttl-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-wrttl-profile_vwc40_30min-load_raw",
+        "cosmos-wrttl-profile_vwc40_30min-range",
+        "cosmos-wrttl-profile_vwc40_30min-battery_v",
+        "cosmos-wrttl-profile_vwc40_30min-error_code",
+        "cosmos-wrttl-profile_vwc40_30min-spike",
+        "cosmos-wrttl-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-wrttl-profile_vwc65_30min-plan",
+      "output": "cosmos-wrttl-profile_vwc65_30min_processed",
+      "input": "cosmos-wrttl-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-wrttl-profile_vwc65_30min-load_raw",
+        "cosmos-wrttl-profile_vwc65_30min-range",
+        "cosmos-wrttl-profile_vwc65_30min-battery_v",
+        "cosmos-wrttl-profile_vwc65_30min-error_code",
+        "cosmos-wrttl-profile_vwc65_30min-spike",
+        "cosmos-wrttl-profile_vwc65_30min-infill"
       ]
     }
   ],
