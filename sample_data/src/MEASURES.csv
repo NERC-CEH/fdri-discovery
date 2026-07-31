@@ -217,10 +217,8 @@ SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Inst
 STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
 STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,STATUS_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count over the preceding 30 minutes in counts
 STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,NONE,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
-SWE_AREAL-INST-PCT-PT30M-PT30M,,SWE_AREAL,PCT,NONE,INST,PT30M,PT30M,Instantaneous areal snow water equivalent in percent
 SWE_AREAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_AREAL,PCT,MEAN,PREC,PT1H,PT1H,Mean areal snow water equivalent over the preceding hour in percent
 SWE_AREAL-MEAN_PREC-PCT-PT30M-PT30M,,SWE_AREAL,PCT,MEAN,PREC,PT30M,PT30M,Mean areal snow water equivalent over the preceding 30 minutes in percent
-SWE_LOCAL-INST-PCT-PT30M-PT30M,,SWE_LOCAL,PCT,NONE,INST,PT30M,PT30M,Instantaneous local snow water equivalent in percent
 SWE_LOCAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_LOCAL,PCT,MEAN,PREC,PT1H,PT1H,Mean local snow water equivalent over the preceding hour in percent
 SWE_LOCAL-MEAN_PREC-PCT-PT30M-PT30M,,SWE_LOCAL,PCT,MEAN,PREC,PT30M,PT30M,Mean local snow water equivalent over the preceding 30 minutes in percent
 SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
@@ -328,7 +326,6 @@ VOLTAGE-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE,V,MEAN,PREC,PT1H,PT1H,Mean voltage over t
 VOLTAGE-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE,V,MEAN,PREC,PT30M,PT30M,Mean voltage over the preceding 30 minutes in volts
 VPD-MEAN_PREC-HPA-PT30M-PT30M,,VPD,HPA,MEAN,PREC,PT30M,PT30M,Mean vapour pressure deficit over the preceding 30 minutes in hectopascals
 VWC_CRNS_NO_SNOW-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS_NO_SNOW,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube (with snow content removed) over the proceeding day in percent
-VWC_CRNS-INST-PCT-PT30M-PT30M,,VWC_CRNS,PCT,NONE,INST,PT30M,PT30M,Instantaneous volumetric water content from CRNS tube in percent
 VWC_CRNS-MEAN_PREC-PCT-PT1H-PT1H,,VWC_CRNS,PCT,MEAN,PREC,PT1H,PT1H,Mean volumetric water content from CRNS tube over the preceding hour in percent
 VWC_CRNS-MEAN_PREC-PCT-PT30M-PT30M,,VWC_CRNS,PCT,MEAN,PREC,PT30M,PT30M,Mean volumetric water content from CRNS tube over the preceding 30 minutes in percent
 VWC_CRNS-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube over the proceeding day in percent
