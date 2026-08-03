@@ -507,3 +507,10 @@ TEMP_SONIC-MEAN-PREC-KEL-PT30M-PT30M,,TEMP_SONIC,KEL,MEAN,PREC,PT30M,PT30M,Mean 
 TEMP_AIR-MEAN-PREC-KEL-PT30M-PT30M,,TEMP_AIR,KEL,MEAN,PREC,PT30M,PT30M,Mean air temperature over the preceding 30 minutes in Kelvin
 AIR_HEAT_CAPACITY-JK-1-KG-1,,AIR_HEAT_CAPACITY,JK-1KG-1,,,,,Specific heat at constant pressure of ambient air
 AIR_MOLAR_VOLUME-M3MOL-1,,AIR_MOLAR_VOLUME,M3MOL-1,,,,,Molar volume of ambient air
+ET-MMHR-1,,ET,MMHR-1,,,,,Evapotranspiration flux
+WATER_VAPOUR_DENSITY-KGM-3,,WATER_VAPOUR_DENSITY,KGM-3,,,,,Ambient mass density of water vapour
+H2O_PARTIAL_PRESSURE-PA,,H2O_PARTIAL_PRESSURE,PA,,,,,Ambient water vapour partial pressure
+H2O_PARTIAL_PRESSURE_SATURATION-PA,,H2O_PARTIAL_PRESSURE_SATURATION,PA,,,,,Ambient water vapour partial pressure at saturation
+SPECIFIC_HUMIDITY-KGKG-1,,SPECIFIC_HUMIDITY,KGKG-1,,,,,Ambient specific humidity on a mass basis
+VPD-MEAN_PREC-PA,,VPD,PA,,,,,Vapour pressure deficit in pascals
+DEW_POINT-K,,DEW_POINT,K,,,,,Ambient dew point in Kelvin
