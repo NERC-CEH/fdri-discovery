@@ -16,6 +16,7 @@ PROCESSED_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $
 PROCESSED_SOURCE_BUCKET := $(or ${PROCESSED_SOURCE_BUCKET},fdri-dummy-processed)
 MAPPER = mapper -g RAW_SOURCE_BUCKET=${RAW_SOURCE_BUCKET} -g PROCESSED_SOURCE_BUCKET=${PROCESSED_SOURCE_BUCKET}
 GRIDMAP = gridded-mapper
+ACTIVITY_ID := $(shell uuidgen)
 
 RECORDS = \
 	Variable \
@@ -137,8 +138,9 @@ REPORTS = $(SAMPLES:$(TTL_BASE)/%.ttl=$(VAL)/%.ttl)
 
 default: data
 
-data: validate reports full_validation
-all: validate schemas contexts reports full_validation
+data: build/activity-start.ttl .WAIT validate reports full_validation .WAIT build/data/activity-$(ACTIVITY_ID).ttl
+
+all: build/activity-start.ttl .WAIT validate schemas contexts reports full_validation .WAIT build/data/activity-$(ACTIVITY_ID).ttl
 
 pull:
 	docker pull $(IMAGE)
@@ -147,6 +149,16 @@ schemas: $(SCHEMAS)
 contexts: $(CONTEXTS)
 samples: $(SAMPLES)
 reports: $(REPORTS)
+
+build/activity-start.ttl: build/data
+	./activity-start.sh $(ACTIVITY_ID) > $@
+
+build/activity-end.ttl: build/data
+	./activity-end.sh $(ACTIVITY_ID) > $@
+
+build/data/activity-$(ACTIVITY_ID).ttl: build/activity-start.ttl build/activity-end.ttl
+	cat $^ > $@
+
 full_validation: $(VAL)/full_report.ttl
 	grep -q -E "conforms\s+true" $^
 
