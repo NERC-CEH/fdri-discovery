@@ -1,4 +1,7 @@
-MAKEFLAGS += -j 4
+# If using GNU Make 4.4 or later, uncomment the following line to enable parallel builds with 4 jobs.
+# On earlier version of GNU Make, the lack of a .WAIT target will cause inconsistent build activity metadata and should be avoided.
+# MAKEFLAGS += -j 4
+
 IMAGE=293385631482.dkr.ecr.eu-west-1.amazonaws.com/epimorphics/record-spec-tools/unstable:1.0-SNAPSHOT
 RUN=docker run --rm -v .:/data ${IMAGE}
 
@@ -143,6 +146,9 @@ REPORTS = $(SAMPLES:$(TTL_BASE)/%.ttl=$(VAL)/%.ttl)
 ANNOTATED = $(SAMPLES:$(TTL_BASE)/%.ttl=$(ANNOTATED_BASE)/%.ttl)
 
 CLEANUP_SCRIPT = build/cleanup.ru
+
+# .WAIT is a target defined in Gnu Make 4.4 and later, used to force a wait between targets. It is defined here for compatibility with earlier versions of Gnu Make.
+.WAIT: ;
 
 default: data
 
