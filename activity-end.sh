@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ts=$(date -u -I seconds | sed "s/+00:00$/Z/")
+ts=$(date -u +%Y-%m-%dT%H:%M:%S.%NZ)
 if [ -n "$1" ]
 then
     id=$1

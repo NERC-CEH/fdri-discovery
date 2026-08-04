@@ -147,7 +147,7 @@ pull:
 
 schemas: $(SCHEMAS)
 contexts: $(CONTEXTS)
-samples: $(SAMPLES)
+samples: build/activity-start.ttl .WAIT $(SAMPLES) .WAIT build/data/activity-$(ACTIVITY_ID).ttl
 reports: $(REPORTS)
 
 build/activity-start.ttl: build/data

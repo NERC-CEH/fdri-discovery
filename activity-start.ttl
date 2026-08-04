@@ -1,9 +1,9 @@
-@prefix activity <http://fdri.ceh.ac.uk/id/activity/> .
+@prefix activity: <http://fdri.ceh.ac.uk/id/activity/> .
 @prefix fdri: <http://fdri.ceh.ac.uk/vocab/metadata/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-activity:fdri-discovery-publish-{id} a prov:Activity ;
+activity:{id} a prov:Activity ;
   dct:type <http://fdri.ceh.ac.uk/ref/common/activity-type/fdri-discovery-publish> ;
-  prov:startedAtTime "{ts}"^^<xsd:dateTime> .
+  prov:startedAtTime "{ts}"^^xsd:dateTime .

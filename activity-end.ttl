@@ -1,1 +1,1 @@
-activity:fdri-discovery-publish-{id} prov:endedAtTime "{ts}"^^<xsd:dateTime> .
+activity:{id} prov:endedAtTime "{ts}"^^xsd:dateTime .
