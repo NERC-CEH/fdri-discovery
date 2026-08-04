@@ -6,4 +6,4 @@ if [ -n "$1" ]
 then
     id=$1
 fi
-sed "s/{ts}/$ts/g" activity-start.ttl | sed "s/{id}/$id/g"
+sed "s/{ts}/$ts/g" sample_data/templates/activity-start.ttl | sed "s/{id}/$id/g"

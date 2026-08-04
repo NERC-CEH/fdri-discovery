@@ -58,12 +58,9 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Test pulling docker image
+      - name: Pull docker image
         run: |
-          docker pull 293385631482.dkr.ecr.eu-west-1.amazonaws.com/epimorphics/record-spec-tools/unstable:1.0-SNAPSHOT
-
-      - name: Build sample data
-        run: make samples
+          make pull
 
       - name: Configure AWS Credentials for UKCEH Staging
         if: ${{ github.ref == 'refs/heads/staging' }}
@@ -81,8 +78,8 @@ jobs:
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ secrets.AWS_REGION }}
       
-      - name: Publish sample data to new account
-        run: bash publish.sh
+      - name: Build and publish sample data
+        run: make publish
 
   create-staging-to-production-pr:
     needs: [publish]
