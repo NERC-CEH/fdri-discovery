@@ -18,15 +18,18 @@ COND_15-INST-DSM-1-PT30M-PT30M,,COND_15,DSM-1,NONE,INST,PT30M,PT30M,Instantaneou
 COND_15-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_15,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 15 cm depth over the preceding 15 minutes in dS/m
 COND_20-INST-DSM-1-PT30M-PT30M,,COND_20,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 20 cm depth
 COND_20-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_20,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 20 cm depth over the preceding 10 minutes in dS/m
+COND_20-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_20,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 20 cm depth over the preceding 15 minutes in dS/m
 COND_20-MEAN_PREC-DSM-1-PT30M-PT30M,,COND_20,DSM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 20 cm depth over the preceding 30 minutes in dS/m
 COND_25-INST-DSM-1-PT15M-PT15M,,COND_25,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 25 cm depth in dS/m
 COND_25-INST-DSM-1-PT30M-PT30M,,COND_25,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 25 cm depth in dS/m
 COND_25-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_25,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 25 cm depth over the preceding 15 minutes in dS/m
 COND_30-INST-DSM-1-PT30M-PT30M,,COND_30,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 30 cm depth
 COND_30-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_30,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 30 cm depth over the preceding 10 minutes in dS/m
+COND_30-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_30,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 30 cm depth over the preceding 15 minutes in dS/m
 COND_30-MEAN_PREC-DSM-1-PT30M-PT30M,,COND_30,DSM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 30 cm depth over the preceding 30 minutes in dS/m
 COND_40-INST-DSM-1-PT30M-PT30M,,COND_40,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 40 cm depth in dS/m
 COND_40-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_40,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 40 cm depth over the preceding 10 minutes in dS/m
+COND_40-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_40,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 40 cm depth over the preceding 15 minutes in dS/m
 COND_40-MEAN_PREC-DSM-1-PT30M-PT30M,,COND_40,DSM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 40 cm depth over the preceding 30 minutes in dS/m
 COND_5-INST-DSM-1-PT15M-PT15M,,COND_5,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 5 cm depth in dS/m
 COND_5-INST-DSM-1-PT30M-PT30M,,COND_5,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 5 cm depth in dS/m
@@ -60,11 +63,8 @@ D86_5M-MEAN_PROC-CM-P1D-P1D,,D86_5M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 5m 
 D86_75M-MEAN_PREC-CM-PT1H-PT1H,,D86_75M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 75m from CRNS in cm over preceding hour
 D86_75M-MEAN_PROC-CM-P1D-P1D,,D86_75M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 75m from CRNS in cm over proceeding day
 DEW_POINT-INST-DEGC-PT1M-PT1M,,DEW_POINT,DEGC,NONE,INST,PT1M,PT1M,Instantaneous dew point temperature in degrees Celsius
-DIAG_FLAG_1-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_1,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 1
-DIAG_FLAG_2-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_2,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 2
-DIAG_FLAG_3-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_3,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 3
-DIAG_FLAG_4-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_4,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 4
-DIAG_FLAG_5-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG_5,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag 5
+DIAG_FLAG-INST-UNITLESS-PT15M-PT15M,,DIAG_FLAG,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous diagnostic flag
+DIAG_FLAG-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag
 DIAG_PRECIP-INST-UNITLESS-PT30M-PT30M,,DIAG_PRECIP,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous Precipitation diagnostic flag
 DISCHARGE-INST-LS-1,,DISCHARGE,LS-1,NONE,INST,,,Instantaneous discharge in litres per second
 DISCHARGE-INST-M3S-1,,DISCHARGE,M3S-1,NONE,INST,,,Instantaneous discharge in cubic metres per second
@@ -81,6 +81,7 @@ H2O_FLUX-MEAN_PREC-MMOLM-2S-1-PT30M-PT30M,,H2O_FLUX,MMOLM-2S-1,MEAN,PREC,PT30M,P
 HEATFLUX_LATENT-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_LATENT,WM-2,MEAN,PREC,PT30M,PT30M,Mean latent heat flux over the preceding 30 minutes in watts per metre squared
 HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,NONE,INST,PT30M,PT30M,Instantaneous sensible heat flux in watts per metre squared
 HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,MEAN,PREC,PT30M,PT30M,Mean sensible heat flux over the preceding 30 minutes in watts per metre squared
+HEATFLUX_SOIL_CAL-INST-UNITLESS-PT15M-PT15M,,HEATFLUX_SOIL_CAL,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous soil heat flux calibration factor (unitless)
 HEATFLUX_SOIL_CAL-INST-UNITLESS-PT30M-PT30M,,HEATFLUX_SOIL_CAL,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux calibration factor (unitless)
 HEATFLUX_SOIL_MV-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL_MV,MV,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
 HEATFLUX_SOIL-MEAN_PREC-WM-2-PT15M-PT15M,,HEATFLUX_SOIL,WM-2,MEAN,PREC,PT15M,PT15M,Mean soil heat flux in watts per metre squared over preceding 15 minutes
@@ -93,6 +94,7 @@ LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,In
 LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWIN-MEAN_PREC-WM-2-PT1M-PT1M,,LWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming longwave radiation over the preceding minute in watts per metre squared
+LWIN-MEAN_PREC-WM-2-PT15M-PT15M,,LWIN,WM-2,MEAN,PREC,PT15M,PT15M,Mean incoming longwave radiation over the preceding 15 minutes in watts per metre squared
 LWIN-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation over preceding 30 minutes in watts per metre squared
 LWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation over preceding 30 minutes in watts per metre squared
 LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,LWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming longwave radiation over proceeding day in megajoules per metre squared
@@ -100,6 +102,7 @@ LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,
 LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,LWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing longwave radiation over the preceding minute in watts per metre squared
+LWOUT-MEAN_PREC-WM-2-PT15M-PT15M,,LWOUT,WM-2,MEAN,PREC,PT15M,PT15M,Mean outgoing longwave radiation over the preceding 15 minutes in watts per metre squared
 LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
 LWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation over preceding 30 minutes in watts per metre squared
 LWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,,LWOUT,MJM-2-D,TOTAL,PROC,P1D,P1D,Total outgoing longwave radiation over proceeding day in megajoules per metre squared
@@ -117,6 +120,7 @@ MSLP-MEAN_PROC-HPA-P1D-P1D,,MSLP,HPA,MEAN,PROC,P1D,P1D,Mean sea level pressure o
 MUON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,MUON_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total muon count over the preceding hour in counts
 MUON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,MUON_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total muon count over the preceding 30 minutes in counts
 NAN_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,NAN_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
+NDVI-MEAN_PREC-UNITLESS-PT15M-PT15M,,NDVI,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean normalised difference vegetation index over the preceding 15 minutes
 NEUTRON_COUNT_COR-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_COR,CTS,TOTAL,PREC,PT1H,PT1H,Total corrected neutron count over the preceding hour
 NEUTRON_COUNT_COR-TOTAL_PROC-CTS-P1D-P1D,,NEUTRON_COUNT_COR,CTS,TOTAL,PROC,P1D,P1D,Total corrected neutron count over the proceeding day
 NEUTRON_COUNT_EST-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_EST,CTS,TOTAL,PREC,PT1H,PT1H,Total estimated neutron count over the preceding hour
@@ -136,27 +140,33 @@ PE-TOTAL_PROC-MM-P1D-P1D,,PE,MM,TOTAL,PROC,P1D,P1D,Total potential evaporation o
 PERM_10-INST-UNITLESS-PT15M-PT15M,,PERM_10,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous electrical permittivity at 10 cm depth
 PERM_10-INST-UNITLESS-PT30M-PT30M,,PERM_10,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous electrical permittivity at 10 cm depth
 PERM_10-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_10,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 10 cm depth over the preceding 10 minutes
+PERM_10-MEAN_PREC-UNITLESS-PT15M-PT15M,,PERM_10,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean electrical permittivity at 10 cm depth over the preceding 15 minutes
 PERM_10-MEAN_PREC-UNITLESS-PT30M-PT30M,,PERM_10,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean electrical permittivity at 10 cm depth over the preceding 30 minutes
 PERM_15-INST-UNITLESS-PT15M-PT15M,,PERM_15,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous electrical permittivity at 15 cm depth
 PERM_15-INST-UNITLESS-PT30M-PT30M,,PERM_15,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous electrical permittivity at 15 cm depth
 PERM_20-INST-UNITLESS-PT30M-PT30M,,PERM_20,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 20 cm depth
 PERM_20-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_20,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 20 cm depth over the preceding 10 minutes
+PERM_20-MEAN_PREC-UNITLESS-PT15M-PT15M,,PERM_20,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean electrical permittivity at 20 cm depth over the preceding 15 minutes
 PERM_20-MEAN_PREC-UNITLESS-PT30M-PT30M,,PERM_20,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean electrical permittivity at 20 cm depth over the preceding 30 minutes
 PERM_25-INST-UNITLESS-PT15M-PT15M,,PERM_25,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous electrical permittivity at 25 cm depth
 PERM_25-INST-UNITLESS-PT30M-PT30M,,PERM_25,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous electrical permittivity at 25 cm depth
 PERM_30-INST-UNITLESS-PT30M-PT30M,,PERM_30,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 30 cm depth
 PERM_30-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_30,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 30 cm depth over the preceding 10 minutes
+PERM_30-MEAN_PREC-UNITLESS-PT15M-PT15M,,PERM_30,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean electrical permittivity at 30 cm depth over the preceding 15 minutes
 PERM_30-MEAN_PREC-UNITLESS-PT30M-PT30M,,PERM_30,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean electrical permittivity at 30 cm depth over the preceding 30 minutes
 PERM_40-INST-UNITLESS-PT30M-PT30M,,PERM_40,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous relative permittivity at 40 cm depth
 PERM_40-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_40,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 40 cm depth over the preceding 10 minutes
+PERM_40-MEAN_PREC-UNITLESS-PT15M-PT15M,,PERM_40,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean electrical permittivity at 40 cm depth over the preceding 15 minutes
 PERM_40-MEAN_PREC-UNITLESS-PT30M-PT30M,,PERM_40,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean electrical permittivity at 40 cm depth over the preceding 30 minutes
 PERM_5-INST-UNITLESS-PT15M-PT15M,,PERM_5,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous electrical permittivity at 5 cm depth
 PERM_5-INST-UNITLESS-PT30M-PT30M,,PERM_5,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous electrical permittivity at 5 cm depth
 PERM_5-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_5,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 5 cm depth over the preceding 10 minutes
+PERM_5-MEAN_PREC-UNITLESS-PT15M-PT15M,,PERM_5,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean electrical permittivity at 5 cm depth over the preceding 15 minutes
 PERM_5-MEAN_PREC-UNITLESS-PT30M-PT30M,,PERM_5,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean electrical permittivity at 5 cm depth over the preceding 30 minutes
 PERM_50-INST-UNITLESS-PT15M-PT15M,,PERM_50,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous electrical permittivity at 50 cm depth
 PERM_50-INST-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous electrical permittivity at 50 cm depth
 PERM_50-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_50,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 50 cm depth over the preceding 10 minutes
+PERM_50-MEAN_PREC-UNITLESS-PT15M-PT15M,,PERM_50,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean electrical permittivity at 50 cm depth over the preceding 15 minutes
 PERM_50-MEAN_PREC-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean electrical permittivity at 50 cm depth over the preceding 30 minutes
 POWER-INST-MAH-PT15M-PT15M,,POWER,MAH,NONE,INST,PT15M,PT15M,Instantaneous power consumption over the preceding 15 minutes in milliamp-hours
 POWER-INST-MAH-PT1H-PT1H,,POWER,MAH,NONE,INST,PT1H,PT1H,Instantaneous power consumption over the preceding hour in milliamp-hours
@@ -202,6 +212,7 @@ RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN,PREC,PT30M,PT30M,Mean net radiation 
 RN-TOTAL_PROC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total net radiation over the proceeding day in megajoules per metre squared
 SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT1H-PT1H,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT1H,PT1H,Total number of samples over the preceding hour (unitless)
 SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless)
+SENSOR_ANGLE-INST-DEG-PT15M-PT15M,,SENSOR_ANGLE,DEG,NONE,INST,PT15M,PT15M,Instantaneous angle of sensor
 SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous status of sensor
 SIGNAL_STRENGTH-INST-RSSI-PT15M-PT15M,,SIGNAL_STRENGTH,RSSI,NONE,INST,PT15M,PT15M,Instantaneous signal strength over the preceding 15 minutes in received signal strength indicator
 SIGNAL_STRENGTH-INST-RSSI-PT1H-PT1H,,SIGNAL_STRENGTH,RSSI,NONE,INST,PT1H,PT1H,Instantaneous signal strength over the preceding hour in received signal strength indicator
@@ -225,11 +236,13 @@ SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalen
 SWE-MEAN_PROC-MM-P1D-P1D,,SWE,MM,MEAN,PROC,P1D,P1D,Mean snow water equivalent over the proceeding day in millimetres
 SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
 SWIN-MEAN_PREC-WM-2-PT1M-PT1M,,SWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming shortwave radiation over the preceding minute in watts per metre squared
+SWIN-MEAN_PREC-WM-2-PT15M-PT15M,,SWIN,WM-2,MEAN,PREC,PT15M,PT15M,Mean incoming shortwave radiation over the preceding 15 minutes in watts per metre squared
 SWIN-MEAN_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,SWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming shortwave radiation over proceeding day in megajoules per metre squared
 SWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,SWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing shortwave radiation calibration factor (unitless)
 SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,SWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing shortwave radiation over the preceding minute in watts per metre squared
+SWOUT-MEAN_PREC-WM-2-PT15M-PT15M,,SWOUT,WM-2,MEAN,PREC,PT15M,PT15M,Mean outgoing shortwave radiation over the preceding 15 minutes in watts per metre squared
 SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
 SWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
 SWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,,SWOUT,MJM-2-D,TOTAL,PROC,P1D,P1D,Total outgoing shortwave radiation over proceeding day in megajoules per metre squared
@@ -247,11 +260,17 @@ TEMP_SENSOR_INT-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_INT,DEGC,MEAN,PREC,PT30M
 TEMP_SENSOR-INST-DEGC-PT1M-PT1M,,TEMP_SENSOR,DEGC,NONE,INST,PT1M,PT1M,Instantaneous sensor temperature in degrees Celsius
 TEMP_SENSOR-INST-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,NONE,INST,PT30M,PT30M,Instantaneous temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SENSOR-MEAN_PREC-DEGC-PT1M-PT1M,,TEMP_SENSOR,DEGC,MEAN,PREC,PT1M,PT1M,Mean sensor temperature over preceding minute in degrees Celsius
+TEMP_SENSOR-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SENSOR,DEGC,MEAN,PREC,PT1M,PT1M,Mean sensor temperature over preceding 15 minutes in degrees Celsius
 TEMP_SENSOR-MEAN_PREC-DEGC-PT1H-PT1H,,TEMP_SENSOR,DEGC,MEAN,PREC,PT1H,PT1H,Mean sensor temperature over the preceding hour in degrees Celsius
 TEMP_SENSOR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_SENSOR-MAX_PREC-DEGC-PT15M-PT15M,,TEMP_SENSOR,DEGC,MAX,PREC,PT1M,PT1M,Maximum sensor temperature over preceding 15 minutes in degrees Celsius
+TEMP_SENSOR-MIN_PREC-DEGC-PT15M-PT15M,,TEMP_SENSOR,DEGC,MIN,PREC,PT1M,PT1M,Minimum sensor temperature over preceding 15 minutes in degrees Celsius
 TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,,TEMP_SENSOR,KEL,MEAN,PREC,PT1M,PT1M,Mean sensor temperature over the preceding minute in Kelvin
 TEMP_SENSOR-MEAN_PREC-KEL-PT30M-PT30M,,TEMP_SENSOR,KEL,MEAN,PREC,PT30M,PT30M,Mean temperature of sensor over the preceding 30 minutes in Kelvin
 TEMP_SENSOR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of temperature of sensor over the preceding 30 minutes in degrees Celsius
+TEMP_SURFACE-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SURFACE,DEGC,MEAN,PREC,PT15M,PT15M,Mean surface temperature over the preceding 15 minutes in degrees Celsius
+TEMP_SURFACE-MAX_PREC-DEGC-PT15M-PT15M,,TEMP_SURFACE,DEGC,MAX,PREC,PT15M,PT15M,Maximum surface temperature over the preceding 15 minutes in degrees Celsius
+TEMP_SURFACE-MIN_PREC-DEGC-PT15M-PT15M,,TEMP_SURFACE,DEGC,MIN,PREC,PT15M,PT15M,Minimum surface temperature over the preceding 15 minutes in degrees Celsius
 TEMP_SOIL_10-INST-DEGC-PT10M-PT10M,,TEMP_SOIL_10,DEGC,NONE,INST,PT10M,PT10M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
 TEMP_SOIL_10-INST-DEGC-PT15M-PT15M,,TEMP_SOIL_10,DEGC,NONE,INST,PT15M,PT15M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
 TEMP_SOIL_10-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_10,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 10 cm depth in degrees Celsius
@@ -268,6 +287,7 @@ TEMP_SOIL_2-MEAN_PROC-DEGC-P1D-P1D,,TEMP_SOIL_2,DEGC,MEAN,PROC,P1D,P1D,Mean soil
 TEMP_SOIL_20-INST-DEGC-PT10M-PT10M,,TEMP_SOIL_20,DEGC,NONE,INST,PT10M,PT10M,Instantaneous soil temperature at 20 cm depth
 TEMP_SOIL_20-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_20,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 20 cm depth in degrees Celsius
 TEMP_SOIL_20-MEAN_PREC-DEGC-PT10M-PT10M,,TEMP_SOIL_20,DEGC,MEAN,PREC,PT10M,PT10M,Mean soil temperature at 20 cm depth over the preceding 10 minutes in degrees Celsius
+TEMP_SOIL_20-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_20,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 20 cm depth over the preceding 15 minutes in degrees Celsius
 TEMP_SOIL_20-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_20,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 20 cm depth over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_20-MEAN_PROC-DEGC-P1D-P1D,,TEMP_SOIL_20,DEGC,MEAN,PROC,P1D,P1D,Mean soil temperature at 20 cm depth over the proceeding day in degrees Celsius
 TEMP_SOIL_25-INST-DEGC-PT15M-PT15M,,TEMP_SOIL_25,DEGC,NONE,INST,PT15M,PT15M,Instantaneous soil temperature at 25 cm depth in degrees Celsius
@@ -277,10 +297,12 @@ TEMP_SOIL_25-MEAN_PROC-DEGC-P1D-P1D,,TEMP_SOIL_25,DEGC,MEAN,PROC,P1D,P1D,Mean so
 TEMP_SOIL_30-INST-DEGC-PT10M-PT10M,,TEMP_SOIL_30,DEGC,NONE,INST,PT10M,PT10M,Instantaneous soil temperature at 30 cm depth
 TEMP_SOIL_30-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_30,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 30 cm depth in degrees Celsius
 TEMP_SOIL_30-MEAN_PREC-DEGC-PT10M-PT10M,,TEMP_SOIL_30,DEGC,MEAN,PREC,PT10M,PT10M,Mean soil temperature at 30 cm depth over the preceding 10 minutes in degrees Celsius
+TEMP_SOIL_30-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_30,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 30 cm depth over the preceding 15 minutes in degrees Celsius
 TEMP_SOIL_30-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_30,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 30 cm depth over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_40-INST-DEGC-PT10M-PT10M,,TEMP_SOIL_40,DEGC,NONE,INST,PT10M,PT10M,Instantaneous soil temperature at 40 cm depth
 TEMP_SOIL_40-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_40,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 40 cm depth in degrees Celsius
 TEMP_SOIL_40-MEAN_PREC-DEGC-PT10M-PT10M,,TEMP_SOIL_40,DEGC,MEAN,PREC,PT10M,PT10M,Mean soil temperature at 40 cm depth over the preceding 10 minutes in degrees Celsius
+TEMP_SOIL_40-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL_40,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature at 40 cm depth over the preceding 15 minutes in degrees Celsius
 TEMP_SOIL_40-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SOIL_40,DEGC,MEAN,PREC,PT30M,PT30M,Mean soil temperature at 40 cm depth over the preceding 30 minutes in degrees Celsius
 TEMP_SOIL_5-INST-DEGC-PT15M-PT15M,,TEMP_SOIL_5,DEGC,NONE,INST,PT15M,PT15M,Instantaneous soil temperature at 5 cm depth in degrees Celsius
 TEMP_SOIL_5-INST-DEGC-PT30M-PT30M,,TEMP_SOIL_5,DEGC,NONE,INST,PT30M,PT30M,Instantaneous soil temperature at 5 cm depth in degrees Celsius
@@ -335,6 +357,7 @@ VWC_SOIL_10-INST-PCT-PT10M-PT10M,,VWC_SOIL_10,PCT,NONE,INST,PT10M,PT10M,Instanta
 VWC_SOIL_10-INST-PCT-PT30M-PT30M,,VWC_SOIL_10,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 10 cm depth in percent
 VWC_SOIL_10-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_10,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 10 cm depth over the preceding 15 minutes in cubic metres per cubic metre
 VWC_SOIL_10-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_10,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 10 cm depth over the preceding 10 minutes in percent
+VWC_SOIL_10-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_10,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 10 cm depth over the preceding 15 minutes in percent
 VWC_SOIL_10-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_10,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 10 cm depth over the preceding 30 minutes in percent
 VWC_SOIL_10-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_10,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 10 cm depth over the proceeding day in percent
 VWC_SOIL_15-INST-M3-M3-PT15M-PT15M,,VWC_SOIL_15,M3-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 15 cm depth in cubic metres per cubic metre
@@ -344,6 +367,7 @@ VWC_SOIL_15-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_15,PCT,MEAN,PROC,P1D,P1D,Mean soil v
 VWC_SOIL_20-INST-PCT-PT10M-PT10M,,VWC_SOIL_20,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 20 cm depth in percent
 VWC_SOIL_20-INST-PCT-PT30M-PT30M,,VWC_SOIL_20,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 20 cm depth in percent
 VWC_SOIL_20-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_20,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 20 cm depth over the preceding 10 minutes in percent
+VWC_SOIL_20-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_20,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 20 cm depth over the preceding 15 minutes in percent
 VWC_SOIL_20-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_20,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 20 cm depth over the preceding 30 minutes in percent
 VWC_SOIL_25-INST-M3-M3-PT15M-PT15M,,VWC_SOIL_25,M3-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 25 cm depth in cubic metres per cubic metre
 VWC_SOIL_25-INST-PCT-PT30M-PT30M,,VWC_SOIL_25,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 25 cm depth in percent
@@ -352,16 +376,19 @@ VWC_SOIL_25-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_25,PCT,MEAN,PROC,P1D,P1D,Mean soil v
 VWC_SOIL_30-INST-PCT-PT10M-PT10M,,VWC_SOIL_30,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 30 cm depth in percent
 VWC_SOIL_30-INST-PCT-PT30M-PT30M,,VWC_SOIL_30,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 30 cm depth in percent
 VWC_SOIL_30-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_30,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 30 cm depth over the preceding 10 minutes in percent
+VWC_SOIL_30-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_30,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 30 cm depth over the preceding 15 minutes in percent
 VWC_SOIL_30-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_30,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 30 cm depth over the preceding 30 minutes in percent
 VWC_SOIL_40-INST-PCT-PT10M-PT10M,,VWC_SOIL_40,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 40 cm depth in percent
 VWC_SOIL_40-INST-PCT-PT30M-PT30M,,VWC_SOIL_40,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 40 cm depth in percent
 VWC_SOIL_40-INST-PCT-PT30M-PT30M,,VWC_SOIL_40,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 40 cm depth in percent
 VWC_SOIL_40-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_40,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 40 cm depth over the preceding 10 minutes in percent
+VWC_SOIL_40-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_40,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 40 cm depth over the preceding 15 minutes in percent
 VWC_SOIL_40-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_40,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 40 cm depth over the preceding 30 minutes in percent
 VWC_SOIL_5-INST-M3-M3-PT15M-PT15M,,VWC_SOIL_5,M3-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 5 cm depth in cubic metres per cubic metre
 VWC_SOIL_5-INST-PCT-PT30M-PT30M,,VWC_SOIL_5,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 5 cm depth in percent
 VWC_SOIL_5-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_5,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 5 cm depth over the preceding 15 minutes in cubic metres per cubic metre
 VWC_SOIL_5-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_5,PCT,MEAN,PROC,PT10M,PT10M,Mean soil volumetric water content at 5 cm depth over the preceding 10 minutes in percent
+VWC_SOIL_5-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_5,PCT,MEAN,PROC,PT15M,PT15M,Mean soil volumetric water content at 5 cm depth over the preceding 15 minutes in percent
 VWC_SOIL_5-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_5,PCT,MEAN,PROC,PT30M,PT30M,Mean soil volumetric water content at 5 cm depth over the preceding 30 minutes in percent
 VWC_SOIL_5-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_5,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 5 cm depth over the proceeding day in percent
 VWC_SOIL_50-INST-M3-M3-PT15M-PT15M,,VWC_SOIL_50,M3-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 50 cm depth in cubic metres per cubic metre
@@ -369,6 +396,7 @@ VWC_SOIL_50-INST-PCT-PT10M-PT10M,,VWC_SOIL_50,PCT,NONE,INST,PT10M,PT10M,Instanta
 VWC_SOIL_50-INST-PCT-PT30M-PT30M,,VWC_SOIL_50,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 50 cm depth in percent
 VWC_SOIL_50-MEAN_PREC-M3-M3-PT15M-PT15M,,VWC_SOIL_50,M3-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 50 cm depth over the preceding 15 minutes in cubic metres per cubic metre
 VWC_SOIL_50-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_50,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 50 cm depth over the preceding 10 minutes in percent
+VWC_SOIL_50-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_50,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 50 cm depth over the preceding 15 minutes in percent
 VWC_SOIL_50-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_50,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 50 cm depth over the preceding 30 minutes in percent
 VWC_SOIL_50-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_50,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 50 cm depth over the proceeding day in percent
 VWC_SOIL_60-INST-PCT-PT10M-PT10M,,VWC_SOIL_60,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 60 cm depth in percent
