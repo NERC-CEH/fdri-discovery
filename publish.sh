@@ -16,7 +16,7 @@ then
   exit 1
 fi
 
-for file in build/data/*.ttl
+for file in build/annotated/*.ttl
 do 
   # Upload data to s3
   S3_DESTINATION=$S3_DESTINATION_PREFIX/${file#"build/"}
@@ -24,7 +24,7 @@ do
   aws s3 cp $file $S3_DESTINATION
 
   # Publish data to sqs queue
-  BODY=$(printf '{"payload":"%s","action":"replace-graph","context":"http://fdri.ceh.ac.uk/graph/%s","content-type":"text/turtle"}' $S3_DESTINATION ${file#"build/"})
+  BODY=$(printf '{"payload":"%s","action":"replace-graph","context":"http://fdri.ceh.ac.uk/graph/%s","content-type":"text/turtle"}' $S3_DESTINATION ${file#"build/annotated/"}
   echo "Sending $BODY to $QUEUE_URL"
   aws sqs send-message --message-deduplication-id=$S3_DESTINATION --message-group-id=data --queue-url=$QUEUE_URL --message-body="$BODY"
 done
@@ -39,6 +39,13 @@ aws sqs send-message --message-deduplication-id=$S3_DESTINATION --message-group-
 S3_DESTINATION=$S3_DESTINATION_PREFIX/dependencies.su
 echo Uploading sample_data/dependencies.su to $S3_DESTINATION
 aws s3 cp sample_data/dependencies.su $S3_DESTINATION
+BODY=$(printf '{"payload":"%s","action":"sparql-update","content-type":"application/sparql-update"}' $S3_DESTINATION)
+echo "Sending $BODY to $QUEUE_URL"
+aws sqs send-message --message-deduplication-id=$S3_DESTINATION --message-group-id=data --queue-url=$QUEUE_URL --message-body="$BODY"
+
+S3_DESTINATION=$S3_DESTINATION_PREFIX/cleanup.ru
+echo Uploading build/cleanup.ru to $S3_DESTINATION
+aws s3 cp build/cleanup.ru $S3_DESTINATION
 BODY=$(printf '{"payload":"%s","action":"sparql-update","content-type":"application/sparql-update"}' $S3_DESTINATION)
 echo "Sending $BODY to $QUEUE_URL"
 aws sqs send-message --message-deduplication-id=$S3_DESTINATION --message-group-id=data --queue-url=$QUEUE_URL --message-body="$BODY"

@@ -1,4 +1,7 @@
-MAKEFLAGS += -j 4
+# If using GNU Make 4.4 or later, uncomment the following line to enable parallel builds with 4 jobs.
+# On earlier version of GNU Make, the lack of a .WAIT target will cause inconsistent build activity metadata and should be avoided.
+# MAKEFLAGS += -j 4
+
 IMAGE=293385631482.dkr.ecr.eu-west-1.amazonaws.com/epimorphics/record-spec-tools/unstable:1.0-SNAPSHOT
 RUN=docker run --rm -v .:/data ${IMAGE}
 
@@ -7,7 +10,10 @@ SRC = sample_data/src
 SQL = sample_data/sql
 VAL = build/validation
 TPL = sample_data/templates
+# TTL_BASE: The build directory for the output of the template processor
 TTL_BASE = build/data
+# ANNOTATED_BASE: The build directory for the output of the template processor with provenance annotations
+ANNOTATED_BASE = build/annotated
 SHACL_BASE = build/shacl
 SCHEMA_FILE = ontology/schema/fdri.recordspec.yaml
 RAW_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $$4}' branch.map)
@@ -16,6 +22,7 @@ PROCESSED_SOURCE_BUCKET := $(shell awk '$$1==ENVIRON["GITHUB_REF_NAME"] {print $
 PROCESSED_SOURCE_BUCKET := $(or ${PROCESSED_SOURCE_BUCKET},fdri-dummy-processed)
 MAPPER = mapper -g RAW_SOURCE_BUCKET=${RAW_SOURCE_BUCKET} -g PROCESSED_SOURCE_BUCKET=${PROCESSED_SOURCE_BUCKET}
 GRIDMAP = gridded-mapper
+ACTIVITY_ID := $(shell uuidgen)
 
 RECORDS = \
 	Variable \
@@ -72,6 +79,7 @@ SAMPLES += $(TTL_BASE)/UNITS.ttl
 
 # Stop-gap temporal extents
 SAMPLES += $(TTL_BASE)/ts_temporal.ttl
+
 # COSMOS processing configurations
 SAMPLES += $(TTL_BASE)/processing_configurations_cosmos.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_cosmos.ttl
@@ -135,18 +143,47 @@ CONTEXTS = $(RECORDS:%=build/context/%.context.jsonld)
 
 REPORTS = $(SAMPLES:$(TTL_BASE)/%.ttl=$(VAL)/%.ttl)
 
+ANNOTATED = $(SAMPLES:$(TTL_BASE)/%.ttl=$(ANNOTATED_BASE)/%.ttl)
+
+CLEANUP_SCRIPT = build/cleanup.ru
+
+# .WAIT is a target defined in Gnu Make 4.4 and later, used to force a wait between targets. It is defined here for compatibility with earlier versions of Gnu Make.
+.WAIT: ;
+
 default: data
 
-data: validate reports full_validation
-all: validate schemas contexts reports full_validation
+data: build/activity-start.ttl .WAIT validate reports full_validation .WAIT build/data/activity-$(ACTIVITY_ID).ttl
+
+all: build/activity-start.ttl .WAIT validate schemas contexts reports full_validation .WAIT $(ANNOTATED) build/annotated/activity-$(ACTIVITY_ID).ttl
 
 pull:
 	docker pull $(IMAGE)
 
 schemas: $(SCHEMAS)
 contexts: $(CONTEXTS)
-samples: $(SAMPLES)
+samples: build/activity-start.ttl .WAIT $(SAMPLES) .WAIT build/data/activity-$(ACTIVITY_ID).ttl
 reports: $(REPORTS)
+
+annotated: build/activity-start.ttl .WAIT $(ANNOTATED) .WAIT build/annotated/activity-$(ACTIVITY_ID).ttl
+
+publish: annotated $(CLEANUP_SCRIPT)
+	./publish.sh
+
+publish-local: annotated $(CLEANUP_SCRIPT)
+	./publish-local.sh
+
+build/cleanup.ru: | build
+	sed -e 's/{activity}/http:\/\/fdri.ceh.ac.uk\/id\/activity\/$(ACTIVITY_ID)/g' sample_data/cleanup.ru.tpl > $@
+
+build/activity-start.ttl: build/data
+	./activity-start.sh $(ACTIVITY_ID) > $@
+
+build/activity-end.ttl: build/data
+	./activity-end.sh $(ACTIVITY_ID) > $@
+
+build/data/activity-$(ACTIVITY_ID).ttl: build/activity-start.ttl build/activity-end.ttl | build/annotated
+	cat $^ > $@
+
 full_validation: $(VAL)/full_report.ttl
 	grep -q -E "conforms\s+true" $^
 
@@ -187,6 +224,9 @@ build/shacl:
 
 build/data:
 	mkdir -p build/data
+
+build/annotated:
+	mkdir -p build/annotated
 
 build/instrumentation_parameters.csv: $(SRC)/TIMESERIES_IDS_COSMOS.csv $(SRC)/SITE_INSTRUMENTATION.csv $(SRC)/MEASURES.csv $(SQL)/instrumentation_parameters.sql | build
 	$(RUN) /bin/bash -c "duckdb < $(SQL)/instrumentation_parameters.sql"
@@ -362,3 +402,8 @@ $(VAL)/data.nt: $(SAMPLES) ontology/owl/fdri-metadata.ttl ontology/build/fdri-me
 
 $(VAL)/full_report.ttl: $(VAL)/data.nt $(SHACL_BASE)/fdri_shacl_with_refs.ttl | build/validation
 	$(RUN) shacl v -d $(VAL)/data.nt -s $(SHACL_BASE)/fdri_shacl_with_refs.ttl > $@
+
+# Annotate TTL files with activity provenance
+$(ANNOTATED_BASE)/%.ttl: $(TTL_BASE)/%.ttl | build/annotated
+	cp $^ $@
+	echo "<http://fdri.ceh.ac.uk/graph/$(^F:build/%=%)> <http://fdri.ceh.ac.uk/vocab/metadata/wasModifiedBy> <http://fdri.ceh.ac.uk/id/activity/${ACTIVITY_ID}> ." >> $@
