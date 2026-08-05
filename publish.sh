@@ -24,7 +24,7 @@ do
   aws s3 cp $file $S3_DESTINATION
 
   # Publish data to sqs queue
-  BODY=$(printf '{"payload":"%s","action":"replace-graph","context":"http://fdri.ceh.ac.uk/graph/%s","content-type":"text/turtle"}' $S3_DESTINATION ${file#"build/annotated/"}
+  BODY=$(printf '{"payload":"%s","action":"replace-graph","context":"http://fdri.ceh.ac.uk/graph/%s","content-type":"text/turtle"}' $S3_DESTINATION ${file#"build/annotated/"})
   echo "Sending $BODY to $QUEUE_URL"
   aws sqs send-message --message-deduplication-id=$S3_DESTINATION --message-group-id=data --queue-url=$QUEUE_URL --message-body="$BODY"
 done
