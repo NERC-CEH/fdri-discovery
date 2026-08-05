@@ -144,14 +144,14 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-ta_1min-plan",
-      "output": "fdri-se-carwe-01-ws-ta_1min_processed",
-      "input": "FDRI-SE-CARWE-01-WS-TA_1MIN_RAW",
+      "id": "fdri-se-carwe-01-ws-temp_air_1min-plan",
+      "output": "fdri-se-carwe-01-ws-temp_air_1min_processed",
+      "input": "FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_RAW",
       "steps": [
-        "fdri-se-carwe-01-ws-ta_1min-load_raw",
-        "fdri-se-carwe-01-ws-ta_1min-battery_v",
-        "fdri-se-carwe-01-ws-ta_1min-range",
-        "fdri-se-carwe-01-ws-ta_1min-spike"
+        "fdri-se-carwe-01-ws-temp_air_1min-load_raw",
+        "fdri-se-carwe-01-ws-temp_air_1min-battery_v",
+        "fdri-se-carwe-01-ws-temp_air_1min-range",
+        "fdri-se-carwe-01-ws-temp_air_1min-spike"
       ]
     },
     {
