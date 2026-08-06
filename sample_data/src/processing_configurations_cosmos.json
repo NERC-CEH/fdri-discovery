@@ -22473,6 +22473,7 @@
           "value": [
             "VWC_SATURATION",
             "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
           ]
         }
       ]
