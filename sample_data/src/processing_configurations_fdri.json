@@ -113,11 +113,11 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-ta_1min-load_raw",
+      "id": "fdri-se-carwe-01-ws-temp_air_1min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-TA_1MIN_RAW"
+        "FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_RAW"
       ]
     },
     {
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-ta_1min-battery_v",
+      "id": "fdri-se-carwe-01-ws-temp_air_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -603,7 +603,7 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-ta_1min-range",
+      "id": "fdri-se-carwe-01-ws-temp_air_1min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -618,7 +618,7 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-ta_1min-spike",
+      "id": "fdri-se-carwe-01-ws-temp_air_1min-spike",
       "type": "qc",
       "method": "SPIKE",
       "parameters": [

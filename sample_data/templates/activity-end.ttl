@@ -1,0 +1,1 @@
+activity:{id} prov:endedAtTime "{ts}"^^xsd:dateTime .
