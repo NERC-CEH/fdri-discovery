@@ -2937,16 +2937,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -7504,16 +7500,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -12475,16 +12467,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -17484,16 +17472,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -22485,16 +22469,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -27661,16 +27641,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -36036,16 +36012,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -43469,16 +43441,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -48645,16 +48613,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -56536,16 +56500,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -61442,16 +61402,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -66593,16 +66549,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -71732,16 +71684,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -79326,16 +79274,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -86985,16 +86929,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -94579,16 +94519,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -102493,16 +102429,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -107848,16 +107780,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -113148,16 +113076,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -120742,16 +120666,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -128326,16 +128246,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -132755,16 +132671,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -137425,16 +137337,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -142356,16 +142264,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -150015,16 +149919,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -157995,16 +157895,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -162941,16 +162837,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -170510,16 +170402,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -175606,16 +175494,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -183255,16 +183139,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -188406,16 +188286,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -193591,16 +193467,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -201160,16 +201032,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -206066,16 +205934,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -211345,16 +211209,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -216470,16 +216330,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -221391,16 +221247,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -226362,16 +226214,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -231293,16 +231141,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -238942,16 +238786,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -244503,16 +244343,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -252116,16 +251952,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -257255,16 +257087,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -265019,16 +264847,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -270043,16 +269867,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -275039,16 +274859,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -282608,16 +282424,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -288019,16 +287831,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -295382,16 +295190,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -303041,16 +302845,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
@@ -310067,16 +309867,12 @@
           "value": 3
         },
         {
-          "param": "site_attribute",
-          "value": "WILTING_POINT"
-        },
-        {
-          "param": "site_attribute",
-          "value": "FIELD_CAPACITY"
-        },
-        {
-          "param": "site_attribute",
-          "value": "SATURATION"
+          "param": "annotation",
+          "value": [
+            "VWC_SATURATION",
+            "VWC_FIELD_CAPACITY",
+            "VWC_WILTING_POINT"
+          ]
         }
       ]
     },
