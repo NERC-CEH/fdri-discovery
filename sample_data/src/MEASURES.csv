@@ -141,12 +141,12 @@ LWOUT-MEAN_PREC-WM-2-PT15M-PT15M,,LWOUT,WM-2,MEAN,PREC,PT15M,PT15M,Mean outgoing
 LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
 LWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation over preceding 30 minutes in watts per metre squared
 LWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,,LWOUT,MJM-2-D,TOTAL,PROC,P1D,P1D,Total outgoing longwave radiation over proceeding day in megajoules per metre squared
-MATPOT_SOIL_5-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_5,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 5 cm depth over preceding 10 minutes in kilopascals
-MATPOT_SOIL_10-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_10,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 10 cm depth over preceding 10 minutes in kilopascals
-MATPOT_SOIL_20-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_20,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 20 cm depth over preceding 10 minutes in kilopascals
-MATPOT_SOIL_30-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_30,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 30 cm depth over preceding 10 minutes in kilopascals
-MATPOT_SOIL_40-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_40,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 40 cm depth over preceding 10 minutes in kilopascals
-MATPOT_SOIL_50-MEAN_PREC-KPA-PT10M-PT10M,,MATPOT_SOIL_50,KPA,MEAN,PREC,PT10M,PT10M,Mean soil matric potential at 50 cm depth over preceding 10 minutes in kilopascals
+MATPOT_SOIL_5-MEAN_PREC-KPA-PT15M-PT15M,,MATPOT_SOIL_5,KPA,MEAN,PREC,PT15M,PT15M,Mean soil matric potential at 5 cm depth over preceding 15 minutes in kilopascals
+MATPOT_SOIL_10-MEAN_PREC-KPA-PT15M-PT15M,,MATPOT_SOIL_10,KPA,MEAN,PREC,PT15M,PT15M,Mean soil matric potential at 10 cm depth over preceding 15 minutes in kilopascals
+MATPOT_SOIL_20-MEAN_PREC-KPA-PT15M-PT15M,,MATPOT_SOIL_20,KPA,MEAN,PREC,PT15M,PT15M,Mean soil matric potential at 20 cm depth over preceding 15 minutes in kilopascals
+MATPOT_SOIL_30-MEAN_PREC-KPA-PT15M-PT15M,,MATPOT_SOIL_30,KPA,MEAN,PREC,PT15M,PT15M,Mean soil matric potential at 30 cm depth over preceding 15 minutes in kilopascals
+MATPOT_SOIL_40-MEAN_PREC-KPA-PT15M-PT15M,,MATPOT_SOIL_40,KPA,MEAN,PREC,PT15M,PT15M,Mean soil matric potential at 40 cm depth over preceding 15 minutes in kilopascals
+MATPOT_SOIL_50-MEAN_PREC-KPA-PT15M-PT15M,,MATPOT_SOIL_50,KPA,MEAN,PREC,PT15M,PT15M,Mean soil matric potential at 50 cm depth over preceding 15 minutes in kilopascals
 MEASURE_PERIOD-TOTAL_PREC-M_SEC-PT1H-PT1H,,MEASURE_PERIOD,M_SEC,TOTAL,PREC,PT1H,PT1H,Total measurement period over the preceding hour in milliseconds
 MEASURE_PERIOD-TOTAL_PREC-M_SEC-PT30M-PT30M,,MEASURE_PERIOD,M_SEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over the preceding 30 minutes in milliseconds
 MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
