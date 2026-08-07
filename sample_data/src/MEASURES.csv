@@ -43,6 +43,41 @@ COND_50-MEAN_PREC-DSM-1-PT15M-PT15M,,COND_50,DSM-1,MEAN,PREC,PT15M,PT15M,Mean so
 COND_50-MEAN_PREC-DSM-1-PT30M-PT30M,,COND_50,DSM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 50 cm depth over the preceding 30 minutes in dS/m
 COND_60-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_60,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 60 cm depth over the preceding 10 minutes in dS/m
 COND-MEAN_PREC-DSM-1-PT15M-PT15M,,COND,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in dS/m
+COND_10-INST-US_CM-1-PT15M-PT15M,,COND_10,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 10 cm depth in µS/cm
+COND_10-INST-US_CM-1-PT30M-PT30M,,COND_10,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 10 cm depth in µS/cm
+COND_10-MEAN_PREC-US_CM-1-PT10M-PT10M,,COND_10,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 10 cm depth over the preceding 10 minutes in µS/cm
+COND_10-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_10,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 10 cm depth over the preceding 15 minutes in µS/cm
+COND_10-MEAN_PREC-US_CM-1-PT30M-PT30M,,COND_10,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 10 cm depth over the preceding 30 minutes in µS/cm
+COND_15-INST-US_CM-1-PT15M-PT15M,,COND_15,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 15 cm depth in µS/cm
+COND_15-INST-US_CM-1-PT30M-PT30M,,COND_15,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 15 cm depth in µS/cm
+COND_15-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_15,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 15 cm depth over the preceding 15 minutes in µS/cm
+COND_20-INST-US_CM-1-PT30M-PT30M,,COND_20,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 20 cm depth in µS/cm
+COND_20-MEAN_PREC-US_CM-1-PT10M-PT10M,,COND_20,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 20 cm depth over the preceding 10 minutes in µS/cm
+COND_20-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_20,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 20 cm depth over the preceding 15 minutes in µS/cm
+COND_20-MEAN_PREC-US_CM-1-PT30M-PT30M,,COND_20,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 20 cm depth over the preceding 30 minutes in µS/cm
+COND_25-INST-US_CM-1-PT15M-PT15M,,COND_25,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 25 cm depth in µS/cm
+COND_25-INST-US_CM-1-PT30M-PT30M,,COND_25,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 25 cm depth in µS/cm
+COND_25-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_25,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 25 cm depth over the preceding 15 minutes in µS/cm
+COND_30-INST-US_CM-1-PT30M-PT30M,,COND_30,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 30 cm depth in µS/cm
+COND_30-MEAN_PREC-US_CM-1-PT10M-PT10M,,COND_30,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 30 cm depth over the preceding 10 minutes in µS/cm
+COND_30-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_30,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 30 cm depth over the preceding 15 minutes in µS/cm
+COND_30-MEAN_PREC-US_CM-1-PT30M-PT30M,,COND_30,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 30 cm depth over the preceding 30 minutes in µS/cm
+COND_40-INST-US_CM-1-PT30M-PT30M,,COND_40,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 40 cm depth in µS/cm
+COND_40-MEAN_PREC-US_CM-1-PT10M-PT10M,,COND_40,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 40 cm depth over the preceding 10 minutes in µS/cm
+COND_40-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_40,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 40 cm depth over the preceding 15 minutes in µS/cm
+COND_40-MEAN_PREC-US_CM-1-PT30M-PT30M,,COND_40,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 40 cm depth over the preceding 30 minutes in µS/cm
+COND_5-INST-US_CM-1-PT15M-PT15M,,COND_5,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 5 cm depth in µS/cm
+COND_5-INST-US_CM-1-PT30M-PT30M,,COND_5,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 5 cm depth in µS/cm
+COND_5-MEAN_PREC-US_CM-1-PT10M-PT10M,,COND_5,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 5 cm depth over the preceding 10 minutes in µS/cm
+COND_5-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_5,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 5 cm depth over the preceding 15 minutes in µS/cm
+COND_5-MEAN_PREC-US_CM-1-PT30M-PT30M,,COND_5,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 5 cm depth over the preceding 30 minutes in µS/cm
+COND_50-INST-US_CM-1-PT15M-PT15M,,COND_50,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 50 cm depth in µS/cm
+COND_50-INST-US_CM-1-PT30M-PT30M,,COND_50,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 50 cm depth in µS/cm
+COND_50-MEAN_PREC-US_CM-1-PT10M-PT10M,,COND_50,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 50 cm depth over the preceding 10 minutes in µS/cm
+COND_50-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND_50,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity at 50 cm depth over the preceding 15 minutes in µS/cm
+COND_50-MEAN_PREC-US_CM-1-PT30M-PT30M,,COND_50,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean soil electrical conductivity at 50 cm depth over the preceding 30 minutes in µS/cm
+COND_60-MEAN_PREC-US_CM-1-PT10M-PT10M,,COND_60,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 60 cm depth over the preceding 10 minutes in µS/cm
+COND-MEAN_PREC-US_CM-1-PT15M-PT15M,,COND,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in µS/cm
 COV_TS_UX-INST-KMS-1-PT30M-PT30M,,COV_TS_UX,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UX wind speed component in kelvin meters per second
 COV_TS_UY-INST-KMS-1-PT30M-PT30M,,COV_TS_UY,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UY wind speed component in kelvin meters per second
 COV_TS_UZ-INST-KMS-1-PT30M-PT30M,,COV_TS_UZ,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UZ wind speed component in kelvin meters per second
@@ -168,6 +203,41 @@ PERM_50-INST-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,NONE,INST,PT30M,PT30M,Instan
 PERM_50-MEAN_PREC-UNITLESS-PT10M-PT10M,,PERM_50,UNITLESS,MEAN,PREC,PT10M,PT10M,Mean electrical permittivity at 50 cm depth over the preceding 10 minutes
 PERM_50-MEAN_PREC-UNITLESS-PT15M-PT15M,,PERM_50,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean electrical permittivity at 50 cm depth over the preceding 15 minutes
 PERM_50-MEAN_PREC-UNITLESS-PT30M-PT30M,,PERM_50,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean electrical permittivity at 50 cm depth over the preceding 30 minutes
+PORE_WATER_COND_10-INST-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_10,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous pore water electrical conductivity at 10 cm depth in µS/cm
+PORE_WATER_COND_10-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_10,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 10 cm depth in µS/cm
+PORE_WATER_COND_10-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_10,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean pore water electrical conductivity at 10 cm depth over the preceding 10 minutes in µS/cm
+PORE_WATER_COND_10-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_10,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 10 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_10-MEAN_PREC-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_10,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean pore water electrical conductivity at 10 cm depth over the preceding 30 minutes in µS/cm
+PORE_WATER_COND_15-INST-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_15,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous pore water electrical conductivity at 15 cm depth in µS/cm
+PORE_WATER_COND_15-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_15,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 15 cm depth in µS/cm
+PORE_WATER_COND_15-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_15,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 15 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_20-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_20,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 20 cm depth in µS/cm
+PORE_WATER_COND_20-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_20,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean pore water electrical conductivity at 20 cm depth over the preceding 10 minutes in µS/cm
+PORE_WATER_COND_20-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_20,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 20 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_20-MEAN_PREC-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_20,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean pore water electrical conductivity at 20 cm depth over the preceding 30 minutes in µS/cm
+PORE_WATER_COND_25-INST-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_25,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous pore water electrical conductivity at 25 cm depth in µS/cm
+PORE_WATER_COND_25-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_25,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 25 cm depth in µS/cm
+PORE_WATER_COND_25-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_25,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 25 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_30-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_30,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 30 cm depth in µS/cm
+PORE_WATER_COND_30-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_30,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean pore water electrical conductivity at 30 cm depth over the preceding 10 minutes in µS/cm
+PORE_WATER_COND_30-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_30,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 30 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_30-MEAN_PREC-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_30,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean pore water electrical conductivity at 30 cm depth over the preceding 30 minutes in µS/cm
+PORE_WATER_COND_40-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_40,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 40 cm depth in µS/cm
+PORE_WATER_COND_40-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_40,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean pore water electrical conductivity at 40 cm depth over the preceding 10 minutes in µS/cm
+PORE_WATER_COND_40-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_40,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 40 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_40-MEAN_PREC-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_40,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean pore water electrical conductivity at 40 cm depth over the preceding 30 minutes in µS/cm
+PORE_WATER_COND_5-INST-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_5,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous pore water electrical conductivity at 5 cm depth in µS/cm
+PORE_WATER_COND_5-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_5,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 5 cm depth in µS/cm
+PORE_WATER_COND_5-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_5,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean pore water electrical conductivity at 5 cm depth over the preceding 10 minutes in µS/cm
+PORE_WATER_COND_5-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_5,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 5 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_5-MEAN_PREC-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_5,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean pore water electrical conductivity at 5 cm depth over the preceding 30 minutes in µS/cm
+PORE_WATER_COND_50-INST-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_50,US_CM-1,NONE,INST,PT15M,PT15M,Instantaneous pore water electrical conductivity at 50 cm depth in µS/cm
+PORE_WATER_COND_50-INST-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_50,US_CM-1,NONE,INST,PT30M,PT30M,Instantaneous pore water electrical conductivity at 50 cm depth in µS/cm
+PORE_WATER_COND_50-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_50,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean pore water electrical conductivity at 50 cm depth over the preceding 10 minutes in µS/cm
+PORE_WATER_COND_50-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND_50,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity at 50 cm depth over the preceding 15 minutes in µS/cm
+PORE_WATER_COND_50-MEAN_PREC-US_CM-1-PT30M-PT30M,,PORE_WATER_COND_50,US_CM-1,MEAN,PREC,PT30M,PT30M,Mean pore water electrical conductivity at 50 cm depth over the preceding 30 minutes in µS/cm
+PORE_WATER_COND_60-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_60,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean pore water electrical conductivity at 60 cm depth over the preceding 10 minutes in µS/cm
+PORE_WATER_COND-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity over the preceding 15 minutes in µS/cm
 POWER-INST-MAH-PT15M-PT15M,,POWER,MAH,NONE,INST,PT15M,PT15M,Instantaneous power consumption over the preceding 15 minutes in milliamp-hours
 POWER-INST-MAH-PT1H-PT1H,,POWER,MAH,NONE,INST,PT1H,PT1H,Instantaneous power consumption over the preceding hour in milliamp-hours
 PPFD_IN-MEAN_PREC-UMOLM-2S-1-PT1M-PT1M,,PPFD_IN,UMOLM-2S-1,MEAN,PREC,PT1M,PT1M,Mean incoming photosynthetic photon flux density over the preceding minute
