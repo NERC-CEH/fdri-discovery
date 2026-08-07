@@ -29,7 +29,6 @@
       "steps": [
         "fdri-se-carwe-01-ws-precip_int_1min-load_raw",
         "fdri-se-carwe-01-ws-precip_int_1min-battery_v",
-        "fdri-se-carwe-01-ws-precip_int_1min-battery_v",
         "fdri-se-carwe-01-ws-precip_int_1min-range"
       ]
     },
