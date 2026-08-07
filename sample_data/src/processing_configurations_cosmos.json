@@ -2927,7 +2927,7 @@
     {
       "id": "cosmos-alic1-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-ALIC1-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -7490,7 +7490,7 @@
     {
       "id": "cosmos-balrd-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-BALRD-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -12457,7 +12457,7 @@
     {
       "id": "cosmos-bickl-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-BICKL-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -17462,7 +17462,7 @@
     {
       "id": "cosmos-bunny-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-BUNNY-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -22459,7 +22459,7 @@
     {
       "id": "cosmos-cardt-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-CARDT-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -27631,7 +27631,7 @@
     {
       "id": "cosmos-cgarw-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-CGARW-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -36002,7 +36002,7 @@
     {
       "id": "cosmos-chimn-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-CHIMN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -43431,7 +43431,7 @@
     {
       "id": "cosmos-chobh-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-CHOBH-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -48603,7 +48603,7 @@
     {
       "id": "cosmos-cochn-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-COCHN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -56490,7 +56490,7 @@
     {
       "id": "cosmos-coclp-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-COCLP-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -61392,7 +61392,7 @@
     {
       "id": "cosmos-crich-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-CRICH-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -66539,7 +66539,7 @@
     {
       "id": "cosmos-eastb-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-EASTB-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -71674,7 +71674,7 @@
     {
       "id": "cosmos-elmst-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-ELMST-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -79264,7 +79264,7 @@
     {
       "id": "cosmos-eustn-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-EUSTN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -86919,7 +86919,7 @@
     {
       "id": "cosmos-finch-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-FINCH-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -94509,7 +94509,7 @@
     {
       "id": "cosmos-fivet-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-FIVET-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -102419,7 +102419,7 @@
     {
       "id": "cosmos-gisbn-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-GISBN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -107770,7 +107770,7 @@
     {
       "id": "cosmos-glens-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-GLENS-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -113066,7 +113066,7 @@
     {
       "id": "cosmos-glenw-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-GLENW-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -120656,7 +120656,7 @@
     {
       "id": "cosmos-hadlw-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HADLW-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -128236,7 +128236,7 @@
     {
       "id": "cosmos-hartw-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HARTW-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -132661,7 +132661,7 @@
     {
       "id": "cosmos-harwd-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HARWD-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -137327,7 +137327,7 @@
     {
       "id": "cosmos-henfs-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HENFS-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -142254,7 +142254,7 @@
     {
       "id": "cosmos-hillb-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HILLB-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -149909,7 +149909,7 @@
     {
       "id": "cosmos-hlacy-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HLACY-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -157885,7 +157885,7 @@
     {
       "id": "cosmos-holln-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HOLLN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -162827,7 +162827,7 @@
     {
       "id": "cosmos-hybry-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-HYBRY-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -170392,7 +170392,7 @@
     {
       "id": "cosmos-lizrd-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-LIZRD-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -175484,7 +175484,7 @@
     {
       "id": "cosmos-lodtn-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-LODTN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -183129,7 +183129,7 @@
     {
       "id": "cosmos-lulln-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-LULLN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -188276,7 +188276,7 @@
     {
       "id": "cosmos-moorh-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-MOORH-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -193457,7 +193457,7 @@
     {
       "id": "cosmos-morem-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-MOREM-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -201022,7 +201022,7 @@
     {
       "id": "cosmos-morly-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-MORLY-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -205924,7 +205924,7 @@
     {
       "id": "cosmos-nwyke-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-NWYKE-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -211199,7 +211199,7 @@
     {
       "id": "cosmos-plynl-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-PLYNL-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -216320,7 +216320,7 @@
     {
       "id": "cosmos-portn-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-PORTN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -221237,7 +221237,7 @@
     {
       "id": "cosmos-rdmer-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-RDMER-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -226204,7 +226204,7 @@
     {
       "id": "cosmos-redhl-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-REDHL-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -231131,7 +231131,7 @@
     {
       "id": "cosmos-riseh-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-RISEH-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -238776,7 +238776,7 @@
     {
       "id": "cosmos-rothd-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-ROTHD-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -244333,7 +244333,7 @@
     {
       "id": "cosmos-sheep-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-SHEEP-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -251942,7 +251942,7 @@
     {
       "id": "cosmos-sourh-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-SOURH-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -257077,7 +257077,7 @@
     {
       "id": "cosmos-spenf-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-SPENF-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -264837,7 +264837,7 @@
     {
       "id": "cosmos-stght-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-STGHT-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -269857,7 +269857,7 @@
     {
       "id": "cosmos-stips-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-STIPS-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -274849,7 +274849,7 @@
     {
       "id": "cosmos-sydlg-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-SYDLG-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -282414,7 +282414,7 @@
     {
       "id": "cosmos-tadhm-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-TADHM-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -287821,7 +287821,7 @@
     {
       "id": "cosmos-waddn-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-WADDN-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -295180,7 +295180,7 @@
     {
       "id": "cosmos-wimpl-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-WIMPL-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -302835,7 +302835,7 @@
     {
       "id": "cosmos-wrttl-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-WRTTL-COSMOS_VWC_1DAY_PROCESSED"
       ],
@@ -309857,7 +309857,7 @@
     {
       "id": "cosmos-wyth1-smi_1day-calc_daily_smi",
       "type": "calculate",
-      "method": "calc_daily_SMI",
+      "method": "calculate_smi",
       "dep_ts": [
         "COSMOS-WYTH1-COSMOS_VWC_1DAY_PROCESSED"
       ],
