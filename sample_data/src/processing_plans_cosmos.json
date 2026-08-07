@@ -592,7 +592,7 @@
       "id": "cosmos-alic1-smi_1day-plan",
       "output": "cosmos-alic1-smi_1day_processed",
       "steps": [
-        "cosmos-alic1-smi_1day-calc_daily_smi"
+        "cosmos-alic1-smi_1day-calculate_smi"
       ]
     },
     {
@@ -1632,7 +1632,7 @@
       "id": "cosmos-balrd-smi_1day-plan",
       "output": "cosmos-balrd-smi_1day_processed",
       "steps": [
-        "cosmos-balrd-smi_1day-calc_daily_smi"
+        "cosmos-balrd-smi_1day-calculate_smi"
       ]
     },
     {
@@ -2769,7 +2769,7 @@
       "id": "cosmos-bickl-smi_1day-plan",
       "output": "cosmos-bickl-smi_1day_processed",
       "steps": [
-        "cosmos-bickl-smi_1day-calc_daily_smi"
+        "cosmos-bickl-smi_1day-calculate_smi"
       ]
     },
     {
@@ -3908,7 +3908,7 @@
       "id": "cosmos-bunny-smi_1day-plan",
       "output": "cosmos-bunny-smi_1day_processed",
       "steps": [
-        "cosmos-bunny-smi_1day-calc_daily_smi"
+        "cosmos-bunny-smi_1day-calculate_smi"
       ]
     },
     {
@@ -5047,7 +5047,7 @@
       "id": "cosmos-cardt-smi_1day-plan",
       "output": "cosmos-cardt-smi_1day_processed",
       "steps": [
-        "cosmos-cardt-smi_1day-calc_daily_smi"
+        "cosmos-cardt-smi_1day-calculate_smi"
       ]
     },
     {
@@ -6221,7 +6221,7 @@
       "id": "cosmos-cgarw-smi_1day-plan",
       "output": "cosmos-cgarw-smi_1day_processed",
       "steps": [
-        "cosmos-cgarw-smi_1day-calc_daily_smi"
+        "cosmos-cgarw-smi_1day-calculate_smi"
       ]
     },
     {
@@ -8046,7 +8046,7 @@
       "id": "cosmos-chimn-smi_1day-plan",
       "output": "cosmos-chimn-smi_1day_processed",
       "steps": [
-        "cosmos-chimn-smi_1day-calc_daily_smi"
+        "cosmos-chimn-smi_1day-calculate_smi"
       ]
     },
     {
@@ -9705,7 +9705,7 @@
       "id": "cosmos-chobh-smi_1day-plan",
       "output": "cosmos-chobh-smi_1day_processed",
       "steps": [
-        "cosmos-chobh-smi_1day-calc_daily_smi"
+        "cosmos-chobh-smi_1day-calculate_smi"
       ]
     },
     {
@@ -10879,7 +10879,7 @@
       "id": "cosmos-cochn-smi_1day-plan",
       "output": "cosmos-cochn-smi_1day_processed",
       "steps": [
-        "cosmos-cochn-smi_1day-calc_daily_smi"
+        "cosmos-cochn-smi_1day-calculate_smi"
       ]
     },
     {
@@ -12644,7 +12644,7 @@
       "id": "cosmos-coclp-smi_1day-plan",
       "output": "cosmos-coclp-smi_1day_processed",
       "steps": [
-        "cosmos-coclp-smi_1day-calc_daily_smi"
+        "cosmos-coclp-smi_1day-calculate_smi"
       ]
     },
     {
@@ -13764,7 +13764,7 @@
       "id": "cosmos-crich-smi_1day-plan",
       "output": "cosmos-crich-smi_1day_processed",
       "steps": [
-        "cosmos-crich-smi_1day-calc_daily_smi"
+        "cosmos-crich-smi_1day-calculate_smi"
       ]
     },
     {
@@ -14977,7 +14977,7 @@
       "id": "cosmos-eastb-smi_1day-plan",
       "output": "cosmos-eastb-smi_1day_processed",
       "steps": [
-        "cosmos-eastb-smi_1day-calc_daily_smi"
+        "cosmos-eastb-smi_1day-calculate_smi"
       ]
     },
     {
@@ -16106,7 +16106,7 @@
       "id": "cosmos-elmst-smi_1day-plan",
       "output": "cosmos-elmst-smi_1day_processed",
       "steps": [
-        "cosmos-elmst-smi_1day-calc_daily_smi"
+        "cosmos-elmst-smi_1day-calculate_smi"
       ]
     },
     {
@@ -17746,7 +17746,7 @@
       "id": "cosmos-eustn-smi_1day-plan",
       "output": "cosmos-eustn-smi_1day_processed",
       "steps": [
-        "cosmos-eustn-smi_1day-calc_daily_smi"
+        "cosmos-eustn-smi_1day-calculate_smi"
       ]
     },
     {
@@ -19403,7 +19403,7 @@
       "id": "cosmos-finch-smi_1day-plan",
       "output": "cosmos-finch-smi_1day_processed",
       "steps": [
-        "cosmos-finch-smi_1day-calc_daily_smi"
+        "cosmos-finch-smi_1day-calculate_smi"
       ]
     },
     {
@@ -21043,7 +21043,7 @@
       "id": "cosmos-fivet-smi_1day-plan",
       "output": "cosmos-fivet-smi_1day_processed",
       "steps": [
-        "cosmos-fivet-smi_1day-calc_daily_smi"
+        "cosmos-fivet-smi_1day-calculate_smi"
       ]
     },
     {
@@ -22852,7 +22852,7 @@
       "id": "cosmos-gisbn-smi_1day-plan",
       "output": "cosmos-gisbn-smi_1day_processed",
       "steps": [
-        "cosmos-gisbn-smi_1day-calc_daily_smi"
+        "cosmos-gisbn-smi_1day-calculate_smi"
       ]
     },
     {
@@ -24113,7 +24113,7 @@
       "id": "cosmos-glens-smi_1day-plan",
       "output": "cosmos-glens-smi_1day_processed",
       "steps": [
-        "cosmos-glens-smi_1day-calc_daily_smi"
+        "cosmos-glens-smi_1day-calculate_smi"
       ]
     },
     {
@@ -25253,7 +25253,7 @@
       "id": "cosmos-glenw-smi_1day-plan",
       "output": "cosmos-glenw-smi_1day_processed",
       "steps": [
-        "cosmos-glenw-smi_1day-calc_daily_smi"
+        "cosmos-glenw-smi_1day-calculate_smi"
       ]
     },
     {
@@ -26893,7 +26893,7 @@
       "id": "cosmos-hadlw-smi_1day-plan",
       "output": "cosmos-hadlw-smi_1day_processed",
       "steps": [
-        "cosmos-hadlw-smi_1day-calc_daily_smi"
+        "cosmos-hadlw-smi_1day-calculate_smi"
       ]
     },
     {
@@ -28573,7 +28573,7 @@
       "id": "cosmos-hartw-smi_1day-plan",
       "output": "cosmos-hartw-smi_1day_processed",
       "steps": [
-        "cosmos-hartw-smi_1day-calc_daily_smi"
+        "cosmos-hartw-smi_1day-calculate_smi"
       ]
     },
     {
@@ -29601,7 +29601,7 @@
       "id": "cosmos-harwd-smi_1day-plan",
       "output": "cosmos-harwd-smi_1day_processed",
       "steps": [
-        "cosmos-harwd-smi_1day-calc_daily_smi"
+        "cosmos-harwd-smi_1day-calculate_smi"
       ]
     },
     {
@@ -30678,7 +30678,7 @@
       "id": "cosmos-henfs-smi_1day-plan",
       "output": "cosmos-henfs-smi_1day_processed",
       "steps": [
-        "cosmos-henfs-smi_1day-calc_daily_smi"
+        "cosmos-henfs-smi_1day-calculate_smi"
       ]
     },
     {
@@ -31759,7 +31759,7 @@
       "id": "cosmos-hillb-smi_1day-plan",
       "output": "cosmos-hillb-smi_1day_processed",
       "steps": [
-        "cosmos-hillb-smi_1day-calc_daily_smi"
+        "cosmos-hillb-smi_1day-calculate_smi"
       ]
     },
     {
@@ -33416,7 +33416,7 @@
       "id": "cosmos-hlacy-smi_1day-plan",
       "output": "cosmos-hlacy-smi_1day_processed",
       "steps": [
-        "cosmos-hlacy-smi_1day-calc_daily_smi"
+        "cosmos-hlacy-smi_1day-calculate_smi"
       ]
     },
     {
@@ -35161,7 +35161,7 @@
       "id": "cosmos-holln-smi_1day-plan",
       "output": "cosmos-holln-smi_1day_processed",
       "steps": [
-        "cosmos-holln-smi_1day-calc_daily_smi"
+        "cosmos-holln-smi_1day-calculate_smi"
       ]
     },
     {
@@ -36243,7 +36243,7 @@
       "id": "cosmos-hybry-smi_1day-plan",
       "output": "cosmos-hybry-smi_1day_processed",
       "steps": [
-        "cosmos-hybry-smi_1day-calc_daily_smi"
+        "cosmos-hybry-smi_1day-calculate_smi"
       ]
     },
     {
@@ -37922,7 +37922,7 @@
       "id": "cosmos-lizrd-smi_1day-plan",
       "output": "cosmos-lizrd-smi_1day_processed",
       "steps": [
-        "cosmos-lizrd-smi_1day-calc_daily_smi"
+        "cosmos-lizrd-smi_1day-calculate_smi"
       ]
     },
     {
@@ -39057,7 +39057,7 @@
       "id": "cosmos-lodtn-smi_1day-plan",
       "output": "cosmos-lodtn-smi_1day_processed",
       "steps": [
-        "cosmos-lodtn-smi_1day-calc_daily_smi"
+        "cosmos-lodtn-smi_1day-calculate_smi"
       ]
     },
     {
@@ -40754,7 +40754,7 @@
       "id": "cosmos-lulln-smi_1day-plan",
       "output": "cosmos-lulln-smi_1day_processed",
       "steps": [
-        "cosmos-lulln-smi_1day-calc_daily_smi"
+        "cosmos-lulln-smi_1day-calculate_smi"
       ]
     },
     {
@@ -41967,7 +41967,7 @@
       "id": "cosmos-moorh-smi_1day-plan",
       "output": "cosmos-moorh-smi_1day_processed",
       "steps": [
-        "cosmos-moorh-smi_1day-calc_daily_smi"
+        "cosmos-moorh-smi_1day-calculate_smi"
       ]
     },
     {
@@ -43112,7 +43112,7 @@
       "id": "cosmos-morem-smi_1day-plan",
       "output": "cosmos-morem-smi_1day_processed",
       "steps": [
-        "cosmos-morem-smi_1day-calc_daily_smi"
+        "cosmos-morem-smi_1day-calculate_smi"
       ]
     },
     {
@@ -44791,7 +44791,7 @@
       "id": "cosmos-morly-smi_1day-plan",
       "output": "cosmos-morly-smi_1day_processed",
       "steps": [
-        "cosmos-morly-smi_1day-calc_daily_smi"
+        "cosmos-morly-smi_1day-calculate_smi"
       ]
     },
     {
@@ -45911,7 +45911,7 @@
       "id": "cosmos-nwyke-smi_1day-plan",
       "output": "cosmos-nwyke-smi_1day_processed",
       "steps": [
-        "cosmos-nwyke-smi_1day-calc_daily_smi"
+        "cosmos-nwyke-smi_1day-calculate_smi"
       ]
     },
     {
@@ -47132,7 +47132,7 @@
       "id": "cosmos-plynl-smi_1day-plan",
       "output": "cosmos-plynl-smi_1day_processed",
       "steps": [
-        "cosmos-plynl-smi_1day-calc_daily_smi"
+        "cosmos-plynl-smi_1day-calculate_smi"
       ]
     },
     {
@@ -48301,7 +48301,7 @@
       "id": "cosmos-portn-smi_1day-plan",
       "output": "cosmos-portn-smi_1day_processed",
       "steps": [
-        "cosmos-portn-smi_1day-calc_daily_smi"
+        "cosmos-portn-smi_1day-calculate_smi"
       ]
     },
     {
@@ -49422,7 +49422,7 @@
       "id": "cosmos-rdmer-smi_1day-plan",
       "output": "cosmos-rdmer-smi_1day_processed",
       "steps": [
-        "cosmos-rdmer-smi_1day-calc_daily_smi"
+        "cosmos-rdmer-smi_1day-calculate_smi"
       ]
     },
     {
@@ -50559,7 +50559,7 @@
       "id": "cosmos-redhl-smi_1day-plan",
       "output": "cosmos-redhl-smi_1day_processed",
       "steps": [
-        "cosmos-redhl-smi_1day-calc_daily_smi"
+        "cosmos-redhl-smi_1day-calculate_smi"
       ]
     },
     {
@@ -51640,7 +51640,7 @@
       "id": "cosmos-riseh-smi_1day-plan",
       "output": "cosmos-riseh-smi_1day_processed",
       "steps": [
-        "cosmos-riseh-smi_1day-calc_daily_smi"
+        "cosmos-riseh-smi_1day-calculate_smi"
       ]
     },
     {
@@ -53337,7 +53337,7 @@
       "id": "cosmos-rothd-smi_1day-plan",
       "output": "cosmos-rothd-smi_1day_processed",
       "steps": [
-        "cosmos-rothd-smi_1day-calc_daily_smi"
+        "cosmos-rothd-smi_1day-calculate_smi"
       ]
     },
     {
@@ -54558,7 +54558,7 @@
       "id": "cosmos-sheep-smi_1day-plan",
       "output": "cosmos-sheep-smi_1day_processed",
       "steps": [
-        "cosmos-sheep-smi_1day-calc_daily_smi"
+        "cosmos-sheep-smi_1day-calculate_smi"
       ]
     },
     {
@@ -56293,7 +56293,7 @@
       "id": "cosmos-sourh-smi_1day-plan",
       "output": "cosmos-sourh-smi_1day_processed",
       "steps": [
-        "cosmos-sourh-smi_1day-calc_daily_smi"
+        "cosmos-sourh-smi_1day-calculate_smi"
       ]
     },
     {
@@ -57422,7 +57422,7 @@
       "id": "cosmos-spenf-smi_1day-plan",
       "output": "cosmos-spenf-smi_1day_processed",
       "steps": [
-        "cosmos-spenf-smi_1day-calc_daily_smi"
+        "cosmos-spenf-smi_1day-calculate_smi"
       ]
     },
     {
@@ -59157,7 +59157,7 @@
       "id": "cosmos-stght-smi_1day-plan",
       "output": "cosmos-stght-smi_1day_processed",
       "steps": [
-        "cosmos-stght-smi_1day-calc_daily_smi"
+        "cosmos-stght-smi_1day-calculate_smi"
       ]
     },
     {
@@ -60315,7 +60315,7 @@
       "id": "cosmos-stips-smi_1day-plan",
       "output": "cosmos-stips-smi_1day_processed",
       "steps": [
-        "cosmos-stips-smi_1day-calc_daily_smi"
+        "cosmos-stips-smi_1day-calculate_smi"
       ]
     },
     {
@@ -61413,7 +61413,7 @@
       "id": "cosmos-sydlg-smi_1day-plan",
       "output": "cosmos-sydlg-smi_1day_processed",
       "steps": [
-        "cosmos-sydlg-smi_1day-calc_daily_smi"
+        "cosmos-sydlg-smi_1day-calculate_smi"
       ]
     },
     {
@@ -63092,7 +63092,7 @@
       "id": "cosmos-tadhm-smi_1day-plan",
       "output": "cosmos-tadhm-smi_1day_processed",
       "steps": [
-        "cosmos-tadhm-smi_1day-calc_daily_smi"
+        "cosmos-tadhm-smi_1day-calculate_smi"
       ]
     },
     {
@@ -64296,7 +64296,7 @@
       "id": "cosmos-waddn-smi_1day-plan",
       "output": "cosmos-waddn-smi_1day_processed",
       "steps": [
-        "cosmos-waddn-smi_1day-calc_daily_smi"
+        "cosmos-waddn-smi_1day-calculate_smi"
       ]
     },
     {
@@ -65897,7 +65897,7 @@
       "id": "cosmos-wimpl-smi_1day-plan",
       "output": "cosmos-wimpl-smi_1day_processed",
       "steps": [
-        "cosmos-wimpl-smi_1day-calc_daily_smi"
+        "cosmos-wimpl-smi_1day-calculate_smi"
       ]
     },
     {
@@ -67554,7 +67554,7 @@
       "id": "cosmos-wrttl-smi_1day-plan",
       "output": "cosmos-wrttl-smi_1day_processed",
       "steps": [
-        "cosmos-wrttl-smi_1day-calc_daily_smi"
+        "cosmos-wrttl-smi_1day-calculate_smi"
       ]
     },
     {
@@ -69129,7 +69129,7 @@
       "id": "cosmos-wyth1-smi_1day-plan",
       "output": "cosmos-wyth1-smi_1day_processed",
       "steps": [
-        "cosmos-wyth1-smi_1day-calc_daily_smi"
+        "cosmos-wyth1-smi_1day-calculate_smi"
       ]
     },
     {
