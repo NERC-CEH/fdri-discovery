@@ -4,17 +4,13 @@ L,,Barometric Attenuation Length,Barometric attenuation length for pressure corr
 N0_MOD,,N0 Mod,Count rate over dry soil under reference conditions
 N_MAX,,N Max,Maximum neutron count threshold
 N_MIN,,N Min,Minimum neutron count threshold
-PROBE_EFFDEPTH_1M,,Probe Effective Depth 1m,"Effective depth in cm, at 1 metre from probe, on day of calibration"
-PROBE_EFFDEPTH_200M,,Probe Effective Depth 200m,"Effective depth in cm, at 200 metres from probe, on day of calibration"
 REF_BULKDENSITY,,Ref Bulk Density,Mean Bulk Density at most applicable effective depth (from lab analysis of soil samples)
-REF_BULKDENSITY_STD,,Ref Bulk Density STD,Standard deviation of Bulk Density (from lab analysis of soil samples)
 REF_C0,,REF C0,Neutron Intensity correction factor
 REF_CTS_MOD_CORR,,Ref CTS Mod Corr,Reference counts for COSMOS Moderated probe
 REF_LATTICEWATER,,Ref Lattice Water,Mean Lattice and bound water (from lab analysis of soil samples)
-REF_LATTICEWATER_STD,,Ref Lattice Water STD,Standard deviation of Lattice and bound water (from lab analysis of soil samples)
+REF_PA,,Ref PA,Reference atmospheric pressure on day of calibration
 REF_Q0,,Ref Q0,Water vapour correction factor
 REF_SOC,,Ref SOC,Estimated mean Soil Organic Carbon (from lab analysis of soil samples)
-REF_SOC_STD,,Ref SOC STD,Estimated Standard deviation of Soil Organic Carbon (from lab analysis of soil samples)
 REF_SOIL_MOISTURE,,Ref Soil Moisture,Reference soil moisture from lab analysis on day of calibration
 GAMMA,,Gamma,Gamma correction value for drift in CRNS counts
 SOIL_COMMENT,,Ref Soil Comment,Comment on soil properties from lab analysis of field samples
