@@ -3,9 +3,9 @@ FDRI-CH-BURYP-01-WL-PBAT_15MIN_RAW,Power Consumption (Pressure transducer),CH-BU
 FDRI-CH-BURYP-01-WL-RSSI_15MIN_RAW,Signal Strength (Pressure transducer),CH-BURYP-01-WL,ukceh-dri-staging-ingested,ott_ecolog_1000_hourly,RSSI,time,SIGNAL_STRENGTH-INST-RSSI-PT1H-PT1H,RAW,
 FDRI-CH-BURYP-01-WL-UBAT_15MIN_RAW,Supply Voltage (Pressure transducer),CH-BURYP-01-WL,ukceh-dri-staging-ingested,ott_ecolog_1000_hourly,UBAT,time,VOLTAGE-INST-V-PT1H-PT1H,RAW,
 FDRI-CH-BURYP-01-WL-WATER_LEV_PT_15MIN_RAW,Water Level (Pressure transducer),CH-BURYP-01-WL,ukceh-dri-staging-ingested,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,RAW,
-FDRI-CH-BURYP-01-WL-WATER_LEV_PT_15MIN_PROCESSED,Water Level (Pressure transducer),CH-BURYP-01-WL,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,PROCESSED,WATER_LEV_PT_FLAG_DEF
+FDRI-CH-BURYP-01-WL-WATER_LEV_PT_15MIN_PROCESSED,Water Level (Pressure transducer),CH-BURYP-01-WL,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,PROCESSED,BH_WATER_LEV_PT_FLAG_DEF
 FDRI-CH-BURYP-01-WL-WATER_TEMP_15MIN_RAW,Water Temperature (Pressure transducer),CH-BURYP-01-WL,ukceh-dri-staging-ingested,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,RAW,
-FDRI-CH-BURYP-01-WL-WATER_TEMP_15MIN_PROCESSED,Water Temperature (Pressure transducer),CH-BURYP-01-WL,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,PROCESSED,WATER_TEMP_FLAG_DEF
+FDRI-CH-BURYP-01-WL-WATER_TEMP_15MIN_PROCESSED,Water Temperature (Pressure transducer),CH-BURYP-01-WL,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,PROCESSED,BH_WATER_TEMP_FLAG_DEF
 FDRI-CH-CHOPS-01-RG-BATTV_1MIN_RAW,Battery voltage,CH-CHOPS-01-RG,ukceh-dri-staging-ingested,one_minute,BattV,time,VOLTAGE_BATT-INST-V-PT1M-PT1M,RAW,
 FDRI-CH-CHOPS-01-RG-TEMP_LOGGER_1MIN_RAW,Temperature in the logger,CH-CHOPS-01-RG,ukceh-dri-staging-ingested,one_minute,PTemp_C,time,TEMP_LOGGER-INST-DEGC-PT1M-PT1M,RAW,
 FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_INT_1MIN_RAW,Precipitation intensity (Standard height RG),CH-CHOPS-01-RG,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_1m,time,PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,RAW,
@@ -20,16 +20,16 @@ FDRI-CH-KADEN-01-BH-PBAT_15MIN_RAW,Power Consumption (Pressure transducer),CH-KA
 FDRI-CH-KADEN-01-BH-RSSI_15MIN_RAW,Signal Strength (Pressure transducer),CH-KADEN-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_hourly,RSSI,time,SIGNAL_STRENGTH-INST-RSSI-PT1H-PT1H,RAW,
 FDRI-CH-KADEN-01-BH-UBAT_15MIN_RAW,Supply Voltage (Pressure transducer),CH-KADEN-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_hourly,UBAT,time,VOLTAGE-INST-V-PT1H-PT1H,RAW,
 FDRI-CH-KADEN-01-BH-WATER_LEV_PT_15MIN_RAW,Water Level (Pressure transducer),CH-KADEN-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,RAW,
-FDRI-CH-KADEN-01-BH-WATER_LEV_PT_15MIN_PROCESSED,Water Level (Pressure transducer),CH-KADEN-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,PROCESSED,WATER_LEV_PT_FLAG_DEF
+FDRI-CH-KADEN-01-BH-WATER_LEV_PT_15MIN_PROCESSED,Water Level (Pressure transducer),CH-KADEN-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,PROCESSED,BH_WATER_LEV_PT_FLAG_DEF
 FDRI-CH-KADEN-01-BH-WATER_TEMP_15MIN_RAW,Water Temperature (Pressure transducer),CH-KADEN-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,RAW,
-FDRI-CH-KADEN-01-BH-WATER_TEMP_15MIN_PROCESSED,Water Temperature (Pressure transducer),CH-KADEN-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,PROCESSED,WATER_TEMP_FLAG_DEF
+FDRI-CH-KADEN-01-BH-WATER_TEMP_15MIN_PROCESSED,Water Temperature (Pressure transducer),CH-KADEN-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,PROCESSED,BH_WATER_TEMP_FLAG_DEF
 FDRI-CH-LOWPA-01-BH-PBAT_15MIN_RAW,Power Consumption (Pressure transducer),CH-LOWPA-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_hourly,PBAT,time,POWER-INST-MAH-PT1H-PT1H,RAW,
 FDRI-CH-LOWPA-01-BH-RSSI_15MIN_RAW,Signal Strength (Pressure transducer),CH-LOWPA-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_hourly,RSSI,time,SIGNAL_STRENGTH-INST-RSSI-PT1H-PT1H,RAW,
 FDRI-CH-LOWPA-01-BH-UBAT_15MIN_RAW,Supply Voltage (Pressure transducer),CH-LOWPA-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_hourly,UBAT,time,VOLTAGE-INST-V-PT1H-PT1H,RAW,
 FDRI-CH-LOWPA-01-BH-WATER_LEV_PT_15MIN_RAW,Water Level (Pressure transducer),CH-LOWPA-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,RAW,
-FDRI-CH-LOWPA-01-BH-WATER_LEV_PT_15MIN_PROCESSED,Water Level (Pressure transducer),CH-LOWPA-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,PROCESSED,WATER_LEV_PT_FLAG_DEF
+FDRI-CH-LOWPA-01-BH-WATER_LEV_PT_15MIN_PROCESSED,Water Level (Pressure transducer),CH-LOWPA-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0001,time,WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,PROCESSED,BH_WATER_LEV_PT_FLAG_DEF
 FDRI-CH-LOWPA-01-BH-WATER_TEMP_15MIN_RAW,Water Temperature (Pressure transducer),CH-LOWPA-01-BH,ukceh-dri-staging-ingested,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,RAW,
-FDRI-CH-LOWPA-01-BH-WATER_TEMP_15MIN_PROCESSED,Water Temperature (Pressure transducer),CH-LOWPA-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,PROCESSED,WATER_TEMP_FLAG_DEF
+FDRI-CH-LOWPA-01-BH-WATER_TEMP_15MIN_PROCESSED,Water Temperature (Pressure transducer),CH-LOWPA-01-BH,ukceh-fdri-staging-timeseries-processed,ott_ecolog_1000_fifteen_minute,0002,time,WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,PROCESSED,BH_WATER_TEMP_FLAG_DEF
 FDRI-CH-MILFA-01-RS-BATTV_1MIN_RAW,Battery voltage,CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,BattV,time,VOLTAGE_BATT-INST-V-PT1M-PT1M,RAW,
 FDRI-CH-MILFA-01-RS-TEMP_LOGGER_1MIN_RAW,Temperature in the logger,CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,PTemp_C,time,TEMP_LOGGER-INST-DEGC-PT1M-PT1M,RAW,
 FDRI-CH-MILFA-01-RS-TEMP_AIR_1MIN_RAW,Air temperature,CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,
@@ -510,7 +510,7 @@ FDRI-SE-CARWE-01-WS-WS_1MIN_PROCESSED,Wind speed,SE-CARWE-01,ukceh-fdri-staging-
 FDRI-SE-CARWE-01-WS-WS_1MIN_RAW,Wind speed,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,WS_ms_Avg,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,RAW,
 FDRI-SE-FOFAD-01-PR-BATTV_1MIN_RAW,Battery voltage,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,BattV,time,VOLTAGE_BATT-INST-V-PT1M-PT1M,RAW,
 FDRI-SE-FOFAD-01-PR-DEWPOINT_1MIN_RAW,Dew point temperature,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,HMP_DewPoint,time,DEW_POINT-INST-DEGC-PT1M-PT1M,RAW,
-FDRI-SE-FOFAD-01-PR-DEWPOINT_1MIN_PROCESSED,Dew point temperature,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,HMP_DewPoint,time,DEW_POINT-INST-DEGC-PT1M-PT1M,PROCESSED,DEWPOINT_FLAG_DEF
+FDRI-SE-FOFAD-01-PR-DEWPOINT_1MIN_PROCESSED,Dew point temperature,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,HMP_DewPoint,time,DEW_POINT-INST-DEGC-PT1M-PT1M,PROCESSED,HMP_DEWPOINT_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-EC_0_15MIN_RAW,Electrical conductivity (5cm depth),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_0_EC,time,COND_5-INST-DSM-1-PT15M-PT15M,RAW,
 FDRI-SE-FOFAD-01-PR-EC_0_15MIN_PROCESSED,Electrical conductivity (5cm depth),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,fifteen_minute,CS655_0_EC,time,COND_5-INST-DSM-1-PT15M-PT15M,PROCESSED,EC_0_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-EC_1_15MIN_RAW,Electrical conductivity (10cm depth - CS655),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_1_EC,time,COND_10-INST-DSM-1-PT15M-PT15M,RAW,
@@ -578,8 +578,8 @@ FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_1MIN_RAW,Precipitation (Standard height RG),SE-
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_1MIN_PROCESSED,Precipitation (Standard height RG),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_Precip_lr,time,PRECIP-TOTAL_PREC-MM-PT1M-PT1M,PROCESSED,STDRD_PRECIP_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_1MIN_RAW,Precipitation intensity (Standard height RG),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_1m,time,PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,RAW,
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_1MIN_PROCESSED,Precipitation intensity (Standard height RG),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_Int_1m,time,PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,PROCESSED,STDRD_PRECIP_INT_FLAG_DEF
-FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_HR_1MIN_RAW,Precipitation intensity (Standard height RG),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,RainE_Standard_int_1m_Hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,RAW,
-FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_HR_1MIN_PROCESSED,Precipitation intensity (Standard height RG),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_int_1m_Hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,PROCESSED,STDRD_PRECIP_INT_HR_FLAG_DEF
+FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_HR_1MIN_RAW,Precipitation intensity (Standard height RG),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_1m_Hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,RAW,
+FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_HR_1MIN_PROCESSED,Precipitation intensity (Standard height RG),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_Int_1m_Hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,PROCESSED,STDRD_PRECIP_INT_HR_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_1MIN_RAW,Precipitation intensity since last request (Standard height RG),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_lr,time,PRECIP_INTEN_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,RAW,
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_1MIN_PROCESSED,Precipitation intensity since last request (Standard height RG),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_Int_lr,time,PRECIP_INTEN_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,PROCESSED,STDRD_PRECIP_INT_LR_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_HR_1MIN_RAW,Precipitation intensity since last request (Standard height RG),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_lr_Hr,time,PRECIP_INTEN_LR-MEAN_PREC-MM_HR-1-PT1M-PT1M,RAW,
@@ -587,7 +587,7 @@ FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_HR_1MIN_PROCESSED,Precipitation intensit
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_TOT_1MIN_RAW,Accumulated total precipitation (Standard height RG),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Precip_Tot,time,PRECIP_TOT-TOTAL_PREC-MM-PT1M-PT1M,RAW,
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_TOT_1MIN_PROCESSED,Accumulated total precipitation (Standard height RG),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_Precip_Tot,time,PRECIP_TOT-TOTAL_PREC-MM-PT1M-PT1M,PROCESSED,STDRD_PRECIP_TOT_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-RH_1MIN_RAW,Relative humidity,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,HMP_RH,time,RH-INST-PCT-PT1M-PT1M,RAW,
-FDRI-SE-FOFAD-01-PR-RH_1MIN_PROCESSED,Relative humidity,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,HMP_RH,time,RH-INST-PCT-PT1M-PT1M,PROCESSED,RH_FLAG_DEF
+FDRI-SE-FOFAD-01-PR-RH_1MIN_PROCESSED,Relative humidity,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,HMP_RH,time,RH-INST-PCT-PT1M-PT1M,PROCESSED,HMP_RH_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-STYX_CURRENT_RAW,Operating current (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_HV_Current,time,CURRENT-INST-UAMP-PT30M-PT30M,RAW,
 FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_30MIN_RAW,Neutron count (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Neutron_Count,time,NEUTRON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,RAW,
 FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_30MIN_PROCESSED,Neutron count (Styx),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,thirty_minute,Styx_Neutron_Count,time,NEUTRON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,PROCESSED,STYX_NEUTRONS_FLAG_DEF
@@ -600,7 +600,7 @@ FDRI-SE-FOFAD-01-PR-STYX_RH_30MIN_RAW,Internal relative humidity (Styx),SE-FOFAD
 FDRI-SE-FOFAD-01-PR-STYX_TEMP_30MIN_RAW,Internal temperature (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Temp_C,time,TEMP_SENSOR-INST-DEGC-PT30M-PT30M,RAW,
 FDRI-SE-FOFAD-01-PR-STYX_VOLTAGE_RAW,Operating voltage (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_HV_Voltage,time,VOLTAGE-INST-V-PT30M-PT30M,RAW,
 FDRI-SE-FOFAD-01-PR-TEMP_AIR_1MIN_RAW,Air temperature,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,HMP_AirTemp,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,
-FDRI-SE-FOFAD-01-PR-TEMP_AIR_1MIN_PROCESSED,Air temperature,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,HMP_AirTemp,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,TEMP_AIR_FLAG_DEF
+FDRI-SE-FOFAD-01-PR-TEMP_AIR_1MIN_PROCESSED,Air temperature,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,HMP_AirTemp,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,HMP_TEMP_AIR_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-TEMP_SOIL_0_15MIN_RAW,Soil temperature (5cm depth),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_0_T,time,TEMP_SOIL_5-INST-DEGC-PT15M-PT15M,RAW,
 FDRI-SE-FOFAD-01-PR-TEMP_SOIL_0_15MIN_PROCESSED,Soil temperature (5cm depth),SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,fifteen_minute,CS655_0_T,time,TEMP_SOIL_5-INST-DEGC-PT15M-PT15M,PROCESSED,TEMP_SOIL_0_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-TEMP_SOIL_1_15MIN_RAW,Soil temperature (10cm depth - CS655),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_1_T,time,TEMP_SOIL_10-INST-DEGC-PT15M-PT15M,RAW,
@@ -630,7 +630,7 @@ FDRI-SE-FOFAD-01-PR-VWC_4_15MIN_PROCESSED,Volumetric water content (50cm depth -
 FDRI-SE-FOFAD-01-PR-WD_1MIN_RAW,Wind direction,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,RAW,
 FDRI-SE-FOFAD-01-PR-WD_1MIN_PROCESSED,Wind direction,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,PROCESSED,WD_FLAG_DEF
 FDRI-SE-FOFAD-01-PR-WS_1MIN_RAW,Wind speed,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,Windspeed,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,RAW,
-FDRI-SE-FOFAD-01-PR-WS_1MIN_PROCESSED,Wind speed,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,Windspeed,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,PROCESSED,WS_FLAG_DEF
+FDRI-SE-FOFAD-01-PR-WS_1MIN_PROCESSED,Wind speed,SE-FOFAD-01-PR,ukceh-fdri-staging-timeseries-processed,one_minute,Windspeed,time,WS-MEAN_PREC-MS-1-PT1M-PT1M,PROCESSED,WINDSPEED_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW,Battery voltage,SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,BattV,time,VOLTAGE_BATT-INST-V-PT1M-PT1M,RAW,
 FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED,Distance to water (Radar),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Distance_m_Avg,time,WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,PROCESSED,DIST_TO_WATER_RADAR_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW,Distance to water (Radar),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Distance_m_Avg,time,WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,RAW,
