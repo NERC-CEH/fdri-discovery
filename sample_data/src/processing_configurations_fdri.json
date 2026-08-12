@@ -9,20 +9,6 @@
       ]
     },
     {
-      "id": "fdri-ch-buryp-01-wl-water_lev_pt_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-buryp-01-wl-battv_15min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-buryp-01-wl-water_lev_pt_15min-spike",
       "type": "qc",
       "method": "SPIKE",
@@ -39,20 +25,6 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-buryp-01-wl-water_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-buryp-01-wl-water_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-buryp-01-wl-battv_15min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
       ]
     },
     {
@@ -227,20 +199,6 @@
       ]
     },
     {
-      "id": "fdri-ch-kaden-01-bh-water_lev_pt_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-kaden-01-bh-battv_15min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-kaden-01-bh-water_lev_pt_15min-spike",
       "type": "qc",
       "method": "SPIKE",
@@ -257,20 +215,6 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-kaden-01-bh-water_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-kaden-01-bh-water_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-kaden-01-bh-battv_15min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
       ]
     },
     {
@@ -310,20 +254,6 @@
       ]
     },
     {
-      "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-lowpa-01-bh-battv_15min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-spike",
       "type": "qc",
       "method": "SPIKE",
@@ -340,20 +270,6 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-lowpa-01-bh-water_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-lowpa-01-bh-water_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-lowpa-01-bh-battv_15min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
       ]
     },
     {
@@ -896,7 +812,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -944,7 +860,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -992,7 +908,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1040,7 +956,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1088,7 +1004,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1136,7 +1052,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1184,7 +1100,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1232,7 +1148,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1280,7 +1196,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1328,7 +1244,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1376,7 +1292,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1424,7 +1340,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1472,7 +1388,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1509,7 +1425,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1546,7 +1462,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1583,7 +1499,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1620,7 +1536,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1657,7 +1573,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1694,7 +1610,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1731,7 +1647,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1768,7 +1684,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1805,7 +1721,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1842,7 +1758,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1879,7 +1795,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1916,7 +1832,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -1964,7 +1880,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2012,7 +1928,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2060,7 +1976,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2108,7 +2024,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2156,7 +2072,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2193,7 +2109,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2230,7 +2146,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2267,7 +2183,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2304,7 +2220,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2352,7 +2268,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2389,7 +2305,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2426,7 +2342,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2463,7 +2379,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2511,7 +2427,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2559,7 +2475,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2596,7 +2512,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2633,7 +2549,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2670,7 +2586,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2718,7 +2634,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2766,7 +2682,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2803,7 +2719,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2840,7 +2756,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2877,7 +2793,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2925,7 +2841,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -2973,7 +2889,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3010,7 +2926,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3047,7 +2963,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3084,7 +3000,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3132,7 +3048,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3180,7 +3096,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3217,7 +3133,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3254,7 +3170,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3291,7 +3207,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3339,7 +3255,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3387,7 +3303,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3424,7 +3340,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3461,7 +3377,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3498,7 +3414,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3546,7 +3462,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_raw"
+        "fdri-ch-milfa-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -3594,7 +3510,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3642,7 +3558,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3679,7 +3595,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3716,7 +3632,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3753,7 +3669,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3790,7 +3706,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3827,7 +3743,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3864,7 +3780,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3901,7 +3817,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3938,7 +3854,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -3975,7 +3891,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4012,7 +3928,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4049,7 +3965,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4086,7 +4002,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4134,7 +4050,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4182,7 +4098,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4230,7 +4146,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4278,7 +4194,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4326,7 +4242,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4374,7 +4290,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4422,7 +4338,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4470,7 +4386,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4518,7 +4434,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4566,7 +4482,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4614,7 +4530,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_raw"
+        "fdri-ch-milfa-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4646,6 +4562,50 @@
         {
           "param": "gt",
           "value": 109.544512
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-battv_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-rs-battv_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-battv_15min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-ch-milfa-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-battv_30min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-ch-milfa-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
         }
       ]
     }
@@ -4760,7 +4720,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4797,7 +4757,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -4834,7 +4794,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5019,7 +4979,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5200,7 +5160,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5237,7 +5197,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5274,7 +5234,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5322,7 +5282,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5370,7 +5330,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5407,7 +5367,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5444,7 +5404,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5492,7 +5452,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5540,7 +5500,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5577,7 +5537,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5614,7 +5574,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5662,7 +5622,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5710,7 +5670,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5747,7 +5707,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5784,7 +5744,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5832,7 +5792,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5880,7 +5840,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5917,7 +5877,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -5954,7 +5914,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -6002,7 +5962,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -6050,7 +6010,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -6087,7 +6047,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -6124,7 +6084,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -6172,7 +6132,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_raw"
+        "fdri-ch-trigr-01-rs-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -6342,7 +6302,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6379,7 +6339,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6416,7 +6376,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6453,7 +6413,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6501,7 +6461,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6549,7 +6509,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6586,7 +6546,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6623,7 +6583,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6660,7 +6620,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6708,7 +6668,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6756,7 +6716,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6793,7 +6753,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6830,7 +6790,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6867,7 +6827,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6915,7 +6875,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -6963,7 +6923,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7000,7 +6960,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7037,7 +6997,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7074,7 +7034,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7122,7 +7082,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7170,7 +7130,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7207,7 +7167,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7244,7 +7204,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7281,7 +7241,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7329,7 +7289,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7377,7 +7337,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7414,7 +7374,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7451,7 +7411,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7488,7 +7448,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7536,7 +7496,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7584,7 +7544,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7632,7 +7592,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7680,7 +7640,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7728,7 +7688,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7776,7 +7736,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7824,7 +7784,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7872,7 +7832,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7920,7 +7880,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -7968,7 +7928,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8016,7 +7976,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8064,7 +8024,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8112,7 +8072,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8160,7 +8120,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8197,7 +8157,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8234,7 +8194,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8271,7 +8231,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8308,7 +8268,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8345,7 +8305,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8382,7 +8342,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8419,7 +8379,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8456,7 +8416,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8493,7 +8453,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8530,7 +8490,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8567,7 +8527,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8604,7 +8564,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8652,7 +8612,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8700,7 +8660,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8748,7 +8708,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8796,7 +8756,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8844,7 +8804,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8881,7 +8841,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8918,7 +8878,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8955,7 +8915,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -8992,7 +8952,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_raw"
+        "fdri-ch-trigr-01-rs-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -9024,6 +8984,50 @@
         {
           "param": "gt",
           "value": 1.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-battv_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-trigr-01-rs-battv_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-battv_15min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-ch-trigr-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-battv_30min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-ch-trigr-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
         }
       ]
     }
@@ -9750,7 +9754,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -9787,7 +9791,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -9824,7 +9828,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -9861,7 +9865,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -9898,7 +9902,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -9935,7 +9939,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -9972,7 +9976,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10009,7 +10013,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10057,7 +10061,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10094,7 +10098,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10131,7 +10135,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10168,7 +10172,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10205,7 +10209,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10242,7 +10246,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -10279,7 +10283,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -10316,7 +10320,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -10353,7 +10357,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -10390,7 +10394,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -10878,7 +10882,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_raw"
+        "fdri-se-fofad-01-pr-battv_30min_processed"
       ],
       "parameters": [
         {
@@ -10963,7 +10967,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11011,7 +11015,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11059,7 +11063,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11107,7 +11111,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11155,7 +11159,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11203,7 +11207,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11251,7 +11255,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11299,7 +11303,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11347,7 +11351,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11395,7 +11399,7 @@
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_raw"
+        "fdri-se-fofad-01-pr-battv_15min_processed"
       ],
       "parameters": [
         {
@@ -11501,6 +11505,50 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-battv_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-fofad-01-pr-battv_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-battv_15min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-se-fofad-01-pr-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-battv_30min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-se-fofad-01-pr-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
         }
       ]
     }

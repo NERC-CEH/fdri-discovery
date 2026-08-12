@@ -6,7 +6,6 @@
       "input": "fdri-ch-buryp-01-wl-water_lev_pt_15min_raw",
       "steps": [
         "fdri-ch-buryp-01-wl-water_lev_pt_15min-load_raw",
-        "fdri-ch-buryp-01-wl-water_lev_pt_15min-battery_v",
         "fdri-ch-buryp-01-wl-water_lev_pt_15min-spike"
       ]
     },
@@ -16,7 +15,6 @@
       "input": "fdri-ch-buryp-01-wl-water_temp_15min_raw",
       "steps": [
         "fdri-ch-buryp-01-wl-water_temp_15min-load_raw",
-        "fdri-ch-buryp-01-wl-water_temp_15min-battery_v",
         "fdri-ch-buryp-01-wl-water_temp_15min-range",
         "fdri-ch-buryp-01-wl-water_temp_15min-spike"
       ]
@@ -70,7 +68,6 @@
       "input": "fdri-ch-kaden-01-bh-water_lev_pt_15min_raw",
       "steps": [
         "fdri-ch-kaden-01-bh-water_lev_pt_15min-load_raw",
-        "fdri-ch-kaden-01-bh-water_lev_pt_15min-battery_v",
         "fdri-ch-kaden-01-bh-water_lev_pt_15min-spike"
       ]
     },
@@ -80,7 +77,6 @@
       "input": "fdri-ch-kaden-01-bh-water_temp_15min_raw",
       "steps": [
         "fdri-ch-kaden-01-bh-water_temp_15min-load_raw",
-        "fdri-ch-kaden-01-bh-water_temp_15min-battery_v",
         "fdri-ch-kaden-01-bh-water_temp_15min-range",
         "fdri-ch-kaden-01-bh-water_temp_15min-spike"
       ]
@@ -93,7 +89,6 @@
       "input": "fdri-ch-lowpa-01-bh-water_lev_pt_15min_raw",
       "steps": [
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min-load_raw",
-        "fdri-ch-lowpa-01-bh-water_lev_pt_15min-battery_v",
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min-spike"
       ]
     },
@@ -103,7 +98,6 @@
       "input": "fdri-ch-lowpa-01-bh-water_temp_15min_raw",
       "steps": [
         "fdri-ch-lowpa-01-bh-water_temp_15min-load_raw",
-        "fdri-ch-lowpa-01-bh-water_temp_15min-battery_v",
         "fdri-ch-lowpa-01-bh-water_temp_15min-range",
         "fdri-ch-lowpa-01-bh-water_temp_15min-spike"
       ]
@@ -1173,6 +1167,24 @@
         "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-battery_v",
         "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-range",
         "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-spike"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-battv_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-battv_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-battv_1min_raw",
+      "steps": [
+        "fdri-ch-milfa-01-rs-battv_1min-load_raw",
+        "fdri-ch-milfa-01-rs-battv_15min-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-battv_30min-plan",
+      "output": "fdri-ch-milfa-01-rs-battv_30min_processed",
+      "input": "fdri-ch-milfa-01-rs-battv_1min_raw",
+      "steps": [
+        "fdri-ch-milfa-01-rs-battv_1min-load_raw",
+        "fdri-ch-milfa-01-rs-battv_30min-mean"
       ]
     }
   ],
@@ -2271,9 +2283,26 @@
         "fdri-ch-trigr-01-rs-ndvi_15min-range",
         "fdri-ch-trigr-01-rs-ndvi_15min-spike"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-battv_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-battv_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-battv_1min_raw",
+      "steps": [
+        "fdri-ch-trigr-01-rs-battv_1min-load_raw",
+        "fdri-ch-trigr-01-rs-battv_15min-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-battv_30min-plan",
+      "output": "fdri-ch-trigr-01-rs-battv_30min_processed",
+      "input": "fdri-ch-trigr-01-rs-battv_1min_raw",
+      "steps": [
+        "fdri-ch-trigr-01-rs-battv_1min-load_raw",
+        "fdri-ch-trigr-01-rs-battv_30min-mean"
+      ]
     }
   ],
-
   "FDRI-SE-CARWE-01-WS": [
     {
       "id": "fdri-se-carwe-01-ws-albedo_1min-plan",
@@ -2919,6 +2948,24 @@
         "fdri-se-fofad-01-pr-ws_1min-load_raw",
         "fdri-se-fofad-01-pr-ws_1min-battery_v",
         "fdri-se-fofad-01-pr-ws_1min-range"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-battv_15min-plan",
+      "output": "fdri-se-fofad-01-pr-battv_15min_processed",
+      "input": "fdri-se-fofad-01-pr-battv_1min_raw",
+      "steps": [
+        "fdri-se-fofad-01-pr-battv_1min-load_raw",
+        "fdri-se-fofad-01-pr-battv_15min-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-battv_30min-plan",
+      "output": "fdri-se-fofad-01-pr-battv_30min_processed",
+      "input": "fdri-se-fofad-01-pr-battv_1min_raw",
+      "steps": [
+        "fdri-se-fofad-01-pr-battv_1min-load_raw",
+        "fdri-se-fofad-01-pr-battv_30min-mean"
       ]
     }
   ],
