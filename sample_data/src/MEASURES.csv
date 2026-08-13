@@ -284,8 +284,8 @@ SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT1H-PT1H,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,P
 SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless)
 SENSOR_ANGLE-INST-DEG-PT15M-PT15M,,SENSOR_ANGLE,DEG,NONE,INST,PT15M,PT15M,Instantaneous angle of sensor
 SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous status of sensor
-SIGNAL_STRENGTH-INST-RSSI-PT15M-PT15M,,SIGNAL_STRENGTH,RSSI,NONE,INST,PT15M,PT15M,Instantaneous signal strength over the preceding 15 minutes in received signal strength indicator
-SIGNAL_STRENGTH-INST-RSSI-PT1H-PT1H,,SIGNAL_STRENGTH,RSSI,NONE,INST,PT1H,PT1H,Instantaneous signal strength over the preceding hour in received signal strength indicator
+SIGNAL_STRENGTH-INST-UNITLESS-PT15M-PT15M,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous signal strength over the preceding 15 minutes
+SIGNAL_STRENGTH-INST-UNITLESS-PT1H-PT1H,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous signal strength over the preceding hour
 SMI-MEAN_PROC-UNITLESS-P1D-P1D,,SMI,UNITLESS,MEAN,PROC,P1D,P1D,Soil moisture index over the proceeding day (unitless)
 SNOW_DAY-PROC-UNITLESS-P1D-P1D,,SNOW_DAY,UNITLESS,NONE,PROC,P1D,P1D,Indicator of snow day over the proceeding day (unitless)
 SNOWD_DISTANCE_COR-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_COR,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (corrected)
