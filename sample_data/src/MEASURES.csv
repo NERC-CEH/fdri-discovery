@@ -7,7 +7,7 @@ ALBEDO-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,STDDEV,PROC,P1D,P1D,Standar
 ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,PREC,,,Mean angular velocity in revolutions per second
 BUCKET_LEVEL_NRT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_NRT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (non-real-time) in millimetres
 BUCKET_LEVEL_RT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_RT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (real-time) in millimetres
-CO2_FLUX-MEAN_PREC-UMOLM-2S-1-PT30M-PT30M,,CO2_FLUX,UMOLM-2S-1,MEAN,PREC,PT30M,PT30M,Mean CO2 flux over the preceding 30 minutes in micromoles per metre squared per second
+CO2_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean CO2 flux over the preceding 30 minutes in micromoles per metre squared per second
 COND_10-INST-DSM-1-PT15M-PT15M,,COND_10,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 10 cm depth in dS/m
 COND_10-INST-DSM-1-PT30M-PT30M,,COND_10,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 10 cm depth in dS/m
 COND_10-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_10,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 10 cm depth over the preceding 10 minutes in dS/m
@@ -112,7 +112,7 @@ FACTOR_Q-INST-UNITLESS-PT1H-PT1H,,FACTOR_Q,UNITLESS,NONE,INST,PT1H,PT1H,Instanta
 FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,NONE,INST,PT30M,PT30M,Instantaneous momentum flux in kilograms per metre per second squared
 FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,MEAN,PREC,PT30M,PT30M,Mean momentum flux over the preceding 30 minutes in kilograms per metre per second squared
 FRICTIONV-INST-MS-1-PT30M-PT30M,,FRICTIONV,MS-1,NONE,INST,PT30M,PT30M,Instantaneous friction velocity in metres per second
-H2O_FLUX-MEAN_PREC-MMOLM-2S-1-PT30M-PT30M,,H2O_FLUX,MMOLM-2S-1,MEAN,PREC,PT30M,PT30M,Mean H2O flux over the preceding 30 minutes in millimoles per metre squared per second
+H2O_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,H2O_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean H2O flux over the preceding 30 minutes in millimoles per metre squared per second
 HEATFLUX_LATENT-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_LATENT,WM-2,MEAN,PREC,PT30M,PT30M,Mean latent heat flux over the preceding 30 minutes in watts per metre squared
 HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,NONE,INST,PT30M,PT30M,Instantaneous sensible heat flux in watts per metre squared
 HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,MEAN,PREC,PT30M,PT30M,Mean sensible heat flux over the preceding 30 minutes in watts per metre squared
@@ -240,7 +240,7 @@ PORE_WATER_COND_60-MEAN_PREC-US_CM-1-PT10M-PT10M,,PORE_WATER_COND_60,US_CM-1,MEA
 PORE_WATER_COND-MEAN_PREC-US_CM-1-PT15M-PT15M,,PORE_WATER_COND,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean pore water electrical conductivity over the preceding 15 minutes in µS/cm
 POWER-INST-MAH-PT15M-PT15M,,POWER,MAH,NONE,INST,PT15M,PT15M,Instantaneous power consumption over the preceding 15 minutes in milliamp-hours
 POWER-INST-MAH-PT1H-PT1H,,POWER,MAH,NONE,INST,PT1H,PT1H,Instantaneous power consumption over the preceding hour in milliamp-hours
-PPFD_IN-MEAN_PREC-UMOLM-2S-1-PT1M-PT1M,,PPFD_IN,UMOLM-2S-1,MEAN,PREC,PT1M,PT1M,Mean incoming photosynthetic photon flux density over the preceding minute
+PPFD_IN-MEAN_PREC-MicroMOL-PER-M2-SEC-PT1M-PT1M,,PPFD_IN,MicroMOL-PER-M2-SEC,MEAN,PREC,PT1M,PT1M,Mean incoming photosynthetic photon flux density over the preceding minute in micromoles per metre squared per second
 PRECIP_INTEN_LR-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_HR-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per hour
 PRECIP_INTEN_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per minute
 PRECIP_INTEN_RT-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_RT,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity (real-time) over the preceding minute in millimetres per minute
