@@ -233,6 +233,14 @@
       ]
     },
     {
+      "id": "fdri-ch-kaden-01-bh-water_lev_pt_15min-correction-absolute",
+      "type": "correction",
+      "method": "ABSOLUTE",
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
+    },
+    {
       "id": "fdri-ch-kaden-01-bh-water_temp_15min-spike",
       "type": "qc",
       "method": "SPIKE",
@@ -252,6 +260,14 @@
       "dep_ts": [
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min_raw"
       ]
+    },
+    {
+      "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-correction-absolute",
+      "type": "correction",
+      "method": "ABSOLUTE",
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-spike",
@@ -11593,6 +11609,48 @@
       "dep_ts": [
         "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW"
       ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": -100.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 398.24
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": -0.46
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
     },
     {
       "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
