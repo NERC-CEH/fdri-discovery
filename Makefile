@@ -132,10 +132,10 @@ SAMPLES += $(TTL_BASE)/processing_plans_nmdb.ttl
 SAMPLES += $(TTL_BASE)/nmdb_ts_parameters.ttl
 
 # Flux Samples
-SAMPLES += $(TTL_BASE)/flux_sites.ttl
-SAMPLES += $(TTL_BASE)/flux_datasets.ttl
-SAMPLES += $(TTL_BASE)/processing_configurations_flux.ttl
-SAMPLES += $(TTL_BASE)/processing_plans_flux.ttl
+#SAMPLES += $(TTL_BASE)/flux_sites.ttl
+#SAMPLES += $(TTL_BASE)/flux_datasets.ttl
+#SAMPLES += $(TTL_BASE)/processing_configurations_flux.ttl
+#SAMPLES += $(TTL_BASE)/processing_plans_flux.ttl
 
 SCHEMAS = $(RECORDS:%=build/schema/%.schema.json)
 
@@ -349,23 +349,23 @@ $(TTL_BASE)/processing_plans_fdri.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_
 
 # Flux
 
-build/flux_sites.json: $(SRC)/flux/sites.json | build
-	$(RUN) /bin/bash -c "jq -c "\".sites[]\"" < $(SRC)/flux/sites.json > $@"
+# build/flux_sites.json: $(SRC)/flux/sites.json | build
+# 	$(RUN) /bin/bash -c "jq -c "\".sites[]\"" < $(SRC)/flux/sites.json > $@"
 
-build/flux_datasets.json: $(SRC)/flux/datasets.json | build
-	$(RUN) /bin/bash -c "jq -c "\".datasets[]\"" < $(SRC)/flux/datasets.json > $@"
+# build/flux_datasets.json: $(SRC)/flux/datasets.json | build
+# 	$(RUN) /bin/bash -c "jq -c "\".datasets[]\"" < $(SRC)/flux/datasets.json > $@"
 
-build/processing_configurations_flux.json: $(SRC)/processing_configurations_flux.json $(SQL)/processing_configurations.jq | build
-	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_flux.json > $@"
+# build/processing_configurations_flux.json: $(SRC)/processing_configurations_flux.json $(SQL)/processing_configurations.jq | build
+# 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_configurations.jq < $(SRC)/processing_configurations_flux.json > $@"
 
-$(TTL_BASE)/processing_configurations_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_configurations.yaml build/processing_configurations_flux.json | build/data
-	$(MAPPER) $(TPL)/processing_configurations.yaml build/processing_configurations_flux.json $@
+# $(TTL_BASE)/processing_configurations_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_configurations.yaml build/processing_configurations_flux.json | build/data
+# 	$(MAPPER) $(TPL)/processing_configurations.yaml build/processing_configurations_flux.json $@
 
-build/processing_plans_flux.json: $(SRC)/processing_plans_flux.json $(SQL)/processing_plans.jq | build
-	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_flux.json > $@"
+# build/processing_plans_flux.json: $(SRC)/processing_plans_flux.json $(SQL)/processing_plans.jq | build
+# 	$(RUN) /bin/bash -c "jq -c -f $(SQL)/processing_plans.jq < $(SRC)/processing_plans_flux.json > $@"
 
-$(TTL_BASE)/processing_plans_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_flux.json | build/data
-	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_flux.json $@
+# $(TTL_BASE)/processing_plans_flux.ttl: $(TPL)/namespaces.yaml $(TPL)/processing_plans.yaml build/processing_plans_flux.json | build/data
+# 	$(MAPPER) $(TPL)/processing_plans.yaml build/processing_plans_flux.json $@
 
 # Common name-based processing targets
 
