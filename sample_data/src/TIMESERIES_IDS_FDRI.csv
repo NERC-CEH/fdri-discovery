@@ -643,8 +643,8 @@ FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW,Distance to water (Radar),SE-HA
 FDRI-SE-SVTRP-01-WL-TEMP_LOGGER_1MIN_RAW,Temperature in the logger,SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,PTemp_C,time,TEMP_LOGGER-INST-DEGC-PT1M-PT1M,RAW,
 FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_PROCESSED,Sensor temperature (Radar),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Inst_Temp,time,TEMP_SENSOR-INST-DEGC-PT1M-PT1M,PROCESSED,RADAR_TEMP_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_RAW,Sensor temperature (Radar),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Inst_Temp,time,TEMP_SENSOR-INST-DEGC-PT1M-PT1M,RAW,
-FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_PROCESSED,Water level (Pressure transducer),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,PROCESSED,WATER_LEV_PT_FLAG_DEF
-FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW,Water level (Pressure transducer),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,RAW,
+FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_PROCESSED,Water level (Pressure transducer),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-MEAN_PREC-CM-PT1M-PT1M,PROCESSED,WATER_LEV_PT_FLAG_DEF
+FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW,Water level (Pressure transducer),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Lvl_cm_Avg,time,WATER_LEVEL-MEAN_PREC-CM-PT1M-PT1M,RAW,
 FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED,Water level (Radar),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Stage_Avg,time,WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,PROCESSED,WATER_LEV_RADAR_FLAG_DEF
 FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW,Water level (Radar),SE-HAFRF-07,ukceh-dri-staging-ingested,one_minute,Stage_Avg,time,WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,RAW,
 FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_PROCESSED,Water temperature (Pressure transducer),SE-HAFRF-07,ukceh-fdri-staging-timeseries-processed,one_minute,Temp_C_Avg,time,WATER_TEMP-MEAN_PREC-DEGC-PT1M-PT1M,PROCESSED,WATER_TEMP_FLAG_DEF
