@@ -101,8 +101,8 @@ DEW_POINT-INST-DEGC-PT1M-PT1M,,DEW_POINT,DEGC,NONE,INST,PT1M,PT1M,Instantaneous 
 DIAG_FLAG-INST-UNITLESS-PT15M-PT15M,,DIAG_FLAG,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous diagnostic flag
 DIAG_FLAG-INST-UNITLESS-PT30M-PT30M,,DIAG_FLAG,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous diagnostic flag
 DIAG_PRECIP-INST-UNITLESS-PT30M-PT30M,,DIAG_PRECIP,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous Precipitation diagnostic flag
-DISCHARGE-INST-LS-1,,DISCHARGE,LS-1,NONE,INST,,,Instantaneous discharge in litres per second
-DISCHARGE-INST-M3S-1,,DISCHARGE,M3S-1,NONE,INST,,,Instantaneous discharge in cubic metres per second
+WATER_FLOW-INST-LS-1,,WATER_FLOW,LS-1,NONE,INST,,,Instantaneous discharge in litres per second
+WATER_FLOW-INST-M3S-1,,WATER_FLOW,M3S-1,NONE,INST,,,Instantaneous discharge in cubic metres per second
 EFF_DEPTH-MEAN_PREC-CM-PT1H-PT1H,,EFF_DEPTH,CM,MEAN,PREC,PT1H,PT1H,Effective depth in cm over preceding hour
 EFF_DEPTH-MEAN_PROC-CM-P1D-P1D,,EFF_DEPTH,CM,MEAN,PROC,P1D,P1D,Effective depth in cm over proceeding day
 ET-MEAN_PREC-MM-PT30M-PT30M,,ET,MM,MEAN,PREC,PT30M,PT30M,Mean evapotranspiration over the preceding 30 minutes in millimetres
@@ -253,7 +253,7 @@ PRECIP_TIP_A-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_A,MM,TOTAL,PREC,PT1M,PT1M,Total
 PRECIP_TIP_A-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_A,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation from tip A over the preceding 30 minutes in millimetres
 PRECIP_TIP_B-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_B,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation from tip B over the preceding minute in millimetres
 PRECIP_TIP_B-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_B,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation from tip B over the preceding 30 minutes in millimetres
-PRECIP_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TOT,MM,TOTAL,PREC,PT1M,PT1M,Accumulated total precipitation in millimetres
+PRECIP_TOTAL-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TOTAL,MM,TOTAL,PREC,PT1M,PT1M,Accumulated total precipitation in millimetres
 PRECIP-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation over the preceding minute in millimetres
 PRECIP-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation over the preceding 30 minutes in millimetres
 PRECIP-TOTAL_PROC-MM-P1D-P1D,,PRECIP,MM,TOTAL,PROC,P1D,P1D,Total precipitation over the proceeding day in millimetres
