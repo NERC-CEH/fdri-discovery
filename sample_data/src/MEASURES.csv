@@ -318,11 +318,11 @@ SWOUT-STDDEV_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,STDDEV,PREC,PT30M,PT30M,Standard 
 SWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,,SWOUT,MJM-2-D,TOTAL,PROC,P1D,P1D,Total outgoing shortwave radiation over proceeding day in megajoules per metre squared
 TBR_TIP-INST-MM-PT30M-PT30M,,TBR_TIP,MM,NONE,INST,PT30M,PT30M,Instantaneous tipping bucket rain gauge tip amount in millimetres
 TEMP_AIR-INST-DEGC-PT1M-PT1M,,TEMP_AIR,DEGC,NONE,INST,PT1M,PT1M,Instantaneous air temperature in degrees Celsius
-TEMP_AIR-MAX_PROC-DEGC-PT30M-P1D,,TEMP_AIR,DEGC,MAX,PROC,P1D,PT30M,Maximum air temperature over the proceeding day in degrees Celsius
+TEMP_AIR-MAX_PROC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MAX,PROC,P1D,P1D,Maximum air temperature over the proceeding day in degrees Celsius
 TEMP_AIR-MEAN_PREC-DEGC-PT1M-PT1M,,TEMP_AIR,DEGC,MEAN,PREC,PT1M,PT1M,Mean air temperature over the preceding minute in degrees Celsius
 TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,MEAN,PREC,PT30M,PT30M,Mean air temperature over the preceding 30 minutes in degrees Celsius
 TEMP_AIR-MEAN_PROC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MEAN,PROC,P1D,P1D,Mean air temperature over the proceeding day in degrees Celsius
-TEMP_AIR-MIN_PROC-DEGC-PT30M-P1D,,TEMP_AIR,DEGC,MIN,PROC,P1D,PT30M,Minimum air temperature over the proceeding day in degrees Celsius
+TEMP_AIR-MIN_PROC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MIN,PROC,P1D,P1D,Minimum air temperature over the proceeding day in degrees Celsius
 TEMP_AIR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
 TEMP_LOADCELL-INST-MM-PT1M-PT1M,,TEMP_LOADCELL,MM,NONE,INST,PT1M,PT1M,Instantaneous internal temperature of load cell in millimetres
 TEMP_LOGGER-INST-DEGC-PT1M-PT1M,,TEMP_LOGGER,DEGC,NONE,INST,PT1M,PT1M,Instantaneous logger temperature in degrees Celsius
@@ -406,6 +406,7 @@ UZ-STDDEV_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviat
 UZ-VAR_PREC-M2S-2-PT30M-PT30M,,UZ,M2S-2,VAR,PREC,PT30M,PT30M,Z component wind speed variance over the preceding 30 minutes in metres squared per second squared
 VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,NONE,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in kilopascals
 VOLTAGE_BATT-INST-V-PT1M-PT1M,,VOLTAGE_BATT,V,NONE,INST,PT1M,PT1M,Instantaneous battery voltage in volts
+VOLTAGE_BATT-MEAN_PREC-V-PT15M-PT15M,,VOLTAGE_BATT,V,MEAN,PREC,PT15M,PT15M,Mean battery voltage over the preceding 15 minutes in volts
 VOLTAGE_BATT-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE_BATT,V,MEAN,PREC,PT1H,PT1H,Mean battery voltage over the preceding hour in volts
 VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,,VOLTAGE_BATT,V,MEAN,PREC,PT1M,PT1M,Mean battery voltage over the preceding minute in volts
 VOLTAGE_BATT-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE_BATT,V,MEAN,PREC,PT30M,PT30M,Mean battery voltage over the preceding 30 minutes in volts

@@ -162,34 +162,19 @@ resources:
             "<schema:value>": "{CALIBRATION_COMMENT}"
       "^<fdri:hasAnnotation>": "<::Site>"
 
-  - name: PROBE_EFFDEPTH_1M
+  - name: REF_PA
     requires:
-      PROBE_EFFDEPTH_1M:
+      REF_PA:
     properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-1m>"
+      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-pa>"
       "@type": <fdri:Annotation>
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/probe_effdepth_1m>"
+      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_pa>"
       "<fdri:hasValue>":
-        - name: ProbeEffDepth1MValue
+        - name: PAValue
           properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-1m.value>"
+            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-pa.value>"
             "@type": <schema:PropertyValue>
-            "<schema:value>": "{PROBE_EFFDEPTH_1M|asDecimal}"
-      "^<fdri:hasAnnotation>": "<::Site>"
-
-  - name: PROBE_EFFDEPTH_200M
-    requires:
-      PROBE_EFFDEPTH_200M:
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-200m>"
-      "@type": <fdri:Annotation>
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/probe_effdepth_200m>"
-      "<fdri:hasValue>":
-        - name: ProbeEffDepth200MValue
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#probe-effdepth-200m.value>"
-            "@type": <schema:PropertyValue>
-            "<schema:value>": "{PROBE_EFFDEPTH_200M|asDecimal}"
+            "<schema:value>": "{REF_PA|asDecimal}"
       "^<fdri:hasAnnotation>": "<::Site>"
 
   - name: N_MIN
@@ -250,51 +235,6 @@ resources:
             "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#barometric-attenuation-length.value>"
             "@type": <schema:PropertyValue>
             "<schema:value>": "{L|asDecimal}"
-      "^<fdri:hasAnnotation>": "<::Site>"
-
-  - name: REF_BULKDENSITY_STD
-    requires:
-      REF_BULKDENSITY_STD:
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-bulk-density-std>"
-      "@type": <fdri:Annotation>
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_bulkdensity_std>"
-      "<fdri:hasValue>":
-        - name: BulkDensityStdValue
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-bulk-density-std.value>"
-            "@type": <schema:PropertyValue>
-            "<schema:value>": "{REF_BULKDENSITY_STD|asDecimal}"
-      "^<fdri:hasAnnotation>": "<::Site>"
- 
-  - name: REF_LATTICEWATER_STD
-    requires:
-      REF_LATTICEWATER_STD:
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-lattice-water-std>"
-      "@type": <fdri:Annotation>
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_latticewater_std>"
-      "<fdri:hasValue>":
-        - name: LatticeWaterStdValue
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-lattice-water-std.value>"
-            "@type": <schema:PropertyValue>
-            "<schema:value>": "{REF_LATTICEWATER_STD|asDecimal}"
-      "^<fdri:hasAnnotation>": "<::Site>"
-  
-  - name: REF_SOC_STD
-    requires:
-      REF_SOC_STD:
-    properties:
-      "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soc-std>"
-      "@type": <fdri:Annotation>
-      "<fdri:property>": "<http://fdri.ceh.ac.uk/ref/common/annotation-property/ref_soc_std>"
-      "<fdri:hasValue>":
-        - name: SOCStdValue
-          properties:
-            "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#ref-soc-std.value>"
-            "@type": <schema:PropertyValue>
-            "<schema:value>": "{REF_SOC_STD|asDecimal}"
       "^<fdri:hasAnnotation>": "<::Site>"
 
   - name: SamplingStartDatetime
