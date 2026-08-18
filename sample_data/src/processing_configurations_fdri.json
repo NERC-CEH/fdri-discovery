@@ -237,7 +237,8 @@
       "type": "correction",
       "method": "ABSOLUTE",
       "observation_interval": {
-        "start_date": "2025-05-19T00:00:00"
+        "start_date": "2025-06-28T00:00:00",
+        "end_date": "2026-07-29T12:00:00"
       }
     },
     {
@@ -266,7 +267,8 @@
       "type": "correction",
       "method": "ABSOLUTE",
       "observation_interval": {
-        "start_date": "2025-05-19T00:00:00"
+        "start_date": "2025-06-28T00:00:00",
+        "end_date": "2026-07-29T12:00:00"
       }
     },
     {
