@@ -53,7 +53,7 @@ FDRI-CH-MILFA-01-RS-PPFD_IN_1MIN_RAW,Incoming photosynthetic photon flux density
 FDRI-CH-MILFA-01-RS-PPFD_IN_1MIN_PROCESSED,Incoming photosynthetic photon flux density,CH_MILFA_01,ukceh-fdri-staging-timeseries-processed,one_minute,PPFD_IN_Avg,time,PPFD_IN-MEAN_PREC-MicroMOL-PER-M2-SEC-PT1M-PT1M,PROCESSED,PPFD_IN_FLAG_DEF
 FDRI-CH-MILFA-01-RS-ALBEDO_1MIN_RAW,Albedo,CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,albedo_Avg,time,ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,RAW,
 FDRI-CH-MILFA-01-RS-ALBEDO_1MIN_PROCESSED,Albedo,CH_MILFA_01,ukceh-fdri-staging-timeseries-processed,one_minute,albedo_Avg,time,ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,PROCESSED,ALBEDO_FLAG_DEF
-FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW,Sensor temperature (NR01),CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-DEGC-PT1M-PT1M,RAW,
+FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW,Sensor temperature (NR01),CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,RAW,
 FDRI-CH-MILFA-01-RS-LWIN_1MIN_RAW,Incoming longwave radiation,CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,
 FDRI-CH-MILFA-01-RS-LWIN_1MIN_PROCESSED,Incoming longwave radiation,CH_MILFA_01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWIN_FLAG_DEF
 FDRI-CH-MILFA-01-RS-LWOUT_1MIN_RAW,Outgoing longwave radiation,CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,
@@ -472,7 +472,7 @@ FDRI-CH-TRIGR-01-RS-NDVI_15MIN_RAW,Normalised difference vegetation index,CH-TRI
 FDRI-CH-TRIGR-01-RS-NDVI_15MIN_PROCESSED,Normalised difference vegetation index,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,fifteen_minute,NDVI_Avg,time,NDVI-MEAN_PREC-UNITLESS-PT15M-PT15M,PROCESSED,NDVI_FLAG_DEF
 FDRI-CH-TRIGR-01-RS-S2-411_ANGLE_15MIN_RAW,Sensor angle (S2-411),CH-TRIGR-01,ukceh-dri-staging-ingested,fifteen_minute,S2411_angle_offset,time,SENSOR_ANGLE-INST-DEG-PT15M-PT15M,RAW,
 FDRI-CH-TRIGR-01-RS-S2-412_ANGLE_15MIN_RAW,Sensor angle (S2-412),CH-TRIGR-01,ukceh-dri-staging-ingested,fifteen_minute,S2412_angle_offset,time,SENSOR_ANGLE-INST-DEG-PT15M-PT15M,RAW,
-FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW,Sensor temperature (NR01),CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-DEGC-PT1M-PT1M,RAW,
+FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW,Sensor temperature (NR01),CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,RAW,
 FDRI-CH-TRIGR-01-RS-TS100_FAN_RPM_1MIN_RAW,Aspirated screen fan speed,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,TS100SS_Fan_RPM,time,REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_PROCESSED,Albedo,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,albedo_Avg,time,ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,PROCESSED,ALBEDO_FLAG_DEF
 FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW,Albedo,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,albedo_Avg,time,ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,RAW,
@@ -506,7 +506,7 @@ FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,SE-CARWE-0
 FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_PROCESSED,Air temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,TA_FLAG_DEF
 FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_RAW,Air temperature,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,
-FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW,Sensor temperature (NR01),SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-DEGC-PT1M-PT1M,RAW,
+FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW,Sensor temperature (NR01),SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-TS100_FAN_RPM_1MIN_RAW,Aspirated screen fan speed,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,TS100SS_Fan_RPM,time,REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,RAW,
 FDRI-SE-CARWE-01-WS-WD_1MIN_PROCESSED,Wind direction,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,PROCESSED,WD_FLAG_DEF
 FDRI-SE-CARWE-01-WS-WD_1MIN_RAW,Wind direction,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,WindDir,time,WD-MEAN_PREC-DEG-PT1M-PT1M,RAW,
