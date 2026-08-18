@@ -676,6 +676,20 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -4914,6 +4928,20 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-trigr-01-rs-lwin_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
       ]
     },
     {
@@ -9196,6 +9224,20 @@
         {
           "param": "lt",
           "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
         }
       ]
     },
