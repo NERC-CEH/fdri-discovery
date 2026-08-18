@@ -1,14 +1,17 @@
 UNIT_ID,UNIT_NAME
+CentiM-PER-SEC,cm s-1
 CM,cm
 CTS,Counts
 CTS_MIN-1,Counts min-1
 CTS-S-1,Counts s-1
+DeciB,Decibel
 DEG,Degrees
 DEGC,Deg Celsius
 DEGF,Deg Fahrenheit
 DSM-1,dSm-1
 GM-3,gm-3
 HPA,hPa
+IN3-PER-SEC,Cubic inch per second
 KEL,Kelvin
 KGM-1S-2,kgm-1s-2
 KGM-3,kgm-3
@@ -17,8 +20,9 @@ KMS-1,K ms-1
 LS-1,litres s-1
 M,metres
 M3S-1,m3 s-1
-M3-M3,m3/m3
-MAH,mAh
+M3-PER-M3,m3/m3
+MilliA,mA
+MilliA-HR,mAh
 MJD,MJday-1
 MJM-2-D,MJ m-2 day-1
 MM,mm
@@ -26,20 +30,19 @@ MM_M-1,mm min-1
 MM_HR-1,mm hr-1
 MS-1,ms-1
 MV,mV
-M_SEC,mS
+MilliSEC,mS
+NanoS,ns
 PCT,%
 RADIANS,rad
 REVS-1,Revolutions s-1
 RPM,rpm
-RSSI,Received Signal Strength Indicator
-SAMPLES,Samples
+SAMPLE,Samples
 SEC,Seconds
 SM-1,Sm-1
-UAMP,uA
+MicroA,uA
 UNITLESS,Unitless
 US_CM-1,µS/cm
 V,V
 WM-2,Wm-2
-UMOLM-2S-1,µmol m-2 s-1
-MMOLM-2S-1,mmol m-2 s-1
+MicroMOL-PER-M2-SEC,µmol m-2 s-1
 M2S-2,m2 s-2
