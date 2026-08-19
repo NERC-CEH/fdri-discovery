@@ -689,7 +689,10 @@
           "param": "correction_factor",
           "value": 1.0
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2025-11-17T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
@@ -703,7 +706,10 @@
           "param": "correction_factor",
           "value": 1.0
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2025-11-17T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
@@ -4958,7 +4964,10 @@
           "param": "correction_factor",
           "value": 1.0
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2026-03-12T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
@@ -4972,7 +4981,10 @@
           "param": "correction_factor",
           "value": 1.0
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2026-03-12T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
@@ -9269,7 +9281,10 @@
           "param": "correction_factor",
           "value": 1.0
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2025-06-13T00:00:00"
+      }
     },
     {
       "id": "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
@@ -9283,7 +9298,10 @@
           "param": "correction_factor",
           "value": 1.0
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2025-06-13T00:00:00"
+      }
     },
     {
       "id": "fdri-se-carwe-01-ws-dewpoint_1min-battery_v",
