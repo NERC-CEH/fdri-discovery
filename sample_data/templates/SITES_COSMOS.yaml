@@ -79,6 +79,11 @@ resources:
         "^<doo:contains>": <::Cosmos>
         "^<doo:utilises>": <::CosmosProgramme>
         "<fdri:utilisedBy>": <::CosmosProgramme>
+        "<fdri:isPrivate>":
+          - name: MonitoringSiteIsPrivate
+            requires:
+              IsPrivate: ["1", "T", "true", "True", "TRUE"]
+            pattern: "true^^<xsd:boolean>"
         "<geos:hasGeometry>":
             - name: EastingsNorthingsPoint
               properties:

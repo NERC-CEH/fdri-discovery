@@ -44,6 +44,11 @@ resources:
       "<fdri:sourceTimeColumnName>": "{TIME_COLUMN_NAME}"
       "<fdri:measure>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
       "<fdri:processingLevel>": "<http://fdri.ceh.ac.uk/ref/common/processing-level/{PROCESS_LEVEL|slug}>"
+      "<fdri:isPrivate>":
+        - name: MonitoringSiteIsPrivate
+          requires:
+            IsPrivate: ["1", "T", "true", "True", "TRUE"]
+          pattern: "true^^<xsd:boolean>"
 
   - name: RawTimeSeriesDistribution
     requires:
