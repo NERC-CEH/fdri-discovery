@@ -233,6 +233,15 @@
       ]
     },
     {
+      "id": "fdri-ch-kaden-01-bh-water_lev_pt_15min-correction-absolute",
+      "type": "correction",
+      "method": "ABSOLUTE",
+      "observation_interval": {
+        "start_date": "2025-06-28T00:00:00",
+        "end_date": "2026-07-29T12:00:00"
+      }
+    },
+    {
       "id": "fdri-ch-kaden-01-bh-water_temp_15min-spike",
       "type": "qc",
       "method": "SPIKE",
@@ -252,6 +261,15 @@
       "dep_ts": [
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min_raw"
       ]
+    },
+    {
+      "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-correction-absolute",
+      "type": "correction",
+      "method": "ABSOLUTE",
+      "observation_interval": {
+        "start_date": "2025-06-28T00:00:00",
+        "end_date": "2026-07-29T12:00:00"
+      }
     },
     {
       "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-spike",
@@ -658,6 +676,40 @@
       "dep_ts": [
         "fdri-ch-milfa-01-rs-lwin_1min_raw"
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-11-17T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-11-17T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
@@ -4899,6 +4951,40 @@
       "dep_ts": [
         "fdri-ch-trigr-01-rs-lwin_1min_raw"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-03-12T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-03-12T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
@@ -9184,6 +9270,40 @@
       ]
     },
     {
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-06-13T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-06-13T00:00:00"
+      }
+    },
+    {
       "id": "fdri-se-carwe-01-ws-dewpoint_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -11593,6 +11713,48 @@
       "dep_ts": [
         "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW"
       ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": -100.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 398.24
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": -0.46
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
     },
     {
       "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",

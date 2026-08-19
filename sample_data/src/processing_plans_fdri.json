@@ -68,6 +68,7 @@
       "input": "fdri-ch-kaden-01-bh-water_lev_pt_15min_raw",
       "steps": [
         "fdri-ch-kaden-01-bh-water_lev_pt_15min-load_raw",
+        "fdri-ch-kaden-01-bh-water_lev_pt_15min-correction-absolute",
         "fdri-ch-kaden-01-bh-water_lev_pt_15min-spike"
       ]
     },
@@ -89,6 +90,7 @@
       "input": "fdri-ch-lowpa-01-bh-water_lev_pt_15min_raw",
       "steps": [
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min-load_raw",
+        "fdri-ch-lowpa-01-bh-water_lev_pt_15min-correction-absolute",
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min-spike"
       ]
     },
@@ -202,6 +204,7 @@
       "input": "fdri-ch-milfa-01-rs-lwin_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwin_1min-load_raw",
+        "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
         "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwin_1min-range"
       ]
@@ -212,6 +215,7 @@
       "input": "fdri-ch-milfa-01-rs-lwout_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwout_1min-load_raw",
+        "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
         "fdri-ch-milfa-01-rs-lwout_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwout_1min-range"
       ]
@@ -1267,6 +1271,7 @@
       "input": "fdri-ch-trigr-01-rs-lwin_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-lwin_1min-load_raw",
+        "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
         "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
         "fdri-ch-trigr-01-rs-lwin_1min-range"
       ]
@@ -1277,6 +1282,7 @@
       "input": "fdri-ch-trigr-01-rs-lwout_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-lwout_1min-load_raw",
+        "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
         "fdri-ch-trigr-01-rs-lwout_1min-battery_v",
         "fdri-ch-trigr-01-rs-lwout_1min-range"
       ]
@@ -2372,6 +2378,7 @@
       "input": "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-lwin_1min-load_raw",
+        "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
         "fdri-se-carwe-01-ws-lwin_1min-battery_v",
         "fdri-se-carwe-01-ws-lwin_1min-range"
       ]
@@ -2382,6 +2389,7 @@
       "input": "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-lwout_1min-load_raw",
+        "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
         "fdri-se-carwe-01-ws-lwout_1min-battery_v",
         "fdri-se-carwe-01-ws-lwout_1min-range"
       ]
@@ -2976,6 +2984,8 @@
       "input": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW",
       "steps": [
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike"
@@ -2998,6 +3008,7 @@
       "input": "FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW",
       "steps": [
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-se-svtrp-01-wl-water_lev_pt_1min-correction-add",
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-battery_v",
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-range",
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-spike"
