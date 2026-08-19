@@ -7,7 +7,10 @@ ALBEDO-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,STDDEV,PROC,P1D,P1D,Standar
 ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,PREC,,,Mean angular velocity in revolutions per second
 BUCKET_LEVEL_NRT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_NRT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (non-real-time) in millimetres
 BUCKET_LEVEL_RT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_RT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (real-time) in millimetres
+CO2_FLUX-INST-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,NONE,INST,PT30M,PT30M,Instantaneous CO2 flux in micromoles per metre squared per second
 CO2_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean CO2 flux over the preceding 30 minutes in micromoles per metre squared per second
+CO2_FRAC-MEAN_PREC-MicroMOL-PER-MOL-PT30M-PT30M,,CO2_FRAC,MicroMOL-PER-MOL,MEAN,PREC,PT30M,PT30M,Mean CO2 fraction over the preceding 30 minutes in micromoles per mol
+CO2_FRAC-STDDEV_PREC-MicroMOL-PER-MOL-PT30M-PT30M,,CO2_FRAC,MicroMOL-PER-MOL,STDDEV,PREC,PT30M,PT30M,Standard deviation of CO2 fraction over the preceding 30 minutes in micromoles per mol
 COND_10-INST-DSM-1-PT15M-PT15M,,COND_10,DSM-1,NONE,INST,PT15M,PT15M,Instantaneous soil electrical conductivity at 10 cm depth in dS/m
 COND_10-INST-DSM-1-PT30M-PT30M,,COND_10,DSM-1,NONE,INST,PT30M,PT30M,Instantaneous soil electrical conductivity at 10 cm depth in dS/m
 COND_10-MEAN_PREC-DSM-1-PT10M-PT10M,,COND_10,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 10 cm depth over the preceding 10 minutes in dS/m
@@ -109,10 +112,18 @@ ET-MEAN_PREC-MM-PT30M-PT30M,,ET,MM,MEAN,PREC,PT30M,PT30M,Mean evapotranspiration
 FACTOR_INTEN-INST-UNITLESS-PT1H-PT1H,,FACTOR_INTEN,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous intensity factor (unitless)
 FACTOR_PA-INST-UNITLESS-PT1H-PT1H,,FACTOR_PA,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous pressure facctor (unitless)
 FACTOR_Q-INST-UNITLESS-PT1H-PT1H,,FACTOR_Q,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous water vapour factor (unitless)
+FETCH_40-INST-M-PT30M-PT30M,,FETCH_40,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 40% to the flux in meters
+FETCH_55-INST-M-PT30M-PT30M,,FETCH_55,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 55% to the flux in meters
+FETCH_90-INST-M-PT30M-PT30M,,FETCH_90,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 90% to the flux in meters
+FETCH_MAX-INST-M-PT30M-PT30M,,FETCH_MAX,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute most to the flux in meters
 FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,NONE,INST,PT30M,PT30M,Instantaneous momentum flux in kilograms per metre per second squared
 FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,MEAN,PREC,PT30M,PT30M,Mean momentum flux over the preceding 30 minutes in kilograms per metre per second squared
 FRICTIONV-INST-MS-1-PT30M-PT30M,,FRICTIONV,MS-1,NONE,INST,PT30M,PT30M,Instantaneous friction velocity in metres per second
+H2O_FLUX-INST-MicroMOL-PER-M2-SEC-PT30M-PT30M,,H2O_FLUX,MicroMOL-PER-M2-SEC,NONE,INST,PT30M,PT30M,Instantaneous H2O flux in millimoles per metre squared per second
 H2O_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,H2O_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean H2O flux over the preceding 30 minutes in millimoles per metre squared per second
+H2O_FRAC-MEAN_PREC-GM-3-PT30M-PT30M,,H2O_FRAC,GM-3,MEAN,PREC,PT30M,PT30M,Mean H2O fraction over the preceding 30 minutes in in grams per cubic metre
+H2O_FRAC-STDDEV_PREC-GM-3-PT30M-PT30M,,H2O_FRAC,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of H2O fraction over the preceding 30 minutes in in grams per cubic metre
+HEATFLUX_LATENT-INST-WM-2-PT30M-PT30M,,HEATFLUX_LATENT,WM-2,NONE,INST,PT30M,PT30M,Instantaneous latent heat flux in watts per metre squared
 HEATFLUX_LATENT-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_LATENT,WM-2,MEAN,PREC,PT30M,PT30M,Mean latent heat flux over the preceding 30 minutes in watts per metre squared
 HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,NONE,INST,PT30M,PT30M,Instantaneous sensible heat flux in watts per metre squared
 HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,MEAN,PREC,PT30M,PT30M,Mean sensible heat flux over the preceding 30 minutes in watts per metre squared
@@ -150,6 +161,7 @@ MATPOT_SOIL_50-MEAN_PREC-KPA-PT15M-PT15M,,MATPOT_SOIL_50,KPA,MEAN,PREC,PT15M,PT1
 MEASURE_PERIOD-TOTAL_PREC-MilliSEC-PT1H-PT1H,,MEASURE_PERIOD,MilliSEC,TOTAL,PREC,PT1H,PT1H,Total measurement period over the preceding hour in milliseconds
 MEASURE_PERIOD-TOTAL_PREC-MilliSEC-PT30M-PT30M,,MEASURE_PERIOD,MilliSEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over the preceding 30 minutes in milliseconds
 MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,,MEASURE_PERIOD,SEC,TOTAL,PREC,PT30M,PT30M,Total measurement period over preceding 30 minutes in seconds
+MO_LENGTH-INST-M-PT30M-PT30M,,MO_LENGTH,M,NONE,INST,PT30M,PT30M,Instantaneous Monin-Obukhov length in meters
 MSLP-MEAN_PREC-HPA-PT30M-PT30M,,MSLP,HPA,MEAN,PREC,PT30M,PT30M,Mean sea level pressure over the preceding 30 minutes in hectopascals
 MSLP-MEAN_PROC-HPA-P1D-P1D,,MSLP,HPA,MEAN,PROC,P1D,P1D,Mean sea level pressure over the proceeding day in hectopascals
 MUON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,MUON_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total muon count over the preceding hour in counts
@@ -170,6 +182,8 @@ PA-MEAN_PREC-HPA-PT1M-PT1M,,PA,HPA,MEAN,PREC,PT1M,PT1M,Mean atmospheric pressure
 PA-MEAN_PREC-HPA-PT30M-PT30M,,PA,HPA,MEAN,PREC,PT30M,PT30M,Mean atmospheric pressure over the preceding 30 minutes in hectopascals
 PA-MEAN_PROC-HPA-P1D-P1D,,PA,HPA,MEAN,PROC,P1D,P1D,Mean atmospheric pressure over the proceeding day in hectopascals
 PA-STDDEV_PREC-HPA-PT30M-PT30M,,PA,HPA,STDDEV,PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in hectopascals
+PA-MEAN_PREC-KPA-PT30M-PT30M,,PA,KPA,MEAN,PREC,PT30M,PT30M,Mean atmospheric pressure over the preceding 30 minutes in kilopascals
+PA-STDDEV_PREC-KPA-PT30M-PT30M,,PA,KPA,STDDEV,PREC,PT30M,PT30M,Standard deviation of atmospheric pressure over the preceding 30 minutes in kilopascals
 PE-TOTAL_PREC-MM-PT30M-PT30M,,PE,MM,TOTAL,PREC,PT30M,PT30M,Total potential evaporation over the preceding 30 minutes in millimetres
 PE-TOTAL_PROC-MM-P1D-P1D,,PE,MM,TOTAL,PROC,P1D,P1D,Total potential evaporation over the proceeding day in millimetres
 PERM_10-INST-UNITLESS-PT15M-PT15M,,PERM_10,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous electrical permittivity at 10 cm depth
@@ -295,6 +309,7 @@ SNOWD_SIGNALQUALITY-STDDEV_PREC-UNITLESS-PT30M-PT30M,,SNOWD_SIGNALQUALITY,UNITLE
 SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,,SOC_BATT,PCT,MEAN,PREC,PT1M,PT1M,Mean battery state of charge over the preceding minute in percent
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
 SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees
+SSITC-INST-UNITLESS-PT30M-PT30M,,SSITC,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous steady state and integral turbulence characteristics
 STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
 STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,STATUS_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count over the preceding 30 minutes in counts
 STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,NONE,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
@@ -392,7 +407,7 @@ TEMP_SOIL_60-MEAN_PREC-DEGC-PT10M-PT10M,,TEMP_SOIL_60,DEGC,MEAN,PREC,PT10M,PT10M
 TEMP_SOIL-MEAN_PREC-DEGC-PT15M-PT15M,,TEMP_SOIL,DEGC,MEAN,PREC,PT15M,PT15M,Mean soil temperature over the preceding 15 minutes in degrees Celsius
 TEMP_SONIC-INST-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,NONE,INST,PT30M,PT30M,Instantaneous sonic temperature in degrees Celsius
 TEMP_SONIC-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SONIC,DEGC,MEAN,PREC,PT30M,PT30M,Mean sonic temperature over the preceding 30 minutes in degrees Celsius
-TEMP_SONIC-STDDEV_PREC-MS-1-PT30M-PT30M,,TEMP_SONIC,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in meters per second
+TEMP_SONIC-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_SONIC,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of sonic temperature over the preceding 30 minutes in degrees Celsius
 UNCERTAINTY-MEAN_PREC-MM-PT1H-PT1H,,UNCERTAINTY,MM,MEAN,PREC,PT1H,PT1H,Mean uncertainty of snow water equivalent over the preceding hour in millimetres
 UNCERTAINTY-MEAN_PROC-MM-P1D-P1D,,UNCERTAINTY,MM,MEAN,PROC,P1D,P1D,Mean uncertainty of snow water equivalent over the proceeding day in millimetres
 UX-MEAN_PREC-MS-1-PT30M-PT30M,,UX,MS-1,MEAN,PREC,PT30M,PT30M,Mean X component of wind speed over the preceding 30 minutes in meters per second
@@ -404,6 +419,7 @@ UY-VAR_PREC-M2S-2-PT30M-PT30M,,UY,M2S-2,VAR,PREC,PT30M,PT30M,Y component wind sp
 UZ-MEAN_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,MEAN,PREC,PT30M,PT30M,Mean Z component of wind speed over the preceding 30 minutes in meters per second
 UZ-STDDEV_PREC-MS-1-PT30M-PT30M,,UZ,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of Z component of wind speed in meters per second
 UZ-VAR_PREC-M2S-2-PT30M-PT30M,,UZ,M2S-2,VAR,PREC,PT30M,PT30M,Z component wind speed variance over the preceding 30 minutes in metres squared per second squared
+VAPOUR_P-INST-HPA-PT30M-PT30M,,VAPOUR_P,HPA,NONE,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in hectopascals
 VAPOUR_P-INST-KPA-PT30M-PT30M,,VAPOUR_P,KPA,NONE,INST,PT30M,PT30M,Instantaneous saturated water vapour pressure in kilopascals
 VOLTAGE_BATT-INST-V-PT1M-PT1M,,VOLTAGE_BATT,V,NONE,INST,PT1M,PT1M,Instantaneous battery voltage in volts
 VOLTAGE_BATT-MEAN_PREC-V-PT15M-PT15M,,VOLTAGE_BATT,V,MEAN,PREC,PT15M,PT15M,Mean battery voltage over the preceding 15 minutes in volts
@@ -486,12 +502,16 @@ WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,NONE,INST,,,Ins
 WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,PREC,,,Maximum water velocity in metres per second
 WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,PREC,,,Mean water velocity in metres per second
 WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,,Water velocity in metres per second
+WD-INST-DEG-PT30M-PT30M,,WD,DEG,NONE,INST,PT30M,PT30M,Instantaneous wind direction in degrees
 WD-MEAN_PREC-DEG-PT1M-PT1M,,WD,DEG,MEAN,PREC,PT1M,PT1M,Mean wind direction over the preceding minute in degrees
 WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN,PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees
 WD-MEAN_PROC-DEG-P1D-P1D,,WD,DEG,MEAN,PROC,P1D,P1D,Mean wind direction over the proceeding day in degrees
 WD-STDDEV_PREC-DEG-PT30M-PT30M,,WD,DEG,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
 WS_RES-INST-MS-1-PT30M-PT30M,,WS_RES,MS-1,NONE,INST,PT30M,PT30M,Instantaneous resultant wind speed over the in meters per second
+WS-INST-MS-1-PT30M-PT30M,,WS,MS-1,NONE,INST,PT30M,PT30M,Instantaneous wind speed in meters per second
+WS-MAX_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MAX,PREC,PT30M,PT30M,Maximum wind speed over the preceding 30 minutes in meters per second
 WS-MEAN_PREC-MS-1-PT1M-PT1M,,WS,MS-1,MEAN,PREC,PT1M,PT1M,Mean wind speed over the preceding minute in metres per second
 WS-MEAN_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MEAN,PREC,PT30M,PT30M,Mean wind speed over the preceding 30 minutes in meters per second
 WS-MEAN_PROC-MS-1-P1D-P1D,,WS,MS-1,MEAN,PROC,P1D,P1D,Mean wind speed over the proceeding day in meters per second
 WS-STDDEV_PREC-MS-1-PT30M-PT30M,,WS,MS-1,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind speed over the preceding 30 minutes in meters per second
+ZL-INST-UNITLESS-PT30M-PT30M,,ZL,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous atmospheric boundary-layer stability
