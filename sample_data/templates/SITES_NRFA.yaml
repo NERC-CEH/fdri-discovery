@@ -94,6 +94,11 @@ resources:
       "^<doo:contains>": <::Nrfa>
       "^<doo:utilises>": <::NrfaProgramme>
       "<fdri:utilisedBy>": <::NrfaProgramme>
+      "<fdri:isPrivate>":
+        - name: MonitoringSiteIsPrivate
+          requires:
+            IsPrivate: ["1", "T", "true", "True", "TRUE"]
+          pattern: "true^^<xsd:boolean>"
       "<sosa:hasFeatureOfInterest>": <::MonitoredFeature>
       "<geos:hasGeometry>":
         - name: EastingsNorthingsPoint

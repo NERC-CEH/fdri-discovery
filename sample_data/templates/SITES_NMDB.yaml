@@ -32,6 +32,11 @@ resources:
       "^<doo:contains>": <::Network>
       "^<doo:utilises>": <::Programme>
       "<fdri:utilisedBy>": <::Programme>
+      "<fdri:isPrivate>":
+        - name: MonitoringSiteIsPrivate
+          requires:
+            IsPrivate: ["1", "T", "true", "True", "TRUE"]
+          pattern: "true^^<xsd:boolean>"
       "<geos:hasGeometry>":
         - name: LatLongPoint
           properties:

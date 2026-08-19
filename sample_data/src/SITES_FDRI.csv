@@ -1,9 +1,9 @@
-Network,Catchment,Site_name,SiteAreaID,SiteID,Site_type,Latitude,Longitude,Date_installed,Date_decomissioned,Standard_installation,Description,Land_management
-FDRI,Severn,Carreg Wen,SE-CARWE-01,SE-CARWE-01,WS,52.48277697,-3.726718138,23-06-2025 12:00:00,,1,,Bog
-FDRI,Severn,Hafren Forest - Severn Trap,SE-SVTRP-01,SE-HAFRF-07,WL,52.47060072,-3.69043706,19-05-2025 17:00:00,,0,Trapezoidal flume,Neutral grassland
-FDRI,Severn,Foel Fadian,SE-FOFAD-01,SE-FOFAD-01-PR,PR,52.54511083,-3.720864236,03-12-2025 15:30:00,,1,,Bog
-FDRI,Chess,Bury Pond Eastern Outlet,CH-BURYP-01,CH-BURYP-01-WL,WL,51.70322,-0.61789,11-06-2026 00:00:00,,1,,Freshwater
-FDRI,Chess,Chorleywood PS,CH-CHOPS-01,CH-CHOPS-01-RG,RG,51.66831,-0.5023,02-04-2026 00:00:00,,1,,Improved grassland
-FDRI,Chess,Hiawassee Galvladi at Tring Grange,CH-TRIGR-01,CH-TRIGR-01,RS,51.75696,-0.64453,08-05-2026 00:00:00,,1,,
-FDRI,Chess,Lowndes Park,CH-LOWPA-01,CH-LOWPA-01-BH,BH,51.7052420053333,-0.6151,19-06-2026 00:00:00,,1,,
-FDRI,Chess,Kaden Plastics,CH-KADEN-01,CH-KADEN-01-BH,BH,51.71226,-0.61499,19-06-2026 00:00:00,,1,,
+Network,Catchment,Site_name,SiteAreaID,SiteID,Site_type,Latitude,Longitude,Date_installed,Date_decomissioned,Standard_installation,Description,Land_management,IsPrivate
+FDRI,Severn,Carreg Wen,SE-CARWE-01,SE-CARWE-01,WS,52.48277697,-3.726718138,23-06-2025 12:00:00,,1,,Bog,
+FDRI,Severn,Hafren Forest - Severn Trap,SE-SVTRP-01,SE-HAFRF-07,WL,52.47060072,-3.69043706,19-05-2025 17:00:00,,0,Trapezoidal flume,Neutral grassland,
+FDRI,Severn,Foel Fadian,SE-FOFAD-01,SE-FOFAD-01-PR,PR,52.54511083,-3.720864236,03-12-2025 15:30:00,,1,,Bog,
+FDRI,Chess,Bury Pond Eastern Outlet,CH-BURYP-01,CH-BURYP-01-WL,WL,51.70322,-0.61789,11-06-2026 00:00:00,,1,,Freshwater,
+FDRI,Chess,Chorleywood PS,CH-CHOPS-01,CH-CHOPS-01-RG,RG,51.66831,-0.5023,02-04-2026 00:00:00,,1,,Improved grassland,
+FDRI,Chess,Hiawassee Galvladi at Tring Grange,CH-TRIGR-01,CH-TRIGR-01,RS,51.75696,-0.64453,08-05-2026 00:00:00,,1,,,
+FDRI,Chess,Lowndes Park,CH-LOWPA-01,CH-LOWPA-01-BH,BH,51.7052420053333,-0.6151,19-06-2026 00:00:00,,1,,,
+FDRI,Chess,Kaden Plastics,CH-KADEN-01,CH-KADEN-01-BH,BH,51.71226,-0.61499,19-06-2026 00:00:00,,1,,,
