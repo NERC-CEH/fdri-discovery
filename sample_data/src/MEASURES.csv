@@ -352,9 +352,7 @@ TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,MEAN,PREC,PT30M,PT30M,Mean ai
 TEMP_AIR-MEAN_PROC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MEAN,PROC,P1D,P1D,Mean air temperature over the proceeding day in degrees Celsius
 TEMP_AIR-MIN_PROC-DEGC-P1D-P1D,,TEMP_AIR,DEGC,MIN,PROC,P1D,P1D,Minimum air temperature over the proceeding day in degrees Celsius
 TEMP_AIR-STDDEV_PREC-DEGC-PT30M-PT30M,,TEMP_AIR,DEGC,STDDEV,PREC,PT30M,PT30M,Standard deviation of air temperature over the preceding 30 minutes in degrees Celsius
-TEMP_LOADCELL-INST-MM-PT1M-PT1M,,TEMP_LOADCELL,MM,NONE,INST,PT1M,PT1M,Instantaneous internal temperature of load cell in millimetres
 TEMP_LOGGER-INST-DEGC-PT1M-PT1M,,TEMP_LOGGER,DEGC,NONE,INST,PT1M,PT1M,Instantaneous logger temperature in degrees Celsius
-TEMP_SENSOR_INT-MEAN_PREC-DEGC-PT30M-PT30M,,TEMP_SENSOR_INT,DEGC,MEAN,PREC,PT30M,PT30M,Mean internal temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SENSOR-INST-DEGC-PT1M-PT1M,,TEMP_SENSOR,DEGC,NONE,INST,PT1M,PT1M,Instantaneous sensor temperature in degrees Celsius
 TEMP_SENSOR-INST-DEGC-PT30M-PT30M,,TEMP_SENSOR,DEGC,NONE,INST,PT30M,PT30M,Instantaneous temperature of sensor over the preceding 30 minutes in degrees Celsius
 TEMP_SENSOR-MAX_PREC-DEGC-PT15M-PT15M,,TEMP_SENSOR,DEGC,MAX,PREC,PT1M,PT1M,Maximum sensor temperature over preceding 15 minutes in degrees Celsius
@@ -453,11 +451,9 @@ VOLTAGE-INST-V-PT30M-PT30M,,VOLTAGE,V,NONE,INST,PT30M,PT30M,Instantaneous voltag
 VOLTAGE-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE,V,MEAN,PREC,PT1H,PT1H,Mean voltage over the preceding hour in volts
 VOLTAGE-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE,V,MEAN,PREC,PT30M,PT30M,Mean voltage over the preceding 30 minutes in volts
 VPD-MEAN_PREC-HPA-PT30M-PT30M,,VPD,HPA,MEAN,PREC,PT30M,PT30M,Mean vapour pressure deficit over the preceding 30 minutes in hectopascals
-VWC_CRNS_NO_SNOW-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS_NO_SNOW,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube (with snow content removed) over the proceeding day in percent
-VWC_CRNS-MEAN_PREC-PCT-PT1H-PT1H,,VWC_CRNS,PCT,MEAN,PREC,PT1H,PT1H,Mean volumetric water content from CRNS tube over the preceding hour in percent
-VWC_CRNS-MEAN_PREC-PCT-PT30M-PT30M,,VWC_CRNS,PCT,MEAN,PREC,PT30M,PT30M,Mean volumetric water content from CRNS tube over the preceding 30 minutes in percent
-VWC_CRNS-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube over the proceeding day in percent
-VWC_CRNS-MEAN_PROC-PCT-P1D-P1D,,VWC_CRNS,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content from CRNS tube over the proceeding day in percent
+VWC_AREA-MEAN_PREC-PCT-PT1H-PT1H,,VWC_AREA,PCT,MEAN,PREC,PT1H,PT1H,Mean volumetric water content over large area over the preceding hour in percent
+VWC_AREA-MEAN_PREC-PCT-PT30M-PT30M,,VWC_AREA,PCT,MEAN,PREC,PT30M,PT30M,Mean volumetric water content over large area over the preceding 30 minutes in percent
+VWC_AREA-MEAN_PROC-PCT-P1D-P1D,,VWC_AREA,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content over large area (with snow content removed) over the proceeding day in percent
 VWC_SOIL_10-INST-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_10,M3-PER-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 10 cm depth in cubic metres per cubic metre
 VWC_SOIL_10-INST-PCT-PT10M-PT10M,,VWC_SOIL_10,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 10 cm depth in percent
 VWC_SOIL_10-INST-PCT-PT30M-PT30M,,VWC_SOIL_10,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 10 cm depth in percent
@@ -540,7 +536,6 @@ WD-MEAN_PREC-DEG-PT1M-PT1M,,WD,DEG,MEAN,PREC,PT1M,PT1M,Mean wind direction over 
 WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN,PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees
 WD-MEAN_PROC-DEG-P1D-P1D,,WD,DEG,MEAN,PROC,P1D,P1D,Mean wind direction over the proceeding day in degrees
 WD-STDDEV_PREC-DEG-PT30M-PT30M,,WD,DEG,STDDEV,PREC,PT30M,PT30M,Standard deviation of wind direction over the preceding 30 minutes in degrees
-WS_RES-INST-MS-1-PT30M-PT30M,,WS_RES,MS-1,NONE,INST,PT30M,PT30M,Instantaneous resultant wind speed over the in meters per second
 WS-INST-MS-1-PT30M-PT30M,,WS,MS-1,NONE,INST,PT30M,PT30M,Instantaneous wind speed in meters per second
 WS-MAX_PREC-MS-1-PT30M-PT30M,,WS,MS-1,MAX,PREC,PT30M,PT30M,Maximum wind speed over the preceding 30 minutes in meters per second
 WS-MEAN_PREC-MS-1-PT1M-PT1M,,WS,MS-1,MEAN,PREC,PT1M,PT1M,Mean wind speed over the preceding minute in metres per second

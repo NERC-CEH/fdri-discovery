@@ -126,10 +126,8 @@ SWOUT,Outgoing shortwave radiation,OUTGOING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
 SWOUT_MULT,Outgoing shortwave radiation calibration factor,SENSOR,CALIBRATION,
 TBR_TIP,Tipping bucket rain gauge tip amount,SENSOR,CALIBRATION,TBR
 TEMP_AIR,Air temperature,AIR,TEMPERATURE,
-TEMP_LOADCELL,Temperature of load cell,SENSOR,TEMPERATURE,
 TEMP_LOGGER,Temperature in the logger,SENSOR,TEMPERATURE,LOGGER
 TEMP_SENSOR,Sensor temperature,SENSOR,TEMPERATURE,
-TEMP_SENSOR_INT,Internal sensor temperature,SENSOR,TEMPERATURE,
 TEMP_SURFACE,Surface temperature,SURFACE,TEMPERATURE,
 TEMP_SOIL,Soil temperature,SOIL,TEMPERATURE,
 TEMP_SOIL_10,Soil temperature at 10 cm depth,SOIL,TEMPERATURE,
@@ -152,8 +150,7 @@ VOLTAGE,Voltage,SENSOR,VOLTAGE,
 VOLTAGE_BATT,Battery voltage,BATTERY,VOLTAGE,
 VOLTAGE_RATIO,Voltage ratio,SENSOR,RATIO,
 VPD,Vapour pressure deficit,AIR,VAPOUR-PRESSURE-DEFICIT,
-VWC_CRNS,Volumetric water content from CRNS tube,SOIL,VWC,CRNS
-VWC_CRNS_NO_SNOW,Volumetric water content from CRNS tube with no snow correction,SOIL,VWC,CRNS
+VWC_AREA,Volumetric water content over large area,SOIL,VWC,CRNS
 VWC_SOIL,Soil volumetric water content,SOIL,VWC,
 VWC_SOIL_10,Soil volumetric water content at 10 cm depth,SOIL,VWC,
 VWC_SOIL_15,Soil volumetric water content at 15 cm depth,SOIL,VWC,
@@ -172,5 +169,4 @@ WATER_VELOCITY,Water velocity,WATER,VELOCITY,
 WD,Wind direction,AIR,WD,
 WG,Wind gust speed,AIR,WS,
 WS,Wind speed,AIR,WS,
-WS_RES,Resultant wind speed,AIR,WS,
 ZL,Atmospheric boundary-layer stability,AIR,STABILITY,
