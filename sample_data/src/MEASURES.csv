@@ -128,7 +128,7 @@ HEATFLUX_SENSIBLE-INST-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,NONE,INST,PT30M,
 HEATFLUX_SENSIBLE-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SENSIBLE,WM-2,MEAN,PREC,PT30M,PT30M,Mean sensible heat flux over the preceding 30 minutes in watts per metre squared
 HEATFLUX_SOIL_CAL-INST-UNITLESS-PT15M-PT15M,,HEATFLUX_SOIL_CAL,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous soil heat flux calibration factor (unitless)
 HEATFLUX_SOIL_CAL-INST-UNITLESS-PT30M-PT30M,,HEATFLUX_SOIL_CAL,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux calibration factor (unitless)
-HEATFLUX_SOIL_MV-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL_MV,MV,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
+HEATFLUX_SOIL-INST-MV-PT30M-PT30M,,HEATFLUX_SOIL,MV,NONE,INST,PT30M,PT30M,Instantaneous soil heat flux in millivolts
 HEATFLUX_SOIL-MEAN_PREC-WM-2-PT15M-PT15M,,HEATFLUX_SOIL,WM-2,MEAN,PREC,PT15M,PT15M,Mean soil heat flux in watts per metre squared over preceding 15 minutes
 HEATFLUX_SOIL-MEAN_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,MEAN,PREC,PT30M,PT30M,Mean soil heat flux in watts per metre squared over preceding 30 minutes
 HEATFLUX_SOIL-MEAN_PROC-WM-2-P1D-P1D,,HEATFLUX_SOIL,WM-2,MEAN,PROC,P1D,P1D,Mean soil heat flux in watts per metre squared over proceeding day
