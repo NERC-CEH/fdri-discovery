@@ -125,8 +125,8 @@ ET-MEAN_PREC-MM-PT30M-PT30M,,ET,MM,MEAN,PREC,PT30M,PT30M,Mean evapotranspiration
 FACTOR_INTEN-INST-UNITLESS-PT1H-PT1H,,FACTOR_INTEN,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous intensity factor (unitless)
 FACTOR_PA-INST-UNITLESS-PT1H-PT1H,,FACTOR_PA,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous pressure facctor (unitless)
 FACTOR_Q-INST-UNITLESS-PT1H-PT1H,,FACTOR_Q,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous water vapour factor (unitless)
-FETCH_40-INST-M-PT30M-PT30M,,FETCH_40,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 40% to the flux in meters
-FETCH_55-INST-M-PT30M-PT30M,,FETCH_55,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 55% to the flux in meters
+FETCH_70-INST-M-PT30M-PT30M,,FETCH_70,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 70% to the flux in meters
+FETCH_80-INST-M-PT30M-PT30M,,FETCH_80,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 80% to the flux in meters
 FETCH_90-INST-M-PT30M-PT30M,,FETCH_90,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute 90% to the flux in meters
 FETCH_MAX-INST-M-PT30M-PT30M,,FETCH_MAX,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute most to the flux in meters
 FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,NONE,INST,PT30M,PT30M,Instantaneous momentum flux in kilograms per metre per second squared
