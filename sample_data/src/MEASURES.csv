@@ -328,12 +328,9 @@ SSITC-INST-UNITLESS-PT30M-PT30M,,SSITC,UNITLESS,NONE,INST,PT30M,PT30M,Instantane
 STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
 STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,STATUS_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count over the preceding 30 minutes in counts
 STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,NONE,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
-SWE_AREAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_AREAL,PCT,MEAN,PREC,PT1H,PT1H,Mean areal snow water equivalent over the preceding hour in percent
-SWE_AREAL-MEAN_PREC-PCT-PT30M-PT30M,,SWE_AREAL,PCT,MEAN,PREC,PT30M,PT30M,Mean areal snow water equivalent over the preceding 30 minutes in percent
-SWE_AREAL-MEAN_PROC-PCT-P1D-P1D,,SWE_AREAL,PCT,MEAN,PROC,P1D,P1D,Mean areal snow water equivalent over proceeding day in percent
-SWE_LOCAL-MEAN_PREC-PCT-PT1H-PT1H,,SWE_LOCAL,PCT,MEAN,PREC,PT1H,PT1H,Mean local snow water equivalent over the preceding hour in percent
-SWE_LOCAL-MEAN_PREC-PCT-PT30M-PT30M,,SWE_LOCAL,PCT,MEAN,PREC,PT30M,PT30M,Mean local snow water equivalent over the preceding 30 minutes in percent
-SWE_LOCAL-MEAN_PROC-PCT-P1D-P1D,,SWE_LOCAL,PCT,MEAN,PROC,P1D,P1D,Mean local snow water equivalent over proceeding day in percent
+SWE-MEAN_PREC-PCT-PT1H-PT1H,,SWE,PCT,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in percent
+SWE-MEAN_PREC-PCT-PT30M-PT30M,,SWE,PCT,MEAN,PREC,PT30M,PT30M,Mean snow water equivalent over the preceding 30 minutes in percent
+SWE-MEAN_PROC-PCT-P1D-P1D,,SWE,PCT,MEAN,PROC,P1D,P1D,Mean snow water equivalent over proceeding day in percent
 SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
 SWE-MEAN_PROC-MM-P1D-P1D,,SWE,MM,MEAN,PROC,P1D,P1D,Mean snow water equivalent over the proceeding day in millimetres
 SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)

@@ -121,8 +121,6 @@ SSITC,Steady state and integral turbulence characteristics,AIR,SSITC,
 STATUS_COUNT,Status of count,SAMPLES,DIAGNOSTIC,
 STATUS_P_HEATING,Status of Pluvio orifice rim heating element,SENSOR,DIAGNOSTIC,PLUVIO
 SWE,Snow water equivalent,SNOW,SNOW-WATER-EQUIVALENT,
-SWE_AREAL,Areal snow water equivalent,SNOW,SNOW-WATER-EQUIVALENT,
-SWE_LOCAL,Local snow water equivalent,SNOW,SNOW-WATER-EQUIVALENT,
 SWIN,Incoming shortwave radiation,INCOMING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
 SWIN_MULT,Incoming shortwave radiation calibration factor,SENSOR,CALIBRATION,
 SWOUT,Outgoing shortwave radiation,OUTGOING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
