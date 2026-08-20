@@ -550,7 +550,7 @@ VWC_SOIL-INST-PCT-PT1M-PT1M,,VWC_SOIL,PCT,NONE,INST,PT1M,PT1M,Instantaneous soil
 VWC_SOIL-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content over the preceding 15 minutes in cubic metres per cubic metre
 WATER_FLOW-INST-LS-1,,WATER_FLOW,LS-1,NONE,INST,,,Instantaneous discharge in litres per second
 WATER_FLOW-INST-M3S-1,,WATER_FLOW,M3S-1,NONE,INST,,,Instantaneous discharge in cubic metres per second
-WATER_LEVEL-MEAN_PREC-CM-PT1M-PT1M,,WATER_LEVEL,M,MEAN,PREC,PT1M,PT1M,Mean water level over the preceding minute in centimetres
+WATER_LEVEL-MEAN_PREC-CM-PT1M-PT1M,,WATER_LEVEL,CM,MEAN,PREC,PT1M,PT1M,Mean water level over the preceding minute in centimetres
 WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,,WATER_LEVEL,M,MEAN,PREC,PT15M,PT15M,Mean water level over the preceding 15 minutes in metres
 WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,,WATER_LEVEL,M,MEAN,PREC,PT1M,PT1M,Mean water level over the preceding minute in metres
 WATER_LEVEL-MEAN_PROC-CM-P1D-P1D,,WATER_LEVEL,CM,MEAN,PROC,P1D,P1D,Mean water level over proceeding day in centimetres
