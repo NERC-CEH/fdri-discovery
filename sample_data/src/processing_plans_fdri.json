@@ -18,6 +18,20 @@
         "fdri-ch-buryp-01-wl-water_temp_15min-range",
         "fdri-ch-buryp-01-wl-water_temp_15min-spike"
       ]
+    },
+    {
+      "id": "fdri-ch-buryp-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-ch-buryp-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-ch-buryp-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-buryp-01-wl-water_temp_1day-plan",
+      "output": "fdri-ch-buryp-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-ch-buryp-01-wl-water_temp_1day-mean"
+      ]
     }
   ],
   "FDRI-CH-CHOPS-01-RG": [
@@ -59,6 +73,34 @@
         "fdri-ch-chops-01-rg-stdrd_precip_tot_1min-load_raw",
         "fdri-ch-chops-01-rg-stdrd_precip_tot_1min-battery_v"
       ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_int_1day-plan",
+      "output": "fdri-ch-chops-01-rg-stdrd_precip_int_1day_processed",
+      "steps": [
+        "fdri-ch-chops-01-rg-stdrd_precip_int_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_int_hr_1day-plan",
+      "output": "fdri-ch-chops-01-rg-stdrd_precip_int_hr_1day_processed",
+      "steps": [
+        "fdri-ch-chops-01-rg-stdrd_precip_int_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_1day-plan",
+      "output": "fdri-ch-chops-01-rg-stdrd_precip_1day_processed",
+      "steps": [
+        "fdri-ch-chops-01-rg-stdrd_precip_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-plan",
+      "output": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day_processed",
+      "steps": [
+        "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-sum"
+      ]
     }
   ],
   "FDRI-CH-KADEN-01-BH": [
@@ -68,6 +110,7 @@
       "input": "fdri-ch-kaden-01-bh-water_lev_pt_15min_raw",
       "steps": [
         "fdri-ch-kaden-01-bh-water_lev_pt_15min-load_raw",
+        "fdri-ch-kaden-01-bh-water_lev_pt_15min-correction-absolute",
         "fdri-ch-kaden-01-bh-water_lev_pt_15min-spike"
       ]
     },
@@ -80,6 +123,20 @@
         "fdri-ch-kaden-01-bh-water_temp_15min-range",
         "fdri-ch-kaden-01-bh-water_temp_15min-spike"
       ]
+    },
+    {
+      "id": "fdri-ch-kaden-01-bh-water_lev_pt_1day-plan",
+      "output": "fdri-ch-kaden-01-bh-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-ch-kaden-01-bh-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-kaden-01-bh-water_temp_1day-plan",
+      "output": "fdri-ch-kaden-01-bh-water_temp_1day_processed",
+      "steps": [
+        "fdri-ch-kaden-01-bh-water_temp_1day-mean"
+      ]
     }
   ],
   "FDRI-CH-LOWPA-01-BH": [
@@ -89,6 +146,7 @@
       "input": "fdri-ch-lowpa-01-bh-water_lev_pt_15min_raw",
       "steps": [
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min-load_raw",
+        "fdri-ch-lowpa-01-bh-water_lev_pt_15min-correction-absolute",
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min-spike"
       ]
     },
@@ -100,6 +158,20 @@
         "fdri-ch-lowpa-01-bh-water_temp_15min-load_raw",
         "fdri-ch-lowpa-01-bh-water_temp_15min-range",
         "fdri-ch-lowpa-01-bh-water_temp_15min-spike"
+      ]
+    },
+    {
+      "id": "fdri-ch-lowpa-01-bh-water_lev_pt_1day-plan",
+      "output": "fdri-ch-lowpa-01-bh-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-ch-lowpa-01-bh-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-lowpa-01-bh-water_temp_1day-plan",
+      "output": "fdri-ch-lowpa-01-bh-water_temp_1day_processed",
+      "steps": [
+        "fdri-ch-lowpa-01-bh-water_temp_1day-mean"
       ]
     }
   ],
@@ -202,6 +274,7 @@
       "input": "fdri-ch-milfa-01-rs-lwin_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwin_1min-load_raw",
+        "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
         "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwin_1min-range"
       ]
@@ -212,6 +285,7 @@
       "input": "fdri-ch-milfa-01-rs-lwout_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwout_1min-load_raw",
+        "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
         "fdri-ch-milfa-01-rs-lwout_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwout_1min-range"
       ]
@@ -1186,6 +1260,720 @@
         "fdri-ch-milfa-01-rs-battv_1min-load_raw",
         "fdri-ch-milfa-01-rs-battv_30min-mean"
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-temp_air_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-temp_air_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-temp_air_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-rh_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-rh_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-rh_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-dewpoint_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-dewpoint_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-dewpoint_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-stdrd_precip_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-stdrd_precip_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-stdrd_precip_int_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-stdrd_precip_int_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ppfd_in_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ppfd_in_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-ppfd_in_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-albedo_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-albedo_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-albedo_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwin_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-lwin_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-lwin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwout_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-lwout_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-lwout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-swin_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-swin_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-swin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-swout_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-swout_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-swout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_1_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_1_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_1_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_2_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_2_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_2_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_3_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_3_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_3_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_4_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_4_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_4_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_5_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_5_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_5_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_6_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_6_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_6_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_7_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_7_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_7_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_8_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_8_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_8_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_9_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_9_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_9_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_10_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_10_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_10_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_11_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_11_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_11_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_12_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_12_mp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_12_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_1_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_1_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_1_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_2_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_2_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_2_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_3_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_3_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_3_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_4_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_4_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_4_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_5_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_5_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_5_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_6_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_6_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_6_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_7_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_7_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_7_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_8_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_8_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_8_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_9_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_9_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_9_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_10_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_10_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_10_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_11_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_11_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_11_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_12_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-teros22_12_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-teros22_12_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-g1_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-g1_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-g1_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-g2_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-g2_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-g2_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-target_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-target_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-target_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-target_temp_max_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-target_temp_max_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-target_temp_max_1day-max"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-target_temp_min_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-target_temp_min_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-target_temp_min_1day-min"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_swin_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_swin_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-ndvi_swin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_lwin_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-ndvi_lwin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_swout_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_swout_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-ndvi_swout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_lwout_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-ndvi_lwout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-ndvi_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_1_ec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_1_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_1_pec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_1_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_1_perm_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_1_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_1_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_1_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_1_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_1_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_2_ec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_2_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_2_pec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_2_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_2_perm_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_2_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_2_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_2_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_2_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_2_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_3_ec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_3_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_3_pec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_3_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_3_perm_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_3_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_3_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_3_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_3_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_3_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_4_ec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_4_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_4_pec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_4_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_4_perm_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_4_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_4_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_4_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_4_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_4_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_5_ec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_5_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_5_pec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_5_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_5_perm_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_5_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_5_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_5_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_5_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_5_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_6_ec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_6_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_6_pec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_6_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_6_perm_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_6_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_6_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_6_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-tdr310_6_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-tdr310_6_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-pa_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-pa_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-pa_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_10cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_20cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_30cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_40cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_5cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_50cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_10cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_20cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_30cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_40cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_5cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_50cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day-mean"
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
@@ -1267,6 +2055,7 @@
       "input": "fdri-ch-trigr-01-rs-lwin_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-lwin_1min-load_raw",
+        "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
         "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
         "fdri-ch-trigr-01-rs-lwin_1min-range"
       ]
@@ -1277,6 +2066,7 @@
       "input": "fdri-ch-trigr-01-rs-lwout_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-lwout_1min-load_raw",
+        "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
         "fdri-ch-trigr-01-rs-lwout_1min-battery_v",
         "fdri-ch-trigr-01-rs-lwout_1min-range"
       ]
@@ -2301,6 +3091,741 @@
         "fdri-ch-trigr-01-rs-battv_1min-load_raw",
         "fdri-ch-trigr-01-rs-battv_30min-mean"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-albedo_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-albedo_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-albedo_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-dewpoint_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-dewpoint_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-dewpoint_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_int_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-stdrd_precip_int_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-stdrd_precip_int_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_int_hr_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-stdrd_precip_int_hr_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-stdrd_precip_int_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwin_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-lwin_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-lwin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwout_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-lwout_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-lwout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ppfd_in_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ppfd_in_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-ppfd_in_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-stdrd_precip_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-stdrd_precip_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-rh_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-rh_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-rh_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-swin_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-swin_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-swin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-swout_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-swout_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-swout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-temp_air_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-temp_air_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-temp_air_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_ec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_1_ec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_1_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_pec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_1_pec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_1_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_perm_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_1_perm_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_1_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_1_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_1_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_1_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_1_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_ec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_2_ec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_2_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_pec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_2_pec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_2_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_perm_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_2_perm_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_2_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_2_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_2_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_2_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_2_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_ec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_3_ec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_3_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_pec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_3_pec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_3_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_perm_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_3_perm_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_3_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_3_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_3_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_3_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_3_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_ec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_4_ec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_4_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_pec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_4_pec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_4_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_perm_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_4_perm_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_4_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_4_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_4_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_4_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_4_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_ec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_5_ec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_5_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_pec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_5_pec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_5_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_perm_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_5_perm_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_5_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_5_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_5_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_5_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_5_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_ec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_6_ec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_6_ec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_pec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_6_pec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_6_pec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_perm_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_6_perm_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_6_perm_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_6_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_6_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-tdr310_6_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-tdr310_6_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_1_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_1_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_1_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_1_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_1_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_1_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_2_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_2_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_2_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_2_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_2_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_2_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_3_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_3_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_3_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_3_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_3_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_3_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_4_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_4_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_4_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_4_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_4_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_4_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_5_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_5_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_5_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_5_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_5_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_5_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_6_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_6_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_6_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_6_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_6_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_6_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_7_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_7_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_7_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_7_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_8_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_8_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_8_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_8_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_9_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_9_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_9_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_9_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_10_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_10_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_10_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_10_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_11_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_11_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_11_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_11_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_12_mp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_12_mp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-teros22_12_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-teros22_12_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-g1_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-g1_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-g1_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-g2_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-g2_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-g2_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-target_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-target_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-target_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-target_temp_max_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-target_temp_max_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-target_temp_max_1day-max"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-target_temp_min_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-target_temp_min_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-target_temp_min_1day-min"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_swin_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_swin_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-ndvi_swin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_lwin_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-ndvi_lwin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_swout_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_swout_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-ndvi_swout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_lwout_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-ndvi_lwout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-ndvi_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-fa_soilmoisture_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-fa_soilmoisture_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-fa_soilmoisture_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-fa_swe_areal_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-fa_swe_areal_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-fa_swe_areal_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-fa_swe_local_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-fa_swe_local_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-fa_swe_local_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-pa_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-pa_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-pa_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_bulkec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_10cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_10cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_ka_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_10cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_10cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_10cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_10cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_10cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_10cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_bulkec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_20cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_20cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_ka_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_20cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_20cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_20cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_20cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_20cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_20cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_bulkec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_30cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_30cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_ka_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_30cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_30cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_30cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_30cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_30cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_30cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_bulkec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_40cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_40cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_ka_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_40cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_40cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_40cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_40cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_40cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_40cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_bulkec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_50cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_50cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_ka_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_50cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_50cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_50cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_50cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_50cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_50cm_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_bulkec_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_5cm_bulkec_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_5cm_bulkec_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_ka_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_5cm_ka_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_5cm_ka_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_temp_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_5cm_temp_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_5cm_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_vwc_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-soilvue_5cm_vwc_1day_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-soilvue_5cm_vwc_1day-mean"
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
@@ -2372,6 +3897,7 @@
       "input": "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-lwin_1min-load_raw",
+        "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
         "fdri-se-carwe-01-ws-lwin_1min-battery_v",
         "fdri-se-carwe-01-ws-lwin_1min-range"
       ]
@@ -2382,6 +3908,7 @@
       "input": "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-lwout_1min-load_raw",
+        "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
         "fdri-se-carwe-01-ws-lwout_1min-battery_v",
         "fdri-se-carwe-01-ws-lwout_1min-range"
       ]
@@ -2475,6 +4002,125 @@
         "fdri-se-carwe-01-ws-ws_1min-load_raw",
         "fdri-se-carwe-01-ws-ws_1min-battery_v",
         "fdri-se-carwe-01-ws-ws_1min-range"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1day-plan",
+      "output": "fdri-se-carwe-01-ws-albedo_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-albedo_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-dewpoint_1day-plan",
+      "output": "fdri-se-carwe-01-ws-dewpoint_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-dewpoint_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1day-plan",
+      "output": "fdri-se-carwe-01-ws-lwin_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-lwin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1day-plan",
+      "output": "fdri-se-carwe-01-ws-lwout_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-lwout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-pa_1day-plan",
+      "output": "fdri-se-carwe-01-ws-pa_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-pa_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_1day-plan",
+      "output": "fdri-se-carwe-01-ws-precip_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_1day-plan",
+      "output": "fdri-se-carwe-01-ws-precip_int_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_int_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_hr_1day-plan",
+      "output": "fdri-se-carwe-01-ws-precip_int_hr_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_int_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_1day-plan",
+      "output": "fdri-se-carwe-01-ws-precip_int_lr_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_int_lr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1day-plan",
+      "output": "fdri-se-carwe-01-ws-precip_int_lr_hr_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_int_lr_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_tot_1day-plan",
+      "output": "fdri-se-carwe-01-ws-precip_tot_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-precip_tot_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-rh_1day-plan",
+      "output": "fdri-se-carwe-01-ws-rh_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-rh_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1day-plan",
+      "output": "fdri-se-carwe-01-ws-swin_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-swin_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1day-plan",
+      "output": "fdri-se-carwe-01-ws-swout_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-swout_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-temp_air_1day-plan",
+      "output": "fdri-se-carwe-01-ws-temp_air_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-temp_air_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-wd_1day-plan",
+      "output": "fdri-se-carwe-01-ws-wd_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-wd_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ws_1day-plan",
+      "output": "fdri-se-carwe-01-ws-ws_1day_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-ws_1day-mean"
       ]
     }
   ],
@@ -2967,6 +4613,328 @@
         "fdri-se-fofad-01-pr-battv_1min-load_raw",
         "fdri-se-fofad-01-pr-battv_30min-mean"
       ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-dewpoint_1day-plan",
+      "output": "fdri-se-fofad-01-pr-dewpoint_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-dewpoint_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_1day-plan",
+      "output": "fdri-se-fofad-01-pr-pit_int_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-pit_int_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_hr_1day-plan",
+      "output": "fdri-se-fofad-01-pr-pit_int_hr_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-pit_int_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_lr_1day-plan",
+      "output": "fdri-se-fofad-01-pr-pit_int_lr_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-pit_int_lr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1day-plan",
+      "output": "fdri-se-fofad-01-pr-pit_int_lr_hr_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-pit_int_lr_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_precip_1day-plan",
+      "output": "fdri-se-fofad-01-pr-pit_precip_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-pit_precip_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_precip_tot_1day-plan",
+      "output": "fdri-se-fofad-01-pr-pit_precip_tot_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-pit_precip_tot_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_1day-plan",
+      "output": "fdri-se-fofad-01-pr-stdrd_precip_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-stdrd_precip_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_1day-plan",
+      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-stdrd_precip_int_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1day-plan",
+      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day-plan",
+      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day-plan",
+      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-plan",
+      "output": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-rh_1day-plan",
+      "output": "fdri-se-fofad-01-pr-rh_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-rh_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_air_1day-plan",
+      "output": "fdri-se-fofad-01-pr-temp_air_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-temp_air_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-wd_1day-plan",
+      "output": "fdri-se-fofad-01-pr-wd_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-wd_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ws_1day-plan",
+      "output": "fdri-se-fofad-01-pr-ws_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-ws_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_0_1day-plan",
+      "output": "fdri-se-fofad-01-pr-ec_0_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-ec_0_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_1_1day-plan",
+      "output": "fdri-se-fofad-01-pr-ec_1_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-ec_1_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_2_1day-plan",
+      "output": "fdri-se-fofad-01-pr-ec_2_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-ec_2_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_3_1day-plan",
+      "output": "fdri-se-fofad-01-pr-ec_3_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-ec_3_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_4_1day-plan",
+      "output": "fdri-se-fofad-01-pr-ec_4_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-ec_4_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_0_1day-plan",
+      "output": "fdri-se-fofad-01-pr-perm_0_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-perm_0_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_1_1day-plan",
+      "output": "fdri-se-fofad-01-pr-perm_1_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-perm_1_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_2_1day-plan",
+      "output": "fdri-se-fofad-01-pr-perm_2_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-perm_2_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_3_1day-plan",
+      "output": "fdri-se-fofad-01-pr-perm_3_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-perm_3_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_4_1day-plan",
+      "output": "fdri-se-fofad-01-pr-perm_4_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-perm_4_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_0_1day-plan",
+      "output": "fdri-se-fofad-01-pr-temp_soil_0_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-temp_soil_0_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_1_1day-plan",
+      "output": "fdri-se-fofad-01-pr-temp_soil_1_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-temp_soil_1_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_2_1day-plan",
+      "output": "fdri-se-fofad-01-pr-temp_soil_2_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-temp_soil_2_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_3_1day-plan",
+      "output": "fdri-se-fofad-01-pr-temp_soil_3_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-temp_soil_3_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_4_1day-plan",
+      "output": "fdri-se-fofad-01-pr-temp_soil_4_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-temp_soil_4_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_0_1day-plan",
+      "output": "fdri-se-fofad-01-pr-vwc_0_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-vwc_0_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_1_1day-plan",
+      "output": "fdri-se-fofad-01-pr-vwc_1_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-vwc_1_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_2_1day-plan",
+      "output": "fdri-se-fofad-01-pr-vwc_2_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-vwc_2_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_3_1day-plan",
+      "output": "fdri-se-fofad-01-pr-vwc_3_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-vwc_3_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_4_1day-plan",
+      "output": "fdri-se-fofad-01-pr-vwc_4_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-vwc_4_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_muons_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_muons_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_muons_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_neutrons_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_neutrons_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_neutrons_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_pa_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_pa_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_pa_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_soilmoisture_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_soilmoisture_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_soilmoisture_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_swe_areal_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_swe_areal_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_swe_areal_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_swe_local_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_swe_local_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_swe_local_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_ug_neutrons_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_ug_neutrons_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_ug_neutrons_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_ug_muons_1day-plan",
+      "output": "fdri-se-fofad-01-pr-fa_ug_muons_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-fa_ug_muons_1day-sum"
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-styx_neutrons_1day-plan",
+      "output": "fdri-se-fofad-01-pr-styx_neutrons_1day_processed",
+      "steps": [
+        "fdri-se-fofad-01-pr-styx_neutrons_1day-sum"
+      ]
     }
   ],
   "FDRI-SE-SVTRP-01-WL": [
@@ -2976,6 +4944,8 @@
       "input": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW",
       "steps": [
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike"
@@ -2998,6 +4968,7 @@
       "input": "FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_RAW",
       "steps": [
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-se-svtrp-01-wl-water_lev_pt_1min-correction-add",
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-battery_v",
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-range",
         "fdri-se-svtrp-01-wl-water_lev_pt_1min-spike"
@@ -3023,6 +4994,41 @@
         "fdri-se-svtrp-01-wl-water_temp_1min-battery_v",
         "fdri-se-svtrp-01-wl-water_temp_1min-range",
         "fdri-se-svtrp-01-wl-water_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-plan",
+      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day_processed",
+      "steps": [
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-radar_temp_1day-plan",
+      "output": "fdri-se-svtrp-01-wl-radar_temp_1day_processed",
+      "steps": [
+        "fdri-se-svtrp-01-wl-radar_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-se-svtrp-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-se-svtrp-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1day-plan",
+      "output": "fdri-se-svtrp-01-wl-water_lev_radar_1day_processed",
+      "steps": [
+        "fdri-se-svtrp-01-wl-water_lev_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_temp_1day-plan",
+      "output": "fdri-se-svtrp-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-se-svtrp-01-wl-water_temp_1day-mean"
       ]
     }
   ]

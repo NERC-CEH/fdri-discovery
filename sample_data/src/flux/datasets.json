@@ -328,7 +328,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "CO2_FLUX-MEAN_PREC-UMOLM-2S-1-PT30M-PT30M"
+      "measure_id": "CO2_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-h2o-flux",
@@ -343,7 +343,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "H2O_FLUX-MEAN_PREC-MMOLM-2S-1-PT30M-PT30M"
+      "measure_id": "H2O_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-h",

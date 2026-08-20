@@ -52,6 +52,34 @@
           "value": 4.0
         }
       ]
+    },
+    {
+      "id": "fdri-ch-buryp-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-BURYP-01-WL-WATER_LEV_PT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-buryp-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-BURYP-01-WL-WATER_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
     }
   ],
   "FDRI-CH-CHOPS-01-RG": [
@@ -187,6 +215,62 @@
           "value": 10.5
         }
       ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_int_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_INT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_int_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_INT_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_TOT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
     }
   ],
   "FDRI-CH-KADEN-01-BH": [
@@ -233,6 +317,15 @@
       ]
     },
     {
+      "id": "fdri-ch-kaden-01-bh-water_lev_pt_15min-correction-absolute",
+      "type": "correction",
+      "method": "ABSOLUTE",
+      "observation_interval": {
+        "start_date": "2025-06-28T00:00:00",
+        "end_date": "2026-07-29T12:00:00"
+      }
+    },
+    {
       "id": "fdri-ch-kaden-01-bh-water_temp_15min-spike",
       "type": "qc",
       "method": "SPIKE",
@@ -240,6 +333,34 @@
         {
           "param": "gt",
           "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-kaden-01-bh-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-KADEN-01-BH-WATER_LEV_PT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-kaden-01-bh-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-KADEN-01-BH-WATER_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
         }
       ]
     }
@@ -252,6 +373,15 @@
       "dep_ts": [
         "fdri-ch-lowpa-01-bh-water_lev_pt_15min_raw"
       ]
+    },
+    {
+      "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-correction-absolute",
+      "type": "correction",
+      "method": "ABSOLUTE",
+      "observation_interval": {
+        "start_date": "2025-06-28T00:00:00",
+        "end_date": "2026-07-29T12:00:00"
+      }
     },
     {
       "id": "fdri-ch-lowpa-01-bh-water_lev_pt_15min-spike",
@@ -295,6 +425,34 @@
         {
           "param": "gt",
           "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-lowpa-01-bh-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-LOWPA-01-BH-WATER_LEV_PT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-lowpa-01-bh-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-LOWPA-01-BH-WATER_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
         }
       ]
     }
@@ -658,6 +816,40 @@
       "dep_ts": [
         "fdri-ch-milfa-01-rs-lwin_1min_raw"
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-11-17T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-11-17T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
@@ -4608,6 +4800,1434 @@
           "value": 5
         }
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-temp_air_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEMP_AIR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-rh_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-RH_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-dewpoint_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-DEWPOINT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-STDRD_PRECIP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-STDRD_PRECIP_INT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-STDRD_PRECIP_INT_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-STDRD_PRECIP_TOT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ppfd_in_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-PPFD_IN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-albedo_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-ALBEDO_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-LWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-LWOUT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-swin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-swout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_1_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_1_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_2_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_2_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_3_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_3_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_4_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_4_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_5_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_5_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_6_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_6_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_7_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_7_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_8_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_8_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_9_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_9_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_10_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_10_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_11_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_11_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_12_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_12_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_1_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_1_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_2_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_2_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_3_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_3_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_4_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_4_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_5_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_5_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_6_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_6_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_7_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_7_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_8_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_8_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_9_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_9_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_10_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_10_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_11_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_11_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-teros22_12_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TEROS22_12_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-g1_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-G1_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-g2_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-G2_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-target_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TARGET_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-target_temp_max_1day-max",
+      "type": "aggregate",
+      "method": "max",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TARGET_TEMP_MAX_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-target_temp_min_1day-min",
+      "type": "aggregate",
+      "method": "min",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TARGET_TEMP_MIN_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_swin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_swout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-ndvi_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-NDVI_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_1_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_1_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_1_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_1_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_1_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_1_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_2_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_2_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_2_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_2_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_2_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_2_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_3_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_3_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_3_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_3_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_3_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_3_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_4_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_4_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_4_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_4_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_4_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_4_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_5_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_5_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_5_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_5_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_5_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_5_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_6_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_6_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_6_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_6_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-tdr310_6_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-TDR310_6_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-pa_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-PA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_10CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_20CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_30CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_40CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_5CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_50CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_10CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_20CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_30CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_40CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_5CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_50CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_10CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_20CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_30CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_40CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_5CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_50CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_10CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_20CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_30CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_40CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_5CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SOILVUE_50CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
@@ -4899,6 +6519,40 @@
       "dep_ts": [
         "fdri-ch-trigr-01-rs-lwin_1min_raw"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-03-12T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-03-12T00:00:00"
+      }
     },
     {
       "id": "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
@@ -9030,6 +10684,1476 @@
           "value": 5
         }
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-albedo_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-ALBEDO_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-dewpoint_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-DEWPOINT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_int_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_int_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-LWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-lwout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-LWOUT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ppfd_in_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-PPFD_IN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_TOT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-rh_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-RH_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-swin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-swout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-temp_air_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEMP_AIR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_1_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_1_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_1_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_1_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_1_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_1_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_2_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_2_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_2_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_2_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_2_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_2_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_3_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_3_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_3_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_3_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_3_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_3_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_4_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_4_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_4_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_4_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_4_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_4_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_5_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_5_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_5_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_5_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_5_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_5_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_ec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_6_EC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_pec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_6_PEC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_perm_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_6_PERM_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_6_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-tdr310_6_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TDR310_6_VWC_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_1_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_1_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_1_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_1_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_2_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_2_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_2_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_2_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_3_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_3_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_3_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_3_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_4_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_4_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_4_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_4_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_5_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_5_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_5_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_5_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_6_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_6_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_6_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_6_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_7_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_7_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_8_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_8_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_9_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_9_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_10_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_10_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_11_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_11_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_12_MP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TEROS22_12_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-g1_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-G1_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-g2_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-G2_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-target_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TARGET_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-target_temp_max_1day-max",
+      "type": "aggregate",
+      "method": "max",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TARGET_TEMP_MAX_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-target_temp_min_1day-min",
+      "type": "aggregate",
+      "method": "min",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-TARGET_TEMP_MIN_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_swin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_swout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-ndvi_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-NDVI_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-fa_soilmoisture_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-FA_SOILMOISTURE_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-fa_swe_areal_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-FA_SWE_AREAL_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-fa_swe_local_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-FA_SWE_LOCAL_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-pa_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-PA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_10CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_10CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_10CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_10cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_10CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_20CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_20CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_20CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_20cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_20CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_30CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_30CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_30CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_30cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_30CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_40CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_40CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_40CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_40cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_40CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_50CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_50CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_50CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_50cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_50CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_bulkec_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_BULKEC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_ka_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_KA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_TEMP_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-soilvue_5cm_vwc_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_VWC_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
@@ -9182,6 +12306,40 @@
           "value": 10.5
         }
       ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-06-13T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
+      "type": "correction",
+      "method": "LW_CORR",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 1.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-06-13T00:00:00"
+      }
     },
     {
       "id": "fdri-se-carwe-01-ws-dewpoint_1min-battery_v",
@@ -9688,6 +12846,244 @@
         {
           "param": "gt",
           "value": 30.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-dewpoint_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-DEWPOINT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-LWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-pa_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PA_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-precip_tot_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-rh_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-RH_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-temp_air_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-wd_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-WD_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-ws_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-WS_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
         }
       ]
     }
@@ -11551,6 +14947,650 @@
           "value": 5
         }
       ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-dewpoint_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-DEWPOINT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PIT_INT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PIT_INT_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_lr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PIT_INT_LR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PIT_INT_LR_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_precip_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PIT_PRECIP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-pit_precip_tot_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PIT_PRECIP_TOT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_HR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_TOT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-rh_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-RH_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_air_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-TEMP_AIR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-wd_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-WD_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ws_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-WS_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_0_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-EC_0_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_1_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-EC_1_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_2_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-EC_2_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_3_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-EC_3_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-ec_4_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-EC_4_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_0_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PERM_0_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_1_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PERM_1_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_2_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PERM_2_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_3_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PERM_3_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-perm_4_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-PERM_4_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_0_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-TEMP_SOIL_0_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_1_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-TEMP_SOIL_1_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_2_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-TEMP_SOIL_2_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_3_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-TEMP_SOIL_3_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-temp_soil_4_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-TEMP_SOIL_4_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_0_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-VWC_0_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_1_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-VWC_1_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_2_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-VWC_2_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_3_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-VWC_3_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-vwc_4_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-VWC_4_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_muons_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_MUONS_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_neutrons_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_NEUTRONS_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_pa_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_PA_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_soilmoisture_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_SOILMOISTURE_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_swe_areal_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_SWE_AREAL_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_swe_local_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_SWE_LOCAL_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_ug_neutrons_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_UG_NEUTRONS_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-fa_ug_muons_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-FA_UG_MUONS_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-fofad-01-pr-styx_neutrons_1day-sum",
+      "type": "aggregate",
+      "method": "sum",
+      "dep_ts": [
+        "FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
     }
   ],
   "FDRI-SE-SVTRP-01-WL": [
@@ -11593,6 +15633,48 @@
       "dep_ts": [
         "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW"
       ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": -100.0
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 398.24
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": -0.46
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2025-05-19T00:00:00"
+      }
     },
     {
       "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
@@ -11791,6 +15873,76 @@
         {
           "param": "gt",
           "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
         }
       ]
     }
