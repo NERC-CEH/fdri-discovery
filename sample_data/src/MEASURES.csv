@@ -327,7 +327,6 @@ SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Inst
 SSITC-INST-UNITLESS-PT30M-PT30M,,SSITC,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous steady state and integral turbulence characteristics
 STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts
 STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,STATUS_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count over the preceding 30 minutes in counts
-STATUS_P_HEATING-INST-MM-PT1M-PT1M,,STATUS_P_HEATING,MM,NONE,INST,PT1M,PT1M,Instantaneous status of precipitation heating element in millimetres
 SWE-MEAN_PREC-PCT-PT1H-PT1H,,SWE,PCT,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in percent
 SWE-MEAN_PREC-PCT-PT30M-PT30M,,SWE,PCT,MEAN,PREC,PT30M,PT30M,Mean snow water equivalent over the preceding 30 minutes in percent
 SWE-MEAN_PROC-PCT-P1D-P1D,,SWE,PCT,MEAN,PROC,P1D,P1D,Mean snow water equivalent over proceeding day in percent

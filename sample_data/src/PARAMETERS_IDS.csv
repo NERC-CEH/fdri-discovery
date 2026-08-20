@@ -119,7 +119,6 @@ SOLAR_ZENITH,Solar zenith angle,SUN,SOLAR-ZENITH-ANGLE,
 SONIC_AZIMUTH,Sonic anemometer azimuth angle,SENSOR,AZIMUTH,
 SSITC,Steady state and integral turbulence characteristics,AIR,SSITC,
 STATUS_COUNT,Status of count,SAMPLES,DIAGNOSTIC,
-STATUS_P_HEATING,Status of Pluvio orifice rim heating element,SENSOR,DIAGNOSTIC,PLUVIO
 SWE,Snow water equivalent,SNOW,SNOW-WATER-EQUIVALENT,
 SWIN,Incoming shortwave radiation,INCOMING-SHORTWAVE-RADIATION,ENERGY-DENSITY,
 SWIN_MULT,Incoming shortwave radiation calibration factor,SENSOR,CALIBRATION,
