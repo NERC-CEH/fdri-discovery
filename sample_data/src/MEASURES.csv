@@ -101,18 +101,6 @@ COV_UX_UY-INST-MS-1-PT30M-PT30M,,COV_UX_UY,MS-1,NONE,INST,PT30M,PT30M,Instantane
 COV_UX_UZ-INST-MS-1-PT30M-PT30M,,COV_UX_UZ,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UX and UZ in meters per second
 COV_UY_UZ-INST-MS-1-PT30M-PT30M,,COV_UY_UZ,MS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance of wind speed component UY and UZ in meters per second
 CURRENT-INST-MicroA-PT30M-PT30M,,CURRENT,MicroA,NONE,INST,PT30M,PT30M,Instantaneous current over the preceding 30 minutes in microampere
-D86_150M-MEAN_PREC-CM-PT1H-PT1H,,D86_150M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 150m from CRNS in cm over preceding hour
-D86_150M-MEAN_PROC-CM-P1D-P1D,,D86_150M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 150m from CRNS in cm over proceeding day
-D86_1M-MEAN_PREC-CM-PT1H-PT1H,,D86_1M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 1m from CRNS in cm over preceding hour
-D86_1M-MEAN_PROC-CM-P1D-P1D,,D86_1M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 1m from CRNS in cm over proceeding day
-D86_200M-MEAN_PREC-CM-PT1H-PT1H,,D86_200M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 200m from CRNS in cm over preceding hour
-D86_200M-MEAN_PROC-CM-P1D-P1D,,D86_200M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 200m from CRNS in cm over proceeding day
-D86_25M-MEAN_PREC-CM-PT1H-PT1H,,D86_25M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 25m from CRNS in cm over preceding hour
-D86_25M-MEAN_PROC-CM-P1D-P1D,,D86_25M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 25m from CRNS in cm over proceeding day
-D86_5M-MEAN_PREC-CM-PT1H-PT1H,,D86_5M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 5m from CRNS in cm over preceding hour
-D86_5M-MEAN_PROC-CM-P1D-P1D,,D86_5M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 5m from CRNS in cm over proceeding day
-D86_75M-MEAN_PREC-CM-PT1H-PT1H,,D86_75M,CM,MEAN,PREC,PT1H,PT1H,D86 effective depth 75m from CRNS in cm over preceding hour
-D86_75M-MEAN_PROC-CM-P1D-P1D,,D86_75M,CM,MEAN,PROC,P1D,P1D,D86 effective depth 75m from CRNS in cm over proceeding day
 DEW_POINT-INST-DEGC-PT1M-PT1M,,DEW_POINT,DEGC,NONE,INST,PT1M,PT1M,Instantaneous dew point temperature in degrees Celsius
 DEW_POINT-MEAN_PROC-DEGC-P1D-P1D,,DEW_POINT,DEGC,MEAN,PROC,P1D,P1D,Mean dew point temperature over proceeding day in degrees Celsius
 DIAG_FLAG-INST-UNITLESS-PT15M-PT15M,,DIAG_FLAG,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous diagnostic flag
