@@ -277,22 +277,10 @@ POWER-INST-MilliA-HR-PT15M-PT15M,,POWER,MilliA-HR,NONE,INST,PT15M,PT15M,Instanta
 POWER-INST-MilliA-HR-PT1H-PT1H,,POWER,MilliA-HR,NONE,INST,PT1H,PT1H,Instantaneous power consumption over the preceding hour in milliamp-hours
 PPFD_IN-MEAN_PREC-MicroMOL-PER-M2-SEC-PT1M-PT1M,,PPFD_IN,MicroMOL-PER-M2-SEC,MEAN,PREC,PT1M,PT1M,Mean incoming photosynthetic photon flux density over the preceding minute in micromoles per metre squared per second
 PPFD_IN-MEAN_PROC-MicroMOL-PER-M2-SEC-P1D-P1D,,PPFD_IN,MicroMOL-PER-M2-SEC,MEAN,PROC,P1D,P1D,Mean incoming photosynthetic photon flux density over proceeding day in micromoles per metre squared per second
-PRECIP_INTEN_LR-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_HR-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per hour
-PRECIP_INTEN_LR-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_LR,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity since last request in millimetres per minute
-PRECIP_INTEN_LR-MEAN_PROC-MM_HR-1-P1D-P1D,,PRECIP_INTEN_LR,MM_HR-1,MEAN,PROC,P1D,P1D,Mean since last request over proceeding day in millimetres per hour
-PRECIP_INTEN_LR-MEAN_PROC-MM_M-1-P1D-P1D,,PRECIP_INTEN_LR,MM_M-1,MEAN,PROC,P1D,P1D,Mean since last request over proceeding day in millimetres per minute
-PRECIP_INTEN_RT-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN_RT,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity (real-time) over the preceding minute in millimetres per minute
-PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN,MM_HR-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per hour
-PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN,MM_M-1,MEAN,PREC,PT1M,PT1M,Precipitation intensity over the preceding minute in millimetres per minute
-PRECIP_INTEN-MEAN_PROC-MM_HR-1-P1D-P1D,,PRECIP_INTEN,MM_HR-1,MEAN,PROC,P1D,P1D,Mean over proceeding day in millimetres per hour
-PRECIP_INTEN-MEAN_PROC-MM_M-1-P1D-P1D,,PRECIP_INTEN,MM_M-1,MEAN,PROC,P1D,P1D,Mean over proceeding day in millimetres per minute
-PRECIP_NRT_TOT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_NRT_TOT,MM,TOTAL,PREC,PT1M,PT1M,Accumulated total precipitation (non-real-time) over the preceding minute in millimetres
-PRECIP_NRT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_NRT,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation (non-real-time) over the preceding minute in millimetres
-PRECIP_RT_NRT-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_RT_NRT,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation (real-time and non-real-time) over the preceding minute in millimetres
-PRECIP_TIP_A-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_A,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation from tip A over the preceding minute in millimetres
-PRECIP_TIP_A-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_A,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation from tip A over the preceding 30 minutes in millimetres
-PRECIP_TIP_B-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TIP_B,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation from tip B over the preceding minute in millimetres
-PRECIP_TIP_B-TOTAL_PREC-MM-PT30M-PT30M,,PRECIP_TIP_B,MM,TOTAL,PREC,PT30M,PT30M,Total precipitation from tip B over the preceding 30 minutes in millimetres
+PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,,PRECIP_INTEN,MM_HR-1,MEAN,PREC,PT1M,PT1M,Mean precipitation intensity over the preceding minute in millimetres per hour
+PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,,PRECIP_INTEN,MM_M-1,MEAN,PREC,PT1M,PT1M,Mean precipitation intensity over the preceding minute in millimetres per minute
+PRECIP_INTEN-MEAN_PROC-MM_HR-1-P1D-P1D,,PRECIP_INTEN,MM_HR-1,MEAN,PROC,P1D,P1D,Mean precipitation intensity over proceeding day in millimetres per hour
+PRECIP_INTEN-MEAN_PROC-MM_M-1-P1D-P1D,,PRECIP_INTEN,MM_M-1,MEAN,PROC,P1D,P1D,Mean precipitation intensity over proceeding day in millimetres per minute
 PRECIP_TOTAL-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP_TOTAL,MM,TOTAL,PREC,PT1M,PT1M,Accumulated total precipitation in millimetres
 PRECIP_TOTAL-TOTAL_PROC-MM-P1D-P1D,,PRECIP_TOTAL,MM,TOTAL,PROC,P1D,P1D,Total precipitation over proceeding day in millimetres
 PRECIP-TOTAL_PREC-MM-PT1M-PT1M,,PRECIP,MM,TOTAL,PREC,PT1M,PT1M,Total precipitation over the preceding minute in millimetres
@@ -329,9 +317,9 @@ SIGNAL_STRENGTH-INST-UNITLESS-PT15M-PT15M,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT
 SIGNAL_STRENGTH-INST-UNITLESS-PT1H-PT1H,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous signal strength over the preceding hour
 SMI-MEAN_PROC-UNITLESS-P1D-P1D,,SMI,UNITLESS,MEAN,PROC,P1D,P1D,Soil moisture index over the proceeding day (unitless)
 SNOW_DAY-PROC-UNITLESS-P1D-P1D,,SNOW_DAY,UNITLESS,NONE,PROC,P1D,P1D,Indicator of snow day over the proceeding day (unitless)
-SNOWD_DISTANCE_COR-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_COR,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (corrected)
-SNOWD_DISTANCE_COR-MEAN_PROC-M-P1D-P1D,,SNOWD_DISTANCE_COR,M,MEAN,PROC,P1D,P1D,Mean snow depth over the proceeding day in metres (corrected)
-SNOWD_DISTANCE_UNC-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_UNC,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (uncorrected)
+SNOW_DEPTH-INST-M-PT30M-PT30M,,SNOW_DEPTH,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres
+SNOW_DEPTH-MEAN_PROC-M-P1D-P1D,,SNOW_DEPTH,M,MEAN,PROC,P1D,P1D,Mean snow depth over the proceeding day in metres
+SNOW_DISTANCE-INST-M-PT30M-PT30M,,SNOW_DISTANCE,M,NONE,INST,PT30M,PT30M,Instantaneous distance from sensor to snow in metres
 SNOWD_SIGNALQUALITY-STDDEV_PREC-UNITLESS-PT30M-PT30M,,SNOWD_SIGNALQUALITY,UNITLESS,STDDEV,PREC,PT30M,PT30M,Standard deviation of snow depth signal quality over the preceding 30 minutes (uncorrected)
 SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,,SOC_BATT,PCT,MEAN,PREC,PT1M,PT1M,Mean battery state of charge over the preceding minute in percent
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
