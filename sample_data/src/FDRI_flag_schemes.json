@@ -28,6 +28,11 @@
                 "name": "lw_corr",
                 "description": "Correction for long wave radiation where calibration values are incorrect.",
                 "value": 16
+            },
+            {
+                "name": "absolute",
+                "description": "Set data point to the absolute (positive) value.",
+                "value": 32
             }
         ]
     },
