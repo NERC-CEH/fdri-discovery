@@ -172,7 +172,7 @@ MSLP-MEAN_PROC-HPA-P1D-P1D,,MSLP,HPA,MEAN,PROC,P1D,P1D,Mean sea level pressure o
 MUON_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,MUON_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total muon count over the preceding hour in counts
 MUON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,MUON_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total muon count over the preceding 30 minutes in counts
 MUON_COUNT-TOTAL_PROC-CTS-P1D-P1D,,MUON_COUNT,CTS,TOTAL,PROC,P1D,P1D,Total muon count over proceeding day in counts
-NAN_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,NAN_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
+NAN_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,NAN_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total NaN count over the preceding 30 minutes
 NDVI-MEAN_PREC-UNITLESS-PT15M-PT15M,,NDVI,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean normalised difference vegetation index over the preceding 15 minutes
 NDVI-MEAN_PROC-UNITLESS-P1D-P1D,,NDVI,UNITLESS,MEAN,PROC,P1D,P1D,Mean normalised difference vegetation index over proceeding day
 NEUTRON_COUNT_COR-TOTAL_PREC-CTS-PT1H-PT1H,,NEUTRON_COUNT_COR,CTS,TOTAL,PREC,PT1H,PT1H,Total corrected neutron count over the preceding hour
@@ -295,9 +295,6 @@ Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity ov
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
 Q-MEAN_PROC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PROC,P1D,P1D,Mean absolute humidity over the proceeding day in grams per cubic metre
 Q-STDDEV_PREC-GM-3-PT30M-PT30M,,Q,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
-QC_FLUX_MOM-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_FLUX_MOM,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for momentum flux over the preceding 30 minutes (unitless)
-QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_HEATFLUX_SENSIBLE,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for sensible heat flux over the preceding 30 minutes (unitless)
-REV-TOTAL-COUNT,,REVOLUTIONS,UNITLESS,TOTAL,PREC,,,Total number of revolutions counted in measurement Period
 REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,,REVOLUTIONS,RPM,MEAN,PREC,PT1M,PT1M,Mean revolutions over the preceding minute in revolutions per minute
 RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,NONE,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
 RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN,PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent

@@ -358,7 +358,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M"
+      "measure_id": "DIAG_FLAG-INST-UNITLESS-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-qc-tau",
@@ -373,7 +373,7 @@
       "resolution": "PT30M",
       "periodicity": "PT30M",
       "processing_level": "processed",
-      "measure_id": "QC_FLUX_MOM-MEAN_PREC-UNITLESS-PT30M-PT30M"
+      "measure_id": "DIAG_FLAG-INST-UNITLESS-PT30M-PT30M"
     },
     {
       "dataset_id": "http://fdri.ceh.ac.uk/id/dataset/flux-plynl-wind-speed",
