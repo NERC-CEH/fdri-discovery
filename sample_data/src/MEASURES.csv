@@ -289,7 +289,6 @@ PRECIP-TOTAL_PROC-MM-P1D-P1D,,PRECIP,MM,TOTAL,PROC,P1D,P1D,Total precipitation o
 PROP_PERIOD-INST-SEC-PT10M-PT10M,,PROP_PERIOD,SEC,NONE,INST,PT10M,PT10M,Instantaneous instrument period over 10 minutes
 PROP_PERIOD-INST-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,NONE,INST,PT15M,PT15M,Instantaneous instrument period in seconds
 PROP_PERIOD-MEAN_PREC-SEC-PT15M-PT15M,,PROP_PERIOD,SEC,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes in seconds
-PROP_PERIOD-MEAN_PREC-UNITLESS-PT15M-PT15M,,PROP_PERIOD,UNITLESS,MEAN,PREC,PT15M,PT15M,Mean instrument period over preceding 15 minutes (unitless)
 PULSE_HEIGHT_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,PULSE_HEIGHT_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count of pulses at particular pulse-height(s) over the preceding 30 minutes
 Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity over the preceding hour in grams per cubic metre
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre
