@@ -96,6 +96,7 @@ SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_fdri.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_fdri.ttl
+SAMPLES += $(TTL_BASE)/timeseries_flags_fdri.ttl
 
 # Gridded Data Samples
 SAMPLES += $(TTL_BASE)/chess-met_dtr.ttl
