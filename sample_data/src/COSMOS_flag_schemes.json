@@ -100,6 +100,11 @@
                 "name": "tdt_tsoil",
                 "description": "Soil temperature too low for TDT to operate correctly.",
                 "value": 512
+            },
+            {
+                "name": "manual_removal",
+                "description": "Data associated with a sensor that has a known fault. These are registered manually by the operations team.",
+                "value": 1024
             }
         ]
     },
