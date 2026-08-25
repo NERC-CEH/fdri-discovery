@@ -50,8 +50,8 @@ resources:
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/{Network|slug}-{SiteID|slug}#operating-period>"
               "@type": "<dct:PeriodOfTime>"
-              "<dcat:startDate>": "{Operational_start_date | asDateOrDatetime}"
-              "<dcat:endDate>": "{Date_decomissioned | asDateOrDatetime}"
+              "<dcat:startDate>": "{Operational_start_date | asDateTime}"
+              "<dcat:endDate>": "{Date_decomissioned | asDateTime}"
       "<fdri:hasAnnotation>":
           - name: StandardInstallation
             requires:
