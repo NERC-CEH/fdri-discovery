@@ -105,8 +105,8 @@ resources:
             properties:
               "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}#operating-period>"
               "@type": "<dct:PeriodOfTime>"
-              "<dcat:startDate>": "{DATE_INSTALLED | asDateOrDatetime}"
-              "<dcat:endDate>": "{DATE_DECOMMISSIONED | asDateOrDatetime}"
+              "<dcat:startDate>": "{DATE_INSTALLED | asDateTime}"
+              "<dcat:endDate>": "{DATE_DECOMMISSIONED | asDateTime}"
         "<fdri:hasAnnotation>":
           - name: SoilType
             requires:

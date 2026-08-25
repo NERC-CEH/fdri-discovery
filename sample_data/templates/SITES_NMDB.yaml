@@ -52,4 +52,4 @@ resources:
           properties:
             "@id": "<http://fdri.ceh.ac.uk/id/site/nmdb-{SITE_ID|slug}#operating-period>"
             "@type": "<dct:PeriodOfTime>"
-            "<dcat:startDate>": "{DATE_INSTALLED | asDateOrDatetime}"
+            "<dcat:startDate>": "{DATE_INSTALLED | asDateTime}"
