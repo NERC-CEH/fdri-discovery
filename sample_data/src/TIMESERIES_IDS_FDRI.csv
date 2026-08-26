@@ -267,10 +267,10 @@ FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_1MIN_RAW,Precipitation intensity (Standard 
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_1MIN_PROCESSED,Precipitation intensity (Standard height RG),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_Int_1m,time,PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,PROCESSED,STDRD_PRECIP_INT_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_HR_1MIN_RAW,Precipitation intensity (Standard height RG),CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_1m_hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,RAW,,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_HR_1MIN_PROCESSED,Precipitation intensity (Standard height RG),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Standard_Int_1m_hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,PROCESSED,STDRD_PRECIP_INT_HR_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-LWIN_1MIN_RAW,Incoming longwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
-FDRI-CH-TRIGR-01-RS-LWIN_1MIN_PROCESSED,Incoming longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWIN_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-LWOUT_1MIN_RAW,Outgoing longwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
-FDRI-CH-TRIGR-01-RS-LWOUT_1MIN_PROCESSED,Outgoing longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWOUT_FLAG_DEF,
+FDRI-CH-TRIGR-01-RS-LWIN_1MIN_RAW,Incoming longwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
+FDRI-CH-TRIGR-01-RS-LWIN_1MIN_PROCESSED,Incoming longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWIN_FLAG_DEF,1
+FDRI-CH-TRIGR-01-RS-LWOUT_1MIN_RAW,Outgoing longwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
+FDRI-CH-TRIGR-01-RS-LWOUT_1MIN_PROCESSED,Outgoing longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWOUT_FLAG_DEF,1
 FDRI-CH-TRIGR-01-RS-PA_30MIN_RAW,Atmospheric pressure,CH-TRIGR-01,ukceh-dri-staging-ingested,thirty_minute,Pressure_Avg,time,PA-MEAN_PREC-HPA-PT30M-PT30M,RAW,,
 FDRI-CH-TRIGR-01-RS-PA_30MIN_PROCESSED,Atmospheric pressure,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,thirty_minute,Pressure_Avg,time,PA-MEAN_PREC-HPA-PT30M-PT30M,PROCESSED,PA_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-PPFD_IN_1MIN_RAW,Incoming photosynthetic photon flux density,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,PPFD_IN_Avg,time,PPFD_IN-MEAN_PREC-MicroMOL-PER-M2-SEC-PT1M-PT1M,RAW,,
@@ -329,10 +329,10 @@ FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_TEMP_30MIN_RAW,Soil temperature (5cm depth - Soi
 FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_TEMP_30MIN_PROCESSED,Soil temperature (5cm depth - SoilVUE),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,thirty_minute,SoilVUE_1_5cm_avg_T,time,TEMP_SOIL_5-MEAN_PREC-DEGC-PT30M-PT30M,PROCESSED,SOILVUE_5CM_TEMP_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_VWC_30MIN_RAW,Volumetric water content (5cm depth - SoilVUE),CH-TRIGR-01,ukceh-dri-staging-ingested,thirty_minute,SoilVUE_1_5cm_avg_VWC,time,VWC_SOIL_5-MEAN_PREC-PCT-PT30M-PT30M,RAW,,
 FDRI-CH-TRIGR-01-RS-SOILVUE_5CM_VWC_30MIN_PROCESSED,Volumetric water content (5cm depth - SoilVUE),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,thirty_minute,SoilVUE_1_5cm_avg_VWC,time,VWC_SOIL_5-MEAN_PREC-PCT-PT30M-PT30M,PROCESSED,SOILVUE_5CM_VWC_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-SWIN_1MIN_RAW,Incoming shortwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
-FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
-FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF,
+FDRI-CH-TRIGR-01-RS-SWIN_1MIN_RAW,Incoming shortwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
+FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF,1
+FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
+FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF,1
 FDRI-CH-TRIGR-01-RS-TEMP_AIR_1MIN_RAW,Air temperature,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,,
 FDRI-CH-TRIGR-01-RS-TEMP_AIR_1MIN_PROCESSED,Air temperature,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,TEMP_AIR_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-TDR310_1_EC_15MIN_RAW,Bulk electrical conductivity (50cm depth - TDR),CH-TRIGR-01,ukceh-dri-staging-ingested,fifteen_minute,TDR310_1_avg_EC,time,COND_50-MEAN_PREC-US_CM-1-PT15M-PT15M,RAW,,
@@ -493,10 +493,10 @@ FDRI-SE-CARWE-01-WS-BATTSOC_1MIN_RAW,Battery state of charge,SE-CARWE-01,ukceh-d
 FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW,Battery voltage,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,BattV_Avg,time,VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,RAW,,
 FDRI-SE-CARWE-01-WS-DEWPOINT_1MIN_PROCESSED,Dew point temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,DewPoint_C,time,DEW_POINT-INST-DEGC-PT1M-PT1M,PROCESSED,DEWPOINT_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-DEWPOINT_1MIN_RAW,Dew point temperature,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,DewPoint_C,time,DEW_POINT-INST-DEGC-PT1M-PT1M,RAW,,
-FDRI-SE-CARWE-01-WS-LWIN_1MIN_PROCESSED,Incoming longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWIN_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW,Incoming longwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
-FDRI-SE-CARWE-01-WS-LWOUT_1MIN_PROCESSED,Outgoing longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWOUT_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW,Outgoing longwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
+FDRI-SE-CARWE-01-WS-LWIN_1MIN_PROCESSED,Incoming longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWIN_FLAG_DEF,1
+FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW,Incoming longwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_LW_in_Avg,time,LWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
+FDRI-SE-CARWE-01-WS-LWOUT_1MIN_PROCESSED,Outgoing longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,LWOUT_FLAG_DEF,1
+FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW,Outgoing longwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_LW_out_Avg,time,LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
 FDRI-SE-CARWE-01-WS-PA_1MIN_PROCESSED,Atmospheric pressure,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,Pressure_Avg,time,PA-MEAN_PREC-HPA-PT1M-PT1M,PROCESSED,PA_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-PA_1MIN_RAW,Atmospheric pressure,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,Pressure_Avg,time,PA-MEAN_PREC-HPA-PT1M-PT1M,RAW,,
 FDRI-SE-CARWE-01-WS-PRECIP_1MIN_PROCESSED,Precipitation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,RainE_Precip_lr,time,PRECIP-TOTAL_PREC-MM-PT1M-PT1M,PROCESSED,PRECIP_FLAG_DEF,
@@ -513,10 +513,10 @@ FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_PROCESSED,Accumulated total precipitation,SE
 FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_RAW,Accumulated total precipitation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,RainE_Precip_Tot,time,PRECIP_TOTAL-TOTAL_PREC-MM-PT1M-PT1M,RAW,,
 FDRI-SE-CARWE-01-WS-RH_1MIN_PROCESSED,Relative humidity,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,RH,time,RH-INST-PCT-PT1M-PT1M,PROCESSED,RH_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-RH_1MIN_RAW,Relative humidity,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,RH,time,RH-INST-PCT-PT1M-PT1M,RAW,,
-FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW,Incoming shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
-FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,
+FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF,1
+FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW,Incoming shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
+FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF,1
+FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,RAW,,1
 FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_PROCESSED,Air temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,TA_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_RAW,Air temperature,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,,
 FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW,Sensor temperature (NR01),SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,T_nr_Avg,time,TEMP_SENSOR-MEAN_PREC-KEL-PT1M-PT1M,RAW,,
@@ -677,19 +677,19 @@ FDRI-CH-TRIGR-01-RS-ALBEDO_1DAY_PROCESSED,Albedo,CH-TRIGR-01,ukceh-fdri-staging-
 FDRI-CH-TRIGR-01-RS-DEWPOINT_1DAY_PROCESSED,Dew point temperature,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,DewPoint_C,time,DEW_POINT-MEAN_PROC-DEGC-P1D-P1D,PROCESSED,DEWPOINT_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_1DAY_PROCESSED,Precipitation intensity (Standard height RG),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Standard_Int_1m,time,PRECIP_INTEN-MEAN_PROC-MM_M-1-P1D-P1D,PROCESSED,STDRD_PRECIP_INT_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_HR_1DAY_PROCESSED,Precipitation intensity (Standard height RG),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Standard_Int_1m_hr,time,PRECIP_INTEN-MEAN_PROC-MM_HR-1-P1D-P1D,PROCESSED,STDRD_PRECIP_INT_HR_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-LWIN_1DAY_PROCESSED,Incoming longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_in_Avg,time,LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWIN_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-LWOUT_1DAY_PROCESSED,Outgoing longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_out_Avg,time,LWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWOUT_FLAG_DEF,
+FDRI-CH-TRIGR-01-RS-LWIN_1DAY_PROCESSED,Incoming longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_in_Avg,time,LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWIN_FLAG_DEF,1
+FDRI-CH-TRIGR-01-RS-LWOUT_1DAY_PROCESSED,Outgoing longwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_out_Avg,time,LWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWOUT_FLAG_DEF,1
 FDRI-CH-TRIGR-01-RS-PPFD_IN_1DAY_PROCESSED,Incoming photosynthetic photon flux density,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,PPFD_IN_Avg,time,PPFD_IN-MEAN_PROC-MicroMOL-PER-M2-SEC-P1D-P1D,PROCESSED,PPFD_IN_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_1DAY_PROCESSED,Precipitation (Standard height RG),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Standard_Precip_lr,time,PRECIP-TOTAL_PROC-MM-P1D-P1D,PROCESSED,STDRD_PRECIP_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_TOT_1DAY_PROCESSED,Accumulated total precipitation (Standard height RG),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Standard_Precip_Tot,time,PRECIP_TOTAL-TOTAL_PROC-MM-P1D-P1D,PROCESSED,STDRD_PRECIP_TOT_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-RH_1DAY_PROCESSED,Relative humidity,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,RH,time,RH-MEAN_PROC-PCT-P1D-P1D,PROCESSED,RH_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-SWIN_1DAY_PROCESSED,Incoming shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_in_Avg,time,SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWIN_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-SWOUT_1DAY_PROCESSED,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_out_Avg,time,SWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWOUT_FLAG_DEF,
+FDRI-CH-TRIGR-01-RS-SWIN_1DAY_PROCESSED,Incoming shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_in_Avg,time,SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWIN_FLAG_DEF,1
+FDRI-CH-TRIGR-01-RS-SWOUT_1DAY_PROCESSED,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_out_Avg,time,SWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWOUT_FLAG_DEF,1
 FDRI-CH-TRIGR-01-RS-TEMP_AIR_1DAY_PROCESSED,Air temperature,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_day,AirTemp_C,time,TEMP_AIR-MEAN_PROC-DEGC-P1D-P1D,PROCESSED,TEMP_AIR_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-ALBEDO_1DAY_PROCESSED,Albedo,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,albedo_Avg,time,ALBEDO-MEAN_PROC-UNITLESS-P1D-P1D,PROCESSED,ALBEDO_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-DEWPOINT_1DAY_PROCESSED,Dew point temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,DewPoint_C,time,DEW_POINT-MEAN_PROC-DEGC-P1D-P1D,PROCESSED,DEWPOINT_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-LWIN_1DAY_PROCESSED,Incoming longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_in_Avg,time,LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWIN_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-LWOUT_1DAY_PROCESSED,Outgoing longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_out_Avg,time,LWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWOUT_FLAG_DEF,
+FDRI-SE-CARWE-01-WS-LWIN_1DAY_PROCESSED,Incoming longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_in_Avg,time,LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWIN_FLAG_DEF,1
+FDRI-SE-CARWE-01-WS-LWOUT_1DAY_PROCESSED,Outgoing longwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_LW_out_Avg,time,LWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,LWOUT_FLAG_DEF,1
 FDRI-SE-CARWE-01-WS-PA_1DAY_PROCESSED,Atmospheric pressure,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,Pressure_Avg,time,PA-MEAN_PROC-HPA-P1D-P1D,PROCESSED,PA_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-PRECIP_1DAY_PROCESSED,Precipitation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Precip_lr,time,PRECIP-TOTAL_PROC-MM-P1D-P1D,PROCESSED,PRECIP_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-PRECIP_INT_1DAY_PROCESSED,Precipitation intensity,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Int_1m,time,PRECIP_INTEN-MEAN_PROC-MM_M-1-P1D-P1D,PROCESSED,PRECIP_INT_FLAG_DEF,
@@ -698,8 +698,8 @@ FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_1DAY_PROCESSED,Precipitation intensity since l
 FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_HR_1DAY_PROCESSED,Precipitation intensity since last request,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Int_lr_hr,time,PRECIP_INTEN_LR-MEAN_PROC-MM_HR-1-P1D-P1D,PROCESSED,PRECIP_INT_LR_HR_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-PRECIP_TOT_1DAY_PROCESSED,Accumulated total precipitation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,RainE_Precip_Tot,time,PRECIP_TOTAL-TOTAL_PROC-MM-P1D-P1D,PROCESSED,PRECIP_TOT_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-RH_1DAY_PROCESSED,Relative humidity,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,RH,time,RH-MEAN_PROC-PCT-P1D-P1D,PROCESSED,RH_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-SWIN_1DAY_PROCESSED,Incoming shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_in_Avg,time,SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWIN_FLAG_DEF,
-FDRI-SE-CARWE-01-WS-SWOUT_1DAY_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_out_Avg,time,SWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWOUT_FLAG_DEF,
+FDRI-SE-CARWE-01-WS-SWIN_1DAY_PROCESSED,Incoming shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_in_Avg,time,SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWIN_FLAG_DEF,1
+FDRI-SE-CARWE-01-WS-SWOUT_1DAY_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,R_SW_out_Avg,time,SWOUT-TOTAL_PROC-MJM-2-D-P1D-P1D,PROCESSED,SWOUT_FLAG_DEF,1
 FDRI-SE-CARWE-01-WS-TEMP_AIR_1DAY_PROCESSED,Air temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,AirTemp_C,time,TEMP_AIR-MEAN_PROC-DEGC-P1D-P1D,PROCESSED,TA_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-WD_1DAY_PROCESSED,Wind direction,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,WindDir,time,WD-MEAN_PROC-DEG-P1D-P1D,PROCESSED,WD_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-WS_1DAY_PROCESSED,Wind speed,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_day,WS_ms_Avg,time,WS-MEAN_PROC-MS-1-P1D-P1D,PROCESSED,WS_FLAG_DEF,
