@@ -12312,20 +12312,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-rh_1day-mean",
       "type": "aggregate",
       "method": "mean",

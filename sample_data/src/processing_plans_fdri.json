@@ -3865,13 +3865,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_tot_1day-plan",
-      "output": "fdri-se-carwe-01-ws-precip_tot_1day_processed",
-      "steps": [
-        "fdri-se-carwe-01-ws-precip_tot_1day-sum"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-rh_1day-plan",
       "output": "fdri-se-carwe-01-ws-rh_1day_processed",
       "steps": [
