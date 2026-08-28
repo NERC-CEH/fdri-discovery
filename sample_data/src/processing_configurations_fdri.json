@@ -257,20 +257,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "id": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_TOT_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
     }
   ],
   "FDRI-CH-KADEN-01-BH": [
@@ -4877,20 +4863,6 @@
       "method": "mean",
       "dep_ts": [
         "FDRI-CH-MILFA-01-RS-STDRD_PRECIP_INT_HR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-STDRD_PRECIP_TOT_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -10288,20 +10260,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_TOT_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-rh_1day-mean",
       "type": "aggregate",
       "method": "mean",
@@ -12312,20 +12270,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-rh_1day-mean",
       "type": "aggregate",
       "method": "mean",
@@ -14216,20 +14160,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-PIT_PRECIP_TOT_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-stdrd_precip_1day-sum",
       "type": "aggregate",
       "method": "sum",
@@ -14277,20 +14207,6 @@
       "method": "mean",
       "dep_ts": [
         "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_TOT_1MIN_PROCESSED"
       ],
       "parameters": [
         {

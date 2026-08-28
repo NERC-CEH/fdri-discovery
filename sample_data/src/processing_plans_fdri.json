@@ -94,13 +94,6 @@
       "steps": [
         "fdri-ch-chops-01-rg-stdrd_precip_1day-sum"
       ]
-    },
-    {
-      "id": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-plan",
-      "output": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-sum"
-      ]
     }
   ],
   "FDRI-CH-KADEN-01-BH": [
@@ -1301,13 +1294,6 @@
       "output": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day_processed",
       "steps": [
         "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-sum"
       ]
     },
     {
@@ -3023,13 +3009,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-sum"
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-rh_1day-plan",
       "output": "fdri-ch-trigr-01-rs-rh_1day_processed",
       "steps": [
@@ -3865,13 +3844,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_tot_1day-plan",
-      "output": "fdri-se-carwe-01-ws-precip_tot_1day_processed",
-      "steps": [
-        "fdri-se-carwe-01-ws-precip_tot_1day-sum"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-rh_1day-plan",
       "output": "fdri-se-carwe-01-ws-rh_1day_processed",
       "steps": [
@@ -4403,13 +4375,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_precip_tot_1day-plan",
-      "output": "fdri-se-fofad-01-pr-pit_precip_tot_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_precip_tot_1day-sum"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-stdrd_precip_1day-plan",
       "output": "fdri-se-fofad-01-pr-stdrd_precip_1day_processed",
       "steps": [
@@ -4435,13 +4400,6 @@
       "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day_processed",
       "steps": [
         "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-plan",
-      "output": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-sum"
       ]
     },
     {
