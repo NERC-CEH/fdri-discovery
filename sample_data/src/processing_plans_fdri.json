@@ -4636,16 +4636,16 @@
   ],
   "FDRI-SE-SVTRP-01-WL": [
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-plan",
-      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_processed",
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-water_lev_radar_1min_processed",
       "input": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW",
       "steps": [
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
         "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike"
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-range",
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-spike"
       ]
     },
     {
@@ -4672,17 +4672,6 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-plan",
-      "output": "fdri-se-svtrp-01-wl-water_lev_radar_1min_processed",
-      "input": "FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW",
-      "steps": [
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-load_raw",
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-battery_v",
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-range",
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-spike"
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-water_temp_1min-plan",
       "output": "fdri-se-svtrp-01-wl-water_temp_1min_processed",
       "input": "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW",
@@ -4691,13 +4680,6 @@
         "fdri-se-svtrp-01-wl-water_temp_1min-battery_v",
         "fdri-se-svtrp-01-wl-water_temp_1min-range",
         "fdri-se-svtrp-01-wl-water_temp_1min-spike"
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-plan",
-      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day_processed",
-      "steps": [
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-mean"
       ]
     },
     {
