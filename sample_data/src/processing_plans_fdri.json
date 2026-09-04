@@ -4683,13 +4683,6 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-plan",
-      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day_processed",
-      "steps": [
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-mean"
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1day-plan",
       "output": "fdri-se-svtrp-01-wl-radar_temp_1day_processed",
       "steps": [
