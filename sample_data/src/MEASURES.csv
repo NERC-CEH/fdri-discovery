@@ -4,7 +4,6 @@ ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,,ALBEDO,UNITLESS,MEAN,PREC,PT1M,PT1M,Mean al
 ALBEDO-MEAN_PREC-UNITLESS-PT30M-PT30M,,ALBEDO,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean albedo over the preceding 30 minutes
 ALBEDO-MEAN_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN,PROC,P1D,P1D,Mean albedo over the proceeding day
 ALBEDO-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,STDDEV,PROC,P1D,P1D,Standard deviation of albedo over the proceeding day
-ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,PREC,,,Mean angular velocity in revolutions per second
 BUCKET_LEVEL-INST-MM-PT1M-PT1M,,BUCKET_LEVEL,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level in millimetres
 CO2_FLUX-INST-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,NONE,INST,PT30M,PT30M,Instantaneous CO2 flux in micromoles per metre squared per second
 CO2_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean CO2 flux over the preceding 30 minutes in micromoles per metre squared per second
@@ -510,23 +509,14 @@ VWC_SOIL_60-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_60,PCT,MEAN,PREC,PT10M,PT10M,Mea
 VWC_SOIL_65-INST-PCT-PT30M-PT30M,,VWC_SOIL_65,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 65 cm depth in percent
 VWC_SOIL-INST-PCT-PT1M-PT1M,,VWC_SOIL,PCT,NONE,INST,PT1M,PT1M,Instantaneous soil volumetric water in percent
 VWC_SOIL-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content over the preceding 15 minutes in cubic metres per cubic metre
-WATER_FLOW-INST-LS-1,,WATER_FLOW,LS-1,NONE,INST,,,Instantaneous discharge in litres per second
-WATER_FLOW-INST-M3S-1,,WATER_FLOW,M3S-1,NONE,INST,,,Instantaneous discharge in cubic metres per second
 WATER_LEVEL-MEAN_PREC-CM-PT1M-PT1M,,WATER_LEVEL,CM,MEAN,PREC,PT1M,PT1M,Mean water level over the preceding minute in centimetres
 WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,,WATER_LEVEL,M,MEAN,PREC,PT15M,PT15M,Mean water level over the preceding 15 minutes in metres
 WATER_LEVEL-MEAN_PREC-M-PT1M-PT1M,,WATER_LEVEL,M,MEAN,PREC,PT1M,PT1M,Mean water level over the preceding minute in metres
 WATER_LEVEL-MEAN_PROC-CM-P1D-P1D,,WATER_LEVEL,CM,MEAN,PROC,P1D,P1D,Mean water level over proceeding day in centimetres
 WATER_LEVEL-MEAN_PROC-M-P1D-P1D,,WATER_LEVEL,M,MEAN,PROC,P1D,P1D,Mean water level over proceeding day in metres
-WATER_TEMP-DEGC,,WATER_TEMP,DEGC,,,,,Water temperature in degrees Celsius
-WATER_TEMP-INST-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,NONE,INST,,,Instantaneous water temperature in degrees Celsius
 WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,,WATER_TEMP,DEGC,MEAN,PREC,PT15M,PT15M,Mean water temperature over the preceding 15 minutes in degrees Celsius
 WATER_TEMP-MEAN_PREC-DEGC-PT1M-PT1M,,WATER_TEMP,DEGC,MEAN,PREC,PT1M,PT1M,Mean water temperature over the preceding minute in degrees Celsius
 WATER_TEMP-MEAN_PROC-DEGC-P1D-P1D,,WATER_TEMP,DEGC,MEAN,PROC,P1D,P1D,Mean water temperature over proceeding day in degrees Celsius
-WATER_TEMP-MEAN-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,MEAN,PREC,,,Mean water temperature in degrees Celsius
-WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,NONE,INST,,,Instantaneous water velocity in metres per second
-WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,PREC,,,Maximum water velocity in metres per second
-WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,PREC,,,Mean water velocity in metres per second
-WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,,Water velocity in metres per second
 WD-INST-DEG-PT30M-PT30M,,WD,DEG,NONE,INST,PT30M,PT30M,Instantaneous wind direction in degrees
 WD-MEAN_PREC-DEG-PT1M-PT1M,,WD,DEG,MEAN,PREC,PT1M,PT1M,Mean wind direction over the preceding minute in degrees
 WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN,PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees
