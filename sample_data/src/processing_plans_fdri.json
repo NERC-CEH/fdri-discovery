@@ -256,7 +256,6 @@
       "input": "fdri-ch-milfa-01-rs-albedo_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-albedo_1min-load_raw",
-        "fdri-ch-milfa-01-rs-albedo_1min-battery_v",
         "fdri-ch-milfa-01-rs-albedo_1min-range",
         "fdri-ch-milfa-01-rs-albedo_1min-spike"
       ]
@@ -1969,7 +1968,6 @@
       "input": "fdri-ch-trigr-01-rs-albedo_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-albedo_1min-load_raw",
-        "fdri-ch-trigr-01-rs-albedo_1min-battery_v",
         "fdri-ch-trigr-01-rs-albedo_1min-range",
         "fdri-ch-trigr-01-rs-albedo_1min-spike"
       ]
@@ -3604,7 +3602,6 @@
       "input": "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-albedo_1min-load_raw",
-        "fdri-se-carwe-01-ws-albedo_1min-battery_v",
         "fdri-se-carwe-01-ws-albedo_1min-range",
         "fdri-se-carwe-01-ws-albedo_1min-spike"
       ]
