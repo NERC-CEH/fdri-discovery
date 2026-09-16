@@ -804,6 +804,17 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 82.64463
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -838,6 +849,17 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-milfa-01-rs-lwout_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 72.20217
+        }
       ]
     },
     {
@@ -878,6 +900,17 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-swin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 84.74576
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-swin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -912,6 +945,17 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-milfa-01-rs-swout_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-swout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 70.02801
+        }
       ]
     },
     {

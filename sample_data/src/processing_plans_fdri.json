@@ -267,6 +267,7 @@
       "input": "fdri-ch-milfa-01-rs-lwin_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwin_1min-load_raw",
+        "fdri-ch-milfa-01-rs-lwin_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwin_1min-range"
       ]
@@ -277,6 +278,7 @@
       "input": "fdri-ch-milfa-01-rs-lwout_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwout_1min-load_raw",
+        "fdri-ch-milfa-01-rs-lwout_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-lwout_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwout_1min-range"
       ]
@@ -287,6 +289,7 @@
       "input": "fdri-ch-milfa-01-rs-swin_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-swin_1min-load_raw",
+        "fdri-ch-milfa-01-rs-swin_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-swin_1min-battery_v",
         "fdri-ch-milfa-01-rs-swin_1min-range"
       ]
@@ -297,6 +300,7 @@
       "input": "fdri-ch-milfa-01-rs-swout_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-swout_1min-load_raw",
+        "fdri-ch-milfa-01-rs-swout_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-swout_1min-battery_v",
         "fdri-ch-milfa-01-rs-swout_1min-range"
       ]
