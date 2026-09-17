@@ -748,50 +748,17 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
+      "id": "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-albedo_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
+        "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED",
+        "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED"
       ],
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
+          "param": "round",
+          "value": 3
         }
       ]
     },
@@ -6214,50 +6181,17 @@
   ],
   "FDRI-CH-TRIGR-01-RS": [
     {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
+      "id": "fdri-ch-trigr-01-rs-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-albedo_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
+        "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED",
+        "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED"
       ],
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
+          "param": "round",
+          "value": 3
         }
       ]
     },
@@ -11458,11 +11392,18 @@
   ],
   "FDRI-SE-CARWE-01-WS": [
     {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
+      "id": "fdri-se-carwe-01-ws-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
       "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW"
+        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED",
+        "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
       ]
     },
     {
@@ -11622,20 +11563,6 @@
       "method": "load",
       "dep_ts": [
         "FDRI-SE-CARWE-01-WS-WS_1MIN_RAW"
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
       ]
     },
     {
@@ -11923,32 +11850,6 @@
         {
           "param": "lt",
           "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
         }
       ]
     },
