@@ -155,6 +155,7 @@ HEIGHT_MEASUREMENT-INST-M-PT30M-PT30M,,HEIGHT_MEASUREMENT,M,NONE,INST,PT30M,PT30
 LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming longwave radiation calibration factor (unitless)
 LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWIN-MEAN_PREC-MV-PT1M-PT1M,,LWIN,MV,MEAN,PREC,PT1M,PT1M,Mean incoming longwave radiation over the preceding minute in millivolts
 LWIN-MEAN_PREC-WM-2-PT15M-PT15M,,LWIN,WM-2,MEAN,PREC,PT15M,PT15M,Mean incoming longwave radiation over the preceding 15 minutes in watts per metre squared
 LWIN-MEAN_PREC-WM-2-PT1M-PT1M,,LWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming longwave radiation over the preceding minute in watts per metre squared
 LWIN-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation over preceding 30 minutes in watts per metre squared
@@ -163,6 +164,7 @@ LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,LWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming 
 LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
 LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWOUT-MEAN_PREC-MV-PT1M-PT1M,,LWOUT,MV,MEAN,PREC,PT1M,PT1M,Mean outgoing longwave radiation over the preceding minute in millivolts
 LWOUT-MEAN_PREC-WM-2-PT15M-PT15M,,LWOUT,WM-2,MEAN,PREC,PT15M,PT15M,Mean outgoing longwave radiation over the preceding 15 minutes in watts per metre squared
 LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,LWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing longwave radiation over the preceding minute in watts per metre squared
 LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
@@ -366,12 +368,14 @@ SWE_LOCAL-MEAN_PROC-PCT-P1D-P1D,,SWE_LOCAL,PCT,MEAN,PROC,P1D,P1D,Mean local snow
 SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
 SWE-MEAN_PROC-MM-P1D-P1D,,SWE,MM,MEAN,PROC,P1D,P1D,Mean snow water equivalent over the proceeding day in millimetres
 SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
+SWIN-MEAN_PREC-MV-PT1M-PT1M,,SWIN,MV,MEAN,PREC,PT1M,PT1M,Mean incoming shortwave radiation over the preceding minute in millivolts
 SWIN-MEAN_PREC-WM-2-PT15M-PT15M,,SWIN,WM-2,MEAN,PREC,PT15M,PT15M,Mean incoming shortwave radiation over the preceding 15 minutes in watts per metre squared
 SWIN-MEAN_PREC-WM-2-PT1M-PT1M,,SWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming shortwave radiation over the preceding minute in watts per metre squared
 SWIN-MEAN_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,SWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming shortwave radiation over proceeding day in megajoules per metre squared
 SWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,SWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing shortwave radiation calibration factor (unitless)
+SWOUT-MEAN_PREC-MV-PT1M-PT1M,,SWOUT,MV,MEAN,PREC,PT1M,PT1M,Mean outgoing shortwave radiation over the preceding minute in millivolts
 SWOUT-MEAN_PREC-WM-2-PT15M-PT15M,,SWOUT,WM-2,MEAN,PREC,PT15M,PT15M,Mean outgoing shortwave radiation over the preceding 15 minutes in watts per metre squared
 SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,SWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing shortwave radiation over the preceding minute in watts per metre squared
 SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing shortwave radiation over preceding 30 minutes in watts per metre squared
