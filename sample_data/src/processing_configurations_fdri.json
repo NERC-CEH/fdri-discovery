@@ -756,20 +756,6 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-milfa-01-rs-albedo_1min-range",
       "type": "qc",
       "method": "RANGE",
@@ -780,7 +766,7 @@
         },
         {
           "param": "gt",
-          "value": 1.2
+          "value": 120.0
         }
       ]
     },
@@ -791,7 +777,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.3
+          "value": 30.0
         }
       ]
     },
@@ -2646,7 +2632,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -2853,7 +2839,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3060,7 +3046,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3267,7 +3253,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3474,7 +3460,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3681,7 +3667,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -4509,7 +4495,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4557,7 +4543,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4605,7 +4591,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4653,7 +4639,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4701,7 +4687,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4749,7 +4735,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -6222,20 +6208,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-albedo_1min-range",
       "type": "qc",
       "method": "RANGE",
@@ -6246,7 +6218,7 @@
         },
         {
           "param": "gt",
-          "value": 1.2
+          "value": 120.0
         }
       ]
     },
@@ -6257,7 +6229,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.3
+          "value": 30.0
         }
       ]
     },
@@ -6937,7 +6909,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7107,7 +7079,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7277,7 +7249,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7447,7 +7419,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7617,7 +7589,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7787,7 +7759,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -8138,7 +8110,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8345,7 +8317,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8552,7 +8524,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8759,7 +8731,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8966,7 +8938,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -9173,7 +9145,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -11563,7 +11535,7 @@
     },
 
     {
-      "id": "fdri-se-carwe-01-rs-swin_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-swin_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
@@ -11577,7 +11549,7 @@
       }
     },
     {
-      "id": "fdri-se-carwe-01-rs-swout_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-swout_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
@@ -11625,21 +11597,7 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-rs-lwin_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
@@ -11671,7 +11629,7 @@
       }
     },
     {
-      "id": "fdri-se-carwe-01-rs-lwout_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
@@ -11937,7 +11895,7 @@
         },
         {
           "param": "gt",
-          "value": 1.2
+          "value": 120.0
         }
       ]
     },
@@ -11948,7 +11906,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.3
+          "value": 30.0
         }
       ]
     },
@@ -13870,7 +13828,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13918,7 +13876,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13966,7 +13924,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14014,7 +13972,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14062,7 +14020,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14923,11 +14881,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 10000.0
         }
       ]
     },
@@ -14938,7 +14896,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 500.0
         }
       ]
     },
@@ -14953,7 +14911,7 @@
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 100.0
         }
       ]
     },
@@ -14964,7 +14922,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 5.0
         }
       ]
     },
