@@ -11854,35 +11854,6 @@
       ]
     },
     {
-<<<<<<< HEAD
-=======
-      "id": "fdri-se-carwe-01-ws-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 120.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 30.0
-        }
-      ]
-    },
-    {
->>>>>>> staging
       "id": "fdri-se-carwe-01-ws-dewpoint_1min-range",
       "type": "qc",
       "method": "RANGE",
