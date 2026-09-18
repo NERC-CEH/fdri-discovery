@@ -2613,7 +2613,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -2820,7 +2820,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3027,7 +3027,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3234,7 +3234,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3441,7 +3441,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3648,7 +3648,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -4476,7 +4476,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4524,7 +4524,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4572,7 +4572,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4620,7 +4620,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4668,7 +4668,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4716,7 +4716,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -6871,7 +6871,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7041,7 +7041,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7211,7 +7211,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7381,7 +7381,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7551,7 +7551,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7721,7 +7721,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -8072,7 +8072,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8279,7 +8279,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8486,7 +8486,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8693,7 +8693,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8900,7 +8900,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -9107,7 +9107,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -11504,7 +11504,7 @@
     },
 
     {
-      "id": "fdri-se-carwe-01-rs-swin_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-swin_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
@@ -11518,7 +11518,7 @@
       }
     },
     {
-      "id": "fdri-se-carwe-01-rs-swout_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-swout_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
@@ -11598,7 +11598,7 @@
       }
     },
     {
-      "id": "fdri-se-carwe-01-rs-lwout_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
@@ -11854,6 +11854,35 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "fdri-se-carwe-01-ws-albedo_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 120.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 30.0
+        }
+      ]
+    },
+    {
+>>>>>>> staging
       "id": "fdri-se-carwe-01-ws-dewpoint_1min-range",
       "type": "qc",
       "method": "RANGE",
@@ -13771,7 +13800,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13819,7 +13848,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13867,7 +13896,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13915,7 +13944,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13963,7 +13992,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14824,11 +14853,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 10000.0
         }
       ]
     },
@@ -14839,7 +14868,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 500.0
         }
       ]
     },
@@ -14854,7 +14883,7 @@
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 100.0
         }
       ]
     },
@@ -14865,7 +14894,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 5.0
         }
       ]
     },
