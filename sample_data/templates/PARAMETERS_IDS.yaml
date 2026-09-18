@@ -17,6 +17,20 @@ resources:
       "<skos:prefLabel>": "{PARAMETER_NAME}@en"
       "<rdfs:label>": "{PARAMETER_NAME}@en"
 
+  - name: MinValue
+    requires:
+      MIN_VALUE:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "<fdri:minValue>": "{MIN_VALUE}^^<xsd:decimal>"
+
+  - name: MaxValue
+    requires:
+      MAX_VALUE:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/cop/{PARAMETER_ID|slug}>"
+      "<fdri:maxValue>": "{MAX_VALUE}^^<xsd:decimal>"
+
   - name: Property
     requires:
       PROPERTY:
