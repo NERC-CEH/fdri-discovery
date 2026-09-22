@@ -2248,15 +2248,15 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2270,7 +2270,7 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -2285,15 +2285,15 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2307,7 +2307,7 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -2322,15 +2322,15 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2344,7 +2344,7 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -2359,15 +2359,15 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2381,7 +2381,7 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -5372,58 +5372,58 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_IRR_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_IRR_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_RAD_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_RAD_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -9928,15 +9928,15 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -9950,7 +9950,7 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -9965,15 +9965,15 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -9987,7 +9987,7 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -10002,15 +10002,15 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -10024,7 +10024,7 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -10039,15 +10039,15 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -10061,7 +10061,7 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -10994,58 +10994,58 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_IRR_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_IRR_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_RAD_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_RAD_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },

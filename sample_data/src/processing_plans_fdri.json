@@ -613,43 +613,43 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swin_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_swin_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwin_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_lwin_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swout_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_swout_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwout_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_lwout_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-range"
       ]
     },
     {
@@ -1544,31 +1544,31 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swin_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swin_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwin_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwin_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swout_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swout_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwout_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwout_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-mean"
       ]
     },
     {
@@ -2888,43 +2888,43 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swin_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_swin_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwin_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_lwin_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swout_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_swout_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwout_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_lwout_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-range"
       ]
     },
     {
@@ -3370,31 +3370,31 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swin_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_red_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swin_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwin_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwin_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swout_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_red_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swout_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwout_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwout_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day-mean"
       ]
     },
     {
