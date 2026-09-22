@@ -61,6 +61,7 @@ FDRI-CH-MILFA-01-RS-SWIN_1MIN_RAW,Incoming shortwave radiation,CH_MILFA_01,ukceh
 FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,CH_MILFA_01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF,
 FDRI-CH-MILFA-01-RS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,CH_MILFA_01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-MV-PT1M-PT1M,RAW,,
 FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,CH_MILFA_01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF,
+FDRI-CH-MILFA-01-RS-SOLAR_ZENITH_1MIN_PROCESSED,Solar zenith angle,CH_MILFA_01,ukceh-fdri-staging-timeseries-processed,one_minute,SOLAR_ZENITH,time,SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,PROCESSED,,
 FDRI-CH-MILFA-01-RS-TEROS22_1_MP_15MIN_RAW,Soil matric potential (5cm depth - East - Teros22),CH_MILFA_01,ukceh-dri-staging-ingested,fifteen_minute,TEROS22_1_avg_MP,time,MATPOT_SOIL_5-MEAN_PREC-KPA-PT15M-PT15M,RAW,,
 FDRI-CH-MILFA-01-RS-TEROS22_1_MP_15MIN_PROCESSED,Soil matric potential (5cm depth - East - Teros22),CH_MILFA_01,ukceh-fdri-staging-timeseries-processed,fifteen_minute,TEROS22_1_avg_MP,time,MATPOT_SOIL_5-MEAN_PREC-KPA-PT15M-PT15M,PROCESSED,TEROS22_1_MP_FLAG_DEF,
 FDRI-CH-MILFA-01-RS-TEROS22_2_MP_15MIN_RAW,Soil matric potential (10cm depth - East - Teros22),CH_MILFA_01,ukceh-dri-staging-ingested,fifteen_minute,TEROS22_2_avg_MP,time,MATPOT_SOIL_10-MEAN_PREC-KPA-PT15M-PT15M,RAW,,
@@ -331,6 +332,7 @@ FDRI-CH-TRIGR-01-RS-SWIN_1MIN_RAW,Incoming shortwave radiation,CH-TRIGR-01,ukceh
 FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF,1
 FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-MV-PT1M-PT1M,RAW,,1
 FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF,1
+FDRI-CH-TRIGR-01-RS-SOLAR_ZENITH_1MIN_PROCESSED,Solar zenith angle,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,SOLAR_ZENITH,time,SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,PROCESSED,,1
 FDRI-CH-TRIGR-01-RS-TEMP_AIR_1MIN_RAW,Air temperature,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,,
 FDRI-CH-TRIGR-01-RS-TEMP_AIR_1MIN_PROCESSED,Air temperature,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,TEMP_AIR_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-TDR310_1_EC_15MIN_RAW,Bulk electrical conductivity (5cm depth - TDR),CH-TRIGR-01,ukceh-dri-staging-ingested,fifteen_minute,TDR310_1_avg_EC,time,COND_5-MEAN_PREC-US_CM-1-PT15M-PT15M,RAW,,
@@ -513,6 +515,7 @@ FDRI-SE-CARWE-01-WS-RH_1MIN_RAW,Relative humidity,SE-CARWE-01,ukceh-dri-staging-
 FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED,Incoming shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWIN_FLAG_DEF,1
 FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW,Incoming shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_in_Avg,time,SWIN-MEAN_PREC-MV-PT1M-PT1M,RAW,,1
 FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,PROCESSED,SWOUT_FLAG_DEF,1
+FDRI-SE-CARWE-01-WS-SOLAR_ZENITH_1MIN_PROCESSED,Solar zenith angle,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,SOLAR_ZENITH,time,SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,PROCESSED,,1
 FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW,Outgoing shortwave radiation,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,R_SW_out_Avg,time,SWOUT-MEAN_PREC-MV-PT1M-PT1M,RAW,,1
 FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_PROCESSED,Air temperature,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,TA_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-TEMP_AIR_1MIN_RAW,Air temperature,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,,

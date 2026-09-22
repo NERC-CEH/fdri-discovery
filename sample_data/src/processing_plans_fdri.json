@@ -1958,6 +1958,13 @@
       "steps": [
         "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day-mean"
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-solar_zenith_1min-plan",
+      "output": "fdri-ch-milfa-01-rs-solar_zenith_1min_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-solar_zenith_1min-solar_zenith"
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
@@ -3591,6 +3598,13 @@
       "steps": [
         "fdri-ch-trigr-01-rs-soilvue_5cm_vwc_1day-mean"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-solar_zenith_1min-plan",
+      "output": "fdri-ch-trigr-01-rs-solar_zenith_1min_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith"
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
@@ -3879,6 +3893,13 @@
       "output": "fdri-se-carwe-01-ws-ws_1day_processed",
       "steps": [
         "fdri-se-carwe-01-ws-ws_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-solar_zenith_1min-plan",
+      "output": "fdri-se-carwe-01-ws-solar_zenith_1min_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-solar_zenith_1min-solar_zenith"
       ]
     }
   ],
