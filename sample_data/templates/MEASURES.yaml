@@ -22,6 +22,20 @@ resources:
       "<fdri:resolution>": "{RESOLUTION}^^<xsd:duration>"
       "<fdri:valueTimeAnchor>": "<http://fdri.ceh.ac.uk/ref/common/time-anchor/{TIME_ANCHOR_ID|slug}>"
 
+  - name: MinValue
+    requires:
+      MIN_VALUE:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{ID|slug}>"
+      "<fdri:minValue>": "{MIN_VALUE}^^<xsd:decimal>"
+
+  - name: MaxValue
+    requires:
+      MAX_VALUE:
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/ref/common/measure/{ID|slug}>"
+      "<fdri:maxValue>": "{MAX_VALUE}^^<xsd:decimal>"
+
   - name: MeasureParent
     requires:
       PARENT_ID:
