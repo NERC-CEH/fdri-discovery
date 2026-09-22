@@ -763,6 +763,17 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-albedo_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "vaue": 100
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -6196,6 +6207,17 @@
       ]
     },
     {
+      "id": "fdri-ch-trigr-01-rs-albedo_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "vaue": 100
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-trigr-01-rs-dewpoint_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -11403,6 +11425,17 @@
         {
           "param": "round",
           "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-albedo_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "vaue": 100
         }
       ]
     },
