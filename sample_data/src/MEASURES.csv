@@ -3,6 +3,9 @@ AIR_DENSITY-INST-KGM-3-PT30M-PT30M,,AIR_DENSITY,KGM-3,NONE,INST,PT30M,PT30M,Inst
 ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,,ALBEDO,UNITLESS,MEAN,PREC,PT1M,PT1M,Mean albedo over the preceding minute
 ALBEDO-MEAN_PREC-UNITLESS-PT30M-PT30M,,ALBEDO,UNITLESS,MEAN,PREC,PT30M,PT30M,Mean albedo over the preceding 30 minutes
 ALBEDO-MEAN_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN,PROC,P1D,P1D,Mean albedo over the proceeding day
+ALBEDO-MEAN_PREC-PCT-PT1M-PT1M,,ALBEDO,PCT,MEAN,PREC,PT1M,PT1M,Mean albedo over the preceding minute in percent
+ALBEDO-MEAN_PREC-PCT-PT30M-PT30M,,ALBEDO,PCT,MEAN,PREC,PT30M,PT30M,Mean albedo over the preceding 30 minutes in percent
+ALBEDO-MEAN_PROC-PCT-P1D-P1D,,ALBEDO,PCT,MEAN,PROC,P1D,P1D,Mean albedo over the proceeding day in percent
 ALBEDO-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,STDDEV,PROC,P1D,P1D,Standard deviation of albedo over the proceeding day
 ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,PREC,,,Mean angular velocity in revolutions per second
 BUCKET_LEVEL_NRT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_NRT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (non-real-time) in millimetres
@@ -149,9 +152,14 @@ HEATFLUX_SOIL-MEAN_PROC-WM-2-P1D-P1D,,HEATFLUX_SOIL,WM-2,MEAN,PROC,P1D,P1D,Mean 
 HEATFLUX_SOIL-STDDEV_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of soil heat flux in watts per metre squared over preceding 30 minutes
 HEIGHT_CANOPY-INST-M-PT30M-PT30M,,HEIGHT_CANOPY,M,NONE,INST,PT30M,PT30M,Instantaneous canopy height in metres
 HEIGHT_MEASUREMENT-INST-M-PT30M-PT30M,,HEIGHT_MEASUREMENT,M,NONE,INST,PT30M,PT30M,Instantaneous measurement height in metres
+IRR_RED-MEAN_PREC-W-PER-M2-NanoM-PT15M-PT15M,,IRR_RED,W-PER-M2-NanoM,MEAN,PREC,PT15M,PT15M,Mean red (650nm) irradiance over the preceding 15 minutes in watts per metre squared per nanometre
+IRR_RED-MEAN_PROC-W-PER-M2-NanoM-P1D-P1D,,IRR_RED,W-PER-M2-NanoM,MEAN,PROC,P1D,P1D,Mean red (650nm) irradiance over the proceeding day in watts per metre squared per nanometre
+IRR_NIR-MEAN_PREC-W-PER-M2-NanoM-PT15M-PT15M,,IRR_NIR,W-PER-M2-NanoM,MEAN,PREC,PT15M,PT15M,Mean near infrared (810nm) irradiance over the preceding 15 minutes in watts per metre squared per nanometre
+IRR_NIR-MEAN_PROC-W-PER-M2-NanoM-P1D-P1D,,IRR_NIR,W-PER-M2-NanoM,MEAN,PROC,P1D,P1D,Mean near infrared (810nm) irradiance over the proceeding day in watts per metre squared per nanometre
 LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming longwave radiation calibration factor (unitless)
 LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWIN-MEAN_PREC-MV-PT1M-PT1M,,LWIN,MV,MEAN,PREC,PT1M,PT1M,Mean incoming longwave radiation over the preceding minute in millivolts
 LWIN-MEAN_PREC-WM-2-PT15M-PT15M,,LWIN,WM-2,MEAN,PREC,PT15M,PT15M,Mean incoming longwave radiation over the preceding 15 minutes in watts per metre squared
 LWIN-MEAN_PREC-WM-2-PT1M-PT1M,,LWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming longwave radiation over the preceding minute in watts per metre squared
 LWIN-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation over preceding 30 minutes in watts per metre squared
@@ -160,6 +168,7 @@ LWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,LWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming 
 LWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,LWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing longwave radiation calibration factor (unitless)
 LWOUT_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWOUT_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWOUT_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of outgoing longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
+LWOUT-MEAN_PREC-MV-PT1M-PT1M,,LWOUT,MV,MEAN,PREC,PT1M,PT1M,Mean outgoing longwave radiation over the preceding minute in millivolts
 LWOUT-MEAN_PREC-WM-2-PT15M-PT15M,,LWOUT,WM-2,MEAN,PREC,PT15M,PT15M,Mean outgoing longwave radiation over the preceding 15 minutes in watts per metre squared
 LWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,LWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing longwave radiation over the preceding minute in watts per metre squared
 LWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,LWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing longwave radiation over preceding 30 minutes in watts per metre squared
@@ -323,6 +332,10 @@ Q-MEAN_PROC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PROC,P1D,P1D,Mean absolute humidity over t
 Q-STDDEV_PREC-GM-3-PT30M-PT30M,,Q,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
 QC_FLUX_MOM-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_FLUX_MOM,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for momentum flux over the preceding 30 minutes (unitless)
 QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_HEATFLUX_SENSIBLE,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for sensible heat flux over the preceding 30 minutes (unitless)
+RAD_RED-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean red (650nm) radiance over the preceding 15 minutes in watts per metre squared per nanometre per steradian
+RAD_RED-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean red (650nm) radiance over the proceeding day in watts per metre squared per nanometre per steradian
+RAD_NIR-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean near infrared (810nm) radiance over the preceding 15 minutes in watts per metre squared per nanometre per steradian
+RAD_NIR-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean near infrared (810nm) radiance over the proceeding day in watts per metre squared per nanometre per steradian
 REV-TOTAL-COUNT,,REVOLUTIONS,UNITLESS,TOTAL,PREC,,,Total number of revolutions counted in measurement Period
 REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,,REVOLUTIONS,RPM,MEAN,PREC,PT1M,PT1M,Mean revolutions over the preceding minute in revolutions per minute
 RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,NONE,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
@@ -348,6 +361,7 @@ SNOWD_DISTANCE_COR-MEAN_PROC-M-P1D-P1D,,SNOWD_DISTANCE_COR,M,MEAN,PROC,P1D,P1D,M
 SNOWD_DISTANCE_UNC-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_UNC,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (uncorrected)
 SNOWD_SIGNALQUALITY-STDDEV_PREC-UNITLESS-PT30M-PT30M,,SNOWD_SIGNALQUALITY,UNITLESS,STDDEV,PREC,PT30M,PT30M,Standard deviation of snow depth signal quality over the preceding 30 minutes (uncorrected)
 SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,,SOC_BATT,PCT,MEAN,PREC,PT1M,PT1M,Mean battery state of charge over the preceding minute in percent
+SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT1M,PT1M,Mean solar zenith angle over the preceding minute in degrees
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
 SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees
 SSITC-INST-UNITLESS-PT30M-PT30M,,SSITC,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous steady state and integral turbulence characteristics
@@ -363,12 +377,14 @@ SWE_LOCAL-MEAN_PROC-PCT-P1D-P1D,,SWE_LOCAL,PCT,MEAN,PROC,P1D,P1D,Mean local snow
 SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres
 SWE-MEAN_PROC-MM-P1D-P1D,,SWE,MM,MEAN,PROC,P1D,P1D,Mean snow water equivalent over the proceeding day in millimetres
 SWIN_MULT-INST-UNITLESS-PT30M-PT30M,,SWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless)
+SWIN-MEAN_PREC-MV-PT1M-PT1M,,SWIN,MV,MEAN,PREC,PT1M,PT1M,Mean incoming shortwave radiation over the preceding minute in millivolts
 SWIN-MEAN_PREC-WM-2-PT15M-PT15M,,SWIN,WM-2,MEAN,PREC,PT15M,PT15M,Mean incoming shortwave radiation over the preceding 15 minutes in watts per metre squared
 SWIN-MEAN_PREC-WM-2-PT1M-PT1M,,SWIN,WM-2,MEAN,PREC,PT1M,PT1M,Mean incoming shortwave radiation over the preceding minute in watts per metre squared
 SWIN-MEAN_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-STDDEV_PREC-WM-2-PT30M-PT30M,,SWIN,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming shortwave radiation over preceding 30 minutes in watts per metre squared
 SWIN-TOTAL_PROC-MJM-2-D-P1D-P1D,,SWIN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total incoming shortwave radiation over proceeding day in megajoules per metre squared
 SWOUT_MULT-INST-UNITLESS-PT30M-PT30M,,SWOUT_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous outgoing shortwave radiation calibration factor (unitless)
+SWOUT-MEAN_PREC-MV-PT1M-PT1M,,SWOUT,MV,MEAN,PREC,PT1M,PT1M,Mean outgoing shortwave radiation over the preceding minute in millivolts
 SWOUT-MEAN_PREC-WM-2-PT15M-PT15M,,SWOUT,WM-2,MEAN,PREC,PT15M,PT15M,Mean outgoing shortwave radiation over the preceding 15 minutes in watts per metre squared
 SWOUT-MEAN_PREC-WM-2-PT1M-PT1M,,SWOUT,WM-2,MEAN,PREC,PT1M,PT1M,Mean outgoing shortwave radiation over the preceding minute in watts per metre squared
 SWOUT-MEAN_PREC-WM-2-PT30M-PT30M,,SWOUT,WM-2,MEAN,PREC,PT30M,PT30M,Mean outgoing shortwave radiation over preceding 30 minutes in watts per metre squared

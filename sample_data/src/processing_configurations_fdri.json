@@ -748,50 +748,18 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
+      "id": "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-albedo_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
+        "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED",
+        "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED",
+        "FDRI-CH-MILFA-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
       ],
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
+          "param": "round",
+          "value": 3
         }
       ]
     },
@@ -804,38 +772,15 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
+      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-scalar",
       "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
-      ],
+      "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": 1.0
+          "value": 82.64463
         }
-      ],
-      "observation_interval": {
-        "start_date": "2025-11-17T00:00:00"
-      }
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
-      "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
-      ],
-      "parameters": [
-        {
-          "param": "correction_factor",
-          "value": 1.0
-        }
-      ],
-      "observation_interval": {
-        "start_date": "2025-11-17T00:00:00"
-      }
+      ]
     },
     {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
@@ -872,6 +817,17 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-milfa-01-rs-lwout_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 72.20217
+        }
       ]
     },
     {
@@ -912,6 +868,17 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-swin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 84.74576
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-swin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -946,6 +913,17 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-milfa-01-rs-swout_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-swout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 70.02801
+        }
       ]
     },
     {
@@ -2238,15 +2216,15 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2260,30 +2238,30 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2297,30 +2275,30 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2334,30 +2312,30 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 1.0
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -2371,17 +2349,17 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 1.0
         }
       ]
     },
@@ -2636,7 +2614,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -2843,7 +2821,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3050,7 +3028,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3257,7 +3235,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3464,7 +3442,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3671,7 +3649,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -4499,7 +4477,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4547,7 +4525,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4595,7 +4573,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4643,7 +4621,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4691,7 +4669,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4739,7 +4717,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -5362,58 +5340,58 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_IRR_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_IRR_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_RAD_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_RAD_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -6200,54 +6178,40 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
     {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
+      "id": "fdri-ch-trigr-01-rs-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-albedo_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
+        "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED",
+        "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED",
+        "FDRI-CH-TRIGR-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
       ],
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
+          "param": "round",
+          "value": 3
         }
       ]
     },
@@ -6493,38 +6457,26 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
+      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-scalar",
       "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
-      ],
+      "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": 1.0
+          "value": 70.12623
         }
-      ],
-      "observation_interval": {
-        "start_date": "2026-03-12T00:00:00"
-      }
+      ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
+      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-scalar",
       "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
-      ],
+      "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": 1.0
+          "value": 71.94245
         }
-      ],
-      "observation_interval": {
-        "start_date": "2026-03-12T00:00:00"
-      }
+      ]
     },
     {
       "id": "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
@@ -6939,7 +6891,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7109,7 +7061,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7279,7 +7231,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7449,7 +7401,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7619,7 +7571,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7789,7 +7741,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7799,6 +7751,17 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-trigr-01-rs-swin_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-swin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 68.72852
+        }
       ]
     },
     {
@@ -7836,6 +7799,17 @@
       "method": "load",
       "dep_ts": [
         "fdri-ch-trigr-01-rs-swout_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-swout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 80.38585
+        }
       ]
     },
     {
@@ -8118,7 +8092,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8325,7 +8299,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8532,7 +8506,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8739,7 +8713,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8946,7 +8920,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -9153,7 +9127,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -9908,15 +9882,15 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -9930,30 +9904,30 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -9967,30 +9941,30 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -10004,30 +9978,30 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 1.0
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
       "dep_ts": [
@@ -10041,17 +10015,17 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 1.0
         }
       ]
     },
@@ -10974,58 +10948,58 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_IRR_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_IRR_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_RAD_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_RAD_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -11434,15 +11408,41 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
     {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
+      "id": "fdri-se-carwe-01-ws-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
       "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW"
+        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED",
+        "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED",
+        "FDRI-SE-CARWE-01-WS-SOLAR_ZENITH_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
       ]
     },
     {
@@ -11541,6 +11541,37 @@
         "FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW"
       ]
     },
+
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 74.8503
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
+      }
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 74.6826
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
+      }
+    },
+
+
     {
       "id": "fdri-se-carwe-01-ws-swout_1min-load_raw",
       "type": "load",
@@ -11574,18 +11605,18 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
+          "param": "correction_factor",
+          "value": 83.05648
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
+      }
     },
     {
       "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
@@ -11601,7 +11632,22 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2025-06-13T00:00:00"
+        "start_date": "2025-06-13T00:00:00",
+        "end_date": "2026-08-17T14:09:00"
+      }
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 80.90615
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
       }
     },
     {
@@ -11618,7 +11664,8 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2025-06-13T00:00:00"
+        "start_date": "2025-06-13T00:00:00",
+        "end_date": "2026-08-17T14:09:00"
       }
     },
     {
@@ -11842,32 +11889,6 @@
         {
           "param": "lt",
           "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
         }
       ]
     },
@@ -12350,6 +12371,24 @@
         {
           "param": "round",
           "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
@@ -13789,7 +13828,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13837,7 +13876,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13885,7 +13924,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13933,7 +13972,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -13981,7 +14020,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14704,14 +14743,6 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW"
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-water_temp_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -14760,20 +14791,6 @@
       "observation_interval": {
         "start_date": "2025-05-19T00:00:00"
       }
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
     },
     {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1min-battery_v",
@@ -14832,32 +14849,6 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -10.0
-        },
-        {
-          "param": "gt",
-          "value": 500.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1min-range",
       "type": "qc",
       "method": "RANGE",
@@ -14890,11 +14881,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 10000.0
         }
       ]
     },
@@ -14905,7 +14896,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 500.0
         }
       ]
     },
@@ -14920,7 +14911,7 @@
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 100.0
         }
       ]
     },
@@ -14931,7 +14922,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 5.0
         }
       ]
     },
@@ -14958,20 +14949,6 @@
         {
           "param": "gt",
           "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
         }
       ]
     },
