@@ -254,8 +254,7 @@
       "id": "fdri-ch-milfa-01-rs-albedo_1min-plan",
       "output": "fdri-ch-milfa-01-rs-albedo_1min_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo",
-        "fdri-ch-milfa-01-rs-albedo_1min-correction-scalar"
+        "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo"
       ]
     },
     {
@@ -1966,8 +1965,7 @@
       "id": "fdri-ch-trigr-01-rs-albedo_1min-plan",
       "output": "fdri-ch-trigr-01-rs-albedo_1min_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-albedo_1min-calc_albedo",
-        "fdri-ch-trigr-01-rs-albedo_1min-correction-scalar"
+        "fdri-ch-trigr-01-rs-albedo_1min-calc_albedo"
       ]
     },
     {
@@ -3600,8 +3598,7 @@
       "id": "fdri-se-carwe-01-ws-albedo_1min-plan",
       "output": "fdri-se-carwe-01-ws-albedo_1min_processed",
       "steps": [
-        "fdri-se-carwe-01-ws-albedo_1min-calc_albedo",
-        "fdri-se-carwe-01-ws-albedo_1min-correction-scalar"
+        "fdri-se-carwe-01-ws-albedo_1min-calc_albedo"
       ]
     },
     {
