@@ -2276,11 +2276,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 10.0
         }
       ]
     },
@@ -2313,11 +2313,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 10.0
         }
       ]
     },
@@ -2350,11 +2350,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 1.0
         }
       ]
     },
@@ -2387,11 +2387,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 1.0
         }
       ]
     },
@@ -9956,11 +9956,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 10.0
         }
       ]
     },
@@ -9993,11 +9993,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 10.0
         }
       ]
     },
@@ -10030,11 +10030,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 1.0
         }
       ]
     },
@@ -10067,11 +10067,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 1.0
         }
       ]
     },
