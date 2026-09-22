@@ -149,10 +149,10 @@ HEATFLUX_SOIL-MEAN_PROC-WM-2-P1D-P1D,,HEATFLUX_SOIL,WM-2,MEAN,PROC,P1D,P1D,Mean 
 HEATFLUX_SOIL-STDDEV_PREC-WM-2-PT30M-PT30M,,HEATFLUX_SOIL,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of soil heat flux in watts per metre squared over preceding 30 minutes
 HEIGHT_CANOPY-INST-M-PT30M-PT30M,,HEIGHT_CANOPY,M,NONE,INST,PT30M,PT30M,Instantaneous canopy height in metres
 HEIGHT_MEASUREMENT-INST-M-PT30M-PT30M,,HEIGHT_MEASUREMENT,M,NONE,INST,PT30M,PT30M,Instantaneous measurement height in metres
-IRR_RED-MEAN_PREC-W-PER-M2-NanoM-PT15M-PT15M,,IRR_RED,W-PER-M2-NanoM,MEAN,PREC,PT15M,PT15M,Mean red (650nm) irradiance over the preceding 15 minutes in watts per metre squared nanometre
-IRR_RED-MEAN_PROC-W-PER-M2-NanoM-P1D-P1D,,IRR_RED,W-PER-M2-NanoM,MEAN,PROC,P1D,P1D,Mean red (650nm) irradiance over the proceeding day in watts per metre squared nanometre
-IRR_NIR-MEAN_PREC-W-PER-M2-NanoM-PT15M-PT15M,,IRR_NIR,W-PER-M2-NanoM,MEAN,PREC,PT15M,PT15M,Mean near infrared (810nm) irradiance over the preceding 15 minutes in watts per metre squared nanometre
-IRR_NIR-MEAN_PROC-W-PER-M2-NanoM-P1D-P1D,,IRR_NIR,W-PER-M2-NanoM,MEAN,PROC,P1D,P1D,Mean near infrared (810nm) irradiance over the proceeding day in watts per metre squared nanometre
+IRR_RED-MEAN_PREC-W-PER-M2-NanoM-PT15M-PT15M,,IRR_RED,W-PER-M2-NanoM,MEAN,PREC,PT15M,PT15M,Mean red (650nm) irradiance over the preceding 15 minutes in watts per metre squared per nanometre
+IRR_RED-MEAN_PROC-W-PER-M2-NanoM-P1D-P1D,,IRR_RED,W-PER-M2-NanoM,MEAN,PROC,P1D,P1D,Mean red (650nm) irradiance over the proceeding day in watts per metre squared per nanometre
+IRR_NIR-MEAN_PREC-W-PER-M2-NanoM-PT15M-PT15M,,IRR_NIR,W-PER-M2-NanoM,MEAN,PREC,PT15M,PT15M,Mean near infrared (810nm) irradiance over the preceding 15 minutes in watts per metre squared per nanometre
+IRR_NIR-MEAN_PROC-W-PER-M2-NanoM-P1D-P1D,,IRR_NIR,W-PER-M2-NanoM,MEAN,PROC,P1D,P1D,Mean near infrared (810nm) irradiance over the proceeding day in watts per metre squared per nanometre
 LWIN_MULT-INST-UNITLESS-PT30M-PT30M,,LWIN_MULT,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming longwave radiation calibration factor (unitless)
 LWIN_UNC-MEAN_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,MEAN,PREC,PT30M,PT30M,Mean incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
 LWIN_UNC-STDDEV_PREC-WM-2-PT30M-PT30M,,LWIN_UNC,WM-2,STDDEV,PREC,PT30M,PT30M,Standard deviation of incoming longwave radiation uncertainty over preceding 30 minutes in watts per metre squared (uncorrected)
@@ -329,10 +329,10 @@ Q-MEAN_PROC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PROC,P1D,P1D,Mean absolute humidity over t
 Q-STDDEV_PREC-GM-3-PT30M-PT30M,,Q,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre
 QC_FLUX_MOM-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_FLUX_MOM,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for momentum flux over the preceding 30 minutes (unitless)
 QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_HEATFLUX_SENSIBLE,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for sensible heat flux over the preceding 30 minutes (unitless)
-RAD_RED-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean red (650nm) radiance over the preceding 15 minutes in watts per metre squared nanometre
-RAD_RED-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean red (650nm) radiance over the proceeding day in watts per metre squared nanometre
-RAD_NIR-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean near infrared (810nm) radiance over the preceding 15 minutes in watts per metre squared nanometre
-RAD_NIR-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean near infrared (810nm) radiance over the proceeding day in watts per metre squared nanometre
+RAD_RED-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean red (650nm) radiance over the preceding 15 minutes in watts per metre squared per nanometre per steradian
+RAD_RED-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean red (650nm) radiance over the proceeding day in watts per metre squared per nanometre per steradian
+RAD_NIR-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean near infrared (810nm) radiance over the preceding 15 minutes in watts per metre squared per nanometre per steradian
+RAD_NIR-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean near infrared (810nm) radiance over the proceeding day in watts per metre squared per nanometre per steradian
 REV-TOTAL-COUNT,,REVOLUTIONS,UNITLESS,TOTAL,PREC,,,Total number of revolutions counted in measurement Period
 REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,,REVOLUTIONS,RPM,MEAN,PREC,PT1M,PT1M,Mean revolutions over the preceding minute in revolutions per minute
 RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,NONE,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent
