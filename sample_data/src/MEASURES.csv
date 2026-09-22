@@ -361,6 +361,7 @@ SNOWD_DISTANCE_COR-MEAN_PROC-M-P1D-P1D,,SNOWD_DISTANCE_COR,M,MEAN,PROC,P1D,P1D,M
 SNOWD_DISTANCE_UNC-INST-M-PT30M-PT30M,,SNOWD_DISTANCE_UNC,M,NONE,INST,PT30M,PT30M,Instantaneous snow depth in metres (uncorrected)
 SNOWD_SIGNALQUALITY-STDDEV_PREC-UNITLESS-PT30M-PT30M,,SNOWD_SIGNALQUALITY,UNITLESS,STDDEV,PREC,PT30M,PT30M,Standard deviation of snow depth signal quality over the preceding 30 minutes (uncorrected)
 SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,,SOC_BATT,PCT,MEAN,PREC,PT1M,PT1M,Mean battery state of charge over the preceding minute in percent
+SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT1M,PT1M,Mean solar zenith angle over the preceding minute in degrees
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in degrees
 SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees
 SSITC-INST-UNITLESS-PT30M-PT30M,,SSITC,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous steady state and integral turbulence characteristics

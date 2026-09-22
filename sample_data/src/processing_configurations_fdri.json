@@ -753,7 +753,8 @@
       "method": "calc_albedo",
       "dep_ts": [
         "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED",
-        "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED",
+        "FDRI-CH-MILFA-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -6177,6 +6178,24 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
@@ -6186,7 +6205,8 @@
       "method": "calc_albedo",
       "dep_ts": [
         "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED",
-        "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED",
+        "FDRI-CH-TRIGR-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -11388,6 +11408,24 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
@@ -11397,7 +11435,8 @@
       "method": "calc_albedo",
       "dep_ts": [
         "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED",
-        "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED"
+        "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED",
+        "FDRI-SE-CARWE-01-WS-SOLAR_ZENITH_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -12332,6 +12371,24 @@
         {
           "param": "round",
           "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "dep_ts": [
+        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
         }
       ]
     }
