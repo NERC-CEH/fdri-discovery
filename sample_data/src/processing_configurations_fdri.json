@@ -7890,6 +7890,24 @@
       ]
     },
     {
+      "id": "fdri-ch-trigr-01-rs-temp_air_30min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-ch-trigr-01-rs-temp_air_1min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 2
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-trigr-01-rs-tdr310_1_ec_15min-load_raw",
       "type": "load",
       "method": "load",
@@ -11424,6 +11442,23 @@
         {
           "param": "site_attribute",
           "value": "LAT"
+        }
+      ]
+    }
+  ],
+  "FDRI-CH_TRIGR_EC": [
+    {
+      "id": "fdri-ch_trigr_ec-et_30min-latent_heat_to_et",
+      "type": "calculate",
+      "method": "latent_heat_to_et",
+      "dep_ts": [
+        "FDRI-CH_TRIGR_EC-LE_EC_30MIN_RAW",
+        "FDRI-CH-TRIGR-01-RS-TEMP_AIR_30MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
         }
       ]
     }

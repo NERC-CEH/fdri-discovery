@@ -335,6 +335,7 @@ FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED,Outgoing shortwave radiation,CH-TRIGR-0
 FDRI-CH-TRIGR-01-RS-SOLAR_ZENITH_1MIN_PROCESSED,Solar zenith angle,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,SOLAR_ZENITH,time,SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,PROCESSED,,1
 FDRI-CH-TRIGR-01-RS-TEMP_AIR_1MIN_RAW,Air temperature,CH-TRIGR-01,ukceh-dri-staging-ingested,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,,
 FDRI-CH-TRIGR-01-RS-TEMP_AIR_1MIN_PROCESSED,Air temperature,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,one_minute,AirTemp_C,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,TEMP_AIR_FLAG_DEF,
+FDRI-CH-TRIGR-01-RS-TEMP_AIR_30MIN_PROCESSED,Air temperature,CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,thirty_minute,AirTemp_C,time,TEMP_AIR-MEAN_PREC-DEGC-PT30M-PT30M,PROCESSED,TEMP_AIR_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-TDR310_1_EC_15MIN_RAW,Bulk electrical conductivity (5cm depth - TDR),CH-TRIGR-01,ukceh-dri-staging-ingested,fifteen_minute,TDR310_1_avg_EC,time,COND_5-MEAN_PREC-US_CM-1-PT15M-PT15M,RAW,,
 FDRI-CH-TRIGR-01-RS-TDR310_1_EC_15MIN_PROCESSED,Bulk electrical conductivity (5cm depth - TDR),CH-TRIGR-01,ukceh-fdri-staging-timeseries-processed,fifteen_minute,TDR310_1_avg_EC,time,COND_5-MEAN_PREC-US_CM-1-PT15M-PT15M,PROCESSED,TDR310_1_EC_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-TDR310_1_PEC_15MIN_RAW,Pore water electrical conductivity (5cm depth - TDR),CH-TRIGR-01,ukceh-dri-staging-ingested,fifteen_minute,TDR310_1_avg_PEC,time,PORE_WATER_COND_5-MEAN_PREC-US_CM-1-PT15M-PT15M,RAW,,
@@ -487,6 +488,7 @@ FDRI-CH_TRIGR_EC-FETCH_90_EC_30MIN_RAW,Upwind range within which sources/sinks c
 FDRI-CH_TRIGR_EC-FETCH_80_EC_30MIN_RAW,Upwind range within which sources/sinks contributes 80% to the flux,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,FETCH_80,time,FETCH_80-INST-M-PT30M-PT30M,RAW,,
 FDRI-CH_TRIGR_EC-FETCH_70_EC_30MIN_RAW,Upwind range within which sources/sinks contributes 70% to the flux,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,FETCH_70,time,FETCH_70-INST-M-PT30M-PT30M,RAW,,
 FDRI-CH_TRIGR_EC-FETCH_FILTER_EC_30MIN_RAW,Fetch filter,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,FETCH_FILTER,time,DIAG_FLAG-INST-UNITLESS-PT30M-PT30M,RAW,,
+FDRI-CH_TRIGR_EC-ET_30MIN_PROCESSED,Evapotranspiration,CH_TRIGR_EC,ukceh-fdri-staging-timeseries-processed,Flux_AmeriFlux,ET,time,ET-MEAN_PREC-MM-PT30M-PT30M,PROCESSED,ET_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_PROCESSED,Albedo,SE-CARWE-01,ukceh-fdri-staging-timeseries-processed,one_minute,albedo_Avg,time,ALBEDO-MEAN_PREC-UNITLESS-PT1M-PT1M,PROCESSED,ALBEDO_FLAG_DEF,
 FDRI-SE-CARWE-01-WS-BATTSOC_1MIN_RAW,Battery state of charge,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,BattSoC_Avg,time,SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,RAW,,
 FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW,Battery voltage,SE-CARWE-01,ukceh-dri-staging-ingested,one_minute,BattV_Avg,time,VOLTAGE_BATT-MEAN_PREC-V-PT1M-PT1M,RAW,,
