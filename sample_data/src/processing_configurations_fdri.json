@@ -14719,14 +14719,6 @@
   ],
   "FDRI-SE-SVTRP-01-WL": [
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -14751,32 +14743,33 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-distance_to_level",
+      "type": "calculate",
+      "method": "distance_to_level",
+      "dep_ts": [
+        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
+      ],
+      "parameters": [
+        {
+          "param": "sensor_height",
+          "value": 398.24
+        },
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": -100.0
+          "value": 100.0
         }
-      ],
-      "observation_interval": {
-        "start_date": "2025-05-19T00:00:00"
-      }
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
-      "type": "correction",
-      "method": "ADD",
-      "parameters": [
-        {
-          "param": "correction_factor",
-          "value": 398.24
-        }
-      ],
-      "observation_interval": {
-        "start_date": "2025-05-19T00:00:00"
-      }
+      ]
     },
     {
       "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-correction-add",
