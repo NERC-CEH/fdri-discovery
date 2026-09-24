@@ -8,13 +8,10 @@ INSERT {
         ?ds fdri:directDependsOn ?dep .
     }
 } WHERE {
+  # Any configuration argument whose value references a timeseries dataset is a dependency
   ?ds fdri:methodology/dct:hasPart/fdri:configuration/fdri:hasCurrentValue/fdri:argument ?arg .
-  {
-    ?arg fdri:parameter <http://fdri.ceh.ac.uk/ref/common/parameter/dep_ts> . 
-  } UNION {
-    ?arg fdri:parameter <http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts> . 
-  }
   ?arg fdri:hasValue/sdo:valueReference ?dep .
+  ?dep a fdri:TimeSeriesDataset .
 };
 INSERT {
     GRAPH <http://fdri.ceh.ac.uk/id/dataset/dependency-graph> {

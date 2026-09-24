@@ -46,7 +46,19 @@ embedded:
             "@type": "<schema:PropertyValue>"
             "<schema:value>": "{value}"
       "<fdri:hasStructuredValue>": "{structured_items|map_to(StructuredItem)}"
-  
+
+  - name: InputTimeSeriesArgument
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{input}>"
+      "@type": "<fdri:ConfigurationArgument>"
+      "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{input|slug}>"
+      "<fdri:hasValue>":
+        name: InputTimeSeriesValue
+        properties:
+          "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{input}.value>"
+          "@type": "<schema:PropertyValue>"
+          "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{ts|slug}>"
+
 resources:
   - name: DataProcessingConfiguration
     properties:
@@ -78,6 +90,7 @@ resources:
                   "<dcat:startDate>": "{obs_start_date}^^<xsd:dateTime>"
             "<fdri:argument>":
               - "{parameters|map_to(GenericArgument)}"
+              - "{inputs|map_to(InputTimeSeriesArgument)}"
               - name: DepTimeSeries
                 requires:
                   dep_ts:
@@ -94,4 +107,3 @@ resources:
                   "@type": "<fdri:ConfigurationArgument>"
                   "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/load_dep_ts>"
                   "<fdri:hasValue>": "{load_ts|map_to(DepTimeSeriesValue)}"
-
