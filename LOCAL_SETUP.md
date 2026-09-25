@@ -8,7 +8,8 @@ sample data, load it into a triplestore, and serve it through the metadata API.
 The data flows through four stages:
 
 1. **Source data** - raw CSV / JSON / CDL files in `sample_data/`.
-2. **TTL generation** - The `make` command converts the source data into Turtle RDF files in `build/data/`, using
+2. **TTL generation** - The `make` command converts the source data into Turtle RDF files in `build/data/` (and provenance-annotated copies in
+   `build/annotated/`), using
    the `record-spec-tools` Docker image plus the `mapper` / `gridded-mapper` tools.
 3. **Triplestore** - `docker compose up` starts Apache Jena Fuseki on `:3030`, and a loader (`publish-local.sh`)
    publishes the TTL files into it.
@@ -58,7 +59,9 @@ From the `fdri-discovery` repo root, with the mapper venv active:
 make all
 ```
 
-This writes `.ttl` files into `build/data/` and runs some validation.
+This writes `.ttl` files into `build/data/`, annotated copies into `build/annotated/`, and a `build/cleanup.ru` script,
+then runs some validation. The loader in Step 3 needs `build/annotated/` and `build/cleanup.ru`, so run `make all`
+(not `make samples` / `make data`) before starting the stack.
 
 > This can take up to 20 minutes if building from scratch!
 
@@ -99,9 +102,9 @@ docker compose up -d
 This starts, in order:
 
 1. **`fuseki`** - Apache Jena Fuseki triplestore (`secoresearch/fuseki`) on `:3030`, with write operations enabled.
-2. **`loader`** - a one-shot container that runs `publish-local.sh` against the Fuseki container, dropping any existing
-   data and publishing every
-   `build/data/*.ttl` file (plus the ontology and dependency rules). It exits when done.
+2. **`loader`** - a one-shot container that runs `publish-local.sh` against the Fuseki container, publishing every
+   `build/annotated/*.ttl` file (plus the ontology and dependency rules), then running `build/cleanup.ru` to remove
+   graphs left over from older loads. It exits when done.
 
 > This can take up to 5-10 minutes
 
@@ -110,8 +113,8 @@ This starts, in order:
 
 The first run is slow because Maven downloads the dependency tree (cached in `~/.m2` for subsequent runs).
 
-> **Important:** the loader does a `DROP ALL` first, so re-running it always gives you a clean reload of whatever is
-> currently in `build/data/`.
+> **Important:** if `build/` is missing or incomplete, the loader fails and `api` never starts. Check
+> `docker compose logs loader` and re-run `make all`.
 
 ## Verifying it works
 
@@ -144,7 +147,7 @@ docker compose up -d
 docker compose logs -f api
 docker compose logs -f fuseki
 
-# Reload data after regenerating TTL files (make samples), without a full restart
+# Reload data after regenerating TTL files (make all), without a full restart
 docker compose up loader
 
 # Stop everything

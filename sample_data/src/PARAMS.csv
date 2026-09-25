@@ -2,6 +2,37 @@ PARAM_ID,PARAM_NAME,PARAM_DESCRIPTION
 FLAG_TS,Flag Timeseries,The time-series that is flagged by a QC processing method
 DEP_TS,Dependency Timeseries,The time-series that a processing method depends on
 LOAD_DEP_TS,Load Dependency Timeseries,The time-series that a processing method depends on that should be directly loaded
+SWIN,Incoming shortwave radiation,Input time-series of incoming shortwave radiation
+SWOUT,Outgoing shortwave radiation,Input time-series of outgoing shortwave radiation
+LWIN,Incoming longwave radiation,Input time-series of incoming longwave radiation
+LWOUT,Outgoing longwave radiation,Input time-series of outgoing longwave radiation
+LW_UNC,Uncorrected longwave radiation,Input time-series of uncorrected incoming or outgoing longwave radiation
+RN,Net radiation,Input time-series of net radiation
+SOLAR_ZENITH,Solar zenith angle,Input time-series of solar zenith angle
+G,Soil heat flux,Input time-series of corrected soil heat flux
+G1,Soil heat flux 1,Input time-series of soil heat flux from the first heat flux plate
+G2,Soil heat flux 2,Input time-series of soil heat flux from the second heat flux plate
+PA,Atmospheric pressure,Input time-series of atmospheric pressure
+TA,Air temperature,Input time-series of air temperature
+TEMPERATURE,Temperature,Input time-series of the temperature used to correct longwave radiation (air temperature or NR01 sensor temperature)
+RH,Relative humidity,Input time-series of relative humidity
+WS,Wind speed,Input time-series of wind speed
+UX,X component of wind speed,Input time-series of the X component of wind speed
+UY,Y component of wind speed,Input time-series of the Y component of wind speed
+SNOW,Snow day,Input time-series of daily snow day indicators
+PRECIP_TIPPING_A,Precipitation from tip A,Input time-series of precipitation from tip A of a tipping bucket gauge
+PRECIP_TIPPING_B,Precipitation from tip B,Input time-series of precipitation from tip B of a tipping bucket gauge
+COSMOS_VWC,Volumetric water content (CRNS),Input time-series of volumetric water content from a cosmic-ray neutron sensor
+CTS_MOD,Neutron count,Input time-series of neutron counts to be corrected (CRNS or SnowFox)
+CTS_MOD_CORR,Corrected neutron count,Input time-series of corrected neutron counts
+CTS_SMO,Smoothed neutron count,Input time-series of smoothed neutron counts (CRNS or SnowFox)
+CTS_SMO_CRNS,Smoothed neutron count (CRNS),Input time-series of smoothed neutron counts from a cosmic-ray neutron sensor
+CTS_EST_CRNS,Estimated neutron count (CRNS),Input time-series of estimated neutron counts from a cosmic-ray neutron sensor
+CTS_SMO_SNOWFOX,Smoothed neutron count (SnowFox),Input time-series of smoothed neutron counts from a SnowFox sensor
+CTS_EST_SNOWFOX,Estimated neutron count (SnowFox),Input time-series of estimated neutron counts from a SnowFox sensor
+COSMOSFACTOR_INTEN,COSMOS intensity factor,Input time-series of the neutron intensity correction factor
+COSMOSFACTOR_PA,COSMOS pressure factor,Input time-series of the atmospheric pressure correction factor
+COSMOSFACTOR_Q,COSMOS water vapour factor,Input time-series of the water vapour correction factor
 GT,Greater than,Value greater than
 LT,Less than,Value less than
 GE,Equal or greater than,Value equal or greater than
