@@ -9,8 +9,7 @@ INSERT {
     }
 } WHERE {
   # Any configuration argument whose value references a timeseries dataset is a dependency
-  ?ds fdri:methodology/dct:hasPart/fdri:configuration/fdri:hasCurrentValue/fdri:argument ?arg .
-  ?arg fdri:hasValue/sdo:valueReference ?dep .
+  ?ds fdri:methodology/dct:hasPart/fdri:configuration/fdri:hasCurrentValue/fdri:argument/fdri:hasValue/sdo:valueReference ?dep .
   ?dep a fdri:TimeSeriesDataset .
 };
 INSERT {
