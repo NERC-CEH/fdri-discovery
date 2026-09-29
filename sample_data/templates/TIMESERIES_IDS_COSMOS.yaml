@@ -69,6 +69,6 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/distribution/{TIMESERIES_ID|slug}>"
       "@type": "<dcat:Distribution>"
       "<dct:format>": "<http://fdri.ceh.ac.uk/ref/common/format/application_vnd.apache.parquet>"
-      "<dct:accessURL>": "s3://{PROCESSED_SOURCE_BUCKET}/{NETWORK}/dataset={S3_DATASET}/site={SITE_ID}/^^<xsd:anyURI>"
+      "<dct:accessURL>": "s3://{PROCESSED_SOURCE_BUCKET}/{NETWORK}/resolution={S3_DATASET}/site={SITE_ID}/^^<xsd:anyURI>"
       "^<dcat:distribution>": "<::TimeSeriesDataset>"
 
