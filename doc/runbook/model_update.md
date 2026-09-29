@@ -10,7 +10,7 @@ Status: DRAFT
 
 An update to the FDRI Ontology will impact a number of dependent systems and so the roll-out of a new version of the ontology needs to be managed so as to minimise any disruption.
 
-The onotology is currently a dependency for the following systems / aspects of the FDRI project environment:
+The ontology is currently a dependency for the following systems / aspects of the FDRI project environment:
 
 | System | GH Repo | Nature of Dependency | Impact of change |
 |--------|---------|----------------------|------------------|
@@ -37,7 +37,7 @@ From the recordspec schema we currently produce:
 * A modelspec schema to drive the API
 * JSON schemas and JSON-LD context files for validating the RDF data as JSON-LD
 
-The SHACL files are used in the `fdri-discovery` repo to ensure that the outputs of the RDF mappers conform to the model. The target `full_validation` checks the results of the SHACL processor to ensure that there are no reported validation errors. This target should be part of any process that is preparing data to be published into the production environment. Under certain circumstances it may be desirable for the the validation step to be skipped in the staging environment (e.g. when working on trying to address validation errors caused by a change to the ontology). However, best practice would be to always ensure that validation succeeds before merging any work to either the staging or the production branch.
+The SHACL files are used in the `fdri-discovery` repo to ensure that the outputs of the RDF mappers conform to the model. The target `full_validation` checks the results of the SHACL processor to ensure that there are no reported validation errors. This target should be part of any process that is preparing data to be published into the production environment. Under certain circumstances it may be desirable for the validation step to be skipped in the staging environment (e.g. when working on trying to address validation errors caused by a change to the ontology). However, best practice would be to always ensure that validation succeeds before merging any work to either the staging or the production branch.
 
 The modelspec schema is used to drive the API in the `dri-metadata-api` repository. This file is currently manually generated and copied into the repository.
 
@@ -55,11 +55,16 @@ Breaking changes are changes that either result in some existing data becoming i
 
 A model update that contains only non-breaking changes should be safe to roll-out to the staging environment for verification before being rolled out to the production environment. However it is possible (or perhaps even likely) that the non-breaking changes have been made to allow for new features in downstream systems or to support new types of data, in which case the model roll-out could be initially made to the staging environment and remain in that environment until the updates to the downstream systems are completed.
 
-A model update that contains breaking changes should be first rolled out to the staging environment so that the downstream impact of the changes can be addressed before then rolling out the model update and the updated downstream dependencies to the staging environment for verification.
+A model update that contains breaking changes SHOULD include a migration document that describes how existing data can be updated to conform to the new version of the model. A migration script (or scripts) in the form of a tested SPARQL update SHOULD be provided if the migration can be automated. The model update and any migration scripts should be first rolled out to the staging environment so that the downstream impact of the changes can be addressed before then rolling out the model update and the updated downstream dependencies to the staging environment for verification. If data is published from the staging environment into the production environment, the data publication process should be gated to ensure that updates are published until the data is valid against the updated model. If data in the production environment is maintained separately from that in the staging environment, then the migration scripts would need to be applied to the production environment separately from the staging environment.
+
+Migration script development may require taking a copy of staging data into a development/test environment so that the scripts can be fully tested before being deployed into the staging environment. This is especially important if the staging environment is used for data staging and data from the staging environment is published into the production environment.
+
+There are forms of breaking model change that might not be completely automatable. For example when some human decision is needed to populate a new field in the model. These forms of change should be avoided and when necessary clearly flagged ahead of time so that that migration processes can be established.
 
 ## Additional steps to consider
 
-* [x] Ensure a changelog of model updates is maintained. The changelong should note both breaking and non-breaking changes. Where applicable the changelog entry should refer to any GitHub ticket(s) related to the change so that downstream users can better understand the context of and motivation for the change.
+* [x] Ensure a changelog of model updates is maintained. The changelog should note both breaking and non-breaking changes. Where applicable the changelog entry should refer to any GitHub ticket(s) related to the change so that downstream users can better understand the context of and motivation for the change.
 * [ ] Generate a release package in GitHub when the repository is tagged with a release version tag. The release package should contain the source OWL and recordspec files as well as the generated SHACL, JSON Schemas, JSON-LD contexts, and modelspec files.
 * [ ] Update processes in downstream repositories to make use of a release artefact or to include the model repository as a git submodule (at the discretion of the repository owner). Submodules should be pinned to a commit that has been tagged as a release in the model repository.
+* [ ] Cofirm whether data will be published from the staging environment into the production environment, or whether the current process of ingesting into both environments separately will be maintained. This will impact the procedure for model roll-out.
 * [ ] Add a testing framework to the dri-metadata-ingest-config repository that can be used to validate that the output of the ingester conforms to the recordspec schema. This may be able to make use of the SHACL validation rules that can be generated from the recordspec schema. Ideally the testing framework should take representative CSV / JSON inputs for each of the configured endpoints and verify that the output is both conformant to the recordspec schema and matches an expected output. Test inputs and expected outputs should be updated as the templates are modified. As these tests would be dependent on schema, the testing framework should support retrieving a release package of the ontology from the fdri-ontology repository.
