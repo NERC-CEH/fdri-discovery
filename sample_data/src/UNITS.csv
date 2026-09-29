@@ -44,6 +44,8 @@ UNITLESS,Unitless
 US_CM-1,µS/cm
 V,V
 WM-2,Wm-2
+W-PER-M2-NanoM,Wm-2 nm-1
+W-PER-M2-NanoM-SR,Wm-2 sr-1 nm-1
 MicroMOL-PER-M2-SEC,µmol m-2 s-1
 MicroMOL-PER-MOL,μmol/mol
 M2S-2,m2 s-2
