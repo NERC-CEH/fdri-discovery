@@ -751,11 +751,11 @@
       "id": "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo",
       "type": "calculate",
       "method": "calc_albedo",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED",
-        "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED",
-        "FDRI-CH-MILFA-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
-      ],
+      "inputs": {
+        "swin": "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED",
+        "swout": "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED",
+        "solar_zenith": "FDRI-CH-MILFA-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
+      },
       "parameters": [
         {
           "param": "round",
@@ -6183,9 +6183,9 @@
       "id": "fdri-ch-milfa-01-rs-solar_zenith_1min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED"
-      ],
+      "inputs": {
+        "swin": "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED"
+      },
       "parameters": [
         {
           "param": "round",
@@ -6203,11 +6203,11 @@
       "id": "fdri-ch-trigr-01-rs-albedo_1min-calc_albedo",
       "type": "calculate",
       "method": "calc_albedo",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED",
-        "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED",
-        "FDRI-CH-TRIGR-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
-      ],
+      "inputs": {
+        "swin": "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED",
+        "swout": "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED",
+        "solar_zenith": "FDRI-CH-TRIGR-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
+      },
       "parameters": [
         {
           "param": "round",
@@ -11413,9 +11413,9 @@
       "id": "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED"
-      ],
+      "inputs": {
+        "swin": "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED"
+      },
       "parameters": [
         {
           "param": "round",
@@ -11433,11 +11433,11 @@
       "id": "fdri-se-carwe-01-ws-albedo_1min-calc_albedo",
       "type": "calculate",
       "method": "calc_albedo",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED",
-        "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED",
-        "FDRI-SE-CARWE-01-WS-SOLAR_ZENITH_1MIN_PROCESSED"
-      ],
+      "inputs": {
+        "swin": "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED",
+        "swout": "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED",
+        "solar_zenith": "FDRI-SE-CARWE-01-WS-SOLAR_ZENITH_1MIN_PROCESSED"
+      },
       "parameters": [
         {
           "param": "round",
@@ -12378,9 +12378,9 @@
       "id": "fdri-se-carwe-01-ws-solar_zenith_1min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED"
-      ],
+      "inputs": {
+        "swin": "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED"
+      },
       "parameters": [
         {
           "param": "round",
