@@ -14,6 +14,8 @@ G1,Soil heat flux 1,Input time-series of soil heat flux from the first heat flux
 G2,Soil heat flux 2,Input time-series of soil heat flux from the second heat flux plate
 PA,Atmospheric pressure,Input time-series of atmospheric pressure
 TA,Air temperature,Input time-series of air temperature
+Q,Absolute humidity,Input time-series of absolute humidity
+ALBEDO,Albedo,Input time-series of albedo
 TEMPERATURE,Temperature,Input time-series of the temperature used to correct longwave radiation (air temperature or NR01 sensor temperature)
 RH,Relative humidity,Input time-series of relative humidity
 WS,Wind speed,Input time-series of wind speed
@@ -33,6 +35,13 @@ CTS_EST_SNOWFOX,Estimated neutron count (SnowFox),Input time-series of estimated
 COSMOSFACTOR_INTEN,COSMOS intensity factor,Input time-series of the neutron intensity correction factor
 COSMOSFACTOR_PA,COSMOS pressure factor,Input time-series of the atmospheric pressure correction factor
 COSMOSFACTOR_Q,COSMOS water vapour factor,Input time-series of the water vapour correction factor
+BATTV,Battery voltage,Input time-series of logger battery voltage
+SCANS,Number of logger scans,Input time-series of the number of logger scans
+SOIL_TA,Soil temperature,Input time-series of soil temperature
+SENSOR_TA,Sensor temperature,Input time-series of the temperature of a sensor (e.g. NR01 radiometer)
+SENSOR_DIAG,Sensor diagnostic,Input time-series of a sensor's diagnostic flag (e.g. precipitation gauge)
+SIGNAL_QUALITY,Signal quality,Input time-series of a sensor's signal quality number (e.g. snow depth sensor)
+ALT_DATA_SOURCE,Alternative data source,Input time-series used to infill gaps in another time-series
 GT,Greater than,Value greater than
 LT,Less than,Value less than
 GE,Equal or greater than,Value equal or greater than
