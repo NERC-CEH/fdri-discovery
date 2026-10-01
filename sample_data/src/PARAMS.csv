@@ -45,6 +45,7 @@ HEIGHT_CANOPY,Canopy height,Input time-series of canopy height
 H,Sensible heat flux,Input time-series of sensible heat flux
 LATENT_HEAT_FLUX,Latent heat flux,Input time-series of latent heat flux
 QC_FLAG,Quality control flag,Input time-series of quality control flag values
+DIST_TO_WATER,Distance to water,Input time-series of the distance from a sensor down to the water surface
 GT,Greater than,Value greater than
 LT,Less than,Value less than
 GE,Equal or greater than,Value equal or greater than

@@ -14748,9 +14748,9 @@
       "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-distance_to_level",
       "type": "calculate",
       "method": "distance_to_level",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
-      ],
+      "inputs": {
+        "dist_to_water": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "sensor_height",
