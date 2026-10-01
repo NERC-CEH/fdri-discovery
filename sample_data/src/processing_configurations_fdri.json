@@ -15017,9 +15017,9 @@
       "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebri-01-rf-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebri-01-rf-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15065,9 +15065,9 @@
       "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebri-01-rf-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebri-01-rf-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15115,9 +15115,9 @@
       "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebul-01-rf-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebul-01-rf-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15163,9 +15163,9 @@
       "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebul-01-rf-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebul-01-rf-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15213,9 +15213,9 @@
       "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebuu-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15261,9 +15261,9 @@
       "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebuu-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15309,9 +15309,9 @@
       "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebuu-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15357,9 +15357,9 @@
       "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebuu-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15405,9 +15405,9 @@
       "id": "fdri-tw-hebuu-01-wl-water_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-hebuu-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15455,9 +15455,9 @@
       "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menza-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15503,9 +15503,9 @@
       "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menza-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15551,9 +15551,9 @@
       "id": "fdri-tw-menza-01-wl-radar_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menza-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15599,9 +15599,9 @@
       "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menza-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15647,9 +15647,9 @@
       "id": "fdri-tw-menza-01-wl-water_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menza-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15697,9 +15697,9 @@
       "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menzb-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15745,9 +15745,9 @@
       "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menzb-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15793,9 +15793,9 @@
       "id": "fdri-tw-menzb-01-wl-radar_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menzb-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15841,9 +15841,9 @@
       "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menzb-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15889,9 +15889,9 @@
       "id": "fdri-tw-menzb-01-wl-water_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-tw-menzb-01-wl-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
