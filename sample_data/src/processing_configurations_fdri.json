@@ -11451,10 +11451,10 @@
       "id": "fdri-ch_trigr_ec-et_30min-latent_heat_to_et",
       "type": "calculate",
       "method": "latent_heat_to_et",
-      "dep_ts": [
-        "FDRI-CH_TRIGR_EC-LE_EC_30MIN_RAW",
-        "FDRI-CH-TRIGR-01-RS-TEMP_AIR_30MIN_PROCESSED"
-      ],
+      "inputs": {
+        "le": "FDRI-CH_TRIGR_EC-LE_EC_30MIN_RAW",
+        "ta": "FDRI-CH-TRIGR-01-RS-TEMP_AIR_30MIN_PROCESSED"
+      },
       "parameters": [
         {
           "param": "round",
