@@ -367,7 +367,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-ALIC1-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-ALIC1-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-ALIC1-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -2043,7 +2043,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-ALIC1-LWIN_UNC_30MIN_RAW",
-        "temperature": "COSMOS-ALIC1-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-ALIC1-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -2180,7 +2180,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-ALIC1-LWOUT_UNC_30MIN_RAW",
-        "temperature": "COSMOS-ALIC1-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-ALIC1-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -3051,8 +3051,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-ALIC1-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-ALIC1-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-ALIC1-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-ALIC1-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -3656,8 +3656,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-ALIC1-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-ALIC1-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-ALIC1-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-ALIC1-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -5426,7 +5426,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-BALRD-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-BALRD-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-BALRD-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -7892,8 +7892,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-BALRD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-BALRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-BALRD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-BALRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -8497,8 +8497,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-BALRD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-BALRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-BALRD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-BALRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -10656,7 +10656,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-BICKL-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-BICKL-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-BICKL-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -13177,8 +13177,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-BICKL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-BICKL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-BICKL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-BICKL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -13782,8 +13782,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-BICKL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-BICKL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-BICKL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-BICKL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -15941,7 +15941,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-BUNNY-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-BUNNY-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-BUNNY-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -17368,7 +17368,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-BUNNY-LWIN_UNC_30MIN_RAW",
-        "temperature": "COSMOS-BUNNY-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-BUNNY-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -17505,7 +17505,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-BUNNY-LWOUT_UNC_30MIN_RAW",
-        "temperature": "COSMOS-BUNNY-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-BUNNY-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -18500,8 +18500,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-BUNNY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-BUNNY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-BUNNY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-BUNNY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -19105,8 +19105,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-BUNNY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-BUNNY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-BUNNY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-BUNNY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -21294,7 +21294,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-CARDT-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-CARDT-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-CARDT-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -23815,8 +23815,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CARDT-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CARDT-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CARDT-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CARDT-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -24420,8 +24420,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CARDT-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CARDT-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CARDT-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CARDT-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -26859,7 +26859,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-CGARW-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-CGARW-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-CGARW-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -29276,8 +29276,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CGARW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CGARW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CGARW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CGARW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -29311,8 +29311,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-CGARW-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-CGARW-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CGARW-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CGARW-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -30080,8 +30080,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CGARW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CGARW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CGARW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CGARW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -30115,8 +30115,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-CGARW-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-CGARW-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CGARW-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CGARW-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -35402,7 +35402,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-CHIMN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-CHIMN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-CHIMN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -38219,8 +38219,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CHIMN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CHIMN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CHIMN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CHIMN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -38824,8 +38824,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CHIMN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CHIMN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CHIMN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CHIMN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -43590,7 +43590,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-CHOBH-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-CHOBH-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-CHOBH-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -46126,8 +46126,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CHOBH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CHOBH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CHOBH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CHOBH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -46731,8 +46731,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CHOBH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CHOBH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CHOBH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CHOBH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -49170,7 +49170,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-COCHN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-COCHN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-COCHN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -51587,8 +51587,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-COCHN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-COCHN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-COCHN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-COCHN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -51622,8 +51622,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-COCHN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-COCHN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-COCHN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-COCHN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -52391,8 +52391,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-COCHN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-COCHN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-COCHN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-COCHN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -52426,8 +52426,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-COCHN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-COCHN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-COCHN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-COCHN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -57449,7 +57449,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-COCLP-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-COCLP-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-COCLP-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -60021,8 +60021,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-COCLP-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-COCLP-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-COCLP-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-COCLP-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -60626,8 +60626,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-COCLP-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-COCLP-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-COCLP-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-COCLP-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -62785,7 +62785,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-CRICH-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-CRICH-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-CRICH-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -65236,8 +65236,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CRICH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CRICH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CRICH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CRICH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -65841,8 +65841,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-CRICH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-CRICH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-CRICH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-CRICH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -68048,7 +68048,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-EASTB-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-EASTB-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-EASTB-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -70687,8 +70687,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-EASTB-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-EASTB-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-EASTB-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-EASTB-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -70722,8 +70722,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-EASTB-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-EASTB-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-EASTB-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-EASTB-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -71491,8 +71491,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-EASTB-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-EASTB-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-EASTB-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-EASTB-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -71526,8 +71526,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-EASTB-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-EASTB-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-EASTB-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-EASTB-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -73911,7 +73911,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-ELMST-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-ELMST-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-ELMST-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -75338,7 +75338,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-ELMST-LWIN_UNC_30MIN_RAW",
-        "temperature": "COSMOS-ELMST-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-ELMST-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -76159,8 +76159,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-ELMST-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-ELMST-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-ELMST-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-ELMST-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -76764,8 +76764,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-ELMST-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-ELMST-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-ELMST-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-ELMST-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -81993,7 +81993,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-EUSTN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-EUSTN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-EUSTN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -84222,8 +84222,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-EUSTN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-EUSTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-EUSTN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-EUSTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -84827,8 +84827,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-EUSTN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-EUSTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-EUSTN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-EUSTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -90056,7 +90056,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-FINCH-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-FINCH-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-FINCH-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -92355,8 +92355,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-FINCH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-FINCH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-FINCH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-FINCH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -92960,8 +92960,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-FINCH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-FINCH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-FINCH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-FINCH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -98189,7 +98189,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-FIVET-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-FIVET-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-FIVET-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -100418,8 +100418,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-FIVET-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-FIVET-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-FIVET-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-FIVET-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -101023,8 +101023,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-FIVET-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-FIVET-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-FIVET-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-FIVET-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -106100,7 +106100,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-GISBN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-GISBN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-GISBN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -108827,8 +108827,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-GISBN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-GISBN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GISBN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GISBN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -108862,8 +108862,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-GISBN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-GISBN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GISBN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GISBN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -109631,8 +109631,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-GISBN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-GISBN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GISBN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GISBN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -109666,8 +109666,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-GISBN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-GISBN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GISBN-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GISBN-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -111882,7 +111882,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-GLENS-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-GLENS-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-GLENS-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -114521,8 +114521,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-GLENS-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-GLENS-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GLENS-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GLENS-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -114556,8 +114556,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-GLENS-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-GLENS-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GLENS-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GLENS-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -115325,8 +115325,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-GLENS-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-GLENS-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GLENS-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GLENS-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -115360,8 +115360,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-GLENS-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-GLENS-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GLENS-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GLENS-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -117745,7 +117745,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-GLENW-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-GLENW-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-GLENW-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -120154,8 +120154,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-GLENW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-GLENW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GLENW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GLENW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -120759,8 +120759,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-GLENW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-GLENW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-GLENW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-GLENW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -125988,7 +125988,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HADLW-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HADLW-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HADLW-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -128217,8 +128217,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HADLW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HADLW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HADLW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HADLW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -128822,8 +128822,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HADLW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HADLW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HADLW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HADLW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -133819,7 +133819,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HARTW-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HARTW-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HARTW-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -136285,8 +136285,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HARTW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HARTW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HARTW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HARTW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -136890,8 +136890,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HARTW-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HARTW-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HARTW-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HARTW-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -138937,7 +138937,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HARWD-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HARWD-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HARWD-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -140983,8 +140983,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HARWD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HARWD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HARWD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HARWD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -141588,8 +141588,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HARWD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HARWD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HARWD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HARWD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -143375,7 +143375,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HENFS-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HENFS-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HENFS-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -145947,8 +145947,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HENFS-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HENFS-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HENFS-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HENFS-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -146552,8 +146552,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HENFS-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HENFS-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HENFS-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HENFS-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -148943,7 +148943,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HILLB-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HILLB-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HILLB-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -151172,8 +151172,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HILLB-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HILLB-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HILLB-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HILLB-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -151777,8 +151777,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HILLB-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HILLB-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HILLB-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HILLB-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -157006,7 +157006,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HLACY-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HLACY-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HLACY-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -159305,8 +159305,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HLACY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HLACY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HLACY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HLACY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -159910,8 +159910,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HLACY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HLACY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HLACY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HLACY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -164954,7 +164954,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HOLLN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HOLLN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HOLLN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -167794,8 +167794,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HOLLN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HOLLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HOLLN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HOLLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -168399,8 +168399,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HOLLN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HOLLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HOLLN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HOLLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -170805,7 +170805,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-HYBRY-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-HYBRY-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-HYBRY-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -173034,8 +173034,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HYBRY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HYBRY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HYBRY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HYBRY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -173639,8 +173639,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-HYBRY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-HYBRY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-HYBRY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-HYBRY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -178636,7 +178636,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-LIZRD-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-LIZRD-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-LIZRD-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -181087,8 +181087,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-LIZRD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-LIZRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-LIZRD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-LIZRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -181692,8 +181692,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-LIZRD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-LIZRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-LIZRD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-LIZRD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -184115,7 +184115,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-LODTN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-LODTN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-LODTN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -186502,8 +186502,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-LODTN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-LODTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-LODTN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-LODTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -187107,8 +187107,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-LODTN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-LODTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-LODTN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-LODTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -192104,7 +192104,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-LULLN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-LULLN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-LULLN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -194640,8 +194640,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-LULLN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-LULLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-LULLN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-LULLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -195245,8 +195245,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-LULLN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-LULLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-LULLN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-LULLN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -197452,7 +197452,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-MOORH-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-MOORH-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-MOORH-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -200091,8 +200091,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-MOORH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-MOORH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MOORH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MOORH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -200126,8 +200126,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-MOORH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-MOORH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MOORH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MOORH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -200895,8 +200895,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-MOORH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-MOORH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MOORH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MOORH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -200930,8 +200930,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-MOORH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-MOORH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MOORH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MOORH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -203315,7 +203315,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-MOREM-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-MOREM-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-MOREM-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -205614,8 +205614,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-MOREM-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-MOREM-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MOREM-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MOREM-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -206219,8 +206219,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-MOREM-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-MOREM-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MOREM-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MOREM-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -211216,7 +211216,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-MORLY-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-MORLY-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-MORLY-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -213667,8 +213667,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-MORLY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-MORLY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MORLY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MORLY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -214272,8 +214272,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-MORLY-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-MORLY-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-MORLY-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-MORLY-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -216431,7 +216431,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-NWYKE-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-NWYKE-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-NWYKE-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -218882,8 +218882,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-NWYKE-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-NWYKE-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-NWYKE-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-NWYKE-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -219487,8 +219487,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-NWYKE-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-NWYKE-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-NWYKE-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-NWYKE-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -221694,7 +221694,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-PLYNL-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-PLYNL-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-PLYNL-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -223399,7 +223399,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-PLYNL-LWIN_UNC_30MIN_RAW",
-        "temperature": "COSMOS-PLYNL-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-PLYNL-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -223536,7 +223536,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-PLYNL-LWOUT_UNC_30MIN_RAW",
-        "temperature": "COSMOS-PLYNL-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-PLYNL-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -224461,8 +224461,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-PLYNL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-PLYNL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-PLYNL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-PLYNL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -224496,8 +224496,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-PLYNL-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-PLYNL-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-PLYNL-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-PLYNL-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -225265,8 +225265,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-PLYNL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-PLYNL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-PLYNL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-PLYNL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -225300,8 +225300,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-PLYNL-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-PLYNL-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-PLYNL-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-PLYNL-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -227483,7 +227483,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-PORTN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-PORTN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-PORTN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -229934,8 +229934,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-PORTN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-PORTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-PORTN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-PORTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -230539,8 +230539,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-PORTN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-PORTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-PORTN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-PORTN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -232713,7 +232713,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-RDMER-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-RDMER-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-RDMER-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -235164,8 +235164,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-RDMER-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-RDMER-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-RDMER-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-RDMER-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -235769,8 +235769,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-RDMER-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-RDMER-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-RDMER-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-RDMER-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -237928,7 +237928,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-REDHL-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-REDHL-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-REDHL-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -240449,8 +240449,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-REDHL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-REDHL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-REDHL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-REDHL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -241054,8 +241054,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-REDHL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-REDHL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-REDHL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-REDHL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -243445,7 +243445,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-RISEH-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-RISEH-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-RISEH-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -245674,8 +245674,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-RISEH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-RISEH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-RISEH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-RISEH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -246279,8 +246279,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-RISEH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-RISEH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-RISEH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-RISEH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -251276,7 +251276,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-ROTHD-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-ROTHD-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-ROTHD-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -253812,8 +253812,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-ROTHD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-ROTHD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-ROTHD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-ROTHD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -254417,8 +254417,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-ROTHD-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-ROTHD-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-ROTHD-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-ROTHD-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -256872,7 +256872,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-SHEEP-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-SHEEP-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-SHEEP-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -258525,7 +258525,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-SHEEP-LWIN_UNC_30MIN_RAW",
-        "temperature": "COSMOS-SHEEP-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-SHEEP-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -258662,7 +258662,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-SHEEP-LWOUT_UNC_30MIN_RAW",
-        "temperature": "COSMOS-SHEEP-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-SHEEP-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -259727,8 +259727,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SHEEP-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SHEEP-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SHEEP-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SHEEP-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -260332,8 +260332,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SHEEP-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SHEEP-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SHEEP-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SHEEP-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -265161,7 +265161,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-SOURH-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-SOURH-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-SOURH-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -267800,8 +267800,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SOURH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SOURH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SOURH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SOURH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -267835,8 +267835,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SIGMA_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-SOURH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-SOURH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SOURH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SOURH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -268604,8 +268604,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SOURH-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SOURH-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SOURH-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SOURH-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -268639,8 +268639,8 @@
       "type": "calculate",
       "method": "calculate_snowfox_SWE",
       "inputs": {
-        "cts_est_snowfox": "COSMOS-SOURH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
-        "cts_smo_snowfox": "COSMOS-SOURH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SOURH-CTS_EST_SNOWFOX_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SOURH-CTS_SMO_SNOWFOX_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -271024,7 +271024,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-SPENF-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-SPENF-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-SPENF-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -272569,7 +272569,7 @@
       "method": "LW_CORR",
       "inputs": {
         "lw_unc": "COSMOS-SPENF-LWOUT_UNC_30MIN_RAW",
-        "temperature": "COSMOS-SPENF-TA_30MIN_PROCESSED"
+        "ta": "COSMOS-SPENF-TA_30MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -273272,8 +273272,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SPENF-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SPENF-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SPENF-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SPENF-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -273877,8 +273877,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SPENF-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SPENF-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SPENF-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SPENF-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -278936,7 +278936,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-STGHT-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-STGHT-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-STGHT-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -281545,8 +281545,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-STGHT-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-STGHT-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-STGHT-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-STGHT-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -282150,8 +282150,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-STGHT-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-STGHT-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-STGHT-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-STGHT-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -284341,7 +284341,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-STIPS-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-STIPS-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-STIPS-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -286898,8 +286898,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-STIPS-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-STIPS-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-STIPS-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-STIPS-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -287503,8 +287503,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-STIPS-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-STIPS-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-STIPS-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-STIPS-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -289894,7 +289894,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-SYDLG-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-SYDLG-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-SYDLG-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -292193,8 +292193,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SYDLG-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SYDLG-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SYDLG-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SYDLG-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -292798,8 +292798,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-SYDLG-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-SYDLG-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-SYDLG-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-SYDLG-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -297795,7 +297795,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-TADHM-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-TADHM-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-TADHM-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -300246,8 +300246,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-TADHM-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-TADHM-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-TADHM-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-TADHM-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -300851,8 +300851,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-TADHM-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-TADHM-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-TADHM-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-TADHM-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -303298,7 +303298,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-WADDN-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-WADDN-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-WADDN-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -306006,8 +306006,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WADDN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WADDN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WADDN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WADDN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -306611,8 +306611,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WADDN-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WADDN-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WADDN-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WADDN-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -311594,7 +311594,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-WIMPL-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-WIMPL-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-WIMPL-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -313823,8 +313823,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WIMPL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WIMPL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WIMPL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WIMPL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -314428,8 +314428,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WIMPL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WIMPL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WIMPL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WIMPL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -319657,7 +319657,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-WRTTL-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-WRTTL-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-WRTTL-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -321956,8 +321956,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WRTTL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WRTTL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WRTTL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WRTTL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -322561,8 +322561,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WRTTL-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WRTTL-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WRTTL-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WRTTL-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -327438,7 +327438,7 @@
       "method": "calculate_VWC_with_snow",
       "inputs": {
         "cts_mod_corr": "COSMOS-WYTH1-CTS_MOD_CORR_1DAY_PROCESSED",
-        "cts_est_crns": "COSMOS-WYTH1-CTS_EST_CRNS_1DAY_PROCESSED"
+        "cts_est": "COSMOS-WYTH1-CTS_EST_CRNS_1DAY_PROCESSED"
       },
       "parameters": [
         {
@@ -329421,8 +329421,8 @@
       "type": "calculate",
       "method": "calculate_crns_SIGMA_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WYTH1-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WYTH1-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WYTH1-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WYTH1-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {
@@ -330026,8 +330026,8 @@
       "type": "calculate",
       "method": "calculate_crns_SWE",
       "inputs": {
-        "cts_est_crns": "COSMOS-WYTH1-CTS_EST_CRNS_1HOUR_PROCESSED",
-        "cts_smo_crns": "COSMOS-WYTH1-CTS_SMO_CRNS_1HOUR_PROCESSED"
+        "cts_est": "COSMOS-WYTH1-CTS_EST_CRNS_1HOUR_PROCESSED",
+        "cts_smo": "COSMOS-WYTH1-CTS_SMO_CRNS_1HOUR_PROCESSED"
       },
       "parameters": [
         {

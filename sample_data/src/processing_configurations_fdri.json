@@ -11623,7 +11623,8 @@
       "type": "correction",
       "method": "LW_CORR",
       "inputs": {
-        "temperature": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+        "lw_unc": "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW",
+        "ta": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
       },
       "parameters": [
         {
@@ -11655,7 +11656,8 @@
       "type": "correction",
       "method": "LW_CORR",
       "inputs": {
-        "temperature": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+        "lw_unc": "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW",
+        "ta": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
       },
       "parameters": [
         {

@@ -12,6 +12,7 @@ embedded:
       "@id": "<{$parentID}.value>"
       "@type": "<schema:PropertyValue>"
       "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{id|slug}>"
+      "<fdri:valueType>": "<fdri:TimeSeriesDataset>"
 
   - name: StructuredArgument
     properties:
@@ -58,6 +59,7 @@ embedded:
           "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{input}.value>"
           "@type": "<schema:PropertyValue>"
           "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{ts|slug}>"
+          "<fdri:valueType>": "<fdri:TimeSeriesDataset>"
 
 resources:
   - name: DataProcessingConfiguration
