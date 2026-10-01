@@ -4727,5 +4727,62 @@
         "fdri-se-svtrp-01-wl-water_temp_1day-mean"
       ]
     }
+  ],
+  "FDRI-TW-MENZB-01-WL": [
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_radar_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_lev_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-range",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-range",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-radar_temp_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-radar_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-radar_temp_1min-load_raw",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-battery_v",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-range",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_pt_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_lev_pt_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-range",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_temp_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_temp_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_temp_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_temp_1min-range",
+        "fdri-tw-menzb-01-wl-water_temp_1min-spike"
+      ]
+    }
   ]
 }
