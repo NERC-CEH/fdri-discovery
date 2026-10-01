@@ -3,6 +3,7 @@ NONE,No aggregation
 MEAN,Mean
 MAX,Maximum
 MIN,Minimum
+POINT,Representative point
 STDDEV,Standard deviation
 TOTAL,Total
 VAR,Variance
