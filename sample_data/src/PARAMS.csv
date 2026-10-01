@@ -68,3 +68,4 @@ MAX_THRESHOLD
 MIN_THRESHOLD
 WINDOW
 WINDOW_SIZE,Window size,Size of window surrounding datapoint
+SENSOR_HEIGHT,Sensor height,Height of sensor in cm
