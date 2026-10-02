@@ -3605,6 +3605,22 @@
       "steps": [
         "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-temp_air_30min-plan",
+      "output": "fdri-ch-trigr-01-rs-temp_air_30min_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-temp_air_30min-mean"
+      ]
+    }
+  ],
+  "FDRI-CH_TRIGR_EC": [
+    {
+      "id": "fdri-ch_trigr_ec-et_30min-plan",
+      "output": "fdri-ch_trigr_ec-et_30min_processed",
+      "steps": [
+        "fdri-ch_trigr_ec-et_30min-latent_heat_to_et"
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
@@ -4195,16 +4211,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-plan",
-      "output": "fdri-se-fofad-01-pr-styx_neutrons_30min_processed",
-      "input": "fdri-se-fofad-01-pr-styx_neutrons_30min_raw",
-      "steps": [
-        "fdri-se-fofad-01-pr-styx_neutrons_30min-load_raw",
-        "fdri-se-fofad-01-pr-styx_neutrons_30min-battery_v",
-        "fdri-se-fofad-01-pr-styx_neutrons_30min-range"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-temp_air_1min-plan",
       "output": "fdri-se-fofad-01-pr-temp_air_1min_processed",
       "input": "fdri-se-fofad-01-pr-temp_air_1min_raw",
@@ -4641,13 +4647,6 @@
       "output": "fdri-se-fofad-01-pr-fa_ug_muons_1day_processed",
       "steps": [
         "fdri-se-fofad-01-pr-fa_ug_muons_1day-sum"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_1day-plan",
-      "output": "fdri-se-fofad-01-pr-styx_neutrons_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-styx_neutrons_1day-sum"
       ]
     }
   ],
