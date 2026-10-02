@@ -174,3 +174,5 @@ ontology/doc/html/*.png
 
 # Scripts to add dataset configurations for all sites
 scripts/
+
+CLAUDE.md
