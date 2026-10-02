@@ -14987,5 +14987,1151 @@
         }
       ]
     }
+  ],
+  "FDRI-TW-HEBRI-01-RF": [
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebri-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBRI-01-RF-WATER_LEV_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebri-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBRI-01-RF-WATER_VEL_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUL-01-RF": [
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebul-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUL-01-RF-WATER_LEV_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebul-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUL-01-RF-WATER_VEL_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUU-01-WL": [
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-radar_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-water_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-MENZA-01-WL": [
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-water_lev_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-radar_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-water_lev_pt_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-water_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-MENZB-01-WL": [
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-radar_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-water_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
   ]
 }
