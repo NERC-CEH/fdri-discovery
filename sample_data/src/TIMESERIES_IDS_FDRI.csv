@@ -603,17 +603,6 @@ FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_TOT_1MIN_RAW,Accumulated total precipitation (S
 FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_TOT_1MIN_PROCESSED,Accumulated total precipitation (Standard height RG),SE-FOFAD-01-PR,ukceh-dri-staging-processed,PT1M,RainE_Standard_Precip_Tot,time,PRECIP_TOTAL-TOTAL_PREC-MM-PT1M-PT1M,PROCESSED,STDRD_PRECIP_TOT_FLAG_DEF,
 FDRI-SE-FOFAD-01-PR-RH_1MIN_RAW,Relative humidity,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,HMP_RH,time,RH-INST-PCT-PT1M-PT1M,RAW,,
 FDRI-SE-FOFAD-01-PR-RH_1MIN_PROCESSED,Relative humidity,SE-FOFAD-01-PR,ukceh-dri-staging-processed,PT1M,HMP_RH,time,RH-INST-PCT-PT1M-PT1M,PROCESSED,HMP_RH_FLAG_DEF,
-FDRI-SE-FOFAD-01-PR-STYX_CURRENT_RAW,Operating current (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_HV_Current,time,CURRENT-INST-MicroA-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_30MIN_RAW,Neutron count (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Neutron_Count,time,NEUTRON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_30MIN_PROCESSED,Neutron count (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-processed,PT30M,Styx_Neutron_Count,time,NEUTRON_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,PROCESSED,STYX_NEUTRONS_FLAG_DEF,1
-FDRI-SE-FOFAD-01-PR-STYX_PERIOD_30MIN_RAW,Neutron count period (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Count_Period,time,MEASURE_PERIOD-TOTAL_PREC-SEC-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_PULSE_0_15_RAW,Pulse height histogram (0-15 - Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Pulse_0_15,time,PULSE_HEIGHT_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_PULSE_16_31_RAW,Pulse height histogram (16-31 - Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Pulse_16_31,time,PULSE_HEIGHT_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_PULSE_32_47_RAW,Pulse height histogram (32-47 - Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Pulse_32_47,time,PULSE_HEIGHT_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_PULSE_48_63_RAW,Pulse height histogram (48-63 - Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Pulse_48_63,time,PULSE_HEIGHT_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_RH_30MIN_RAW,Internal relative humidity (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_RH,time,RH_SENSOR_INT-INST-PCT-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_TEMP_30MIN_RAW,Internal temperature (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_Temp_C,time,TEMP_SENSOR-INST-DEGC-PT30M-PT30M,RAW,,1
-FDRI-SE-FOFAD-01-PR-STYX_VOLTAGE_RAW,Operating voltage (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,thirty_minute,Styx_HV_Voltage,time,VOLTAGE-INST-V-PT30M-PT30M,RAW,,1
 FDRI-SE-FOFAD-01-PR-TEMP_AIR_1MIN_RAW,Air temperature,SE-FOFAD-01-PR,ukceh-dri-staging-ingested,one_minute,HMP_AirTemp,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,RAW,,
 FDRI-SE-FOFAD-01-PR-TEMP_AIR_1MIN_PROCESSED,Air temperature,SE-FOFAD-01-PR,ukceh-dri-staging-processed,PT1M,HMP_AirTemp,time,TEMP_AIR-INST-DEGC-PT1M-PT1M,PROCESSED,HMP_TEMP_AIR_FLAG_DEF,
 FDRI-SE-FOFAD-01-PR-TEMP_SOIL_0_15MIN_RAW,Soil temperature (5cm depth),SE-FOFAD-01-PR,ukceh-dri-staging-ingested,fifteen_minute,CS655_0_T,time,TEMP_SOIL_5-INST-DEGC-PT15M-PT15M,RAW,,
@@ -919,4 +908,3 @@ FDRI-SE-FOFAD-01-PR-FA_SWE_AREAL_1DAY_PROCESSED,Areal snow water equivalent (Fin
 FDRI-SE-FOFAD-01-PR-FA_SWE_LOCAL_1DAY_PROCESSED,Local snow water equivalent (Finapp),SE-FOFAD-01-PR,ukceh-dri-staging-processed,P1D,FA_SWE_local,time,SWE_LOCAL-MEAN_PROC-PCT-P1D-P1D,PROCESSED,FA_SWE_LOCAL_FLAG_DEF,
 FDRI-SE-FOFAD-01-PR-FA_UG_NEUTRONS_1DAY_PROCESSED,Neutron count (Underground - Finapp),SE-FOFAD-01-PR,ukceh-dri-staging-processed,P1D,FA_ug_neutrons,time,NEUTRON_COUNT-TOTAL_PROC-CTS-P1D-P1D,PROCESSED,FA_UG_NEUTRONS_FLAG_DEF,
 FDRI-SE-FOFAD-01-PR-FA_UG_MUONS_1DAY_PROCESSED,Muon count (Underground - Finapp),SE-FOFAD-01-PR,ukceh-dri-staging-processed,P1D,FA_ug_muons,time,MUON_COUNT-TOTAL_PROC-CTS-P1D-P1D,PROCESSED,FA_UG_MUONS_FLAG_DEF,
-FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_1DAY_PROCESSED,Neutron count (Styx),SE-FOFAD-01-PR,ukceh-dri-staging-processed,P1D,Styx_Neutron_Count,time,NEUTRON_COUNT-TOTAL_PROC-CTS-P1D-P1D,PROCESSED,STYX_NEUTRONS_FLAG_DEF,1

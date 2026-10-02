@@ -13497,43 +13497,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-styx_neutrons_30min_raw"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "inputs": {
-        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
-      },
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 100.0
-        },
-        {
-          "param": "gt",
-          "value": 2000.0
-        }
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-temp_air_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -14731,20 +14694,6 @@
       "method": "sum",
       "dep_ts": [
         "FDRI-SE-FOFAD-01-PR-FA_UG_MUONS_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_30MIN_PROCESSED"
       ],
       "parameters": [
         {
