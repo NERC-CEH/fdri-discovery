@@ -583,6 +583,7 @@ WATER_TEMP-MEAN_PREC-DEGC-PT1M-PT1M,,WATER_TEMP,DEGC,MEAN,PREC,PT1M,PT1M,Mean wa
 WATER_TEMP-MEAN_PROC-DEGC-P1D-P1D,,WATER_TEMP,DEGC,MEAN,PROC,P1D,P1D,Mean water temperature over proceeding day in degrees Celsius,,
 WATER_TEMP-MEAN-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,MEAN,PREC,,,Mean water temperature in degrees Celsius,,
 WATER_VELOCITY-INST-MS-1-PT1M-PT1M,,WATER_VELOCITY,MS-1,NONE,INST,PT1M,PT1M,Instantaneous water velocity over the preceding minute in metres per second,,
+WATER_VELOCITY-MEAN_PROC-MS-1-P1D-P1D,,WATER_VELOCITY,MS-1,MEAN,PROC,P1D,P1D,Mean water velocity over proceeding day in metres per second,,
 WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,NONE,INST,,,Instantaneous water velocity in metres per second,,
 WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,PREC,,,Maximum water velocity in metres per second,,
 WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,PREC,,,Mean water velocity in metres per second,,

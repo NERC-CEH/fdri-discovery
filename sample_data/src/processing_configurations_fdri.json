@@ -15054,6 +15054,20 @@
       ]
     },
     {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBRI-01-RF-WATER_LEV_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
       "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -15098,6 +15112,20 @@
         {
           "param": "gt",
           "value": 3.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBRI-01-RF-WATER_VEL_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
         }
       ]
     }
@@ -15152,6 +15180,20 @@
       ]
     },
     {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUL-01-RF-WATER_LEV_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
       "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -15196,6 +15238,20 @@
         {
           "param": "gt",
           "value": 3.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUL-01-RF-WATER_VEL_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
         }
       ]
     }
@@ -15440,6 +15496,62 @@
           "value": 4.0
         }
       ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
     }
   ],
   "FDRI-TW-MENZA-01-WL": [
@@ -15682,6 +15794,62 @@
           "value": 4.0
         }
       ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
     }
   ],
   "FDRI-TW-MENZB-01-WL": [
@@ -15922,6 +16090,62 @@
         {
           "param": "gt",
           "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
         }
       ]
     }
