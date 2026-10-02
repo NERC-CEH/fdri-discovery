@@ -3605,6 +3605,22 @@
       "steps": [
         "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-temp_air_30min-plan",
+      "output": "fdri-ch-trigr-01-rs-temp_air_30min_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-temp_air_30min-mean"
+      ]
+    }
+  ],
+  "FDRI-CH_TRIGR_EC": [
+    {
+      "id": "fdri-ch_trigr_ec-et_30min-plan",
+      "output": "fdri-ch_trigr_ec-et_30min_processed",
+      "steps": [
+        "fdri-ch_trigr_ec-et_30min-latent_heat_to_et"
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
