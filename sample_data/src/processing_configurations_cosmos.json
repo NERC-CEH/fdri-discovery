@@ -4931,9 +4931,6 @@
       "id": "cosmos-alic1-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-ALIC1-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -10161,9 +10158,6 @@
       "id": "cosmos-balrd-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-BALRD-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -15446,9 +15440,6 @@
       "id": "cosmos-bickl-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-BICKL-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -20799,9 +20790,6 @@
       "id": "cosmos-bunny-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-BUNNY-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -26084,9 +26072,6 @@
       "id": "cosmos-cardt-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-CARDT-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -34365,9 +34350,6 @@
       "id": "cosmos-cgarw-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-CGARW-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -43095,9 +43077,6 @@
       "id": "cosmos-chimn-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-CHIMN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -48395,9 +48374,6 @@
       "id": "cosmos-chobh-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-CHOBH-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -56676,9 +56652,6 @@
       "id": "cosmos-cochn-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-COCHN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -62290,9 +62263,6 @@
       "id": "cosmos-coclp-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-COCLP-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -67505,9 +67475,6 @@
       "id": "cosmos-crich-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-CRICH-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -73184,9 +73151,6 @@
       "id": "cosmos-eastb-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-EASTB-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -81020,9 +80984,6 @@
       "id": "cosmos-elmst-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-ELMST-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -89083,9 +89044,6 @@
       "id": "cosmos-eustn-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-EUSTN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -97216,9 +97174,6 @@
       "id": "cosmos-finch-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-FINCH-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -105279,9 +105234,6 @@
       "id": "cosmos-fivet-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-FIVET-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -111339,9 +111291,6 @@
       "id": "cosmos-gisbn-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-GISBN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -117018,9 +116967,6 @@
       "id": "cosmos-glens-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-GLENS-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -125015,9 +124961,6 @@
       "id": "cosmos-glenw-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-GLENW-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -133078,9 +133021,6 @@
       "id": "cosmos-hadlw-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HADLW-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -138554,9 +138494,6 @@
       "id": "cosmos-hartw-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HARTW-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -142848,9 +142785,6 @@
       "id": "cosmos-harwd-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HARWD-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -148216,9 +148150,6 @@
       "id": "cosmos-henfs-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HENFS-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -156033,9 +155964,6 @@
       "id": "cosmos-hillb-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HILLB-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -164166,9 +164094,6 @@
       "id": "cosmos-hlacy-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HLACY-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -170078,9 +170003,6 @@
       "id": "cosmos-holln-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HOLLN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -177895,9 +177817,6 @@
       "id": "cosmos-hybry-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-HYBRY-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -183356,9 +183275,6 @@
       "id": "cosmos-lizrd-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-LIZRD-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -191363,9 +191279,6 @@
       "id": "cosmos-lodtn-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-LODTN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -196909,9 +196822,6 @@
       "id": "cosmos-lulln-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-LULLN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -202588,9 +202498,6 @@
       "id": "cosmos-moorh-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-MOORH-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -210475,9 +210382,6 @@
       "id": "cosmos-morem-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-MOREM-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -215936,9 +215840,6 @@
       "id": "cosmos-morly-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-MORLY-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -221151,9 +221052,6 @@
       "id": "cosmos-nwyke-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-NWYKE-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -226988,9 +226886,6 @@
       "id": "cosmos-plynl-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-PLYNL-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -232218,9 +232113,6 @@
       "id": "cosmos-portn-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-PORTN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -237433,9 +237325,6 @@
       "id": "cosmos-rdmer-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-RDMER-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -242718,9 +242607,6 @@
       "id": "cosmos-redhl-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-REDHL-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -250535,9 +250421,6 @@
       "id": "cosmos-riseh-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-RISEH-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -256081,9 +255964,6 @@
       "id": "cosmos-rothd-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-ROTHD-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -264618,9 +264498,6 @@
       "id": "cosmos-sheep-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-SHEEP-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -270297,9 +270174,6 @@
       "id": "cosmos-sourh-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-SOURH-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -278163,9 +278037,6 @@
       "id": "cosmos-spenf-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-SPENF-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -283814,9 +283685,6 @@
       "id": "cosmos-stght-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-STGHT-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -289167,9 +289035,6 @@
       "id": "cosmos-stips-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-STIPS-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -297054,9 +296919,6 @@
       "id": "cosmos-sydlg-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-SYDLG-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -302515,9 +302377,6 @@
       "id": "cosmos-tadhm-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-TADHM-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -310867,9 +310726,6 @@
       "id": "cosmos-waddn-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-WADDN-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -318684,9 +318540,6 @@
       "id": "cosmos-wimpl-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-WIMPL-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -326817,9 +326670,6 @@
       "id": "cosmos-wrttl-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-WRTTL-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
@@ -331286,9 +331136,6 @@
       "id": "cosmos-wyth1-solar_zenith_30min-solar_zenith",
       "type": "calculate",
       "method": "solar_zenith",
-      "inputs": {
-        "swin": "COSMOS-WYTH1-SWIN_30MIN_PROCESSED"
-      },
       "parameters": [
         {
           "param": "round",
