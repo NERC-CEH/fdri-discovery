@@ -772,9 +772,13 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-scalar",
+      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
       "type": "correction",
-      "method": "SCALAR",
+      "method": "LW_CORR",
+      "inputs": {
+        "lw_unc": "FDRI-CH-MILFA-01-RS-LWIN_1MIN_RAW",
+        "ta": "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "correction_factor",
@@ -820,9 +824,13 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-scalar",
+      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
       "type": "correction",
-      "method": "SCALAR",
+      "method": "LW_CORR",
+      "inputs": {
+        "lw_unc": "FDRI-CH-MILFA-01-RS-LWOUT_1MIN_RAW",
+        "ta": "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "correction_factor",
@@ -6454,9 +6462,13 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-scalar",
+      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
       "type": "correction",
-      "method": "SCALAR",
+      "method": "LW_CORR",
+      "inputs": {
+        "lw_unc": "FDRI-CH-TRIGR-01-RS-LWIN_1MIN_RAW",
+        "ta": "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "correction_factor",
@@ -6465,9 +6477,13 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-scalar",
+      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
       "type": "correction",
-      "method": "SCALAR",
+      "method": "LW_CORR",
+      "inputs": {
+        "lw_unc": "FDRI-CH-TRIGR-01-RS-LWOUT_1MIN_RAW",
+        "ta": "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "correction_factor",
@@ -11634,21 +11650,7 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-scalar",
-      "type": "correction",
-      "method": "SCALAR",
-      "parameters": [
-        {
-          "param": "correction_factor",
-          "value": 83.05648
-        }
-      ],
-      "observation_interval": {
-        "start_date": "2026-08-17T14:10:00"
-      }
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr_01",
       "type": "correction",
       "method": "LW_CORR",
       "inputs": {
@@ -11667,13 +11669,17 @@
       }
     },
     {
-      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-scalar",
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr_02",
       "type": "correction",
-      "method": "SCALAR",
+      "method": "LW_CORR",
+      "inputs": {
+        "lw_unc": "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW",
+        "ta": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "correction_factor",
-          "value": 80.90615
+          "value": 83.05648
         }
       ],
       "observation_interval": {
@@ -11681,7 +11687,7 @@
       }
     },
     {
-      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr_01",
       "type": "correction",
       "method": "LW_CORR",
       "inputs": {
@@ -11697,6 +11703,24 @@
       "observation_interval": {
         "start_date": "2025-06-13T00:00:00",
         "end_date": "2026-08-17T14:09:00"
+      }
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr_02",
+      "type": "correction",
+      "method": "LW_CORR",
+      "inputs": {
+        "lw_unc": "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW",
+        "ta": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      },
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 80.90615
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
       }
     },
     {
