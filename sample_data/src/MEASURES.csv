@@ -8,8 +8,7 @@ ALBEDO-MEAN_PROC-PCT-P1D-P1D,,ALBEDO,PCT,MEAN,PROC,P1D,P1D,Mean albedo over the 
 ALBEDO-MEAN_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN,PROC,P1D,P1D,Mean albedo over the proceeding day,0,1
 ALBEDO-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,STDDEV,PROC,P1D,P1D,Standard deviation of albedo over the proceeding day,0,1
 ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,PREC,,,Mean angular velocity in revolutions per second,,
-BUCKET_LEVEL_NRT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_NRT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (non-real-time) in millimetres,0,
-BUCKET_LEVEL_RT-INST-MM-PT1M-PT1M,,BUCKET_LEVEL_RT,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level (real-time) in millimetres,0,
+BUCKET_LEVEL-INST-MM-PT1M-PT1M,,BUCKET_LEVEL,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level in millimetres,0,
 CO2_FLUX-INST-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,NONE,INST,PT30M,PT30M,Instantaneous CO2 flux in micromoles per metre squared per second,,
 CO2_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean CO2 flux over the preceding 30 minutes in micromoles per metre squared per second,,
 CO2_FRAC-MEAN_PREC-MicroMOL-PER-MOL-PT30M-PT30M,,CO2_FRAC,MicroMOL-PER-MOL,MEAN,PREC,PT30M,PT30M,Mean CO2 fraction over the preceding 30 minutes in micromoles per mol,,
