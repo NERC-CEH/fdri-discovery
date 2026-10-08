@@ -311,8 +311,6 @@ Q-MEAN_PREC-GM-3-PT1H-PT1H,,Q,GM-3,MEAN,PREC,PT1H,PT1H,Mean absolute humidity ov
 Q-MEAN_PREC-GM-3-PT30M-PT30M,,Q,GM-3,MEAN,PREC,PT30M,PT30M,Mean absolute humidity over the preceding 30 minutes in grams per cubic metre,0,
 Q-MEAN_PROC-GM-3-P1D-P1D,,Q,GM-3,MEAN,PROC,P1D,P1D,Mean absolute humidity over the proceeding day in grams per cubic metre,0,
 Q-STDDEV_PREC-GM-3-PT30M-PT30M,,Q,GM-3,STDDEV,PREC,PT30M,PT30M,Standard deviation of absolute humidity over the preceding 30 minutes in grams per cubic metre,0,
-QC_FLUX_MOM-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_FLUX_MOM,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for momentum flux over the preceding 30 minutes (unitless),,
-QC_HEATFLUX_SENSIBLE-MEAN_PREC-UNITLESS-PT30M-PT30M,,QC_HEATFLUX_SENSIBLE,UNITLESS,MEAN,PREC,PT30M,PT30M,Quality flag for sensible heat flux over the preceding 30 minutes (unitless),,
 RAD_NIR-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean near infrared (810nm) radiance over the preceding 15 minutes in watts per metre squared per nanometre per steradian,,
 RAD_NIR-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean near infrared (810nm) radiance over the proceeding day in watts per metre squared per nanometre per steradian,,
 RAD_RED-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean red (650nm) radiance over the preceding 15 minutes in watts per metre squared per nanometre per steradian,,
