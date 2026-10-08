@@ -4724,5 +4724,336 @@
         "fdri-se-svtrp-01-wl-water_temp_1day-mean"
       ]
     }
+  ],
+  "FDRI-TW-HEBRI-01-RF": [
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-plan",
+      "output": "fdri-tw-hebri-01-rf-water_lev_hy_1min_processed",
+      "input": "fdri-tw-hebri-01-rf-water_lev_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-load_raw",
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-battery_v",
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-range",
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1day-plan",
+      "output": "fdri-tw-hebri-01-rf-water_lev_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_lev_hy_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-plan",
+      "output": "fdri-tw-hebri-01-rf-water_vel_hy_1min_processed",
+      "input": "fdri-tw-hebri-01-rf-water_vel_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-load_raw",
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-battery_v",
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-range",
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1day-plan",
+      "output": "fdri-tw-hebri-01-rf-water_vel_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_vel_hy_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUL-01-RF": [
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-plan",
+      "output": "fdri-tw-hebul-01-rf-water_lev_hy_1min_processed",
+      "input": "fdri-tw-hebul-01-rf-water_lev_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-load_raw",
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-battery_v",
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-range",
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1day-plan",
+      "output": "fdri-tw-hebul-01-rf-water_lev_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_lev_hy_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-plan",
+      "output": "fdri-tw-hebul-01-rf-water_vel_hy_1min_processed",
+      "input": "fdri-tw-hebul-01-rf-water_vel_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-load_raw",
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-battery_v",
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-range",
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1day-plan",
+      "output": "fdri-tw-hebul-01-rf-water_vel_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_vel_hy_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUU-01-WL": [
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_radar_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-water_lev_radar_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-range",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-range",
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-radar_temp_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-radar_temp_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-range",
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_pt_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-water_lev_pt_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-range",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_temp_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-water_temp_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_temp_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_temp_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-water_temp_1min-range",
+        "fdri-tw-hebuu-01-wl-water_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-radar_temp_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-radar_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_radar_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_temp_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-MENZA-01-WL": [
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_radar_1min_processed",
+      "input": "fdri-tw-menza-01-wl-water_lev_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-range",
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-tw-menza-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-tw-menza-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-range",
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-plan",
+      "output": "fdri-tw-menza-01-wl-radar_temp_1min_processed",
+      "input": "fdri-tw-menza-01-wl-radar_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-radar_temp_1min-load_raw",
+        "fdri-tw-menza-01-wl-radar_temp_1min-battery_v",
+        "fdri-tw-menza-01-wl-radar_temp_1min-range",
+        "fdri-tw-menza-01-wl-radar_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_pt_1min_processed",
+      "input": "fdri-tw-menza-01-wl-water_lev_pt_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-battery_v",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-range",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-plan",
+      "output": "fdri-tw-menza-01-wl-water_temp_1min_processed",
+      "input": "fdri-tw-menza-01-wl-water_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_temp_1min-load_raw",
+        "fdri-tw-menza-01-wl-water_temp_1min-battery_v",
+        "fdri-tw-menza-01-wl-water_temp_1min-range",
+        "fdri-tw-menza-01-wl-water_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1day-plan",
+      "output": "fdri-tw-menza-01-wl-radar_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-radar_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1day-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_radar_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1day-plan",
+      "output": "fdri-tw-menza-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_temp_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-MENZB-01-WL": [
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_radar_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_lev_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-range",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-range",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-radar_temp_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-radar_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-radar_temp_1min-load_raw",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-battery_v",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-range",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_pt_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_lev_pt_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-range",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_temp_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_temp_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_temp_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_temp_1min-range",
+        "fdri-tw-menzb-01-wl-water_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-radar_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-radar_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_radar_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_temp_1day-mean"
+      ]
+    }
   ]
 }
