@@ -156,7 +156,7 @@ VOLTAGE,Voltage,SENSOR,VOLTAGE,
 VOLTAGE_BATT,Battery voltage,BATTERY,VOLTAGE,
 VOLTAGE_RATIO,Voltage ratio,SENSOR,RATIO,
 VPD,Vapour pressure deficit,AIR,VAPOUR-PRESSURE-DEFICIT,
-VWC_AREA,Volumetric water content over large area,SOIL,VWC,CRNS
+VWC_AREA,Volumetric water content over large area,SOIL,VWC,
 VWC_SOIL,Soil volumetric water content,SOIL,VWC,
 VWC_SOIL_10,Soil volumetric water content at 10 cm depth,SOIL,VWC,
 VWC_SOIL_15,Soil volumetric water content at 15 cm depth,SOIL,VWC,
