@@ -96,6 +96,7 @@ SAMPLES += $(TTL_BASE)/FDRI_FLAG_SCHEMES.ttl
 SAMPLES += $(TTL_BASE)/fdri_ts_parameters.ttl
 SAMPLES += $(TTL_BASE)/processing_configurations_fdri.ttl
 SAMPLES += $(TTL_BASE)/processing_plans_fdri.ttl
+SAMPLES += $(TTL_BASE)/timeseries_flags_fdri.ttl
 
 # Gridded Data Samples
 SAMPLES += $(TTL_BASE)/chess-met_dtr.ttl
@@ -154,7 +155,7 @@ default: data
 
 data: build/activity-start.ttl .WAIT validate reports full_validation .WAIT build/data/activity-$(ACTIVITY_ID).ttl
 
-all: build/activity-start.ttl .WAIT validate schemas contexts reports full_validation .WAIT $(ANNOTATED) build/annotated/activity-$(ACTIVITY_ID).ttl
+all: build/activity-start.ttl .WAIT validate schemas contexts reports full_validation .WAIT $(ANNOTATED) build/annotated/activity-$(ACTIVITY_ID).ttl $(CLEANUP_SCRIPT)
 
 pull:
 	docker pull $(IMAGE)

@@ -94,13 +94,6 @@
       "steps": [
         "fdri-ch-chops-01-rg-stdrd_precip_1day-sum"
       ]
-    },
-    {
-      "id": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-plan",
-      "output": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-sum"
-      ]
     }
   ],
   "FDRI-CH-KADEN-01-BH": [
@@ -260,12 +253,8 @@
     {
       "id": "fdri-ch-milfa-01-rs-albedo_1min-plan",
       "output": "fdri-ch-milfa-01-rs-albedo_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-albedo_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-albedo_1min-load_raw",
-        "fdri-ch-milfa-01-rs-albedo_1min-battery_v",
-        "fdri-ch-milfa-01-rs-albedo_1min-range",
-        "fdri-ch-milfa-01-rs-albedo_1min-spike"
+        "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo"
       ]
     },
     {
@@ -274,7 +263,7 @@
       "input": "fdri-ch-milfa-01-rs-lwin_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwin_1min-load_raw",
-        "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
+        "fdri-ch-milfa-01-rs-lwin_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwin_1min-range"
       ]
@@ -285,7 +274,7 @@
       "input": "fdri-ch-milfa-01-rs-lwout_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-lwout_1min-load_raw",
-        "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
+        "fdri-ch-milfa-01-rs-lwout_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-lwout_1min-battery_v",
         "fdri-ch-milfa-01-rs-lwout_1min-range"
       ]
@@ -296,6 +285,7 @@
       "input": "fdri-ch-milfa-01-rs-swin_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-swin_1min-load_raw",
+        "fdri-ch-milfa-01-rs-swin_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-swin_1min-battery_v",
         "fdri-ch-milfa-01-rs-swin_1min-range"
       ]
@@ -306,6 +296,7 @@
       "input": "fdri-ch-milfa-01-rs-swout_1min_raw",
       "steps": [
         "fdri-ch-milfa-01-rs-swout_1min-load_raw",
+        "fdri-ch-milfa-01-rs-swout_1min-correction-scalar",
         "fdri-ch-milfa-01-rs-swout_1min-battery_v",
         "fdri-ch-milfa-01-rs-swout_1min-range"
       ]
@@ -618,43 +609,43 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swin_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_swin_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwin_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_lwin_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swout_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_swout_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwout_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_lwout_15min_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_processed",
+      "input": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min-range"
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-load_raw",
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-battery_v",
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-range"
       ]
     },
     {
@@ -1304,13 +1295,6 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-sum"
-      ]
-    },
-    {
       "id": "fdri-ch-milfa-01-rs-ppfd_in_1day-plan",
       "output": "fdri-ch-milfa-01-rs-ppfd_in_1day_processed",
       "steps": [
@@ -1556,31 +1540,31 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swin_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swin_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwin_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwin_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_swout_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_swout_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_lwout_1day_processed",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-plan",
+      "output": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_lwout_1day-sum"
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-mean"
       ]
     },
     {
@@ -1974,18 +1958,21 @@
       "steps": [
         "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day-mean"
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-solar_zenith_1min-plan",
+      "output": "fdri-ch-milfa-01-rs-solar_zenith_1min_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rs-solar_zenith_1min-solar_zenith"
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
     {
       "id": "fdri-ch-trigr-01-rs-albedo_1min-plan",
       "output": "fdri-ch-trigr-01-rs-albedo_1min_processed",
-      "input": "fdri-ch-trigr-01-rs-albedo_1min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-albedo_1min-load_raw",
-        "fdri-ch-trigr-01-rs-albedo_1min-battery_v",
-        "fdri-ch-trigr-01-rs-albedo_1min-range",
-        "fdri-ch-trigr-01-rs-albedo_1min-spike"
+        "fdri-ch-trigr-01-rs-albedo_1min-calc_albedo"
       ]
     },
     {
@@ -2055,7 +2042,7 @@
       "input": "fdri-ch-trigr-01-rs-lwin_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-lwin_1min-load_raw",
-        "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
+        "fdri-ch-trigr-01-rs-lwin_1min-correction-scalar",
         "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
         "fdri-ch-trigr-01-rs-lwin_1min-range"
       ]
@@ -2066,7 +2053,7 @@
       "input": "fdri-ch-trigr-01-rs-lwout_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-lwout_1min-load_raw",
-        "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
+        "fdri-ch-trigr-01-rs-lwout_1min-correction-scalar",
         "fdri-ch-trigr-01-rs-lwout_1min-battery_v",
         "fdri-ch-trigr-01-rs-lwout_1min-range"
       ]
@@ -2379,6 +2366,7 @@
       "input": "fdri-ch-trigr-01-rs-swin_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-swin_1min-load_raw",
+        "fdri-ch-trigr-01-rs-swin_1min-correction-scalar",
         "fdri-ch-trigr-01-rs-swin_1min-battery_v",
         "fdri-ch-trigr-01-rs-swin_1min-range"
       ]
@@ -2389,6 +2377,7 @@
       "input": "fdri-ch-trigr-01-rs-swout_1min_raw",
       "steps": [
         "fdri-ch-trigr-01-rs-swout_1min-load_raw",
+        "fdri-ch-trigr-01-rs-swout_1min-correction-scalar",
         "fdri-ch-trigr-01-rs-swout_1min-battery_v",
         "fdri-ch-trigr-01-rs-swout_1min-range"
       ]
@@ -2783,72 +2772,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_7_temp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_7_temp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_7_temp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_7_temp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_7_temp_15min-range",
-        "fdri-ch-trigr-01-rs-teros22_7_temp_15min-spike"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_8_temp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_8_temp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_8_temp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_8_temp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_8_temp_15min-range",
-        "fdri-ch-trigr-01-rs-teros22_8_temp_15min-spike"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_9_temp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_9_temp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_9_temp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_9_temp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_9_temp_15min-range",
-        "fdri-ch-trigr-01-rs-teros22_9_temp_15min-spike"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_10_temp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_10_temp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_10_temp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_10_temp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_10_temp_15min-range",
-        "fdri-ch-trigr-01-rs-teros22_10_temp_15min-spike"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_11_temp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_11_temp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_11_temp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_11_temp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_11_temp_15min-range",
-        "fdri-ch-trigr-01-rs-teros22_11_temp_15min-spike"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_12_temp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_12_temp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_12_temp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_12_temp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_12_temp_15min-range",
-        "fdri-ch-trigr-01-rs-teros22_12_temp_15min-spike"
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-teros22_1_mp_15min-plan",
       "output": "fdri-ch-trigr-01-rs-teros22_1_mp_15min_processed",
       "input": "fdri-ch-trigr-01-rs-teros22_1_mp_15min_raw",
@@ -2909,66 +2832,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_7_mp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_7_mp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_7_mp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_7_mp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_7_mp_15min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_8_mp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_8_mp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_8_mp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_8_mp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_8_mp_15min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_9_mp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_9_mp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_9_mp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_9_mp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_9_mp_15min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_10_mp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_10_mp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_10_mp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_10_mp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_10_mp_15min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_11_mp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_11_mp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_11_mp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_11_mp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_11_mp_15min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_12_mp_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-teros22_12_mp_15min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_12_mp_15min-load_raw",
-        "fdri-ch-trigr-01-rs-teros22_12_mp_15min-battery_v",
-        "fdri-ch-trigr-01-rs-teros22_12_mp_15min-range"
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-g1_15min-plan",
       "output": "fdri-ch-trigr-01-rs-g1_15min_processed",
       "input": "fdri-ch-trigr-01-rs-g1_15min_raw",
@@ -3024,43 +2887,43 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swin_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_swin_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwin_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_lwin_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swout_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_swout_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwout_15min_processed",
-      "input": "fdri-ch-trigr-01-rs-ndvi_lwout_15min_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min_processed",
+      "input": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min_raw",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min-load_raw",
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min-battery_v",
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min-range"
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-load_raw",
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-battery_v",
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-range"
       ]
     },
     {
@@ -3146,13 +3009,6 @@
       "output": "fdri-ch-trigr-01-rs-stdrd_precip_1day_processed",
       "steps": [
         "fdri-ch-trigr-01-rs-stdrd_precip_1day-sum"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-sum"
       ]
     },
     {
@@ -3478,90 +3334,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_7_mp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_7_mp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_7_temp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_7_temp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_8_mp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_8_mp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_8_temp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_8_temp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_9_mp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_9_mp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_9_temp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_9_temp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_10_mp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_10_mp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_10_temp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_10_temp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_11_mp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_11_mp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_11_temp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_11_temp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_12_mp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_12_mp_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-teros22_12_temp_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-teros22_12_temp_1day-mean"
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-g1_1day-plan",
       "output": "fdri-ch-trigr-01-rs-g1_1day_processed",
       "steps": [
@@ -3597,31 +3369,31 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swin_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_red_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swin_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwin_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwin_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_swout_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_red_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_swout_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-ndvi_lwout_1day_processed",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day-plan",
+      "output": "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day_processed",
       "steps": [
-        "fdri-ch-trigr-01-rs-ndvi_lwout_1day-sum"
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day-mean"
       ]
     },
     {
@@ -3826,18 +3598,37 @@
       "steps": [
         "fdri-ch-trigr-01-rs-soilvue_5cm_vwc_1day-mean"
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-solar_zenith_1min-plan",
+      "output": "fdri-ch-trigr-01-rs-solar_zenith_1min_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith"
+      ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-temp_air_30min-plan",
+      "output": "fdri-ch-trigr-01-rs-temp_air_30min_processed",
+      "steps": [
+        "fdri-ch-trigr-01-rs-temp_air_30min-mean"
+      ]
+    }
+  ],
+  "FDRI-CH_TRIGR_EC": [
+    {
+      "id": "fdri-ch_trigr_ec-et_30min-plan",
+      "output": "fdri-ch_trigr_ec-et_30min_processed",
+      "steps": [
+        "fdri-ch_trigr_ec-et_30min-latent_heat_to_et"
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
     {
       "id": "fdri-se-carwe-01-ws-albedo_1min-plan",
       "output": "fdri-se-carwe-01-ws-albedo_1min_processed",
-      "input": "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW",
       "steps": [
-        "fdri-se-carwe-01-ws-albedo_1min-load_raw",
-        "fdri-se-carwe-01-ws-albedo_1min-battery_v",
-        "fdri-se-carwe-01-ws-albedo_1min-range",
-        "fdri-se-carwe-01-ws-albedo_1min-spike"
+        "fdri-se-carwe-01-ws-albedo_1min-calc_albedo"
       ]
     },
     {
@@ -3898,6 +3689,7 @@
       "steps": [
         "fdri-se-carwe-01-ws-lwin_1min-load_raw",
         "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
+        "fdri-se-carwe-01-ws-lwin_1min-correction-scalar",
         "fdri-se-carwe-01-ws-lwin_1min-battery_v",
         "fdri-se-carwe-01-ws-lwin_1min-range"
       ]
@@ -3909,6 +3701,7 @@
       "steps": [
         "fdri-se-carwe-01-ws-lwout_1min-load_raw",
         "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
+        "fdri-se-carwe-01-ws-lwout_1min-correction-scalar",
         "fdri-se-carwe-01-ws-lwout_1min-battery_v",
         "fdri-se-carwe-01-ws-lwout_1min-range"
       ]
@@ -3959,6 +3752,7 @@
       "input": "FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-swin_1min-load_raw",
+        "fdri-se-carwe-01-ws-swin_1min-correction-scalar",
         "fdri-se-carwe-01-ws-swin_1min-battery_v",
         "fdri-se-carwe-01-ws-swin_1min-range"
       ]
@@ -3969,6 +3763,7 @@
       "input": "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_RAW",
       "steps": [
         "fdri-se-carwe-01-ws-swout_1min-load_raw",
+        "fdri-se-carwe-01-ws-swout_1min-correction-scalar",
         "fdri-se-carwe-01-ws-swout_1min-battery_v",
         "fdri-se-carwe-01-ws-swout_1min-range"
       ]
@@ -4075,13 +3870,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_tot_1day-plan",
-      "output": "fdri-se-carwe-01-ws-precip_tot_1day_processed",
-      "steps": [
-        "fdri-se-carwe-01-ws-precip_tot_1day-sum"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-rh_1day-plan",
       "output": "fdri-se-carwe-01-ws-rh_1day_processed",
       "steps": [
@@ -4121,6 +3909,13 @@
       "output": "fdri-se-carwe-01-ws-ws_1day_processed",
       "steps": [
         "fdri-se-carwe-01-ws-ws_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-solar_zenith_1min-plan",
+      "output": "fdri-se-carwe-01-ws-solar_zenith_1min_processed",
+      "steps": [
+        "fdri-se-carwe-01-ws-solar_zenith_1min-solar_zenith"
       ]
     }
   ],
@@ -4328,16 +4123,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_int_hr_1min-plan",
-      "output": "fdri-se-fofad-01-pr-pit_int_hr_1min_processed",
-      "input": "fdri-se-fofad-01-pr-pit_int_hr_1min_raw",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_int_hr_1min-load_raw",
-        "fdri-se-fofad-01-pr-pit_int_hr_1min-battery_v",
-        "fdri-se-fofad-01-pr-pit_int_hr_1min-range"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-pit_int_lr_1min-plan",
       "output": "fdri-se-fofad-01-pr-pit_int_lr_1min_processed",
       "input": "fdri-se-fofad-01-pr-pit_int_lr_1min_raw",
@@ -4345,16 +4130,6 @@
         "fdri-se-fofad-01-pr-pit_int_lr_1min-load_raw",
         "fdri-se-fofad-01-pr-pit_int_lr_1min-battery_v",
         "fdri-se-fofad-01-pr-pit_int_lr_1min-range"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1min-plan",
-      "output": "fdri-se-fofad-01-pr-pit_int_lr_hr_1min_processed",
-      "input": "fdri-se-fofad-01-pr-pit_int_lr_hr_1min_raw",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_int_lr_hr_1min-load_raw",
-        "fdri-se-fofad-01-pr-pit_int_lr_hr_1min-battery_v",
-        "fdri-se-fofad-01-pr-pit_int_lr_hr_1min-range"
       ]
     },
     {
@@ -4417,16 +4192,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min-plan",
-      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min_processed",
-      "input": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min_raw",
-      "steps": [
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min-load_raw",
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min-battery_v",
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min-range"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1min-plan",
       "output": "fdri-se-fofad-01-pr-stdrd_precip_tot_1min_processed",
       "input": "fdri-se-fofad-01-pr-stdrd_precip_tot_1min_raw",
@@ -4443,16 +4208,6 @@
         "fdri-se-fofad-01-pr-rh_1min-load_raw",
         "fdri-se-fofad-01-pr-rh_1min-battery_v",
         "fdri-se-fofad-01-pr-rh_1min-range"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-plan",
-      "output": "fdri-se-fofad-01-pr-styx_neutrons_30min_processed",
-      "input": "fdri-se-fofad-01-pr-styx_neutrons_30min_raw",
-      "steps": [
-        "fdri-se-fofad-01-pr-styx_neutrons_30min-load_raw",
-        "fdri-se-fofad-01-pr-styx_neutrons_30min-battery_v",
-        "fdri-se-fofad-01-pr-styx_neutrons_30min-range"
       ]
     },
     {
@@ -4629,13 +4384,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_int_hr_1day-plan",
-      "output": "fdri-se-fofad-01-pr-pit_int_hr_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_int_hr_1day-mean"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-pit_int_lr_1day-plan",
       "output": "fdri-se-fofad-01-pr-pit_int_lr_1day_processed",
       "steps": [
@@ -4643,24 +4391,10 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1day-plan",
-      "output": "fdri-se-fofad-01-pr-pit_int_lr_hr_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_int_lr_hr_1day-mean"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-pit_precip_1day-plan",
       "output": "fdri-se-fofad-01-pr-pit_precip_1day_processed",
       "steps": [
         "fdri-se-fofad-01-pr-pit_precip_1day-sum"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_precip_tot_1day-plan",
-      "output": "fdri-se-fofad-01-pr-pit_precip_tot_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_precip_tot_1day-sum"
       ]
     },
     {
@@ -4689,20 +4423,6 @@
       "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day_processed",
       "steps": [
         "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day-plan",
-      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-plan",
-      "output": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-sum"
       ]
     },
     {
@@ -4928,27 +4648,18 @@
       "steps": [
         "fdri-se-fofad-01-pr-fa_ug_muons_1day-sum"
       ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_1day-plan",
-      "output": "fdri-se-fofad-01-pr-styx_neutrons_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-styx_neutrons_1day-sum"
-      ]
     }
   ],
   "FDRI-SE-SVTRP-01-WL": [
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-plan",
-      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_processed",
-      "input": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW",
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-water_lev_radar_1min_processed",
       "steps": [
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike"
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-distance_to_level",
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-correction-scalar",
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-range",
+        "fdri-se-svtrp-01-wl-water_lev_radar_1min-spike"
       ]
     },
     {
@@ -4975,17 +4686,6 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-plan",
-      "output": "fdri-se-svtrp-01-wl-water_lev_radar_1min_processed",
-      "input": "FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW",
-      "steps": [
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-load_raw",
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-battery_v",
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-range",
-        "fdri-se-svtrp-01-wl-water_lev_radar_1min-spike"
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-water_temp_1min-plan",
       "output": "fdri-se-svtrp-01-wl-water_temp_1min_processed",
       "input": "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_RAW",
@@ -4994,13 +4694,6 @@
         "fdri-se-svtrp-01-wl-water_temp_1min-battery_v",
         "fdri-se-svtrp-01-wl-water_temp_1min-range",
         "fdri-se-svtrp-01-wl-water_temp_1min-spike"
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-plan",
-      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day_processed",
-      "steps": [
-        "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-mean"
       ]
     },
     {
@@ -5029,6 +4722,337 @@
       "output": "fdri-se-svtrp-01-wl-water_temp_1day_processed",
       "steps": [
         "fdri-se-svtrp-01-wl-water_temp_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-HEBRI-01-RF": [
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-plan",
+      "output": "fdri-tw-hebri-01-rf-water_lev_hy_1min_processed",
+      "input": "fdri-tw-hebri-01-rf-water_lev_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-load_raw",
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-battery_v",
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-range",
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1day-plan",
+      "output": "fdri-tw-hebri-01-rf-water_lev_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_lev_hy_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-plan",
+      "output": "fdri-tw-hebri-01-rf-water_vel_hy_1min_processed",
+      "input": "fdri-tw-hebri-01-rf-water_vel_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-load_raw",
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-battery_v",
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-range",
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1day-plan",
+      "output": "fdri-tw-hebri-01-rf-water_vel_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebri-01-rf-water_vel_hy_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUL-01-RF": [
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-plan",
+      "output": "fdri-tw-hebul-01-rf-water_lev_hy_1min_processed",
+      "input": "fdri-tw-hebul-01-rf-water_lev_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-load_raw",
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-battery_v",
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-range",
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1day-plan",
+      "output": "fdri-tw-hebul-01-rf-water_lev_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_lev_hy_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-plan",
+      "output": "fdri-tw-hebul-01-rf-water_vel_hy_1min_processed",
+      "input": "fdri-tw-hebul-01-rf-water_vel_hy_1min_raw",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-load_raw",
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-battery_v",
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-range",
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1day-plan",
+      "output": "fdri-tw-hebul-01-rf-water_vel_hy_1day_processed",
+      "steps": [
+        "fdri-tw-hebul-01-rf-water_vel_hy_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUU-01-WL": [
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_radar_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-water_lev_radar_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-range",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-range",
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-radar_temp_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-radar_temp_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-range",
+        "fdri-tw-hebuu-01-wl-radar_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_pt_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-water_lev_pt_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-range",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_temp_1min_processed",
+      "input": "fdri-tw-hebuu-01-wl-water_temp_1min_raw",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_temp_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_temp_1min-battery_v",
+        "fdri-tw-hebuu-01-wl-water_temp_1min-range",
+        "fdri-tw-hebuu-01-wl-water_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-radar_temp_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-radar_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_lev_radar_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1day-plan",
+      "output": "fdri-tw-hebuu-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-tw-hebuu-01-wl-water_temp_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-MENZA-01-WL": [
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_radar_1min_processed",
+      "input": "fdri-tw-menza-01-wl-water_lev_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-range",
+        "fdri-tw-menza-01-wl-water_lev_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-tw-menza-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-tw-menza-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-range",
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-plan",
+      "output": "fdri-tw-menza-01-wl-radar_temp_1min_processed",
+      "input": "fdri-tw-menza-01-wl-radar_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-radar_temp_1min-load_raw",
+        "fdri-tw-menza-01-wl-radar_temp_1min-battery_v",
+        "fdri-tw-menza-01-wl-radar_temp_1min-range",
+        "fdri-tw-menza-01-wl-radar_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_pt_1min_processed",
+      "input": "fdri-tw-menza-01-wl-water_lev_pt_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-battery_v",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-range",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-plan",
+      "output": "fdri-tw-menza-01-wl-water_temp_1min_processed",
+      "input": "fdri-tw-menza-01-wl-water_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_temp_1min-load_raw",
+        "fdri-tw-menza-01-wl-water_temp_1min-battery_v",
+        "fdri-tw-menza-01-wl-water_temp_1min-range",
+        "fdri-tw-menza-01-wl-water_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1day-plan",
+      "output": "fdri-tw-menza-01-wl-radar_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-radar_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1day-plan",
+      "output": "fdri-tw-menza-01-wl-water_lev_radar_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_lev_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1day-plan",
+      "output": "fdri-tw-menza-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menza-01-wl-water_temp_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-TW-MENZB-01-WL": [
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_radar_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_lev_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-range",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-range",
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-radar_temp_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-radar_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-radar_temp_1min-load_raw",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-battery_v",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-range",
+        "fdri-tw-menzb-01-wl-radar_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_pt_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_lev_pt_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-range",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-plan",
+      "output": "fdri-tw-menzb-01-wl-water_temp_1min_processed",
+      "input": "fdri-tw-menzb-01-wl-water_temp_1min_raw",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_temp_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_temp_1min-battery_v",
+        "fdri-tw-menzb-01-wl-water_temp_1min-range",
+        "fdri-tw-menzb-01-wl-water_temp_1min-spike"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-radar_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-radar_temp_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-water_lev_radar_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_lev_radar_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1day-plan",
+      "output": "fdri-tw-menzb-01-wl-water_temp_1day_processed",
+      "steps": [
+        "fdri-tw-menzb-01-wl-water_temp_1day-mean"
       ]
     }
   ]

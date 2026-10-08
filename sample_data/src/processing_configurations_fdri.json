@@ -95,9 +95,9 @@
       "id": "fdri-ch-chops-01-rg-stdrd_precip_int_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-chops-01-rg-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-chops-01-rg-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -132,9 +132,9 @@
       "id": "fdri-ch-chops-01-rg-stdrd_precip_int_hr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-chops-01-rg-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-chops-01-rg-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -169,9 +169,9 @@
       "id": "fdri-ch-chops-01-rg-stdrd_precip_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-chops-01-rg-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-chops-01-rg-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -206,9 +206,9 @@
       "id": "fdri-ch-chops-01-rg-stdrd_precip_tot_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-chops-01-rg-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-chops-01-rg-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -250,20 +250,6 @@
       "method": "sum",
       "dep_ts": [
         "FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-chops-01-rg-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-CH-CHOPS-01-RG-STDRD_PRECIP_TOT_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -470,9 +456,9 @@
       "id": "fdri-ch-milfa-01-rs-temp_air_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -518,9 +504,9 @@
       "id": "fdri-ch-milfa-01-rs-rh_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -555,9 +541,9 @@
       "id": "fdri-ch-milfa-01-rs-dewpoint_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -603,9 +589,9 @@
       "id": "fdri-ch-milfa-01-rs-stdrd_precip_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -640,9 +626,9 @@
       "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -677,9 +663,9 @@
       "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -714,9 +700,9 @@
       "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -736,9 +722,9 @@
       "id": "fdri-ch-milfa-01-rs-ppfd_in_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -762,50 +748,18 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-albedo_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "id": "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
+      "inputs": {
+        "swin": "FDRI-CH-MILFA-01-RS-SWIN_1MIN_PROCESSED",
+        "swout": "FDRI-CH-MILFA-01-RS-SWOUT_1MIN_PROCESSED",
+        "solar_zenith": "FDRI-CH-MILFA-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
+      },
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
+          "param": "round",
+          "value": 3
         }
       ]
     },
@@ -818,46 +772,23 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
+      "id": "fdri-ch-milfa-01-rs-lwin_1min-correction-scalar",
       "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
-      ],
+      "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": 1.0
+          "value": 82.64463
         }
-      ],
-      "observation_interval": {
-        "start_date": "2025-11-17T00:00:00"
-      }
-    },
-    {
-      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
-      "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-TNR01_1MIN_RAW"
-      ],
-      "parameters": [
-        {
-          "param": "correction_factor",
-          "value": 1.0
-        }
-      ],
-      "observation_interval": {
-        "start_date": "2025-11-17T00:00:00"
-      }
+      ]
     },
     {
       "id": "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -889,12 +820,23 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-lwout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 72.20217
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-lwout_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -926,12 +868,23 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-swin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 84.74576
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-swin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -963,12 +916,23 @@
       ]
     },
     {
+      "id": "fdri-ch-milfa-01-rs-swout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 70.02801
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-milfa-01-rs-swout_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1003,9 +967,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_1_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1051,9 +1015,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_2_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1099,9 +1063,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_3_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1147,9 +1111,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_4_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1195,9 +1159,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_5_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1243,9 +1207,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_6_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1291,9 +1255,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_7_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1339,9 +1303,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_8_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1387,9 +1351,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_9_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1435,9 +1399,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_10_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1483,9 +1447,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_11_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1531,9 +1495,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_12_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1579,9 +1543,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_1_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1616,9 +1580,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_2_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1653,9 +1617,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_3_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1690,9 +1654,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_4_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1727,9 +1691,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_5_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1764,9 +1728,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_6_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1801,9 +1765,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_7_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1838,9 +1802,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_8_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1875,9 +1839,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_9_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1912,9 +1876,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_10_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1949,9 +1913,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_11_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -1986,9 +1950,9 @@
       "id": "fdri-ch-milfa-01-rs-teros22_12_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2023,9 +1987,9 @@
       "id": "fdri-ch-milfa-01-rs-g1_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2071,9 +2035,9 @@
       "id": "fdri-ch-milfa-01-rs-g2_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2119,9 +2083,9 @@
       "id": "fdri-ch-milfa-01-rs-target_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2167,9 +2131,9 @@
       "id": "fdri-ch-milfa-01-rs-target_temp_max_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2215,9 +2179,9 @@
       "id": "fdri-ch-milfa-01-rs-target_temp_min_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2252,20 +2216,20 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_swin_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2274,35 +2238,35 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_lwin_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2311,35 +2275,35 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_swout_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2348,35 +2312,35 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 1.0
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-load_raw",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-milfa-01-rs-ndvi_lwout_15min_raw"
+        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-battery_v",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2385,17 +2349,17 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_15min-range",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 1.0
         }
       ]
     },
@@ -2411,9 +2375,9 @@
       "id": "fdri-ch-milfa-01-rs-ndvi_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2459,9 +2423,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_1_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2496,9 +2460,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_1_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2533,9 +2497,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_1_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2570,9 +2534,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_1_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2618,9 +2582,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2650,7 +2614,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -2666,9 +2630,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_2_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2703,9 +2667,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_2_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2740,9 +2704,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_2_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2777,9 +2741,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_2_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2825,9 +2789,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2857,7 +2821,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -2873,9 +2837,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_3_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2910,9 +2874,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_3_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2947,9 +2911,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_3_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -2984,9 +2948,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_3_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3032,9 +2996,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3064,7 +3028,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3080,9 +3044,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_4_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3117,9 +3081,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_4_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3154,9 +3118,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_4_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3191,9 +3155,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_4_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3239,9 +3203,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3271,7 +3235,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3287,9 +3251,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_5_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3324,9 +3288,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_5_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3361,9 +3325,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_5_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3398,9 +3362,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_5_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3446,9 +3410,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3478,7 +3442,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3494,9 +3458,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_6_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3531,9 +3495,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_6_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3568,9 +3532,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_6_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3605,9 +3569,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_6_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3653,9 +3617,9 @@
       "id": "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3685,7 +3649,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -3701,9 +3665,9 @@
       "id": "fdri-ch-milfa-01-rs-pa_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3749,9 +3713,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3786,9 +3750,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3823,9 +3787,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3860,9 +3824,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3897,9 +3861,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3934,9 +3898,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -3971,9 +3935,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4008,9 +3972,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4045,9 +4009,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4082,9 +4046,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4119,9 +4083,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4156,9 +4120,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4193,9 +4157,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4241,9 +4205,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4289,9 +4253,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4337,9 +4301,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4385,9 +4349,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4433,9 +4397,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4481,9 +4445,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4513,7 +4477,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4529,9 +4493,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4561,7 +4525,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4577,9 +4541,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4609,7 +4573,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4625,9 +4589,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4657,7 +4621,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4673,9 +4637,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4705,7 +4669,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4721,9 +4685,9 @@
       "id": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-milfa-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-milfa-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -4753,7 +4717,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -4886,20 +4850,6 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-STDRD_PRECIP_TOT_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-milfa-01-rs-ppfd_in_1day-mean",
       "type": "aggregate",
       "method": "mean",
@@ -4923,7 +4873,7 @@
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 3
         }
       ]
     },
@@ -5390,58 +5340,58 @@
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swin_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_IRR_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwin_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_IRR_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_swout_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_RAD_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_lwout_1day-sum",
+      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-MILFA-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+        "FDRI-CH-MILFA-01-RS-NDVI_RAD_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -6228,54 +6178,37 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rs-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
     {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-albedo_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "id": "fdri-ch-trigr-01-rs-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
+      "inputs": {
+        "swin": "FDRI-CH-TRIGR-01-RS-SWIN_1MIN_PROCESSED",
+        "swout": "FDRI-CH-TRIGR-01-RS-SWOUT_1MIN_PROCESSED",
+        "solar_zenith": "FDRI-CH-TRIGR-01-RS-SOLAR_ZENITH_1MIN_PROCESSED"
+      },
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
+          "param": "round",
+          "value": 3
         }
       ]
     },
@@ -6291,9 +6224,9 @@
       "id": "fdri-ch-trigr-01-rs-dewpoint_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6339,9 +6272,9 @@
       "id": "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6376,9 +6309,9 @@
       "id": "fdri-ch-trigr-01-rs-fa_swe_areal_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6413,9 +6346,9 @@
       "id": "fdri-ch-trigr-01-rs-fa_swe_local_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6450,9 +6383,9 @@
       "id": "fdri-ch-trigr-01-rs-stdrd_precip_int_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6487,9 +6420,9 @@
       "id": "fdri-ch-trigr-01-rs-stdrd_precip_int_hr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6521,46 +6454,34 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-lw_corr",
+      "id": "fdri-ch-trigr-01-rs-lwin_1min-correction-scalar",
       "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
-      ],
+      "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": 1.0
+          "value": 70.12623
         }
-      ],
-      "observation_interval": {
-        "start_date": "2026-03-12T00:00:00"
-      }
+      ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-lw_corr",
+      "id": "fdri-ch-trigr-01-rs-lwout_1min-correction-scalar",
       "type": "correction",
-      "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TNR01_1MIN_RAW"
-      ],
+      "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": 1.0
+          "value": 71.94245
         }
-      ],
-      "observation_interval": {
-        "start_date": "2026-03-12T00:00:00"
-      }
+      ]
     },
     {
       "id": "fdri-ch-trigr-01-rs-lwin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6595,9 +6516,9 @@
       "id": "fdri-ch-trigr-01-rs-lwout_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6632,9 +6553,9 @@
       "id": "fdri-ch-trigr-01-rs-pa_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6680,9 +6601,9 @@
       "id": "fdri-ch-trigr-01-rs-ppfd_in_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6717,9 +6638,9 @@
       "id": "fdri-ch-trigr-01-rs-stdrd_precip_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6754,9 +6675,9 @@
       "id": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6776,9 +6697,9 @@
       "id": "fdri-ch-trigr-01-rs-rh_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6813,9 +6734,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_10cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6850,9 +6771,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_10cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6887,9 +6808,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_10cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6935,9 +6856,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_10cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -6967,7 +6888,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -6983,9 +6904,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_20cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7020,9 +6941,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_20cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7057,9 +6978,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_20cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7105,9 +7026,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_20cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7137,7 +7058,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7153,9 +7074,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_30cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7190,9 +7111,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_30cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7227,9 +7148,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_30cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7275,9 +7196,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_30cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7307,7 +7228,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7323,9 +7244,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_40cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7360,9 +7281,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_40cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7397,9 +7318,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_40cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7445,9 +7366,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_40cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7477,7 +7398,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7493,9 +7414,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_50cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7530,9 +7451,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_50cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7567,9 +7488,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_50cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7615,9 +7536,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_50cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7647,7 +7568,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7663,9 +7584,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_5cm_bulkec_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7700,9 +7621,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_5cm_ka_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7737,9 +7658,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_5cm_temp_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7785,9 +7706,9 @@
       "id": "fdri-ch-trigr-01-rs-soilvue_5cm_vwc_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7817,7 +7738,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 109.544512
+          "value": 100.0
         }
       ]
     },
@@ -7830,12 +7751,23 @@
       ]
     },
     {
+      "id": "fdri-ch-trigr-01-rs-swin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 68.72852
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-trigr-01-rs-swin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7867,12 +7799,23 @@
       ]
     },
     {
+      "id": "fdri-ch-trigr-01-rs-swout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 80.38585
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-trigr-01-rs-swout_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7907,9 +7850,9 @@
       "id": "fdri-ch-trigr-01-rs-temp_air_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7944,6 +7887,24 @@
       ]
     },
     {
+      "id": "fdri-ch-trigr-01-rs-temp_air_30min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-ch-trigr-01-rs-temp_air_1min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 2
+        }
+      ]
+    },
+    {
       "id": "fdri-ch-trigr-01-rs-tdr310_1_ec_15min-load_raw",
       "type": "load",
       "method": "load",
@@ -7955,9 +7916,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_1_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -7992,9 +7953,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_1_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8029,9 +7990,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_1_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8066,9 +8027,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_1_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8114,9 +8075,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_1_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8146,7 +8107,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8162,9 +8123,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_2_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8199,9 +8160,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_2_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8236,9 +8197,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_2_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8273,9 +8234,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_2_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8321,9 +8282,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_2_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8353,7 +8314,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8369,9 +8330,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_3_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8406,9 +8367,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_3_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8443,9 +8404,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_3_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8480,9 +8441,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_3_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8528,9 +8489,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_3_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8560,7 +8521,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8576,9 +8537,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_4_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8613,9 +8574,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_4_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8650,9 +8611,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_4_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8687,9 +8648,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_4_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8735,9 +8696,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_4_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8767,7 +8728,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8783,9 +8744,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_5_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8820,9 +8781,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_5_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8857,9 +8818,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_5_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8894,9 +8855,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_5_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8942,9 +8903,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_5_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -8974,7 +8935,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -8990,9 +8951,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_6_ec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9027,9 +8988,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_6_pec_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9064,9 +9025,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_6_perm_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9101,9 +9062,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_6_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9149,9 +9110,9 @@
       "id": "fdri-ch-trigr-01-rs-tdr310_6_vwc_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9181,7 +9142,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 77.459667
+          "value": 75.0
         }
       ]
     },
@@ -9197,9 +9158,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_1_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9245,9 +9206,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_2_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9293,9 +9254,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_3_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9341,9 +9302,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_4_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9389,9 +9350,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_5_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9437,9 +9398,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_6_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9474,294 +9435,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_7_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -20.0
-        },
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_15min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_8_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -20.0
-        },
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_15min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_9_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -20.0
-        },
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_15min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_10_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -20.0
-        },
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_15min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_11_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -20.0
-        },
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_15min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_12_temp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -20.0
-        },
-        {
-          "param": "gt",
-          "value": 50.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_15min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 4.0
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-teros22_1_mp_15min-load_raw",
       "type": "load",
       "method": "load",
@@ -9773,9 +9446,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_1_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9810,9 +9483,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_2_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9847,9 +9520,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_3_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9884,9 +9557,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_4_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9921,9 +9594,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_5_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9958,9 +9631,9 @@
       "id": "fdri-ch-trigr-01-rs-teros22_6_mp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -9970,228 +9643,6 @@
     },
     {
       "id": "fdri-ch-trigr-01-rs-teros22_6_mp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -100000.0
-        },
-        {
-          "param": "gt",
-          "value": 0.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_7_mp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -100000.0
-        },
-        {
-          "param": "gt",
-          "value": 0.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_8_mp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -100000.0
-        },
-        {
-          "param": "gt",
-          "value": 0.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_9_mp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -100000.0
-        },
-        {
-          "param": "gt",
-          "value": 0.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_10_mp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -100000.0
-        },
-        {
-          "param": "gt",
-          "value": 0.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_11_mp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_15min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -100000.0
-        },
-        {
-          "param": "gt",
-          "value": 0.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_15min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-teros22_12_mp_15min_raw"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_15min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -10217,9 +9668,9 @@
       "id": "fdri-ch-trigr-01-rs-g1_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10265,9 +9716,9 @@
       "id": "fdri-ch-trigr-01-rs-g2_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10313,9 +9764,9 @@
       "id": "fdri-ch-trigr-01-rs-target_temp_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10361,9 +9812,9 @@
       "id": "fdri-ch-trigr-01-rs-target_temp_max_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10409,9 +9860,9 @@
       "id": "fdri-ch-trigr-01-rs-target_temp_min_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10446,20 +9897,20 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_swin_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_irr_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10468,35 +9919,35 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_lwin_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10505,35 +9956,35 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.1
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 10.0
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_swout_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_rad_red_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10542,35 +9993,35 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 1200.0
+          "value": 1.0
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-load_raw",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-load_raw",
       "type": "load",
       "method": "load",
       "dep_ts": [
-        "fdri-ch-trigr-01-rs-ndvi_lwout_15min_raw"
+        "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min_raw"
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-battery_v",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10579,17 +10030,17 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_15min-range",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_15min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
         {
           "param": "lt",
-          "value": -100.0
+          "value": -0.01
         },
         {
           "param": "gt",
-          "value": 800.0
+          "value": 1.0
         }
       ]
     },
@@ -10605,9 +10056,9 @@
       "id": "fdri-ch-trigr-01-rs-ndvi_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-ch-trigr-01-rs-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-ch-trigr-01-rs-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -10695,7 +10146,7 @@
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 3
         }
       ]
     },
@@ -10789,20 +10240,6 @@
       "method": "sum",
       "dep_ts": [
         "FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_TOT_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -11456,174 +10893,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_mp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_7_MP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_7_temp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_7_TEMP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_mp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_8_MP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_8_temp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_8_TEMP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_mp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_9_MP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_9_temp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_9_TEMP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_mp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_10_MP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_10_temp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_10_TEMP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_mp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_11_MP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_11_temp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_11_TEMP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_mp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_12_MP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-teros22_12_temp_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-TEROS22_12_TEMP_15MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-g1_1day-mean",
       "type": "aggregate",
       "method": "mean",
@@ -11694,58 +10963,58 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swin_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_SWIN_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_IRR_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwin_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_irr_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_LWIN_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_IRR_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_swout_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_red_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_SWOUT_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_RAD_RED_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-ndvi_lwout_1day-sum",
+      "id": "fdri-ch-trigr-01-rs-ndvi_rad_nir_1day-mean",
       "type": "aggregate",
-      "method": "sum",
+      "method": "mean",
       "dep_ts": [
-        "FDRI-CH-TRIGR-01-RS-NDVI_LWOUT_15MIN_PROCESSED"
+        "FDRI-CH-TRIGR-01-RS-NDVI_RAD_NIR_15MIN_PROCESSED"
       ],
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -12154,15 +11423,55 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "fdri-ch-trigr-01-rs-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
+    }
+  ],
+  "FDRI-CH_TRIGR_EC": [
+    {
+      "id": "fdri-ch_trigr_ec-et_30min-latent_heat_to_et",
+      "type": "calculate",
+      "method": "latent_heat_to_et",
+      "inputs": {
+        "le": "FDRI-CH_TRIGR_EC-LE_EC_30MIN_RAW",
+        "ta": "FDRI-CH-TRIGR-01-RS-TEMP_AIR_30MIN_PROCESSED"
+      },
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
     {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-ALBEDO_1MIN_RAW"
+      "id": "fdri-se-carwe-01-ws-albedo_1min-calc_albedo",
+      "type": "calculate",
+      "method": "calc_albedo",
+      "inputs": {
+        "swin": "FDRI-SE-CARWE-01-WS-SWIN_1MIN_PROCESSED",
+        "swout": "FDRI-SE-CARWE-01-WS-SWOUT_1MIN_PROCESSED",
+        "solar_zenith": "FDRI-SE-CARWE-01-WS-SOLAR_ZENITH_1MIN_PROCESSED"
+      },
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
       ]
     },
     {
@@ -12261,6 +11570,37 @@
         "FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW"
       ]
     },
+
+    {
+      "id": "fdri-se-carwe-01-ws-swin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 74.8503
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
+      }
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-swout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 74.6826
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
+      }
+    },
+
+
     {
       "id": "fdri-se-carwe-01-ws-swout_1min-load_raw",
       "type": "load",
@@ -12294,26 +11634,27 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "id": "fdri-se-carwe-01-ws-lwin_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
       "parameters": [
         {
-          "param": "lt",
-          "value": 10.5
+          "param": "correction_factor",
+          "value": 83.05648
         }
-      ]
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
+      }
     },
     {
       "id": "fdri-se-carwe-01-ws-lwin_1min-correction-lw_corr",
       "type": "correction",
       "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
-      ],
+      "inputs": {
+        "lw_unc": "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW",
+        "ta": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "correction_factor",
@@ -12321,16 +11662,32 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2025-06-13T00:00:00"
+        "start_date": "2025-06-13T00:00:00",
+        "end_date": "2026-08-17T14:09:00"
+      }
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-lwout_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 80.90615
+        }
+      ],
+      "observation_interval": {
+        "start_date": "2026-08-17T14:10:00"
       }
     },
     {
       "id": "fdri-se-carwe-01-ws-lwout_1min-correction-lw_corr",
       "type": "correction",
       "method": "LW_CORR",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
-      ],
+      "inputs": {
+        "lw_unc": "FDRI-SE-CARWE-01-WS-LWOUT_1MIN_RAW",
+        "ta": "FDRI-SE-CARWE-01-WS-TNR01_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "correction_factor",
@@ -12338,16 +11695,17 @@
         }
       ],
       "observation_interval": {
-        "start_date": "2025-06-13T00:00:00"
+        "start_date": "2025-06-13T00:00:00",
+        "end_date": "2026-08-17T14:09:00"
       }
     },
     {
       "id": "fdri-se-carwe-01-ws-dewpoint_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12359,9 +11717,9 @@
       "id": "fdri-se-carwe-01-ws-precip_int_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12373,9 +11731,9 @@
       "id": "fdri-se-carwe-01-ws-precip_int_hr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12387,9 +11745,9 @@
       "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12401,9 +11759,9 @@
       "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12415,9 +11773,9 @@
       "id": "fdri-se-carwe-01-ws-lwin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12429,9 +11787,9 @@
       "id": "fdri-se-carwe-01-ws-lwout_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12443,9 +11801,9 @@
       "id": "fdri-se-carwe-01-ws-pa_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12457,9 +11815,9 @@
       "id": "fdri-se-carwe-01-ws-precip_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12471,9 +11829,9 @@
       "id": "fdri-se-carwe-01-ws-precip_tot_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12485,9 +11843,9 @@
       "id": "fdri-se-carwe-01-ws-rh_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12499,9 +11857,9 @@
       "id": "fdri-se-carwe-01-ws-swin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12513,9 +11871,9 @@
       "id": "fdri-se-carwe-01-ws-swout_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12527,9 +11885,9 @@
       "id": "fdri-se-carwe-01-ws-temp_air_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12541,9 +11899,9 @@
       "id": "fdri-se-carwe-01-ws-wd_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -12555,39 +11913,13 @@
       "id": "fdri-se-carwe-01-ws-ws_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
           "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 1.2
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-albedo_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 0.3
         }
       ]
     },
@@ -12859,7 +12191,7 @@
       "parameters": [
         {
           "param": "round",
-          "value": 1
+          "value": 3
         }
       ]
     },
@@ -12990,20 +12322,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-PRECIP_TOT_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-rh_1day-mean",
       "type": "aggregate",
       "method": "mean",
@@ -13086,6 +12404,21 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "fdri-se-carwe-01-ws-solar_zenith_1min-solar_zenith",
+      "type": "calculate",
+      "method": "solar_zenith",
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        },
+        {
+          "param": "site_attribute",
+          "value": "LAT"
+        }
+      ]
     }
   ],
   "FDRI-SE-FOFAD-01-PR": [
@@ -13101,9 +12434,9 @@
       "id": "fdri-se-fofad-01-pr-dewpoint_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13149,9 +12482,9 @@
       "id": "fdri-se-fofad-01-pr-ec_0_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13186,9 +12519,9 @@
       "id": "fdri-se-fofad-01-pr-ec_1_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13223,9 +12556,9 @@
       "id": "fdri-se-fofad-01-pr-ec_2_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13260,9 +12593,9 @@
       "id": "fdri-se-fofad-01-pr-ec_3_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13297,9 +12630,9 @@
       "id": "fdri-se-fofad-01-pr-ec_4_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13334,9 +12667,9 @@
       "id": "fdri-se-fofad-01-pr-fa_muons_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13371,9 +12704,9 @@
       "id": "fdri-se-fofad-01-pr-fa_neutrons_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13408,9 +12741,9 @@
       "id": "fdri-se-fofad-01-pr-fa_pa_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13456,9 +12789,9 @@
       "id": "fdri-se-fofad-01-pr-fa_soilmoisture_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13493,9 +12826,9 @@
       "id": "fdri-se-fofad-01-pr-fa_swe_areal_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13530,9 +12863,9 @@
       "id": "fdri-se-fofad-01-pr-fa_swe_local_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13567,9 +12900,9 @@
       "id": "fdri-se-fofad-01-pr-fa_ug_muons_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13604,9 +12937,9 @@
       "id": "fdri-se-fofad-01-pr-fa_ug_neutrons_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_30min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13641,9 +12974,9 @@
       "id": "fdri-se-fofad-01-pr-perm_0_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13678,9 +13011,9 @@
       "id": "fdri-se-fofad-01-pr-perm_1_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13715,9 +13048,9 @@
       "id": "fdri-se-fofad-01-pr-perm_2_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13752,9 +13085,9 @@
       "id": "fdri-se-fofad-01-pr-perm_3_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13789,9 +13122,9 @@
       "id": "fdri-se-fofad-01-pr-perm_4_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13826,9 +13159,9 @@
       "id": "fdri-se-fofad-01-pr-pit_int_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13838,43 +13171,6 @@
     },
     {
       "id": "fdri-se-fofad-01-pr-pit_int_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 100.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_int_hr_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-pit_int_hr_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_int_hr_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_int_hr_1min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -13900,9 +13196,9 @@
       "id": "fdri-se-fofad-01-pr-pit_int_lr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -13912,43 +13208,6 @@
     },
     {
       "id": "fdri-se-fofad-01-pr-pit_int_lr_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 100.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-pit_int_lr_hr_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -13974,9 +13233,9 @@
       "id": "fdri-se-fofad-01-pr-pit_precip_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14011,9 +13270,9 @@
       "id": "fdri-se-fofad-01-pr-pit_precip_tot_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14033,9 +13292,9 @@
       "id": "fdri-se-fofad-01-pr-stdrd_precip_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14070,9 +13329,9 @@
       "id": "fdri-se-fofad-01-pr-stdrd_precip_int_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14107,9 +13366,9 @@
       "id": "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14144,9 +13403,9 @@
       "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14156,43 +13415,6 @@
     },
     {
       "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 100.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min_raw"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -14218,9 +13440,9 @@
       "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14240,9 +13462,9 @@
       "id": "fdri-se-fofad-01-pr-rh_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14266,43 +13488,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-styx_neutrons_30min_raw"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_30min_processed"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_30min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 100.0
-        },
-        {
-          "param": "gt",
-          "value": 2000.0
-        }
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-temp_air_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -14314,9 +13499,9 @@
       "id": "fdri-se-fofad-01-pr-temp_air_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14362,9 +13547,9 @@
       "id": "fdri-se-fofad-01-pr-temp_soil_0_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14410,9 +13595,9 @@
       "id": "fdri-se-fofad-01-pr-temp_soil_1_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14458,9 +13643,9 @@
       "id": "fdri-se-fofad-01-pr-temp_soil_2_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14506,9 +13691,9 @@
       "id": "fdri-se-fofad-01-pr-temp_soil_3_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14554,9 +13739,9 @@
       "id": "fdri-se-fofad-01-pr-temp_soil_4_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14602,9 +13787,9 @@
       "id": "fdri-se-fofad-01-pr-vwc_0_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14634,7 +13819,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14650,9 +13835,9 @@
       "id": "fdri-se-fofad-01-pr-vwc_1_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14682,7 +13867,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14698,9 +13883,9 @@
       "id": "fdri-se-fofad-01-pr-vwc_2_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14730,7 +13915,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14746,9 +13931,9 @@
       "id": "fdri-se-fofad-01-pr-vwc_3_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14778,7 +13963,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14794,9 +13979,9 @@
       "id": "fdri-se-fofad-01-pr-vwc_4_15min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_15min_processed"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_15min_processed"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14826,7 +14011,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 0.774597
+          "value": 0.8
         }
       ]
     },
@@ -14842,9 +14027,9 @@
       "id": "fdri-se-fofad-01-pr-wd_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14879,9 +14064,9 @@
       "id": "fdri-se-fofad-01-pr-ws_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "fdri-se-fofad-01-pr-battv_1min_raw"
-      ],
+      "inputs": {
+        "battv": "fdri-se-fofad-01-pr-battv_1min_raw"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -14977,20 +14162,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_int_hr_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-PIT_INT_HR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-pit_int_lr_1day-mean",
       "type": "aggregate",
       "method": "mean",
@@ -15005,39 +14176,11 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_hr_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-PIT_INT_LR_HR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-pit_precip_1day-sum",
       "type": "aggregate",
       "method": "sum",
       "dep_ts": [
         "FDRI-SE-FOFAD-01-PR-PIT_PRECIP_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-pit_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-PIT_PRECIP_TOT_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -15094,34 +14237,6 @@
       "method": "mean",
       "dep_ts": [
         "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_hr_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_INT_LR_HR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_tot_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-STDRD_PRECIP_TOT_1MIN_PROCESSED"
       ],
       "parameters": [
         {
@@ -15577,31 +14692,9 @@
           "value": 1
         }
       ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-styx_neutrons_1day-sum",
-      "type": "aggregate",
-      "method": "sum",
-      "dep_ts": [
-        "FDRI-SE-FOFAD-01-PR-STYX_NEUTRONS_30MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
     }
   ],
   "FDRI-SE-SVTRP-01-WL": [
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
-      ]
-    },
     {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1min-load_raw",
       "type": "load",
@@ -15619,14 +14712,6 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-WATER_LEV_RADAR_1MIN_RAW"
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-water_temp_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -15635,32 +14720,33 @@
       ]
     },
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-scalar",
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-distance_to_level",
+      "type": "calculate",
+      "method": "distance_to_level",
+      "inputs": {
+        "dist_to_water": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
+      },
+      "parameters": [
+        {
+          "param": "sensor_height",
+          "value": 3.9824
+        },
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-correction-scalar",
       "type": "correction",
       "method": "SCALAR",
       "parameters": [
         {
           "param": "correction_factor",
-          "value": -100.0
+          "value": 100.0
         }
-      ],
-      "observation_interval": {
-        "start_date": "2025-05-19T00:00:00"
-      }
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-correction-add",
-      "type": "correction",
-      "method": "ADD",
-      "parameters": [
-        {
-          "param": "correction_factor",
-          "value": 398.24
-        }
-      ],
-      "observation_interval": {
-        "start_date": "2025-05-19T00:00:00"
-      }
+      ]
     },
     {
       "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-correction-add",
@@ -15677,26 +14763,12 @@
       }
     },
     {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ],
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15708,9 +14780,9 @@
       "id": "fdri-se-svtrp-01-wl-water_lev_pt_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15722,9 +14794,9 @@
       "id": "fdri-se-svtrp-01-wl-water_lev_radar_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
@@ -15736,39 +14808,13 @@
       "id": "fdri-se-svtrp-01-wl-water_temp_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
-      ],
+      "inputs": {
+        "battv": "FDRI-SE-SVTRP-01-WL-BATTV_1MIN_RAW"
+      },
       "parameters": [
         {
           "param": "lt",
           "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": -10.0
-        },
-        {
-          "param": "gt",
-          "value": 500.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike",
-      "type": "qc",
-      "method": "SPIKE",
-      "parameters": [
-        {
-          "param": "gt",
-          "value": 50.0
         }
       ]
     },
@@ -15805,11 +14851,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 10000.0
         }
       ]
     },
@@ -15820,7 +14866,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 500.0
         }
       ]
     },
@@ -15835,7 +14881,7 @@
         },
         {
           "param": "gt",
-          "value": 500.0
+          "value": 100.0
         }
       ]
     },
@@ -15846,7 +14892,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 50.0
+          "value": 5.0
         }
       ]
     },
@@ -15873,20 +14919,6 @@
         {
           "param": "gt",
           "value": 4.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
         }
       ]
     },
@@ -15938,6 +14970,1152 @@
       "method": "mean",
       "dep_ts": [
         "FDRI-SE-SVTRP-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-HEBRI-01-RF": [
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebri-01-rf-water_lev_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebri-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_lev_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBRI-01-RF-WATER_LEV_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebri-01-rf-water_vel_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebri-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebri-01-rf-water_vel_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBRI-01-RF-WATER_VEL_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUL-01-RF": [
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebul-01-rf-water_lev_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebul-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_lev_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUL-01-RF-WATER_LEV_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebul-01-rf-water_vel_hy_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebul-01-rf-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebul-01-rf-water_vel_hy_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUL-01-RF-WATER_VEL_HY_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-HEBUU-01-WL": [
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-radar_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-hebuu-01-wl-water_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-hebuu-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-HEBUU-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-MENZA-01-WL": [
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-water_lev_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-dist_to_water_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-radar_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-water_lev_pt_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menza-01-wl-water_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menza-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZA-01-WL-WATER_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "FDRI-TW-MENZB-01-WL": [
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-dist_to_water_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-radar_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-tw-menzb-01-wl-water_temp_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-tw-menzb-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-radar_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-RADAR_TEMP_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_LEV_PT_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_LEV_RADAR_1MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-TW-MENZB-01-WL-WATER_TEMP_1MIN_PROCESSED"
       ],
       "parameters": [
         {

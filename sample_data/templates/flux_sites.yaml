@@ -30,7 +30,7 @@ resources:
             properties:
               "@id": "<{site_id}#operating-period>"
               "@type": "<dct:PeriodOfTime>"
-              "<dcat:startDate>": "{start_date | asDateOrDatetime}"
-              "<dcat:endDate>": "{end_date | asDateOrDatetime}"
+              "<dcat:startDate>": "{start_date | asDateTime}"
+              "<dcat:endDate>": "{end_date | asDateTime}"
 
 

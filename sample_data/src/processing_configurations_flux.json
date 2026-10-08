@@ -9,19 +9,19 @@
       "id": "flux-plynl-eddypro",
       "type": "calculate",
       "method": "eddypro-run",
-      "dep_ts": [
-        "flux-plynl-raw",
-        "flux-plynl-biomet-ta-30min",
-        "flux-plynl-biomet-rh-30min",
-        "flux-plynl-biomet-pa-30min",
-        "flux-plynl-biomet-shf1-30min",
-        "flux-plynl-biomet-shf2-30min",
-        "flux-plynl-biomet-rn-30min",
-        "flux-plynl-biomet-swin-30min",
-        "flux-plynl-dynamic-sonic-azimuth",
-        "flux-plynl-dynamic-height-measurement",
-        "flux-plynl-dynamic-height-canopy"
-      ],
+      "inputs": {
+        "raw_data": "flux-plynl-raw",
+        "ta": "flux-plynl-biomet-ta-30min",
+        "rh": "flux-plynl-biomet-rh-30min",
+        "pa": "flux-plynl-biomet-pa-30min",
+        "g1": "flux-plynl-biomet-shf1-30min",
+        "g2": "flux-plynl-biomet-shf2-30min",
+        "rn": "flux-plynl-biomet-rn-30min",
+        "swin": "flux-plynl-biomet-swin-30min",
+        "sonic_azimuth": "flux-plynl-dynamic-sonic-azimuth",
+        "height_measurement": "flux-plynl-dynamic-height-measurement",
+        "height_canopy": "flux-plynl-dynamic-height-canopy"
+      },
       "parameters": [
         {
           "param": "software_version",
@@ -703,10 +703,10 @@
       "id": "flux-plynl-shf-derivation",
       "type": "calculate",
       "method": "calc_flux_mean_shf",
-      "dep_ts": [
-        "flux-plynl-biomet-shf1-30min",
-        "flux-plynl-biomet-shf2-30min"
-      ]
+      "inputs": {
+        "g1": "flux-plynl-biomet-shf1-30min",
+        "g2": "flux-plynl-biomet-shf2-30min"
+      }
     },
     {
       "id": "flux-plynl-biomet-swin-30min-aggregate",
@@ -744,9 +744,9 @@
       "id": "flux-plynl-h-qc-flag",
       "type": "qc",
       "method": "flux_qc_flag",
-      "dep_ts": [
-        "flux-plynl-qc-h"
-      ]
+      "inputs": {
+        "qc_flag": "flux-plynl-qc-h"
+      }
     },
     {
       "id": "flux-plynl-h2o-flux-load",
@@ -792,9 +792,9 @@
       "id": "flux-plynl-tau-qc-flag",
       "type": "qc",
       "method": "flux_qc_flag",
-      "dep_ts": [
-        "flux-plynl-qc-tau"
-      ]
+      "inputs": {
+        "qc_flag": "flux-plynl-qc-tau"
+      }
     },
     {
       "id": "flux-plynl-u-var-load",
@@ -872,29 +872,29 @@
       "id": "flux-plynl-et-l1-derivation",
       "type": "calculate",
       "method": "calc_flux_et_l1",
-      "dep_ts": [
-        "flux-plynl-le-l1",
-        "flux-plynl-biomet-ta-30min"
-      ]
+      "inputs": {
+        "latent_heat_flux": "flux-plynl-le-l1",
+        "ta": "flux-plynl-biomet-ta-30min"
+      }
     },
     {
       "id": "flux-plynl-et-l2-derivation",
       "type": "calculate",
       "method": "calc_flux_et_l2",
-      "dep_ts": [
-        "flux-plynl-le-l2",
-        "flux-plynl-biomet-ta-30min"
-      ]
+      "inputs": {
+        "latent_heat_flux": "flux-plynl-le-l2",
+        "ta": "flux-plynl-biomet-ta-30min"
+      }
     },
     {
       "id": "flux-plynl-le-l1-derivation",
       "type": "calculate",
       "method": "calc_flux_le_l1",
-      "dep_ts": [
-        "flux-plynl-biomet-rn-30min",
-        "flux-plynl-shf",
-        "flux-plynl-h"
-      ]
+      "inputs": {
+        "rn": "flux-plynl-biomet-rn-30min",
+        "g": "flux-plynl-shf",
+        "h": "flux-plynl-h"
+      }
     },
     {
       "id": "flux-plynl-le-l1-range",
@@ -915,11 +915,11 @@
       "id": "flux-plynl-le-l2-derivation",
       "type": "calculate",
       "method": "calc_flux_le_l2",
-      "dep_ts": [
-        "flux-plynl-biomet-rn-30min",
-        "flux-plynl-shf",
-        "flux-plynl-h-l2"
-      ]
+      "inputs": {
+        "rn": "flux-plynl-biomet-rn-30min",
+        "g": "flux-plynl-shf",
+        "h": "flux-plynl-h-l2"
+      }
     },
     {
       "id": "flux-plynl-le-l2-range",

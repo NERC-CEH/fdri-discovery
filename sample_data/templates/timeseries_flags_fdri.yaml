@@ -1,0 +1,18 @@
+globals:
+  $baseURI: http://fdri.ceh.ac.uk/
+  $datasetID: default
+
+imports:
+  - namespaces.yaml
+
+resources:
+  - name: TimeseriesDataset
+    properties:
+      "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}>"
+      "<fdri:hasFlagColumn>":
+        - name: FlagColumn
+          properties:
+            "@id": "<http://fdri.ceh.ac.uk/id/dataset/{TIMESERIES_ID|slug}#flag_column.{FLAG_COLUMN|slug}>"
+            "@type": "<fdri:FlagColumn>"
+            "<fdri:columnName>": "{FLAG_COLUMN}"
+            "<fdri:valueScheme>": "<http://fdri.ceh.ac.uk/ref/common/{FLAG_SCHEME|slug}>"
