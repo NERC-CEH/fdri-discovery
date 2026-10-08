@@ -4888,39 +4888,6 @@
   ],
   "FDRI-TW-MENZA-01-WL": [
     {
-      "id": "fdri-tw-menza-01-wl-water_lev_radar_1min-plan",
-      "output": "fdri-tw-menza-01-wl-water_lev_radar_1min_processed",
-      "input": "fdri-tw-menza-01-wl-water_lev_radar_1min_raw",
-      "steps": [
-        "fdri-tw-menza-01-wl-water_lev_radar_1min-load_raw",
-        "fdri-tw-menza-01-wl-water_lev_radar_1min-battery_v",
-        "fdri-tw-menza-01-wl-water_lev_radar_1min-range",
-        "fdri-tw-menza-01-wl-water_lev_radar_1min-spike"
-      ]
-    },
-    {
-      "id": "fdri-tw-menza-01-wl-dist_to_water_radar_1min-plan",
-      "output": "fdri-tw-menza-01-wl-dist_to_water_radar_1min_processed",
-      "input": "fdri-tw-menza-01-wl-dist_to_water_radar_1min_raw",
-      "steps": [
-        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-load_raw",
-        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-battery_v",
-        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-range",
-        "fdri-tw-menza-01-wl-dist_to_water_radar_1min-spike"
-      ]
-    },
-    {
-      "id": "fdri-tw-menza-01-wl-radar_temp_1min-plan",
-      "output": "fdri-tw-menza-01-wl-radar_temp_1min_processed",
-      "input": "fdri-tw-menza-01-wl-radar_temp_1min_raw",
-      "steps": [
-        "fdri-tw-menza-01-wl-radar_temp_1min-load_raw",
-        "fdri-tw-menza-01-wl-radar_temp_1min-battery_v",
-        "fdri-tw-menza-01-wl-radar_temp_1min-range",
-        "fdri-tw-menza-01-wl-radar_temp_1min-spike"
-      ]
-    },
-    {
       "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-plan",
       "output": "fdri-tw-menza-01-wl-water_lev_pt_1min_processed",
       "input": "fdri-tw-menza-01-wl-water_lev_pt_1min_raw",
@@ -4943,24 +4910,10 @@
       ]
     },
     {
-      "id": "fdri-tw-menza-01-wl-radar_temp_1day-plan",
-      "output": "fdri-tw-menza-01-wl-radar_temp_1day_processed",
-      "steps": [
-        "fdri-tw-menza-01-wl-radar_temp_1day-mean"
-      ]
-    },
-    {
       "id": "fdri-tw-menza-01-wl-water_lev_pt_1day-plan",
       "output": "fdri-tw-menza-01-wl-water_lev_pt_1day_processed",
       "steps": [
         "fdri-tw-menza-01-wl-water_lev_pt_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-tw-menza-01-wl-water_lev_radar_1day-plan",
-      "output": "fdri-tw-menza-01-wl-water_lev_radar_1day_processed",
-      "steps": [
-        "fdri-tw-menza-01-wl-water_lev_radar_1day-mean"
       ]
     },
     {
