@@ -34,6 +34,78 @@
       ]
     }
   ],
+  "FDRI-CH-CHAPS-01-BH": [
+    {
+      "id": "fdri-ch-chaps-01-bh-water_lev_pt_15min-plan",
+      "output": "fdri-ch-chaps-01-bh-water_lev_pt_15min_processed",
+      "input": "fdri-ch-chaps-01-bh-water_lev_pt_15min_raw",
+      "steps": [
+        "fdri-ch-chaps-01-bh-water_lev_pt_15min-load_raw",
+        "fdri-ch-chaps-01-bh-water_lev_pt_15min-range",
+        "fdri-ch-chaps-01-bh-water_lev_pt_15min-spike"
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_temp_15min-plan",
+      "output": "fdri-ch-chaps-01-bh-water_temp_15min_processed",
+      "input": "fdri-ch-chaps-01-bh-water_temp_15min_raw",
+      "steps": [
+        "fdri-ch-chaps-01-bh-water_temp_15min-load_raw",
+        "fdri-ch-chaps-01-bh-water_temp_15min-range",
+        "fdri-ch-chaps-01-bh-water_temp_15min-spike"
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_lev_pt_1day-plan",
+      "output": "fdri-ch-chaps-01-bh-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-ch-chaps-01-bh-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_temp_1day-plan",
+      "output": "fdri-ch-chaps-01-bh-water_temp_1day_processed",
+      "steps": [
+        "fdri-ch-chaps-01-bh-water_temp_1day-mean"
+      ]
+    }
+  ],
+  "FDRI-CH-CHMNT-01-BH": [
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_lev_pt_15min-plan",
+      "output": "fdri-ch-chmnt-01-bh-water_lev_pt_15min_processed",
+      "input": "fdri-ch-chmnt-01-bh-water_lev_pt_15min_raw",
+      "steps": [
+        "fdri-ch-chmnt-01-bh-water_lev_pt_15min-load_raw",
+        "fdri-ch-chmnt-01-bh-water_lev_pt_15min-range",
+        "fdri-ch-chmnt-01-bh-water_lev_pt_15min-spike"
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_temp_15min-plan",
+      "output": "fdri-ch-chmnt-01-bh-water_temp_15min_processed",
+      "input": "fdri-ch-chmnt-01-bh-water_temp_15min_raw",
+      "steps": [
+        "fdri-ch-chmnt-01-bh-water_temp_15min-load_raw",
+        "fdri-ch-chmnt-01-bh-water_temp_15min-range",
+        "fdri-ch-chmnt-01-bh-water_temp_15min-spike"
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_lev_pt_1day-plan",
+      "output": "fdri-ch-chmnt-01-bh-water_lev_pt_1day_processed",
+      "steps": [
+        "fdri-ch-chmnt-01-bh-water_lev_pt_1day-mean"
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_temp_1day-plan",
+      "output": "fdri-ch-chmnt-01-bh-water_temp_1day_processed",
+      "steps": [
+        "fdri-ch-chmnt-01-bh-water_temp_1day-mean"
+      ]
+    }
+  ],
   "FDRI-CH-CHOPS-01-RG": [
     {
       "id": "fdri-ch-chops-01-rg-stdrd_precip_int_1min-plan",
