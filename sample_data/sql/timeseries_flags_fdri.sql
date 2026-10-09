@@ -4,7 +4,7 @@ create table ts as from read_csv('./sample_data/src/TIMESERIES_IDS_FDRI.csv', AU
 copy(
 select
 ts.TIMESERIES_ID,
-fd.FLAG_COLUMN,
+ts.COLUMN_NAME || '_' || fd.FLAG_TYPE as FLAG_COLUMN,
 fd.FLAG_SCHEME
 from ts join fd on ts.FLAG_DEF = fd.FLAG_DEF
 order by ts.TIMESERIES_ID
