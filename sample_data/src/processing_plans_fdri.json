@@ -3735,26 +3735,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-plan",
-      "output": "fdri-se-carwe-01-ws-precip_int_lr_1min_processed",
-      "input": "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_1MIN_RAW",
-      "steps": [
-        "fdri-se-carwe-01-ws-precip_int_lr_1min-load_raw",
-        "fdri-se-carwe-01-ws-precip_int_lr_1min-battery_v",
-        "fdri-se-carwe-01-ws-precip_int_lr_1min-range"
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-plan",
-      "output": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min_processed",
-      "input": "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_HR_1MIN_RAW",
-      "steps": [
-        "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-load_raw",
-        "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-battery_v",
-        "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-range"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-lwin_1min-plan",
       "output": "fdri-se-carwe-01-ws-lwin_1min_processed",
       "input": "FDRI-SE-CARWE-01-WS-LWIN_1MIN_RAW",
@@ -3925,20 +3905,6 @@
       "output": "fdri-se-carwe-01-ws-precip_int_hr_1day_processed",
       "steps": [
         "fdri-se-carwe-01-ws-precip_int_hr_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_1day-plan",
-      "output": "fdri-se-carwe-01-ws-precip_int_lr_1day_processed",
-      "steps": [
-        "fdri-se-carwe-01-ws-precip_int_lr_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1day-plan",
-      "output": "fdri-se-carwe-01-ws-precip_int_lr_hr_1day_processed",
-      "steps": [
-        "fdri-se-carwe-01-ws-precip_int_lr_hr_1day-mean"
       ]
     },
     {
@@ -4195,16 +4161,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_1min-plan",
-      "output": "fdri-se-fofad-01-pr-pit_int_lr_1min_processed",
-      "input": "fdri-se-fofad-01-pr-pit_int_lr_1min_raw",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_int_lr_1min-load_raw",
-        "fdri-se-fofad-01-pr-pit_int_lr_1min-battery_v",
-        "fdri-se-fofad-01-pr-pit_int_lr_1min-range"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-pit_precip_1min-plan",
       "output": "fdri-se-fofad-01-pr-pit_precip_1min_processed",
       "input": "fdri-se-fofad-01-pr-pit_precip_1min_raw",
@@ -4251,16 +4207,6 @@
         "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1min-load_raw",
         "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1min-battery_v",
         "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1min-range"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min-plan",
-      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min_processed",
-      "input": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min_raw",
-      "steps": [
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min-load_raw",
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min-battery_v",
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1min-range"
       ]
     },
     {
@@ -4456,13 +4402,6 @@
       ]
     },
     {
-      "id": "fdri-se-fofad-01-pr-pit_int_lr_1day-plan",
-      "output": "fdri-se-fofad-01-pr-pit_int_lr_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-pit_int_lr_1day-mean"
-      ]
-    },
-    {
       "id": "fdri-se-fofad-01-pr-pit_precip_1day-plan",
       "output": "fdri-se-fofad-01-pr-pit_precip_1day_processed",
       "steps": [
@@ -4488,13 +4427,6 @@
       "output": "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1day_processed",
       "steps": [
         "fdri-se-fofad-01-pr-stdrd_precip_int_hr_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day-plan",
-      "output": "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day_processed",
-      "steps": [
-        "fdri-se-fofad-01-pr-stdrd_precip_int_lr_1day-mean"
       ]
     },
     {
