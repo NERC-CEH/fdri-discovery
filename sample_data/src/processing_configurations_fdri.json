@@ -11515,22 +11515,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_1MIN_RAW"
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_HR_1MIN_RAW"
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-lwin_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -11766,34 +11750,6 @@
       ]
     },
     {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "inputs": {
-        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      },
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-battery_v",
-      "type": "qc",
-      "method": "BATTERY_V",
-      "inputs": {
-        "battv": "FDRI-SE-CARWE-01-WS-BATTV_1MIN_RAW"
-      },
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 10.5
-        }
-      ]
-    },
-    {
       "id": "fdri-se-carwe-01-ws-lwin_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -11990,36 +11946,6 @@
     },
     {
       "id": "fdri-se-carwe-01-ws-precip_int_hr_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 100.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_1min-range",
-      "type": "qc",
-      "method": "RANGE",
-      "parameters": [
-        {
-          "param": "lt",
-          "value": 0.0
-        },
-        {
-          "param": "gt",
-          "value": 100.0
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1min-range",
       "type": "qc",
       "method": "RANGE",
       "parameters": [
@@ -12309,34 +12235,6 @@
       "method": "mean",
       "dep_ts": [
         "FDRI-SE-CARWE-01-WS-PRECIP_INT_HR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_1MIN_PROCESSED"
-      ],
-      "parameters": [
-        {
-          "param": "round",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "fdri-se-carwe-01-ws-precip_int_lr_hr_1day-mean",
-      "type": "aggregate",
-      "method": "mean",
-      "dep_ts": [
-        "FDRI-SE-CARWE-01-WS-PRECIP_INT_LR_HR_1MIN_PROCESSED"
       ],
       "parameters": [
         {
