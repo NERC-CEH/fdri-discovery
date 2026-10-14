@@ -82,6 +82,202 @@
       ]
     }
   ],
+  "FDRI-CH-CHAPS-01-BH": [
+    {
+      "id": "fdri-ch-chaps-01-bh-water_lev_pt_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-chaps-01-bh-water_lev_pt_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_lev_pt_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_lev_pt_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-chaps-01-bh-water_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -5.0
+        },
+        {
+          "param": "gt",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-CHAPS-01-BH-WATER_LEV_PT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chaps-01-bh-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-CHAPS-01-BH-WATER_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "FDRI-CH-CHMNT-01-BH": [
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_lev_pt_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-chmnt-01-bh-water_lev_pt_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_lev_pt_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_lev_pt_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-chmnt-01-bh-water_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -5.0
+        },
+        {
+          "param": "gt",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_lev_pt_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-CHMNT-01-BH-WATER_LEV_PT_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "fdri-ch-chmnt-01-bh-water_temp_1day-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "FDRI-CH-CHMNT-01-BH-WATER_TEMP_15MIN_PROCESSED"
+      ],
+      "parameters": [
+        {
+          "param": "round",
+          "value": 1
+        }
+      ]
+    }
+  ],
   "FDRI-CH-CHOPS-01-RG": [
     {
       "id": "fdri-ch-chops-01-rg-stdrd_precip_int_1min-load_raw",
