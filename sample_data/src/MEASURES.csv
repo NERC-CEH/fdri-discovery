@@ -95,8 +95,6 @@ COND_50-MEAN_PROC-DSM-1-P1D-P1D,,SOIL_COND_50CM,DSM-1,MEAN,PROC,P1D,P1D,Mean soi
 COND_50-MEAN_PROC-US_CM-1-P1D-P1D,,SOIL_COND_50CM,US_CM-1,MEAN,PROC,P1D,P1D,Mean soil electrical conductivity at 50 cm depth over proceeding day in µS/cm,0,
 COND_60-MEAN_PREC-DSM-1-PT10M-PT10M,,SOIL_COND_60CM,DSM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 60 cm depth over the preceding 10 minutes in dS/m,0,
 COND_60-MEAN_PREC-US_CM-1-PT10M-PT10M,,SOIL_COND_60CM,US_CM-1,MEAN,PREC,PT10M,PT10M,Mean soil electrical conductivity at 60 cm depth over the preceding 10 minutes in µS/cm,0,
-SOIL_COND-MEAN_PREC-DSM-1-PT15M-PT15M,,SOIL_COND,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in dS/m,0,
-SOIL_COND-MEAN_PREC-US_CM-1-PT15M-PT15M,,SOIL_COND,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in µS/cm,0,
 COV_TS_UX-INST-KMS-1-PT30M-PT30M,,COV_TS_UX,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UX wind speed component in kelvin meters per second,,
 COV_TS_UY-INST-KMS-1-PT30M-PT30M,,COV_TS_UY,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UY wind speed component in kelvin meters per second,,
 COV_TS_UZ-INST-KMS-1-PT30M-PT30M,,COV_TS_UZ,KMS-1,NONE,INST,PT30M,PT30M,Instantaneous covariance between sonic temperature and UZ wind speed component in kelvin meters per second,,
@@ -327,8 +325,8 @@ SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC
 SENSOR_ANGLE-INST-DEG-PT15M-PT15M,,SENSOR_ANGLE,DEG,NONE,INST,PT15M,PT15M,Instantaneous angle of sensor in degrees,0,360
 SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous status of sensor,,
 SIGNAL_STRENGTH-INST-UNITLESS-PT15M-PT15M,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous signal strength over the preceding 15 minutes,,
-SIGNAL_STRENGTH-INST-UNITLESS-PT30M-PT30M,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous signal strength over the preceding 30 minutes,,
 SIGNAL_STRENGTH-INST-UNITLESS-PT1H-PT1H,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT1H,PT1H,Instantaneous signal strength over the preceding hour,,
+SIGNAL_STRENGTH-INST-UNITLESS-PT30M-PT30M,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous signal strength over the preceding 30 minutes,,
 SIGNAL_TO_NOISE_RATIO-INST-DeciB-PT1M-PT1M,,SIGNAL_TO_NOISE_RATIO,DeciB,NONE,INST,PT1M,PT1M,Instantaneous signal to noise ratio in Decibel,,
 SMI-MEAN_PROC-UNITLESS-P1D-P1D,,SMI,UNITLESS,MEAN,PROC,P1D,P1D,Soil moisture index over the proceeding day (unitless),0,1
 SNOW_DAY-PROC-UNITLESS-P1D-P1D,,SNOW_DAY,UNITLESS,NONE,PROC,P1D,P1D,Indicator of snow day over the proceeding day (unitless),0,1
@@ -337,17 +335,19 @@ SNOW_DEPTH-MEAN_PREC-CM-PT30M-PT30M,,SNOW_DEPTH,CM,MEAN,PREC,PT30M,PT30M,Mean sn
 SNOW_DEPTH-MEAN_PROC-M-P1D-P1D,,SNOW_DEPTH,M,MEAN,PROC,P1D,P1D,Mean snow depth over the proceeding day in metres,0,
 SNOW_DISTANCE-INST-M-PT30M-PT30M,,SNOW_DISTANCE,M,NONE,INST,PT30M,PT30M,Instantaneous distance from sensor to snow in metres,0,
 SOC_BATT-MEAN_PREC-PCT-PT1M-PT1M,,SOC_BATT,PCT,MEAN,PREC,PT1M,PT1M,Mean battery state of charge over the preceding minute in percent,0,100
+SOIL_COND-MEAN_PREC-DSM-1-PT15M-PT15M,,SOIL_COND,DSM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in dS/m,0,
+SOIL_COND-MEAN_PREC-US_CM-1-PT15M-PT15M,,SOIL_COND,US_CM-1,MEAN,PREC,PT15M,PT15M,Mean soil electrical conductivity over the preceding 15 minutes in µS/cm,0,
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT1M,PT1M,Mean solar zenith angle over the preceding minute in radians,0,3.14159265358979
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in radians,0,3.14159265358979
 SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees,0,360
 SSITC-INST-UNITLESS-PT30M-PT30M,,SSITC,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous steady state and integral turbulence characteristics,,
 STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts,,
 STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,STATUS_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count over the preceding 30 minutes in counts,,
+SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres,0,
 SWE-MEAN_PREC-PCT-PT1H-PT1H,,SWE,PCT,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in percent,0,100
 SWE-MEAN_PREC-PCT-PT30M-PT30M,,SWE,PCT,MEAN,PREC,PT30M,PT30M,Mean snow water equivalent over the preceding 30 minutes in percent,0,100
-SWE-MEAN_PROC-PCT-P1D-P1D,,SWE,PCT,MEAN,PROC,P1D,P1D,Mean snow water equivalent over proceeding day in percent,0,100
-SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres,0,
 SWE-MEAN_PROC-MM-P1D-P1D,,SWE,MM,MEAN,PROC,P1D,P1D,Mean snow water equivalent over the proceeding day in millimetres,0,
+SWE-MEAN_PROC-PCT-P1D-P1D,,SWE,PCT,MEAN,PROC,P1D,P1D,Mean snow water equivalent over proceeding day in percent,0,100
 SWE-POINT_PROC-MM-P1D-P1D,,SWE,MM,POINT,PROC,P1D,P1D,Snow water equivalent value representing the proceeding day in millimetres,0,
 SWIN_FACTOR-INST-UNITLESS-PT30M-PT30M,,SWIN_FACTOR,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation calibration factor (unitless),,
 SWIN-INST-WM-2-PT30M-PT30M,,SWIN,WM-2,NONE,INST,PT30M,PT30M,Instantaneous incoming shortwave radiation in millivolts,0,
@@ -475,13 +475,14 @@ VOLTAGE-INST-V-PT30M-PT30M,,VOLTAGE,V,NONE,INST,PT30M,PT30M,Instantaneous voltag
 VOLTAGE-MEAN_PREC-V-PT1H-PT1H,,VOLTAGE,V,MEAN,PREC,PT1H,PT1H,Mean voltage over the preceding hour in volts,0,
 VOLTAGE-MEAN_PREC-V-PT30M-PT30M,,VOLTAGE,V,MEAN,PREC,PT30M,PT30M,Mean voltage over the preceding 30 minutes in volts,0,
 VPD-MEAN_PREC-HPA-PT30M-PT30M,,VPD,HPA,MEAN,PREC,PT30M,PT30M,Mean vapour pressure deficit over the preceding 30 minutes in hectopascals,,
-VWC_AREA-MEAN_PROC-PCT-P1D-P1D,,VWC_AREA,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content over large area over the proceeding day in percent,0,100
 VWC_AREA-MEAN_PREC-PCT-PT1H-PT1H,,VWC_AREA,PCT,MEAN,PREC,PT1H,PT1H,Mean volumetric water content over large area over the preceding hour in percent,0,100
 VWC_AREA-MEAN_PREC-PCT-PT30M-PT30M,,VWC_AREA,PCT,MEAN,PREC,PT30M,PT30M,Mean volumetric water content over large area over the preceding 30 minutes in percent,0,100
+VWC_AREA-MEAN_PROC-PCT-P1D-P1D,,VWC_AREA,PCT,MEAN,PROC,P1D,P1D,Mean volumetric water content over large area over the proceeding day in percent,0,100
 VWC_SOIL_10-INST-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_10CM,M3-PER-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 10 cm depth in cubic metres per cubic metre,0,1
 VWC_SOIL_10-INST-PCT-PT10M-PT10M,,VWC_SOIL_10CM,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 10 cm depth in percent,0,100
 VWC_SOIL_10-INST-PCT-PT30M-PT30M,,VWC_SOIL_10CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 10 cm depth in percent,0,100
 VWC_SOIL_10-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_10CM,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 10 cm depth over the preceding 15 minutes in cubic metres per cubic metre,0,1
+VWC_SOIL_10-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_10CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 10 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_10-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_10CM,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 10 cm depth over the preceding 10 minutes in percent,0,100
 VWC_SOIL_10-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_10CM,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 10 cm depth over the preceding 15 minutes in percent,0,100
 VWC_SOIL_10-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_10CM,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 10 cm depth over the preceding 30 minutes in percent,0,100
@@ -490,35 +491,44 @@ VWC_SOIL_10-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_10CM,PCT,MEAN,PROC,P1D,P1D,Mean soil
 VWC_SOIL_15-INST-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_15CM,M3-PER-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 15 cm depth in cubic metres per cubic metre,0,1
 VWC_SOIL_15-INST-PCT-PT30M-PT30M,,VWC_SOIL_15CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 15 cm depth in percent,0,100
 VWC_SOIL_15-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_15CM,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 15 cm depth over the preceding 15 minutes in cubic metres per cubic metre,0,1
+VWC_SOIL_15-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_15CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 15 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_15-MEAN_PROC-M3-PER-M3-P1D-P1D,,VWC_SOIL_15CM,M3-PER-M3,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 15 cm depth over proceeding day in cubic metres per cubic metre,0,1
 VWC_SOIL_15-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_15CM,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 15 cm depth over the proceeding day in percent,0,100
 VWC_SOIL_20-INST-PCT-PT10M-PT10M,,VWC_SOIL_20CM,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 20 cm depth in percent,0,100
 VWC_SOIL_20-INST-PCT-PT30M-PT30M,,VWC_SOIL_20CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 20 cm depth in percent,0,100
+VWC_SOIL_20-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_20CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 20 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_20-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_20CM,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 20 cm depth over the preceding 10 minutes in percent,0,100
 VWC_SOIL_20-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_20CM,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 20 cm depth over the preceding 15 minutes in percent,0,100
 VWC_SOIL_20-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_20CM,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 20 cm depth over the preceding 30 minutes in percent,0,100
+VWC_SOIL_20-MEAN_PROC-M3-PER-M3-P1D-P1D,,VWC_SOIL_20CM,M3-PER-M3,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 20 cm depth over proceeding day in cubic metres per cubic metre,0,1
 VWC_SOIL_20-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_20CM,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 20 cm depth over proceeding day in percent,0,100
 VWC_SOIL_25-INST-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_25CM,M3-PER-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 25 cm depth in cubic metres per cubic metre,0,1
 VWC_SOIL_25-INST-PCT-PT30M-PT30M,,VWC_SOIL_25CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 25 cm depth in percent,0,100
 VWC_SOIL_25-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_25CM,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 25 cm depth over the preceding 15 minutes in cubic metres per cubic metre,0,1
+VWC_SOIL_25-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_25CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 25 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_25-MEAN_PROC-M3-PER-M3-P1D-P1D,,VWC_SOIL_25CM,M3-PER-M3,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 25 cm depth over proceeding day in cubic metres per cubic metre,0,1
 VWC_SOIL_25-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_25CM,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 25 cm depth over the proceeding day in percent,0,100
 VWC_SOIL_30-INST-PCT-PT10M-PT10M,,VWC_SOIL_30CM,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 30 cm depth in percent,0,100
 VWC_SOIL_30-INST-PCT-PT30M-PT30M,,VWC_SOIL_30CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 30 cm depth in percent,0,100
+VWC_SOIL_30-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_30CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 30 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_30-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_30CM,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 30 cm depth over the preceding 10 minutes in percent,0,100
 VWC_SOIL_30-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_30CM,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 30 cm depth over the preceding 15 minutes in percent,0,100
 VWC_SOIL_30-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_30CM,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 30 cm depth over the preceding 30 minutes in percent,0,100
+VWC_SOIL_30-MEAN_PROC-M3-PER-M3-P1D-P1D,,VWC_SOIL_30CM,M3-PER-M3,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 30 cm depth over proceeding day in cubic metres per cubic metre,0,1
 VWC_SOIL_30-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_30CM,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 30 cm depth over proceeding day in percent,0,100
 VWC_SOIL_40-INST-PCT-PT10M-PT10M,,VWC_SOIL_40CM,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 40 cm depth in percent,0,100
 VWC_SOIL_40-INST-PCT-PT30M-PT30M,,VWC_SOIL_40CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 40 cm depth in percent,0,100
 VWC_SOIL_40-INST-PCT-PT30M-PT30M,,VWC_SOIL_40CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 40 cm depth in percent,0,100
+VWC_SOIL_40-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_40CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 40 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_40-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_40CM,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 40 cm depth over the preceding 10 minutes in percent,0,100
 VWC_SOIL_40-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_40CM,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 40 cm depth over the preceding 15 minutes in percent,0,100
 VWC_SOIL_40-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_40CM,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 40 cm depth over the preceding 30 minutes in percent,0,100
+VWC_SOIL_40-MEAN_PROC-M3-PER-M3-P1D-P1D,,VWC_SOIL_40CM,M3-PER-M3,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 40 cm depth over proceeding day in cubic metres per cubic metre,0,1
 VWC_SOIL_40-MEAN_PROC-PCT-P1D-P1D,,VWC_SOIL_40CM,PCT,MEAN,PROC,P1D,P1D,Mean soil volumetric water content at 40 cm depth over proceeding day in percent,0,100
 VWC_SOIL_5-INST-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_5CM,M3-PER-M3,NONE,INST,PT15M,PT15M,Instantaneous soil volumetric water content at 5 cm depth in cubic metres per cubic metre,0,1
 VWC_SOIL_5-INST-PCT-PT30M-PT30M,,VWC_SOIL_5CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 5 cm depth in percent,0,100
 VWC_SOIL_5-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_5CM,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 5 cm depth over the preceding 15 minutes in cubic metres per cubic metre,0,1
+VWC_SOIL_5-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_5CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 5 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_5-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_5CM,PCT,MEAN,PROC,PT10M,PT10M,Mean soil volumetric water content at 5 cm depth over the preceding 10 minutes in percent,0,100
 VWC_SOIL_5-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_5CM,PCT,MEAN,PROC,PT15M,PT15M,Mean soil volumetric water content at 5 cm depth over the preceding 15 minutes in percent,0,100
 VWC_SOIL_5-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_5CM,PCT,MEAN,PROC,PT30M,PT30M,Mean soil volumetric water content at 5 cm depth over the preceding 30 minutes in percent,0,100
@@ -528,6 +538,7 @@ VWC_SOIL_50-INST-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_50CM,M3-PER-M3,NONE,INST,PT15M,
 VWC_SOIL_50-INST-PCT-PT10M-PT10M,,VWC_SOIL_50CM,PCT,NONE,INST,PT10M,PT10M,Instantaneous soil volumetric water content at 50 cm depth in percent,0,100
 VWC_SOIL_50-INST-PCT-PT30M-PT30M,,VWC_SOIL_50CM,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water content at 50 cm depth in percent,0,100
 VWC_SOIL_50-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL_50CM,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 50 cm depth over the preceding 15 minutes in cubic metres per cubic metre,0,1
+VWC_SOIL_50-MEAN_PREC-M3-PER-M3-PT30M-PT30M,,VWC_SOIL_50CM,M3-PER-M3,MEAN,PREC,PT30M,PT30M,Instantaneous soil volumetric water content at 50 cm depth over the preceding 30 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL_50-MEAN_PREC-PCT-PT10M-PT10M,,VWC_SOIL_50CM,PCT,MEAN,PREC,PT10M,PT10M,Mean soil volumetric water content at 50 cm depth over the preceding 10 minutes in percent,0,100
 VWC_SOIL_50-MEAN_PREC-PCT-PT15M-PT15M,,VWC_SOIL_50CM,PCT,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content at 50 cm depth over the preceding 15 minutes in percent,0,100
 VWC_SOIL_50-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL_50CM,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content at 50 cm depth over the preceding 30 minutes in percent,0,100
