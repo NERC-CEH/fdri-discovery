@@ -120,7 +120,7 @@ FETCH_90-INST-M-PT30M-PT30M,,FETCH_90PCT,M,NONE,INST,PT30M,PT30M,Instantaneous u
 FETCH_MAX-INST-M-PT30M-PT30M,,FETCH_MAX,M,NONE,INST,PT30M,PT30M,Instantaneous upwind range which sources/sinks contribute most to the flux in meters,0,
 FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,NONE,INST,PT30M,PT30M,Instantaneous momentum flux in kilograms per metre per second squared,,
 FLUX_MOM-MEAN_PREC-KGM-1S-2-PT30M-PT30M,,FLUX_MOM,KGM-1S-2,MEAN,PREC,PT30M,PT30M,Mean momentum flux over the preceding 30 minutes in kilograms per metre per second squared,,
-FRICTIONV-INST-MS-1-PT30M-PT30M,,FRICTIONV,MS-1,NONE,INST,PT30M,PT30M,Instantaneous friction velocity in metres per second,0,
+FRICTION_VEL-INST-MS-1-PT30M-PT30M,,FRICTION_VEL,MS-1,NONE,INST,PT30M,PT30M,Instantaneous friction velocity in metres per second,0,
 H2O_FLUX-INST-MicroMOL-PER-M2-SEC-PT30M-PT30M,,H2O_FLUX,MicroMOL-PER-M2-SEC,NONE,INST,PT30M,PT30M,Instantaneous H2O flux in millimoles per metre squared per second,,
 H2O_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,H2O_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean H2O flux over the preceding 30 minutes in millimoles per metre squared per second,,
 H2O_FRAC-MEAN_PREC-GM-3-PT30M-PT30M,,H2O_FRAC,GM-3,MEAN,PREC,PT30M,PT30M,Mean H2O fraction over the preceding 30 minutes in in grams per cubic metre,0,

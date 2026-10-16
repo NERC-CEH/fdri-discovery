@@ -473,7 +473,7 @@ FDRI-CH_TRIGR_EC-MO_LENGTH_EC_30MIN_RAW,Monin-Obukhov length,CH_TRIGR_EC,ukceh-d
 FDRI-CH_TRIGR_EC-TAU_EC_30MIN_RAW,Momentum flux,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,TAU,time,FLUX_MOM-INST-KGM-1S-2-PT30M-PT30M,RAW,,
 FDRI-CH_TRIGR_EC-TAU_SSITC_TEST_EC_30MIN_RAW,Steady State and Integral Turbulence Characteristics for Momentum flux,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,TAU_SSITC_TEST,time,SSITC-INST-UNITLESS-PT30M-PT30M,RAW,,
 FDRI-CH_TRIGR_EC-U_SIGMA_EC_30MIN_RAW,Wind speed in stream-wise wind direction (standard deviation),CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,U_SIGMA,time,WS-STDDEV_PREC-MS-1-PT30M-PT30M,RAW,,
-FDRI-CH_TRIGR_EC-USTAR_EC_30MIN_RAW,Friction velocity,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,USTAR,time,FRICTIONV-INST-MS-1-PT30M-PT30M,RAW,,
+FDRI-CH_TRIGR_EC-USTAR_EC_30MIN_RAW,Friction velocity,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,USTAR,time,FRICTION_VEL-INST-MS-1-PT30M-PT30M,RAW,,
 FDRI-CH_TRIGR_EC-V_SIGMA_EC_30MIN_RAW,Wind speed in lateral direction (standard deviation),CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,V_SIGMA,time,WS-STDDEV_PREC-MS-1-PT30M-PT30M,RAW,,
 FDRI-CH_TRIGR_EC-W_SIGMA_EC_30MIN_RAW,Wind speed in vertical direction (standard deviation),CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,W_SIGMA,time,WS-STDDEV_PREC-MS-1-PT30M-PT30M,RAW,,
 FDRI-CH_TRIGR_EC-WD_EC_30MIN_RAW,Wind direction,CH_TRIGR_EC,ukceh-dri-staging-ingested,Flux_AmeriFlux,WD,time,WD-INST-DEG-PT30M-PT30M,RAW,,

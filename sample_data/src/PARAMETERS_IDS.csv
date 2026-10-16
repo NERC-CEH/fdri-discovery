@@ -35,7 +35,7 @@ FETCH_80PCT,Upwind range which sources/sinks contribute 80% to the flux,AIR,FLUX
 FETCH_90PCT,Upwind range which sources/sinks contribute 90% to the flux,AIR,FLUX,
 FETCH_MAX,Upwind range which sources/sinks contribute most to the flux,AIR,FLUX,
 FLUX_MOM,Momentum flux,AIR,MOMENTUM-FLUX,
-FRICTIONV,Friction velocity,AIR,FRICTION-VELOCITY,
+FRICTION_VEL,Friction velocity,AIR,FRICTION-VELOCITY,
 H2O_FLUX,H2O flux,AIR,MASS-FLUX,
 H2O_FRAC,H2O fraction,AIR,FRACTION,
 HEATFLUX_LATENT,Latent heat flux,AIR,HEAT-FLUX-DENSITY,
