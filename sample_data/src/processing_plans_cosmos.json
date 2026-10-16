@@ -4602,6 +4602,1752 @@
       ]
     }
   ],
+  "COSMOS-CAMBO": [
+    {
+      "id": "cosmos-cambo-albedo_1day-plan",
+      "output": "cosmos-cambo-albedo_1day_processed",
+      "steps": [
+        "cosmos-cambo-albedo_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-albedo_30min-plan",
+      "output": "cosmos-cambo-albedo_30min_processed",
+      "steps": [
+        "cosmos-cambo-albedo_30min-calc_albedo",
+        "cosmos-cambo-albedo_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-albedo_std_1day-plan",
+      "output": "cosmos-cambo-albedo_std_1day_processed",
+      "steps": [
+        "cosmos-cambo-albedo_std_1day-stdev"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cosmos_vwc_1day-plan",
+      "output": "cosmos-cambo-cosmos_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-cosmos_vwc_1day-calculate_vwc_with_snow",
+        "cosmos-cambo-cosmos_vwc_1day-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cosmos_vwc_1hour-plan",
+      "output": "cosmos-cambo-cosmos_vwc_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cosmos_vwc_1hour-calculate_vwc"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cosmos_vwc_no_snow_1day-plan",
+      "output": "cosmos-cambo-cosmos_vwc_no_snow_1day_processed",
+      "steps": [
+        "cosmos-cambo-cosmos_vwc_no_snow_1day-calculate_vwc",
+        "cosmos-cambo-cosmos_vwc_no_snow_1day-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cosmosfactor_inten_1hour-plan",
+      "output": "cosmos-cambo-cosmosfactor_inten_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cosmosfactor_inten_1hour-calc_factor_inten"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cosmosfactor_pa_1hour-plan",
+      "output": "cosmos-cambo-cosmosfactor_pa_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cosmosfactor_pa_1hour-calc_factor_pa"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cosmosfactor_q_1hour-plan",
+      "output": "cosmos-cambo-cosmosfactor_q_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cosmosfactor_q_1hour-calc_factor_q"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cov_ts_ux_30min-plan",
+      "output": "cosmos-cambo-cov_ts_ux_30min_processed",
+      "input": "cosmos-cambo-cov_ts_ux_30min_raw",
+      "steps": [
+        "cosmos-cambo-cov_ts_ux_30min-load_raw",
+        "cosmos-cambo-cov_ts_ux_30min-range",
+        "cosmos-cambo-cov_ts_ux_30min-battery_v",
+        "cosmos-cambo-cov_ts_ux_30min-error_code",
+        "cosmos-cambo-cov_ts_ux_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cov_ts_uy_30min-plan",
+      "output": "cosmos-cambo-cov_ts_uy_30min_processed",
+      "input": "cosmos-cambo-cov_ts_uy_30min_raw",
+      "steps": [
+        "cosmos-cambo-cov_ts_uy_30min-load_raw",
+        "cosmos-cambo-cov_ts_uy_30min-range",
+        "cosmos-cambo-cov_ts_uy_30min-battery_v",
+        "cosmos-cambo-cov_ts_uy_30min-error_code",
+        "cosmos-cambo-cov_ts_uy_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cov_ts_uz_30min-plan",
+      "output": "cosmos-cambo-cov_ts_uz_30min_processed",
+      "input": "cosmos-cambo-cov_ts_uz_30min_raw",
+      "steps": [
+        "cosmos-cambo-cov_ts_uz_30min-load_raw",
+        "cosmos-cambo-cov_ts_uz_30min-range",
+        "cosmos-cambo-cov_ts_uz_30min-battery_v",
+        "cosmos-cambo-cov_ts_uz_30min-error_code",
+        "cosmos-cambo-cov_ts_uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cov_ux_uy_30min-plan",
+      "output": "cosmos-cambo-cov_ux_uy_30min_processed",
+      "input": "cosmos-cambo-cov_ux_uy_30min_raw",
+      "steps": [
+        "cosmos-cambo-cov_ux_uy_30min-load_raw",
+        "cosmos-cambo-cov_ux_uy_30min-range",
+        "cosmos-cambo-cov_ux_uy_30min-battery_v",
+        "cosmos-cambo-cov_ux_uy_30min-error_code",
+        "cosmos-cambo-cov_ux_uy_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cov_ux_uz_30min-plan",
+      "output": "cosmos-cambo-cov_ux_uz_30min_processed",
+      "input": "cosmos-cambo-cov_ux_uz_30min_raw",
+      "steps": [
+        "cosmos-cambo-cov_ux_uz_30min-load_raw",
+        "cosmos-cambo-cov_ux_uz_30min-range",
+        "cosmos-cambo-cov_ux_uz_30min-battery_v",
+        "cosmos-cambo-cov_ux_uz_30min-error_code",
+        "cosmos-cambo-cov_ux_uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cov_uy_uz_30min-plan",
+      "output": "cosmos-cambo-cov_uy_uz_30min_processed",
+      "input": "cosmos-cambo-cov_uy_uz_30min_raw",
+      "steps": [
+        "cosmos-cambo-cov_uy_uz_30min-load_raw",
+        "cosmos-cambo-cov_uy_uz_30min-range",
+        "cosmos-cambo-cov_uy_uz_30min-battery_v",
+        "cosmos-cambo-cov_uy_uz_30min-error_code",
+        "cosmos-cambo-cov_uy_uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_est_crns_1day-plan",
+      "output": "cosmos-cambo-cts_est_crns_1day_processed",
+      "steps": [
+        "cosmos-cambo-cts_est_crns_1day-point_estimate"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_est_crns_1hour-plan",
+      "output": "cosmos-cambo-cts_est_crns_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cts_est_crns_1hour-get_snow_estimated_counts"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_mod_1hour-plan",
+      "output": "cosmos-cambo-cts_mod_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cts_mod_1hour-sum"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_mod_30min-plan",
+      "output": "cosmos-cambo-cts_mod_30min_processed",
+      "input": "cosmos-cambo-cts_mod_30min_raw",
+      "steps": [
+        "cosmos-cambo-cts_mod_30min-load_raw",
+        "cosmos-cambo-cts_mod_30min-spike",
+        "cosmos-cambo-cts_mod_30min-range",
+        "cosmos-cambo-cts_mod_30min-battery_v",
+        "cosmos-cambo-cts_mod_30min-error_code",
+        "cosmos-cambo-cts_mod_30min-samples",
+        "cosmos-cambo-cts_mod_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_mod_corr_1day-plan",
+      "output": "cosmos-cambo-cts_mod_corr_1day_processed",
+      "steps": [
+        "cosmos-cambo-cts_mod_corr_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_mod_corr_1hour-plan",
+      "output": "cosmos-cambo-cts_mod_corr_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cts_mod_corr_1hour-correct_counts"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_mod_period_30min-plan",
+      "output": "cosmos-cambo-cts_mod_period_30min_processed",
+      "input": "cosmos-cambo-cts_mod_period_30min_raw",
+      "steps": [
+        "cosmos-cambo-cts_mod_period_30min-load_raw",
+        "cosmos-cambo-cts_mod_period_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_mod_rh_30min-plan",
+      "output": "cosmos-cambo-cts_mod_rh_30min_processed",
+      "input": "cosmos-cambo-cts_mod_rh_30min_raw",
+      "steps": [
+        "cosmos-cambo-cts_mod_rh_30min-load_raw",
+        "cosmos-cambo-cts_mod_rh_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_mod_temp_30min-plan",
+      "output": "cosmos-cambo-cts_mod_temp_30min_processed",
+      "input": "cosmos-cambo-cts_mod_temp_30min_raw",
+      "steps": [
+        "cosmos-cambo-cts_mod_temp_30min-load_raw",
+        "cosmos-cambo-cts_mod_temp_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-cts_smo_crns_1hour-plan",
+      "output": "cosmos-cambo-cts_smo_crns_1hour_processed",
+      "steps": [
+        "cosmos-cambo-cts_smo_crns_1hour-rolling_mean_for_counts"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_150m_1day-plan",
+      "output": "cosmos-cambo-d86_150m_1day_processed",
+      "steps": [
+        "cosmos-cambo-d86_150m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_150m_1hour-plan",
+      "output": "cosmos-cambo-d86_150m_1hour_processed",
+      "steps": [
+        "cosmos-cambo-d86_150m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_1m_1day-plan",
+      "output": "cosmos-cambo-d86_1m_1day_processed",
+      "steps": [
+        "cosmos-cambo-d86_1m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_1m_1hour-plan",
+      "output": "cosmos-cambo-d86_1m_1hour_processed",
+      "steps": [
+        "cosmos-cambo-d86_1m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_200m_1day-plan",
+      "output": "cosmos-cambo-d86_200m_1day_processed",
+      "steps": [
+        "cosmos-cambo-d86_200m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_200m_1hour-plan",
+      "output": "cosmos-cambo-d86_200m_1hour_processed",
+      "steps": [
+        "cosmos-cambo-d86_200m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_25m_1day-plan",
+      "output": "cosmos-cambo-d86_25m_1day_processed",
+      "steps": [
+        "cosmos-cambo-d86_25m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_25m_1hour-plan",
+      "output": "cosmos-cambo-d86_25m_1hour_processed",
+      "steps": [
+        "cosmos-cambo-d86_25m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_5m_1day-plan",
+      "output": "cosmos-cambo-d86_5m_1day_processed",
+      "steps": [
+        "cosmos-cambo-d86_5m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_5m_1hour-plan",
+      "output": "cosmos-cambo-d86_5m_1hour_processed",
+      "steps": [
+        "cosmos-cambo-d86_5m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_75m_1day-plan",
+      "output": "cosmos-cambo-d86_75m_1day_processed",
+      "steps": [
+        "cosmos-cambo-d86_75m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-d86_75m_1hour-plan",
+      "output": "cosmos-cambo-d86_75m_1hour_processed",
+      "steps": [
+        "cosmos-cambo-d86_75m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-e_sat_mean_30min-plan",
+      "output": "cosmos-cambo-e_sat_mean_30min_processed",
+      "input": "cosmos-cambo-e_sat_mean_30min_raw",
+      "steps": [
+        "cosmos-cambo-e_sat_mean_30min-load_raw",
+        "cosmos-cambo-e_sat_mean_30min-range",
+        "cosmos-cambo-e_sat_mean_30min-battery_v",
+        "cosmos-cambo-e_sat_mean_30min-error_code",
+        "cosmos-cambo-e_sat_mean_30min-manual_removal",
+        "cosmos-cambo-e_sat_mean_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-eff_depth_1day-plan",
+      "output": "cosmos-cambo-eff_depth_1day_processed",
+      "steps": [
+        "cosmos-cambo-eff_depth_1day-calculate_eff_depth"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-eff_depth_1hour-plan",
+      "output": "cosmos-cambo-eff_depth_1hour_processed",
+      "steps": [
+        "cosmos-cambo-eff_depth_1hour-calculate_eff_depth"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-g1_1day-plan",
+      "output": "cosmos-cambo-g1_1day_processed",
+      "steps": [
+        "cosmos-cambo-g1_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-g1_30min-plan",
+      "output": "cosmos-cambo-g1_30min_processed",
+      "input": "cosmos-cambo-g1_30min_raw",
+      "steps": [
+        "cosmos-cambo-g1_30min-load_raw",
+        "cosmos-cambo-g1_30min-range",
+        "cosmos-cambo-g1_30min-battery_v",
+        "cosmos-cambo-g1_30min-error_code",
+        "cosmos-cambo-g1_30min-hfp_removal",
+        "cosmos-cambo-g1_30min-samples",
+        "cosmos-cambo-g1_30min-spike",
+        "cosmos-cambo-g1_30min-manual_removal",
+        "cosmos-cambo-g1_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-g2_1day-plan",
+      "output": "cosmos-cambo-g2_1day_processed",
+      "steps": [
+        "cosmos-cambo-g2_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-g2_30min-plan",
+      "output": "cosmos-cambo-g2_30min_processed",
+      "input": "cosmos-cambo-g2_30min_raw",
+      "steps": [
+        "cosmos-cambo-g2_30min-load_raw",
+        "cosmos-cambo-g2_30min-range",
+        "cosmos-cambo-g2_30min-battery_v",
+        "cosmos-cambo-g2_30min-error_code",
+        "cosmos-cambo-g2_30min-hfp_removal",
+        "cosmos-cambo-g2_30min-samples",
+        "cosmos-cambo-g2_30min-spike",
+        "cosmos-cambo-g2_30min-manual_removal",
+        "cosmos-cambo-g2_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-g_30min-plan",
+      "output": "cosmos-cambo-g_30min_processed",
+      "steps": [
+        "cosmos-cambo-g_30min-calc_mean_g",
+        "cosmos-cambo-g_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-hs_30min-plan",
+      "output": "cosmos-cambo-hs_30min_processed",
+      "input": "cosmos-cambo-hs_30min_raw",
+      "steps": [
+        "cosmos-cambo-hs_30min-load_raw",
+        "cosmos-cambo-hs_30min-range",
+        "cosmos-cambo-hs_30min-battery_v",
+        "cosmos-cambo-hs_30min-error_code",
+        "cosmos-cambo-hs_30min-manual_removal",
+        "cosmos-cambo-hs_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-lwin_1day-plan",
+      "output": "cosmos-cambo-lwin_1day_processed",
+      "steps": [
+        "cosmos-cambo-lwin_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-lwin_30min-plan",
+      "output": "cosmos-cambo-lwin_30min_processed",
+      "input": "cosmos-cambo-lwin_30min_raw",
+      "steps": [
+        "cosmos-cambo-lwin_30min-load_raw",
+        "cosmos-cambo-lwin_30min-range",
+        "cosmos-cambo-lwin_30min-battery_v",
+        "cosmos-cambo-lwin_30min-error_code",
+        "cosmos-cambo-lwin_30min-nr01_temp",
+        "cosmos-cambo-lwin_30min-samples",
+        "cosmos-cambo-lwin_30min-manual_removal",
+        "cosmos-cambo-lwin_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-lwin_mult_30min-plan",
+      "output": "cosmos-cambo-lwin_mult_30min_processed",
+      "input": "cosmos-cambo-lwin_mult_30min_raw",
+      "steps": [
+        "cosmos-cambo-lwin_mult_30min-load_raw",
+        "cosmos-cambo-lwin_mult_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-lwout_1day-plan",
+      "output": "cosmos-cambo-lwout_1day_processed",
+      "steps": [
+        "cosmos-cambo-lwout_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-lwout_30min-plan",
+      "output": "cosmos-cambo-lwout_30min_processed",
+      "input": "cosmos-cambo-lwout_30min_raw",
+      "steps": [
+        "cosmos-cambo-lwout_30min-load_raw",
+        "cosmos-cambo-lwout_30min-range",
+        "cosmos-cambo-lwout_30min-battery_v",
+        "cosmos-cambo-lwout_30min-error_code",
+        "cosmos-cambo-lwout_30min-nr01_temp",
+        "cosmos-cambo-lwout_30min-samples",
+        "cosmos-cambo-lwout_30min-manual_removal",
+        "cosmos-cambo-lwout_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-lwout_mult_30min-plan",
+      "output": "cosmos-cambo-lwout_mult_30min_processed",
+      "input": "cosmos-cambo-lwout_mult_30min_raw",
+      "steps": [
+        "cosmos-cambo-lwout_mult_30min-load_raw",
+        "cosmos-cambo-lwout_mult_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-mslp_1day-plan",
+      "output": "cosmos-cambo-mslp_1day_processed",
+      "steps": [
+        "cosmos-cambo-mslp_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-mslp_30min-plan",
+      "output": "cosmos-cambo-mslp_30min_processed",
+      "steps": [
+        "cosmos-cambo-mslp_30min-calculate_mslp",
+        "cosmos-cambo-mslp_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-pa_1day-plan",
+      "output": "cosmos-cambo-pa_1day_processed",
+      "steps": [
+        "cosmos-cambo-pa_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-pa_1hour-plan",
+      "output": "cosmos-cambo-pa_1hour_processed",
+      "steps": [
+        "cosmos-cambo-pa_1hour-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-pa_30min-plan",
+      "output": "cosmos-cambo-pa_30min_processed",
+      "input": "cosmos-cambo-pa_30min_raw",
+      "steps": [
+        "cosmos-cambo-pa_30min-load_raw",
+        "cosmos-cambo-pa_30min-range",
+        "cosmos-cambo-pa_30min-battery_v",
+        "cosmos-cambo-pa_30min-error_code",
+        "cosmos-cambo-pa_30min-samples",
+        "cosmos-cambo-pa_30min-spike",
+        "cosmos-cambo-pa_30min-manual_removal",
+        "cosmos-cambo-pa_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-pe_1day-plan",
+      "output": "cosmos-cambo-pe_1day_processed",
+      "steps": [
+        "cosmos-cambo-pe_1day-mean_sum"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-pe_30min-plan",
+      "output": "cosmos-cambo-pe_30min_processed",
+      "steps": [
+        "cosmos-cambo-pe_30min-calculate_pe",
+        "cosmos-cambo-pe_30min-correction-clip",
+        "cosmos-cambo-pe_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-precip_1day-plan",
+      "output": "cosmos-cambo-precip_1day_processed",
+      "steps": [
+        "cosmos-cambo-precip_1day-sum"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-precip_30min-plan",
+      "output": "cosmos-cambo-precip_30min_processed",
+      "input": "cosmos-cambo-precip_1min_raw",
+      "steps": [
+        "cosmos-cambo-precip_30min-sum",
+        "cosmos-cambo-precip_30min-range",
+        "cosmos-cambo-precip_30min-battery_v",
+        "cosmos-cambo-precip_30min-error_code",
+        "cosmos-cambo-precip_30min-pluvio_diag",
+        "cosmos-cambo-precip_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-precip_raine_1day-plan",
+      "output": "cosmos-cambo-precip_raine_1day_processed",
+      "steps": [
+        "cosmos-cambo-precip_raine_1day-sum"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-precip_raine_30min-plan",
+      "output": "cosmos-cambo-precip_raine_30min_processed",
+      "input": "cosmos-cambo-precip_raine_1min_raw",
+      "steps": [
+        "cosmos-cambo-precip_raine_30min-sum",
+        "cosmos-cambo-precip_raine_30min-range",
+        "cosmos-cambo-precip_raine_30min-battery_v",
+        "cosmos-cambo-precip_raine_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-q_1day-plan",
+      "output": "cosmos-cambo-q_1day_processed",
+      "steps": [
+        "cosmos-cambo-q_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-q_1hour-plan",
+      "output": "cosmos-cambo-q_1hour_processed",
+      "steps": [
+        "cosmos-cambo-q_1hour-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-q_30min-plan",
+      "output": "cosmos-cambo-q_30min_processed",
+      "steps": [
+        "cosmos-cambo-q_30min-calculate_q",
+        "cosmos-cambo-q_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-rh_1day-plan",
+      "output": "cosmos-cambo-rh_1day_processed",
+      "steps": [
+        "cosmos-cambo-rh_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-rh_30min-plan",
+      "output": "cosmos-cambo-rh_30min_processed",
+      "input": "cosmos-cambo-rh_30min_raw",
+      "steps": [
+        "cosmos-cambo-rh_30min-load_raw",
+        "cosmos-cambo-rh_30min-range",
+        "cosmos-cambo-rh_30min-battery_v",
+        "cosmos-cambo-rh_30min-error_code",
+        "cosmos-cambo-rh_30min-samples",
+        "cosmos-cambo-rh_30min-manual_removal",
+        "cosmos-cambo-rh_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-rho_a_mean_30min-plan",
+      "output": "cosmos-cambo-rho_a_mean_30min_processed",
+      "input": "cosmos-cambo-rho_a_mean_30min_raw",
+      "steps": [
+        "cosmos-cambo-rho_a_mean_30min-load_raw",
+        "cosmos-cambo-rho_a_mean_30min-range",
+        "cosmos-cambo-rho_a_mean_30min-battery_v",
+        "cosmos-cambo-rho_a_mean_30min-error_code",
+        "cosmos-cambo-rho_a_mean_30min-spike",
+        "cosmos-cambo-rho_a_mean_30min-manual_removal",
+        "cosmos-cambo-rho_a_mean_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-rn_1day-plan",
+      "output": "cosmos-cambo-rn_1day_processed",
+      "steps": [
+        "cosmos-cambo-rn_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-rn_30min-plan",
+      "output": "cosmos-cambo-rn_30min_processed",
+      "steps": [
+        "cosmos-cambo-rn_30min-calculate_rn",
+        "cosmos-cambo-rn_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-sigma_swe_crns_1day-plan",
+      "output": "cosmos-cambo-sigma_swe_crns_1day_processed",
+      "steps": [
+        "cosmos-cambo-sigma_swe_crns_1day-point_estimate"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-sigma_swe_crns_1hour-plan",
+      "output": "cosmos-cambo-sigma_swe_crns_1hour_processed",
+      "steps": [
+        "cosmos-cambo-sigma_swe_crns_1hour-calculate_crns_sigma_swe"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-smi_1day-plan",
+      "output": "cosmos-cambo-smi_1day_processed",
+      "steps": [
+        "cosmos-cambo-smi_1day-calculate_smi"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-snow_1day-plan",
+      "output": "cosmos-cambo-snow_1day_processed",
+      "steps": [
+        "cosmos-cambo-snow_1day-is_snow_day"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil10_1day-plan",
+      "output": "cosmos-cambo-stp_tsoil10_1day_processed",
+      "steps": [
+        "cosmos-cambo-stp_tsoil10_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil10_30min-plan",
+      "output": "cosmos-cambo-stp_tsoil10_30min_processed",
+      "input": "cosmos-cambo-stp_tsoil10_30min_raw",
+      "steps": [
+        "cosmos-cambo-stp_tsoil10_30min-load_raw",
+        "cosmos-cambo-stp_tsoil10_30min-range",
+        "cosmos-cambo-stp_tsoil10_30min-battery_v",
+        "cosmos-cambo-stp_tsoil10_30min-error_code",
+        "cosmos-cambo-stp_tsoil10_30min-samples",
+        "cosmos-cambo-stp_tsoil10_30min-spike",
+        "cosmos-cambo-stp_tsoil10_30min-manual_removal",
+        "cosmos-cambo-stp_tsoil10_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil20_1day-plan",
+      "output": "cosmos-cambo-stp_tsoil20_1day_processed",
+      "steps": [
+        "cosmos-cambo-stp_tsoil20_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil20_30min-plan",
+      "output": "cosmos-cambo-stp_tsoil20_30min_processed",
+      "input": "cosmos-cambo-stp_tsoil20_30min_raw",
+      "steps": [
+        "cosmos-cambo-stp_tsoil20_30min-load_raw",
+        "cosmos-cambo-stp_tsoil20_30min-range",
+        "cosmos-cambo-stp_tsoil20_30min-battery_v",
+        "cosmos-cambo-stp_tsoil20_30min-error_code",
+        "cosmos-cambo-stp_tsoil20_30min-samples",
+        "cosmos-cambo-stp_tsoil20_30min-spike",
+        "cosmos-cambo-stp_tsoil20_30min-manual_removal",
+        "cosmos-cambo-stp_tsoil20_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil2_1day-plan",
+      "output": "cosmos-cambo-stp_tsoil2_1day_processed",
+      "steps": [
+        "cosmos-cambo-stp_tsoil2_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil2_30min-plan",
+      "output": "cosmos-cambo-stp_tsoil2_30min_processed",
+      "input": "cosmos-cambo-stp_tsoil2_30min_raw",
+      "steps": [
+        "cosmos-cambo-stp_tsoil2_30min-load_raw",
+        "cosmos-cambo-stp_tsoil2_30min-range",
+        "cosmos-cambo-stp_tsoil2_30min-battery_v",
+        "cosmos-cambo-stp_tsoil2_30min-error_code",
+        "cosmos-cambo-stp_tsoil2_30min-samples",
+        "cosmos-cambo-stp_tsoil2_30min-spike",
+        "cosmos-cambo-stp_tsoil2_30min-manual_removal",
+        "cosmos-cambo-stp_tsoil2_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil50_1day-plan",
+      "output": "cosmos-cambo-stp_tsoil50_1day_processed",
+      "steps": [
+        "cosmos-cambo-stp_tsoil50_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil50_30min-plan",
+      "output": "cosmos-cambo-stp_tsoil50_30min_processed",
+      "input": "cosmos-cambo-stp_tsoil50_30min_raw",
+      "steps": [
+        "cosmos-cambo-stp_tsoil50_30min-load_raw",
+        "cosmos-cambo-stp_tsoil50_30min-range",
+        "cosmos-cambo-stp_tsoil50_30min-battery_v",
+        "cosmos-cambo-stp_tsoil50_30min-error_code",
+        "cosmos-cambo-stp_tsoil50_30min-samples",
+        "cosmos-cambo-stp_tsoil50_30min-spike",
+        "cosmos-cambo-stp_tsoil50_30min-manual_removal",
+        "cosmos-cambo-stp_tsoil50_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil5_1day-plan",
+      "output": "cosmos-cambo-stp_tsoil5_1day_processed",
+      "steps": [
+        "cosmos-cambo-stp_tsoil5_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-stp_tsoil5_30min-plan",
+      "output": "cosmos-cambo-stp_tsoil5_30min_processed",
+      "input": "cosmos-cambo-stp_tsoil5_30min_raw",
+      "steps": [
+        "cosmos-cambo-stp_tsoil5_30min-load_raw",
+        "cosmos-cambo-stp_tsoil5_30min-range",
+        "cosmos-cambo-stp_tsoil5_30min-battery_v",
+        "cosmos-cambo-stp_tsoil5_30min-error_code",
+        "cosmos-cambo-stp_tsoil5_30min-samples",
+        "cosmos-cambo-stp_tsoil5_30min-spike",
+        "cosmos-cambo-stp_tsoil5_30min-manual_removal",
+        "cosmos-cambo-stp_tsoil5_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-swe_crns_1day-plan",
+      "output": "cosmos-cambo-swe_crns_1day_processed",
+      "steps": [
+        "cosmos-cambo-swe_crns_1day-point_estimate"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-swe_crns_1hour-plan",
+      "output": "cosmos-cambo-swe_crns_1hour_processed",
+      "steps": [
+        "cosmos-cambo-swe_crns_1hour-calculate_crns_swe"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-swin_1day-plan",
+      "output": "cosmos-cambo-swin_1day_processed",
+      "steps": [
+        "cosmos-cambo-swin_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-swin_30min-plan",
+      "output": "cosmos-cambo-swin_30min_processed",
+      "input": "cosmos-cambo-swin_30min_raw",
+      "steps": [
+        "cosmos-cambo-swin_30min-load_raw",
+        "cosmos-cambo-swin_30min-range",
+        "cosmos-cambo-swin_30min-battery_v",
+        "cosmos-cambo-swin_30min-error_code",
+        "cosmos-cambo-swin_30min-samples",
+        "cosmos-cambo-swin_30min-manual_removal",
+        "cosmos-cambo-swin_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-swout_1day-plan",
+      "output": "cosmos-cambo-swout_1day_processed",
+      "steps": [
+        "cosmos-cambo-swout_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-swout_30min-plan",
+      "output": "cosmos-cambo-swout_30min_processed",
+      "input": "cosmos-cambo-swout_30min_raw",
+      "steps": [
+        "cosmos-cambo-swout_30min-load_raw",
+        "cosmos-cambo-swout_30min-range",
+        "cosmos-cambo-swout_30min-battery_v",
+        "cosmos-cambo-swout_30min-error_code",
+        "cosmos-cambo-swout_30min-samples",
+        "cosmos-cambo-swout_30min-manual_removal",
+        "cosmos-cambo-swout_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ta_1day-plan",
+      "output": "cosmos-cambo-ta_1day_processed",
+      "steps": [
+        "cosmos-cambo-ta_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ta_30min-plan",
+      "output": "cosmos-cambo-ta_30min_processed",
+      "input": "cosmos-cambo-ta_30min_raw",
+      "steps": [
+        "cosmos-cambo-ta_30min-load_raw",
+        "cosmos-cambo-ta_30min-range",
+        "cosmos-cambo-ta_30min-battery_v",
+        "cosmos-cambo-ta_30min-error_code",
+        "cosmos-cambo-ta_30min-samples",
+        "cosmos-cambo-ta_30min-spike",
+        "cosmos-cambo-ta_30min-manual_removal",
+        "cosmos-cambo-ta_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ta_max_1day-plan",
+      "output": "cosmos-cambo-ta_max_1day_processed",
+      "steps": [
+        "cosmos-cambo-ta_max_1day-max"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ta_min_1day-plan",
+      "output": "cosmos-cambo-ta_min_1day_processed",
+      "steps": [
+        "cosmos-cambo-ta_min_1day-min"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tau_30min-plan",
+      "output": "cosmos-cambo-tau_30min_processed",
+      "input": "cosmos-cambo-tau_30min_raw",
+      "steps": [
+        "cosmos-cambo-tau_30min-load_raw",
+        "cosmos-cambo-tau_30min-range",
+        "cosmos-cambo-tau_30min-battery_v",
+        "cosmos-cambo-tau_30min-error_code",
+        "cosmos-cambo-tau_30min-manual_removal",
+        "cosmos-cambo-tau_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt10_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt10_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt10_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt10_soilec_30min-load_raw",
+        "cosmos-cambo-tdt10_soilec_30min-range",
+        "cosmos-cambo-tdt10_soilec_30min-battery_v",
+        "cosmos-cambo-tdt10_soilec_30min-error_code",
+        "cosmos-cambo-tdt10_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt10_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt10_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt10_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt10_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt10_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt10_soilperm_30min-range",
+        "cosmos-cambo-tdt10_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt10_soilperm_30min-error_code",
+        "cosmos-cambo-tdt10_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt10_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt10_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt10_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt10_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt10_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt10_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt10_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt10_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt10_tsoil_30min-range",
+        "cosmos-cambo-tdt10_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt10_tsoil_30min-error_code",
+        "cosmos-cambo-tdt10_tsoil_30min-spike",
+        "cosmos-cambo-tdt10_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt10_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt10_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt10_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt10_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt10_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt10_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt10_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt10_vwc_30min-load_raw",
+        "cosmos-cambo-tdt10_vwc_30min-range",
+        "cosmos-cambo-tdt10_vwc_30min-battery_v",
+        "cosmos-cambo-tdt10_vwc_30min-error_code",
+        "cosmos-cambo-tdt10_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt10_vwc_30min-spike",
+        "cosmos-cambo-tdt10_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt10_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt1_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt1_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt1_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt1_soilec_30min-load_raw",
+        "cosmos-cambo-tdt1_soilec_30min-range",
+        "cosmos-cambo-tdt1_soilec_30min-battery_v",
+        "cosmos-cambo-tdt1_soilec_30min-error_code",
+        "cosmos-cambo-tdt1_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt1_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt1_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt1_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt1_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt1_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt1_soilperm_30min-range",
+        "cosmos-cambo-tdt1_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt1_soilperm_30min-error_code",
+        "cosmos-cambo-tdt1_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt1_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt1_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt1_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt1_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt1_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt1_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt1_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt1_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt1_tsoil_30min-range",
+        "cosmos-cambo-tdt1_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt1_tsoil_30min-error_code",
+        "cosmos-cambo-tdt1_tsoil_30min-spike",
+        "cosmos-cambo-tdt1_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt1_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt1_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt1_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt1_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt1_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt1_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt1_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt1_vwc_30min-load_raw",
+        "cosmos-cambo-tdt1_vwc_30min-range",
+        "cosmos-cambo-tdt1_vwc_30min-battery_v",
+        "cosmos-cambo-tdt1_vwc_30min-error_code",
+        "cosmos-cambo-tdt1_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt1_vwc_30min-spike",
+        "cosmos-cambo-tdt1_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt1_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt2_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt2_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt2_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt2_soilec_30min-load_raw",
+        "cosmos-cambo-tdt2_soilec_30min-range",
+        "cosmos-cambo-tdt2_soilec_30min-battery_v",
+        "cosmos-cambo-tdt2_soilec_30min-error_code",
+        "cosmos-cambo-tdt2_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt2_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt2_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt2_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt2_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt2_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt2_soilperm_30min-range",
+        "cosmos-cambo-tdt2_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt2_soilperm_30min-error_code",
+        "cosmos-cambo-tdt2_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt2_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt2_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt2_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt2_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt2_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt2_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt2_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt2_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt2_tsoil_30min-range",
+        "cosmos-cambo-tdt2_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt2_tsoil_30min-error_code",
+        "cosmos-cambo-tdt2_tsoil_30min-spike",
+        "cosmos-cambo-tdt2_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt2_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt2_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt2_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt2_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt2_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt2_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt2_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt2_vwc_30min-load_raw",
+        "cosmos-cambo-tdt2_vwc_30min-range",
+        "cosmos-cambo-tdt2_vwc_30min-battery_v",
+        "cosmos-cambo-tdt2_vwc_30min-error_code",
+        "cosmos-cambo-tdt2_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt2_vwc_30min-spike",
+        "cosmos-cambo-tdt2_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt2_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt3_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt3_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt3_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt3_soilec_30min-load_raw",
+        "cosmos-cambo-tdt3_soilec_30min-range",
+        "cosmos-cambo-tdt3_soilec_30min-battery_v",
+        "cosmos-cambo-tdt3_soilec_30min-error_code",
+        "cosmos-cambo-tdt3_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt3_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt3_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt3_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt3_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt3_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt3_soilperm_30min-range",
+        "cosmos-cambo-tdt3_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt3_soilperm_30min-error_code",
+        "cosmos-cambo-tdt3_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt3_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt3_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt3_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt3_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt3_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt3_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt3_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt3_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt3_tsoil_30min-range",
+        "cosmos-cambo-tdt3_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt3_tsoil_30min-error_code",
+        "cosmos-cambo-tdt3_tsoil_30min-spike",
+        "cosmos-cambo-tdt3_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt3_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt3_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt3_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt3_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt3_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt3_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt3_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt3_vwc_30min-load_raw",
+        "cosmos-cambo-tdt3_vwc_30min-range",
+        "cosmos-cambo-tdt3_vwc_30min-battery_v",
+        "cosmos-cambo-tdt3_vwc_30min-error_code",
+        "cosmos-cambo-tdt3_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt3_vwc_30min-spike",
+        "cosmos-cambo-tdt3_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt3_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt4_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt4_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt4_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt4_soilec_30min-load_raw",
+        "cosmos-cambo-tdt4_soilec_30min-range",
+        "cosmos-cambo-tdt4_soilec_30min-battery_v",
+        "cosmos-cambo-tdt4_soilec_30min-error_code",
+        "cosmos-cambo-tdt4_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt4_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt4_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt4_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt4_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt4_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt4_soilperm_30min-range",
+        "cosmos-cambo-tdt4_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt4_soilperm_30min-error_code",
+        "cosmos-cambo-tdt4_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt4_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt4_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt4_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt4_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt4_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt4_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt4_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt4_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt4_tsoil_30min-range",
+        "cosmos-cambo-tdt4_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt4_tsoil_30min-error_code",
+        "cosmos-cambo-tdt4_tsoil_30min-spike",
+        "cosmos-cambo-tdt4_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt4_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt4_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt4_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt4_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt4_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt4_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt4_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt4_vwc_30min-load_raw",
+        "cosmos-cambo-tdt4_vwc_30min-range",
+        "cosmos-cambo-tdt4_vwc_30min-battery_v",
+        "cosmos-cambo-tdt4_vwc_30min-error_code",
+        "cosmos-cambo-tdt4_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt4_vwc_30min-spike",
+        "cosmos-cambo-tdt4_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt4_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt5_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt5_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt5_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt5_soilec_30min-load_raw",
+        "cosmos-cambo-tdt5_soilec_30min-range",
+        "cosmos-cambo-tdt5_soilec_30min-battery_v",
+        "cosmos-cambo-tdt5_soilec_30min-error_code",
+        "cosmos-cambo-tdt5_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt5_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt5_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt5_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt5_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt5_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt5_soilperm_30min-range",
+        "cosmos-cambo-tdt5_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt5_soilperm_30min-error_code",
+        "cosmos-cambo-tdt5_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt5_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt5_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt5_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt5_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt5_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt5_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt5_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt5_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt5_tsoil_30min-range",
+        "cosmos-cambo-tdt5_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt5_tsoil_30min-error_code",
+        "cosmos-cambo-tdt5_tsoil_30min-spike",
+        "cosmos-cambo-tdt5_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt5_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt5_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt5_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt5_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt5_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt5_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt5_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt5_vwc_30min-load_raw",
+        "cosmos-cambo-tdt5_vwc_30min-range",
+        "cosmos-cambo-tdt5_vwc_30min-battery_v",
+        "cosmos-cambo-tdt5_vwc_30min-error_code",
+        "cosmos-cambo-tdt5_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt5_vwc_30min-spike",
+        "cosmos-cambo-tdt5_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt5_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt6_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt6_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt6_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt6_soilec_30min-load_raw",
+        "cosmos-cambo-tdt6_soilec_30min-range",
+        "cosmos-cambo-tdt6_soilec_30min-battery_v",
+        "cosmos-cambo-tdt6_soilec_30min-error_code",
+        "cosmos-cambo-tdt6_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt6_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt6_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt6_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt6_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt6_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt6_soilperm_30min-range",
+        "cosmos-cambo-tdt6_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt6_soilperm_30min-error_code",
+        "cosmos-cambo-tdt6_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt6_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt6_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt6_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt6_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt6_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt6_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt6_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt6_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt6_tsoil_30min-range",
+        "cosmos-cambo-tdt6_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt6_tsoil_30min-error_code",
+        "cosmos-cambo-tdt6_tsoil_30min-spike",
+        "cosmos-cambo-tdt6_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt6_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt6_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt6_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt6_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt6_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt6_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt6_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt6_vwc_30min-load_raw",
+        "cosmos-cambo-tdt6_vwc_30min-range",
+        "cosmos-cambo-tdt6_vwc_30min-battery_v",
+        "cosmos-cambo-tdt6_vwc_30min-error_code",
+        "cosmos-cambo-tdt6_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt6_vwc_30min-spike",
+        "cosmos-cambo-tdt6_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt6_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt7_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt7_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt7_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt7_soilec_30min-load_raw",
+        "cosmos-cambo-tdt7_soilec_30min-range",
+        "cosmos-cambo-tdt7_soilec_30min-battery_v",
+        "cosmos-cambo-tdt7_soilec_30min-error_code",
+        "cosmos-cambo-tdt7_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt7_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt7_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt7_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt7_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt7_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt7_soilperm_30min-range",
+        "cosmos-cambo-tdt7_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt7_soilperm_30min-error_code",
+        "cosmos-cambo-tdt7_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt7_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt7_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt7_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt7_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt7_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt7_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt7_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt7_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt7_tsoil_30min-range",
+        "cosmos-cambo-tdt7_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt7_tsoil_30min-error_code",
+        "cosmos-cambo-tdt7_tsoil_30min-spike",
+        "cosmos-cambo-tdt7_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt7_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt7_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt7_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt7_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt7_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt7_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt7_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt7_vwc_30min-load_raw",
+        "cosmos-cambo-tdt7_vwc_30min-range",
+        "cosmos-cambo-tdt7_vwc_30min-battery_v",
+        "cosmos-cambo-tdt7_vwc_30min-error_code",
+        "cosmos-cambo-tdt7_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt7_vwc_30min-spike",
+        "cosmos-cambo-tdt7_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt7_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt8_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt8_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt8_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt8_soilec_30min-load_raw",
+        "cosmos-cambo-tdt8_soilec_30min-range",
+        "cosmos-cambo-tdt8_soilec_30min-battery_v",
+        "cosmos-cambo-tdt8_soilec_30min-error_code",
+        "cosmos-cambo-tdt8_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt8_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt8_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt8_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt8_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt8_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt8_soilperm_30min-range",
+        "cosmos-cambo-tdt8_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt8_soilperm_30min-error_code",
+        "cosmos-cambo-tdt8_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt8_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt8_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt8_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt8_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt8_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt8_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt8_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt8_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt8_tsoil_30min-range",
+        "cosmos-cambo-tdt8_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt8_tsoil_30min-error_code",
+        "cosmos-cambo-tdt8_tsoil_30min-spike",
+        "cosmos-cambo-tdt8_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt8_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt8_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt8_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt8_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt8_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt8_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt8_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt8_vwc_30min-load_raw",
+        "cosmos-cambo-tdt8_vwc_30min-range",
+        "cosmos-cambo-tdt8_vwc_30min-battery_v",
+        "cosmos-cambo-tdt8_vwc_30min-error_code",
+        "cosmos-cambo-tdt8_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt8_vwc_30min-spike",
+        "cosmos-cambo-tdt8_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt8_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt9_soilec_30min-plan",
+      "output": "cosmos-cambo-tdt9_soilec_30min_processed",
+      "input": "cosmos-cambo-tdt9_soilec_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt9_soilec_30min-load_raw",
+        "cosmos-cambo-tdt9_soilec_30min-range",
+        "cosmos-cambo-tdt9_soilec_30min-battery_v",
+        "cosmos-cambo-tdt9_soilec_30min-error_code",
+        "cosmos-cambo-tdt9_soilec_30min-manual_removal",
+        "cosmos-cambo-tdt9_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt9_soilperm_30min-plan",
+      "output": "cosmos-cambo-tdt9_soilperm_30min_processed",
+      "input": "cosmos-cambo-tdt9_soilperm_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt9_soilperm_30min-load_raw",
+        "cosmos-cambo-tdt9_soilperm_30min-range",
+        "cosmos-cambo-tdt9_soilperm_30min-battery_v",
+        "cosmos-cambo-tdt9_soilperm_30min-error_code",
+        "cosmos-cambo-tdt9_soilperm_30min-manual_removal",
+        "cosmos-cambo-tdt9_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt9_tsoil_1day-plan",
+      "output": "cosmos-cambo-tdt9_tsoil_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt9_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt9_tsoil_30min-plan",
+      "output": "cosmos-cambo-tdt9_tsoil_30min_processed",
+      "input": "cosmos-cambo-tdt9_tsoil_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt9_tsoil_30min-load_raw",
+        "cosmos-cambo-tdt9_tsoil_30min-range",
+        "cosmos-cambo-tdt9_tsoil_30min-battery_v",
+        "cosmos-cambo-tdt9_tsoil_30min-error_code",
+        "cosmos-cambo-tdt9_tsoil_30min-spike",
+        "cosmos-cambo-tdt9_tsoil_30min-manual_removal",
+        "cosmos-cambo-tdt9_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt9_vwc_1day-plan",
+      "output": "cosmos-cambo-tdt9_vwc_1day_processed",
+      "steps": [
+        "cosmos-cambo-tdt9_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tdt9_vwc_30min-plan",
+      "output": "cosmos-cambo-tdt9_vwc_30min_processed",
+      "input": "cosmos-cambo-tdt9_vwc_30min_raw",
+      "steps": [
+        "cosmos-cambo-tdt9_vwc_30min-load_raw",
+        "cosmos-cambo-tdt9_vwc_30min-range",
+        "cosmos-cambo-tdt9_vwc_30min-battery_v",
+        "cosmos-cambo-tdt9_vwc_30min-error_code",
+        "cosmos-cambo-tdt9_vwc_30min-tdt_tsoil",
+        "cosmos-cambo-tdt9_vwc_30min-spike",
+        "cosmos-cambo-tdt9_vwc_30min-manual_removal",
+        "cosmos-cambo-tdt9_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-tnr01c_30min-plan",
+      "output": "cosmos-cambo-tnr01c_30min_processed",
+      "input": "cosmos-cambo-tnr01c_30min_raw",
+      "steps": [
+        "cosmos-cambo-tnr01c_30min-load_raw",
+        "cosmos-cambo-tnr01c_30min-range",
+        "cosmos-cambo-tnr01c_30min-battery_v",
+        "cosmos-cambo-tnr01c_30min-error_code",
+        "cosmos-cambo-tnr01c_30min-spike",
+        "cosmos-cambo-tnr01c_30min-manual_removal",
+        "cosmos-cambo-tnr01c_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ts_30min-plan",
+      "output": "cosmos-cambo-ts_30min_processed",
+      "input": "cosmos-cambo-ts_30min_raw",
+      "steps": [
+        "cosmos-cambo-ts_30min-load_raw",
+        "cosmos-cambo-ts_30min-range",
+        "cosmos-cambo-ts_30min-battery_v",
+        "cosmos-cambo-ts_30min-error_code",
+        "cosmos-cambo-ts_30min-spike",
+        "cosmos-cambo-ts_30min-manual_removal",
+        "cosmos-cambo-ts_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-u_star_30min-plan",
+      "output": "cosmos-cambo-u_star_30min_processed",
+      "input": "cosmos-cambo-u_star_30min_raw",
+      "steps": [
+        "cosmos-cambo-u_star_30min-load_raw",
+        "cosmos-cambo-u_star_30min-range",
+        "cosmos-cambo-u_star_30min-battery_v",
+        "cosmos-cambo-u_star_30min-error_code",
+        "cosmos-cambo-u_star_30min-manual_removal",
+        "cosmos-cambo-u_star_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ux_30min-plan",
+      "output": "cosmos-cambo-ux_30min_processed",
+      "input": "cosmos-cambo-ux_30min_raw",
+      "steps": [
+        "cosmos-cambo-ux_30min-load_raw",
+        "cosmos-cambo-ux_30min-range",
+        "cosmos-cambo-ux_30min-battery_v",
+        "cosmos-cambo-ux_30min-error_code",
+        "cosmos-cambo-ux_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-uy_30min-plan",
+      "output": "cosmos-cambo-uy_30min_processed",
+      "input": "cosmos-cambo-uy_30min_raw",
+      "steps": [
+        "cosmos-cambo-uy_30min-load_raw",
+        "cosmos-cambo-uy_30min-range",
+        "cosmos-cambo-uy_30min-battery_v",
+        "cosmos-cambo-uy_30min-error_code",
+        "cosmos-cambo-uy_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-uz_30min-plan",
+      "output": "cosmos-cambo-uz_30min_processed",
+      "input": "cosmos-cambo-uz_30min_raw",
+      "steps": [
+        "cosmos-cambo-uz_30min-load_raw",
+        "cosmos-cambo-uz_30min-range",
+        "cosmos-cambo-uz_30min-battery_v",
+        "cosmos-cambo-uz_30min-error_code",
+        "cosmos-cambo-uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-wd_1day-plan",
+      "output": "cosmos-cambo-wd_1day_processed",
+      "steps": [
+        "cosmos-cambo-wd_1day-angular_mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-wd_30min-plan",
+      "output": "cosmos-cambo-wd_30min_processed",
+      "input": "cosmos-cambo-wd_30min_raw",
+      "steps": [
+        "cosmos-cambo-wd_30min-load_raw",
+        "cosmos-cambo-wd_30min-battery_v",
+        "cosmos-cambo-wd_30min-error_code",
+        "cosmos-cambo-wd_30min-samples",
+        "cosmos-cambo-wd_30min-range",
+        "cosmos-cambo-wd_30min-manual_removal",
+        "cosmos-cambo-wd_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ws_1day-plan",
+      "output": "cosmos-cambo-ws_1day_processed",
+      "steps": [
+        "cosmos-cambo-ws_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ws_30min-plan",
+      "output": "cosmos-cambo-ws_30min_processed",
+      "input": "cosmos-cambo-ws_30min_raw",
+      "steps": [
+        "cosmos-cambo-ws_30min-load_raw",
+        "cosmos-cambo-ws_30min-range",
+        "cosmos-cambo-ws_30min-battery_v",
+        "cosmos-cambo-ws_30min-error_code",
+        "cosmos-cambo-ws_30min-samples",
+        "cosmos-cambo-ws_30min-manual_removal",
+        "cosmos-cambo-ws_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-ws_res_30min-plan",
+      "output": "cosmos-cambo-ws_res_30min_processed",
+      "input": "cosmos-cambo-ws_res_30min_raw",
+      "steps": [
+        "cosmos-cambo-ws_res_30min-load_raw",
+        "cosmos-cambo-ws_res_30min-range",
+        "cosmos-cambo-ws_res_30min-battery_v",
+        "cosmos-cambo-ws_res_30min-error_code",
+        "cosmos-cambo-ws_res_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-solar_zenith_30min-plan",
+      "output": "cosmos-cambo-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-cambo-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-profile_vwc15_30min-plan",
+      "output": "cosmos-cambo-profile_vwc15_30min_processed",
+      "input": "cosmos-cambo-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-cambo-profile_vwc15_30min-load_raw",
+        "cosmos-cambo-profile_vwc15_30min-range",
+        "cosmos-cambo-profile_vwc15_30min-battery_v",
+        "cosmos-cambo-profile_vwc15_30min-error_code",
+        "cosmos-cambo-profile_vwc15_30min-spike",
+        "cosmos-cambo-profile_vwc15_30min-manual_removal",
+        "cosmos-cambo-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-profile_vwc40_30min-plan",
+      "output": "cosmos-cambo-profile_vwc40_30min_processed",
+      "input": "cosmos-cambo-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-cambo-profile_vwc40_30min-load_raw",
+        "cosmos-cambo-profile_vwc40_30min-range",
+        "cosmos-cambo-profile_vwc40_30min-battery_v",
+        "cosmos-cambo-profile_vwc40_30min-error_code",
+        "cosmos-cambo-profile_vwc40_30min-spike",
+        "cosmos-cambo-profile_vwc40_30min-manual_removal",
+        "cosmos-cambo-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-cambo-profile_vwc65_30min-plan",
+      "output": "cosmos-cambo-profile_vwc65_30min_processed",
+      "input": "cosmos-cambo-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-cambo-profile_vwc65_30min-load_raw",
+        "cosmos-cambo-profile_vwc65_30min-range",
+        "cosmos-cambo-profile_vwc65_30min-battery_v",
+        "cosmos-cambo-profile_vwc65_30min-error_code",
+        "cosmos-cambo-profile_vwc65_30min-spike",
+        "cosmos-cambo-profile_vwc65_30min-manual_removal",
+        "cosmos-cambo-profile_vwc65_30min-infill"
+      ]
+    }
+  ],
   "COSMOS-CARDT": [
     {
       "id": "cosmos-cardt-albedo_1day-plan",
@@ -66899,6 +68645,1752 @@
       "output": "cosmos-tadhm-solar_zenith_30min_processed",
       "steps": [
         "cosmos-tadhm-solar_zenith_30min-solar_zenith"
+      ]
+    }
+  ],
+  "COSMOS-TEST1": [
+    {
+      "id": "cosmos-test1-albedo_1day-plan",
+      "output": "cosmos-test1-albedo_1day_processed",
+      "steps": [
+        "cosmos-test1-albedo_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-albedo_30min-plan",
+      "output": "cosmos-test1-albedo_30min_processed",
+      "steps": [
+        "cosmos-test1-albedo_30min-calc_albedo",
+        "cosmos-test1-albedo_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-albedo_std_1day-plan",
+      "output": "cosmos-test1-albedo_std_1day_processed",
+      "steps": [
+        "cosmos-test1-albedo_std_1day-stdev"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cosmos_vwc_1day-plan",
+      "output": "cosmos-test1-cosmos_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-cosmos_vwc_1day-calculate_vwc_with_snow",
+        "cosmos-test1-cosmos_vwc_1day-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cosmos_vwc_1hour-plan",
+      "output": "cosmos-test1-cosmos_vwc_1hour_processed",
+      "steps": [
+        "cosmos-test1-cosmos_vwc_1hour-calculate_vwc"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cosmos_vwc_no_snow_1day-plan",
+      "output": "cosmos-test1-cosmos_vwc_no_snow_1day_processed",
+      "steps": [
+        "cosmos-test1-cosmos_vwc_no_snow_1day-calculate_vwc",
+        "cosmos-test1-cosmos_vwc_no_snow_1day-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cosmosfactor_inten_1hour-plan",
+      "output": "cosmos-test1-cosmosfactor_inten_1hour_processed",
+      "steps": [
+        "cosmos-test1-cosmosfactor_inten_1hour-calc_factor_inten"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cosmosfactor_pa_1hour-plan",
+      "output": "cosmos-test1-cosmosfactor_pa_1hour_processed",
+      "steps": [
+        "cosmos-test1-cosmosfactor_pa_1hour-calc_factor_pa"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cosmosfactor_q_1hour-plan",
+      "output": "cosmos-test1-cosmosfactor_q_1hour_processed",
+      "steps": [
+        "cosmos-test1-cosmosfactor_q_1hour-calc_factor_q"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cov_ts_ux_30min-plan",
+      "output": "cosmos-test1-cov_ts_ux_30min_processed",
+      "input": "cosmos-test1-cov_ts_ux_30min_raw",
+      "steps": [
+        "cosmos-test1-cov_ts_ux_30min-load_raw",
+        "cosmos-test1-cov_ts_ux_30min-range",
+        "cosmos-test1-cov_ts_ux_30min-battery_v",
+        "cosmos-test1-cov_ts_ux_30min-error_code",
+        "cosmos-test1-cov_ts_ux_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cov_ts_uy_30min-plan",
+      "output": "cosmos-test1-cov_ts_uy_30min_processed",
+      "input": "cosmos-test1-cov_ts_uy_30min_raw",
+      "steps": [
+        "cosmos-test1-cov_ts_uy_30min-load_raw",
+        "cosmos-test1-cov_ts_uy_30min-range",
+        "cosmos-test1-cov_ts_uy_30min-battery_v",
+        "cosmos-test1-cov_ts_uy_30min-error_code",
+        "cosmos-test1-cov_ts_uy_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cov_ts_uz_30min-plan",
+      "output": "cosmos-test1-cov_ts_uz_30min_processed",
+      "input": "cosmos-test1-cov_ts_uz_30min_raw",
+      "steps": [
+        "cosmos-test1-cov_ts_uz_30min-load_raw",
+        "cosmos-test1-cov_ts_uz_30min-range",
+        "cosmos-test1-cov_ts_uz_30min-battery_v",
+        "cosmos-test1-cov_ts_uz_30min-error_code",
+        "cosmos-test1-cov_ts_uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cov_ux_uy_30min-plan",
+      "output": "cosmos-test1-cov_ux_uy_30min_processed",
+      "input": "cosmos-test1-cov_ux_uy_30min_raw",
+      "steps": [
+        "cosmos-test1-cov_ux_uy_30min-load_raw",
+        "cosmos-test1-cov_ux_uy_30min-range",
+        "cosmos-test1-cov_ux_uy_30min-battery_v",
+        "cosmos-test1-cov_ux_uy_30min-error_code",
+        "cosmos-test1-cov_ux_uy_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cov_ux_uz_30min-plan",
+      "output": "cosmos-test1-cov_ux_uz_30min_processed",
+      "input": "cosmos-test1-cov_ux_uz_30min_raw",
+      "steps": [
+        "cosmos-test1-cov_ux_uz_30min-load_raw",
+        "cosmos-test1-cov_ux_uz_30min-range",
+        "cosmos-test1-cov_ux_uz_30min-battery_v",
+        "cosmos-test1-cov_ux_uz_30min-error_code",
+        "cosmos-test1-cov_ux_uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cov_uy_uz_30min-plan",
+      "output": "cosmos-test1-cov_uy_uz_30min_processed",
+      "input": "cosmos-test1-cov_uy_uz_30min_raw",
+      "steps": [
+        "cosmos-test1-cov_uy_uz_30min-load_raw",
+        "cosmos-test1-cov_uy_uz_30min-range",
+        "cosmos-test1-cov_uy_uz_30min-battery_v",
+        "cosmos-test1-cov_uy_uz_30min-error_code",
+        "cosmos-test1-cov_uy_uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_est_crns_1day-plan",
+      "output": "cosmos-test1-cts_est_crns_1day_processed",
+      "steps": [
+        "cosmos-test1-cts_est_crns_1day-point_estimate"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_est_crns_1hour-plan",
+      "output": "cosmos-test1-cts_est_crns_1hour_processed",
+      "steps": [
+        "cosmos-test1-cts_est_crns_1hour-get_snow_estimated_counts"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_mod_1hour-plan",
+      "output": "cosmos-test1-cts_mod_1hour_processed",
+      "steps": [
+        "cosmos-test1-cts_mod_1hour-sum"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_mod_30min-plan",
+      "output": "cosmos-test1-cts_mod_30min_processed",
+      "input": "cosmos-test1-cts_mod_30min_raw",
+      "steps": [
+        "cosmos-test1-cts_mod_30min-load_raw",
+        "cosmos-test1-cts_mod_30min-spike",
+        "cosmos-test1-cts_mod_30min-range",
+        "cosmos-test1-cts_mod_30min-battery_v",
+        "cosmos-test1-cts_mod_30min-error_code",
+        "cosmos-test1-cts_mod_30min-samples",
+        "cosmos-test1-cts_mod_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_mod_corr_1day-plan",
+      "output": "cosmos-test1-cts_mod_corr_1day_processed",
+      "steps": [
+        "cosmos-test1-cts_mod_corr_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_mod_corr_1hour-plan",
+      "output": "cosmos-test1-cts_mod_corr_1hour_processed",
+      "steps": [
+        "cosmos-test1-cts_mod_corr_1hour-correct_counts"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_mod_period_30min-plan",
+      "output": "cosmos-test1-cts_mod_period_30min_processed",
+      "input": "cosmos-test1-cts_mod_period_30min_raw",
+      "steps": [
+        "cosmos-test1-cts_mod_period_30min-load_raw",
+        "cosmos-test1-cts_mod_period_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_mod_rh_30min-plan",
+      "output": "cosmos-test1-cts_mod_rh_30min_processed",
+      "input": "cosmos-test1-cts_mod_rh_30min_raw",
+      "steps": [
+        "cosmos-test1-cts_mod_rh_30min-load_raw",
+        "cosmos-test1-cts_mod_rh_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_mod_temp_30min-plan",
+      "output": "cosmos-test1-cts_mod_temp_30min_processed",
+      "input": "cosmos-test1-cts_mod_temp_30min_raw",
+      "steps": [
+        "cosmos-test1-cts_mod_temp_30min-load_raw",
+        "cosmos-test1-cts_mod_temp_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-cts_smo_crns_1hour-plan",
+      "output": "cosmos-test1-cts_smo_crns_1hour_processed",
+      "steps": [
+        "cosmos-test1-cts_smo_crns_1hour-rolling_mean_for_counts"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_150m_1day-plan",
+      "output": "cosmos-test1-d86_150m_1day_processed",
+      "steps": [
+        "cosmos-test1-d86_150m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_150m_1hour-plan",
+      "output": "cosmos-test1-d86_150m_1hour_processed",
+      "steps": [
+        "cosmos-test1-d86_150m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_1m_1day-plan",
+      "output": "cosmos-test1-d86_1m_1day_processed",
+      "steps": [
+        "cosmos-test1-d86_1m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_1m_1hour-plan",
+      "output": "cosmos-test1-d86_1m_1hour_processed",
+      "steps": [
+        "cosmos-test1-d86_1m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_200m_1day-plan",
+      "output": "cosmos-test1-d86_200m_1day_processed",
+      "steps": [
+        "cosmos-test1-d86_200m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_200m_1hour-plan",
+      "output": "cosmos-test1-d86_200m_1hour_processed",
+      "steps": [
+        "cosmos-test1-d86_200m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_25m_1day-plan",
+      "output": "cosmos-test1-d86_25m_1day_processed",
+      "steps": [
+        "cosmos-test1-d86_25m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_25m_1hour-plan",
+      "output": "cosmos-test1-d86_25m_1hour_processed",
+      "steps": [
+        "cosmos-test1-d86_25m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_5m_1day-plan",
+      "output": "cosmos-test1-d86_5m_1day_processed",
+      "steps": [
+        "cosmos-test1-d86_5m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_5m_1hour-plan",
+      "output": "cosmos-test1-d86_5m_1hour_processed",
+      "steps": [
+        "cosmos-test1-d86_5m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_75m_1day-plan",
+      "output": "cosmos-test1-d86_75m_1day_processed",
+      "steps": [
+        "cosmos-test1-d86_75m_1day-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-d86_75m_1hour-plan",
+      "output": "cosmos-test1-d86_75m_1hour_processed",
+      "steps": [
+        "cosmos-test1-d86_75m_1hour-calculate_d86"
+      ]
+    },
+    {
+      "id": "cosmos-test1-e_sat_mean_30min-plan",
+      "output": "cosmos-test1-e_sat_mean_30min_processed",
+      "input": "cosmos-test1-e_sat_mean_30min_raw",
+      "steps": [
+        "cosmos-test1-e_sat_mean_30min-load_raw",
+        "cosmos-test1-e_sat_mean_30min-range",
+        "cosmos-test1-e_sat_mean_30min-battery_v",
+        "cosmos-test1-e_sat_mean_30min-error_code",
+        "cosmos-test1-e_sat_mean_30min-manual_removal",
+        "cosmos-test1-e_sat_mean_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-eff_depth_1day-plan",
+      "output": "cosmos-test1-eff_depth_1day_processed",
+      "steps": [
+        "cosmos-test1-eff_depth_1day-calculate_eff_depth"
+      ]
+    },
+    {
+      "id": "cosmos-test1-eff_depth_1hour-plan",
+      "output": "cosmos-test1-eff_depth_1hour_processed",
+      "steps": [
+        "cosmos-test1-eff_depth_1hour-calculate_eff_depth"
+      ]
+    },
+    {
+      "id": "cosmos-test1-g1_1day-plan",
+      "output": "cosmos-test1-g1_1day_processed",
+      "steps": [
+        "cosmos-test1-g1_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-g1_30min-plan",
+      "output": "cosmos-test1-g1_30min_processed",
+      "input": "cosmos-test1-g1_30min_raw",
+      "steps": [
+        "cosmos-test1-g1_30min-load_raw",
+        "cosmos-test1-g1_30min-range",
+        "cosmos-test1-g1_30min-battery_v",
+        "cosmos-test1-g1_30min-error_code",
+        "cosmos-test1-g1_30min-hfp_removal",
+        "cosmos-test1-g1_30min-samples",
+        "cosmos-test1-g1_30min-spike",
+        "cosmos-test1-g1_30min-manual_removal",
+        "cosmos-test1-g1_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-g2_1day-plan",
+      "output": "cosmos-test1-g2_1day_processed",
+      "steps": [
+        "cosmos-test1-g2_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-g2_30min-plan",
+      "output": "cosmos-test1-g2_30min_processed",
+      "input": "cosmos-test1-g2_30min_raw",
+      "steps": [
+        "cosmos-test1-g2_30min-load_raw",
+        "cosmos-test1-g2_30min-range",
+        "cosmos-test1-g2_30min-battery_v",
+        "cosmos-test1-g2_30min-error_code",
+        "cosmos-test1-g2_30min-hfp_removal",
+        "cosmos-test1-g2_30min-samples",
+        "cosmos-test1-g2_30min-spike",
+        "cosmos-test1-g2_30min-manual_removal",
+        "cosmos-test1-g2_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-g_30min-plan",
+      "output": "cosmos-test1-g_30min_processed",
+      "steps": [
+        "cosmos-test1-g_30min-calc_mean_g",
+        "cosmos-test1-g_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-hs_30min-plan",
+      "output": "cosmos-test1-hs_30min_processed",
+      "input": "cosmos-test1-hs_30min_raw",
+      "steps": [
+        "cosmos-test1-hs_30min-load_raw",
+        "cosmos-test1-hs_30min-range",
+        "cosmos-test1-hs_30min-battery_v",
+        "cosmos-test1-hs_30min-error_code",
+        "cosmos-test1-hs_30min-manual_removal",
+        "cosmos-test1-hs_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-lwin_1day-plan",
+      "output": "cosmos-test1-lwin_1day_processed",
+      "steps": [
+        "cosmos-test1-lwin_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-test1-lwin_30min-plan",
+      "output": "cosmos-test1-lwin_30min_processed",
+      "input": "cosmos-test1-lwin_30min_raw",
+      "steps": [
+        "cosmos-test1-lwin_30min-load_raw",
+        "cosmos-test1-lwin_30min-range",
+        "cosmos-test1-lwin_30min-battery_v",
+        "cosmos-test1-lwin_30min-error_code",
+        "cosmos-test1-lwin_30min-nr01_temp",
+        "cosmos-test1-lwin_30min-samples",
+        "cosmos-test1-lwin_30min-manual_removal",
+        "cosmos-test1-lwin_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-lwin_mult_30min-plan",
+      "output": "cosmos-test1-lwin_mult_30min_processed",
+      "input": "cosmos-test1-lwin_mult_30min_raw",
+      "steps": [
+        "cosmos-test1-lwin_mult_30min-load_raw",
+        "cosmos-test1-lwin_mult_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-lwout_1day-plan",
+      "output": "cosmos-test1-lwout_1day_processed",
+      "steps": [
+        "cosmos-test1-lwout_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-test1-lwout_30min-plan",
+      "output": "cosmos-test1-lwout_30min_processed",
+      "input": "cosmos-test1-lwout_30min_raw",
+      "steps": [
+        "cosmos-test1-lwout_30min-load_raw",
+        "cosmos-test1-lwout_30min-range",
+        "cosmos-test1-lwout_30min-battery_v",
+        "cosmos-test1-lwout_30min-error_code",
+        "cosmos-test1-lwout_30min-nr01_temp",
+        "cosmos-test1-lwout_30min-samples",
+        "cosmos-test1-lwout_30min-manual_removal",
+        "cosmos-test1-lwout_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-lwout_mult_30min-plan",
+      "output": "cosmos-test1-lwout_mult_30min_processed",
+      "input": "cosmos-test1-lwout_mult_30min_raw",
+      "steps": [
+        "cosmos-test1-lwout_mult_30min-load_raw",
+        "cosmos-test1-lwout_mult_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-mslp_1day-plan",
+      "output": "cosmos-test1-mslp_1day_processed",
+      "steps": [
+        "cosmos-test1-mslp_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-mslp_30min-plan",
+      "output": "cosmos-test1-mslp_30min_processed",
+      "steps": [
+        "cosmos-test1-mslp_30min-calculate_mslp",
+        "cosmos-test1-mslp_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-pa_1day-plan",
+      "output": "cosmos-test1-pa_1day_processed",
+      "steps": [
+        "cosmos-test1-pa_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-pa_1hour-plan",
+      "output": "cosmos-test1-pa_1hour_processed",
+      "steps": [
+        "cosmos-test1-pa_1hour-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-pa_30min-plan",
+      "output": "cosmos-test1-pa_30min_processed",
+      "input": "cosmos-test1-pa_30min_raw",
+      "steps": [
+        "cosmos-test1-pa_30min-load_raw",
+        "cosmos-test1-pa_30min-range",
+        "cosmos-test1-pa_30min-battery_v",
+        "cosmos-test1-pa_30min-error_code",
+        "cosmos-test1-pa_30min-samples",
+        "cosmos-test1-pa_30min-spike",
+        "cosmos-test1-pa_30min-manual_removal",
+        "cosmos-test1-pa_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-pe_1day-plan",
+      "output": "cosmos-test1-pe_1day_processed",
+      "steps": [
+        "cosmos-test1-pe_1day-mean_sum"
+      ]
+    },
+    {
+      "id": "cosmos-test1-pe_30min-plan",
+      "output": "cosmos-test1-pe_30min_processed",
+      "steps": [
+        "cosmos-test1-pe_30min-calculate_pe",
+        "cosmos-test1-pe_30min-correction-clip",
+        "cosmos-test1-pe_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-precip_1day-plan",
+      "output": "cosmos-test1-precip_1day_processed",
+      "steps": [
+        "cosmos-test1-precip_1day-sum"
+      ]
+    },
+    {
+      "id": "cosmos-test1-precip_30min-plan",
+      "output": "cosmos-test1-precip_30min_processed",
+      "input": "cosmos-test1-precip_1min_raw",
+      "steps": [
+        "cosmos-test1-precip_30min-sum",
+        "cosmos-test1-precip_30min-range",
+        "cosmos-test1-precip_30min-battery_v",
+        "cosmos-test1-precip_30min-error_code",
+        "cosmos-test1-precip_30min-pluvio_diag",
+        "cosmos-test1-precip_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-precip_raine_1day-plan",
+      "output": "cosmos-test1-precip_raine_1day_processed",
+      "steps": [
+        "cosmos-test1-precip_raine_1day-sum"
+      ]
+    },
+    {
+      "id": "cosmos-test1-precip_raine_30min-plan",
+      "output": "cosmos-test1-precip_raine_30min_processed",
+      "input": "cosmos-test1-precip_raine_1min_raw",
+      "steps": [
+        "cosmos-test1-precip_raine_30min-sum",
+        "cosmos-test1-precip_raine_30min-range",
+        "cosmos-test1-precip_raine_30min-battery_v",
+        "cosmos-test1-precip_raine_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-q_1day-plan",
+      "output": "cosmos-test1-q_1day_processed",
+      "steps": [
+        "cosmos-test1-q_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-q_1hour-plan",
+      "output": "cosmos-test1-q_1hour_processed",
+      "steps": [
+        "cosmos-test1-q_1hour-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-q_30min-plan",
+      "output": "cosmos-test1-q_30min_processed",
+      "steps": [
+        "cosmos-test1-q_30min-calculate_q",
+        "cosmos-test1-q_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-rh_1day-plan",
+      "output": "cosmos-test1-rh_1day_processed",
+      "steps": [
+        "cosmos-test1-rh_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-rh_30min-plan",
+      "output": "cosmos-test1-rh_30min_processed",
+      "input": "cosmos-test1-rh_30min_raw",
+      "steps": [
+        "cosmos-test1-rh_30min-load_raw",
+        "cosmos-test1-rh_30min-range",
+        "cosmos-test1-rh_30min-battery_v",
+        "cosmos-test1-rh_30min-error_code",
+        "cosmos-test1-rh_30min-samples",
+        "cosmos-test1-rh_30min-manual_removal",
+        "cosmos-test1-rh_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-rho_a_mean_30min-plan",
+      "output": "cosmos-test1-rho_a_mean_30min_processed",
+      "input": "cosmos-test1-rho_a_mean_30min_raw",
+      "steps": [
+        "cosmos-test1-rho_a_mean_30min-load_raw",
+        "cosmos-test1-rho_a_mean_30min-range",
+        "cosmos-test1-rho_a_mean_30min-battery_v",
+        "cosmos-test1-rho_a_mean_30min-error_code",
+        "cosmos-test1-rho_a_mean_30min-spike",
+        "cosmos-test1-rho_a_mean_30min-manual_removal",
+        "cosmos-test1-rho_a_mean_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-rn_1day-plan",
+      "output": "cosmos-test1-rn_1day_processed",
+      "steps": [
+        "cosmos-test1-rn_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-test1-rn_30min-plan",
+      "output": "cosmos-test1-rn_30min_processed",
+      "steps": [
+        "cosmos-test1-rn_30min-calculate_rn",
+        "cosmos-test1-rn_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-sigma_swe_crns_1day-plan",
+      "output": "cosmos-test1-sigma_swe_crns_1day_processed",
+      "steps": [
+        "cosmos-test1-sigma_swe_crns_1day-point_estimate"
+      ]
+    },
+    {
+      "id": "cosmos-test1-sigma_swe_crns_1hour-plan",
+      "output": "cosmos-test1-sigma_swe_crns_1hour_processed",
+      "steps": [
+        "cosmos-test1-sigma_swe_crns_1hour-calculate_crns_sigma_swe"
+      ]
+    },
+    {
+      "id": "cosmos-test1-smi_1day-plan",
+      "output": "cosmos-test1-smi_1day_processed",
+      "steps": [
+        "cosmos-test1-smi_1day-calculate_smi"
+      ]
+    },
+    {
+      "id": "cosmos-test1-snow_1day-plan",
+      "output": "cosmos-test1-snow_1day_processed",
+      "steps": [
+        "cosmos-test1-snow_1day-is_snow_day"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil10_1day-plan",
+      "output": "cosmos-test1-stp_tsoil10_1day_processed",
+      "steps": [
+        "cosmos-test1-stp_tsoil10_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil10_30min-plan",
+      "output": "cosmos-test1-stp_tsoil10_30min_processed",
+      "input": "cosmos-test1-stp_tsoil10_30min_raw",
+      "steps": [
+        "cosmos-test1-stp_tsoil10_30min-load_raw",
+        "cosmos-test1-stp_tsoil10_30min-range",
+        "cosmos-test1-stp_tsoil10_30min-battery_v",
+        "cosmos-test1-stp_tsoil10_30min-error_code",
+        "cosmos-test1-stp_tsoil10_30min-samples",
+        "cosmos-test1-stp_tsoil10_30min-spike",
+        "cosmos-test1-stp_tsoil10_30min-manual_removal",
+        "cosmos-test1-stp_tsoil10_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil20_1day-plan",
+      "output": "cosmos-test1-stp_tsoil20_1day_processed",
+      "steps": [
+        "cosmos-test1-stp_tsoil20_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil20_30min-plan",
+      "output": "cosmos-test1-stp_tsoil20_30min_processed",
+      "input": "cosmos-test1-stp_tsoil20_30min_raw",
+      "steps": [
+        "cosmos-test1-stp_tsoil20_30min-load_raw",
+        "cosmos-test1-stp_tsoil20_30min-range",
+        "cosmos-test1-stp_tsoil20_30min-battery_v",
+        "cosmos-test1-stp_tsoil20_30min-error_code",
+        "cosmos-test1-stp_tsoil20_30min-samples",
+        "cosmos-test1-stp_tsoil20_30min-spike",
+        "cosmos-test1-stp_tsoil20_30min-manual_removal",
+        "cosmos-test1-stp_tsoil20_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil2_1day-plan",
+      "output": "cosmos-test1-stp_tsoil2_1day_processed",
+      "steps": [
+        "cosmos-test1-stp_tsoil2_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil2_30min-plan",
+      "output": "cosmos-test1-stp_tsoil2_30min_processed",
+      "input": "cosmos-test1-stp_tsoil2_30min_raw",
+      "steps": [
+        "cosmos-test1-stp_tsoil2_30min-load_raw",
+        "cosmos-test1-stp_tsoil2_30min-range",
+        "cosmos-test1-stp_tsoil2_30min-battery_v",
+        "cosmos-test1-stp_tsoil2_30min-error_code",
+        "cosmos-test1-stp_tsoil2_30min-samples",
+        "cosmos-test1-stp_tsoil2_30min-spike",
+        "cosmos-test1-stp_tsoil2_30min-manual_removal",
+        "cosmos-test1-stp_tsoil2_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil50_1day-plan",
+      "output": "cosmos-test1-stp_tsoil50_1day_processed",
+      "steps": [
+        "cosmos-test1-stp_tsoil50_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil50_30min-plan",
+      "output": "cosmos-test1-stp_tsoil50_30min_processed",
+      "input": "cosmos-test1-stp_tsoil50_30min_raw",
+      "steps": [
+        "cosmos-test1-stp_tsoil50_30min-load_raw",
+        "cosmos-test1-stp_tsoil50_30min-range",
+        "cosmos-test1-stp_tsoil50_30min-battery_v",
+        "cosmos-test1-stp_tsoil50_30min-error_code",
+        "cosmos-test1-stp_tsoil50_30min-samples",
+        "cosmos-test1-stp_tsoil50_30min-spike",
+        "cosmos-test1-stp_tsoil50_30min-manual_removal",
+        "cosmos-test1-stp_tsoil50_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil5_1day-plan",
+      "output": "cosmos-test1-stp_tsoil5_1day_processed",
+      "steps": [
+        "cosmos-test1-stp_tsoil5_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-stp_tsoil5_30min-plan",
+      "output": "cosmos-test1-stp_tsoil5_30min_processed",
+      "input": "cosmos-test1-stp_tsoil5_30min_raw",
+      "steps": [
+        "cosmos-test1-stp_tsoil5_30min-load_raw",
+        "cosmos-test1-stp_tsoil5_30min-range",
+        "cosmos-test1-stp_tsoil5_30min-battery_v",
+        "cosmos-test1-stp_tsoil5_30min-error_code",
+        "cosmos-test1-stp_tsoil5_30min-samples",
+        "cosmos-test1-stp_tsoil5_30min-spike",
+        "cosmos-test1-stp_tsoil5_30min-manual_removal",
+        "cosmos-test1-stp_tsoil5_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-swe_crns_1day-plan",
+      "output": "cosmos-test1-swe_crns_1day_processed",
+      "steps": [
+        "cosmos-test1-swe_crns_1day-point_estimate"
+      ]
+    },
+    {
+      "id": "cosmos-test1-swe_crns_1hour-plan",
+      "output": "cosmos-test1-swe_crns_1hour_processed",
+      "steps": [
+        "cosmos-test1-swe_crns_1hour-calculate_crns_swe"
+      ]
+    },
+    {
+      "id": "cosmos-test1-swin_1day-plan",
+      "output": "cosmos-test1-swin_1day_processed",
+      "steps": [
+        "cosmos-test1-swin_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-test1-swin_30min-plan",
+      "output": "cosmos-test1-swin_30min_processed",
+      "input": "cosmos-test1-swin_30min_raw",
+      "steps": [
+        "cosmos-test1-swin_30min-load_raw",
+        "cosmos-test1-swin_30min-range",
+        "cosmos-test1-swin_30min-battery_v",
+        "cosmos-test1-swin_30min-error_code",
+        "cosmos-test1-swin_30min-samples",
+        "cosmos-test1-swin_30min-manual_removal",
+        "cosmos-test1-swin_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-swout_1day-plan",
+      "output": "cosmos-test1-swout_1day_processed",
+      "steps": [
+        "cosmos-test1-swout_1day-mean_rad"
+      ]
+    },
+    {
+      "id": "cosmos-test1-swout_30min-plan",
+      "output": "cosmos-test1-swout_30min_processed",
+      "input": "cosmos-test1-swout_30min_raw",
+      "steps": [
+        "cosmos-test1-swout_30min-load_raw",
+        "cosmos-test1-swout_30min-range",
+        "cosmos-test1-swout_30min-battery_v",
+        "cosmos-test1-swout_30min-error_code",
+        "cosmos-test1-swout_30min-samples",
+        "cosmos-test1-swout_30min-manual_removal",
+        "cosmos-test1-swout_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ta_1day-plan",
+      "output": "cosmos-test1-ta_1day_processed",
+      "steps": [
+        "cosmos-test1-ta_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ta_30min-plan",
+      "output": "cosmos-test1-ta_30min_processed",
+      "input": "cosmos-test1-ta_30min_raw",
+      "steps": [
+        "cosmos-test1-ta_30min-load_raw",
+        "cosmos-test1-ta_30min-range",
+        "cosmos-test1-ta_30min-battery_v",
+        "cosmos-test1-ta_30min-error_code",
+        "cosmos-test1-ta_30min-samples",
+        "cosmos-test1-ta_30min-spike",
+        "cosmos-test1-ta_30min-manual_removal",
+        "cosmos-test1-ta_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ta_max_1day-plan",
+      "output": "cosmos-test1-ta_max_1day_processed",
+      "steps": [
+        "cosmos-test1-ta_max_1day-max"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ta_min_1day-plan",
+      "output": "cosmos-test1-ta_min_1day_processed",
+      "steps": [
+        "cosmos-test1-ta_min_1day-min"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tau_30min-plan",
+      "output": "cosmos-test1-tau_30min_processed",
+      "input": "cosmos-test1-tau_30min_raw",
+      "steps": [
+        "cosmos-test1-tau_30min-load_raw",
+        "cosmos-test1-tau_30min-range",
+        "cosmos-test1-tau_30min-battery_v",
+        "cosmos-test1-tau_30min-error_code",
+        "cosmos-test1-tau_30min-manual_removal",
+        "cosmos-test1-tau_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt10_soilec_30min-plan",
+      "output": "cosmos-test1-tdt10_soilec_30min_processed",
+      "input": "cosmos-test1-tdt10_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt10_soilec_30min-load_raw",
+        "cosmos-test1-tdt10_soilec_30min-range",
+        "cosmos-test1-tdt10_soilec_30min-battery_v",
+        "cosmos-test1-tdt10_soilec_30min-error_code",
+        "cosmos-test1-tdt10_soilec_30min-manual_removal",
+        "cosmos-test1-tdt10_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt10_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt10_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt10_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt10_soilperm_30min-load_raw",
+        "cosmos-test1-tdt10_soilperm_30min-range",
+        "cosmos-test1-tdt10_soilperm_30min-battery_v",
+        "cosmos-test1-tdt10_soilperm_30min-error_code",
+        "cosmos-test1-tdt10_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt10_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt10_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt10_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt10_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt10_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt10_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt10_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt10_tsoil_30min-load_raw",
+        "cosmos-test1-tdt10_tsoil_30min-range",
+        "cosmos-test1-tdt10_tsoil_30min-battery_v",
+        "cosmos-test1-tdt10_tsoil_30min-error_code",
+        "cosmos-test1-tdt10_tsoil_30min-spike",
+        "cosmos-test1-tdt10_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt10_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt10_vwc_1day-plan",
+      "output": "cosmos-test1-tdt10_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt10_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt10_vwc_30min-plan",
+      "output": "cosmos-test1-tdt10_vwc_30min_processed",
+      "input": "cosmos-test1-tdt10_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt10_vwc_30min-load_raw",
+        "cosmos-test1-tdt10_vwc_30min-range",
+        "cosmos-test1-tdt10_vwc_30min-battery_v",
+        "cosmos-test1-tdt10_vwc_30min-error_code",
+        "cosmos-test1-tdt10_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt10_vwc_30min-spike",
+        "cosmos-test1-tdt10_vwc_30min-manual_removal",
+        "cosmos-test1-tdt10_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt1_soilec_30min-plan",
+      "output": "cosmos-test1-tdt1_soilec_30min_processed",
+      "input": "cosmos-test1-tdt1_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt1_soilec_30min-load_raw",
+        "cosmos-test1-tdt1_soilec_30min-range",
+        "cosmos-test1-tdt1_soilec_30min-battery_v",
+        "cosmos-test1-tdt1_soilec_30min-error_code",
+        "cosmos-test1-tdt1_soilec_30min-manual_removal",
+        "cosmos-test1-tdt1_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt1_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt1_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt1_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt1_soilperm_30min-load_raw",
+        "cosmos-test1-tdt1_soilperm_30min-range",
+        "cosmos-test1-tdt1_soilperm_30min-battery_v",
+        "cosmos-test1-tdt1_soilperm_30min-error_code",
+        "cosmos-test1-tdt1_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt1_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt1_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt1_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt1_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt1_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt1_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt1_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt1_tsoil_30min-load_raw",
+        "cosmos-test1-tdt1_tsoil_30min-range",
+        "cosmos-test1-tdt1_tsoil_30min-battery_v",
+        "cosmos-test1-tdt1_tsoil_30min-error_code",
+        "cosmos-test1-tdt1_tsoil_30min-spike",
+        "cosmos-test1-tdt1_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt1_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt1_vwc_1day-plan",
+      "output": "cosmos-test1-tdt1_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt1_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt1_vwc_30min-plan",
+      "output": "cosmos-test1-tdt1_vwc_30min_processed",
+      "input": "cosmos-test1-tdt1_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt1_vwc_30min-load_raw",
+        "cosmos-test1-tdt1_vwc_30min-range",
+        "cosmos-test1-tdt1_vwc_30min-battery_v",
+        "cosmos-test1-tdt1_vwc_30min-error_code",
+        "cosmos-test1-tdt1_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt1_vwc_30min-spike",
+        "cosmos-test1-tdt1_vwc_30min-manual_removal",
+        "cosmos-test1-tdt1_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt2_soilec_30min-plan",
+      "output": "cosmos-test1-tdt2_soilec_30min_processed",
+      "input": "cosmos-test1-tdt2_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt2_soilec_30min-load_raw",
+        "cosmos-test1-tdt2_soilec_30min-range",
+        "cosmos-test1-tdt2_soilec_30min-battery_v",
+        "cosmos-test1-tdt2_soilec_30min-error_code",
+        "cosmos-test1-tdt2_soilec_30min-manual_removal",
+        "cosmos-test1-tdt2_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt2_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt2_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt2_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt2_soilperm_30min-load_raw",
+        "cosmos-test1-tdt2_soilperm_30min-range",
+        "cosmos-test1-tdt2_soilperm_30min-battery_v",
+        "cosmos-test1-tdt2_soilperm_30min-error_code",
+        "cosmos-test1-tdt2_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt2_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt2_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt2_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt2_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt2_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt2_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt2_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt2_tsoil_30min-load_raw",
+        "cosmos-test1-tdt2_tsoil_30min-range",
+        "cosmos-test1-tdt2_tsoil_30min-battery_v",
+        "cosmos-test1-tdt2_tsoil_30min-error_code",
+        "cosmos-test1-tdt2_tsoil_30min-spike",
+        "cosmos-test1-tdt2_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt2_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt2_vwc_1day-plan",
+      "output": "cosmos-test1-tdt2_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt2_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt2_vwc_30min-plan",
+      "output": "cosmos-test1-tdt2_vwc_30min_processed",
+      "input": "cosmos-test1-tdt2_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt2_vwc_30min-load_raw",
+        "cosmos-test1-tdt2_vwc_30min-range",
+        "cosmos-test1-tdt2_vwc_30min-battery_v",
+        "cosmos-test1-tdt2_vwc_30min-error_code",
+        "cosmos-test1-tdt2_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt2_vwc_30min-spike",
+        "cosmos-test1-tdt2_vwc_30min-manual_removal",
+        "cosmos-test1-tdt2_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt3_soilec_30min-plan",
+      "output": "cosmos-test1-tdt3_soilec_30min_processed",
+      "input": "cosmos-test1-tdt3_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt3_soilec_30min-load_raw",
+        "cosmos-test1-tdt3_soilec_30min-range",
+        "cosmos-test1-tdt3_soilec_30min-battery_v",
+        "cosmos-test1-tdt3_soilec_30min-error_code",
+        "cosmos-test1-tdt3_soilec_30min-manual_removal",
+        "cosmos-test1-tdt3_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt3_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt3_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt3_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt3_soilperm_30min-load_raw",
+        "cosmos-test1-tdt3_soilperm_30min-range",
+        "cosmos-test1-tdt3_soilperm_30min-battery_v",
+        "cosmos-test1-tdt3_soilperm_30min-error_code",
+        "cosmos-test1-tdt3_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt3_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt3_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt3_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt3_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt3_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt3_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt3_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt3_tsoil_30min-load_raw",
+        "cosmos-test1-tdt3_tsoil_30min-range",
+        "cosmos-test1-tdt3_tsoil_30min-battery_v",
+        "cosmos-test1-tdt3_tsoil_30min-error_code",
+        "cosmos-test1-tdt3_tsoil_30min-spike",
+        "cosmos-test1-tdt3_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt3_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt3_vwc_1day-plan",
+      "output": "cosmos-test1-tdt3_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt3_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt3_vwc_30min-plan",
+      "output": "cosmos-test1-tdt3_vwc_30min_processed",
+      "input": "cosmos-test1-tdt3_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt3_vwc_30min-load_raw",
+        "cosmos-test1-tdt3_vwc_30min-range",
+        "cosmos-test1-tdt3_vwc_30min-battery_v",
+        "cosmos-test1-tdt3_vwc_30min-error_code",
+        "cosmos-test1-tdt3_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt3_vwc_30min-spike",
+        "cosmos-test1-tdt3_vwc_30min-manual_removal",
+        "cosmos-test1-tdt3_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt4_soilec_30min-plan",
+      "output": "cosmos-test1-tdt4_soilec_30min_processed",
+      "input": "cosmos-test1-tdt4_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt4_soilec_30min-load_raw",
+        "cosmos-test1-tdt4_soilec_30min-range",
+        "cosmos-test1-tdt4_soilec_30min-battery_v",
+        "cosmos-test1-tdt4_soilec_30min-error_code",
+        "cosmos-test1-tdt4_soilec_30min-manual_removal",
+        "cosmos-test1-tdt4_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt4_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt4_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt4_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt4_soilperm_30min-load_raw",
+        "cosmos-test1-tdt4_soilperm_30min-range",
+        "cosmos-test1-tdt4_soilperm_30min-battery_v",
+        "cosmos-test1-tdt4_soilperm_30min-error_code",
+        "cosmos-test1-tdt4_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt4_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt4_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt4_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt4_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt4_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt4_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt4_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt4_tsoil_30min-load_raw",
+        "cosmos-test1-tdt4_tsoil_30min-range",
+        "cosmos-test1-tdt4_tsoil_30min-battery_v",
+        "cosmos-test1-tdt4_tsoil_30min-error_code",
+        "cosmos-test1-tdt4_tsoil_30min-spike",
+        "cosmos-test1-tdt4_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt4_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt4_vwc_1day-plan",
+      "output": "cosmos-test1-tdt4_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt4_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt4_vwc_30min-plan",
+      "output": "cosmos-test1-tdt4_vwc_30min_processed",
+      "input": "cosmos-test1-tdt4_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt4_vwc_30min-load_raw",
+        "cosmos-test1-tdt4_vwc_30min-range",
+        "cosmos-test1-tdt4_vwc_30min-battery_v",
+        "cosmos-test1-tdt4_vwc_30min-error_code",
+        "cosmos-test1-tdt4_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt4_vwc_30min-spike",
+        "cosmos-test1-tdt4_vwc_30min-manual_removal",
+        "cosmos-test1-tdt4_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt5_soilec_30min-plan",
+      "output": "cosmos-test1-tdt5_soilec_30min_processed",
+      "input": "cosmos-test1-tdt5_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt5_soilec_30min-load_raw",
+        "cosmos-test1-tdt5_soilec_30min-range",
+        "cosmos-test1-tdt5_soilec_30min-battery_v",
+        "cosmos-test1-tdt5_soilec_30min-error_code",
+        "cosmos-test1-tdt5_soilec_30min-manual_removal",
+        "cosmos-test1-tdt5_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt5_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt5_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt5_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt5_soilperm_30min-load_raw",
+        "cosmos-test1-tdt5_soilperm_30min-range",
+        "cosmos-test1-tdt5_soilperm_30min-battery_v",
+        "cosmos-test1-tdt5_soilperm_30min-error_code",
+        "cosmos-test1-tdt5_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt5_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt5_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt5_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt5_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt5_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt5_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt5_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt5_tsoil_30min-load_raw",
+        "cosmos-test1-tdt5_tsoil_30min-range",
+        "cosmos-test1-tdt5_tsoil_30min-battery_v",
+        "cosmos-test1-tdt5_tsoil_30min-error_code",
+        "cosmos-test1-tdt5_tsoil_30min-spike",
+        "cosmos-test1-tdt5_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt5_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt5_vwc_1day-plan",
+      "output": "cosmos-test1-tdt5_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt5_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt5_vwc_30min-plan",
+      "output": "cosmos-test1-tdt5_vwc_30min_processed",
+      "input": "cosmos-test1-tdt5_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt5_vwc_30min-load_raw",
+        "cosmos-test1-tdt5_vwc_30min-range",
+        "cosmos-test1-tdt5_vwc_30min-battery_v",
+        "cosmos-test1-tdt5_vwc_30min-error_code",
+        "cosmos-test1-tdt5_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt5_vwc_30min-spike",
+        "cosmos-test1-tdt5_vwc_30min-manual_removal",
+        "cosmos-test1-tdt5_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt6_soilec_30min-plan",
+      "output": "cosmos-test1-tdt6_soilec_30min_processed",
+      "input": "cosmos-test1-tdt6_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt6_soilec_30min-load_raw",
+        "cosmos-test1-tdt6_soilec_30min-range",
+        "cosmos-test1-tdt6_soilec_30min-battery_v",
+        "cosmos-test1-tdt6_soilec_30min-error_code",
+        "cosmos-test1-tdt6_soilec_30min-manual_removal",
+        "cosmos-test1-tdt6_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt6_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt6_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt6_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt6_soilperm_30min-load_raw",
+        "cosmos-test1-tdt6_soilperm_30min-range",
+        "cosmos-test1-tdt6_soilperm_30min-battery_v",
+        "cosmos-test1-tdt6_soilperm_30min-error_code",
+        "cosmos-test1-tdt6_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt6_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt6_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt6_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt6_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt6_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt6_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt6_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt6_tsoil_30min-load_raw",
+        "cosmos-test1-tdt6_tsoil_30min-range",
+        "cosmos-test1-tdt6_tsoil_30min-battery_v",
+        "cosmos-test1-tdt6_tsoil_30min-error_code",
+        "cosmos-test1-tdt6_tsoil_30min-spike",
+        "cosmos-test1-tdt6_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt6_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt6_vwc_1day-plan",
+      "output": "cosmos-test1-tdt6_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt6_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt6_vwc_30min-plan",
+      "output": "cosmos-test1-tdt6_vwc_30min_processed",
+      "input": "cosmos-test1-tdt6_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt6_vwc_30min-load_raw",
+        "cosmos-test1-tdt6_vwc_30min-range",
+        "cosmos-test1-tdt6_vwc_30min-battery_v",
+        "cosmos-test1-tdt6_vwc_30min-error_code",
+        "cosmos-test1-tdt6_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt6_vwc_30min-spike",
+        "cosmos-test1-tdt6_vwc_30min-manual_removal",
+        "cosmos-test1-tdt6_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt7_soilec_30min-plan",
+      "output": "cosmos-test1-tdt7_soilec_30min_processed",
+      "input": "cosmos-test1-tdt7_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt7_soilec_30min-load_raw",
+        "cosmos-test1-tdt7_soilec_30min-range",
+        "cosmos-test1-tdt7_soilec_30min-battery_v",
+        "cosmos-test1-tdt7_soilec_30min-error_code",
+        "cosmos-test1-tdt7_soilec_30min-manual_removal",
+        "cosmos-test1-tdt7_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt7_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt7_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt7_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt7_soilperm_30min-load_raw",
+        "cosmos-test1-tdt7_soilperm_30min-range",
+        "cosmos-test1-tdt7_soilperm_30min-battery_v",
+        "cosmos-test1-tdt7_soilperm_30min-error_code",
+        "cosmos-test1-tdt7_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt7_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt7_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt7_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt7_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt7_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt7_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt7_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt7_tsoil_30min-load_raw",
+        "cosmos-test1-tdt7_tsoil_30min-range",
+        "cosmos-test1-tdt7_tsoil_30min-battery_v",
+        "cosmos-test1-tdt7_tsoil_30min-error_code",
+        "cosmos-test1-tdt7_tsoil_30min-spike",
+        "cosmos-test1-tdt7_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt7_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt7_vwc_1day-plan",
+      "output": "cosmos-test1-tdt7_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt7_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt7_vwc_30min-plan",
+      "output": "cosmos-test1-tdt7_vwc_30min_processed",
+      "input": "cosmos-test1-tdt7_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt7_vwc_30min-load_raw",
+        "cosmos-test1-tdt7_vwc_30min-range",
+        "cosmos-test1-tdt7_vwc_30min-battery_v",
+        "cosmos-test1-tdt7_vwc_30min-error_code",
+        "cosmos-test1-tdt7_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt7_vwc_30min-spike",
+        "cosmos-test1-tdt7_vwc_30min-manual_removal",
+        "cosmos-test1-tdt7_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt8_soilec_30min-plan",
+      "output": "cosmos-test1-tdt8_soilec_30min_processed",
+      "input": "cosmos-test1-tdt8_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt8_soilec_30min-load_raw",
+        "cosmos-test1-tdt8_soilec_30min-range",
+        "cosmos-test1-tdt8_soilec_30min-battery_v",
+        "cosmos-test1-tdt8_soilec_30min-error_code",
+        "cosmos-test1-tdt8_soilec_30min-manual_removal",
+        "cosmos-test1-tdt8_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt8_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt8_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt8_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt8_soilperm_30min-load_raw",
+        "cosmos-test1-tdt8_soilperm_30min-range",
+        "cosmos-test1-tdt8_soilperm_30min-battery_v",
+        "cosmos-test1-tdt8_soilperm_30min-error_code",
+        "cosmos-test1-tdt8_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt8_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt8_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt8_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt8_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt8_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt8_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt8_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt8_tsoil_30min-load_raw",
+        "cosmos-test1-tdt8_tsoil_30min-range",
+        "cosmos-test1-tdt8_tsoil_30min-battery_v",
+        "cosmos-test1-tdt8_tsoil_30min-error_code",
+        "cosmos-test1-tdt8_tsoil_30min-spike",
+        "cosmos-test1-tdt8_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt8_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt8_vwc_1day-plan",
+      "output": "cosmos-test1-tdt8_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt8_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt8_vwc_30min-plan",
+      "output": "cosmos-test1-tdt8_vwc_30min_processed",
+      "input": "cosmos-test1-tdt8_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt8_vwc_30min-load_raw",
+        "cosmos-test1-tdt8_vwc_30min-range",
+        "cosmos-test1-tdt8_vwc_30min-battery_v",
+        "cosmos-test1-tdt8_vwc_30min-error_code",
+        "cosmos-test1-tdt8_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt8_vwc_30min-spike",
+        "cosmos-test1-tdt8_vwc_30min-manual_removal",
+        "cosmos-test1-tdt8_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt9_soilec_30min-plan",
+      "output": "cosmos-test1-tdt9_soilec_30min_processed",
+      "input": "cosmos-test1-tdt9_soilec_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt9_soilec_30min-load_raw",
+        "cosmos-test1-tdt9_soilec_30min-range",
+        "cosmos-test1-tdt9_soilec_30min-battery_v",
+        "cosmos-test1-tdt9_soilec_30min-error_code",
+        "cosmos-test1-tdt9_soilec_30min-manual_removal",
+        "cosmos-test1-tdt9_soilec_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt9_soilperm_30min-plan",
+      "output": "cosmos-test1-tdt9_soilperm_30min_processed",
+      "input": "cosmos-test1-tdt9_soilperm_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt9_soilperm_30min-load_raw",
+        "cosmos-test1-tdt9_soilperm_30min-range",
+        "cosmos-test1-tdt9_soilperm_30min-battery_v",
+        "cosmos-test1-tdt9_soilperm_30min-error_code",
+        "cosmos-test1-tdt9_soilperm_30min-manual_removal",
+        "cosmos-test1-tdt9_soilperm_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt9_tsoil_1day-plan",
+      "output": "cosmos-test1-tdt9_tsoil_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt9_tsoil_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt9_tsoil_30min-plan",
+      "output": "cosmos-test1-tdt9_tsoil_30min_processed",
+      "input": "cosmos-test1-tdt9_tsoil_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt9_tsoil_30min-load_raw",
+        "cosmos-test1-tdt9_tsoil_30min-range",
+        "cosmos-test1-tdt9_tsoil_30min-battery_v",
+        "cosmos-test1-tdt9_tsoil_30min-error_code",
+        "cosmos-test1-tdt9_tsoil_30min-spike",
+        "cosmos-test1-tdt9_tsoil_30min-manual_removal",
+        "cosmos-test1-tdt9_tsoil_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt9_vwc_1day-plan",
+      "output": "cosmos-test1-tdt9_vwc_1day_processed",
+      "steps": [
+        "cosmos-test1-tdt9_vwc_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tdt9_vwc_30min-plan",
+      "output": "cosmos-test1-tdt9_vwc_30min_processed",
+      "input": "cosmos-test1-tdt9_vwc_30min_raw",
+      "steps": [
+        "cosmos-test1-tdt9_vwc_30min-load_raw",
+        "cosmos-test1-tdt9_vwc_30min-range",
+        "cosmos-test1-tdt9_vwc_30min-battery_v",
+        "cosmos-test1-tdt9_vwc_30min-error_code",
+        "cosmos-test1-tdt9_vwc_30min-tdt_tsoil",
+        "cosmos-test1-tdt9_vwc_30min-spike",
+        "cosmos-test1-tdt9_vwc_30min-manual_removal",
+        "cosmos-test1-tdt9_vwc_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-tnr01c_30min-plan",
+      "output": "cosmos-test1-tnr01c_30min_processed",
+      "input": "cosmos-test1-tnr01c_30min_raw",
+      "steps": [
+        "cosmos-test1-tnr01c_30min-load_raw",
+        "cosmos-test1-tnr01c_30min-range",
+        "cosmos-test1-tnr01c_30min-battery_v",
+        "cosmos-test1-tnr01c_30min-error_code",
+        "cosmos-test1-tnr01c_30min-spike",
+        "cosmos-test1-tnr01c_30min-manual_removal",
+        "cosmos-test1-tnr01c_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ts_30min-plan",
+      "output": "cosmos-test1-ts_30min_processed",
+      "input": "cosmos-test1-ts_30min_raw",
+      "steps": [
+        "cosmos-test1-ts_30min-load_raw",
+        "cosmos-test1-ts_30min-range",
+        "cosmos-test1-ts_30min-battery_v",
+        "cosmos-test1-ts_30min-error_code",
+        "cosmos-test1-ts_30min-spike",
+        "cosmos-test1-ts_30min-manual_removal",
+        "cosmos-test1-ts_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-u_star_30min-plan",
+      "output": "cosmos-test1-u_star_30min_processed",
+      "input": "cosmos-test1-u_star_30min_raw",
+      "steps": [
+        "cosmos-test1-u_star_30min-load_raw",
+        "cosmos-test1-u_star_30min-range",
+        "cosmos-test1-u_star_30min-battery_v",
+        "cosmos-test1-u_star_30min-error_code",
+        "cosmos-test1-u_star_30min-manual_removal",
+        "cosmos-test1-u_star_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ux_30min-plan",
+      "output": "cosmos-test1-ux_30min_processed",
+      "input": "cosmos-test1-ux_30min_raw",
+      "steps": [
+        "cosmos-test1-ux_30min-load_raw",
+        "cosmos-test1-ux_30min-range",
+        "cosmos-test1-ux_30min-battery_v",
+        "cosmos-test1-ux_30min-error_code",
+        "cosmos-test1-ux_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-uy_30min-plan",
+      "output": "cosmos-test1-uy_30min_processed",
+      "input": "cosmos-test1-uy_30min_raw",
+      "steps": [
+        "cosmos-test1-uy_30min-load_raw",
+        "cosmos-test1-uy_30min-range",
+        "cosmos-test1-uy_30min-battery_v",
+        "cosmos-test1-uy_30min-error_code",
+        "cosmos-test1-uy_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-uz_30min-plan",
+      "output": "cosmos-test1-uz_30min_processed",
+      "input": "cosmos-test1-uz_30min_raw",
+      "steps": [
+        "cosmos-test1-uz_30min-load_raw",
+        "cosmos-test1-uz_30min-range",
+        "cosmos-test1-uz_30min-battery_v",
+        "cosmos-test1-uz_30min-error_code",
+        "cosmos-test1-uz_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-wd_1day-plan",
+      "output": "cosmos-test1-wd_1day_processed",
+      "steps": [
+        "cosmos-test1-wd_1day-angular_mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-wd_30min-plan",
+      "output": "cosmos-test1-wd_30min_processed",
+      "input": "cosmos-test1-wd_30min_raw",
+      "steps": [
+        "cosmos-test1-wd_30min-load_raw",
+        "cosmos-test1-wd_30min-battery_v",
+        "cosmos-test1-wd_30min-error_code",
+        "cosmos-test1-wd_30min-samples",
+        "cosmos-test1-wd_30min-range",
+        "cosmos-test1-wd_30min-manual_removal",
+        "cosmos-test1-wd_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ws_1day-plan",
+      "output": "cosmos-test1-ws_1day_processed",
+      "steps": [
+        "cosmos-test1-ws_1day-mean"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ws_30min-plan",
+      "output": "cosmos-test1-ws_30min_processed",
+      "input": "cosmos-test1-ws_30min_raw",
+      "steps": [
+        "cosmos-test1-ws_30min-load_raw",
+        "cosmos-test1-ws_30min-range",
+        "cosmos-test1-ws_30min-battery_v",
+        "cosmos-test1-ws_30min-error_code",
+        "cosmos-test1-ws_30min-samples",
+        "cosmos-test1-ws_30min-manual_removal",
+        "cosmos-test1-ws_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-ws_res_30min-plan",
+      "output": "cosmos-test1-ws_res_30min_processed",
+      "input": "cosmos-test1-ws_res_30min_raw",
+      "steps": [
+        "cosmos-test1-ws_res_30min-load_raw",
+        "cosmos-test1-ws_res_30min-range",
+        "cosmos-test1-ws_res_30min-battery_v",
+        "cosmos-test1-ws_res_30min-error_code",
+        "cosmos-test1-ws_res_30min-manual_removal"
+      ]
+    },
+    {
+      "id": "cosmos-test1-solar_zenith_30min-plan",
+      "output": "cosmos-test1-solar_zenith_30min_processed",
+      "steps": [
+        "cosmos-test1-solar_zenith_30min-solar_zenith"
+      ]
+    },
+    {
+      "id": "cosmos-test1-profile_vwc15_30min-plan",
+      "output": "cosmos-test1-profile_vwc15_30min_processed",
+      "input": "cosmos-test1-profile_vwc15_30min_raw",
+      "steps": [
+        "cosmos-test1-profile_vwc15_30min-load_raw",
+        "cosmos-test1-profile_vwc15_30min-range",
+        "cosmos-test1-profile_vwc15_30min-battery_v",
+        "cosmos-test1-profile_vwc15_30min-error_code",
+        "cosmos-test1-profile_vwc15_30min-spike",
+        "cosmos-test1-profile_vwc15_30min-manual_removal",
+        "cosmos-test1-profile_vwc15_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-profile_vwc40_30min-plan",
+      "output": "cosmos-test1-profile_vwc40_30min_processed",
+      "input": "cosmos-test1-profile_vwc40_30min_raw",
+      "steps": [
+        "cosmos-test1-profile_vwc40_30min-load_raw",
+        "cosmos-test1-profile_vwc40_30min-range",
+        "cosmos-test1-profile_vwc40_30min-battery_v",
+        "cosmos-test1-profile_vwc40_30min-error_code",
+        "cosmos-test1-profile_vwc40_30min-spike",
+        "cosmos-test1-profile_vwc40_30min-manual_removal",
+        "cosmos-test1-profile_vwc40_30min-infill"
+      ]
+    },
+    {
+      "id": "cosmos-test1-profile_vwc65_30min-plan",
+      "output": "cosmos-test1-profile_vwc65_30min_processed",
+      "input": "cosmos-test1-profile_vwc65_30min_raw",
+      "steps": [
+        "cosmos-test1-profile_vwc65_30min-load_raw",
+        "cosmos-test1-profile_vwc65_30min-range",
+        "cosmos-test1-profile_vwc65_30min-battery_v",
+        "cosmos-test1-profile_vwc65_30min-error_code",
+        "cosmos-test1-profile_vwc65_30min-spike",
+        "cosmos-test1-profile_vwc65_30min-manual_removal",
+        "cosmos-test1-profile_vwc65_30min-infill"
       ]
     }
   ],
