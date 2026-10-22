@@ -974,7 +974,7 @@ FDRI-TW-MENZB-01-WL-RADAR_TEMP_1DAY_PROCESSED,Sensor temperature (Radar),TW-MENZ
 FDRI-TW-MENZB-01-WL-WATER_LEV_PT_1DAY_PROCESSED,Water level (Pressure transducer),TW-MENZB-01-WL,ukceh-dri-staging-processed,P1D,PLS500_Lvl_m_Avg,time,WATER_LEVEL-MEAN_PROC-CM-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
 FDRI-TW-MENZB-01-WL-WATER_LEV_RADAR_1DAY_PROCESSED,Water level (Radar),TW-MENZB-01-WL,ukceh-dri-staging-processed,P1D,Radar_Stage_Avg,time,WATER_LEVEL-MEAN_PROC-CM-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
 FDRI-TW-MENZB-01-WL-WATER_TEMP_1DAY_PROCESSED,Water temperature (Pressure transducer),TW-MENZB-01-WL,ukceh-dri-staging-processed,P1D,PLS500_Temp_C_Avg,time,WATER_TEMP-MEAN_PROC-DEGC-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
-FDRI-SE-CFRON-01-RS-G2_15MIN_RAW,Soil heat flux 1,SE-CFRON-01-RS,ukceh-dri-staging-ingested,fifteen_minute,G_PLATE_1_1_1,time,HEATFLUX_SOIL-INST-MV-PT15M-PT15M,RAW,,
+FDRI-SE-CFRON-01-RS-G1_15MIN_RAW,Soil heat flux 1,SE-CFRON-01-RS,ukceh-dri-staging-ingested,fifteen_minute,G_PLATE_1_1_1,time,HEATFLUX_SOIL-INST-MV-PT15M-PT15M,RAW,,
 FDRI-SE-CFRON-01-RS-G2_15MIN_RAW,Soil heat flux 2,SE-CFRON-01-RS,ukceh-dri-staging-ingested,fifteen_minute,G_PLATE_1_1_2,time,HEATFLUX_SOIL-INST-MV-PT15M-PT15M,RAW,,
 FDRI-SE-CFRON-01-RS-G1_CAL_15MIN_RAW,Soil heat flux 1 (Calibration value),SE-CFRON-01-RS,ukceh-dri-staging-ingested,fifteen_minute,shf_plate_cal(1),time,HEATFLUX_SOIL_CAL-INST-UNITLESS-PT15M-PT15M,RAW,,
 FDRI-SE-CFRON-01-RS-G2_CAL_15MIN_RAW,Soil heat flux 2 (Calibration value),SE-CFRON-01-RS,ukceh-dri-staging-ingested,fifteen_minute,shf_plate_cal(2),time,HEATFLUX_SOIL_CAL-INST-UNITLESS-PT15M-PT15M,RAW,,
