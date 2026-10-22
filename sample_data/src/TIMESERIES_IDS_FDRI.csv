@@ -273,13 +273,6 @@ FDRI-CH-TRIGR-01-RS-BATTV_15MIN_PROCESSED,Battery voltage,CH-TRIGR-01-RS,ukceh-d
 FDRI-CH-TRIGR-01-RS-BATTV_30MIN_PROCESSED,Battery voltage,CH-TRIGR-01-RS,ukceh-dri-staging-processed,PT30M,BattV,time,VOLTAGE_BATT-MEAN_PREC-V-PT30M-PT30M,PROCESSED,,
 FDRI-CH-TRIGR-01-RS-DEWPOINT_1MIN_RAW,Dew point temperature,CH-TRIGR-01-RS,ukceh-dri-staging-ingested,one_minute,DewPoint_C,time,DEW_POINT-INST-DEGC-PT1M-PT1M,RAW,,
 FDRI-CH-TRIGR-01-RS-DEWPOINT_1MIN_PROCESSED,Dew point temperature,CH-TRIGR-01-RS,ukceh-dri-staging-processed,PT1M,DewPoint_C,time,DEW_POINT-INST-DEGC-PT1M-PT1M,PROCESSED,FULL_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-FA_DATA_CNT_30MIN_RAW,Status of count (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-ingested,thirty_minute,FA_data_cnt,time,STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,RAW,,1
-FDRI-CH-TRIGR-01-RS-FA_SOILMOISTURE_30MIN_RAW,Soil moisture (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-ingested,thirty_minute,FA_soilmoisture,time,VWC_AREA-MEAN_PREC-PCT-PT30M-PT30M,RAW,,1
-FDRI-CH-TRIGR-01-RS-FA_SOILMOISTURE_30MIN_PROCESSED,Soil moisture (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-processed,PT30M,FA_soilmoisture,time,VWC_AREA-MEAN_PREC-PCT-PT30M-PT30M,PROCESSED,FULL_FLAG_DEF,1
-FDRI-CH-TRIGR-01-RS-FA_SWE_AREAL_30MIN_RAW,Areal snow water equivalent (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-ingested,thirty_minute,FA_SWE_areal,time,SWE-MEAN_PREC-PCT-PT30M-PT30M,RAW,,1
-FDRI-CH-TRIGR-01-RS-FA_SWE_AREAL_30MIN_PROCESSED,Areal snow water equivalent (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-processed,PT30M,FA_SWE_areal,time,SWE-MEAN_PREC-PCT-PT30M-PT30M,PROCESSED,FULL_FLAG_DEF,1
-FDRI-CH-TRIGR-01-RS-FA_SWE_LOCAL_30MIN_RAW,Local snow water equivalent (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-ingested,thirty_minute,FA_SWE_local,time,SWE-MEAN_PREC-PCT-PT30M-PT30M,RAW,,1
-FDRI-CH-TRIGR-01-RS-FA_SWE_LOCAL_30MIN_PROCESSED,Local snow water equivalent (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-processed,PT30M,FA_SWE_local,time,SWE-MEAN_PREC-PCT-PT30M-PT30M,PROCESSED,FULL_FLAG_DEF,1
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_1MIN_RAW,Precipitation intensity (Standard height RG),CH-TRIGR-01-RS,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_1m,time,PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,RAW,,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_1MIN_PROCESSED,Precipitation intensity (Standard height RG),CH-TRIGR-01-RS,ukceh-dri-staging-processed,PT1M,RainE_Standard_Int_1m,time,PRECIP_INTEN-MEAN_PREC-MM_M-1-PT1M-PT1M,PROCESSED,FULL_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-STDRD_PRECIP_INT_HR_1MIN_RAW,Precipitation intensity (Standard height RG),CH-TRIGR-01-RS,ukceh-dri-staging-ingested,one_minute,RainE_Standard_Int_1m_hr,time,PRECIP_INTEN-MEAN_PREC-MM_HR-1-PT1M-PT1M,RAW,,
@@ -878,9 +871,6 @@ FDRI-CH-MILFA-01-RC-SOILVUE_30CM_VWC_1DAY_PROCESSED,Volumetric water content (30
 FDRI-CH-MILFA-01-RC-SOILVUE_40CM_VWC_1DAY_PROCESSED,Volumetric water content (40cm depth - SoilVUE),CH-MILFA-01-RC,ukceh-dri-staging-processed,P1D,SoilVUE_1_40cm_avg_VWC,time,VWC_SOIL_40-MEAN_PROC-M3-PER-M3-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
 FDRI-CH-MILFA-01-RC-SOILVUE_5CM_VWC_1DAY_PROCESSED,Volumetric water content (5cm depth - SoilVUE),CH-MILFA-01-RC,ukceh-dri-staging-processed,P1D,SoilVUE_1_5cm_avg_VWC,time,VWC_SOIL_5-MEAN_PROC-M3-PER-M3-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
 FDRI-CH-MILFA-01-RC-SOILVUE_50CM_VWC_1DAY_PROCESSED,Volumetric water content (50cm depth - SoilVUE),CH-MILFA-01-RC,ukceh-dri-staging-processed,P1D,SoilVUE_1_50cm_avg_VWC,time,VWC_SOIL_50-MEAN_PROC-M3-PER-M3-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
-FDRI-CH-TRIGR-01-RS-FA_SOILMOISTURE_1DAY_PROCESSED,Soil moisture (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-processed,P1D,FA_soilmoisture,time,VWC_AREA-MEAN_PROC-PCT-P1D-P1D,PROCESSED,FULL_FLAG_DEF,1
-FDRI-CH-TRIGR-01-RS-FA_SWE_AREAL_1DAY_PROCESSED,Areal snow water equivalent (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-processed,P1D,FA_SWE_areal,time,SWE-MEAN_PROC-PCT-P1D-P1D,PROCESSED,FULL_FLAG_DEF,1
-FDRI-CH-TRIGR-01-RS-FA_SWE_LOCAL_1DAY_PROCESSED,Local snow water equivalent (Finapp),CH-TRIGR-01-RS,ukceh-dri-staging-processed,P1D,FA_SWE_local,time,SWE-MEAN_PROC-PCT-P1D-P1D,PROCESSED,FULL_FLAG_DEF,1
 FDRI-CH-TRIGR-01-RS-PA_1DAY_PROCESSED,Atmospheric pressure,CH-TRIGR-01-RS,ukceh-dri-staging-processed,P1D,Pressure_Avg,time,PA-MEAN_PROC-HPA-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-SOILVUE_10CM_BULKEC_1DAY_PROCESSED,Bulk electrical conductivity (10cm depth - SoilVUE),CH-TRIGR-01-RS,ukceh-dri-staging-processed,P1D,SoilVUE_1_10cm_avg_BulkEC,time,COND_10-MEAN_PROC-DSM-1-P1D-P1D,PROCESSED,FULL_FLAG_DEF,
 FDRI-CH-TRIGR-01-RS-SOILVUE_10CM_KA_1DAY_PROCESSED,Apparent permittivity (10cm depth - SoilVUE),CH-TRIGR-01-RS,ukceh-dri-staging-processed,P1D,SoilVUE_1_10cm_avg_Ka,time,PERM_10-MEAN_PROC-UNITLESS-P1D-P1D,PROCESSED,FULL_FLAG_DEF,

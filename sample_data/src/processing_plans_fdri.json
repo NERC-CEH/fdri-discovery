@@ -2059,36 +2059,6 @@
       ]
     },
     {
-      "id": "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_soilmoisture_30min_processed",
-      "input": "fdri-ch-trigr-01-rs-fa_soilmoisture_30min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-load_raw",
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-battery_v",
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_areal_30min-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_areal_30min_processed",
-      "input": "fdri-ch-trigr-01-rs-fa_swe_areal_30min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_areal_30min-load_raw",
-        "fdri-ch-trigr-01-rs-fa_swe_areal_30min-battery_v",
-        "fdri-ch-trigr-01-rs-fa_swe_areal_30min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_local_30min-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_local_30min_processed",
-      "input": "fdri-ch-trigr-01-rs-fa_swe_local_30min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_local_30min-load_raw",
-        "fdri-ch-trigr-01-rs-fa_swe_local_30min-battery_v",
-        "fdri-ch-trigr-01-rs-fa_swe_local_30min-range"
-      ]
-    },
-    {
       "id": "fdri-ch-trigr-01-rs-stdrd_precip_int_1min-plan",
       "output": "fdri-ch-trigr-01-rs-stdrd_precip_int_1min_processed",
       "input": "fdri-ch-trigr-01-rs-stdrd_precip_int_1min_raw",
@@ -3473,27 +3443,6 @@
       "output": "fdri-ch-trigr-01-rs-ndvi_1day_processed",
       "steps": [
         "fdri-ch-trigr-01-rs-ndvi_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_soilmoisture_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_soilmoisture_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_areal_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_areal_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_areal_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_local_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_local_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_local_1day-mean"
       ]
     },
     {
