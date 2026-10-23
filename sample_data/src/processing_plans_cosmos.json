@@ -6257,6 +6257,7 @@
       "input": "cosmos-cambo-wd_30min_raw",
       "steps": [
         "cosmos-cambo-wd_30min-load_raw",
+        "cosmos-cambo-wd_30min-correction-wd",
         "cosmos-cambo-wd_30min-battery_v",
         "cosmos-cambo-wd_30min-error_code",
         "cosmos-cambo-wd_30min-samples",

@@ -28439,6 +28439,18 @@
       ]
     },
     {
+      "id": "cosmos-cambo-wd_30min-correction-wd",
+      "type": "correction",
+      "method": "WD",
+      "inputs": {
+        "ux": "COSMOS-CAMBO-UX_30MIN_PROCESSED",
+        "uy": "COSMOS-CAMBO-UY_30MIN_PROCESSED"
+      },
+      "observation_interval": {
+        "start_date": "2026-03-25T00:00:00"
+      }
+    },
+    {
       "id": "cosmos-cambo-wd_30min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
