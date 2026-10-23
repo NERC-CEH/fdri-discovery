@@ -242,1800 +242,1800 @@
   ],
   "FDRI-CH-MILFA-01-RS": [
     {
-      "id": "fdri-ch-milfa-01-rs-temp_air_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-temp_air_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-temp_air_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-temp_air_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-temp_air_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-temp_air_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-temp_air_1min-load_raw",
-        "fdri-ch-milfa-01-rs-temp_air_1min-battery_v",
-        "fdri-ch-milfa-01-rs-temp_air_1min-range",
-        "fdri-ch-milfa-01-rs-temp_air_1min-spike"
+        "fdri-ch-milfa-01-rc-temp_air_1min-load_raw",
+        "fdri-ch-milfa-01-rc-temp_air_1min-battery_v",
+        "fdri-ch-milfa-01-rc-temp_air_1min-range",
+        "fdri-ch-milfa-01-rc-temp_air_1min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-rh_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-rh_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-rh_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-rh_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-rh_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-rh_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-rh_1min-load_raw",
-        "fdri-ch-milfa-01-rs-rh_1min-battery_v",
-        "fdri-ch-milfa-01-rs-rh_1min-range"
+        "fdri-ch-milfa-01-rc-rh_1min-load_raw",
+        "fdri-ch-milfa-01-rc-rh_1min-battery_v",
+        "fdri-ch-milfa-01-rc-rh_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-dewpoint_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-dewpoint_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-dewpoint_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-dewpoint_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-dewpoint_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-dewpoint_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-dewpoint_1min-load_raw",
-        "fdri-ch-milfa-01-rs-dewpoint_1min-battery_v",
-        "fdri-ch-milfa-01-rs-dewpoint_1min-range",
-        "fdri-ch-milfa-01-rs-dewpoint_1min-spike"
+        "fdri-ch-milfa-01-rc-dewpoint_1min-load_raw",
+        "fdri-ch-milfa-01-rc-dewpoint_1min-battery_v",
+        "fdri-ch-milfa-01-rc-dewpoint_1min-range",
+        "fdri-ch-milfa-01-rc-dewpoint_1min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-stdrd_precip_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-stdrd_precip_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-stdrd_precip_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-stdrd_precip_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_1min-load_raw",
-        "fdri-ch-milfa-01-rs-stdrd_precip_1min-battery_v",
-        "fdri-ch-milfa-01-rs-stdrd_precip_1min-range"
+        "fdri-ch-milfa-01-rc-stdrd_precip_1min-load_raw",
+        "fdri-ch-milfa-01-rc-stdrd_precip_1min-battery_v",
+        "fdri-ch-milfa-01-rc-stdrd_precip_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_int_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-stdrd_precip_int_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-stdrd_precip_int_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-stdrd_precip_int_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-stdrd_precip_int_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_1min-load_raw",
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_1min-battery_v",
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_1min-range"
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_1min-load_raw",
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_1min-battery_v",
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1min-load_raw",
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1min-battery_v",
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1min-range"
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1min-load_raw",
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1min-battery_v",
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-stdrd_precip_tot_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-stdrd_precip_tot_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-stdrd_precip_tot_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-stdrd_precip_tot_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_tot_1min-load_raw",
-        "fdri-ch-milfa-01-rs-stdrd_precip_tot_1min-battery_v"
+        "fdri-ch-milfa-01-rc-stdrd_precip_tot_1min-load_raw",
+        "fdri-ch-milfa-01-rc-stdrd_precip_tot_1min-battery_v"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ppfd_in_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-ppfd_in_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-ppfd_in_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-ppfd_in_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-ppfd_in_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-ppfd_in_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ppfd_in_1min-load_raw",
-        "fdri-ch-milfa-01-rs-ppfd_in_1min-battery_v",
-        "fdri-ch-milfa-01-rs-ppfd_in_1min-range"
+        "fdri-ch-milfa-01-rc-ppfd_in_1min-load_raw",
+        "fdri-ch-milfa-01-rc-ppfd_in_1min-battery_v",
+        "fdri-ch-milfa-01-rc-ppfd_in_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-albedo_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-albedo_1min_processed",
+      "id": "fdri-ch-milfa-01-rc-albedo_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-albedo_1min_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-albedo_1min-calc_albedo"
+        "fdri-ch-milfa-01-rc-albedo_1min-calc_albedo"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwin_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-lwin_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-lwin_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-lwin_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-lwin_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-lwin_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-lwin_1min-load_raw",
-        "fdri-ch-milfa-01-rs-lwin_1min-correction-lw_corr",
-        "fdri-ch-milfa-01-rs-lwin_1min-battery_v",
-        "fdri-ch-milfa-01-rs-lwin_1min-range"
+        "fdri-ch-milfa-01-rc-lwin_1min-load_raw",
+        "fdri-ch-milfa-01-rc-lwin_1min-correction-lw_corr",
+        "fdri-ch-milfa-01-rc-lwin_1min-battery_v",
+        "fdri-ch-milfa-01-rc-lwin_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwout_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-lwout_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-lwout_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-lwout_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-lwout_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-lwout_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-lwout_1min-load_raw",
-        "fdri-ch-milfa-01-rs-lwout_1min-correction-lw_corr",
-        "fdri-ch-milfa-01-rs-lwout_1min-battery_v",
-        "fdri-ch-milfa-01-rs-lwout_1min-range"
+        "fdri-ch-milfa-01-rc-lwout_1min-load_raw",
+        "fdri-ch-milfa-01-rc-lwout_1min-correction-lw_corr",
+        "fdri-ch-milfa-01-rc-lwout_1min-battery_v",
+        "fdri-ch-milfa-01-rc-lwout_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-swin_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-swin_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-swin_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-swin_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-swin_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-swin_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-swin_1min-load_raw",
-        "fdri-ch-milfa-01-rs-swin_1min-correction-scalar",
-        "fdri-ch-milfa-01-rs-swin_1min-battery_v",
-        "fdri-ch-milfa-01-rs-swin_1min-range"
+        "fdri-ch-milfa-01-rc-swin_1min-load_raw",
+        "fdri-ch-milfa-01-rc-swin_1min-correction-scalar",
+        "fdri-ch-milfa-01-rc-swin_1min-battery_v",
+        "fdri-ch-milfa-01-rc-swin_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-swout_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-swout_1min_processed",
-      "input": "fdri-ch-milfa-01-rs-swout_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-swout_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-swout_1min_processed",
+      "input": "fdri-ch-milfa-01-rc-swout_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-swout_1min-load_raw",
-        "fdri-ch-milfa-01-rs-swout_1min-correction-scalar",
-        "fdri-ch-milfa-01-rs-swout_1min-battery_v",
-        "fdri-ch-milfa-01-rs-swout_1min-range"
+        "fdri-ch-milfa-01-rc-swout_1min-load_raw",
+        "fdri-ch-milfa-01-rc-swout_1min-correction-scalar",
+        "fdri-ch-milfa-01-rc-swout_1min-battery_v",
+        "fdri-ch-milfa-01-rc-swout_1min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_1_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_1_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_1_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_1_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_1_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_1_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_1_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_1_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_1_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_1_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_1_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_1_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_1_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_1_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_2_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_2_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_2_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_2_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_2_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_2_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_2_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_2_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_2_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_2_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_2_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_2_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_2_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_2_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_3_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_3_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_3_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_3_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_3_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_3_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_3_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_3_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_3_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_3_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_3_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_3_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_3_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_3_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_4_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_4_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_4_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_4_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_4_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_4_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_4_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_4_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_4_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_4_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_4_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_4_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_4_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_4_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_5_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_5_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_5_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_5_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_5_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_5_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_5_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_5_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_5_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_5_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_5_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_5_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_5_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_5_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_6_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_6_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_6_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_6_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_6_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_6_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_6_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_6_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_6_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_6_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_6_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_6_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_6_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_6_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_7_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_7_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_7_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_7_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_7_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_7_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_7_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_7_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_7_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_7_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_7_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_7_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_7_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_7_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_8_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_8_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_8_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_8_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_8_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_8_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_8_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_8_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_8_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_8_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_8_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_8_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_8_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_8_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_9_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_9_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_9_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_9_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_9_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_9_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_9_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_9_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_9_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_9_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_9_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_9_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_9_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_9_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_10_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_10_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_10_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_10_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_10_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_10_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_10_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_10_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_10_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_10_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_10_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_10_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_10_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_10_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_11_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_11_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_11_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_11_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_11_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_11_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_11_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_11_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_11_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_11_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_11_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_11_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_11_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_11_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_12_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_12_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_12_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_12_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_12_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_12_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_12_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_12_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_12_temp_15min-range",
-        "fdri-ch-milfa-01-rs-teros22_12_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-teros22_12_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_12_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_12_temp_15min-range",
+        "fdri-ch-milfa-01-rc-teros22_12_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_1_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_1_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_1_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_1_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_1_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_1_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_1_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_1_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_1_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_1_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_1_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_1_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_2_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_2_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_2_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_2_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_2_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_2_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_2_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_2_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_2_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_2_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_2_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_2_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_3_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_3_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_3_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_3_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_3_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_3_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_3_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_3_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_3_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_3_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_3_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_3_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_4_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_4_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_4_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_4_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_4_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_4_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_4_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_4_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_4_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_4_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_4_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_4_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_5_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_5_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_5_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_5_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_5_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_5_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_5_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_5_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_5_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_5_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_5_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_5_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_6_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_6_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_6_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_6_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_6_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_6_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_6_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_6_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_6_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_6_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_6_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_6_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_7_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_7_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_7_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_7_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_7_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_7_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_7_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_7_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_7_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_7_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_7_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_7_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_8_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_8_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_8_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_8_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_8_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_8_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_8_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_8_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_8_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_8_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_8_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_8_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_9_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_9_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_9_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_9_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_9_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_9_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_9_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_9_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_9_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_9_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_9_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_9_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_10_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_10_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_10_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_10_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_10_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_10_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_10_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_10_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_10_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_10_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_10_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_10_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_11_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_11_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_11_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_11_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_11_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_11_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_11_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_11_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_11_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_11_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_11_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_11_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_12_mp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_12_mp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-teros22_12_mp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-teros22_12_mp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_12_mp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-teros22_12_mp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_12_mp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-teros22_12_mp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-teros22_12_mp_15min-range"
+        "fdri-ch-milfa-01-rc-teros22_12_mp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-teros22_12_mp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-teros22_12_mp_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-g1_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-g1_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-g1_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-g1_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-g1_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-g1_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-g1_15min-load_raw",
-        "fdri-ch-milfa-01-rs-g1_15min-battery_v",
-        "fdri-ch-milfa-01-rs-g1_15min-range",
-        "fdri-ch-milfa-01-rs-g1_15min-spike"
+        "fdri-ch-milfa-01-rc-g1_15min-load_raw",
+        "fdri-ch-milfa-01-rc-g1_15min-battery_v",
+        "fdri-ch-milfa-01-rc-g1_15min-range",
+        "fdri-ch-milfa-01-rc-g1_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-g2_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-g2_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-g2_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-g2_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-g2_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-g2_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-g2_15min-load_raw",
-        "fdri-ch-milfa-01-rs-g2_15min-battery_v",
-        "fdri-ch-milfa-01-rs-g2_15min-range",
-        "fdri-ch-milfa-01-rs-g2_15min-spike"
+        "fdri-ch-milfa-01-rc-g2_15min-load_raw",
+        "fdri-ch-milfa-01-rc-g2_15min-battery_v",
+        "fdri-ch-milfa-01-rc-g2_15min-range",
+        "fdri-ch-milfa-01-rc-g2_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-target_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-target_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-target_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-target_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-target_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-target_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-target_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-target_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-target_temp_15min-range",
-        "fdri-ch-milfa-01-rs-target_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-target_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-target_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-target_temp_15min-range",
+        "fdri-ch-milfa-01-rc-target_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-target_temp_max_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-target_temp_max_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-target_temp_max_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-target_temp_max_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-target_temp_max_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-target_temp_max_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-target_temp_max_15min-load_raw",
-        "fdri-ch-milfa-01-rs-target_temp_max_15min-battery_v",
-        "fdri-ch-milfa-01-rs-target_temp_max_15min-range",
-        "fdri-ch-milfa-01-rs-target_temp_max_15min-spike"
+        "fdri-ch-milfa-01-rc-target_temp_max_15min-load_raw",
+        "fdri-ch-milfa-01-rc-target_temp_max_15min-battery_v",
+        "fdri-ch-milfa-01-rc-target_temp_max_15min-range",
+        "fdri-ch-milfa-01-rc-target_temp_max_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-target_temp_min_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-target_temp_min_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-target_temp_min_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-target_temp_min_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-target_temp_min_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-target_temp_min_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-target_temp_min_15min-load_raw",
-        "fdri-ch-milfa-01-rs-target_temp_min_15min-battery_v",
-        "fdri-ch-milfa-01-rs-target_temp_min_15min-range",
-        "fdri-ch-milfa-01-rs-target_temp_min_15min-spike"
+        "fdri-ch-milfa-01-rc-target_temp_min_15min-load_raw",
+        "fdri-ch-milfa-01-rc-target_temp_min_15min-battery_v",
+        "fdri-ch-milfa-01-rc-target_temp_min_15min-range",
+        "fdri-ch-milfa-01-rc-target_temp_min_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_irr_red_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-ndvi_irr_red_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_irr_red_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-ndvi_irr_red_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_irr_red_15min-range"
+        "fdri-ch-milfa-01-rc-ndvi_irr_red_15min-load_raw",
+        "fdri-ch-milfa-01-rc-ndvi_irr_red_15min-battery_v",
+        "fdri-ch-milfa-01-rc-ndvi_irr_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-ndvi_irr_nir_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_irr_nir_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-ndvi_irr_nir_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_irr_nir_15min-range"
+        "fdri-ch-milfa-01-rc-ndvi_irr_nir_15min-load_raw",
+        "fdri-ch-milfa-01-rc-ndvi_irr_nir_15min-battery_v",
+        "fdri-ch-milfa-01-rc-ndvi_irr_nir_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_rad_red_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-ndvi_rad_red_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_rad_red_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-ndvi_rad_red_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_rad_red_15min-range"
+        "fdri-ch-milfa-01-rc-ndvi_rad_red_15min-load_raw",
+        "fdri-ch-milfa-01-rc-ndvi_rad_red_15min-battery_v",
+        "fdri-ch-milfa-01-rc-ndvi_rad_red_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-ndvi_rad_nir_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_rad_nir_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-ndvi_rad_nir_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_rad_nir_15min-range"
+        "fdri-ch-milfa-01-rc-ndvi_rad_nir_15min-load_raw",
+        "fdri-ch-milfa-01-rc-ndvi_rad_nir_15min-battery_v",
+        "fdri-ch-milfa-01-rc-ndvi_rad_nir_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-ndvi_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-ndvi_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-ndvi_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_15min-load_raw",
-        "fdri-ch-milfa-01-rs-ndvi_15min-battery_v",
-        "fdri-ch-milfa-01-rs-ndvi_15min-range",
-        "fdri-ch-milfa-01-rs-ndvi_15min-spike"
+        "fdri-ch-milfa-01-rc-ndvi_15min-load_raw",
+        "fdri-ch-milfa-01-rc-ndvi_15min-battery_v",
+        "fdri-ch-milfa-01-rc-ndvi_15min-range",
+        "fdri-ch-milfa-01-rc-ndvi_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_ec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_ec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_1_ec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_ec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_ec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_1_ec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_ec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_1_ec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_1_ec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_1_ec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_1_ec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_1_ec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_pec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_pec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_1_pec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_pec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_pec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_1_pec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_pec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_1_pec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_1_pec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_1_pec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_1_pec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_1_pec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_perm_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_perm_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_1_perm_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_perm_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_perm_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_1_perm_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_perm_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_1_perm_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_1_perm_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_1_perm_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_1_perm_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_1_perm_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_1_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_1_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_1_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_1_temp_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_1_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_1_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_1_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_1_temp_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_1_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_vwc_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_vwc_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_1_vwc_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_1_vwc_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_1_vwc_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_1_vwc_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_1_vwc_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_1_vwc_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_ec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_ec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_2_ec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_ec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_ec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_2_ec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_ec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_2_ec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_2_ec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_2_ec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_2_ec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_2_ec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_pec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_pec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_2_pec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_pec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_pec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_2_pec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_pec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_2_pec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_2_pec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_2_pec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_2_pec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_2_pec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_perm_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_perm_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_2_perm_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_perm_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_perm_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_2_perm_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_perm_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_2_perm_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_2_perm_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_2_perm_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_2_perm_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_2_perm_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_2_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_2_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_2_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_2_temp_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_2_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_2_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_2_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_2_temp_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_2_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_vwc_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_vwc_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_2_vwc_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_2_vwc_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_2_vwc_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_2_vwc_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_2_vwc_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_2_vwc_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_ec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_ec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_3_ec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_ec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_ec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_3_ec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_ec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_3_ec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_3_ec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_3_ec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_3_ec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_3_ec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_pec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_pec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_3_pec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_pec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_pec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_3_pec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_pec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_3_pec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_3_pec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_3_pec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_3_pec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_3_pec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_perm_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_perm_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_3_perm_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_perm_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_perm_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_3_perm_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_perm_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_3_perm_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_3_perm_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_3_perm_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_3_perm_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_3_perm_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_3_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_3_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_3_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_3_temp_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_3_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_3_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_3_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_3_temp_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_3_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_vwc_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_vwc_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_3_vwc_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_3_vwc_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_3_vwc_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_3_vwc_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_3_vwc_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_3_vwc_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_ec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_ec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_4_ec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_ec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_ec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_4_ec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_ec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_4_ec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_4_ec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_4_ec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_4_ec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_4_ec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_pec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_pec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_4_pec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_pec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_pec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_4_pec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_pec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_4_pec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_4_pec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_4_pec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_4_pec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_4_pec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_perm_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_perm_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_4_perm_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_perm_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_perm_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_4_perm_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_perm_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_4_perm_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_4_perm_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_4_perm_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_4_perm_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_4_perm_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_4_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_4_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_4_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_4_temp_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_4_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_4_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_4_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_4_temp_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_4_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_vwc_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_vwc_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_4_vwc_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_4_vwc_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_4_vwc_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_4_vwc_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_4_vwc_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_4_vwc_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_ec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_ec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_5_ec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_ec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_ec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_5_ec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_ec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_5_ec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_5_ec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_5_ec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_5_ec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_5_ec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_pec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_pec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_5_pec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_pec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_pec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_5_pec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_pec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_5_pec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_5_pec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_5_pec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_5_pec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_5_pec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_perm_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_perm_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_5_perm_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_perm_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_perm_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_5_perm_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_perm_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_5_perm_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_5_perm_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_5_perm_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_5_perm_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_5_perm_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_5_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_5_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_5_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_5_temp_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_5_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_5_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_5_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_5_temp_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_5_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_vwc_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_vwc_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_5_vwc_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_5_vwc_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_5_vwc_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_5_vwc_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_5_vwc_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_5_vwc_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_ec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_ec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_6_ec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_ec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_ec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_6_ec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_ec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_6_ec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_6_ec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_6_ec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_6_ec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_6_ec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_pec_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_pec_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_6_pec_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_pec_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_pec_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_6_pec_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_pec_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_6_pec_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_6_pec_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_6_pec_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_6_pec_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_6_pec_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_perm_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_perm_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_6_perm_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_perm_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_perm_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_6_perm_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_perm_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_6_perm_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_6_perm_15min-range"
+        "fdri-ch-milfa-01-rc-tdr310_6_perm_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_6_perm_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_6_perm_15min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_temp_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_temp_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_6_temp_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_temp_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_temp_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_6_temp_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_temp_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_6_temp_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_6_temp_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_6_temp_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_6_temp_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_6_temp_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_6_temp_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_6_temp_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min_raw",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_vwc_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_vwc_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-tdr310_6_vwc_15min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min-load_raw",
-        "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min-battery_v",
-        "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min-range",
-        "fdri-ch-milfa-01-rs-tdr310_6_vwc_15min-spike"
+        "fdri-ch-milfa-01-rc-tdr310_6_vwc_15min-load_raw",
+        "fdri-ch-milfa-01-rc-tdr310_6_vwc_15min-battery_v",
+        "fdri-ch-milfa-01-rc-tdr310_6_vwc_15min-range",
+        "fdri-ch-milfa-01-rc-tdr310_6_vwc_15min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-pa_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-pa_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-pa_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-pa_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-pa_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-pa_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-pa_30min-load_raw",
-        "fdri-ch-milfa-01-rs-pa_30min-battery_v",
-        "fdri-ch-milfa-01-rs-pa_30min-range",
-        "fdri-ch-milfa-01-rs-pa_30min-spike"
+        "fdri-ch-milfa-01-rc-pa_30min-load_raw",
+        "fdri-ch-milfa-01-rc-pa_30min-battery_v",
+        "fdri-ch-milfa-01-rc-pa_30min-range",
+        "fdri-ch-milfa-01-rc-pa_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_ka_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_ka_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_10cm_ka_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_ka_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_ka_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_ka_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_ka_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_ka_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_ka_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_ka_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_ka_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_20cm_ka_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_ka_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_ka_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_ka_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_ka_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_ka_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_ka_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_ka_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_ka_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_30cm_ka_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_ka_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_ka_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_ka_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_ka_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_ka_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_ka_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_ka_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_ka_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_40cm_ka_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_ka_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_ka_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_ka_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_ka_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_ka_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_ka_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_ka_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_ka_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_5cm_ka_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_ka_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_ka_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_ka_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_ka_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_ka_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_ka_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_ka_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_ka_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_50cm_ka_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_ka_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_ka_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_ka_30min-range"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_ka_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_ka_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_ka_30min-range"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_temp_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_temp_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_10cm_temp_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_temp_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_temp_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_temp_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_temp_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_temp_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_temp_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_temp_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_20cm_temp_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_temp_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_temp_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_temp_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_temp_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_temp_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_temp_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_temp_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_30cm_temp_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_temp_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_temp_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_temp_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_temp_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_temp_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_temp_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_temp_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_40cm_temp_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_temp_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_temp_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_temp_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_temp_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_temp_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_temp_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_temp_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_5cm_temp_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_temp_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_temp_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_temp_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_temp_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_temp_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_temp_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_temp_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_50cm_temp_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_temp_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_temp_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_temp_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_temp_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_temp_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min_raw",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_30min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-load_raw",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-battery_v",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-range",
-        "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_30min-spike"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_30min-load_raw",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_30min-battery_v",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_30min-range",
+        "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_30min-spike"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-battv_15min-plan",
-      "output": "fdri-ch-milfa-01-rs-battv_15min_processed",
-      "input": "fdri-ch-milfa-01-rs-battv_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-battv_15min-plan",
+      "output": "fdri-ch-milfa-01-rc-battv_15min_processed",
+      "input": "fdri-ch-milfa-01-rc-battv_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-battv_1min-load_raw",
-        "fdri-ch-milfa-01-rs-battv_15min-mean"
+        "fdri-ch-milfa-01-rc-battv_1min-load_raw",
+        "fdri-ch-milfa-01-rc-battv_15min-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-battv_30min-plan",
-      "output": "fdri-ch-milfa-01-rs-battv_30min_processed",
-      "input": "fdri-ch-milfa-01-rs-battv_1min_raw",
+      "id": "fdri-ch-milfa-01-rc-battv_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-battv_30min_processed",
+      "input": "fdri-ch-milfa-01-rc-battv_1min_raw",
       "steps": [
-        "fdri-ch-milfa-01-rs-battv_1min-load_raw",
-        "fdri-ch-milfa-01-rs-battv_30min-mean"
+        "fdri-ch-milfa-01-rc-battv_1min-load_raw",
+        "fdri-ch-milfa-01-rc-battv_30min-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-temp_air_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-temp_air_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-temp_air_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-temp_air_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-temp_air_1day-mean"
+        "fdri-ch-milfa-01-rc-temp_air_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-rh_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-rh_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-rh_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-rh_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-rh_1day-mean"
+        "fdri-ch-milfa-01-rc-rh_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-dewpoint_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-dewpoint_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-dewpoint_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-dewpoint_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-dewpoint_1day-mean"
+        "fdri-ch-milfa-01-rc-dewpoint_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-stdrd_precip_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-stdrd_precip_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_1day-sum"
+        "fdri-ch-milfa-01-rc-stdrd_precip_1day-sum"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_int_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-stdrd_precip_int_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-stdrd_precip_int_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_1day-mean"
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-stdrd_precip_int_hr_1day-mean"
+        "fdri-ch-milfa-01-rc-stdrd_precip_int_hr_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ppfd_in_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ppfd_in_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-ppfd_in_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-ppfd_in_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ppfd_in_1day-mean"
+        "fdri-ch-milfa-01-rc-ppfd_in_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-albedo_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-albedo_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-albedo_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-albedo_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-albedo_1day-mean"
+        "fdri-ch-milfa-01-rc-albedo_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwin_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-lwin_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-lwin_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-lwin_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-lwin_1day-sum"
+        "fdri-ch-milfa-01-rc-lwin_1day-sum"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-lwout_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-lwout_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-lwout_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-lwout_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-lwout_1day-sum"
+        "fdri-ch-milfa-01-rc-lwout_1day-sum"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-swin_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-swin_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-swin_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-swin_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-swin_1day-sum"
+        "fdri-ch-milfa-01-rc-swin_1day-sum"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-swout_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-swout_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-swout_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-swout_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-swout_1day-sum"
+        "fdri-ch-milfa-01-rc-swout_1day-sum"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_1_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_1_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_1_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_1_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_1_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_1_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_2_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_2_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_2_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_2_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_2_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_2_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_3_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_3_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_3_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_3_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_3_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_3_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_4_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_4_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_4_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_4_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_4_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_4_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_5_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_5_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_5_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_5_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_5_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_5_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_6_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_6_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_6_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_6_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_6_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_6_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_7_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_7_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_7_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_7_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_7_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_7_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_8_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_8_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_8_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_8_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_8_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_8_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_9_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_9_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_9_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_9_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_9_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_9_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_10_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_10_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_10_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_10_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_10_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_10_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_11_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_11_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_11_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_11_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_11_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_11_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_12_mp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_12_mp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_12_mp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_12_mp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_12_mp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_12_mp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_1_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_1_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_1_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_1_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_1_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_1_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_2_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_2_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_2_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_2_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_2_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_2_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_3_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_3_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_3_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_3_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_3_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_3_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_4_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_4_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_4_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_4_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_4_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_4_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_5_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_5_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_5_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_5_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_5_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_5_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_6_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_6_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_6_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_6_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_6_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_6_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_7_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_7_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_7_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_7_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_7_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_7_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_8_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_8_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_8_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_8_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_8_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_8_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_9_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_9_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_9_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_9_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_9_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_9_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_10_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_10_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_10_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_10_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_10_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_10_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_11_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_11_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_11_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_11_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_11_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_11_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-teros22_12_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-teros22_12_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-teros22_12_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-teros22_12_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-teros22_12_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-teros22_12_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-g1_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-g1_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-g1_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-g1_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-g1_1day-mean"
+        "fdri-ch-milfa-01-rc-g1_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-g2_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-g2_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-g2_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-g2_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-g2_1day-mean"
+        "fdri-ch-milfa-01-rc-g2_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-target_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-target_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-target_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-target_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-target_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-target_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-target_temp_max_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-target_temp_max_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-target_temp_max_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-target_temp_max_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-target_temp_max_1day-max"
+        "fdri-ch-milfa-01-rc-target_temp_max_1day-max"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-target_temp_min_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-target_temp_min_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-target_temp_min_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-target_temp_min_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-target_temp_min_1day-min"
+        "fdri-ch-milfa-01-rc-target_temp_min_1day-min"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_irr_red_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-ndvi_irr_red_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_irr_red_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_irr_red_1day-mean"
+        "fdri-ch-milfa-01-rc-ndvi_irr_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-ndvi_irr_nir_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_irr_nir_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_irr_nir_1day-mean"
+        "fdri-ch-milfa-01-rc-ndvi_irr_nir_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_rad_red_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-ndvi_rad_red_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_rad_red_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_rad_red_1day-mean"
+        "fdri-ch-milfa-01-rc-ndvi_rad_red_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-ndvi_rad_nir_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_rad_nir_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_rad_nir_1day-mean"
+        "fdri-ch-milfa-01-rc-ndvi_rad_nir_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-ndvi_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-ndvi_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-ndvi_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-ndvi_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-ndvi_1day-mean"
+        "fdri-ch-milfa-01-rc-ndvi_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_ec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_ec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_ec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_ec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_1_ec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_pec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_pec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_pec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_pec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_1_pec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_perm_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_perm_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_perm_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_perm_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_1_perm_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_1_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_1_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_1_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_1_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_1_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_1_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_1_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_ec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_ec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_ec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_ec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_2_ec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_pec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_pec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_pec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_pec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_2_pec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_perm_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_perm_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_perm_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_perm_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_2_perm_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_2_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_2_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_2_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_2_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_2_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_2_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_2_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_ec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_ec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_ec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_ec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_3_ec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_pec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_pec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_pec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_pec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_3_pec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_perm_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_perm_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_perm_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_perm_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_3_perm_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_3_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_3_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_3_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_3_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_3_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_3_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_3_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_ec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_ec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_ec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_ec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_4_ec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_pec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_pec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_pec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_pec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_4_pec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_perm_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_perm_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_perm_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_perm_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_4_perm_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_4_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_4_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_4_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_4_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_4_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_4_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_4_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_ec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_ec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_ec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_ec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_5_ec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_pec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_pec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_pec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_pec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_5_pec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_perm_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_perm_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_perm_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_perm_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_5_perm_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_5_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_5_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_5_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_5_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_5_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_5_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_5_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_ec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_ec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_ec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_ec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_ec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_6_ec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_pec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_pec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_pec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_pec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_pec_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_6_pec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_perm_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_perm_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_perm_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_perm_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_perm_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_6_perm_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_6_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-tdr310_6_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-tdr310_6_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-tdr310_6_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-tdr310_6_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-tdr310_6_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-tdr310_6_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-pa_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-pa_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-pa_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-pa_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-pa_1day-mean"
+        "fdri-ch-milfa-01-rc-pa_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_bulkec_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_bulkec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_bulkec_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_bulkec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_bulkec_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_bulkec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_bulkec_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_bulkec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_bulkec_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_bulkec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_bulkec_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_bulkec_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_ka_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_ka_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_ka_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_ka_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_ka_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_ka_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_ka_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_ka_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_ka_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_ka_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_ka_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_ka_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_ka_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_ka_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_ka_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_ka_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_ka_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_ka_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_ka_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_ka_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_ka_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_ka_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_ka_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_ka_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_ka_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_temp_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_temp_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_temp_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_temp_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_temp_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_10cm_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_10cm_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_20cm_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_20cm_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_30cm_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_30cm_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_40cm_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_40cm_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_5cm_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_5cm_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day-plan",
-      "output": "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day_processed",
+      "id": "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_1day-plan",
+      "output": "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_1day_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-soilvue_50cm_vwc_1day-mean"
+        "fdri-ch-milfa-01-rc-soilvue_50cm_vwc_1day-mean"
       ]
     },
     {
-      "id": "fdri-ch-milfa-01-rs-solar_zenith_1min-plan",
-      "output": "fdri-ch-milfa-01-rs-solar_zenith_1min_processed",
+      "id": "fdri-ch-milfa-01-rc-solar_zenith_1min-plan",
+      "output": "fdri-ch-milfa-01-rc-solar_zenith_1min_processed",
       "steps": [
-        "fdri-ch-milfa-01-rs-solar_zenith_1min-solar_zenith"
+        "fdri-ch-milfa-01-rc-solar_zenith_1min-solar_zenith"
       ]
     }
   ],
@@ -2056,36 +2056,6 @@
         "fdri-ch-trigr-01-rs-dewpoint_1min-battery_v",
         "fdri-ch-trigr-01-rs-dewpoint_1min-range",
         "fdri-ch-trigr-01-rs-dewpoint_1min-spike"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_soilmoisture_30min_processed",
-      "input": "fdri-ch-trigr-01-rs-fa_soilmoisture_30min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-load_raw",
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-battery_v",
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_30min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_areal_30min-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_areal_30min_processed",
-      "input": "fdri-ch-trigr-01-rs-fa_swe_areal_30min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_areal_30min-load_raw",
-        "fdri-ch-trigr-01-rs-fa_swe_areal_30min-battery_v",
-        "fdri-ch-trigr-01-rs-fa_swe_areal_30min-range"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_local_30min-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_local_30min_processed",
-      "input": "fdri-ch-trigr-01-rs-fa_swe_local_30min_raw",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_local_30min-load_raw",
-        "fdri-ch-trigr-01-rs-fa_swe_local_30min-battery_v",
-        "fdri-ch-trigr-01-rs-fa_swe_local_30min-range"
       ]
     },
     {
@@ -3473,27 +3443,6 @@
       "output": "fdri-ch-trigr-01-rs-ndvi_1day_processed",
       "steps": [
         "fdri-ch-trigr-01-rs-ndvi_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_soilmoisture_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_soilmoisture_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_soilmoisture_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_areal_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_areal_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_areal_1day-mean"
-      ]
-    },
-    {
-      "id": "fdri-ch-trigr-01-rs-fa_swe_local_1day-plan",
-      "output": "fdri-ch-trigr-01-rs-fa_swe_local_1day_processed",
-      "steps": [
-        "fdri-ch-trigr-01-rs-fa_swe_local_1day-mean"
       ]
     },
     {
