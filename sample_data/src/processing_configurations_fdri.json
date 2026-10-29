@@ -15815,5 +15815,4209 @@
         }
       ]
     }
+  ],
+  "FDRI-SE-CFRON-01-RS": [
+    {
+      "id": "fdri-se-cfron-01-rs-battv_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-battv_15min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-battv_30min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-temp_air_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-temp_air_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-temp_air_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-temp_air_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-temp_air_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-rh_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-rh_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-rh_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-rh_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 105.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-dewpoint_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-dewpoint_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-dewpoint_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-dewpoint_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -35.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-dewpoint_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_int_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-stdrd_precip_int_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_int_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_int_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_int_hr_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-stdrd_precip_int_hr_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_int_hr_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_int_hr_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-stdrd_precip_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_tot_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-stdrd_precip_tot_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-stdrd_precip_tot_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ppfd_in_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-ppfd_in_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ppfd_in_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ppfd_in_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 3000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-swin_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-swin_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-swin_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-swin_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 1500.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-swout_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-swout_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-swout_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-swout_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 1500.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-lwin_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-lwin_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-lwin_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-lwin_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 150.0
+        },
+        {
+          "param": "gt",
+          "value": 700.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-lwout_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-lwout_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-lwout_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_1min_raw"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-lwout_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 150.0
+        },
+        {
+          "param": "gt",
+          "value": 700.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_vwc_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_6_vwc_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_vwc_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_vwc_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_vwc_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 75.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_6_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_perm_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_6_perm_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_perm_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_perm_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_ec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_6_ec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_ec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_ec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 5000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_pec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_6_pec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_pec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_6_pec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 55000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-target_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -40.0
+        },
+        {
+          "param": "gt",
+          "value": 70.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_max_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-target_temp_max_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_max_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_max_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -40.0
+        },
+        {
+          "param": "gt",
+          "value": 70.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_max_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_min_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-target_temp_min_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_min_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_min_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -40.0
+        },
+        {
+          "param": "gt",
+          "value": 70.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-target_temp_min_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_swin_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-ndvi_swin_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_swin_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_swin_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 1500.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_lwin_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-ndvi_lwin_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_lwin_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_lwin_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100.0
+        },
+        {
+          "param": "gt",
+          "value": 800.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_swout_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-ndvi_swout_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_swout_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_swout_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 1500.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_lwout_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-ndvi_lwout_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_lwout_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_lwout_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100.0
+        },
+        {
+          "param": "gt",
+          "value": 800.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-ndvi_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -1.0
+        },
+        {
+          "param": "gt",
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-ndvi_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 1.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_1_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_1_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_1_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_1_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_1_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_1_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_1_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_1_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_1_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_2_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_2_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_2_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_2_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_2_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_2_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_2_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_2_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_2_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_3_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_3_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_3_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_3_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_3_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_3_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_3_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_3_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_3_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_4_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_4_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_4_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_4_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_4_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_4_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_4_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_4_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_4_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_5_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_5_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_5_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_5_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_5_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_5_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_5_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_5_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_5_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_6_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_6_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_6_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_6_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_6_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_6_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_6_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_6_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_6_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_7_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_7_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_7_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_7_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_7_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_7_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_7_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_7_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_7_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_8_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_8_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_8_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_8_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_8_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_8_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_8_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_8_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_8_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_9_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_9_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_9_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_9_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_9_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_9_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_9_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_9_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_9_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_10_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_10_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_10_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_10_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_10_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_10_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_10_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_10_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_10_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_11_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_11_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_11_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_11_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_11_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_11_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_11_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_11_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_11_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_12_mp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_12_mp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_12_mp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_12_mp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -100000.0
+        },
+        {
+          "param": "gt",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_12_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-teros22_12_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_12_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_12_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-teros22_12_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_vwc_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_1_vwc_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_vwc_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_vwc_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_vwc_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 75.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_1_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_perm_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_1_perm_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_perm_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_perm_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_ec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_1_ec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_ec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_ec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 5000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_pec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_1_pec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_pec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_1_pec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 55000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_vwc_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_2_vwc_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_vwc_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_vwc_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_vwc_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 75.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_2_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_perm_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_2_perm_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_perm_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_perm_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_ec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_2_ec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_ec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_ec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 5000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_pec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_2_pec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_pec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_2_pec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 55000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_vwc_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_3_vwc_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_vwc_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_vwc_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_vwc_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 75.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_3_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_perm_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_3_perm_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_perm_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_perm_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_ec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_3_ec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_ec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_ec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 5000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_pec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_3_pec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_pec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_3_pec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 55000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_vwc_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_4_vwc_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_vwc_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_vwc_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_vwc_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 75.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_4_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_perm_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_4_perm_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_perm_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_perm_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_ec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_4_ec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_ec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_ec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 5000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_pec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_4_pec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_pec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_4_pec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 55000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_vwc_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_5_vwc_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_vwc_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_vwc_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_vwc_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 75.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_temp_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_5_temp_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_temp_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_temp_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_temp_15min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_perm_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_5_perm_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_perm_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_perm_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_ec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_5_ec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_ec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_ec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 5000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_pec_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-tdr310_5_pec_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_pec_15min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_15min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-tdr310_5_pec_15min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 55000.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-pa_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-pa_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-pa_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-pa_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 800.0
+        },
+        {
+          "param": "gt",
+          "value": 1200.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-pa_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_vwc_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_5cm_vwc_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_vwc_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_vwc_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_vwc_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_ka_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_5cm_ka_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_ka_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_ka_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_temp_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_5cm_temp_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_temp_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_temp_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_temp_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_bulkec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_5cm_bulkec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_bulkec_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_5cm_bulkec_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_vwc_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_10cm_vwc_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_vwc_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_vwc_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_vwc_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_ka_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_10cm_ka_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_ka_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_ka_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_temp_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_10cm_temp_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_temp_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_temp_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_temp_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_bulkec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_10cm_bulkec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_bulkec_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_10cm_bulkec_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_vwc_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_20cm_vwc_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_vwc_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_vwc_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_vwc_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_ka_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_20cm_ka_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_ka_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_ka_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_temp_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_20cm_temp_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_temp_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_temp_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_temp_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_bulkec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_20cm_bulkec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_bulkec_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_20cm_bulkec_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_vwc_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_30cm_vwc_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_vwc_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_vwc_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_vwc_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_ka_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_30cm_ka_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_ka_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_ka_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_temp_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_30cm_temp_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_temp_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_temp_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_temp_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_bulkec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_30cm_bulkec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_bulkec_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_30cm_bulkec_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_vwc_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_40cm_vwc_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_vwc_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_vwc_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_vwc_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_ka_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_40cm_ka_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_ka_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_ka_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_temp_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_40cm_temp_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_temp_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_temp_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_temp_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_bulkec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_40cm_bulkec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_bulkec_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_40cm_bulkec_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_vwc_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_50cm_vwc_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_vwc_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_vwc_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_vwc_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_ka_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_50cm_ka_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_ka_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_ka_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_temp_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_50cm_temp_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_temp_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_temp_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -20.0
+        },
+        {
+          "param": "gt",
+          "value": 50.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_temp_30min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_bulkec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-soilvue_50cm_bulkec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_bulkec_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-soilvue_50cm_bulkec_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 0.0
+        },
+        {
+          "param": "gt",
+          "value": 10.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-styx_neutrons_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-styx_neutrons_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-styx_neutrons_30min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-battv_30min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-styx_neutrons_30min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 100.0
+        },
+        {
+          "param": "gt",
+          "value": 2000.0
+        }
+      ]
+    }
   ]
 }
