@@ -9,6 +9,6 @@ imports:
 resources:
     - name: MonitoringSite
       properties:
-        "@id": "<http://fdri.ceh.ac.uk/ref/cosmos/site/{SITE_ID|slug}>"
+        "@id": "<http://fdri.ceh.ac.uk/id/site/cosmos-{SITE_ID|slug}>"
         "@type": <fdri:EnvironmentalMonitoringSite>
         "<fdri:siteVariance>": "{STANDARD_LAYOUT}@en"
