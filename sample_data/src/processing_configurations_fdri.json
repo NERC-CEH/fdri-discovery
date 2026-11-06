@@ -14559,6 +14559,54 @@
   ],
   "FDRI-SE-SVTRP-01-WL": [
     {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
+      "type": "qc",
+      "method": "BATTERY_V",
+      "inputs": {
+        "battv": "fdri-se-svtrp-01-wl-battv_1min_raw"
+      },
+      "parameters": [
+        {
+          "param": "lt",
+          "value": 10.5
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
+      "type": "qc",
+      "method": "RANGE",
+      "parameters": [
+        {
+          "param": "lt",
+          "value": -10.0
+        },
+        {
+          "param": "gt",
+          "value": 100.0
+        }
+      ]
+    },
+    {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike",
+      "type": "qc",
+      "method": "SPIKE",
+      "parameters": [
+        {
+          "param": "gt",
+          "value": 5.0
+        }
+      ]
+    },
+    {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1min-load_raw",
       "type": "load",
       "method": "load",
@@ -14587,7 +14635,7 @@
       "type": "calculate",
       "method": "distance_to_level",
       "inputs": {
-        "dist_to_water": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_RAW"
+        "dist_to_water": "FDRI-SE-SVTRP-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED"
       },
       "parameters": [
         {
@@ -14740,11 +14788,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 100.0
+          "value": 10000.0
         }
       ]
     },
@@ -14755,7 +14803,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 5.0
+          "value": 500.0
         }
       ]
     },
@@ -15096,11 +15144,32 @@
   ],
   "FDRI-TW-HEBUU-01-WL": [
     {
-      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-tw-hebuu-01-wl-water_lev_radar_1min_raw"
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-distance_to_level",
+      "type": "calculate",
+      "method": "distance_to_level",
+      "inputs": {
+        "dist_to_water": "FDRI-TW-HEBUU-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED"
+      },
+      "parameters": [
+        {
+          "param": "sensor_height",
+          "value": 1.547
+        },
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 100.0
+        }
       ]
     },
     {
@@ -15124,11 +15193,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 100.0
+          "value": 10000.0
         }
       ]
     },
@@ -15139,7 +15208,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 5.0
+          "value": 500.0
         }
       ]
     },
@@ -15248,6 +15317,28 @@
       ]
     },
     {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 100.0
+        }
+      ]
+    },
+    {
       "id": "fdri-tw-hebuu-01-wl-water_lev_pt_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -15268,11 +15359,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 100.0
+          "value": 10000.0
         }
       ]
     },
@@ -15283,7 +15374,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 5.0
+          "value": 500.0
         }
       ]
     },
@@ -15402,6 +15493,28 @@
       ]
     },
     {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 100.0
+        }
+      ]
+    },
+    {
       "id": "fdri-tw-menza-01-wl-water_lev_pt_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -15422,11 +15535,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 100.0
+          "value": 10000.0
         }
       ]
     },
@@ -15437,7 +15550,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 5.0
+          "value": 500.0
         }
       ]
     },
@@ -15520,11 +15633,32 @@
   ],
   "FDRI-TW-MENZB-01-WL": [
     {
-      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-load_raw",
-      "type": "load",
-      "method": "load",
-      "dep_ts": [
-        "fdri-tw-menzb-01-wl-water_lev_radar_1min_raw"
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-distance_to_level",
+      "type": "calculate",
+      "method": "distance_to_level",
+      "inputs": {
+        "dist_to_water": "FDRI-TW-MENZB-01-WL-DIST_TO_WATER_RADAR_1MIN_PROCESSED"
+      },
+      "parameters": [
+        {
+          "param": "sensor_height",
+          "value": 2.247
+        },
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 100.0
+        }
       ]
     },
     {
@@ -15548,11 +15682,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 100.0
+          "value": 10000.0
         }
       ]
     },
@@ -15563,7 +15697,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 5.0
+          "value": 500.0
         }
       ]
     },
@@ -15672,6 +15806,28 @@
       ]
     },
     {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-correction-add",
+      "type": "correction",
+      "method": "ADD",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-correction-scalar",
+      "type": "correction",
+      "method": "SCALAR",
+      "parameters": [
+        {
+          "param": "correction_factor",
+          "value": 100.0
+        }
+      ]
+    },
+    {
       "id": "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
       "type": "qc",
       "method": "BATTERY_V",
@@ -15692,11 +15848,11 @@
       "parameters": [
         {
           "param": "lt",
-          "value": -10.0
+          "value": -1000.0
         },
         {
           "param": "gt",
-          "value": 100.0
+          "value": 10000.0
         }
       ]
     },
@@ -15707,7 +15863,7 @@
       "parameters": [
         {
           "param": "gt",
-          "value": 5.0
+          "value": 500.0
         }
       ]
     },

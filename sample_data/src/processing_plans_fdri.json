@@ -4616,6 +4616,17 @@
       ]
     },
     {
+      "id": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-plan",
+      "output": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_processed",
+      "input": "fdri-se-svtrp-01-wl-dist_to_water_radar_1min_raw",
+      "steps": [
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-load_raw",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-battery_v",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-range",
+        "fdri-se-svtrp-01-wl-dist_to_water_radar_1min-spike"
+      ]
+    },
+    {
       "id": "fdri-se-svtrp-01-wl-radar_temp_1min-plan",
       "output": "fdri-se-svtrp-01-wl-radar_temp_1min_processed",
       "input": "FDRI-SE-SVTRP-01-WL-RADAR_TEMP_1MIN_RAW",
@@ -4758,9 +4769,9 @@
     {
       "id": "fdri-tw-hebuu-01-wl-water_lev_radar_1min-plan",
       "output": "fdri-tw-hebuu-01-wl-water_lev_radar_1min_processed",
-      "input": "fdri-tw-hebuu-01-wl-water_lev_radar_1min_raw",
       "steps": [
-        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-distance_to_level",
+        "fdri-tw-hebuu-01-wl-water_lev_radar_1min-correction-scalar",
         "fdri-tw-hebuu-01-wl-water_lev_radar_1min-battery_v",
         "fdri-tw-hebuu-01-wl-water_lev_radar_1min-range",
         "fdri-tw-hebuu-01-wl-water_lev_radar_1min-spike"
@@ -4794,6 +4805,8 @@
       "input": "fdri-tw-hebuu-01-wl-water_lev_pt_1min_raw",
       "steps": [
         "fdri-tw-hebuu-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-correction-add",
+        "fdri-tw-hebuu-01-wl-water_lev_pt_1min-correction-scalar",
         "fdri-tw-hebuu-01-wl-water_lev_pt_1min-battery_v",
         "fdri-tw-hebuu-01-wl-water_lev_pt_1min-range",
         "fdri-tw-hebuu-01-wl-water_lev_pt_1min-spike"
@@ -4846,6 +4859,8 @@
       "input": "fdri-tw-menza-01-wl-water_lev_pt_1min_raw",
       "steps": [
         "fdri-tw-menza-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-correction-add",
+        "fdri-tw-menza-01-wl-water_lev_pt_1min-correction-scalar",
         "fdri-tw-menza-01-wl-water_lev_pt_1min-battery_v",
         "fdri-tw-menza-01-wl-water_lev_pt_1min-range",
         "fdri-tw-menza-01-wl-water_lev_pt_1min-spike"
@@ -4881,9 +4896,9 @@
     {
       "id": "fdri-tw-menzb-01-wl-water_lev_radar_1min-plan",
       "output": "fdri-tw-menzb-01-wl-water_lev_radar_1min_processed",
-      "input": "fdri-tw-menzb-01-wl-water_lev_radar_1min_raw",
       "steps": [
-        "fdri-tw-menzb-01-wl-water_lev_radar_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-distance_to_level",
+        "fdri-tw-menzb-01-wl-water_lev_radar_1min-correction-scalar",
         "fdri-tw-menzb-01-wl-water_lev_radar_1min-battery_v",
         "fdri-tw-menzb-01-wl-water_lev_radar_1min-range",
         "fdri-tw-menzb-01-wl-water_lev_radar_1min-spike"
@@ -4917,6 +4932,8 @@
       "input": "fdri-tw-menzb-01-wl-water_lev_pt_1min_raw",
       "steps": [
         "fdri-tw-menzb-01-wl-water_lev_pt_1min-load_raw",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-correction-add",
+        "fdri-tw-menzb-01-wl-water_lev_pt_1min-correction-scalar",
         "fdri-tw-menzb-01-wl-water_lev_pt_1min-battery_v",
         "fdri-tw-menzb-01-wl-water_lev_pt_1min-range",
         "fdri-tw-menzb-01-wl-water_lev_pt_1min-spike"
