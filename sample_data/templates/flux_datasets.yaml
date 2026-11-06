@@ -36,11 +36,11 @@ resources:
               - name: RAW_BUCKET
                 requires:
                   processing_level: raw
-                pattern: "s3://{RAW_SOURCE_BUCKET}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
+                pattern: "s3://{RAW_SOURCE_BUCKET}/network=FDRI/collection=FLUX_20HZ/site={source_site_identifier}/^^<xsd:anyURI>"
               - name: PROCESSED_BUCKET
                 requires:
                   processing_level: processed
-                pattern: "s3://{PROCESSED_SOURCE_BUCKET}/network={network}/collection=flux/site={source_site_identifier}/^^<xsd:anyURI>"
+                pattern: "s3://{PROCESSED_SOURCE_BUCKET}/network=FDRI/collection=PROCESSED_FLUX/site={source_site_identifier}/^^<xsd:anyURI>"
             "<dct:format>": "<::GhgFormat>"
 
   - name: FluxTimeSeriesDataset
@@ -60,7 +60,7 @@ resources:
           requires:
             processing_level: processed
           pattern: "{PROCESSED_SOURCE_BUCKET}"
-      "<fdri:sourceDataset>": "{source_dataset}"
+      "<fdri:sourceCollection>": "{source_dataset}"
       "<fdri:sourceColumnName>": "{source_column}"
       "<fdri:sourceTimeColumnName>": "{time_column_name}"
       # TODO: Verify what the S3 path should look like for flux timeseries datasetes and create a distribution
