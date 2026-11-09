@@ -39,7 +39,7 @@ resources:
             PROCESS_LEVEL: PROCESSED
             S3_BUCKET:
           pattern: "{PROCESSED_SOURCE_BUCKET}"
-      "<fdri:sourceCollection>": "{S3_DATASET}"
+      "<fdri:sourceCollection>": "{S3_COLLECTION}"
       "<fdri:sourceColumnName>": "{COLUMN_NAME}"
       "<fdri:sourceTimeColumnName>": "{TIME_COLUMN_NAME}"
       "<fdri:measure>": "<http://fdri.ceh.ac.uk/ref/common/measure/{MEASURE_ID|slug}>"
@@ -58,7 +58,7 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/distribution/{TIMESERIES_ID|slug}>"
       "@type": "<dcat:Distribution>"
       "<dct:format>": "<http://fdri.ceh.ac.uk/ref/common/format/application_vnd.apache.parquet>"
-      "<dct:accessURL>": "s3://{RAW_SOURCE_BUCKET}/network={NETWORK}/collection={S3_DATASET}/site={SITE_ID}/^^<xsd:anyURI>"
+      "<dct:accessURL>": "s3://{RAW_SOURCE_BUCKET}/network={NETWORK}/collection={S3_COLLECTION}/site={SITE_ID}/^^<xsd:anyURI>"
       "^<dcat:distribution>": "<::TimeSeriesDataset>"
 
   - name: ProcessedTimeSeriesDistribution
@@ -69,5 +69,5 @@ resources:
       "@id": "<http://fdri.ceh.ac.uk/id/distribution/{TIMESERIES_ID|slug}>"
       "@type": "<dcat:Distribution>"
       "<dct:format>": "<http://fdri.ceh.ac.uk/ref/common/format/application_vnd.apache.parquet>"
-      "<dct:accessURL>": "s3://{PROCESSED_SOURCE_BUCKET}/network={NETWORK}/collection={S3_DATASET}/site={SITE_ID}/^^<xsd:anyURI>"
+      "<dct:accessURL>": "s3://{PROCESSED_SOURCE_BUCKET}/network={NETWORK}/collection={S3_COLLECTION}/site={SITE_ID}/^^<xsd:anyURI>"
       "^<dcat:distribution>": "<::TimeSeriesDataset>"
