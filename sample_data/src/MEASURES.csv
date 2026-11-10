@@ -7,7 +7,6 @@ ALBEDO-MEAN_PREC-UNITLESS-PT30M-PT30M,,ALBEDO,UNITLESS,MEAN,PREC,PT30M,PT30M,Mea
 ALBEDO-MEAN_PROC-PCT-P1D-P1D,,ALBEDO,PCT,MEAN,PROC,P1D,P1D,Mean albedo over the proceeding day in percent,0,100
 ALBEDO-MEAN_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,MEAN,PROC,P1D,P1D,Mean albedo over the proceeding day,0,1
 ALBEDO-STDDEV_PROC-UNITLESS-P1D-P1D,,ALBEDO,UNITLESS,STDDEV,PROC,P1D,P1D,Standard deviation of albedo over the proceeding day,0,1
-ANGULAR_VELOCITY-REVS-1,,ANGULAR_VELOCITY,REVS-1,MEAN,PREC,,,Mean angular velocity in revolutions per second,,
 BUCKET_LEVEL-INST-MM-PT1M-PT1M,,BUCKET_LEVEL,MM,NONE,INST,PT1M,PT1M,Instantaneous bucket level in millimetres,0,
 CO2_FLUX-INST-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,NONE,INST,PT30M,PT30M,Instantaneous CO2 flux in micromoles per metre squared per second,,
 CO2_FLUX-MEAN_PREC-MicroMOL-PER-M2-SEC-PT30M-PT30M,,CO2_FLUX,MicroMOL-PER-M2-SEC,MEAN,PREC,PT30M,PT30M,Mean CO2 flux over the preceding 30 minutes in micromoles per metre squared per second,,
@@ -308,7 +307,6 @@ RAD_NIR-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,
 RAD_NIR-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_NIR,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean near infrared radiance over the proceeding day in watts per metre squared per nanometre per steradian,,
 RAD_RED-MEAN_PREC-W-PER-M2-NanoM-SR-PT15M-PT15M,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PREC,PT15M,PT15M,Mean red radiance over the preceding 15 minutes in watts per metre squared per nanometre per steradian,,
 RAD_RED-MEAN_PROC-W-PER-M2-NanoM-SR-P1D-P1D,,RAD_RED,W-PER-M2-NanoM-SR,MEAN,PROC,P1D,P1D,Mean red radiance over the proceeding day in watts per metre squared per nanometre per steradian,,
-REV-TOTAL-COUNT,,REVOLUTIONS,UNITLESS,TOTAL,PREC,,,Total number of revolutions counted in measurement Period,0,
 REVOLUTIONS-MEAN_PREC-RPM-PT1M-PT1M,,REVOLUTIONS,RPM,MEAN,PREC,PT1M,PT1M,Mean revolutions over the preceding minute in revolutions per minute,0,
 RH_SENSOR_INT-INST-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,NONE,INST,PT30M,PT30M,Instantaneous internal sensor relative humidity at 30 minutes in percent,0,100
 RH_SENSOR_INT-MEAN_PREC-PCT-PT30M-PT30M,,RH_SENSOR_INT,PCT,MEAN,PREC,PT30M,PT30M,Mean internal sensor relative humidity over the preceding 30 minutes in percent,0,100
@@ -552,8 +550,6 @@ VWC_SOIL-INST-PCT-PT1M-PT1M,,VWC_SOIL,PCT,NONE,INST,PT1M,PT1M,Instantaneous soil
 VWC_SOIL-INST-PCT-PT30M-PT30M,,VWC_SOIL,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water in percent,0,100
 VWC_SOIL-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content over the preceding 15 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content over the preceding 30 minutes in percent,0,100
-WATER_FLOW-INST-LS-1,,WATER_FLOW,LS-1,NONE,INST,,,Instantaneous discharge in litres per second,,
-WATER_FLOW-INST-M3S-1,,WATER_FLOW,M3S-1,NONE,INST,,,Instantaneous discharge in cubic metres per second,,
 WATER_LEVEL-INST-M-PT1M-PT1M,,WATER_LEVEL,M,NONE,INST,PT1M,PT1M,Instantaneous water level in metres,,
 WATER_LEVEL-MEAN_PREC-CM-PT1M-PT1M,,WATER_LEVEL,CM,MEAN,PREC,PT1M,PT1M,Mean water level over the preceding minute in centimetres,,
 WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,,WATER_LEVEL,M,MEAN,PREC,PT15M,PT15M,Mean water level over the preceding 15 minutes in metres,,
@@ -562,18 +558,11 @@ WATER_LEVEL-MEAN_PROC-CM-P1D-P1D,,WATER_LEVEL,CM,MEAN,PROC,P1D,P1D,Mean water le
 WATER_LEVEL-MEAN_PROC-M-P1D-P1D,,WATER_LEVEL,M,MEAN,PROC,P1D,P1D,Mean water level over proceeding day in metres,,
 WATER_TABLE_DEPTH-INST-M-PT30M-PT30M,,WATER_TABLE_DEPTH,M,NONE,INST,PT30M,PT30M,Instantaneous water table depth in metres,,
 WATER_TABLE_DEPTH-MEAN_PREC-M-PT30M-PT30M,,WATER_TABLE_DEPTH,M,MEAN,PREC,PT30M,PT30M,Mean water table depth over the preceding 30 minutes in metres,,
-WATER_TEMP-DEGC,,WATER_TEMP,DEGC,,,,,Water temperature in degrees Celsius,,
-WATER_TEMP-INST-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,NONE,INST,,,Instantaneous water temperature in degrees Celsius,,
 WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,,WATER_TEMP,DEGC,MEAN,PREC,PT15M,PT15M,Mean water temperature over the preceding 15 minutes in degrees Celsius,,
 WATER_TEMP-MEAN_PREC-DEGC-PT1M-PT1M,,WATER_TEMP,DEGC,MEAN,PREC,PT1M,PT1M,Mean water temperature over the preceding minute in degrees Celsius,,
 WATER_TEMP-MEAN_PROC-DEGC-P1D-P1D,,WATER_TEMP,DEGC,MEAN,PROC,P1D,P1D,Mean water temperature over proceeding day in degrees Celsius,,
-WATER_TEMP-MEAN-DEGC,WATER_TEMP-DEGC,WATER_TEMP,DEGC,MEAN,PREC,,,Mean water temperature in degrees Celsius,,
 WATER_VELOCITY-INST-MS-1-PT1M-PT1M,,WATER_VELOCITY,MS-1,NONE,INST,PT1M,PT1M,Instantaneous water velocity over the preceding minute in metres per second,,
-WATER_VELOCITY-INST-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,NONE,INST,,,Instantaneous water velocity in metres per second,,
-WATER_VELOCITY-MAX-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MAX,PREC,,,Maximum water velocity in metres per second,,
 WATER_VELOCITY-MEAN_PROC-MS-1-P1D-P1D,,WATER_VELOCITY,MS-1,MEAN,PROC,P1D,P1D,Mean water velocity over proceeding day in metres per second,,
-WATER_VELOCITY-MEAN-MS-1,WATER_VELOCITY-MS-1,WATER_VELOCITY,MS-1,MEAN,PREC,,,Mean water velocity in metres per second,,
-WATER_VELOCITY-MS-1,,WATER_VELOCITY,MS-1,,,,,Water velocity in metres per second,,
 WD-INST-DEG-PT30M-PT30M,,WD,DEG,NONE,INST,PT30M,PT30M,Instantaneous wind direction in degrees,0,360
 WD-MEAN_PREC-DEG-PT1M-PT1M,,WD,DEG,MEAN,PREC,PT1M,PT1M,Mean wind direction over the preceding minute in degrees,0,360
 WD-MEAN_PREC-DEG-PT30M-PT30M,,WD,DEG,MEAN,PREC,PT30M,PT30M,Mean wind direction over the preceding 30 minutes in degrees,0,360
