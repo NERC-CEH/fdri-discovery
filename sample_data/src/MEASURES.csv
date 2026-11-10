@@ -558,6 +558,7 @@ WATER_LEVEL-MEAN_PROC-CM-P1D-P1D,,WATER_LEVEL,CM,MEAN,PROC,P1D,P1D,Mean water le
 WATER_LEVEL-MEAN_PROC-M-P1D-P1D,,WATER_LEVEL,M,MEAN,PROC,P1D,P1D,Mean water level over proceeding day in metres,,
 WATER_TABLE_DEPTH-INST-M-PT30M-PT30M,,WATER_TABLE_DEPTH,M,NONE,INST,PT30M,PT30M,Instantaneous water table depth in metres,,
 WATER_TABLE_DEPTH-MEAN_PREC-M-PT30M-PT30M,,WATER_TABLE_DEPTH,M,MEAN,PREC,PT30M,PT30M,Mean water table depth over the preceding 30 minutes in metres,,
+WATER_TEMP-INST-DEGC-P1D-P1D,,WATER_TEMP,DEGC,NONE,INST,P1D,P1D,Instantaneous water temperature in degrees Celsius,,
 WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,,WATER_TEMP,DEGC,MEAN,PREC,PT15M,PT15M,Mean water temperature over the preceding 15 minutes in degrees Celsius,,
 WATER_TEMP-MEAN_PREC-DEGC-PT1M-PT1M,,WATER_TEMP,DEGC,MEAN,PREC,PT1M,PT1M,Mean water temperature over the preceding minute in degrees Celsius,,
 WATER_TEMP-MEAN_PROC-DEGC-P1D-P1D,,WATER_TEMP,DEGC,MEAN,PROC,P1D,P1D,Mean water temperature over proceeding day in degrees Celsius,,
