@@ -20174,6 +20174,41 @@
           "value": 2000.0
         }
       ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-temp_air_30min-mean",
+      "type": "aggregate",
+      "method": "mean",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-temp_air_1min_processed"
+      ],
+      "parameters": [
+        {
+          "param": "threshold",
+          "value": 1
+        },
+        {
+          "param": "round",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "FDRI-SE-CFRON-01-EC": [
+    {
+      "id": "fdri-se-cfron-01-ec-et_30min-latent_heat_to_et",
+      "type": "calculate",
+      "method": "latent_heat_to_et",
+      "inputs": {
+        "le": "FDRI-SE-CFRON-01-EC-LE_EC_30MIN_RAW",
+        "ta": "FDRI-SE-CFRON-01-RS-TEMP_AIR_30MIN_PROCESSED"
+      },
+      "parameters": [
+        {
+          "param": "round",
+          "value": 3
+        }
+      ]
     }
   ]
 }

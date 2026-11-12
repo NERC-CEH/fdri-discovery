@@ -6039,6 +6039,22 @@
         "fdri-se-cfron-01-rs-styx_neutrons_30min-battery_v",
         "fdri-se-cfron-01-rs-styx_neutrons_30min-range"
       ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-temp_air_30min-plan",
+      "output": "fdri-se-cfron-01-rs-temp_air_30min_processed",
+      "steps": [
+        "fdri-se-cfron-01-rs-temp_air_30min-mean"
+      ]
+    }
+  ],
+  "FDRI-SE-CFRON-01-EC": [
+    {
+      "id": "fdri-se-cfron-01-ec-et_30min-plan",
+      "output": "fdri-se-cfron-01-ec-et_30min_processed",
+      "steps": [
+        "fdri-se-cfron-01-ec-et_30min-latent_heat_to_et"
+      ]
     }
   ]
 }
