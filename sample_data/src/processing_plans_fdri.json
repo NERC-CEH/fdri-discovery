@@ -2037,6 +2037,13 @@
       "steps": [
         "fdri-ch-milfa-01-rc-solar_zenith_1min-solar_zenith"
       ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-rc-temp_air_30min-plan",
+      "output": "fdri-ch-milfa-01-rc-temp_air_30min_processed",
+      "steps": [
+        "fdri-ch-milfa-01-rc-temp_air_30min-mean"
+      ]
     }
   ],
   "FDRI-CH-TRIGR-01-RS": [
@@ -6054,6 +6061,15 @@
       "output": "fdri-se-cfron-01-ec-et_30min_processed",
       "steps": [
         "fdri-se-cfron-01-ec-et_30min-latent_heat_to_et"
+      ]
+    }
+  ],
+  "FDRI-CH-MILFA-01-EC": [
+    {
+      "id": "fdri-ch-milfa-01-ec-et_30min-plan",
+      "output": "fdri-ch-milfa-01-ec-et_30min_processed",
+      "steps": [
+        "fdri-ch-milfa-01-ec-et_30min-latent_heat_to_et"
       ]
     }
   ]
