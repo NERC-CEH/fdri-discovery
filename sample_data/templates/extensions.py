@@ -21,6 +21,13 @@ def latlon_to_northing(text: str, state: TemplateState, lat: str, lon: str):
     g = latlong2grid(lat_float, lon_float)
     return Literal(f"{g.N}", None, XSD.decimal)
 
+def as_periodicity(text: str, state: TemplateState):
+    if text is not None:
+        if text == 'irregular':
+            return Literal(text, None, XSD.string)
+        return Literal(text, None, XSD.duration)
+
 register('append_fragment', append_fragment)
+register('as_periodicity', as_periodicity)
 register('latlon_to_easting', latlon_to_easting)
 register('latlon_to_northing', latlon_to_northing)
