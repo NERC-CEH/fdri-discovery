@@ -87,6 +87,11 @@
                 "name": "alt_data",
                 "description": "Alternative data used to infill gap.",
                 "value": 2
+            },
+            {
+                "name": "zero_fill",
+                "description": "Missing value set to zero, e.g. snow depth, which reads slightly negative when there is no snow.",
+                "value": 4
             }
         ]
     }
