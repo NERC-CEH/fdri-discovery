@@ -319,8 +319,7 @@ RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH,PCT,STDDEV,PREC,PT30M,PT30M,Standard deviatio
 RN-MEAN_PREC-WM-2-PT1M-PT1M,,RN,WM-2,MEAN,PREC,PT1M,PT1M,Mean net radiation over the preceding minute in watts per metre squared,0,
 RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN,PREC,PT30M,PT30M,Mean net radiation over preceding 30 minutes in watts per metre squared,0,
 RN-TOTAL_PROC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total net radiation over the proceeding day in megajoules per metre squared,0,
-SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT1H-PT1H,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT1H,PT1H,Total number of samples over the preceding hour (unitless),0,
-SAMPLES_COUNT-TOTAL_PREC-UNITLESS-PT30M-PT30M,,SAMPLES_COUNT,UNITLESS,TOTAL,PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes (unitless),0,
+SAMPLES_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,SAMPLES_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total number of samples over the preceding 30 minutes,0,
 SENSOR_ANGLE-INST-DEG-PT15M-PT15M,,SENSOR_ANGLE,DEG,NONE,INST,PT15M,PT15M,Instantaneous angle of sensor in degrees,0,360
 SENSOR_STATUS-INST-UNITLESS-PT1M-PT1M,,SENSOR_STATUS,UNITLESS,NONE,INST,PT1M,PT1M,Instantaneous status of sensor,,
 SIGNAL_STRENGTH-INST-UNITLESS-PT15M-PT15M,,SIGNAL_STRENGTH,UNITLESS,NONE,INST,PT15M,PT15M,Instantaneous signal strength over the preceding 15 minutes,,
@@ -340,8 +339,6 @@ SOLAR_ZENITH-MEAN_PREC-RADIANS-PT1M-PT1M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT1M,PT
 SOLAR_ZENITH-MEAN_PREC-RADIANS-PT30M-PT30M,,SOLAR_ZENITH,RADIANS,MEAN,PREC,PT30M,PT30M,Mean solar zenith angle over the preceding 30 minutes in radians,0,3.14159265358979
 SONIC_AZIMUTH-INST-DEG-PT30M-PT30M,,SONIC_AZIMUTH,DEG,NONE,INST,PT30M,PT30M,Instantaneous sonic anemometer azimuth angle in degrees,0,360
 SSITC-INST-UNITLESS-PT30M-PT30M,,SSITC,UNITLESS,NONE,INST,PT30M,PT30M,Instantaneous steady state and integral turbulence characteristics,,
-STATUS_COUNT-TOTAL_PREC-CTS-PT1H-PT1H,,STATUS_COUNT,CTS,TOTAL,PREC,PT1H,PT1H,Total count over the preceding hour in counts,,
-STATUS_COUNT-TOTAL_PREC-CTS-PT30M-PT30M,,STATUS_COUNT,CTS,TOTAL,PREC,PT30M,PT30M,Total count over the preceding 30 minutes in counts,,
 SWE-MEAN_PREC-MM-PT1H-PT1H,,SWE,MM,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in millimetres,0,
 SWE-MEAN_PREC-PCT-PT1H-PT1H,,SWE,PCT,MEAN,PREC,PT1H,PT1H,Mean snow water equivalent over the preceding hour in percent,0,100
 SWE-MEAN_PREC-PCT-PT30M-PT30M,,SWE,PCT,MEAN,PREC,PT30M,PT30M,Mean snow water equivalent over the preceding 30 minutes in percent,0,100
