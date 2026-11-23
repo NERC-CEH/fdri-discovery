@@ -11,6 +11,7 @@ QC,Generic,RANGE,Range,Value out of range
 QC,Generic,SPIKE,Spike,Spike in timeseries
 QC,GENERIC,FLUX_QC_FLAG
 QC,Generic,MANUAL_REMOVAL,Manual Removal,Data associated with a sensor that has a known fault. These are registered manually by the operations team
+QC,Generic,COMPARISON,Comparison,Data compared to a value with specified operator
 AGGREGATE,GENERIC,ANGULAR_MEAN
 AGGREGATE,GENERIC,POINT_ESTIMATE
 AGGREGATE,GENERIC,MAX

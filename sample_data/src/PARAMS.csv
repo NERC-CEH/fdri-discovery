@@ -113,3 +113,4 @@ MIN_THRESHOLD
 WINDOW
 WINDOW_SIZE,Window size,Size of window surrounding datapoint
 SENSOR_HEIGHT,Sensor height,Height of sensor in cm
+OPERATOR,Comparison operator,"Comparison operator (<, <=, >, >=, ==, !=, is_in)"
