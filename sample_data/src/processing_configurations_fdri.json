@@ -11532,6 +11532,302 @@
           "value": 3
         }
       ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-mo_length_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-mo_length_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-tau_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-tau_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-tau_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-tau_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-u_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-u_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-ustar_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-ustar_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-v_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-v_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-w_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-w_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-wd_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-wd_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-ws_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-ws_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-ws_max_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-ws_max_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-zl_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-zl_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-pa_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-pa_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-pa_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-pa_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-temp_air_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-temp_air_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-ta_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-ta_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-rh_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-rh_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-vpd_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-vpd_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-t_sonic_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-t_sonic_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-t_sonic_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-t_sonic_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-pblh_f_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-pblh_f_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-co2_frac_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-co2_frac_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-co2_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-co2_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-h2o_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-h2o_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-h2o_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-h2o_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fc_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fc_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fc_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fc_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fh2o_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fh2o_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fh2o_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fh2o_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-le_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-le_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-le_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-le_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-h_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-h_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-h_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-h_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fetch_max_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fetch_max_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fetch_90_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fetch_90_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fetch_80_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fetch_80_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fetch_70_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fetch_70_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch_trigr_ec-fetch_filter_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch_trigr_ec-fetch_filter_ec_30min_raw"
+      ]
     }
   ],
   "FDRI-SE-CARWE-01-WS": [
@@ -11631,7 +11927,6 @@
         "FDRI-SE-CARWE-01-WS-SWIN_1MIN_RAW"
       ]
     },
-
     {
       "id": "fdri-se-carwe-01-ws-swin_1min-correction-scalar",
       "type": "correction",
@@ -11660,8 +11955,6 @@
         "start_date": "2026-08-17T14:10:00"
       }
     },
-
-
     {
       "id": "fdri-se-carwe-01-ws-swout_1min-load_raw",
       "type": "load",
@@ -20210,6 +20503,54 @@
           "value": 2
         }
       ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-g1_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-g1_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-g2_15min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-g2_15min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-styx_pulse_0_15-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-styx_pulse_0_15_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-styx_pulse_16_31-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-styx_pulse_16_31_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-styx_pulse_32_47-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-styx_pulse_32_47_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-rs-styx_pulse_48_63-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-rs-styx_pulse_48_63_raw"
+      ]
     }
   ],
   "FDRI-SE-CFRON-01-EC": [
@@ -20227,6 +20568,302 @@
           "value": 3
         }
       ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-mo_length_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-mo_length_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-tau_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-tau_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-tau_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-tau_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-u_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-u_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-ustar_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-ustar_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-v_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-v_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-w_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-w_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-wd_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-wd_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-ws_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-ws_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-ws_max_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-ws_max_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-zl_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-zl_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-pa_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-pa_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-pa_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-pa_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-temp_air_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-temp_air_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-ta_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-ta_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-rh_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-rh_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-vpd_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-vpd_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-t_sonic_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-t_sonic_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-t_sonic_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-t_sonic_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-pblh_f_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-pblh_f_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-co2_frac_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-co2_frac_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-co2_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-co2_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-h2o_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-h2o_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-h2o_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-h2o_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fc_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fc_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fc_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fc_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fh2o_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fh2o_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fh2o_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fh2o_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-le_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-le_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-le_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-le_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-h_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-h_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-h_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-h_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fetch_max_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fetch_max_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fetch_90_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fetch_90_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fetch_80_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fetch_80_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fetch_70_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fetch_70_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-se-cfron-01-ec-fetch_filter_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-se-cfron-01-ec-fetch_filter_ec_30min_raw"
+      ]
     }
   ],
   "FDRI-CH-MILFA-01-EC": [
@@ -20243,6 +20880,302 @@
           "param": "round",
           "value": 3
         }
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-mo_length_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-mo_length_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-tau_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-tau_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-tau_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-tau_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-u_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-u_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-ustar_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-ustar_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-v_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-v_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-w_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-w_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-wd_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-wd_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-ws_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-ws_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-ws_max_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-ws_max_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-zl_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-zl_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-pa_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-pa_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-pa_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-pa_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-temp_air_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-temp_air_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-ta_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-ta_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-rh_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-rh_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-vpd_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-vpd_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-t_sonic_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-t_sonic_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-t_sonic_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-t_sonic_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-pblh_f_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-pblh_f_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-co2_frac_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-co2_frac_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-co2_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-co2_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-h2o_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-h2o_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-h2o_sigma_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-h2o_sigma_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fc_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fc_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fc_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fc_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fh2o_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fh2o_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fh2o_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fh2o_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-le_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-le_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-le_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-le_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-h_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-h_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-h_ssitc_test_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-h_ssitc_test_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fetch_max_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fetch_max_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fetch_90_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fetch_90_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fetch_80_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fetch_80_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fetch_70_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fetch_70_ec_30min_raw"
+      ]
+    },
+    {
+      "id": "fdri-ch-milfa-01-ec-fetch_filter_ec_30min-load_raw",
+      "type": "load",
+      "method": "load",
+      "dep_ts": [
+        "fdri-ch-milfa-01-ec-fetch_filter_ec_30min_raw"
       ]
     }
   ]
