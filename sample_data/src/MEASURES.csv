@@ -316,6 +316,8 @@ RH-MEAN_PREC-PCT-PT1M-PT1M,,RH,PCT,MEAN,PREC,PT1M,PT1M,Mean relative humidity ov
 RH-MEAN_PREC-PCT-PT30M-PT30M,,RH,PCT,MEAN,PREC,PT30M,PT30M,Mean relative humidity over the preceding 30 minutes in percent,0,100
 RH-MEAN_PROC-PCT-P1D-P1D,,RH,PCT,MEAN,PROC,P1D,P1D,Mean relative humidity over the proceeding day in percent,0,100
 RH-STDDEV_PREC-PCT-PT30M-PT30M,,RH,PCT,STDDEV,PREC,PT30M,PT30M,Standard deviation of relative humidity over the preceding 30 minutes in percent,0,100
+RIVER_MEAN_DEPTH-INST-M-irregular-PT1S,,RIVER_MEAN_DEPTH,M,NONE,INST,irregular,PT1S,Instantaneous mean depth of river cross section in metres,,
+RIVER_MEAN_DEPTH-INST-M-irregular-PT1M,,RIVER_MEAN_DEPTH,M,NONE,INST,irregular,PT1M,Instantaneous mean depth of river cross section in metres,,
 RN-MEAN_PREC-WM-2-PT1M-PT1M,,RN,WM-2,MEAN,PREC,PT1M,PT1M,Mean net radiation over the preceding minute in watts per metre squared,0,
 RN-MEAN_PREC-WM-2-PT30M-PT30M,,RN,WM-2,MEAN,PREC,PT30M,PT30M,Mean net radiation over preceding 30 minutes in watts per metre squared,0,
 RN-TOTAL_PROC-MJM-2-D-P1D-P1D,,RN,MJM-2-D,TOTAL,PROC,P1D,P1D,Total net radiation over the proceeding day in megajoules per metre squared,0,
@@ -550,6 +552,10 @@ VWC_SOIL-INST-PCT-PT1M-PT1M,,VWC_SOIL,PCT,NONE,INST,PT1M,PT1M,Instantaneous soil
 VWC_SOIL-INST-PCT-PT30M-PT30M,,VWC_SOIL,PCT,NONE,INST,PT30M,PT30M,Instantaneous soil volumetric water in percent,0,100
 VWC_SOIL-MEAN_PREC-M3-PER-M3-PT15M-PT15M,,VWC_SOIL,M3-PER-M3,MEAN,PREC,PT15M,PT15M,Mean soil volumetric water content over the preceding 15 minutes in cubic metres per cubic metre,0,1
 VWC_SOIL-MEAN_PREC-PCT-PT30M-PT30M,,VWC_SOIL,PCT,MEAN,PREC,PT30M,PT30M,Mean soil volumetric water content over the preceding 30 minutes in percent,0,100
+WATER_FLOW-INST-M3S-1-irregular-PT1S,,WATER_FLOW,M3S-1,NONE,INST,irregular,PT1S,Instantaneous water flow in metres cubed per second,,
+WATER_FLOW-INST-M3S-1-irregular-PT1M,,WATER_FLOW,M3S-1,NONE,INST,irregular,PT1M,Instantaneous water flow in metres cubed per second,,
+WATER_LEVEL-INST-M-irregular-PT1S,,WATER_LEVEL,M,INST,INST,irregular,PT1S,Instantaneous water level in metres,,
+WATER_LEVEL-INST-M-irregular-PT1M,,WATER_LEVEL,M,INST,INST,irregular,PT1M,Instantaneous water level in metres,,
 WATER_LEVEL-INST-M-PT1M-PT1M,,WATER_LEVEL,M,NONE,INST,PT1M,PT1M,Instantaneous water level in metres,,
 WATER_LEVEL-MEAN_PREC-CM-PT1M-PT1M,,WATER_LEVEL,CM,MEAN,PREC,PT1M,PT1M,Mean water level over the preceding minute in centimetres,,
 WATER_LEVEL-MEAN_PREC-M-PT15M-PT15M,,WATER_LEVEL,M,MEAN,PREC,PT15M,PT15M,Mean water level over the preceding 15 minutes in metres,,
@@ -558,6 +564,8 @@ WATER_LEVEL-MEAN_PROC-CM-P1D-P1D,,WATER_LEVEL,CM,MEAN,PROC,P1D,P1D,Mean water le
 WATER_LEVEL-MEAN_PROC-M-P1D-P1D,,WATER_LEVEL,M,MEAN,PROC,P1D,P1D,Mean water level over proceeding day in metres,,
 WATER_TABLE_DEPTH-INST-M-PT30M-PT30M,,WATER_TABLE_DEPTH,M,NONE,INST,PT30M,PT30M,Instantaneous water table depth in metres,,
 WATER_TABLE_DEPTH-MEAN_PREC-M-PT30M-PT30M,,WATER_TABLE_DEPTH,M,MEAN,PREC,PT30M,PT30M,Mean water table depth over the preceding 30 minutes in metres,,
+WATER_TEMP-INST-DEGC-irregular-PT1S,,WATER_TEMP,DEGC,NONE,INST,irregular,PT1S,Instantaneous water temperature in degrees Celsius,,
+WATER_TEMP-INST-DEGC-irregular-PT1M,,WATER_TEMP,DEGC,NONE,INST,irregular,PT1M,Instantaneous water temperature in degrees Celsius,,
 WATER_TEMP-INST-DEGC-P1D-P1D,,WATER_TEMP,DEGC,NONE,INST,P1D,P1D,Instantaneous water temperature in degrees Celsius,,
 WATER_TEMP-MEAN_PREC-DEGC-PT15M-PT15M,,WATER_TEMP,DEGC,MEAN,PREC,PT15M,PT15M,Mean water temperature over the preceding 15 minutes in degrees Celsius,,
 WATER_TEMP-MEAN_PREC-DEGC-PT1M-PT1M,,WATER_TEMP,DEGC,MEAN,PREC,PT1M,PT1M,Mean water temperature over the preceding minute in degrees Celsius,,
