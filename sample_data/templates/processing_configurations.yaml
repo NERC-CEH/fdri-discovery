@@ -53,13 +53,7 @@ embedded:
       "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{input}>"
       "@type": "<fdri:ConfigurationArgument>"
       "<fdri:parameter>": "<http://fdri.ceh.ac.uk/ref/common/parameter/{input|slug}>"
-      "<fdri:hasValue>":
-        name: InputTimeSeriesValue
-        properties:
-          "@id": "<http://fdri.ceh.ac.uk/id/configuration-item/{id}#argument.{input}.value>"
-          "@type": "<schema:PropertyValue>"
-          "<schema:valueReference>": "<http://fdri.ceh.ac.uk/id/dataset/{ts|slug}>"
-          "<fdri:valueType>": "<fdri:TimeSeriesDataset>"
+      "<fdri:hasValue>": "{ts|map_to(DepTimeSeriesValue)}"
 
 resources:
   - name: DataProcessingConfiguration

@@ -2,6 +2,7 @@ PARAM_ID,PARAM_NAME,PARAM_DESCRIPTION
 FLAG_TS,Flag Timeseries,The time-series that is flagged by a QC processing method
 DEP_TS,Dependency Timeseries,The time-series that a processing method depends on
 LOAD_DEP_TS,Load Dependency Timeseries,The time-series that a processing method depends on that should be directly loaded
+INPUT_LIST,Input list,List of input time-series datasets for a processing method
 SWIN,Incoming shortwave radiation,Input time-series of incoming shortwave radiation
 SWOUT,Outgoing shortwave radiation,Input time-series of outgoing shortwave radiation
 LWIN,Incoming longwave radiation,Input time-series of incoming longwave radiation
